@@ -7,8 +7,10 @@ import ServiceCallout from "@/components/emergency-callout"
 import ReviewsDisplay from "@/components/reviews-display"
 import Breadcrumb from "@/components/breadcrumb"
 import { getLocationBySlug, getServiceBySlug, locations, services } from "@/lib/locations-data"
+import businessInfo from "@/lib/business-info"
 import { notFound } from "next/navigation"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
+import React from "react"
 
 type Props = {
   params: {
@@ -17,11 +19,58 @@ type Props = {
   }
 }
 
-// ✅ Async-safe for Next.js 15
+// LocalBusinessSchema component for structured data
+function LocalBusinessSchema({ location }: { location: any }) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": businessInfo.name,
+    "image": `${businessInfo.website}/logo.png`, // Update if you have a logo
+    "telephone": businessInfo.phone.international,
+    "email": businessInfo.email,
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": businessInfo.address.street,
+      "addressLocality": location?.name || businessInfo.address.locality,
+      "addressRegion": businessInfo.address.region,
+      "postalCode": location?.postcode || businessInfo.address.postalCode,
+      "addressCountry": "GB"
+    },
+    "url": businessInfo.website,
+    "priceRange": "££",
+    "openingHours": "Mo-Fr 09:00-17:00",
+    "geo": location
+      ? {
+          "@type": "GeoCoordinates",
+          "latitude": location.latitude || undefined,
+          "longitude": location.longitude || undefined,
+        }
+      : undefined,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "12",
+    },
+    "sameAs": [
+      businessInfo.socialMedia.google,
+      businessInfo.socialMedia.facebook,
+      businessInfo.socialMedia.instagram,
+    ],
+  }
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      suppressHydrationWarning
+    />
+  )
+}
+
+// SEO meta: OpenGraph, Twitter Card, canonical, etc
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { location: locationSlug, service: serviceSlug } = await params
   const location = getLocationBySlug(locationSlug)
-  const service  = getServiceBySlug(serviceSlug)
+  const service = getServiceBySlug(serviceSlug)
 
   if (!location || !service) {
     return {
@@ -30,16 +79,31 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
   }
 
+  const title = `${service.name} in ${location.name} | Same-Day Service | Gas Safe`
+  const description = `Expert ${service.name.toLowerCase()} in ${location.name} ${location.postcode}. No call-out fee, fixed pricing, all major brands. Gas Safe registered engineers. Call 0800 320 2345.`
+  const url = `https://www.birminghamboilerrepairs.com/${location.slug}/${service.slug}`
+
   return {
-    title: `${service.name} in ${location.name} | Same-Day Service | Gas Safe`,
-    description: `Expert ${service.name.toLowerCase()} in ${location.name} ${location.postcode}. No call-out fee, fixed pricing, all major brands. Gas Safe registered engineers. Call 0800 320 2345.`,
-    alternates: {
-      canonical: `https://www.birminghamboilerrepairs.com/${location.slug}/${service.slug}`,
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: businessInfo.name,
+      type: "website",
+      images: [`${businessInfo.website}/og-image.png`], // Set if you have OG images
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [`${businessInfo.website}/og-image.png`], // Set if you have OG images
     },
   }
 }
 
-// ✅ Static paths generation for pre-rendering
 export async function generateStaticParams() {
   return locations.flatMap(location =>
     services.map(service => ({
@@ -49,7 +113,6 @@ export async function generateStaticParams() {
   )
 }
 
-// ✅ Page component MUST be async in Next 15
 export default async function LocationServicePage({ params }: Props) {
   const { location: locationSlug, service: serviceSlug } = await params
 
@@ -58,15 +121,21 @@ export default async function LocationServicePage({ params }: Props) {
 
   if (!location || !service) notFound()
 
-  const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(" and ")}, we provide fast, reliable ${service.name.toLowerCase()} for all boiler makes and models. With no call-out charges and transparent pricing, we've helped hundreds of ${location.name} homeowners restore heating and hot water quickly, often on the same day.`
+  const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(
+    " and "
+  )}, we provide fast, reliable ${service.name.toLowerCase()} for all boiler makes and models. With no call-out charges and transparent pricing, we've helped hundreds of ${location.name} homeowners restore heating and hot water quickly, often on the same day.`
 
   return (
     <div className="flex flex-col">
+      {/* SEO Structured Data */}
+      <LocalBusinessSchema location={location} />
+
+      {/* Breadcrumb Schema */}
       <BreadcrumbSchema
         items={[
-          { name: "Home", item: "https://www.birminghamboilerrepairs.com/" },
-          { name: location.name, item: `https://www.birminghamboilerrepairs.com/${location.slug}` },
-          { name: service.name, item: `https://www.birminghamboilerrepairs.com/${location.slug}/${service.slug}` },
+          { name: "Home", item: businessInfo.website + "/" },
+          { name: location.name, item: `${businessInfo.website}/${location.slug}` },
+          { name: service.name, item: `${businessInfo.website}/${location.slug}/${service.slug}` },
         ]}
       />
 
@@ -137,9 +206,9 @@ export default async function LocationServicePage({ params }: Props) {
                       </span>
                     </div>
                     <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-                      <Link href="tel:08003202345" className="flex items-center gap-2">
+                      <Link href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2">
                         <Phone size={16} />
-                        Book Now: 0800 320 2345
+                        Book Now: {businessInfo.phone.freephone}
                       </Link>
                     </Button>
                   </div>
@@ -178,10 +247,10 @@ export default async function LocationServicePage({ params }: Props) {
                   service.slug === "boiler-repairs"
                     ? "repair"
                     : service.slug === "boiler-servicing"
-                      ? "service"
-                      : service.slug === "gas-safety"
-                        ? "gas-safety"
-                        : "all"
+                    ? "service"
+                    : service.slug === "gas-safety"
+                    ? "gas-safety"
+                    : "all"
                 }
                 locationFilter={location.name.toLowerCase()}
                 limit={3}
@@ -266,9 +335,9 @@ export default async function LocationServicePage({ params }: Props) {
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
+              <Link href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2">
                 <Phone size={18} />
-                Call Now: 0800 320 2345
+                Call Now: {businessInfo.phone.freephone}
               </Link>
             </Button>
           </div>
