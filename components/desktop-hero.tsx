@@ -1,125 +1,105 @@
 "use client"
-
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Phone, ShieldCheck, Clock, CheckCircle } from "lucide-react"
+import { Phone, ShieldCheck, Star, CheckCircle, Clock, Ban, PoundSterling } from "lucide-react"
 
 export default function DesktopHero() {
   return (
     <section className="relative bg-gradient-to-r from-secondary to-secondary/80 py-16 text-white overflow-hidden">
-      {/* Background patterns and shapes */}
-      <div className="absolute inset-0 hero-pattern opacity-10"></div>
+      {/* Subtle background pattern */}
+      <div className="absolute inset-0 hero-pattern opacity-10 pointer-events-none" />
+      <div className="absolute top-24 left-[8%] w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-8 right-[12%] w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+      <div className="absolute top-40 right-[18%] w-40 h-40 bg-secondary/10 hero-blob blur-2xl" />
 
-      {/* Floating blobs for depth */}
-      <div className="absolute top-20 left-[10%] w-64 h-64 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-10 right-[15%] w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
-      <div className="absolute top-40 right-[20%] w-40 h-40 bg-secondary/10 hero-blob blur-2xl"></div>
-
-      {/* Content container */}
       <div className="container mx-auto px-4 relative">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div className="flex flex-col justify-center relative z-10 animate-fade-in">
-            {/* Service badge with enhanced shadow */}
-            <div className="mb-6 inline-block rounded-md bg-red-700 px-4 py-2 text-sm font-bold uppercase tracking-wider shadow-lg">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="flex flex-col justify-center z-10 animate-fade-in">
+
+            {/* TRUST BAR */}
+            <div className="flex items-center gap-4 mb-6 bg-white/15 p-3 rounded-md shadow-lg w-fit">
+              <ShieldCheck className="h-6 w-6 text-primary" aria-label="Gas Safe Registered" />
+              <span className="font-semibold text-xs text-white">Gas Safe: 520077</span>
+              <span className="mx-2 text-white/60 text-lg">|</span>
+              <span className="flex items-center gap-1" aria-label="4.9 out of 5 stars">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                ))}
+                <span className="text-xs ml-1 font-medium text-white">4.9/5 from 120+ homeowners</span>
+              </span>
+            </div>
+
+            {/* SERVICE BADGE */}
+            <div className="mb-4 inline-block rounded-md bg-red-700 px-4 py-2 text-xs font-bold uppercase tracking-wider shadow-lg">
               Professional Boiler Services
             </div>
 
-            {/* Main heading with enhanced text shadow */}
-            <h1
-              className="text-4xl lg:text-5xl font-bold leading-tight"
-              style={{ textShadow: "0 4px 8px rgba(0,0,0,0.2)" }}
-            >
-              Boiler Service, Repairs, and Inspections
+            {/* OUTCOME-DRIVEN HEADLINE */}
+            <h1 className="text-5xl font-bold leading-tight mb-3 drop-shadow-md">
+              Same-Day Boiler Repairs & Servicing in Birmingham
             </h1>
 
-            {/* Highlighted text with enhanced border */}
-            <p className="mt-2 text-white/90 font-medium border-l-4 border-primary pl-3 py-1 bg-white/5 backdrop-blur-sm">
-              Same-day service when booked before 12pm
+            {/* URGENCY SUBHEADLINE */}
+            <p className="mb-4 text-lg text-white/90 font-medium border-l-4 border-primary pl-4 py-2 bg-white/5 backdrop-blur-sm">
+              No Call-Out Fee. Book Before 12pm for Same-Day Fix!
             </p>
 
-            <p className="mt-4 text-lg">Professional service from our family-run team of Gas Safe engineers.</p>
-
-            {/* Key benefits */}
-            <div className="mt-4 grid grid-cols-2 gap-2">
-              <div className="flex items-center">
-                <CheckCircle className="mr-2 h-4 w-4 text-primary" />
-                <span className="text-sm">No VAT Charged</span>
+            {/* BENEFITS ROW */}
+            <div className="flex flex-wrap gap-6 mb-8">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-primary" />
+                <span className="text-sm">Gas Safe Registered</span>
               </div>
-              <div className="flex items-center">
-                <CheckCircle className="mr-2 h-4 w-4 text-primary" />
-                <span className="text-sm">No Call-Out Fee</span>
-              </div>
-              <div className="flex items-center">
-                <Clock className="mr-2 h-4 w-4 text-primary" />
+              <div className="flex items-center gap-2">
+                <Clock className="h-5 w-5 text-primary" />
                 <span className="text-sm">Same-Day Service</span>
               </div>
-              <div className="flex items-center">
-                <ShieldCheck className="mr-2 h-4 w-4 text-primary" />
-                <span className="text-sm">Gas Safe Registered</span>
+              <div className="flex items-center gap-2">
+                <PoundSterling className="h-5 w-5 text-primary" />
+                <span className="text-sm">No VAT Charged</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Ban className="h-5 w-5 text-primary" />
+                <span className="text-sm">No Call-Out Fee</span>
               </div>
             </div>
 
-            {/* CTA buttons with enhanced effects */}
-            <div className="mt-6 flex flex-row space-x-4">
-              <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90 group">
+            {/* CTA BUTTONS */}
+            <div className="flex flex-row gap-4 mb-6">
+              <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90 shadow-xl px-8 py-5 text-lg font-bold">
                 <Link href="tel:08003202345" className="flex items-center gap-2">
-                  <Phone size={18} />
-                  Call Now: 0800 320 2345
+                  <Phone size={22} />
+                  Call Now – 0800 320 2345
                 </Link>
               </Button>
-              <Button variant="outline" size="lg" className="border-white bg-white/20 text-white hover:bg-white/30">
+              <Button variant="outline" size="lg" className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-5 text-lg font-bold">
                 Book Online
               </Button>
             </div>
-
-            {/* Reviews section with enhanced styling */}
-            <div className="mt-6 flex items-center bg-white/5 backdrop-blur-sm p-2 rounded-lg inline-block">
-              <div className="flex">
-                <span className="text-lg text-primary" aria-label="5 out of 5 stars">
-                  ★★★★★
-                </span>
-              </div>
-              <p className="ml-2 text-sm">120+ homeowners rate us 4.9/5</p>
+            <div className="text-sm text-white/80 mb-2 pl-1">
+              <span className="font-semibold text-primary">Fastest response: </span>
+              Speak to a Gas Safe engineer today
             </div>
           </div>
 
-          {/* Engineers image section with enhanced 3D effects */}
-          <div className="relative flex items-center justify-center">
-            {/* Layered background elements */}
-            <div className="absolute -bottom-8 -right-8 h-96 w-96 rounded-full bg-primary/20 blur-md"></div>
+          {/* IMAGE / ILLUSTRATION SECTION */}
+          <div className="relative flex flex-col items-center justify-center animate-fade-up">
+            <div className="absolute -bottom-8 -right-8 h-96 w-96 rounded-full bg-primary/20 blur-xl"></div>
             <div className="absolute -top-10 -left-10 h-40 w-40 rounded-full bg-secondary/20 blur-lg"></div>
-
-            {/* Card container with glass effect */}
-            <div className="relative h-96 w-full md:w-[520px] overflow-visible rounded-lg hero-card">
-              {/* Decorative elements for depth */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-lg"></div>
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/30 rounded-full blur-xl"></div>
-
-              {/* Image with enhanced shadow and effects */}
-              <div className="relative h-full w-full overflow-hidden rounded-lg animate-fade-up">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3%20engineers-u9b5dTX1v46GUhyjbRLIwdnF5aKH0I.png"
-                  alt="Our team of Gas Safe registered engineers"
-                  fill
-                  className="object-contain p-1 -translate-y-2 hover:scale-[1.02] transition-transform duration-500"
-                  style={{
-                    filter: "drop-shadow(0 10px 15px rgba(0,0,0,0.2))",
-                  }}
-                  priority
-                  loading="eager"
-                  sizes="(max-width: 768px) 100vw, 520px"
-                  quality={90}
-                />
-              </div>
-
-              {/* Gas Safe badge with enhanced 3D effect - more prominent */}
-              <div className="absolute -bottom-3 right-4 z-10 rounded-md bg-white p-2 shadow-lg flex items-center gap-1">
-                <div className="relative h-8 w-8">
-                  <Image src="/images/gas-safe-1.svg" alt="Gas Safe Registered" fill className="object-contain" />
-                </div>
-                <p className="text-xs font-medium text-secondary">Gas Safe Registered: 520077</p>
-              </div>
+            <div className="relative w-full md:w-[400px] h-[370px] flex items-end justify-center z-10">
+              <Image
+                src="/images/engineers-team.svg"
+                alt="Our team of Gas Safe registered engineers"
+                width={360}
+                height={360}
+                className="drop-shadow-2xl rounded-xl bg-white/5 p-2"
+                priority
+                quality={90}
+              />
+            </div>
+            <div className="mt-3 px-2 py-1 bg-primary/15 rounded text-center text-white/90 text-xs font-medium shadow">
+              Your local, family-run Gas Safe engineers
             </div>
           </div>
         </div>
