@@ -122,7 +122,7 @@ export default async function LocationServicePage({ params }: Props) {
                     <div className="mb-6">
                       <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
                       <ul className="space-y-2">
-                        {service.features.map((feature, i) => (
+                        {service.features.map((feature: string, i: number) => (
                           <li key={i} className="flex items-center">
                             <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
                             <span className="text-gray-700 dark:text-gray-300">{feature}</span>
@@ -153,7 +153,7 @@ export default async function LocationServicePage({ params }: Props) {
                 {service.name} Pricing in {location.name}
               </h2>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                {service.pricing.map((option, index) => (
+                {service.pricing.map((option: any, index: number) => (
                   <Card key={index} className="border shadow-md">
                     <CardContent className="p-6">
                       <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h3>
