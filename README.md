@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/MellingWebStudios/mws4-bbr/master/public/images/logo.png" alt="Birmingham Boiler Repairs" width="180" />
-</p>
-
 <h1 align="center">Birmingham Boiler Repairs Website</h1>
 
 <p align="center">
