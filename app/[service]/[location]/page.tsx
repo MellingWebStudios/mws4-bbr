@@ -17,10 +17,11 @@ type Props = {
   }
 }
 
-// Generate metadata dynamically based on location and service
+// ✅ Async-safe for Next.js 15
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const location = getLocationBySlug(params.location)
-  const service = getServiceBySlug(params.service)
+  const { location: locationSlug, service: serviceSlug } = await params
+  const location = getLocationBySlug(locationSlug)
+  const service  = getServiceBySlug(serviceSlug)
 
   if (!location || !service) {
     return {
@@ -38,32 +39,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 }
 
-// Generate static params for all location/service combinations
+// ✅ Static paths generation for pre-rendering
 export async function generateStaticParams() {
-  const params = []
-
-  for (const location of locations) {
-    for (const service of services) {
-      params.push({
-        location: location.slug,
-        service: service.slug,
-      })
-    }
-  }
-
-  return params
+  return locations.flatMap(location =>
+    services.map(service => ({
+      location: location.slug,
+      service: service.slug,
+    }))
+  )
 }
 
-export default function LocationServicePage({ params }: Props) {
-  const location = getLocationBySlug(params.location)
-  const service = getServiceBySlug(params.service)
+// ✅ Page component MUST be async in Next 15
+export default async function LocationServicePage({ params }: Props) {
+  const { location: locationSlug, service: serviceSlug } = await params
 
-  // If location or service not found, return 404
-  if (!location || !service) {
-    notFound()
-  }
+  const location = getLocationBySlug(locationSlug)
+  const service = getServiceBySlug(serviceSlug)
 
-  // Generate a location-specific intro paragraph
+  if (!location || !service) notFound()
+
   const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(" and ")}, we provide fast, reliable ${service.name.toLowerCase()} for all boiler makes and models. With no call-out charges and transparent pricing, we've helped hundreds of ${location.name} homeowners restore heating and hot water quickly, often on the same day.`
 
   return (
@@ -72,12 +66,10 @@ export default function LocationServicePage({ params }: Props) {
         items={[
           { name: "Home", item: "https://www.birminghamboilerrepairs.com/" },
           { name: location.name, item: `https://www.birminghamboilerrepairs.com/${location.slug}` },
-          {
-            name: service.name,
-            item: `https://www.birminghamboilerrepairs.com/${location.slug}/${service.slug}`,
-          },
+          { name: service.name, item: `https://www.birminghamboilerrepairs.com/${location.slug}/${service.slug}` },
         ]}
       />
+
       {/* Hero Section */}
       <section className="bg-secondary py-16 text-white">
         <div className="container mx-auto px-4">
@@ -86,7 +78,7 @@ export default function LocationServicePage({ params }: Props) {
               <Breadcrumb
                 items={[
                   { label: "Home", href: "/" },
-                  { label: location.name, href: `/${location.slug}`, isCurrent: false },
+                  { label: location.name, href: `/${location.slug}` },
                   { label: service.name, href: `/${location.slug}/${service.slug}`, isCurrent: true },
                 ]}
               />
@@ -102,11 +94,11 @@ export default function LocationServicePage({ params }: Props) {
       {/* Service Callout */}
       <ServiceCallout />
 
-      {/* Main Content Section */}
+      {/* Main Content */}
       <section id="map" className="py-16 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12">
-            {/* Location-specific content */}
+            {/* Map + Features */}
             <Card className="overflow-hidden border shadow-md mb-8">
               <CardContent className="p-0">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -116,11 +108,11 @@ export default function LocationServicePage({ params }: Props) {
                       width="600"
                       height="450"
                       style={{ border: 0 }}
-                      allowFullScreen={true}
+                      allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
                       className="absolute inset-0 w-full h-full"
-                    ></iframe>
+                    />
                   </div>
                   <div className="p-6">
                     <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">
@@ -155,7 +147,7 @@ export default function LocationServicePage({ params }: Props) {
               </CardContent>
             </Card>
 
-            {/* Pricing Section */}
+            {/* Pricing */}
             <div>
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
                 {service.name} Pricing in {location.name}
@@ -176,7 +168,7 @@ export default function LocationServicePage({ params }: Props) {
               </div>
             </div>
 
-            {/* Reviews Section - filtered by location */}
+            {/* Reviews */}
             <div>
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
                 {location.name} Customer Reviews
@@ -263,7 +255,7 @@ export default function LocationServicePage({ params }: Props) {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA */}
       <section className="bg-secondary py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
