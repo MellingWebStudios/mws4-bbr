@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import { Phone, Star, ShieldCheck } from "lucide-react"
+import { Phone, Star, ShieldCheck, PoundSterling, Clock, Ban } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function MobileHero() {
@@ -14,8 +14,14 @@ export default function MobileHero() {
       {/* Content */}
       <div className="relative z-10 animate-fade-in">
         {/* Trust bar */}
+
         <div className="flex items-center gap-2 mb-4 bg-white/10 backdrop-blur-sm p-2 rounded-lg">
-          <ShieldCheck className="h-5 w-5 text-primary" />
+          <Image
+            src="/images/gas-safe-1.svg"
+            width={20}
+            height={20}
+            alt="Gas Safe Registered"
+          />
           <span className="text-xs">Gas Safe: 520077</span>
           <div className="flex ml-2">
             {[...Array(5)].map((_, i) => (
@@ -37,21 +43,21 @@ export default function MobileHero() {
           No Call-Out Fee. Book Before 12pm for Same-Day Fix!
         </p>
         {/* Key benefits as icons only */}
-        <div className="mt-4 grid grid-cols-2 gap-2">
+        <div className="mt-4 grid grid-cols-2 gap-3">
           <div className="flex items-center">
             <ShieldCheck className="mr-2 h-4 w-4 text-primary" />
             <span className="text-xs">Gas Safe Registered</span>
           </div>
           <div className="flex items-center">
-            <span className="mr-2 h-4 w-4 text-primary">£</span>
+            <PoundSterling className="mr-2 h-4 w-4 text-primary" />
             <span className="text-xs">No VAT Charged</span>
           </div>
           <div className="flex items-center">
-            <span className="mr-2 h-4 w-4 text-primary">⏰</span>
+            <Clock className="mr-2 h-4 w-4 text-primary" />
             <span className="text-xs">Same-Day Service</span>
           </div>
           <div className="flex items-center">
-            <span className="mr-2 h-4 w-4 text-primary">🚫</span>
+            <Ban className="mr-2 h-4 w-4 text-primary" />
             <span className="text-xs">No Call-Out Fee</span>
           </div>
         </div>
@@ -64,7 +70,11 @@ export default function MobileHero() {
             <Phone className="h-4 w-4" />
             Call Now – 0800 320 2345
           </Link>
-          <Button variant="outline" size="lg" className="border-white bg-white/20 text-white hover:bg-white/30 w-full">
+          <Button
+            variant="outline"
+            size="lg"
+            className="border-white bg-white/20 text-white hover:bg-white/30 w-full"
+          >
             Book Online
           </Button>
         </div>
@@ -85,5 +95,5 @@ export default function MobileHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

@@ -18,17 +18,25 @@ export default function DesktopHero() {
           <div className="flex flex-col justify-center z-10 animate-fade-in">
 
             {/* TRUST BAR */}
-            <div className="flex items-center gap-4 mb-6 bg-white/15 p-3 rounded-md shadow-lg w-fit">
-              <ShieldCheck className="h-6 w-6 text-primary" aria-label="Gas Safe Registered" />
-              <span className="font-semibold text-xs text-white">Gas Safe: 520077</span>
-              <span className="mx-2 text-white/60 text-lg">|</span>
-              <span className="flex items-center gap-1" aria-label="4.9 out of 5 stars">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-                ))}
-                <span className="text-xs ml-1 font-medium text-white">4.9/5 from 120+ homeowners</span>
-              </span>
-            </div>
+
+<div className="flex items-center gap-4 mb-6 bg-white/15 p-3 rounded-md shadow-lg w-fit">
+  <Image 
+    src="/images/gas-safe-1.svg" 
+    width={28} 
+    height={28} 
+    alt="Gas Safe Registered" 
+    className="object-contain"
+  />
+  <span className="font-semibold text-xs text-white">Gas Safe: 520077</span>
+  <span className="mx-2 text-white/60 text-lg">|</span>
+  <span className="flex items-center gap-1" aria-label="4.9 out of 5 stars">
+    {[...Array(5)].map((_, i) => (
+      <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+    ))}
+    <span className="text-xs ml-1 font-medium text-white">4.9/5 from 120+ homeowners</span>
+  </span>
+</div>
+
 
             {/* SERVICE BADGE */}
             <div className="mb-4 inline-block rounded-md bg-red-700 px-4 py-2 text-xs font-bold uppercase tracking-wider shadow-lg">
