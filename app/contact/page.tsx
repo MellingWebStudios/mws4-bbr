@@ -40,15 +40,23 @@ export default function ContactPage() {
                       <h3 className="font-bold text-gray-900 dark:text-white">Phone</h3>
                       <p className="text-gray-600 dark:text-gray-400">
                         Freephone:{" "}
-                        <Link href="tel:08003202345" className="text-secondary hover:underline">
+                        <a
+                          href="tel:08003202345"
+                          className="text-secondary hover:underline"
+                          aria-label="Call Freephone"
+                        >
                           0800 320 2345
-                        </Link>
+                        </a>
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         Mobile:{" "}
-                        <Link href="tel:07807776411" className="text-secondary hover:underline">
+                        <a
+                          href="tel:07807776411"
+                          className="text-secondary hover:underline"
+                          aria-label="Call Mobile"
+                        >
                           07807 776 411
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </CardContent>
@@ -60,9 +68,13 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white">Email</h3>
                       <p className="text-gray-600 dark:text-gray-400">
-                        <Link href="mailto:boilers.birmingham@yahoo.com" className="text-secondary hover:underline">
+                        <a
+                          href="mailto:boilers.birmingham@yahoo.com"
+                          className="text-secondary hover:underline"
+                          aria-label="Email"
+                        >
                           boilers.birmingham@yahoo.com
-                        </Link>
+                        </a>
                       </p>
                     </div>
                   </CardContent>
@@ -94,10 +106,14 @@ export default function ContactPage() {
               <div className="mt-8">
                 <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Need Urgent Help?</h3>
                 <Button asChild size="lg" className="w-full bg-primary text-gray-900 hover:bg-primary/90">
-                  <Link href="tel:08003202345" className="flex items-center justify-center gap-2">
+                  <a
+                    href="tel:08003202345"
+                    className="flex items-center justify-center gap-2"
+                    aria-label="Call Now: 0800 320 2345"
+                  >
                     <Phone size={18} />
                     Call Now: 0800 320 2345
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -145,10 +161,14 @@ export default function ContactPage() {
               <p className="mt-2 text-lg">Contact us today for fast, reliable service</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
+              <a
+                href="tel:08003202345"
+                className="flex items-center gap-2"
+                aria-label="Call Now: 0800 320 2345"
+              >
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

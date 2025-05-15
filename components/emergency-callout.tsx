@@ -16,9 +16,9 @@ const ServiceCallout = () => {
             </div>
             <div>
               <p className="text-sm">Call our service line</p>
-              <Link href="tel:08003202345" className="text-xl font-bold hover:underline">
+              <a href="tel:08003202345" className="text-xl font-bold hover:underline" aria-label="Call our service line">
                 0800 320 2345
-              </Link>
+              </a>
             </div>
           </div>
         </div>

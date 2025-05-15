@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Phone, Star, ShieldCheck, PoundSterling, Clock, Ban } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import CallNowButton from "@/components/ui/CallNowButton"
 
 export default function MobileHero() {
   return (
@@ -61,23 +62,28 @@ export default function MobileHero() {
             <span className="text-xs">No Call-Out Fee</span>
           </div>
         </div>
+
         {/* CTA buttons */}
         <div className="mt-6 flex flex-col space-y-3">
-          <Link
-            href="tel:08003202345"
-            className="inline-flex w-full items-center justify-center gap-2 rounded-md bg-primary py-3 font-semibold text-gray-900 shadow-md h-12 animate-pulse-subtle"
-          >
-            <Phone className="h-4 w-4" />
-            Call Now – 0800 320 2345
-          </Link>
+          {/* ✅ Reusable call button */}
+          <CallNowButton pulse />
+
+          {/* ✅ Book Online button as native <a> (best practice for external links) */}
           <Button
+            asChild
             variant="outline"
             size="lg"
             className="border-white bg-white/20 text-white hover:bg-white/30 w-full"
           >
-            Book Online
+            <a
+              href="/booking"
+              className="inline-flex items-center justify-center gap-2"
+            >
+              Book Online
+            </a>
           </Button>
         </div>
+
         {/* Cartoon cameo */}
         <div className="mx-auto mt-8 max-w-[220px] relative animate-fade-up">
           <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl scale-90"></div>

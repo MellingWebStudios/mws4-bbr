@@ -36,10 +36,10 @@ export default function LocationServiceCard({ location, service }: LocationServi
           </Link>
         </Button>
         <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-          <Link href="tel:08003202345" className="flex items-center gap-2">
+          <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now">
             <Phone size={16} />
             Call Now
-          </Link>
+          </a>
         </Button>
       </CardFooter>
     </Card>

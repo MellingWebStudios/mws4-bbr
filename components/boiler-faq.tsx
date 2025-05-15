@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Button } from "@/components/ui/button"
-import Link from "next/link"
 import { Phone } from "lucide-react"
 
 const BoilerFAQ = () => {
@@ -24,10 +23,10 @@ const BoilerFAQ = () => {
           </ul>
           <p>If you've checked these and your boiler still won't fire up, you likely need a professional repair.</p>
           <Button asChild className="mt-4 bg-secondary text-white">
-            <Link href="tel:08003202345" className="flex items-center gap-2">
+            <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call for help: 0800 320 2345">
               <Phone size={16} />
               Call for help: 0800 320 2345
-            </Link>
+            </a>
           </Button>
         </>
       ),
@@ -46,10 +45,10 @@ const BoilerFAQ = () => {
           </ul>
           <p>This typically requires a professional diagnosis as it often involves internal boiler components.</p>
           <Button asChild className="mt-4 bg-secondary text-white">
-            <Link href="tel:08003202345" className="flex items-center gap-2">
+            <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Book a repair: 0800 320 2345">
               <Phone size={16} />
               Book a repair: 0800 320 2345
-            </Link>
+            </a>
           </Button>
         </>
       ),
@@ -71,10 +70,10 @@ const BoilerFAQ = () => {
             attention.
           </p>
           <Button asChild className="mt-4 bg-secondary text-white">
-            <Link href="tel:08003202345" className="flex items-center gap-2">
+            <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Get it fixed: 0800 320 2345">
               <Phone size={16} />
               Get it fixed: 0800 320 2345
-            </Link>
+            </a>
           </Button>
         </>
       ),
@@ -95,10 +94,10 @@ const BoilerFAQ = () => {
             Important: If you notice a significant leak, turn off your boiler and water supply, and call us immediately.
           </p>
           <Button asChild className="mt-4 bg-red-600 text-white">
-            <Link href="tel:08003202345" className="flex items-center gap-2">
+            <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Emergency call: 0800 320 2345">
               <Phone size={16} />
               Emergency call: 0800 320 2345
-            </Link>
+            </a>
           </Button>
         </>
       ),

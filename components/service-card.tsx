@@ -42,10 +42,10 @@ export default function ServiceCard({ id, title, description, image, features, l
                 </Link>
               </Button>
               <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
-                <Link href="tel:08003202345" className="flex items-center gap-2">
+                <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Book Now">
                   <Phone size={16} />
                   Book Now
-                </Link>
+                </a>
               </Button>
             </div>
           </div>

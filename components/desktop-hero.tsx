@@ -16,27 +16,32 @@ export default function DesktopHero() {
       <div className="container mx-auto px-4 relative">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col justify-center z-10 animate-fade-in">
-
             {/* TRUST BAR */}
 
-<div className="flex items-center gap-4 mb-6 bg-white/15 p-3 rounded-md shadow-lg w-fit">
-  <Image 
-    src="/images/gas-safe-1.svg" 
-    width={28} 
-    height={28} 
-    alt="Gas Safe Registered" 
-    className="object-contain"
-  />
-  <span className="font-semibold text-xs text-white">Gas Safe: 520077</span>
-  <span className="mx-2 text-white/60 text-lg">|</span>
-  <span className="flex items-center gap-1" aria-label="4.9 out of 5 stars">
-    {[...Array(5)].map((_, i) => (
-      <Star key={i} className="h-5 w-5 fill-primary text-primary" />
-    ))}
-    <span className="text-xs ml-1 font-medium text-white">4.9/5 from 120+ homeowners</span>
-  </span>
-</div>
-
+            <div className="flex items-center gap-4 mb-6 bg-white/15 p-3 rounded-md shadow-lg w-fit">
+              <Image
+                src="/images/gas-safe-1.svg"
+                width={28}
+                height={28}
+                alt="Gas Safe Registered"
+                className="object-contain"
+              />
+              <span className="font-semibold text-xs text-white">
+                Gas Safe: 520077
+              </span>
+              <span className="mx-2 text-white/60 text-lg">|</span>
+              <span
+                className="flex items-center gap-1"
+                aria-label="4.9 out of 5 stars"
+              >
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-primary text-primary" />
+                ))}
+                <span className="text-xs ml-1 font-medium text-white">
+                  4.9/5 from 120+ homeowners
+                </span>
+              </span>
+            </div>
 
             {/* SERVICE BADGE */}
             <div className="mb-4 inline-block rounded-md bg-red-700 px-4 py-2 text-xs font-bold uppercase tracking-wider shadow-lg">
@@ -75,18 +80,32 @@ export default function DesktopHero() {
 
             {/* CTA BUTTONS */}
             <div className="flex flex-row gap-4 mb-6">
-              <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90 shadow-xl px-8 py-5 text-lg font-bold">
-                <Link href="tel:08003202345" className="flex items-center gap-2">
+              <Button
+                asChild
+                size="lg"
+                className="bg-primary text-gray-900 hover:bg-primary/90 shadow-xl px-8 py-5 text-lg font-bold"
+              >
+                <a
+                  href="tel:08003202345"
+                  className="flex items-center gap-2"
+                  aria-label="Call Now – 0800 320 2345"
+                >
                   <Phone size={22} />
                   Call Now – 0800 320 2345
-                </Link>
+                </a>
               </Button>
-              <Button variant="outline" size="lg" className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-5 text-lg font-bold">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-5 text-lg font-bold"
+              >
                 Book Online
               </Button>
             </div>
             <div className="text-sm text-white/80 mb-2 pl-1">
-              <span className="font-semibold text-primary">Fastest response: </span>
+              <span className="font-semibold text-primary">
+                Fastest response:{" "}
+              </span>
               Speak to a Gas Safe engineer today
             </div>
           </div>
@@ -113,5 +132,5 @@ export default function DesktopHero() {
         </div>
       </div>
     </section>
-  )
+  );
 }

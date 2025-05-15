@@ -34,7 +34,13 @@ export default function PromoCallout({ title, description, ctaText, ctaLink, var
               asChild
               className={variant === "highlight" ? "bg-primary text-gray-900" : "bg-secondary text-white"}
             >
-              <Link href={ctaLink}>{ctaText}</Link>
+              {ctaLink.startsWith("tel:") || ctaLink.startsWith("mailto:") ? (
+                <a href={ctaLink} className="flex items-center gap-2" aria-label={ctaText}>
+                  {ctaText}
+                </a>
+              ) : (
+                <Link href={ctaLink}>{ctaText}</Link>
+              )}
             </Button>
           </div>
         </div>

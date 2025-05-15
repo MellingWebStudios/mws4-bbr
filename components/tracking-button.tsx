@@ -42,9 +42,15 @@ export default function TrackingButton({
 
   return (
     <Button asChild className={className} onClick={handleClick}>
-      <Link href={href} className="flex items-center gap-2">
-        {children}
-      </Link>
+      {href.startsWith("tel:") || href.startsWith("mailto:") ? (
+        <a href={href} className="flex items-center gap-2" aria-label={eventLabel}>
+          {children}
+        </a>
+      ) : (
+        <Link href={href} className="flex items-center gap-2">
+          {children}
+        </Link>
+      )}
     </Button>
   )
 }

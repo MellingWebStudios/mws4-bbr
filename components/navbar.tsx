@@ -117,11 +117,11 @@ const Navbar = () => {
               </nav>
               <div className="flex flex-col items-end">
                 <Button asChild className="bg-red-600 text-white hover:bg-red-700">
-                  <Link href="tel:08003202345" className="flex items-center gap-2">
+                  <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call 0800 320 2345">
                     <Phone size={16} />
                     <span className="hidden lg:inline">0800 320 2345</span>
                     <span className="lg:hidden">Call Now</span>
-                  </Link>
+                  </a>
                 </Button>
                 <span className="mt-1 text-xs text-gray-500">Same-day service when booked before 12pm</span>
               </div>
@@ -129,9 +129,9 @@ const Navbar = () => {
 
             <div className="flex md:hidden">
               <Button asChild variant="outline" size="icon" className="mr-2 border-red-600 fill-red-600 text-red-600">
-                <Link href="tel:08003202345">
+                <a href="tel:08003202345" aria-label="Call 0800 320 2345">
                   <Phone size={20} />
-                </Link>
+                </a>
               </Button>
               <Button
                 variant="outline"
@@ -202,10 +202,10 @@ const Navbar = () => {
 
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
                   <Button asChild className="w-full bg-red-600 text-white hover:bg-red-700">
-                    <Link href="tel:08003202345" className="flex items-center justify-center gap-2" onClick={closeMenu}>
+                    <a href="tel:08003202345" className="flex items-center justify-center gap-2" aria-label="Call 0800 320 2345">
                       <Phone size={16} />
                       <span>0800 320 2345</span>
-                    </Link>
+                    </a>
                   </Button>
                   <p className="mt-2 text-center text-xs text-gray-500">Same-day service when booked before 12pm</p>
                 </div>

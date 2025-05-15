@@ -8,9 +8,9 @@ const TopBar = () => {
         <div className="flex items-center text-xs">
           <span className="hidden md:inline-flex items-center">
             <Mail className="mr-1 h-3 w-3" />
-            <Link href="mailto:boilers.birmingham@yahoo.com" className="hover:text-primary mr-3">
+            <a href="mailto:boilers.birmingham@yahoo.com" className="hover:text-primary mr-3" aria-label="Email">
               boilers.birmingham@yahoo.com
-            </Link>
+            </a>
             <Clock className="mr-1 h-3 w-3" />
             <span>Mon-Fri: 9:00-17:00</span>
           </span>

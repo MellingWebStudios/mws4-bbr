@@ -44,17 +44,17 @@ const PricingCard = ({ title, price, features, ctaText, ctaLink, highlighted = f
         </ul>
       </CardContent>
       <CardFooter className="flex-col space-y-2 pb-6">
-        <Button
-          asChild
-          className={cn(
-            "w-full",
-            highlighted
-              ? "bg-secondary text-white hover:bg-secondary/90"
-              : "bg-primary text-gray-900 hover:bg-primary/90",
-          )}
-        >
-          <Link href={ctaLink}>{ctaText}</Link>
-        </Button>
+        {ctaLink && (
+          <Button asChild className="w-full mt-4">
+            {ctaLink.startsWith("tel:") || ctaLink.startsWith("mailto:") ? (
+              <a href={ctaLink} className="flex items-center gap-2" aria-label={ctaText}>
+                {ctaText}
+              </a>
+            ) : (
+              <Link href={ctaLink}>{ctaText}</Link>
+            )}
+          </Button>
+        )}
         <p className="text-xs text-center text-gray-500 dark:text-gray-400">Takes 60 sec – no payment taken</p>
       </CardFooter>
     </Card>

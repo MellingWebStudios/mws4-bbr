@@ -174,10 +174,10 @@ export default function AboutPage() {
               <p className="mt-2 text-lg">Contact our team for all your boiler needs</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
+              <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

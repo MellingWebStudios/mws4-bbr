@@ -206,10 +206,10 @@ export default async function LocationServicePage({ params }: Props) {
                       </span>
                     </div>
                     <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-                      <Link href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2">
+                      <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2" aria-label={`Call Now: ${businessInfo.phone.freephone}`}>
                         <Phone size={16} />
                         Book Now: {businessInfo.phone.freephone}
-                      </Link>
+                      </a>
                     </Button>
                   </div>
                 </div>
@@ -335,10 +335,10 @@ export default async function LocationServicePage({ params }: Props) {
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2">
+              <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2" aria-label={`Call Now: ${businessInfo.phone.freephone}`}>
                 <Phone size={18} />
                 Call Now: {businessInfo.phone.freephone}
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

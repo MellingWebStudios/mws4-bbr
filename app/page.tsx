@@ -265,10 +265,10 @@ export default function Home() {
               <p className="mt-2 text-lg">Professional service, repairs, and inspections from Gas Safe engineers</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90 w-full md:w-auto">
-              <Link href="tel:08003202345" className="flex items-center justify-center gap-2">
+              <a href="tel:08003202345" className="flex items-center justify-center gap-2" aria-label="Call Now: 0800 320 2345">
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </Link>
+              </a>
             </Button>
           </div>
         </div>

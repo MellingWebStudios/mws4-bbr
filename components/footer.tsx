@@ -126,34 +126,37 @@ const Footer = () => {
                 <Phone className="mr-2 h-5 w-5 text-secondary" />
                 <div>
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Freephone</p>
-                  <Link
+                  <a
                     href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
                     className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                    aria-label="Call Freephone"
                   >
                     {businessInfo.phone.freephone}
-                  </Link>
+                  </a>
                 </div>
               </li>
               <li className="flex items-start">
                 <Phone className="mr-2 h-5 w-5 text-secondary" />
                 <div>
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Mobile</p>
-                  <Link
+                  <a
                     href={`tel:${businessInfo.phone.mobile.replace(/\s/g, "")}`}
                     className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                    aria-label="Call Mobile"
                   >
                     {businessInfo.phone.mobile}
-                  </Link>
+                  </a>
                 </div>
               </li>
               <li className="flex items-start">
                 <Mail className="mr-2 h-5 w-5 text-secondary" />
-                <Link
+                <a
                   href={`mailto:${businessInfo.email}`}
                   className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  aria-label="Email"
                 >
                   {businessInfo.email}
-                </Link>
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-secondary" />

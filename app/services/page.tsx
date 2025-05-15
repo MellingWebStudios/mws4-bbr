@@ -138,10 +138,10 @@ export default function ServicesPage() {
                   Not sure if we cover your area? Give us a call and we'll let you know.
                 </p>
                 <Button asChild className="bg-primary text-gray-900 hover:bg-primary/90">
-                  <Link href="tel:08003202345" className="flex items-center gap-2">
+                  <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
                     <Phone size={16} />
                     Call Now: 0800 320 2345
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>
@@ -161,10 +161,10 @@ export default function ServicesPage() {
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
+              <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </Link>
+              </a>
             </Button>
           </div>
         </div>
