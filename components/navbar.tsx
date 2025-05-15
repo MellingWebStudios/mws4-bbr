@@ -95,15 +95,10 @@ const Navbar = () => {
               {/* Mobile compact title */}
               <div className="md:hidden">
                 <h1 className="text-sm font-bold text-gray-900 dark:text-white">
-                  <span className="text-secondary">Birmingham</span> <span className="text-red-600">Boiler</span>
+                  <span className="text-secondary">Birmingham</span> <span className="text-red-600">Boiler Repairs</span>
                 </h1>
               </div>
             </Link>
-
-            {/* Rating badge - visible on all screens */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 top-2 md:top-4">
-              <RatingBadge onClick={() => setReviewsModalOpen(true)} />
-            </div>
 
             <div className="hidden md:flex md:items-center md:space-x-6">
               <nav className="flex items-center space-x-6">
@@ -133,7 +128,7 @@ const Navbar = () => {
             </div>
 
             <div className="flex md:hidden">
-              <Button asChild variant="outline" size="icon" className="mr-2 border-red-600 text-red-600">
+              <Button asChild variant="outline" size="icon" className="mr-2 border-red-600 fill-red-600 text-red-600">
                 <Link href="tel:08003202345">
                   <Phone size={20} />
                 </Link>
@@ -164,17 +159,19 @@ const Navbar = () => {
             {/* Menu panel */}
             <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white p-4 shadow-xl dark:bg-gray-900 transform transition-transform duration-200 ease-in-out">
               <div className="flex items-center justify-between mb-8 pt-2">
-                <div className="flex items-center">
+                <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8">
                     <Image
-                      src="/images/boiler-mascot-logo.png"
-                      alt="Birmingham Boiler Repairs Logo"
-                      fill
-                      className="object-contain"
+                    src="/images/boiler-mascot-logo.png"
+                    alt="Birmingham Boiler Repairs Logo"
+                    fill
+                    className="object-contain"
                     />
                   </div>
-                  <span className="ml-2 text-sm font-bold">Birmingham Boiler</span>
-                </div>
+                    <span className="text-secondary">Birmingham</span>
+                    <span className="text-red-600">Boiler Repairs</span>
+                  </div>
+
                 <Button
                   variant="ghost"
                   size="icon"
