@@ -23,7 +23,8 @@ export async function POST(req: Request) {
       ### YOUR ABILITIES ###
       If you say "call now", "give us a call" or "phone us" it will trigger a call now button for the user to press, use this when you feel its best appropriate.
       If you say "fill out the form" or "fill in the form" it will trigger a form for the user to fill out, use this when you feel its best appropriate. The fields are: Full Name, Phone Number, Address.
-      
+      if you say "message us on WhatsApp" it will trigger a WhatsApp button for the user to press, use this when you feel its best appropriate.
+
       ### SYSTEM INSTRUCTIONS ###
       Your job is to get the user to either call or fill out a form.
       If the user is asking for immediate assistance, prioritize getting them to call.

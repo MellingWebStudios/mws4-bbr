@@ -9,17 +9,18 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar } from "@/components/ui/avatar"
 import { SheetClose } from "@/components/ui/sheet"
 
-const DAVE_PHONE_NUMBER = "07562533967"
+const DAVE_PHONE_NUMBER = "08003202345"
+const DAVE_WA_NUMBER = DAVE_PHONE_NUMBER.replace(/^0/, "44")
 
+// --- WhatsApp Button ---
 function WhatsAppButton({ phone, message }: { phone: string, message?: string }) {
-  const formatted = phone.replace(/^0/, "44")
-  const url = `https://wa.me/${formatted}?text=${encodeURIComponent(message || "Hi Dave, I need help with my boiler.")}`
+  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message || "Hi Dave, I need help with my boiler.")}`
   return (
     <Button
       asChild
       variant="outline"
       size="lg"
-      className="w-full justify-center border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10 mt-2"
+      className="w-full justify-center border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10 mt-2 rounded-xl font-semibold"
     >
       <a href={url} target="_blank" rel="noopener noreferrer">
         <MessageCircle className="mr-2 mb-0.5" size={20} />
@@ -29,13 +30,14 @@ function WhatsAppButton({ phone, message }: { phone: string, message?: string })
   )
 }
 
+// --- Call Now Button ---
 function CallNowButton({ phone }: { phone: string }) {
   return (
     <Button
       asChild
       variant="outline"
       size="lg"
-      className="w-full justify-center border-green-600 text-green-600 hover:bg-green-600/10 mt-2"
+      className="w-full justify-center border-green-600 text-green-600 hover:bg-green-600/10 mt-2 rounded-xl font-semibold"
     >
       <a href={`tel:${phone}`}>
         <Phone className="mr-2 mb-0.5" size={20} />
@@ -45,6 +47,7 @@ function CallNowButton({ phone }: { phone: string }) {
   )
 }
 
+// --- Lead Capture Form (Consistent Style) ---
 function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
   const [formData, setFormData] = useState({ name: "", phone: "", address: "" })
   const [submitted, setSubmitted] = useState(false)
@@ -62,21 +65,20 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
 
   if (submitted) {
     return (
-      <div className="flex flex-col items-center justify-center mt-4 p-4 rounded-2xl border border-green-200 bg-green-50 text-green-700 text-base animate-fade-in">
+      <div className="flex flex-col items-center justify-center mt-4 p-6 rounded-2xl border border-green-200 bg-green-50 text-green-700 text-base shadow-sm animate-fade-in">
         <svg width={48} height={48} fill="none" viewBox="0 0 48 48">
           <circle cx={24} cy={24} r={24} fill="#22C55E" opacity="0.2" />
           <path d="M15 25l6 6 12-12" stroke="#22C55E" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-        <span className="font-bold mt-2 mb-1">Thank you! Your details have been sent to Dave.</span>
-        <span>
+        <span className="font-bold mt-2 mb-1 text-lg">Thank you! Your details have been sent to Dave.</span>
+        <span className="text-center">
           He'll call you back soon.<br />
           For urgent issues,{" "}
-          <a href={`tel:${DAVE_PHONE_NUMBER}`} className="underline text-green-900 font-bold">
+          <a href={`tel:08003202345`} className="underline text-green-900 font-bold">
             call now
           </a>
           .
         </span>
-        <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I just requested a callback via your website!" />
       </div>
     )
   }
@@ -84,17 +86,50 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-3 mt-4 p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm"
+      className="w-full max-w-md mx-auto mt-4 bg-white border border-gray-200 rounded-2xl shadow-md flex flex-col gap-5 p-6"
+      style={{ minWidth: 320 }}
     >
-      <Input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required autoComplete="name"/>
-      <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required autoComplete="tel"/>
-      <Input name="address" placeholder="Address" value={formData.address} onChange={handleChange} required autoComplete="street-address"/>
-      <Button type="submit" size="lg" className="w-full rounded-xl font-semibold">
+      <Input
+        name="name"
+        placeholder="Full Name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+        className="h-12 rounded-xl border-gray-200 focus:border-blue-400 transition"
+        autoComplete="name"
+      />
+      <Input
+        name="phone"
+        placeholder="Phone Number"
+        value={formData.phone}
+        onChange={handleChange}
+        required
+        className="h-12 rounded-xl border-gray-200 focus:border-blue-400 transition"
+        autoComplete="tel"
+      />
+      <Input
+        name="address"
+        placeholder="Address"
+        value={formData.address}
+        onChange={handleChange}
+        required
+        className="h-12 rounded-xl border-gray-200 focus:border-blue-400 transition"
+        autoComplete="street-address"
+      />
+      <Button
+        type="submit"
+        size="lg"
+        className="w-full h-12 mt-2 rounded-full font-semibold text-lg bg-yellow-400 hover:bg-yellow-500 text-white transition"
+        style={{
+          boxShadow: "0 2px 8px 0 rgba(0,0,0,0.06)"
+        }}
+      >
         Submit
       </Button>
     </form>
   )
 }
+
 
 const SUGGESTED_QUESTIONS = [
   "What are your prices for boiler servicing?",
@@ -110,6 +145,7 @@ const Chatbot = () => {
   const [forceShowForm, setForceShowForm] = useState(false)
   const [formShownForMessageId, setFormShownForMessageId] = useState<string | null>(null)
   const [buttonShownForMessageId, setButtonShownForMessageId] = useState<string | null>(null)
+  const [whatsAppShownForMessageId, setWhatsAppShownForMessageId] = useState<string | null>(null)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const [isUserTyping, setIsUserTyping] = useState(false)
@@ -127,7 +163,7 @@ const Chatbot = () => {
 
   const handleLeadSubmit = (data: any) => {
     console.log("Lead form submitted:", data)
-    // Hook up API/email/WhatsApp here if needed
+    // Add API/email/WhatsApp integration if needed
   }
 
   const handleSuggestionClick = (question: string) => {
@@ -156,21 +192,22 @@ const Chatbot = () => {
     }
   }
 
-  // AI-triggered form/call button
+  // --- AI triggers: form, call, WhatsApp ---
   useEffect(() => {
     const lastMsg = messages[messages.length - 1]
     if (!lastMsg || lastMsg.role !== "assistant") return
 
     const msgContent = lastMsg.content.toLowerCase()
 
-    // Show lead form
+    // Lead form trigger
     if (msgContent.includes("fill out") && msgContent.includes("form")) {
       setFormShownForMessageId(lastMsg.id)
       setButtonShownForMessageId(null)
+      setWhatsAppShownForMessageId(null)
       setForceShowForm(false)
       return
     }
-    // Show call button
+    // Call button trigger
     if (
       msgContent.includes("call now") ||
       msgContent.includes("give us a call") ||
@@ -178,11 +215,25 @@ const Chatbot = () => {
     ) {
       setButtonShownForMessageId(lastMsg.id)
       setFormShownForMessageId(null)
+      setWhatsAppShownForMessageId(null)
+      setForceShowForm(false)
+      return
+    }
+    // WhatsApp button trigger (AI mentions WhatsApp as a contact channel)
+    if (
+      msgContent.includes("whatsapp") ||
+      msgContent.includes("message us on whatsapp") ||
+      msgContent.includes("chat on whatsapp")
+    ) {
+      setWhatsAppShownForMessageId(lastMsg.id)
+      setFormShownForMessageId(null)
+      setButtonShownForMessageId(null)
       setForceShowForm(false)
       return
     }
     setFormShownForMessageId(null)
     setButtonShownForMessageId(null)
+    setWhatsAppShownForMessageId(null)
     setForceShowForm(false)
   }, [messages])
 
@@ -248,8 +299,10 @@ const Chatbot = () => {
                 {message.role === "assistant" && buttonShownForMessageId === message.id && (
                   <>
                     <CallNowButton phone={DAVE_PHONE_NUMBER} />
-                    <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I need help with my boiler." />
                   </>
+                )}
+                {message.role === "assistant" && whatsAppShownForMessageId === message.id && (
+                  <WhatsAppButton phone={DAVE_WA_NUMBER} message="Hi Dave, I need help with my boiler." />
                 )}
               </div>
               {message.role === "user" && (
@@ -281,7 +334,7 @@ const Chatbot = () => {
                     Request a Callback
                   </Button>
                   <CallNowButton phone={DAVE_PHONE_NUMBER} />
-                  <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I need help with my boiler." />
+                  <WhatsAppButton phone={DAVE_WA_NUMBER} message="Hi Dave, I need help with my boiler." />
                 </div>
               </div>
             </div>
