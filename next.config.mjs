@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    serverActions: true,
+  },
   // Ensure that sitemap.xml and robots.txt are generated during build
   async rewrites() {
     return [

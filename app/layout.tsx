@@ -61,7 +61,6 @@ export default function RootLayout({
               </Suspense>
               <Footer />
               <ChatbotButton />
-              <WhatsAppButton />
               <StickyCallBar />
               <CookieConsentBanner />
             </div>
