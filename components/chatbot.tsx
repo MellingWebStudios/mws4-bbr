@@ -2,7 +2,7 @@
 
 import { useChat } from 'ai/react'
 import { useState, useRef, useEffect } from "react"
-import { Send, X, Sparkles } from 'lucide-react'
+import { Send, X, Sparkles, Phone } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -33,6 +33,19 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
   )
 }
 
+// --- Call Now Button ---
+function CallNowButton({ phone }: { phone: string }) {
+  return (
+    <a
+      href={`tel:${phone}`}
+      className="block w-full rounded-lg bg-green-600 hover:bg-green-700 transition text-white text-center py-3 text-lg font-bold shadow-md mt-4"
+    >
+      <Phone className="inline-block mr-2 mb-1" size={22} />
+      Call Now
+    </a>
+  )
+}
+
 const SUGGESTED_QUESTIONS = [
   "What are your prices for boiler servicing?",
   "Do you offer emergency repairs?",
@@ -41,6 +54,8 @@ const SUGGESTED_QUESTIONS = [
   "Are you Gas Safe registered?",
 ]
 
+const DAVE_PHONE_NUMBER = "07562533967" // Set Dave's number here
+
 const Chatbot = () => {
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     api: '/api/chat',
@@ -48,6 +63,7 @@ const Chatbot = () => {
 
   const [showSuggestions, setShowSuggestions] = useState(true)
   const [formShownForMessageId, setFormShownForMessageId] = useState<string | null>(null)
+  const [buttonShownForMessageId, setButtonShownForMessageId] = useState<string | null>(null)
   const [showConfirmation, setShowConfirmation] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
@@ -94,19 +110,40 @@ const Chatbot = () => {
     }
   }
 
-  // --- Detect when to show the form ---
+  // --- Detect when to show the form or button ---
   useEffect(() => {
-    // If a new assistant message includes "fill out" and "form", show form
     const lastMsg = messages[messages.length - 1]
+    if (!lastMsg || lastMsg.role !== "assistant") return
+
+    const msgContent = lastMsg.content.toLowerCase()
+
+    // Show lead form if form keywords are present
     if (
-      lastMsg &&
-      lastMsg.role === "assistant" &&
-      lastMsg.content.toLowerCase().includes("fill out") &&
-      lastMsg.content.toLowerCase().includes("form")
+      msgContent.includes("fill out") &&
+      msgContent.includes("form")
     ) {
       setFormShownForMessageId(lastMsg.id)
+      setButtonShownForMessageId(null)
       setShowConfirmation(false)
+      return
     }
+
+    // Show call button if any call keywords are present
+    if (
+      msgContent.includes("call now") ||
+      msgContent.includes("give us a call") ||
+      msgContent.includes("phone us")
+    ) {
+      setButtonShownForMessageId(lastMsg.id)
+      setFormShownForMessageId(null)
+      setShowConfirmation(false)
+      return
+    }
+
+    // Otherwise reset both
+    setFormShownForMessageId(null)
+    setButtonShownForMessageId(null)
+    setShowConfirmation(false)
   }, [messages])
 
   return (
@@ -163,6 +200,7 @@ const Chatbot = () => {
                 }}
               >
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+
                 {/* Show form for the correct assistant message */}
                 {message.role === "assistant" &&
                   formShownForMessageId === message.id && !showConfirmation && (
@@ -173,8 +211,14 @@ const Chatbot = () => {
                   formShownForMessageId === message.id && showConfirmation && (
                     <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded text-green-700 text-sm">
                       Thanks for your details! Dave will call you shortly.<br />
-                      If it's urgent, <a href="tel:YOUR_NUMBER" className="underline text-green-900 font-bold">tap here to call now</a>.
+                      If it's urgent, <a href={`tel:${DAVE_PHONE_NUMBER}`} className="underline text-green-900 font-bold">tap here to call now</a>.
                     </div>
+                  )}
+
+                {/* Show Call Now button for the correct assistant message */}
+                {message.role === "assistant" &&
+                  buttonShownForMessageId === message.id && (
+                    <CallNowButton phone={DAVE_PHONE_NUMBER} />
                   )}
               </div>
               {message.role === "user" && (
