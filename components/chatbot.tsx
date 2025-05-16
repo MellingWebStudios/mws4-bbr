@@ -9,7 +9,30 @@ import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar } from "@/components/ui/avatar"
 import { SheetClose } from "@/components/ui/sheet"
 
-// Suggested questions to help users get started
+// --- Lead Capture Form ---
+function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
+  const [formData, setFormData] = useState({ name: "", phone: "", address: "" })
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault()
+    onSubmit(formData)
+    setFormData({ name: "", phone: "", address: "" }) // reset
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-2 mt-4 p-4 border rounded-md bg-muted">
+      <Input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
+      <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required />
+      <Input name="address" placeholder="Address" value={formData.address} onChange={handleChange} required />
+      <Button type="submit" className="w-full">Submit</Button>
+    </form>
+  )
+}
+
 const SUGGESTED_QUESTIONS = [
   "What are your prices for boiler servicing?",
   "Do you offer emergency repairs?",
@@ -22,8 +45,10 @@ const Chatbot = () => {
   const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
     api: '/api/chat',
   })
-  
+
   const [showSuggestions, setShowSuggestions] = useState(true)
+  const [formShownForMessageId, setFormShownForMessageId] = useState<string | null>(null)
+  const [showConfirmation, setShowConfirmation] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const [isUserTyping, setIsUserTyping] = useState(false)
@@ -31,39 +56,34 @@ const Chatbot = () => {
 
   useEffect(() => {
     scrollToBottom()
-    // Focus the input when the component mounts
     inputRef.current?.focus()
-    
-    // Hide suggestions after first message
-    if (messages.length > 0) {
-      setShowSuggestions(false)
-    }
+    if (messages.length > 0) setShowSuggestions(false)
   }, [messages])
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
+  // --- Form submission logic ---
+  const handleLeadSubmit = (data: any) => {
+    console.log("Lead form submitted:", data)
+    setShowConfirmation(true)
+    setFormShownForMessageId(null)
+    // TODO: Hook up to API/email/WhatsApp here
+  }
+
   const handleSuggestionClick = (question: string) => {
-    // Use the AI SDK's handleSubmit with a custom form event
     const fakeEvent = {
       preventDefault: () => {},
-      currentTarget: {
-        elements: {
-          message: { value: question }
-        }
-      }
+      currentTarget: { elements: { message: { value: question } } }
     } as unknown as React.FormEvent<HTMLFormElement>
-    
     handleSubmit(fakeEvent)
   }
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     handleSubmit(e)
     setIsUserTyping(false)
-    if (typingTimeoutRef.current) {
-      clearTimeout(typingTimeoutRef.current)
-    }
+    if (typingTimeoutRef.current) clearTimeout(typingTimeoutRef.current)
   }
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
@@ -74,11 +94,25 @@ const Chatbot = () => {
     }
   }
 
+  // --- Detect when to show the form ---
+  useEffect(() => {
+    // If a new assistant message includes "fill out" and "form", show form
+    const lastMsg = messages[messages.length - 1]
+    if (
+      lastMsg &&
+      lastMsg.role === "assistant" &&
+      lastMsg.content.toLowerCase().includes("fill out") &&
+      lastMsg.content.toLowerCase().includes("form")
+    ) {
+      setFormShownForMessageId(lastMsg.id)
+      setShowConfirmation(false)
+    }
+  }, [messages])
+
   return (
     <div className="flex h-[100dvh] flex-col bg-white dark:bg-gray-950">
-      {/* Rainbow gradient header */}
+      {/* Header */}
       <div className="relative border-b">
-        {/* Rainbow gradient background */}
         <div
           className="absolute inset-0 opacity-90"
           style={{
@@ -87,8 +121,6 @@ const Chatbot = () => {
             animation: "gradient-shift 8s ease infinite",
           }}
         />
-
-        {/* Header content */}
         <div className="relative flex items-center justify-between px-4 py-3 text-white">
           <div className="flex items-center gap-3">
             <Avatar className="h-10 w-10 border-2 border-white/50 bg-white/20 backdrop-blur-sm">
@@ -120,7 +152,6 @@ const Chatbot = () => {
                   </div>
                 </Avatar>
               )}
-
               <div
                 className={`max-w-[85%] rounded-2xl px-4 py-3 ${
                   message.role === "user"
@@ -132,8 +163,20 @@ const Chatbot = () => {
                 }}
               >
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
+                {/* Show form for the correct assistant message */}
+                {message.role === "assistant" &&
+                  formShownForMessageId === message.id && !showConfirmation && (
+                    <LeadCaptureForm onSubmit={handleLeadSubmit} />
+                  )}
+                {/* Confirmation message */}
+                {message.role === "assistant" &&
+                  formShownForMessageId === message.id && showConfirmation && (
+                    <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded text-green-700 text-sm">
+                      Thanks for your details! Dave will call you shortly.<br />
+                      If it's urgent, <a href="tel:YOUR_NUMBER" className="underline text-green-900 font-bold">tap here to call now</a>.
+                    </div>
+                  )}
               </div>
-
               {message.role === "user" && (
                 <Avatar className="mt-1 h-8 w-8 bg-gradient-to-br from-[#FF61D3] to-[#FF5757] text-white">
                   <div className="flex h-full w-full items-center justify-center text-xs font-bold">You</div>
@@ -211,10 +254,9 @@ const Chatbot = () => {
         </div>
       </ScrollArea>
 
-      {/* Input area with rainbow gradient border */}
+      {/* Input area */}
       <div className="border-t p-4 bg-white dark:bg-gray-950">
         <form onSubmit={onSubmit} className="relative">
-          {/* Rainbow gradient border */}
           <div
             className="absolute -inset-0.5 rounded-full opacity-80"
             style={{
@@ -223,7 +265,6 @@ const Chatbot = () => {
               animation: "gradient-shift 4s linear infinite",
             }}
           />
-
           <div className="relative flex items-center gap-2 rounded-full bg-white p-1 pl-4 dark:bg-gray-900">
             <Input
               ref={inputRef}
@@ -232,16 +273,8 @@ const Chatbot = () => {
               onChange={(e) => {
                 handleInputChange(e)
                 setIsUserTyping(true)
-
-                // Clear any existing timeout
-                if (typingTimeoutRef.current) {
-                  clearTimeout(typingTimeoutRef.current)
-                }
-
-                // Set a new timeout to detect when user stops typing
-                typingTimeoutRef.current = setTimeout(() => {
-                  setIsUserTyping(false)
-                }, 1500)
+                if (typingTimeoutRef.current) clearTimeout(typingTimeoutRef.current)
+                typingTimeoutRef.current = setTimeout(() => setIsUserTyping(false), 1500)
               }}
               onKeyDown={handleKeyDown}
               placeholder="Message Birmingham Boiler Repairs..."
@@ -259,7 +292,6 @@ const Chatbot = () => {
             </Button>
           </div>
         </form>
-
         <div className="mt-2 flex items-center justify-center">
           <p className="text-xs text-gray-500 dark:text-gray-400 flex items-center gap-1">
             <Sparkles className="h-3 w-3" />
@@ -274,17 +306,14 @@ const Chatbot = () => {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
         }
-        
         @keyframes message-glow {
           0%, 100% { box-shadow: 0 0 5px rgba(76, 201, 240, 0.1); }
           50% { box-shadow: 0 0 15px rgba(76, 201, 240, 0.2); }
         }
-
         @keyframes fade-in {
           from { opacity: 0; transform: translateY(5px); }
           to { opacity: 1; transform: translateY(0); }
         }
-        
         .animate-fade-in {
           animation: fade-in 0.3s ease-out forwards;
         }
