@@ -1981,17 +1981,17 @@ export const services = [
     pricing: [
       {
         title: "Standard Repair",
-        price: "£99",
+        price: "£55",
         description: "Diagnosis and repair of common faults (excludes parts)",
       },
       {
         title: "Weekend/Evening",
-        price: "£129",
+        price: "£120",
         description: "Out-of-hours emergency service",
       },
       {
         title: "Full System Check",
-        price: "£79",
+        price: "£99",
         description: "Comprehensive diagnostic if multiple issues suspected",
       },
     ],
@@ -2010,17 +2010,17 @@ export const services = [
     pricing: [
       {
         title: "Standard Service",
-        price: "£55",
+        price: "£99",
         description: "Essential safety checks and efficiency optimization",
       },
       {
         title: "Full Service",
-        price: "£120",
+        price: "£110",
         description: "Deep clean of heat exchanger and components",
       },
       {
         title: "Service & Repair",
-        price: "£99",
+        price: "£75 first hr / £30 per ½ hr",
         description: "Combined service and minor repair (saves £30)",
       },
     ],
@@ -2046,6 +2046,11 @@ export const services = [
         title: "3 Appliances",
         price: "£60",
         description: "Safety check for three gas appliances",
+      },
+      {
+        title: "Add boiler service",
+        price: "£45",
+        description: "When combined with gas safety inspection (Save £10)",
       },
     ],
   },
