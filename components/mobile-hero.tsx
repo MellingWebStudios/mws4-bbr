@@ -76,7 +76,7 @@ export default function MobileHero() {
             className="border-white bg-white/20 text-white hover:bg-white/30 w-full"
           >
             <a
-              href="/booking"
+              href="/contact"
               className="inline-flex items-center justify-center gap-2"
             >
               Book Online

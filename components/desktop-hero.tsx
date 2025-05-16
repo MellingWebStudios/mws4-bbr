@@ -95,11 +95,14 @@ export default function DesktopHero() {
                 </a>
               </Button>
               <Button
+                asChild
                 variant="outline"
                 size="lg"
                 className="border-white bg-white/20 text-white hover:bg-white/30 px-8 py-5 text-lg font-bold"
               >
-                Book Online
+                <Link href="/contact">
+                  Book Online
+                </Link>
               </Button>
             </div>
             <div className="text-sm text-white/80 mb-2 pl-1">

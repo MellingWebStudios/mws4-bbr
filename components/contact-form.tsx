@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { useFormState } from "react-dom"
+import { useActionState } from "react" // ← FIXED
 import { useFormStatus } from "react-dom"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -24,12 +24,12 @@ function SubmitButton() {
 
 const ContactForm = () => {
   const initialState: FormState = {}
-  const [state, formAction] = useFormState(submitContactForm, initialState)
-  const [resetKey, setResetKey] = useState(0) // Used to reset the form
+  const [state, formAction] = useActionState(submitContactForm, initialState) // ← FIXED
+  const [resetKey, setResetKey] = useState(0)
 
   // Function to handle starting a new message after successful submission
   const handleNewMessage = () => {
-    setResetKey((prev) => prev + 1) // Increment key to reset form
+    setResetKey((prev) => prev + 1)
   }
 
   return (

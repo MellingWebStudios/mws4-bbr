@@ -42,31 +42,39 @@ export default function Home() {
         <DesktopHero />
       </div>
 
-      {/* Value Strip - horizontal scrolling on mobile */}
+      {/* Value Strip */}
       <section className="bg-gray-100 py-3 dark:bg-gray-800 overflow-hidden">
         <div className="container mx-auto px-0 md:px-4">
-          <div className="md:flex md:flex-wrap md:items-center md:justify-between md:gap-4 md:text-left stat-bar-scroll">
-            <div className="flex items-center stat-chip">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-4">
+            <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
               <span className="text-sm font-medium">No VAT Charged</span>
             </div>
-            <div className="flex items-center stat-chip">
+            <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
-              <span className="text-sm font-medium">Same-Day Service (before 12pm)</span>
+              <span className="text-sm font-medium">
+                Same-Day Service 
+              </span>
             </div>
-            <div className="flex items-center stat-chip">
+            <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
               <span className="text-sm font-medium">No Call-Out Fee</span>
             </div>
-            <div className="flex items-center stat-chip">
+            <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
-              <span className="text-sm font-medium">Gas Safe Registered: 520077</span>
+              <span className="text-sm font-medium">
+                Gas Safe Registered: 520077
+              </span>
+            </div>
+            <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
+              <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
+              <span className="text-sm font-medium">5-Star Rated Service</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Key Benefits Section */}
+      {/* Key Benefits Section 
       <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -107,7 +115,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* Service Callout Section */}
       <ServiceCallout />
@@ -116,7 +124,9 @@ export default function Home() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Transparent Pricing, No Hidden Fees</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              Transparent Pricing, No Hidden Fees
+            </h2>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
               We believe in clear, upfront pricing with no surprises
             </p>
@@ -133,7 +143,12 @@ export default function Home() {
                 <PricingCard
                   title="Same-Day Repair"
                   price="£99"
-                  features={["No call-out fee", "No diagnosis fee", "Parts extra if needed", "Book before 12pm"]}
+                  features={[
+                    "No call-out fee",
+                    "No diagnosis fee",
+                    "Parts extra if needed",
+                    "Book before 12pm",
+                  ]}
                   ctaText="Book a Repair"
                   ctaLink="tel:08003202345"
                   highlighted
@@ -141,14 +156,24 @@ export default function Home() {
                 <PricingCard
                   title="Weekend Repair"
                   price="£110"
-                  features={["Saturday & Sunday", "No call-out fee", "No diagnosis fee", "Parts extra if needed"]}
+                  features={[
+                    "Saturday & Sunday",
+                    "No call-out fee",
+                    "No diagnosis fee",
+                    "Parts extra if needed",
+                  ]}
                   ctaText="Book a Repair"
                   ctaLink="tel:08003202345"
                 />
                 <PricingCard
                   title="Hourly Rate"
                   price="£75"
-                  features={["First hour", "£30 per ½ hr after", "Capped rates", "No hidden charges"]}
+                  features={[
+                    "First hour",
+                    "£30 per ½ hr after",
+                    "Capped rates",
+                    "No hidden charges",
+                  ]}
                   ctaText="Book a Repair"
                   ctaLink="tel:08003202345"
                 />
@@ -159,7 +184,12 @@ export default function Home() {
                 <PricingCard
                   title="Standard Service"
                   price="£55"
-                  features={["30-minute service", "Flue gas readings", "Gas pressure checks", "No VAT charged"]}
+                  features={[
+                    "30-minute service",
+                    "Flue gas readings",
+                    "Gas pressure checks",
+                    "No VAT charged",
+                  ]}
                   ctaText="Book a Service"
                   ctaLink="tel:08003202345"
                 />
@@ -179,7 +209,12 @@ export default function Home() {
                 <PricingCard
                   title="Service & Repair"
                   price="£99"
-                  features={["Service + repair (≤1 hr)", "Saves £30", "Parts extra if needed", "No VAT charged"]}
+                  features={[
+                    "Service + repair (≤1 hr)",
+                    "Saves £30",
+                    "Parts extra if needed",
+                    "No VAT charged",
+                  ]}
                   ctaText="Book a Service"
                   ctaLink="tel:08003202345"
                 />
@@ -190,14 +225,24 @@ export default function Home() {
                 <PricingCard
                   title="1 Appliance"
                   price="£45"
-                  features={["Digital certificate", "Reminder service", "No VAT charged", "Landlord certificates"]}
+                  features={[
+                    "Digital certificate",
+                    "Reminder service",
+                    "No VAT charged",
+                    "Landlord certificates",
+                  ]}
                   ctaText="Book an Inspection"
                   ctaLink="tel:08003202345"
                 />
                 <PricingCard
                   title="2 Appliances"
                   price="£50"
-                  features={["Digital certificate", "Reminder service", "No VAT charged", "Landlord certificates"]}
+                  features={[
+                    "Digital certificate",
+                    "Reminder service",
+                    "No VAT charged",
+                    "Landlord certificates",
+                  ]}
                   ctaText="Book an Inspection"
                   ctaLink="tel:08003202345"
                   highlighted
@@ -205,7 +250,12 @@ export default function Home() {
                 <PricingCard
                   title="3 Appliances"
                   price="£60"
-                  features={["Digital certificate", "Reminder service", "No VAT charged", "Landlord certificates"]}
+                  features={[
+                    "Digital certificate",
+                    "Reminder service",
+                    "No VAT charged",
+                    "Landlord certificates",
+                  ]}
                   ctaText="Book an Inspection"
                   ctaLink="tel:08003202345"
                 />
@@ -214,7 +264,11 @@ export default function Home() {
           </Tabs>
 
           <div className="mt-8 text-center">
-            <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
+            <Button
+              asChild
+              variant="outline"
+              className="border-secondary text-secondary hover:bg-secondary/10"
+            >
               <Link href="/prices">View All Prices</Link>
             </Button>
           </div>
@@ -240,15 +294,27 @@ export default function Home() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">What Our Customers Say</h2>
-            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">Don't just take our word for it</p>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              What Our Customers Say
+            </h2>
+            <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+              Don't just take our word for it
+            </p>
           </div>
 
           <TestimonialCarousel />
 
           <div className="mt-8 text-center">
-            <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
-              <Link href="https://g.co/kgs/abcdef" target="_blank" rel="noopener noreferrer">
+            <Button
+              asChild
+              variant="outline"
+              className="border-secondary text-secondary hover:bg-secondary/10"
+            >
+              <Link
+                href="https://g.co/kgs/abcdef"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Read More Google Reviews
               </Link>
             </Button>
@@ -261,11 +327,24 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
             <div>
-              <h2 className="text-3xl font-bold">Book your boiler service today</h2>
-              <p className="mt-2 text-lg">Professional service, repairs, and inspections from Gas Safe engineers</p>
+              <h2 className="text-3xl font-bold">
+                Book your boiler service today
+              </h2>
+              <p className="mt-2 text-lg">
+                Professional service, repairs, and inspections from Gas Safe
+                engineers
+              </p>
             </div>
-            <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90 w-full md:w-auto">
-              <a href="tel:08003202345" className="flex items-center justify-center gap-2" aria-label="Call Now: 0800 320 2345">
+            <Button
+              asChild
+              size="lg"
+              className="bg-primary text-gray-900 hover:bg-primary/90 w-full md:w-auto"
+            >
+              <a
+                href="tel:08003202345"
+                className="flex items-center justify-center gap-2"
+                aria-label="Call Now: 0800 320 2345"
+              >
                 <Phone size={18} />
                 Call Now: 0800 320 2345
               </a>
@@ -274,5 +353,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  )
+  );
 }

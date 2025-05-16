@@ -61,7 +61,6 @@ export default function RootLayout({
               </Suspense>
               <Footer />
               <ChatbotButton />
-              <StickyCallBar />
               <CookieConsentBanner />
             </div>
           </CookieConsentProvider>
