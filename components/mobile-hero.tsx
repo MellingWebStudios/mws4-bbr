@@ -7,99 +7,113 @@ import CallNowButton from "@/components/ui/CallNowButton"
 
 export default function MobileHero() {
   return (
-    <section className="relative bg-gradient-to-b from-secondary to-secondary/80 text-white px-4 pt-6 pb-12 overflow-hidden">
+    <section className="relative bg-gradient-to-b from-secondary to-secondary/90 text-white px-4 pt-7 pb-12 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 hero-pattern opacity-10"></div>
-      <div className="absolute top-20 left-[10%] w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-float-slow"></div>
-      <div className="absolute bottom-10 right-[15%] w-40 h-40 bg-primary/5 rounded-full blur-3xl animate-float-fast"></div>
-      {/* Content */}
-      <div className="relative z-10 animate-fade-in">
-        {/* Trust bar */}
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl animate-float-slow"></div>
+      <div className="absolute bottom-0 left-0 w-36 h-36 bg-primary/5 rounded-full blur-3xl animate-float-fast"></div>
 
-        <div className="flex items-center gap-2 mb-4 bg-white/10 backdrop-blur-sm p-2 rounded-lg">
+      {/* Content */}
+      <div className="relative z-10 flex flex-col items-center">
+        {/* Trust bar */}
+        <div className="flex items-center gap-2 mb-4 bg-white/10 backdrop-blur-sm p-2 rounded-lg shadow-md">
           <Image
             src="/images/gas-safe-1.svg"
             width={20}
             height={20}
             alt="Gas Safe Registered"
           />
-          <span className="text-xs">Gas Safe: 520077</span>
+          <span className="text-xs font-medium">Gas Safe: 520077</span>
           <div className="flex ml-2">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="h-4 w-4 fill-primary text-primary" />
             ))}
           </div>
-          <span className="ml-1 text-xs">120+ homeowners 4.9/5</span>
+          <span className="ml-1 text-xs font-medium">4.9/5 • 120+ reviews</span>
         </div>
+
+        {/* Main image, absolute for stacking */}
+        <div className="relative w-[190px] h-[190px] flex items-center justify-center z-20 -mb-3 mt-3">
+          <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl"></div>
+          <Image
+            src="/images/engineers-team.svg"
+            alt="Our team of Gas Safe registered engineers"
+            width={180}
+            height={180}
+            className="drop-shadow-lg rounded-xl relative z-10"
+            priority
+            loading="eager"
+            sizes="180px"
+            quality={90}
+          />
+        </div>
+
         {/* Service badge */}
-        <div className="mb-3 inline-block rounded-md bg-red-700 px-3 py-1 text-xs font-bold uppercase tracking-wider shadow-md">
+        <div className="mt-1 mb-2 inline-block rounded-full bg-red-700 px-4 py-1 text-xs font-bold uppercase tracking-wider shadow-md">
           Professional Boiler Services
         </div>
-        {/* Headline */}
-        <h1 className="text-3xl font-bold leading-tight">
-          Same-Day Boiler Repairs & Servicing in Birmingham
+
+        {/* Headline, centered under image */}
+        <h1 className="text-2xl font-extrabold leading-tight text-center mt-1 mb-2 px-1">
+          Same-Day Boiler Repairs & Servicing
+          <span className="block text-primary font-bold">in Birmingham</span>
         </h1>
+
         {/* Subheadline */}
-        <p className="mt-3 py-2 pl-3 border-l-4 border-primary text-sm bg-white/5 backdrop-blur-sm">
+        <p className="mb-4 text-[15px] text-white/90 text-center bg-white/10 rounded-lg px-3 py-2 shadow-sm border-l-4 border-primary/50">
           No Call-Out Fee. Book Before 12pm for Same-Day Fix!
         </p>
-        {/* Key benefits as icons only */}
-        <div className="mt-4 grid grid-cols-2 gap-3">
-          <div className="flex items-center">
-            <ShieldCheck className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-xs">Gas Safe Registered</span>
+
+        {/* Key benefits below image */}
+        <div className="w-full mb-4 grid grid-cols-2 gap-2">
+          <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
+            <ShieldCheck className="mr-1 h-4 w-4 text-primary" />
+            <span className="text-xs font-medium">Gas Safe</span>
           </div>
-          <div className="flex items-center">
-            <PoundSterling className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-xs">No VAT Charged</span>
+          <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
+            <PoundSterling className="mr-1 h-4 w-4 text-primary" />
+            <span className="text-xs font-medium">No VAT</span>
           </div>
-          <div className="flex items-center">
-            <Clock className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-xs">Same-Day Service</span>
+          <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
+            <Clock className="mr-1 h-4 w-4 text-primary" />
+            <span className="text-xs font-medium">Same-Day</span>
           </div>
-          <div className="flex items-center">
-            <Ban className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-xs">No Call-Out Fee</span>
+          <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
+            <Ban className="mr-1 h-4 w-4 text-primary" />
+            <span className="text-xs font-medium">No Call-Out Fee</span>
           </div>
         </div>
 
-        {/* CTA buttons */}
-        <div className="mt-6 flex flex-col space-y-3">
-          {/* ✅ Reusable call button */}
+        {/* CTAs */}
+        <div className="w-full flex flex-col space-y-3 mt-1">
           <CallNowButton pulse />
-
-          {/* ✅ Book Online button as native <a> (best practice for external links) */}
           <Button
             asChild
             variant="outline"
             size="lg"
             className="border-white bg-white/20 text-white hover:bg-white/30 w-full"
           >
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center gap-2"
-            >
+            <a href="/contact" className="inline-flex items-center justify-center gap-2 font-semibold">
               Book Online
             </a>
           </Button>
         </div>
-
-        {/* Cartoon cameo */}
-        <div className="mx-auto mt-8 max-w-[220px] relative animate-fade-up">
-          <div className="absolute inset-0 bg-primary/10 rounded-full blur-xl scale-90"></div>
-          <Image
-            src="/images/engineers-team.svg"
-            alt="Our team of Gas Safe registered engineers"
-            width={220}
-            height={220}
-            className="drop-shadow-lg relative z-10 hover:scale-[1.02] transition-transform duration-500"
-            priority
-            loading="eager"
-            sizes="220px"
-            quality={90}
-          />
-        </div>
       </div>
+
+      {/* Animations */}
+      <style jsx>{`
+        .animate-float-slow { animation: floatY 7s ease-in-out infinite; }
+        .animate-float-fast { animation: floatY 4s ease-in-out infinite alternate; }
+        @keyframes floatY {
+          0%, 100% { transform: translateY(0); }
+          50% { transform: translateY(-14px); }
+        }
+        .animate-fade-in { animation: fadeInUp 1s ease; }
+        @keyframes fadeInUp {
+          from { opacity: 0; transform: translateY(20px);}
+          to   { opacity: 1; transform: translateY(0);}
+        }
+      `}</style>
     </section>
-  );
+  )
 }

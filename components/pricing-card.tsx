@@ -1,7 +1,8 @@
 import Link from "next/link"
+import { motion } from "framer-motion"
+import { Check } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card"
-import { Check } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface PricingCardProps {
@@ -11,53 +12,100 @@ interface PricingCardProps {
   ctaText: string
   ctaLink: string
   highlighted?: boolean
+  /**
+   * Additional tailwind classes for one-off tweaks.
+   */
+  className?: string
 }
 
-const PricingCard = ({ title, price, features, ctaText, ctaLink, highlighted = false }: PricingCardProps) => {
+/**
+ * `<PricingCard>` – sleek, glass‑styled pricing tier component.
+ *
+ * ▸ *Same props API* (no breaking changes).
+ * ▸ Accessible, keyboard‑friendly CTA button.
+ * ▸ Framer Motion lift-on‑hover for delight.
+ * ▸ Gradient ring + glassmorphism when `highlighted`.
+ */
+const PricingCard = ({
+  title,
+  price,
+  features,
+  ctaText,
+  ctaLink,
+  highlighted = false,
+  className,
+}: PricingCardProps) => {
+  const isActionLink = (link: string) => link.startsWith("mailto:") || link.startsWith("tel:")
+
   return (
-    <Card
-      className={cn(
-        "flex flex-col transition-transform duration-300 hover:scale-105",
-        highlighted ? "border-2 border-secondary shadow-lg" : "border shadow",
-      )}
+    <motion.div
+      whileHover={{ y: -6 }}
+      transition={{ type: "spring", stiffness: 260, damping: 20 }}
+      className={cn("h-full", className)}
     >
-      <CardHeader
+      <Card
         className={cn(
-          "flex flex-col items-center space-y-1 pb-2 pt-6 text-center",
-          highlighted ? "bg-secondary/5" : "",
+          "flex h-full flex-col overflow-hidden rounded-2xl bg-white/75 shadow-lg backdrop-blur-md dark:bg-gray-950/80",
+          highlighted && "ring-2 ring-offset-2 ring-secondary/80 shadow-2xl",
         )}
       >
-        <h3 className="text-2xl font-bold">{title}</h3>
-      </CardHeader>
-      <CardContent className="flex flex-1 flex-col items-center p-6 pt-4">
-        <div className="mb-6 mt-2 flex items-baseline justify-center">
-          <span className="text-4xl font-bold">{price}</span>
-          <span className="ml-1 text-sm text-gray-500">No VAT</span>
-        </div>
-        <ul className="mb-6 space-y-3">
-          {features.map((feature, index) => (
-            <li key={index} className="flex items-center">
-              <Check className={cn("mr-2 h-5 w-5", highlighted ? "text-secondary" : "text-green-500")} />
-              <span className="text-gray-700 dark:text-gray-300">{feature}</span>
-            </li>
-          ))}
-        </ul>
-      </CardContent>
-      <CardFooter className="flex-col space-y-2 pb-6">
-        {ctaLink && (
-          <Button asChild className="w-full mt-4">
-            {ctaLink.startsWith("tel:") || ctaLink.startsWith("mailto:") ? (
-              <a href={ctaLink} className="flex items-center gap-2" aria-label={ctaText}>
+        {/* Header */}
+        <CardHeader
+          className={cn(
+            "flex flex-col items-center space-y-1 pb-4 pt-8 text-center",
+            highlighted && "bg-gradient-to-b from-secondary/10 to-transparent",
+          )}
+        >
+          <h3 className="text-3xl font-extrabold tracking-tight">{title}</h3>
+          <div className="mt-4 flex items-end gap-1">
+            <span className="text-5xl font-black leading-none">{price}</span>
+            <span className="mb-1 text-sm text-muted-foreground">No&nbsp;VAT</span>
+          </div>
+        </CardHeader>
+
+        {/* Feature list */}
+        <CardContent className="flex flex-1 flex-col items-center px-8">
+          <ul className="mt-8 mb-10 w-full space-y-4 text-left">
+            {features.map((feature, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span
+                  className={cn(
+                    "grid h-6 w-6 place-items-center rounded-full bg-secondary/20",
+                    highlighted && "bg-secondary",
+                  )}
+                >
+                  <Check
+                    className={cn(
+                      "h-4 w-4",
+                      highlighted ? "text-white" : "text-secondary",
+                    )}
+                  />
+                </span>
+                <span className="leading-snug">{feature}</span>
+              </li>
+            ))}
+          </ul>
+        </CardContent>
+
+        {/* Footer */}
+        <CardFooter className="flex flex-col gap-3 px-8 pb-8">
+          <Button asChild size="lg" className="w-full">
+            {isActionLink(ctaLink) ? (
+              <a href={ctaLink} aria-label={ctaText} className="w-full">
                 {ctaText}
               </a>
             ) : (
-              <Link href={ctaLink}>{ctaText}</Link>
+              <Link href={ctaLink} className="w-full">
+                {ctaText}
+              </Link>
             )}
           </Button>
-        )}
-        <p className="text-xs text-center text-gray-500 dark:text-gray-400">Takes 60 sec – no payment taken</p>
-      </CardFooter>
-    </Card>
+          <p className="text-center text-xs text-muted-foreground">
+            Takes 60&nbsp;sec&nbsp;&mdash;&nbsp;no payment taken
+          </p>
+        </CardFooter>
+      </Card>
+    </motion.div>
   )
 }
 
