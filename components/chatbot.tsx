@@ -1,17 +1,53 @@
 "use client"
 
-import { useChat } from 'ai/react'
+import { useChat } from "ai/react"
 import { useState, useRef, useEffect } from "react"
-import { Send, X, Sparkles, Phone } from 'lucide-react'
+import { Send, X, Sparkles, Phone, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar } from "@/components/ui/avatar"
 import { SheetClose } from "@/components/ui/sheet"
 
-// --- Lead Capture Form ---
+const DAVE_PHONE_NUMBER = "07562533967"
+
+function WhatsAppButton({ phone, message }: { phone: string, message?: string }) {
+  const formatted = phone.replace(/^0/, "44")
+  const url = `https://wa.me/${formatted}?text=${encodeURIComponent(message || "Hi Dave, I need help with my boiler.")}`
+  return (
+    <Button
+      asChild
+      variant="outline"
+      size="lg"
+      className="w-full justify-center border-[#25D366] text-[#25D366] hover:bg-[#25D366]/10 mt-2"
+    >
+      <a href={url} target="_blank" rel="noopener noreferrer">
+        <MessageCircle className="mr-2 mb-0.5" size={20} />
+        WhatsApp Us
+      </a>
+    </Button>
+  )
+}
+
+function CallNowButton({ phone }: { phone: string }) {
+  return (
+    <Button
+      asChild
+      variant="outline"
+      size="lg"
+      className="w-full justify-center border-green-600 text-green-600 hover:bg-green-600/10 mt-2"
+    >
+      <a href={`tel:${phone}`}>
+        <Phone className="mr-2 mb-0.5" size={20} />
+        Call Now: {phone}
+      </a>
+    </Button>
+  )
+}
+
 function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
   const [formData, setFormData] = useState({ name: "", phone: "", address: "" })
+  const [submitted, setSubmitted] = useState(false)
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -20,29 +56,43 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onSubmit(formData)
-    setFormData({ name: "", phone: "", address: "" }) // reset
+    setSubmitted(true)
+    setFormData({ name: "", phone: "", address: "" })
+  }
+
+  if (submitted) {
+    return (
+      <div className="flex flex-col items-center justify-center mt-4 p-4 rounded-2xl border border-green-200 bg-green-50 text-green-700 text-base animate-fade-in">
+        <svg width={48} height={48} fill="none" viewBox="0 0 48 48">
+          <circle cx={24} cy={24} r={24} fill="#22C55E" opacity="0.2" />
+          <path d="M15 25l6 6 12-12" stroke="#22C55E" strokeWidth={3} strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <span className="font-bold mt-2 mb-1">Thank you! Your details have been sent to Dave.</span>
+        <span>
+          He'll call you back soon.<br />
+          For urgent issues,{" "}
+          <a href={`tel:${DAVE_PHONE_NUMBER}`} className="underline text-green-900 font-bold">
+            call now
+          </a>
+          .
+        </span>
+        <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I just requested a callback via your website!" />
+      </div>
+    )
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-2 mt-4 p-4 border rounded-md bg-muted">
-      <Input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required />
-      <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required />
-      <Input name="address" placeholder="Address" value={formData.address} onChange={handleChange} required />
-      <Button type="submit" className="w-full">Submit</Button>
-    </form>
-  )
-}
-
-// --- Call Now Button ---
-function CallNowButton({ phone }: { phone: string }) {
-  return (
-    <a
-      href={`tel:${phone}`}
-      className="block w-full rounded-lg bg-green-600 hover:bg-green-700 transition text-white text-center py-3 text-lg font-bold shadow-md mt-4"
+    <form
+      onSubmit={handleSubmit}
+      className="space-y-3 mt-4 p-4 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-2xl shadow-sm"
     >
-      <Phone className="inline-block mr-2 mb-1" size={22} />
-      Call Now
-    </a>
+      <Input name="name" placeholder="Full Name" value={formData.name} onChange={handleChange} required autoComplete="name"/>
+      <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleChange} required autoComplete="tel"/>
+      <Input name="address" placeholder="Address" value={formData.address} onChange={handleChange} required autoComplete="street-address"/>
+      <Button type="submit" size="lg" className="w-full rounded-xl font-semibold">
+        Submit
+      </Button>
+    </form>
   )
 }
 
@@ -54,17 +104,12 @@ const SUGGESTED_QUESTIONS = [
   "Are you Gas Safe registered?",
 ]
 
-const DAVE_PHONE_NUMBER = "07562533967" // Set Dave's number here
-
 const Chatbot = () => {
-  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({
-    api: '/api/chat',
-  })
-
+  const { messages, input, handleInputChange, handleSubmit, isLoading } = useChat({ api: "/api/chat" })
   const [showSuggestions, setShowSuggestions] = useState(true)
+  const [forceShowForm, setForceShowForm] = useState(false)
   const [formShownForMessageId, setFormShownForMessageId] = useState<string | null>(null)
   const [buttonShownForMessageId, setButtonShownForMessageId] = useState<string | null>(null)
-  const [showConfirmation, setShowConfirmation] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
   const [isUserTyping, setIsUserTyping] = useState(false)
@@ -80,18 +125,19 @@ const Chatbot = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
   }
 
-  // --- Form submission logic ---
   const handleLeadSubmit = (data: any) => {
     console.log("Lead form submitted:", data)
-    setShowConfirmation(true)
-    setFormShownForMessageId(null)
-    // TODO: Hook up to API/email/WhatsApp here
+    // Hook up API/email/WhatsApp here if needed
   }
 
   const handleSuggestionClick = (question: string) => {
+    if (question.toLowerCase().includes("callback")) {
+      setForceShowForm(true)
+      return
+    }
     const fakeEvent = {
       preventDefault: () => {},
-      currentTarget: { elements: { message: { value: question } } }
+      currentTarget: { elements: { message: { value: question } } },
     } as unknown as React.FormEvent<HTMLFormElement>
     handleSubmit(fakeEvent)
   }
@@ -110,25 +156,21 @@ const Chatbot = () => {
     }
   }
 
-  // --- Detect when to show the form or button ---
+  // AI-triggered form/call button
   useEffect(() => {
     const lastMsg = messages[messages.length - 1]
     if (!lastMsg || lastMsg.role !== "assistant") return
 
     const msgContent = lastMsg.content.toLowerCase()
 
-    // Show lead form if form keywords are present
-    if (
-      msgContent.includes("fill out") &&
-      msgContent.includes("form")
-    ) {
+    // Show lead form
+    if (msgContent.includes("fill out") && msgContent.includes("form")) {
       setFormShownForMessageId(lastMsg.id)
       setButtonShownForMessageId(null)
-      setShowConfirmation(false)
+      setForceShowForm(false)
       return
     }
-
-    // Show call button if any call keywords are present
+    // Show call button
     if (
       msgContent.includes("call now") ||
       msgContent.includes("give us a call") ||
@@ -136,14 +178,12 @@ const Chatbot = () => {
     ) {
       setButtonShownForMessageId(lastMsg.id)
       setFormShownForMessageId(null)
-      setShowConfirmation(false)
+      setForceShowForm(false)
       return
     }
-
-    // Otherwise reset both
     setFormShownForMessageId(null)
     setButtonShownForMessageId(null)
-    setShowConfirmation(false)
+    setForceShowForm(false)
   }, [messages])
 
   return (
@@ -180,6 +220,8 @@ const Chatbot = () => {
       {/* Messages */}
       <ScrollArea className="flex-1 px-4 py-6 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
         <div className="space-y-6">
+          {/* Manual form (forceShowForm) always renders above messages */}
+          {forceShowForm && <LeadCaptureForm onSubmit={handleLeadSubmit} />}
           {messages.map((message) => (
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"} gap-3`}>
               {message.role === "assistant" && (
@@ -200,26 +242,15 @@ const Chatbot = () => {
                 }}
               >
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
-
-                {/* Show form for the correct assistant message */}
-                {message.role === "assistant" &&
-                  formShownForMessageId === message.id && !showConfirmation && (
-                    <LeadCaptureForm onSubmit={handleLeadSubmit} />
-                  )}
-                {/* Confirmation message */}
-                {message.role === "assistant" &&
-                  formShownForMessageId === message.id && showConfirmation && (
-                    <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded text-green-700 text-sm">
-                      Thanks for your details! Dave will call you shortly.<br />
-                      If it's urgent, <a href={`tel:${DAVE_PHONE_NUMBER}`} className="underline text-green-900 font-bold">tap here to call now</a>.
-                    </div>
-                  )}
-
-                {/* Show Call Now button for the correct assistant message */}
-                {message.role === "assistant" &&
-                  buttonShownForMessageId === message.id && (
+                {message.role === "assistant" && formShownForMessageId === message.id && (
+                  <LeadCaptureForm onSubmit={handleLeadSubmit} />
+                )}
+                {message.role === "assistant" && buttonShownForMessageId === message.id && (
+                  <>
                     <CallNowButton phone={DAVE_PHONE_NUMBER} />
-                  )}
+                    <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I need help with my boiler." />
+                  </>
+                )}
               </div>
               {message.role === "user" && (
                 <Avatar className="mt-1 h-8 w-8 bg-gradient-to-br from-[#FF61D3] to-[#FF5757] text-white">
@@ -239,57 +270,18 @@ const Chatbot = () => {
               </Avatar>
               <div className="max-w-[85%] rounded-2xl bg-white px-4 py-3 shadow-sm border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
                 <p className="text-sm leading-relaxed">
-                  Hello! I'm your Birmingham Boiler Repairs assistant. How can I help you today? You can ask about our services, pricing, or booking an appointment.
+                  Hello! I'm your Birmingham Boiler Repairs assistant. How can I help today?
                 </p>
-              </div>
-            </div>
-          )}
-
-          {/* Suggested questions */}
-          {showSuggestions && messages.length === 0 && (
-            <div className="mt-4 space-y-2">
-              <p className="text-xs text-gray-500 dark:text-gray-400">Suggested questions:</p>
-              <div className="flex flex-wrap gap-2">
-                {SUGGESTED_QUESTIONS.map((question, index) => (
-                  <button
-                    key={index}
-                    onClick={() => handleSuggestionClick(question)}
-                    className="rounded-full bg-white px-3 py-1.5 text-xs border border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors shadow-sm dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-700"
+                <div className="mt-4 space-y-3">
+                  <Button
+                    onClick={() => setForceShowForm(true)}
+                    size="lg"
+                    className="w-full bg-gradient-to-r from-[#7B61FF] to-[#4895EF] hover:opacity-90 rounded-xl font-semibold"
                   >
-                    {question}
-                  </button>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* User typing indicator */}
-          {isUserTyping && messages.length > 0 && !isLoading && (
-            <div className="flex justify-end mb-2">
-              <div className="max-w-[85%] rounded-full bg-gray-100 px-4 py-2 text-xs text-gray-500 dark:bg-gray-800 dark:text-gray-400 flex items-center gap-2 animate-fade-in">
-                <div className="flex space-x-1">
-                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-[#FF61D3] delay-0"></div>
-                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-[#FFBD59] delay-150"></div>
-                  <div className="h-1.5 w-1.5 animate-bounce rounded-full bg-[#4895EF] delay-300"></div>
-                </div>
-                <span>You are typing...</span>
-              </div>
-            </div>
-          )}
-
-          {/* AI typing indicator */}
-          {isLoading && (
-            <div className="flex justify-start gap-3">
-              <Avatar className="mt-1 h-8 w-8 bg-gradient-to-br from-[#7B61FF] to-[#4CC9F0] text-white">
-                <div className="flex h-full w-full items-center justify-center text-xs font-bold">
-                  <Sparkles className="h-4 w-4" />
-                </div>
-              </Avatar>
-              <div className="max-w-[85%] rounded-2xl bg-white px-4 py-3 shadow-sm border border-gray-100 dark:bg-gray-800 dark:border-gray-700">
-                <div className="flex space-x-1">
-                  <div className="h-2 w-2 animate-bounce rounded-full bg-[#7B61FF] delay-0"></div>
-                  <div className="h-2 w-2 animate-bounce rounded-full bg-[#4895EF] delay-150"></div>
-                  <div className="h-2 w-2 animate-bounce rounded-full bg-[#4CC9F0] delay-300"></div>
+                    Request a Callback
+                  </Button>
+                  <CallNowButton phone={DAVE_PHONE_NUMBER} />
+                  <WhatsAppButton phone={DAVE_PHONE_NUMBER} message="Hi Dave, I need help with my boiler." />
                 </div>
               </div>
             </div>
@@ -327,7 +319,7 @@ const Chatbot = () => {
             />
             <Button
               type="submit"
-              disabled={input.trim() === '' || isLoading}
+              disabled={input.trim() === "" || isLoading}
               size="icon"
               className="h-10 w-10 rounded-full bg-gradient-to-r from-[#7B61FF] to-[#4895EF] hover:opacity-90 transition-opacity"
             >
