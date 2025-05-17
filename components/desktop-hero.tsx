@@ -114,31 +114,7 @@ export default function DesktopHero() {
             </div>
 
             {/* Benefits hexagon grid */}
-            <div className="mb-8 grid grid-cols-2 md:grid-cols-3 gap-3">
-              {[
-                { icon: Ban, text: "No Call-Out Fee" },
-                { icon: Clock, text: "Same-Day Service" },
-                { icon: PoundSterling, text: "No VAT Charged" },
-                { icon: ShieldCheck, text: "Gas Safe Engineers" },
-                { icon: CheckCircle, text: "All Work Guaranteed" },
-                { icon: Star, text: "Highly Rated Service" },
-              ].map((benefit, index) => (
-                <div
-                  key={index}
-                  className="relative group"
-                  style={{
-                    transitionDelay: `${index * 100}ms`,
-                    animation: `fadeIn 600ms ${index * 100}ms forwards`,
-                  }}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-lg transform group-hover:scale-105 transition-transform duration-300"></div>
-                  <div className="relative p-3 flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 group-hover:border-primary/30 transition-colors duration-300">
-                    <benefit.icon className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-sm font-medium">{benefit.text}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
+            
 
             {/* CTA section */}
             <div className="relative">
