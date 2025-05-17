@@ -193,72 +193,75 @@ export default async function LocationServicePage({ params }: Props) {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12">
             {/* Map + Features */}
-            <Card className="overflow-hidden border shadow-lg rounded-xl transition-all duration-300 hover:shadow-xl">
+            <Card className="overflow-hidden border shadow-lg rounded-2xl transition-all duration-300 hover:shadow-2xl bg-gradient-to-br from-white via-gray-50 to-gray-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
               <CardContent className="p-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
                   {/* Map Section - Responsive height */}
                   <div className="relative h-[250px] w-full md:h-full min-h-[300px] order-2 md:order-1">
-                    <iframe
-                      src={`https://www.google.com/maps/embed?pb=${location.mapEmbedId}`}
-                      width="600"
-                      height="450"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      className="absolute inset-0 w-full h-full"
-                      title={`Map of ${service.name} in ${location.name}`}
-                    />
+                    <div className="absolute inset-0 z-0">
+                      <iframe
+                        src={`https://www.google.com/maps/embed?pb=${location.mapEmbedId}`}
+                        width="600"
+                        height="450"
+                        style={{ border: 0 }}
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        className="w-full h-full rounded-bl-2xl md:rounded-bl-2xl md:rounded-tl-2xl"
+                        title={`Map of ${service.name} in ${location.name}`}
+                      />
+                    </div>
+                    {/* Subtle overlay for readability on small screens */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/30 to-transparent dark:from-gray-900/80 dark:via-gray-900/30 pointer-events-none" />
                   </div>
 
-                  {/* Content Section - Better spacing and hierarchy */}
-                  <div className="p-6 md:p-8 flex flex-col order-1 md:order-2">
-                    <h2 className="mb-4 text-2xl md:text-3xl font-bold text-gray-900 dark:text-white tracking-tight">
-                      {service.name} in {location.name}
-                    </h2>
+                  {/* Content Section - Enhanced hierarchy and visuals */}
+                  <div className="p-8 flex flex-col order-1 md:order-2 justify-between h-full">
+                    <div>
+                      <h2 className="mb-3 text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
+                        {service.name} in <span className="text-primary">{location.name}</span>
+                      </h2>
+                      <p className="mb-5 text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
+                        {introText}
+                      </p>
+                    </div>
 
-                    <p className="mb-6 text-gray-600 dark:text-gray-400 leading-relaxed">
-                      {introText}
-                    </p>
-
-                    <div className="mb-6 flex-grow">
-                      <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">
-                        What's included:
+                    <div className="mb-6">
+                      <h3 className="mb-2 text-lg font-semibold text-gray-900 dark:text-white">
+                        What’s included
                       </h3>
-
-                      <ul className="space-y-3">
+                      <ul className="space-y-2">
                         {service.features.map((feature: string, i: number) => (
                           <li key={i} className="flex items-start">
-                            <CheckCircle className="mr-3 h-5 w-5 text-secondary flex-shrink-0 mt-0.5" />
-                            <span className="text-gray-700 dark:text-gray-300">
-                              {feature}
-                            </span>
+                            <CheckCircle className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
+                            <span className="text-gray-700 dark:text-gray-300">{feature}</span>
                           </li>
                         ))}
                       </ul>
                     </div>
 
-                    <div className="flex items-center gap-3 mb-6 bg-gray-50 dark:bg-gray-800/50 p-3 rounded-lg">
-                      <MapPin className="h-5 w-5 text-secondary flex-shrink-0" />
-                      <span className="text-gray-700 dark:text-gray-300">
-                        Serving all {location.name} postcodes:{" "}
-                        {location.postcode}
+                    <div className="flex items-center gap-3 mb-6 bg-primary/10 dark:bg-secondary/20 p-3 rounded-lg">
+                      <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
+                      <span className="text-gray-800 dark:text-gray-200 font-medium">
+                        Serving all {location.name} postcodes: <span className="font-semibold">{location.postcode}</span>
                       </span>
                     </div>
 
-                    <Button
-                      asChild
-                      className="bg-secondary text-white hover:bg-secondary/90 py-6 rounded-lg text-base font-medium shadow-sm transition-all duration-300 hover:shadow-md w-full md:w-auto"
-                    >
-                      <a
-                        href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-                        className="flex items-center justify-center gap-2"
-                        aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                    <div className="flex items-center justify-center">
+                      <Button
+                        asChild
+                        className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 px-8 rounded-xl text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
                       >
-                        <Phone size={18} />
-                        Book Now: {businessInfo.phone.freephone}
-                      </a>
-                    </Button>
+                        <a
+                          href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                          className="flex items-center justify-center gap-2"
+                          aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                        >
+                          <Phone size={20} className="animate-pulse" />
+                          Book Now: {businessInfo.phone.freephone}
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </div>
               </CardContent>
@@ -266,48 +269,69 @@ export default async function LocationServicePage({ params }: Props) {
 
             {/* Pricing */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
-                {service.name} Pricing in {location.name}
+              <h2 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
+              {service.name} Pricing in {location.name}
               </h2>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                {service.pricing.map((option: any, index: number) => (
-                  <div
-                    key={index}
-                    className="rounded-xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-200 flex flex-col items-center text-center px-8 py-10"
+              <div className="flex justify-center mb-8">
+              <span className="inline-block h-1 w-24 rounded bg-primary/70" />
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {service.pricing.map((option: any, index: number) => (
+                <div
+                key={index}
+                className="relative flex flex-col items-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg hover:scale-105 transition-transform duration-200 px-8 py-10"
+                >
+                {option.popular && (
+                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-semibold px-4 py-1 rounded-full shadow-lg z-10">
+                  Most Popular
+                  </span>
+                )}
+                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
+                  {option.title}
+                </h3>
+                <div className="mb-4 flex items-end justify-center gap-2">
+                  <span className="inline-block rounded-xl bg-primary/10 text-primary px-6 py-2 text-3xl font-extrabold shadow-sm">
+                  {option.price}
+                  </span>
+                  <span className="text-xs text-gray-500 font-semibold ml-1">
+                  No VAT
+                  </span>
+                </div>
+                <p className="mb-6 text-gray-600 dark:text-gray-400 text-base min-h-[48px]">
+                  {option.description}
+                </p>
+                <Button
+                  asChild
+                  className="mt-auto w-full bg-primary text-white hover:bg-primary/90 font-semibold py-3 rounded-lg shadow transition-all duration-200"
+                >
+                  <a
+                  href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                  aria-label={`Book ${option.title} for ${option.price}`}
+                  className="flex items-center justify-center gap-2"
                   >
-                    <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                      {option.title}
-                    </h3>
-                    <div className="mb-4 flex items-center justify-center gap-2">
-                      <span className="inline-block rounded-full bg-yellow-100 text-yellow-700 px-5 py-2 text-2xl font-bold shadow">
-                        {option.price}
-                      </span>
-                      <span className="text-xs text-gray-500 font-semibold">
-                        No VAT
-                      </span>
-                    </div>
-                    <p className="text-gray-600 dark:text-gray-400 text-base">
-                      {option.description}
-                    </p>
-                  </div>
-                ))}
+                  <Phone size={18} />
+                  Book Now
+                  </a>
+                </Button>
+                </div>
+              ))}
+              </div>
+              <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
+              Transparent pricing. No call-out fees. All work guaranteed.
               </div>
             </div>
 
             {/* Reviews */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">
-                {location.name} Customer Reviews
-              </h2>
+            <div className="mt-2">
               <ReviewsDisplay
                 serviceFilter={
                   service.slug === "boiler-repairs"
                     ? "repair"
                     : service.slug === "boiler-servicing"
-                      ? "service"
-                      : service.slug === "gas-safety"
-                        ? "gas-safety"
-                        : "all"
+                    ? "service"
+                    : service.slug === "gas-safety"
+                    ? "gas-safety"
+                    : "all"
                 }
                 locationFilter={location.name.toLowerCase()}
                 limit={3}

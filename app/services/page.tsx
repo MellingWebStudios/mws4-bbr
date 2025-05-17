@@ -20,7 +20,7 @@ export default function ServicesPage() {
       title: "Boiler Repairs",
       description:
         "Prompt, reliable fixes for leaks, breakdowns and ongoing issues. Same-day service available when booked before 12pm.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "images/service_repairs.png",
       features: ["No call-out fee", "No diagnosis fee", "Same-day & weekend options", "Parts for major brands stocked"],
       link: "/services/boiler-repairs",
     },

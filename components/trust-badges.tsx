@@ -3,11 +3,11 @@ import Image from "next/image"
 const TrustBadges = () => {
   const brands = [
     { name: "Gas Safe", image: "/images/gas-safe-1.svg" },
-    { name: "Worcester", image: "/placeholder.svg?height=60&width=120" },
-    { name: "Vaillant", image: "/placeholder.svg?height=60&width=120" },
-    { name: "Baxi", image: "/placeholder.svg?height=60&width=120" },
-    { name: "Ferroli", image: "/placeholder.svg?height=60&width=120" },
-    { name: "Ideal", image: "/placeholder.svg?height=60&width=120" },
+    { name: "Worcester", image: "/images/worcester-bosch-group-seeklogo.svg" },
+    { name: "Vaillant", image: "/images/Vaillant-logo-2021.svg" },
+    { name: "Baxi", image: "/images/BAXI_logo.svg" },
+    { name: "Ferroli", image: "/images/Ferroli_logo.svg" },
+    { name: "Ideal", image: "/images/ideal-boilers-seeklogo.svg" },
   ]
 
   return (
