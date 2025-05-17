@@ -117,6 +117,8 @@ export default function Home() {
       {/* Service Callout Section */}
       <ServiceCallout />
 
+      <TrustBadges />
+
       {/* Pricing Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
@@ -273,7 +275,7 @@ export default function Home() {
       </section>
 
       {/* Trust Badges Section */}
-      <TrustBadges />
+
 
       {/* Maintenance Tips Section */}
       <MaintenanceTips />
