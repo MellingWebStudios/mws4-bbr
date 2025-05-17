@@ -18,23 +18,11 @@ export default function DesktopHero() {
       <div className="absolute inset-0 opacity-5 pointer-events-none">
         <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
           <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1" />
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="2" />
           </pattern>
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-
-      {/* Floating elements */}
-      <div className="absolute top-20 left-[10%] w-64 h-64 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 blur-3xl animate-pulse" />
-      <div
-        className="absolute bottom-10 right-[15%] w-80 h-80 rounded-full bg-gradient-to-tr from-secondary/30 to-primary/10 blur-3xl animate-pulse"
-        style={{ animationDuration: "8s" }}
-      />
-      <div
-        className="absolute top-1/3 right-[20%] w-40 h-40 rounded-full bg-primary/20 blur-xl animate-pulse"
-        style={{ animationDuration: "6s" }}
-      />
-
       <div className="container mx-auto px-4 relative">
         <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
           {/* Left column with image */}
@@ -55,6 +43,13 @@ export default function DesktopHero() {
               {/* Main image with frame */}
               <div className="relative bg-gradient-to-br from-white/10 to-white/5 p-1 rounded-2xl shadow-2xl backdrop-blur-sm">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl" />
+
+                {/* Floating badge - moved to top */}
+                <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-primary text-gray-900 px-6 py-2 rounded-full shadow-xl font-bold text-sm flex items-center gap-2 whitespace-nowrap z-20">
+                  <ShieldCheck className="h-5 w-5" />
+                  Gas Safe Registered: 520077
+                </div>
+
                 <Image
                   src="/images/engineers-team.svg"
                   alt="Our team of Gas Safe registered engineers"
@@ -64,22 +59,16 @@ export default function DesktopHero() {
                   priority
                   quality={90}
                 />
-
-                {/* Floating badge */}
-                <div className="absolute -bottom-5 left-1/2 transform -translate-x-1/2 bg-primary text-gray-900 px-6 py-2 rounded-full shadow-xl font-bold text-sm flex items-center gap-2 whitespace-nowrap">
-                  <ShieldCheck className="h-5 w-5" />
-                  Gas Safe Registered: 520077
-                </div>
               </div>
 
               {/* Rating card */}
-              <div className="absolute -right-4 top-10 bg-white/10 backdrop-blur-md p-3 rounded-lg shadow-xl border border-white/20 flex flex-col items-center">
+              <div className="absolute left-1/2 -translate-x-1/2 -bottom-6 bg-white/10 backdrop-blur-md p-5 rounded-xl shadow-2xl border border-white/20 flex flex-col items-center z-20">
                 <div className="flex">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                    <Star key={i} className="h-7 w-7 fill-primary text-primary" />
                   ))}
                 </div>
-                <p className="text-xs font-medium mt-1">4.9/5 (120+ reviews)</p>
+                <p className="text-sm font-semibold mt-2">4.9/5 (120+ reviews)</p>
               </div>
             </div>
           </div>
@@ -96,7 +85,6 @@ export default function DesktopHero() {
 
             {/* Main headline */}
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-4">
-              <span className="block">Same-Day Boiler</span>
               <span className="relative">
                 <span className="relative z-10">Repairs & Servicing</span>
                 <span className="absolute bottom-1 left-0 h-3 w-full bg-primary/30 -z-0 skew-x-3"></span>
@@ -105,16 +93,15 @@ export default function DesktopHero() {
             </h1>
 
             {/* Urgency message */}
-            <div className="mb-6 p-4 bg-white/10 backdrop-blur-sm rounded-lg border-l-4 border-primary relative overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent"></div>
+            <div className="mb-2 inline-block bg-white/10 backdrop-blur-sm rounded-lg border-l-4 border-primary relative overflow-hidden px-3 py-2">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/5 to-transparent pointer-events-none"></div>
               <p className="relative z-10 text-lg font-medium flex items-center gap-2">
-                <Clock className="h-5 w-5 text-primary flex-shrink-0" />
-                Book Before 12pm for Same-Day Fix!
+              <Clock className="h-5 w-5 text-primary flex-shrink-0" />
+              Book Before 12pm for Same-Day Fix!
               </p>
             </div>
 
-            {/* Benefits hexagon grid */}
-            
+
 
             {/* CTA section */}
             <div className="relative">

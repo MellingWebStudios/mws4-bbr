@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       {/* Value Strip */}
-      <section className="bg-gray-100 py-3 dark:bg-gray-800 overflow-hidden">
+      <section className="hidden md:block bg-gray-100 py-3 dark:bg-gray-800 overflow-hidden">
         <div className="container mx-auto px-0 md:px-4">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-3 md:gap-4">
             <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
@@ -52,9 +52,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
-              <span className="text-sm font-medium">
-                Same-Day Service 
-              </span>
+              <span className="text-sm font-medium">Same-Day Service</span>
             </div>
             <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
@@ -62,9 +60,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
-              <span className="text-sm font-medium">
-                Gas Safe Registered: 520077
-              </span>
+              <span className="text-sm font-medium">Gas Safe Registered: 520077</span>
             </div>
             <div className="flex items-center justify-center text-center md:justify-start md:text-left w-full bg-white/70 rounded-lg px-4 py-2 stat-chip">
               <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
@@ -73,6 +69,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/* Key Benefits Section 
       <section className="py-12">
