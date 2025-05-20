@@ -1,17 +1,20 @@
-import fs from "fs"
-import { globby } from "globby"
-import prettier from "prettier"
-import { locations, services } from "../lib/locations-data"
+// scripts/generate-seo.ts
+import fs from "fs";
+import { globby } from "globby";
+import prettier from "prettier";
+import { locations, services } from "../lib/locations-data";
 
-const WEBSITE_URL = "https://www.birminghamboilerrepairs.com"
+/* ───────────────── CONFIG ───────────────── */
+const WEBSITE_URL =
+  process.env.WEBSITE_URL?.replace(/\/$/, "") || // strip trailing slash
+  "https://bbr-staging.fly.dev";
 
-/**
- * Generate sitemap.xml
- */
+const isProd = process.env.NODE_ENV === "production";
+
+/* ───────────────── SITEMAP ───────────────── */
 async function generateSitemap() {
-  console.log("Generating sitemap.xml...")
+  console.log("➜  Generating sitemap.xml …");
 
-  // Get all page paths from the Next.js app
   const pages = await globby([
     "app/**/page.tsx",
     "app/**/route.ts",
@@ -20,137 +23,105 @@ async function generateSitemap() {
     "!app/**/error.tsx",
     "!app/**/loading.tsx",
     "!app/**/layout.tsx",
-  ])
+  ]);
 
-  // Transform the page paths into sitemap entries
-  let sitemapEntries = pages
-    .map((page) => {
-      // Convert page path to route path
-      // e.g., app/about/page.tsx -> /about
-      const route = page.replace("app", "").replace("/page.tsx", "").replace("/route.ts", "").replace("/index", "")
+  const staticEntries = pages
+    .map((file) => {
+      const route = file
+        .replace(/^app/, "")
+        .replace(/\/page\.tsx$/, "")
+        .replace(/\/route\.ts$/, "")
+        .replace(/\/index$/, "");
 
-      // Skip dynamic routes as we'll handle them separately
-      if (route.includes("[") || route.includes("(")) {
-        return null
-      }
+      if (route.includes("[") || route.includes("(")) return null; // skip dynamic
 
-      // Format the path correctly
-      const path = route === "" ? "/" : route
+      const path = route === "" ? "/" : route;
+      const lastmod = fs.statSync(file).mtime.toISOString().split("T")[0];
 
-      // Get the file's last modified date
-      const stats = fs.statSync(page)
-      const lastModified = stats.mtime.toISOString().split("T")[0]
+      /* Priority + changefreq rules */
+      const priority =
+        path === "/"
+          ? "1.0"
+          : path === "/services"
+          ? "0.9"
+          : path.startsWith("/services/")
+          ? "0.8"
+          : ["/contact", "/prices"].includes(path)
+          ? "0.8"
+          : "0.7";
 
-      // Set priority based on page importance
-      let priority = "0.7" // Default priority
-
-      if (path === "/") {
-        priority = "1.0" // Homepage gets highest priority
-      } else if (path === "/services") {
-        priority = "0.9" // Main services page
-      } else if (path.startsWith("/services/")) {
-        priority = "0.8" // Individual service pages
-      } else if (path === "/contact" || path === "/prices") {
-        priority = "0.8" // Important pages
-      }
-
-      // Set change frequency based on content type
-      let changefreq = "monthly" // Default frequency
-
-      if (path === "/") {
-        changefreq = "weekly" // Homepage changes more frequently
-      } else if (path.includes("blog") || path === "/services") {
-        changefreq = "weekly" // Blog and services may change weekly
-      }
+      const changefreq =
+        path === "/"
+          ? "weekly"
+          : path.includes("blog") || path === "/services"
+          ? "weekly"
+          : "monthly";
 
       return `
-        <url>
-          <loc>${WEBSITE_URL}${path}</loc>
-          <lastmod>${lastModified}</lastmod>
-          <changefreq>${changefreq}</changefreq>
-          <priority>${priority}</priority>
-        </url>
-      `
+  <url>
+    <loc>${WEBSITE_URL}${path}</loc>
+    <lastmod>${lastmod}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`;
     })
     .filter(Boolean)
+    .join("");
 
-  // Add location-based service pages
-  const locationServiceEntries = []
+  /* Location-based service pages */
+  const locationEntries = locations
+    .flatMap((loc) =>
+      services.map(
+        (svc) => `
+  <url>
+    <loc>${WEBSITE_URL}/${loc.slug}/${svc.slug}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`
+      )
+    )
+    .join("");
 
-  for (const location of locations) {
-    for (const service of services) {
-      const path = `/${location.slug}/${service.slug}`
-      const lastModified = new Date().toISOString().split("T")[0] // Use current date
+  const rawXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${staticEntries}${locationEntries}
+</urlset>`;
 
-      locationServiceEntries.push(`
-        <url>
-          <loc>${WEBSITE_URL}${path}</loc>
-          <lastmod>${lastModified}</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
-      `)
-    }
-  }
-
-  // Add location service pages to the sitemap entries
-  sitemapEntries = [...sitemapEntries, ...locationServiceEntries]
-
-  // Create the sitemap XML
-  const sitemap = `
-    <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${sitemapEntries.join("")}
-    </urlset>
-  `
-
-  // Format the XML with prettier
-  const formattedSitemap = await prettier.format(sitemap, {
+  const formatted = await prettier.format(rawXml, {
     parser: "html",
     printWidth: 120,
-  })
+  });
 
-  // Write the sitemap to the public directory
-  fs.writeFileSync("public/sitemap.xml", formattedSitemap)
-  console.log("sitemap.xml generated successfully!")
+  fs.writeFileSync("public/sitemap.xml", formatted);
+  console.log("   ✔ sitemap.xml");
 }
 
-/**
- * Generate robots.txt
- */
+/* ───────────────── ROBOTS ───────────────── */
 async function generateRobotsTxt() {
-  console.log("Generating robots.txt...")
+  console.log("➜  Generating robots.txt …");
 
-  const robotsTxt = `
-# www.robotstxt.org/
-
-# Allow crawling of all content
-User-agent: *
+  const robots = isProd
+    ? `User-agent: *
 Disallow: /api/
 Disallow: /admin/
 Disallow: /private/
+Sitemap: ${WEBSITE_URL}/sitemap.xml`
+    : `User-agent: *
+Disallow: /`;
 
-# Sitemap
-Sitemap: ${WEBSITE_URL}/sitemap.xml
-`
-
-  // Write the robots.txt to the public directory
-  fs.writeFileSync("public/robots.txt", robotsTxt.trim())
-  console.log("robots.txt generated successfully!")
+  fs.mkdirSync("public", { recursive: true });
+  fs.writeFileSync("public/robots.txt", robots);
+  console.log("   ✔ robots.txt (" + (isProd ? "prod" : "staging") + ")");
 }
 
-/**
- * Main function to run all generators
- */
-async function run() {
+/* ───────────────── MAIN ───────────────── */
+(async () => {
   try {
-    await generateSitemap()
-    await generateRobotsTxt()
-  } catch (error) {
-    console.error("Error generating SEO files:", error)
-    process.exit(1)
+    await generateSitemap();
+    await generateRobotsTxt();
+  } catch (err) {
+    console.error("SEO build failed:", err);
+    process.exit(1);
   }
-}
-
-// Run the script
-run()
+})();
