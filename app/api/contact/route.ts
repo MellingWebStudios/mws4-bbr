@@ -11,49 +11,41 @@ const formSchema = z.object({
 
 export async function POST(request: NextRequest) {
   try {
-    // Parse the request body
     const body = await request.json()
-
-    // Validate the form data
     const validatedFields = formSchema.safeParse(body)
 
     if (!validatedFields.success) {
-      // Return validation errors
       return NextResponse.json(
-        {
-          success: false,
-          errors: validatedFields.error.flatten().fieldErrors,
-        },
+        { success: false, errors: validatedFields.error.flatten().fieldErrors },
         { status: 400 },
       )
     }
 
-    const { name, email, phone, message } = validatedFields.data
+    const formData = validatedFields.data
 
-    // In a real implementation, you would send the data to an email service or CRM
-    // For example, using a service like SendGrid, Mailgun, or a CRM API
+    // 🔁 Forward to FastAPI backend
+    const response = await fetch("https://bbr-api.fly.dev/forms/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    })
 
-    // Log the form data (in a real implementation, this would be sent to a service)
-    console.log("Form submission via API route:", { name, email, phone, message })
+    if (!response.ok) {
+      const error = await response.text()
+      console.error("FastAPI error:", error)
+      throw new Error("Failed to send form data to backend.")
+    }
 
-    // Simulate processing time
-    await new Promise((resolve) => setTimeout(resolve, 1000))
-
-    // Return a success response
     return NextResponse.json({
       success: true,
-      message: "Thank you for your message. We'll get back to you as soon as possible.",
+      message: "Thank you for your message. We'll get back to you shortly.",
     })
   } catch (error) {
     console.error("Contact form API error:", error)
-
-    // Return an error response
     return NextResponse.json(
-      {
-        success: false,
-        message: "An error occurred while processing your request. Please try again later.",
-      },
+      { success: false, message: "Server error. Please try again later." },
       { status: 500 },
     )
   }
 }
+
