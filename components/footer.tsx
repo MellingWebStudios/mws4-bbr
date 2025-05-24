@@ -96,21 +96,21 @@ const Footer = () => {
             </ul>
             <div className="flex space-x-4 mt-4">
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/BirminghamBoilerRepairs/"
                 aria-label="Facebook"
                 className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
               >
                 <Facebook className="h-6 w-6" />
               </Link>
               <Link
-                href="https://instagram.com"
+                href="https://www.instagram.com/birmingham_boiler_repairs/?hl=en-gb"
                 aria-label="Instagram"
                 className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
               </Link>
               <Link
-                href="https://youtube.com"
+                href="https://www.youtube.com/@theferroliman2067"
                 aria-label="YouTube"
                 className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
               >
