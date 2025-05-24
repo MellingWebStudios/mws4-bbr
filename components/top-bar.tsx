@@ -16,13 +16,13 @@ const TopBar = () => {
           </span>
         </div>
         <div className="flex items-center space-x-3">
-          <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-primary p-2">
+          <Link href="https://www.facebook.com/BirminghamBoilerRepairs/" aria-label="Facebook" className="hover:text-primary p-2">
             <Facebook className="h-6 w-6" />
           </Link>
           <Link href="https://instagram.com" aria-label="Instagram" className="hover:text-primary p-2">
             <Instagram className="h-6 w-6" />
           </Link>
-          <Link href="https://youtube.com" aria-label="YouTube" className="hover:text-primary p-2">
+          <Link href="https://www.youtube.com/@theferroliman2067" aria-label="YouTube" className="hover:text-primary p-2">
             <Youtube className="h-6 w-6" />
           </Link>
         </div>
