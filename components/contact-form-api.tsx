@@ -1,3 +1,4 @@
+
 "use client"
 
 import type React from "react"
@@ -34,6 +35,7 @@ const ContactFormAPI = () => {
     email: "",
     phone: "",
     message: "",
+    website: "",
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -50,23 +52,26 @@ const ContactFormAPI = () => {
     })
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://mws4-bbr-api.fly.dev/forms/contact", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
-      })
+      });
 
-      const data = await response.json()
+      // 👇 Log raw response status and text
+      console.log("API response status:", response.status);
+      console.log("API response ok:", response.ok);
+      const data = await response.json();
+      console.log("API response status:", response.status);
+      console.log("API response data:", data);
 
-      if (!response.ok) {
+      if (!response.ok || !data.message) {
         setFormState({
           isSubmitting: false,
           isSubmitted: false,
           errors: data.errors || { _form: ["Failed to submit the form. Please try again."] },
-        })
-        return
+        });
+        return;
       }
 
       // Success
@@ -82,6 +87,7 @@ const ContactFormAPI = () => {
         email: "",
         phone: "",
         message: "",
+        website: "",
       })
     } catch (error) {
       console.error("Form submission error:", error)
