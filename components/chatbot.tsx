@@ -211,7 +211,12 @@ const Chatbot = () => {
     if (
       msgContent.includes("call now") ||
       msgContent.includes("give us a call") ||
-      msgContent.includes("phone us")
+      msgContent.includes("phone us") ||
+      msgContent.includes("call us") ||
+      msgContent.includes("call dave") ||
+      msgContent.includes("call 0800") ||
+      msgContent.includes("call 08003202345") ||
+      msgContent.includes("call 0800 320 2345") ||
     ) {
       setButtonShownForMessageId(lastMsg.id)
       setFormShownForMessageId(null)
@@ -223,7 +228,16 @@ const Chatbot = () => {
     if (
       msgContent.includes("whatsapp") ||
       msgContent.includes("message us on whatsapp") ||
-      msgContent.includes("chat on whatsapp")
+      msgContent.includes("chat on whatsapp") ||
+      msgContent.includes("message dave on whatsapp") ||
+      msgContent.includes("whatsapp us") ||
+      msgContent.includes("whatsapp 0800") ||
+      msgContent.includes("whatsapp 08003202345") ||
+      msgContent.includes("whatsapp 0800 320 2345") ||
+      msgContent.includes("whatsapp us on 0800") ||
+      msgContent.includes("whatsapp us on 08003202345") ||
+      msgContent.includes("whatsapp us on 0800 320 2345") ||
+      msgContent.includes("whatsapp us on dave's number")
     ) {
       setWhatsAppShownForMessageId(lastMsg.id)
       setFormShownForMessageId(null)
