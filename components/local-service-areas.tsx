@@ -7,7 +7,7 @@ interface LocalServiceAreasProps {
 
 const LocalServiceAreas = ({ className }: LocalServiceAreasProps) => {
   const areas = [
-    "Birmingham City Centre",
+    "Birmingham",
     "Edgbaston",
     "Harborne",
     "Selly Oak",

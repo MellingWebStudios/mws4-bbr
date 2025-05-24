@@ -307,9 +307,9 @@ export default function Home() {
               className="border-secondary text-secondary hover:bg-secondary/10"
             >
               <Link
-                href="https://g.co/kgs/abcdef"
+                href="https://www.google.com/search?sca_esv=0f29376999671a5e&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E4XbkKOA0vKAM72LYjMYjm1ZOIu5C5ZRlfrejaBtyWMT9-kuBdhAvFtxQYr0I-XwS929IxNRMtHb8NK0n-IR-kAoq-x4W15oqj9-OJCgq_pRJ0sL1w%3D%3D&q=Birmingham+Boiler+Repairs+Reviews&sa=X&ved=2ahUKEwjmzL2H7LyNAxUCVUEAHUSiFtYQ0bkNegQIJRAE&biw=1920&bih=989&dpr=1"
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="Birmingham Boiler Repairs Reviews"
               >
                 Read More Google Reviews
               </Link>
