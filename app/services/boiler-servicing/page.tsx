@@ -23,7 +23,7 @@ export default function BoilerServicingPage() {
     title: "Boiler Servicing",
     description:
       "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£55) and full (£120) servicing options.",
-    image: "/placeholder.svg?height=300&width=400",
+    image: "/images/service_page_image.png",
     features: [
       "30-minute standard service",
       "Deep clean heat cell (full service)",
@@ -108,7 +108,7 @@ export default function BoilerServicingPage() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div className="relative h-64 w-full md:h-auto">
                     <Image
-                      src={service.image || "/placeholder.svg"}
+                      src={service.image || "images/service_page_image.png"}
                       alt={service.title}
                       fill
                       className="object-cover"

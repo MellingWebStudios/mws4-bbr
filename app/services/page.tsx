@@ -29,7 +29,7 @@ export default function ServicesPage() {
       title: "Boiler Servicing",
       description:
         "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£55) and full (£120) servicing options.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/service_boiler_servicing_services_page.png",
       features: [
         "30-minute standard service",
         "Deep clean heat cell (full service)",
@@ -43,7 +43,7 @@ export default function ServicesPage() {
       title: "Gas Safety Inspections",
       description:
         "Certified checks to keep your home compliant and safe. Digital certificates provided with a reminder service.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/services_gas_safety.png",
       features: ["£45 for 1 appliance", "£50 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
       link: "/services/gas-safety",
     },
@@ -52,7 +52,7 @@ export default function ServicesPage() {
       title: "Ferroli Boiler Specialists",
       description:
         "Approved specialist for Ferroli repair & maintenance. Expert knowledge of Ferroli systems and components.",
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/ferroli_specialist_services.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/ferroli-specialists",
     },
@@ -102,7 +102,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
             <div className="relative h-80 overflow-hidden rounded-lg shadow-lg md:h-96">
-              <Image src="/placeholder.svg?height=500&width=800" alt="Service Area Map" fill className="object-cover" />
+              <Image src="/images/services_map_image.png" alt="Service Area Map" fill className="object-cover" />
             </div>
             <div>
               <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">
@@ -148,9 +148,6 @@ export default function ServicesPage() {
           </div>
         </div>
       </section>
-
-      {/* Local Service Areas */}
-      <LocalServiceAreas />
 
       {/* CTA Section */}
       <section className="bg-secondary py-16 text-white">

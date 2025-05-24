@@ -19,19 +19,19 @@ export default function AboutPage() {
       name: "Dave",
       role: "Breakdown Engineer",
       bio: "Extensive fault-finding expertise; front-line problem-solver.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/dave_about_us.png",
     },
     {
       name: "Jordon",
       role: "Service Engineer",
       bio: "Specialist in servicing, repairs & gas inspections.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/jordon_about_us.png",
     },
     {
       name: "Andy",
       role: "Gas Service Engineer",
       bio: "Gas-safety focused and customer-care driven.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/images/andy_about_us.png",
     },
   ]
 
@@ -53,7 +53,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div className="relative h-64 overflow-hidden rounded-lg md:h-auto">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/images/about_us_page.png"
                 alt="Birmingham Boiler Repairs Team"
                 fill
                 className="object-cover"
@@ -108,7 +108,7 @@ export default function AboutPage() {
                 key={index}
                 className="overflow-hidden border-none shadow-lg transition-transform duration-300 hover:scale-105"
               >
-                <div className="relative h-64 w-full">
+                <div className="relative aspect-square w-full">
                   <Image
                     src={member.image || "/placeholder.svg"}
                     alt={`${member.name} - ${member.role}`}

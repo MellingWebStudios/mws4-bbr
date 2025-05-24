@@ -14,23 +14,23 @@ const MaintenanceTips = () => {
     {
       id: "pressure",
       title: "Re-pressurise Your Boiler (No Tools Needed)",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube ID
+      videoId: "_JM3_hKbFDw", // Replace with actual YouTube ID
       description:
         "Low boiler pressure is a common issue that you can fix yourself. This 90-second guide shows you how to re-pressurise your boiler without any special tools.",
     },
     {
       id: "reset",
       title: "How to Reset Your Boiler",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube ID
+      videoId: "5rwQS8sDeP0", // Replace with actual YouTube ID
       description:
         "If your boiler has locked out or isn't working, a simple reset might fix the problem. Follow these steps to safely reset your boiler.",
     },
     {
       id: "radiators",
-      title: "Bleeding Radiators Step-by-Step",
-      videoId: "dQw4w9WgXcQ", // Replace with actual YouTube ID
+      title: "How to Use a Ferroli HE boiler",
+      videoId: "6-yKzaN2TiA", // Replace with actual YouTube ID
       description:
-        "Cold spots on your radiators? Learn how to bleed them properly to improve heating efficiency and save on energy bills.",
+        "How to use the functions on a Ferroli HE boiler .With the possible problems you may encounter with the button if used wrong",
     },
   ]
 
