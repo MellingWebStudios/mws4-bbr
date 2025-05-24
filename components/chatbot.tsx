@@ -216,7 +216,7 @@ const Chatbot = () => {
       msgContent.includes("call dave") ||
       msgContent.includes("call 0800") ||
       msgContent.includes("call 08003202345") ||
-      msgContent.includes("call 0800 320 2345") ||
+      msgContent.includes("call 0800 320 2345")
     ) {
       setButtonShownForMessageId(lastMsg.id)
       setFormShownForMessageId(null)
