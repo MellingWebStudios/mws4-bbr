@@ -28,14 +28,13 @@ export default function MobileHeroImage() {
 
       {/* Main image with glow effect */}
       <div className="relative w-[180px] h-[180px] flex items-center justify-center z-20 -mb-3 mt-3 mx-auto">
-        <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl animate-pulse-slow" aria-hidden="true"></div>
-        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-full" aria-hidden="true"></div>
+        {/* Mobile: Remove background blurs and drop-shadow for LCP performance */}
         <Image
           src="/images/engineers-team.svg"
           alt="Our team of Gas Safe registered engineers"
           width={180}
           height={180}
-          className="drop-shadow-lg rounded-xl relative z-10"
+          className="rounded-xl"
           priority
           sizes="180px"
         />
