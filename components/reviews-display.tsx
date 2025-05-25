@@ -148,11 +148,11 @@ export default function ReviewsDisplay({
                     setFilter("all")
                     setDisplayCount(limit)
                   }}
-                  className={`rounded-full transition-all ${
-                    filter === "all"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20"
-                      : "hover:border-primary hover:text-primary"
-                  }`}
+                  className={`rounded-full transition-all
+                    ${filter === "all"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
+                  `}
                 >
                   All Reviews
                 </Button>
@@ -163,11 +163,11 @@ export default function ReviewsDisplay({
                     setFilter("repair")
                     setDisplayCount(limit)
                   }}
-                  className={`rounded-full transition-all ${
-                    filter === "repair"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20"
-                      : "hover:border-primary hover:text-primary"
-                  }`}
+                  className={`rounded-full transition-all
+                    ${filter === "repair"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
+                  `}
                 >
                   Boiler Repair
                 </Button>
@@ -178,11 +178,11 @@ export default function ReviewsDisplay({
                     setFilter("service")
                     setDisplayCount(limit)
                   }}
-                  className={`rounded-full transition-all ${
-                    filter === "service"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20"
-                      : "hover:border-primary hover:text-primary"
-                  }`}
+                  className={`rounded-full transition-all
+                    ${filter === "service"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
+                  `}
                 >
                   Boiler Service
                 </Button>
@@ -193,11 +193,11 @@ export default function ReviewsDisplay({
                     setFilter("safety")
                     setDisplayCount(limit)
                   }}
-                  className={`rounded-full transition-all ${
-                    filter === "safety"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20"
-                      : "hover:border-primary hover:text-primary"
-                  }`}
+                  className={`rounded-full transition-all
+                    ${filter === "safety"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
+                  `}
                 >
                   Gas Safety Check
                 </Button>
