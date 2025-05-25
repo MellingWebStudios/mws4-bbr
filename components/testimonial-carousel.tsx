@@ -76,12 +76,19 @@ const TestimonialCarousel = () => {
         {testimonials.map((_, index) => (
           <button
             key={index}
-            className={`h-2 w-2 rounded-full ${
-              activeIndex === index ? "bg-secondary" : "bg-gray-300 dark:bg-gray-700"
+            className={`h-6 w-6 flex items-center justify-center rounded-full focus:outline-none focus-visible:ring-2 focus-visible:ring-secondary/70 transition-shadow relative group ${
+              activeIndex === index ? "bg-secondary/10" : "bg-gray-300/20 dark:bg-gray-700/20"
             }`}
             onClick={() => setActiveIndex(index)}
             aria-label={`Go to testimonial ${index + 1}`}
-          />
+          >
+            <span
+              className={`block h-2 w-2 rounded-full transition-colors duration-200 ${
+                activeIndex === index ? "bg-secondary" : "bg-gray-300 dark:bg-gray-700"
+              }`}
+              aria-hidden="true"
+            />
+          </button>
         ))}
       </div>
     </div>
