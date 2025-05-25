@@ -33,7 +33,7 @@ export default function SchemaMarkup() {
               "@id": `${businessInfo.website}/#business`,
               name: businessInfo.name,
               url: businessInfo.website,
-              logo: `${businessInfo.website}/images/boiler-mascot-logo.webp`,
+              logo: `${businessInfo.website}/images/boiler-mascot-logo-56.webp`,
               image: `${businessInfo.website}/images/engineers-team-enhanced.svg`,
               description:
                 "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham. No call-out fee, clear pricing, no VAT charged.",

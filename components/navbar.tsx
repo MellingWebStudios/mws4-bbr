@@ -101,7 +101,7 @@ const Navbar = () => {
             <Link href="/" className="flex items-center space-x-2">
               <div className="relative h-10 w-10 md:h-14 md:w-14">
                 <Image
-                  src="/images/boiler-mascot-logo.webp"
+                  src="/images/boiler-mascot-logo-56.webp"
                   alt={`${businessInfo.name} Logo`}
                   fill
                   className="object-contain"
@@ -188,10 +188,10 @@ const Navbar = () => {
                 <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8">
                     <Image
-                    src="/images/boiler-mascot-logo.webp"
-                    alt="Birmingham Boiler Repairs Logo"
-                    fill
-                    className="object-contain"
+                      src="/images/boiler-mascot-logo-56.webp"
+                      alt="Birmingham Boiler Repairs Logo"
+                      fill
+                      className="object-contain"
                     />
                   </div>
                     <span className="text-secondary">Birmingham</span>
