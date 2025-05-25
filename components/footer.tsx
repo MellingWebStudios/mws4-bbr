@@ -32,12 +32,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
-              <span className="text-secondary">Birmingham</span> <span className="text-red-600">Boiler Repairs</span>
+              <span className="text-secondary">Birmingham</span> <span className="text-red-700">Boiler Repairs</span>
             </h3>
             <div className="mb-4">
               <GasSafeBadge variant="footer" />
             </div>
-            <p className="text-sm text-gray-600 dark:text-gray-400">
+            <p className="text-sm text-gray-800 dark:text-gray-300">
               Family-run boiler repair and servicing company established in 2010.
             </p>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Home
                 </Link>
@@ -56,7 +56,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/services"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Services
                 </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/about"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   About Us
                 </Link>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/contact"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Contact
                 </Link>
@@ -80,7 +80,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/prices"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Prices
                 </Link>
@@ -88,7 +88,7 @@ const Footer = () => {
               <li>
                 <Link
                   href="/privacy-policy"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Privacy Policy
                 </Link>
@@ -128,7 +128,7 @@ const Footer = () => {
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Freephone</p>
                   <a
                     href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-                    className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                    className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                     aria-label="Call Freephone"
                   >
                     {businessInfo.phone.freephone}
@@ -141,7 +141,7 @@ const Footer = () => {
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Mobile</p>
                   <a
                     href={`tel:${businessInfo.phone.mobile.replace(/\s/g, "")}`}
-                    className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                    className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                     aria-label="Call Mobile"
                   >
                     {businessInfo.phone.mobile}
@@ -152,7 +152,7 @@ const Footer = () => {
                 <Mail className="mr-2 h-5 w-5 text-secondary" />
                 <a
                   href={`mailto:${businessInfo.email}`}
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                   aria-label="Email"
                 >
                   {businessInfo.email}
@@ -160,14 +160,14 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-secondary" />
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-800 dark:text-gray-300">
                   {businessInfo.address.street}, {businessInfo.address.locality}, {businessInfo.address.region}{" "}
                   {businessInfo.address.postalCode}
                 </p>
               </li>
               <li className="flex items-start">
                 <Shield className="mr-2 h-5 w-5 text-secondary" />
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="text-sm text-gray-800 dark:text-gray-300">
                   Gas Safe Registered: {businessInfo.gasSafeNumber}
                 </p>
               </li>
@@ -195,19 +195,19 @@ const Footer = () => {
         <div className="mt-8 border-t border-gray-200 pt-8 dark:border-gray-800">
           <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
             <div className="flex flex-wrap gap-4">
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-800 dark:text-gray-300">
                 © {new Date().getFullYear()} {businessInfo.name}. All rights reserved.
               </p>
               <div className="flex space-x-4">
                 <Link
                   href="/privacy-policy"
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Privacy Policy
                 </Link>
                 <button
                   onClick={openPreferences}
-                  className="text-sm text-gray-600 transition-colors hover:text-secondary dark:text-gray-400"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Cookie Settings
                 </button>
@@ -215,7 +215,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center">
               <Shield className="mr-1 h-4 w-4 text-secondary" />
-              <p className="text-sm text-gray-600 dark:text-gray-400">
+              <p className="text-sm text-gray-800 dark:text-gray-300">
                 Website by{" "}
                 <a
                   href="https://mellingwebstudios.com"

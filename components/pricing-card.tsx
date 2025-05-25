@@ -89,7 +89,7 @@ const PricingCard = ({
 
         {/* Footer */}
         <CardFooter className="flex flex-col gap-3 px-8 pb-8">
-          <Button asChild size="lg" className="w-full">
+          <Button asChild size="lg" className="w-full bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-2 focus-visible:ring-primary-foreground">
             {isActionLink(ctaLink) ? (
               <a href={ctaLink} aria-label={ctaText} className="w-full">
                 {ctaText}
