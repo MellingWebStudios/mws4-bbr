@@ -7,20 +7,10 @@ export default function MobileHeroImage() {
     <>
       {/* Background elements */}
       <div className="absolute inset-0 hero-pattern opacity-10" aria-hidden="true"></div>
-      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl animate-float-slow" aria-hidden="true"></div>
-      <div className="absolute bottom-0 left-0 w-36 h-36 bg-primary/5 rounded-full blur-3xl animate-float-fast" aria-hidden="true"></div>
-
-      {/* Floating decorative elements */}
-      <div 
-        className="absolute top-12 left-4 w-20 h-20 rounded-full border-4 border-primary/20 animate-spin-slow"
-        style={{ animationDuration: "20s" }}
-        aria-hidden="true"
-      />
-      <div 
-        className="absolute top-24 right-4 w-16 h-16 rounded-full border-4 border-dashed border-white/10 animate-spin-slow"
-        style={{ animationDuration: "25s", animationDirection: "reverse" }}
-        aria-hidden="true"
-      />
+      {/* Subtle mobile-only visuals to compensate for removed heavy effects */}
+      <div className="sm:hidden absolute top-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/10 rounded-full blur-md" aria-hidden="true"></div>
+      <div className="sm:hidden absolute bottom-4 right-4 w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-md" aria-hidden="true"></div>
+      <div className="sm:hidden absolute top-1/2 left-2 w-10 h-10 bg-secondary/10 rounded-full blur-sm" aria-hidden="true"></div>
 
       {/* Trust bar */}
       <div className="relative z-10 flex items-center justify-center mb-6">
@@ -49,6 +39,16 @@ export default function MobileHeroImage() {
           priority
           sizes="180px"
         />
+      </div>
+
+      {/* Grid pattern background for mobile (matches desktop) */}
+      <div className="sm:hidden absolute inset-0 opacity-10 pointer-events-none select-none" aria-hidden="true">
+        <svg width="100%" height="100%">
+          <pattern id="grid-mobile" width="40" height="40" patternUnits="userSpaceOnUse">
+            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="2" />
+          </pattern>
+          <rect width="100%" height="100%" fill="url(#grid-mobile)" />
+        </svg>
       </div>
     </>
   )
