@@ -324,7 +324,6 @@ export default function Home() {
       <BoilerFAQ />
 
       {/* YouTube Section */}
-      <YouTubeSection />
 
       {/* Testimonials Section */}
       <section className="bg-gray-50 py-16 dark:bg-gray-900">

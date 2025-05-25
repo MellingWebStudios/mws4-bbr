@@ -2,6 +2,7 @@ import type React from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { CookieConsentProvider } from "@/context/cookie-consent-context"
 import SchemaMarkup from "@/components/schema-markup"
+import ChatbotButton from "@/components/chatbot-button"
 
 export default function RootLayout({
   children,
@@ -20,6 +21,7 @@ export default function RootLayout({
           </div>
         </CookieConsentProvider>
       </ThemeProvider>
+      <ChatbotButton />
     </body>
   )
 }
