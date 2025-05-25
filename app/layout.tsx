@@ -37,8 +37,7 @@ export default function Layout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         {/* Preload LCP hero image */}
         <link rel="preload" as="image" href="/images/engineers-team.svg" />
-        {/* Preload Inter font */}
-        <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTcviYw.woff2" type="font/woff2" crossOrigin="anonymous" />
+        {/* Removed Inter font manual preload as Next.js font loader handles it */}
         {/* Removed CSS preload and stylesheet links for /app/globals.css, as global CSS is imported via import statement above. */}
       </head>
       <RootLayout className={inter.className}>
