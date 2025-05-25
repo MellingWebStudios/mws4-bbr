@@ -33,6 +33,7 @@ export default function DesktopHeroImage() {
             className="rounded-xl relative z-10"
             priority
             loading="eager"
+            fetchPriority="high"
           />
         </div>
 
