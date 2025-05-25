@@ -1,10 +1,11 @@
 "use client"
 
 import { useEffect } from "react"
+import { Star } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, CheckCircle, Star, Clock, ShieldCheck, PoundSterlingIcon as Pound } from "lucide-react"
+import { Phone, CheckCircle, Clock, ShieldCheck, PoundSterlingIcon as Pound } from "lucide-react"
 import PricingCard from "@/components/pricing-card"
 import TestimonialCarousel from "@/components/testimonial-carousel"
 import TrustBadges from "@/components/trust-badges"
@@ -16,6 +17,8 @@ import MaintenanceTips from "@/components/maintenance-tips"
 import BoilerFAQ from "@/components/boiler-faq"
 import MobileHero from "@/components/mobile-hero"
 import DesktopHero from "@/components/desktop-hero"
+import MobileHeroImage from "@/components/server/mobile-hero-image"
+import DesktopHeroImage from "@/components/server/desktop-hero-image"
 
 export default function Home() {
   // Add this useEffect for parallax scrolling
@@ -32,15 +35,52 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      {/* Mobile hero - visible on <md screens only */}
-      <div className="block md:hidden">
-        <MobileHero />
-      </div>
+      {/* Mobile hero */}
+      <section className="block md:hidden relative bg-gradient-to-b from-secondary to-secondary/90 text-white overflow-hidden">
+        <div className="px-4 pt-7 pb-12">
+          {/* Server-rendered LCP image with trust badge and animations */}
+          <MobileHeroImage />
+          {/* Interactive content with star rating and CTA */}
+          <div className="relative z-10 mt-4">
+            <div className="flex justify-center mb-6">
+              <div className="bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-lg shadow-md flex items-center gap-2">
+                <div className="flex" aria-hidden="true">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+                  ))}
+                </div>
+                <span className="text-xs font-medium">4.9/5 • 120+ reviews</span>
+              </div>
+            </div>
+            <MobileHero />
+          </div>
+        </div>
+      </section>
 
-      {/* Desktop hero - visible on ≥md screens */}
-      <div className="hidden md:block">
-        <DesktopHero />
-      </div>
+      {/* Desktop hero */}
+      <section className="hidden md:block relative bg-gradient-to-r from-secondary to-secondary/80 py-16 text-white overflow-hidden">
+        {/* Creative background pattern */}
+        <div className="absolute inset-0 opacity-5 pointer-events-none select-none" aria-hidden="true">
+          <svg width="100%" height="100%">
+            <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="2" />
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+          </svg>
+        </div>
+        
+        {/* Main content */}
+        <div className="container mx-auto px-4 relative">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
+            {/* Server-rendered LCP image */}
+            <DesktopHeroImage />
+            {/* Interactive content with CTA */}
+            <div className="w-full lg:w-7/12">
+              <DesktopHero />
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Value Strip */}
       <section className="hidden md:block bg-gray-100 py-3 dark:bg-gray-800 overflow-hidden">
@@ -349,5 +389,5 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }

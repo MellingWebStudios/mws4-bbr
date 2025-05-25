@@ -2,6 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
+import RootLayout from "@/components/server/RootLayout"
 import ClientLayoutShell from "@/components/ClientLayoutShell"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   generator: 'v0.dev'
 }
 
-export default function RootLayout({
+export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
@@ -34,16 +35,16 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        {/* Preload LCP hero image for desktop */}
+        {/* Preload LCP hero image */}
         <link rel="preload" as="image" href="/images/engineers-team.svg" />
-        {/* Preload LCP hero image for mobile */}
-        <link rel="preload" as="image" href="/images/engineers-team.svg" media="(max-width: 767px)" />
         {/* Preload Inter font */}
         <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTcviYw.woff2" type="font/woff2" crossOrigin="anonymous" />
       </head>
-      <ClientLayoutShell interClassName={inter.className}>
-        {children}
-      </ClientLayoutShell>
+      <RootLayout className={inter.className}>
+        <ClientLayoutShell>
+          {children}
+        </ClientLayoutShell>
+      </RootLayout>
     </html>
   )
 }
