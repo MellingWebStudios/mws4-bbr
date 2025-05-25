@@ -6,6 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import LiteYouTubeEmbed from "./LiteYouTubeEmbed"
 
 const MaintenanceTips = () => {
   const [activeTab, setActiveTab] = useState("pressure")
@@ -65,16 +66,11 @@ const MaintenanceTips = () => {
                 <TabsContent key={tip.id} value={tip.id} className="border-none p-0">
                   <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="aspect-video w-full">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src={`https://www.youtube.com/embed/${tip.videoId}`}
+                      <LiteYouTubeEmbed
+                        id={tip.videoId}
                         title={tip.title}
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                        loading="lazy"
-                      ></iframe>
+                        className="w-full h-full"
+                      />
                     </div>
                     <div className="flex flex-col justify-center p-6">
                       <h3 className="mb-2 text-xl font-bold">{tip.title}</h3>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface LiteYouTubeEmbedProps {
   id: string; // YouTube video ID
@@ -9,6 +9,10 @@ interface LiteYouTubeEmbedProps {
 const LiteYouTubeEmbed: React.FC<LiteYouTubeEmbedProps> = ({ id, title = 'YouTube video', className }) => {
   const [isIframeLoaded, setIsIframeLoaded] = useState(false);
   const thumbnail = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+
+  useEffect(() => {
+    setIsIframeLoaded(false);
+  }, [id]);
 
   return (
     <div className={`relative w-full aspect-video bg-black overflow-hidden rounded-lg shadow ${className || ''}`}>
