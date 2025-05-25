@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, Filter, ThumbsUp, MessageSquare, Award } from "lucide-react"
 import { reviews } from "@/lib/reviews-data"
-import RatingBadge from "@/components/rating-badge"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
@@ -57,6 +56,11 @@ export default function ReviewsDisplay({
     setMounted(true)
   }, [])
 
+  // Handler for loading more reviews
+  const handleLoadMore = () => {
+    setDisplayCount((prev) => Math.min(prev + limit, filteredReviews.length))
+  }
+
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white py-12 px-2">
       {/* Header Section */}
@@ -81,8 +85,8 @@ export default function ReviewsDisplay({
         <div className="p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <div className="flex items-center gap-5">
-              <div className="relative h-16 w-16 flex-shrink-0 rounded-full bg-white p-2 shadow-md mx-auto" />
-              <Image src="/google-logo.png" alt="Google" width={64} height={64} className="object-contain" />
+              {/* Removed unnecessary empty avatar wrapper */}
+              <Image src="/google-logo.png" alt="Google" width={64} height={64} className="object-contain rounded-full bg-white p-2 shadow-md" />
               <div className="flex flex-col items-center md:items-start">
                 <div className="flex items-center gap-2">
                   <span className="font-bold text-gray-900 text-xl">Google Reviews</span>
@@ -91,20 +95,17 @@ export default function ReviewsDisplay({
                   </span>
                 </div>
                 <div className="flex items-center mt-1">
-                  <div className="flex">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`h-5 w-5 ${i < Math.round(averageRating) ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`}
-                      />
-                    ))}
-                  </div>
+                  {[...Array(5)].map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`h-5 w-5 ${i < Math.round(averageRating) ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`}
+                    />
+                  ))}
                   <span className="ml-2 text-lg font-bold text-gray-900">{formattedRating}</span>
                   <span className="ml-1 text-gray-500">({reviews.length}+ reviews)</span>
                 </div>
               </div>
             </div>
-
             <div className="flex flex-col w-full md:w-auto items-center">
               <div className="flex items-center gap-2 mb-1">
                 <Award className="h-4 w-4 text-primary" />
@@ -220,38 +221,36 @@ export default function ReviewsDisplay({
                 <div className="p-6 flex flex-col h-full relative items-center">
                   {/* Top accent bar */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/60"></div>
-
                   <div className="flex items-center gap-4 mb-5 relative justify-center w-full">
-                    <div className="relative h-14 w-14 rounded-full overflow-hidden border-2 border-white shadow-md">
-                      <Image
-                        src={review.avatar || "/placeholder.svg"}
-                        alt={`${review.author} avatar`}
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
+                    {/* Flatten avatar and author info */}
+                    <Image
+                      src={"/placeholder.svg"}
+                      alt={`${review.author} avatar`}
+                      width={56}
+                      height={56}
+                      className="rounded-full border-2 border-white shadow-md object-cover"
+                    />
                     <div>
                       <div className="font-bold text-gray-900 text-lg">{review.author}</div>
                       <div className="flex items-center gap-3">
-                        <RatingBadge rating={review.rating} />
+                        {/* Render stars inline for review.rating */}
+                        <div className="flex gap-0.5">
+                          {[...Array(5)].map((_, i) => (
+                            <Star
+                              key={i}
+                              className={`h-4 w-4 ${i < review.rating ? "fill-yellow-400 text-yellow-400" : "fill-gray-200 text-gray-200"}`}
+                            />
+                          ))}
+                        </div>
                         <span className="text-xs text-gray-500 whitespace-nowrap">{review.date}</span>
                       </div>
                     </div>
-                    <div className="absolute top-0 right-0 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <Button variant="ghost" size="icon" className="h-8 w-8 text-gray-400 hover:text-primary">
-                        <ThumbsUp className="h-4 w-4" />
-                        <span className="sr-only">Helpful</span>
-                      </Button>
-                    </div>
+                    {/* Remove absolute button, or make it static if needed */}
                   </div>
-
                   <div className="relative mb-5 w-full">
-                    <div className="absolute -left-1 -top-1 text-primary/10">
-                      <MessageSquare className="h-8 w-8 rotate-180 fill-primary/5" />
-                    </div>
+                    {/* Remove decorative icon if not needed for UX */}
                     <p className="text-gray-700 leading-relaxed pl-6">{review.text}</p>
                   </div>
-
                   <div className="mt-auto pt-4 border-t border-gray-100 flex gap-2 flex-wrap justify-center w-full">
                     <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20">
                       {review.service === "repair"
@@ -278,6 +277,7 @@ export default function ReviewsDisplay({
           <Button
             variant="default"
             className="bg-primary hover:bg-primary/90 text-white font-semibold transition-all duration-300 px-8 py-6 rounded-full text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40"
+            onClick={handleLoadMore}
           >
             Load More Reviews
             <Star className="ml-2 h-5 w-5 fill-white" />
