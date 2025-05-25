@@ -11,6 +11,27 @@ import RatingBadge from "@/components/rating-badge"
 import ReviewsModal from "@/components/reviews-modal"
 import businessInfo from "@/lib/business-info"
 
+// Utility: throttle function
+function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
+  let last = 0
+  let timeout: ReturnType<typeof setTimeout> | null = null
+  let lastArgs: any[]
+  return function (this: any, ...args: any[]) {
+    const now = Date.now()
+    lastArgs = args
+    if (now - last >= wait) {
+      last = now
+      fn.apply(this, args)
+    } else if (!timeout) {
+      timeout = setTimeout(() => {
+        last = Date.now()
+        timeout = null
+        fn.apply(this, lastArgs)
+      }, wait - (now - last))
+    }
+  } as T
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
@@ -18,11 +39,15 @@ const Navbar = () => {
   const pathname = usePathname()
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10)
-    }
+    const handleScroll = throttle(() => {
+      const scrolled = window.scrollY > 10
+      setIsScrolled(prev => {
+        if (prev !== scrolled) return scrolled
+        return prev
+      })
+    }, 200) // Increased throttle interval for best TBT
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll, { passive: true })
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 

@@ -20,16 +20,37 @@ import DesktopHero from "@/components/desktop-hero"
 import MobileHeroImage from "@/components/server/mobile-hero-image"
 import DesktopHeroImage from "@/components/server/desktop-hero-image"
 
+// Utility: throttle function
+function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
+  let last = 0;
+  let timeout: ReturnType<typeof setTimeout> | null = null;
+  let lastArgs: any[];
+  return function(this: any, ...args: any[]) {
+    const now = Date.now();
+    lastArgs = args;
+    if (now - last >= wait) {
+      last = now;
+      fn.apply(this, args);
+    } else if (!timeout) {
+      timeout = setTimeout(() => {
+        last = Date.now();
+        timeout = null;
+        fn.apply(this, lastArgs);
+      }, wait - (now - last));
+    }
+  } as T;
+}
+
 export default function Home() {
   // Add this useEffect for parallax scrolling
   useEffect(() => {
     if (typeof window !== "undefined" && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      const handleScroll = () => {
-        document.documentElement.style.setProperty("--scrollY", `${window.scrollY}px`)
-      }
+      const handleScroll = throttle(() => {
+        document.documentElement.style.setProperty("--scrollY", `${window.scrollY}px`);
+      }, 100);
 
-      window.addEventListener("scroll", handleScroll)
-      return () => window.removeEventListener("scroll", handleScroll)
+      window.addEventListener("scroll", handleScroll);
+      return () => window.removeEventListener("scroll", handleScroll);
     }
   }, [])
 

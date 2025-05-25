@@ -19,9 +19,19 @@ export default function ClientLayoutShell({ children }: { children: React.ReactN
     const onFirstInteraction = () => setShowExtras(true)
     window.addEventListener("pointerdown", onFirstInteraction, { once: true })
     window.addEventListener("keydown", onFirstInteraction, { once: true })
+
+    // Also load extras when browser is idle (if user never interacts)
+    const idleCallback = (window as any).requestIdleCallback || ((cb: any) => setTimeout(cb, 2000))
+    const idleId = idleCallback(() => setShowExtras(true))
+
     return () => {
       window.removeEventListener("pointerdown", onFirstInteraction)
       window.removeEventListener("keydown", onFirstInteraction)
+      if ((window as any).cancelIdleCallback) {
+        (window as any).cancelIdleCallback(idleId)
+      } else {
+        clearTimeout(idleId)
+      }
     }
   }, [])
 

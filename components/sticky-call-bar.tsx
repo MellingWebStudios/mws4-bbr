@@ -3,17 +3,38 @@
 import { useState, useEffect } from "react"
 import { Phone } from "lucide-react"
 
+// Utility: throttle function
+function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
+  let last = 0
+  let timeout: ReturnType<typeof setTimeout> | null = null
+  let lastArgs: any[]
+  return function (this: any, ...args: any[]) {
+    const now = Date.now()
+    lastArgs = args
+    if (now - last >= wait) {
+      last = now
+      fn.apply(this, args)
+    } else if (!timeout) {
+      timeout = setTimeout(() => {
+        last = Date.now()
+        timeout = null
+        fn.apply(this, lastArgs)
+      }, wait - (now - last))
+    }
+  } as T
+}
+
 export default function StickyCallBar() {
   const [visible, setVisible] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       if (window.scrollY > 150) {
         setVisible(true)
       } else {
         setVisible(false)
       }
-    }
+    }, 100)
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
