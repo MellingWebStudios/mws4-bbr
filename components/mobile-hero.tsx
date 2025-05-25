@@ -9,9 +9,9 @@ export default function MobileHero() {
   return (
     <section className="relative bg-gradient-to-b from-secondary to-secondary/90 text-white px-4 pt-7 pb-12 overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 hero-pattern opacity-10"></div>
-      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl animate-float-slow"></div>
-      <div className="absolute bottom-0 left-0 w-36 h-36 bg-primary/5 rounded-full blur-3xl animate-float-fast"></div>
+      <div className="absolute inset-0 hero-pattern opacity-10" aria-hidden="true"></div>
+      <div className="absolute top-16 left-1/2 -translate-x-1/2 w-48 h-48 bg-primary/10 rounded-full blur-3xl animate-float-slow" aria-hidden="true"></div>
+      <div className="absolute bottom-0 left-0 w-36 h-36 bg-primary/5 rounded-full blur-3xl animate-float-fast" aria-hidden="true"></div>
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center">
@@ -22,9 +22,10 @@ export default function MobileHero() {
             width={20}
             height={20}
             alt="Gas Safe Registered"
+            priority
           />
           <span className="text-xs font-medium">Gas Safe: 520077</span>
-          <div className="flex ml-2">
+          <div className="flex ml-2" aria-hidden="true">
             {[...Array(5)].map((_, i) => (
               <Star key={i} className="h-4 w-4 fill-primary text-primary" />
             ))}
@@ -34,7 +35,7 @@ export default function MobileHero() {
 
         {/* Main image, absolute for stacking */}
         <div className="relative w-[190px] h-[190px] flex items-center justify-center z-20 -mb-3 mt-3">
-          <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl"></div>
+          <div className="absolute inset-0 bg-primary/20 rounded-full blur-2xl" aria-hidden="true"></div>
           <Image
             src="/images/engineers-team.svg"
             alt="Our team of Gas Safe registered engineers"
@@ -67,19 +68,19 @@ export default function MobileHero() {
         {/* Key benefits below image */}
         <div className="w-full mb-4 grid grid-cols-2 gap-2">
           <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
-            <ShieldCheck className="mr-1 h-4 w-4 text-primary" />
+            <ShieldCheck className="mr-1 h-4 w-4 text-primary" aria-hidden="true"/>
             <span className="text-xs font-medium">Gas Safe</span>
           </div>
           <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
-            <PoundSterling className="mr-1 h-4 w-4 text-primary" />
+            <PoundSterling className="mr-1 h-4 w-4 text-primary" aria-hidden="true"/>
             <span className="text-xs font-medium">No VAT</span>
           </div>
           <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
-            <Clock className="mr-1 h-4 w-4 text-primary" />
+            <Clock className="mr-1 h-4 w-4 text-primary" aria-hidden="true"/>
             <span className="text-xs font-medium">Same-Day</span>
           </div>
           <div className="flex items-center rounded-lg bg-white/10 px-2 py-2">
-            <Ban className="mr-1 h-4 w-4 text-primary" />
+            <Ban className="mr-1 h-4 w-4 text-primary" aria-hidden="true"/>
             <span className="text-xs font-medium">No Call-Out Fee</span>
           </div>
         </div>

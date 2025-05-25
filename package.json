@@ -7,7 +7,9 @@
     "build": "next build",
     "postbuild": "tsx scripts/generate-sitemap.ts",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "analyze": "BUNDLE_ANALYZE=true next build"
+
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.22",
@@ -71,6 +73,7 @@
     "zod": "latest"
   },
   "devDependencies": {
+    "@next/bundle-analyzer": "15.4.0-canary.51",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",

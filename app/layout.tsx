@@ -2,18 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import Navbar from "@/components/navbar"
-import Footer from "@/components/footer"
-import ChatbotButton from "@/components/chatbot-button"
-import TopBar from "@/components/top-bar"
-import GoogleAnalytics from "@/components/google-analytics"
-import { Suspense } from "react"
-import StickyCallBar from "@/components/sticky-call-bar"
-import WhatsAppButton from "@/components/whatsapp-button"
-import SchemaMarkup from "@/components/schema-markup"
-import { CookieConsentProvider } from "@/context/cookie-consent-context"
-import CookieConsentBanner from "@/components/cookie-consent-banner"
+import ClientLayoutShell from "@/components/ClientLayoutShell"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
@@ -32,14 +21,12 @@ export const metadata: Metadata = {
     locale: "en_GB",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -47,25 +34,16 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        {/* Preload LCP hero image for desktop */}
+        <link rel="preload" as="image" href="/images/engineers-team.svg" />
+        {/* Preload LCP hero image for mobile */}
+        <link rel="preload" as="image" href="/images/engineers-team.svg" media="(max-width: 767px)" />
+        {/* Preload Inter font */}
+        <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTcviYw.woff2" type="font/woff2" crossOrigin="anonymous" />
       </head>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
-          <CookieConsentProvider>
-            <GoogleAnalytics />
-            <SchemaMarkup />
-            <div className="flex min-h-screen flex-col">
-              <TopBar />
-              <Navbar />
-              <Suspense fallback={`Loading...`}>
-                <main className="flex-1">{children}</main>
-              </Suspense>
-              <Footer />
-              <ChatbotButton />
-              <CookieConsentBanner />
-            </div>
-          </CookieConsentProvider>
-        </ThemeProvider>
-      </body>
+      <ClientLayoutShell interClassName={inter.className}>
+        {children}
+      </ClientLayoutShell>
     </html>
   )
 }

@@ -1,3 +1,5 @@
+import createBundleAnalyzer from '@next/bundle-analyzer';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
@@ -12,7 +14,6 @@ const nextConfig = {
   experimental: {
     serverActions: true,
   },
-  // Ensure that sitemap.xml and robots.txt are generated during build
   async rewrites() {
     return [
       {
@@ -23,8 +24,12 @@ const nextConfig = {
         source: '/robots.txt',
         destination: '/api/robots',
       },
-    ]
+    ];
   },
-}
+};
 
-export default nextConfig
+const withBundleAnalyzer = createBundleAnalyzer({
+  enabled: process.env.BUNDLE_ANALYZE === 'true',
+});
+
+export default withBundleAnalyzer(nextConfig);
