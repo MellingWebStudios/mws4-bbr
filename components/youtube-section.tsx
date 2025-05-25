@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import LiteYouTubeEmbed from "./LiteYouTubeEmbed"
 
 const YouTubeSection = () => {
   const [activeTab, setActiveTab] = useState("repressurising")
@@ -23,7 +24,33 @@ const YouTubeSection = () => {
     },
   ]
 
-  return null // Section removed as requested
+  return (
+    <section className="my-8">
+      <div className="flex space-x-2 mb-4">
+        {videos.map((video) => (
+          <button
+            key={video.id}
+            className={`px-4 py-2 rounded ${activeTab === video.id ? 'bg-blue-600 text-white' : 'bg-gray-200 text-gray-800'}`}
+            onClick={() => setActiveTab(video.id)}
+          >
+            {video.title}
+          </button>
+        ))}
+      </div>
+      <div>
+        {videos.map((video) => (
+          activeTab === video.id && (
+            <LiteYouTubeEmbed
+              key={video.id}
+              id={video.embedId}
+              title={video.title}
+              className="mx-auto max-w-2xl"
+            />
+          )
+        ))}
+      </div>
+    </section>
+  )
 }
 
 export default YouTubeSection
