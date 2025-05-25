@@ -41,12 +41,7 @@ export default function Layout({
         <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTcviYw.woff2" type="font/woff2" crossOrigin="anonymous" />
         {/* Async load main CSS to avoid render-blocking */}
         <link rel="preload" as="style" href="/app/globals.css" />
-        <link
-          rel="stylesheet"
-          href="/app/globals.css"
-          media="print"
-          onLoad={(e) => { (e.currentTarget as HTMLLinkElement).media = 'all'; }}
-        />
+        <link rel="stylesheet" href="/app/globals.css" />
         <noscript><link rel="stylesheet" href="/app/globals.css" /></noscript>
       </head>
       <RootLayout className={inter.className}>
