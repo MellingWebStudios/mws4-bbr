@@ -39,10 +39,7 @@ export default function Layout({
         <link rel="preload" as="image" href="/images/engineers-team.svg" />
         {/* Preload Inter font */}
         <link rel="preload" as="font" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTcviYw.woff2" type="font/woff2" crossOrigin="anonymous" />
-        {/* Async load main CSS to avoid render-blocking */}
-        <link rel="preload" as="style" href="/app/globals.css" />
-        <link rel="stylesheet" href="/app/globals.css" />
-        <noscript><link rel="stylesheet" href="/app/globals.css" /></noscript>
+        {/* Removed CSS preload and stylesheet links for /app/globals.css, as global CSS is imported via import statement above. */}
       </head>
       <RootLayout className={inter.className}>
         <ClientLayoutShell>
