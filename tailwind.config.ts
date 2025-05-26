@@ -26,12 +26,12 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "#FFD500", // Yellow
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#FFD500",           // Bright Yellow
+          foreground: "#222222",        // Dark text for yellow bg (high contrast)
         },
         secondary: {
-          DEFAULT: "#005BBB", // Blue
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#005BBB",           // Blue
+          foreground: "#FFFFFF",        // White text on blue bg
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

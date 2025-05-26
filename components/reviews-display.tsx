@@ -51,7 +51,6 @@ export default function ReviewsDisplay({
 
   const maxRatingCount = Math.max(...ratingCounts)
 
-  // For animation purposes
   useEffect(() => {
     setMounted(true)
   }, [])
@@ -85,7 +84,6 @@ export default function ReviewsDisplay({
         <div className="p-6 md:p-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <div className="flex items-center gap-5">
-              {/* Removed unnecessary empty avatar wrapper */}
               <Image src="/google-logo.png" alt="Google" width={64} height={64} className="object-contain rounded-full bg-white p-2 shadow-md" />
               <div className="flex flex-col items-center md:items-start">
                 <div className="flex items-center gap-2">
@@ -150,7 +148,7 @@ export default function ReviewsDisplay({
                   }}
                   className={`rounded-full transition-all
                     ${filter === "all"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-primary-foreground"
                       : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
                   `}
                 >
@@ -165,7 +163,7 @@ export default function ReviewsDisplay({
                   }}
                   className={`rounded-full transition-all
                     ${filter === "repair"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-primary-foreground"
                       : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
                   `}
                 >
@@ -180,22 +178,22 @@ export default function ReviewsDisplay({
                   }}
                   className={`rounded-full transition-all
                     ${filter === "service"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-primary-foreground"
                       : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
                   `}
                 >
                   Boiler Service
                 </Button>
                 <Button
-                  variant={filter === "safety" ? "default" : "outline"}
+                  variant={filter === "gas-safety" ? "default" : "outline"}
                   size="sm"
                   onClick={() => {
-                    setFilter("safety")
+                    setFilter("gas-safety")
                     setDisplayCount(limit)
                   }}
                   className={`rounded-full transition-all
-                    ${filter === "safety"
-                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-white"
+                    ${filter === "gas-safety"
+                      ? "bg-primary hover:bg-primary/90 shadow-md shadow-primary/20 text-primary-foreground"
                       : "text-gray-800 hover:border-primary hover:text-primary focus:text-primary"}
                   `}
                 >
@@ -222,7 +220,6 @@ export default function ReviewsDisplay({
                   {/* Top accent bar */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/60"></div>
                   <div className="flex items-center gap-4 mb-5 relative justify-center w-full">
-                    {/* Flatten avatar and author info */}
                     <Image
                       src={"/placeholder.svg"}
                       alt={`${review.author} avatar`}
@@ -233,7 +230,6 @@ export default function ReviewsDisplay({
                     <div>
                       <div className="font-bold text-gray-900 text-lg">{review.author}</div>
                       <div className="flex items-center gap-3">
-                        {/* Render stars inline for review.rating */}
                         <div className="flex gap-0.5">
                           {[...Array(5)].map((_, i) => (
                             <Star
@@ -245,14 +241,12 @@ export default function ReviewsDisplay({
                         <span className="text-xs text-gray-500 whitespace-nowrap">{review.date}</span>
                       </div>
                     </div>
-                    {/* Remove absolute button, or make it static if needed */}
                   </div>
                   <div className="relative mb-5 w-full">
-                    {/* Remove decorative icon if not needed for UX */}
                     <p className="text-gray-700 leading-relaxed pl-6">{review.text}</p>
                   </div>
                   <div className="mt-auto pt-4 border-t border-gray-100 flex gap-2 flex-wrap justify-center w-full">
-                    <span className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-primary transition-colors hover:bg-primary/20">
+                    <span className="inline-block rounded-full bg-primary text-primary-foreground px-3 py-1 text-xs font-medium transition-colors">
                       {review.service === "repair"
                         ? "Boiler Repair"
                         : review.service === "service"
@@ -276,11 +270,11 @@ export default function ReviewsDisplay({
         <div className="mt-12 text-center w-full flex justify-center">
           <Button
             variant="default"
-            className="bg-primary hover:bg-primary/90 text-white font-semibold transition-all duration-300 px-8 py-6 rounded-full text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40"
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 px-8 py-6 rounded-full text-base shadow-lg shadow-primary/30 hover:shadow-xl hover:shadow-primary/40"
             onClick={handleLoadMore}
           >
             Load More Reviews
-            <Star className="ml-2 h-5 w-5 fill-white" />
+            <Star className="ml-2 h-5 w-5 fill-yellow-400 text-yellow-400" />
           </Button>
         </div>
       )}

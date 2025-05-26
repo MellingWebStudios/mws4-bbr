@@ -219,7 +219,8 @@ export default async function LocationServicePage({ params }: Props) {
                   <div className="p-8 flex flex-col order-1 md:order-2 justify-between h-full">
                     <div>
                       <h2 className="mb-3 text-2xl md:text-3xl font-extrabold text-gray-900 dark:text-white tracking-tight">
-                        {service.name} in <span className="text-primary">{location.name}</span>
+                        {service.name} in{" "}
+                        <span className="text-primary">{location.name}</span>
                       </h2>
                       <p className="mb-5 text-gray-700 dark:text-gray-300 leading-relaxed text-base md:text-lg">
                         {introText}
@@ -234,7 +235,9 @@ export default async function LocationServicePage({ params }: Props) {
                         {service.features.map((feature: string, i: number) => (
                           <li key={i} className="flex items-start">
                             <CheckCircle className="mr-2 h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
-                            <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                            <span className="text-gray-700 dark:text-gray-300">
+                              {feature}
+                            </span>
                           </li>
                         ))}
                       </ul>
@@ -243,14 +246,15 @@ export default async function LocationServicePage({ params }: Props) {
                     <div className="flex items-center gap-3 mb-6 bg-primary/10 dark:bg-secondary/20 p-3 rounded-lg">
                       <MapPin className="h-5 w-5 text-primary flex-shrink-0" />
                       <span className="text-gray-800 dark:text-gray-200 font-medium">
-                        Serving all {location.name} postcodes: <span className="font-semibold">{location.postcode}</span>
+                        Serving all {location.name} postcodes:{" "}
+                        <span className="font-semibold">{location.postcode}</span>
                       </span>
                     </div>
 
                     <div className="flex items-center justify-center">
                       <Button
                         asChild
-                        className="bg-yellow-400 hover:bg-yellow-500 text-gray-900 py-4 px-8 rounded-xl text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
+                        className="bg-primary text-primary-foreground hover:bg-yellow-400 py-4 px-8 rounded-xl text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
                       >
                         <a
                           href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
@@ -270,54 +274,54 @@ export default async function LocationServicePage({ params }: Props) {
             {/* Pricing */}
             <div>
               <h2 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
-              {service.name} Pricing in {location.name}
+                {service.name} Pricing in {location.name}
               </h2>
               <div className="flex justify-center mb-8">
-              <span className="inline-block h-1 w-24 rounded bg-primary/70" />
+                <span className="inline-block h-1 w-24 rounded bg-primary/70" />
               </div>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {service.pricing.map((option: any, index: number) => (
-                <div
-                key={index}
-                className="relative flex flex-col items-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg hover:scale-105 transition-transform duration-200 px-8 py-10"
-                >
-                {option.popular && (
-                  <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white text-xs font-semibold px-4 py-1 rounded-full shadow-lg z-10">
-                  Most Popular
-                  </span>
-                )}
-                <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
-                  {option.title}
-                </h3>
-                <div className="mb-4 flex items-end justify-center gap-2">
-                  <span className="inline-block rounded-xl bg-primary/10 text-primary px-6 py-2 text-3xl font-extrabold shadow-sm">
-                  {option.price}
-                  </span>
-                  <span className="text-xs text-gray-500 font-semibold ml-1">
-                  No VAT
-                  </span>
-                </div>
-                <p className="mb-6 text-gray-600 dark:text-gray-400 text-base min-h-[48px]">
-                  {option.description}
-                </p>
-                <Button
-                  asChild
-                  className="mt-auto w-full bg-primary text-white hover:bg-primary/90 font-semibold py-3 rounded-lg shadow transition-all duration-200"
-                >
-                  <a
-                  href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-                  aria-label={`Book ${option.title} for ${option.price}`}
-                  className="flex items-center justify-center gap-2"
+                {service.pricing.map((option: any, index: number) => (
+                  <div
+                    key={index}
+                    className="relative flex flex-col items-center rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg hover:scale-105 transition-transform duration-200 px-8 py-10"
                   >
-                  <Phone size={18} />
-                  Book Now
-                  </a>
-                </Button>
-                </div>
-              ))}
+                    {option.popular && (
+                      <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-semibold px-4 py-1 rounded-full shadow-lg z-10">
+                        Most Popular
+                      </span>
+                    )}
+                    <h3 className="mb-3 text-xl font-bold text-gray-900 dark:text-white">
+                      {option.title}
+                    </h3>
+                    <div className="mb-4 flex items-end justify-center gap-2">
+                      <span className="inline-block rounded-xl bg-primary text-primary-foreground px-6 py-2 text-3xl font-extrabold shadow-sm">
+                        {option.price}
+                      </span>
+                      <span className="text-xs text-gray-500 font-semibold ml-1">
+                        No VAT
+                      </span>
+                    </div>
+                    <p className="mb-6 text-gray-600 dark:text-gray-400 text-base min-h-[48px]">
+                      {option.description}
+                    </p>
+                    <Button
+                      asChild
+                      className="mt-auto w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-3 rounded-lg shadow transition-all duration-200"
+                    >
+                      <a
+                        href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                        aria-label={`Book ${option.title} for ${option.price}`}
+                        className="flex items-center justify-center gap-2"
+                      >
+                        <Phone size={18} />
+                        Book Now
+                      </a>
+                    </Button>
+                  </div>
+                ))}
               </div>
               <div className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
-              Transparent pricing. No call-out fees. All work guaranteed.
+                Transparent pricing. No call-out fees. All work guaranteed.
               </div>
             </div>
 
@@ -417,7 +421,8 @@ export default async function LocationServicePage({ params }: Props) {
           <div className="flex flex-col items-center justify-between space-y-8 rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:flex-row md:space-y-0 md:p-10">
             <div className="text-center md:text-left">
               <h2 className="text-3xl font-bold tracking-tight">
-                Need <span className="text-primary">{service.name}</span> in{" "}
+                Need{" "}
+                <span className="text-primary">{service.name}</span> in{" "}
                 {location.name}?
               </h2>
               <p className="mt-3 text-lg text-white/90">
@@ -427,7 +432,7 @@ export default async function LocationServicePage({ params }: Props) {
             <Button
               asChild
               size="lg"
-              className="relative overflow-hidden bg-primary px-8 text-lg font-semibold text-gray-900 shadow-md transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg"
+              className="relative overflow-hidden bg-primary text-primary-foreground px-8 text-lg font-semibold shadow-md transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg"
             >
               <a
                 href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
