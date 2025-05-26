@@ -42,7 +42,7 @@ export default function PricesPage() {
         {
           service: "Boiler Repair (hourly)",
           price: "£75 first hr / £30 per ½ hr",
-          description: "Capped if job runs over an hour",
+          description: "Capped if job runs over an 2½ hour",
         },
       ],
     },
@@ -62,9 +62,10 @@ export default function PricesPage() {
     {
       title: "Ferroli Specialists",
       items: [
-        { service: "Ferroli Repair", price: "£99", description: "Specialist diagnosis and repair for Ferroli boilers"},
-        { service: "Ferroli Service", price: "£65", description: "Specialized service for Ferroli boiler systems" },
-        { service: "Parts Replacement", price: "From £50", description: "Genuine Ferroli parts with professional installation" },
+        { service: "Ferroli Repair", price: "£75", description: "Specialist diagnosis and repair for Ferroli boilers"},
+        { service: "Ferroli Repair (same day)", price: "£95", description: "Same-day service for Ferroli boiler repairs" },
+        { service: "Ferroli Service", price: "£55", description: "Specialized service for Ferroli boiler systems" },
+        { service: "Full Ferroli Service", price: "£120", description: "Comprehensive service for Ferroli boiler systems" },
       ],
     },
   ]

@@ -1,9 +1,9 @@
-"use client"
+'use client'
 
 import Script from "next/script"
 
 const GoogleAnalytics = () => {
-  const GA_MEASUREMENT_ID = "G-XXXXXXXXXX" // Replace with actual GA measurement ID
+  const GA_MEASUREMENT_ID = "G-ET5987N3MJ"
 
   return (
     <>
@@ -14,9 +14,9 @@ const GoogleAnalytics = () => {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           
-          // Default to denied until consent is given
+          // Optional: GDPR mode - default to denied until consent given
           gtag('consent', 'default', {
-            'analytics_storage': 'denied'
+            'analytics_storage': 'granted'
           });
           
           gtag('config', '${GA_MEASUREMENT_ID}', {

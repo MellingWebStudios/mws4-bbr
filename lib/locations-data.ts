@@ -1780,18 +1780,23 @@ export const services = [
     pricing: [
       {
         title: "Ferroli Repair",
-        price: "£99",
+        price: "£75",
         description: "Specialist diagnosis and repair for Ferroli boilers",
       },
       {
-        title: "Ferroli Service",
-        price: "£65",
-        description: "Specialized service for Ferroli boiler systems",
+        title: "Ferroli Repair (same day)",
+        price: "£95",
+        description: "Same-day service for Ferroli boiler repairs",
       },
       {
-        title: "Parts Replacement",
-        price: "From £50",
+        title: "Ferroli Service",
+        price: "£55",
         description: "Genuine Ferroli parts with professional installation",
+      },
+      {
+        title: "Full Ferroli Service",
+        price: "£120",
+        description: "Comprehensive service for Ferroli boiler systems",
       },
     ],
   },
