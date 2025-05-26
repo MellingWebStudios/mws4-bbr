@@ -1,5 +1,6 @@
 locations = [
     # Birmingham
+    "Birmingham",
     "Acocks Green", "Alum Rock", "Ashted", "Aston", "Aston Cross", "Austin Village",
     "Balsall Heath", "Balti Triangle", "Bartley Green", "Beech Lanes", "Billesley",
     "Birches Green", "Birchfield", "Birmingham Chinatown", "Birmingham City Centre",

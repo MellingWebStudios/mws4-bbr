@@ -1,5 +1,18 @@
 [
   {
+    "slug": "birmingham",
+    "name": "Birmingham",
+    "postcode": "B1-B99",
+    "blurb": "Boiler repair & servicing in Birmingham and all surrounding areas.",
+    "landmarks": [
+      "Bullring & Grand Central",
+      "Library of Birmingham",
+      "Cadbury World"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2436.6845129726417!2d-1.8998306840695702!3d52.4862432798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7c29a4a39d%3A0x6d0a9ec913a197e1!2sBirmingham!5e0!3m2!1sen!2suk!4v1652364112081!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/7tY4KvPhVkk"
+  },
+  {
     "slug": "acocks-green",
     "name": "Acocks Green",
     "postcode": "B27",
