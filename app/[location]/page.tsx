@@ -21,7 +21,8 @@ export async function generateStaticParams() {
 }
 
 export default async function LocationPage({ params }: Props) {
-  const location = getLocationBySlug(params.location);
+  const { location: locationSlug } = await params;
+  const location = getLocationBySlug(locationSlug);
   if (!location) notFound();
 
   const introText = `Our Gas Safe engineers are just minutes away, serving the ${location.postcode} area and surroundings including ${location.landmarks.join(", ")}. We provide fast, reliable boiler and heating services for all makes and models. No call-out charges and transparent pricing.`;
