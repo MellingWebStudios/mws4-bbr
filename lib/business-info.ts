@@ -27,7 +27,7 @@ export const businessInfo = {
   },
   email: "boilers.birmingham@yahoo.com",
   gasSafeNumber: "520077",
-  website: "https://www.birminghamboilerrepairs.com",
+  website: "https://www.birminghamboilerrepairs.uk",
   socialMedia: {
     google: "https://g.page/birmingham-boiler-repairs",
     facebook: "https://facebook.com/birmboilers",

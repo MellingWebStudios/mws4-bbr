@@ -9,7 +9,7 @@ const StickyCallBar = dynamic(() => import("@/components/sticky-call-bar"), { ss
 
 const LazyGoogleAnalytics = dynamic(() => import("@/components/google-analytics"), { ssr: false })
 const LazyChatbotButton = dynamic(() => import("@/components/chatbot-button"), { ssr: false })
-const LazyWhatsAppButton = dynamic(() => import("@/components/whatsapp-button"), { ssr: false })
+// const LazyWhatsAppButton = dynamic(() => import("@/components/whatsapp-button"), { ssr: false })
 const LazyCookieConsentBanner = dynamic(() => import("@/components/cookie-consent-banner"), { ssr: false })
 
 export default function ClientLayoutShell({ children }: { children: React.ReactNode }) {
@@ -44,7 +44,7 @@ export default function ClientLayoutShell({ children }: { children: React.ReactN
       <StickyCallBar />
       {showExtras && <LazyGoogleAnalytics />}
       {showExtras && <LazyChatbotButton />}
-      {showExtras && <LazyWhatsAppButton />}
+      {/* {showExtras && <LazyWhatsAppButton />} */}
       {showExtras && <LazyCookieConsentBanner />}
     </>
   )

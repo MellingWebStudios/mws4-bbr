@@ -13,7 +13,7 @@ const TestimonialCarousel = () => {
       author: "Julie R.",
       location: "Edgbaston",
       rating: 5,
-      image: "/woman-profile.png",
+      image: "/images/boiler-mascot-logo-56.webp",
     },
     {
       quote:
@@ -21,7 +21,7 @@ const TestimonialCarousel = () => {
       author: "Bonnie G.",
       location: "Harborne",
       rating: 5,
-      image: "/woman-profile.png",
+      image: "/images/boiler-mascot-logo-56.webp",
     },
     {
       quote:
@@ -29,7 +29,7 @@ const TestimonialCarousel = () => {
       author: "Liz J.",
       location: "Solihull",
       rating: 5,
-      image: "/woman-profile.png",
+      image: "/images/boiler-mascot-logo-56.webp",
     },
     {
       quote:
@@ -37,7 +37,7 @@ const TestimonialCarousel = () => {
       author: "Mark T.",
       location: "Kings Heath",
       rating: 5,
-      image: "/man-profile.png",
+      image: "/images/boiler-mascot-logo-56.webp",
     },
     {
       quote:
@@ -45,7 +45,7 @@ const TestimonialCarousel = () => {
       author: "Sarah P.",
       location: "Moseley",
       rating: 5,
-      image: "/woman-profile.png",
+      image: "/images/boiler-mascot-logo-56.webp",
     },
   ]
 

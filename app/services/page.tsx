@@ -110,7 +110,7 @@ export default function ServicesPage() {
               </h3>
               <ul className="grid grid-cols-2 gap-2">
                 {[
-                  "Birmingham City Centre",
+                  "Birmingham",
                   "Edgbaston",
                   "Harborne",
                   "Selly Oak",

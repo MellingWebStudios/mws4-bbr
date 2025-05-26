@@ -1,16 +1,23 @@
 import Image from "next/image"
 
-const optimizedImageUrl = "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3%20engineers-u9b5dTX1v46GUhyjbRLIwdnF5aKH0I.png"
+// Move image to local public folder for better control and optimization
+const heroImagePath = "/images/engineers-team.svg"
 
 export default function MobileHeroImage() {
   return (
     <>
-      {/* Background elements */}
-      <div className="absolute inset-0 hero-pattern opacity-10" aria-hidden="true"></div>
-      {/* Subtle mobile-only visuals to compensate for removed heavy effects */}
-      <div className="sm:hidden absolute top-10 left-1/2 -translate-x-1/2 w-32 h-32 bg-primary/10 rounded-full blur-md" aria-hidden="true"></div>
-      <div className="sm:hidden absolute bottom-4 right-4 w-20 h-20 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-md" aria-hidden="true"></div>
-      <div className="sm:hidden absolute top-1/2 left-2 w-10 h-10 bg-secondary/10 rounded-full blur-sm" aria-hidden="true"></div>
+      {/* Combined background visuals for mobile using a single div and CSS */}
+      <div className="sm:hidden absolute inset-0 z-0" aria-hidden="true">
+        <div className="w-full h-full relative">
+          {/* Use a single SVG for grid and subtle circles */}
+          <svg width="100%" height="100%" className="absolute inset-0 opacity-10 pointer-events-none select-none">
+            <pattern id="grid-mobile" width="40" height="40" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="2" />
+            </pattern>
+            <rect width="100%" height="100%" fill="url(#grid-mobile)" />
+          </svg>
+        </div>
+      </div>
 
       {/* Trust bar */}
       <div className="relative z-10 flex items-center justify-center mb-6">
@@ -28,26 +35,19 @@ export default function MobileHeroImage() {
 
       {/* Main image with glow effect */}
       <div className="relative w-[180px] h-[180px] flex items-center justify-center z-20 -mb-3 mt-3 mx-auto">
-        {/* Mobile: Remove background blurs and drop-shadow for LCP performance */}
         <Image
-          src="/images/engineers-team.svg"
+          src={heroImagePath}
           alt="Our team of Gas Safe registered engineers"
           width={180}
           height={180}
           className="rounded-xl"
           priority
-          sizes="180px"
+          quality={85}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDABQODxIPDRQSEBIXFRQdHx4eHRoaHSQvJiAmLzw0Li0tLi00PzBANz85Pjc0SDNIQD9ZWVlgXmF6YW5oqqqq/9sAQwEVFxceGh4lJCU8NSw1aqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq"
+          loading="eager"
+          fetchPriority="high"
         />
-      </div>
-
-      {/* Grid pattern background for mobile (matches desktop) */}
-      <div className="sm:hidden absolute inset-0 opacity-10 pointer-events-none select-none" aria-hidden="true">
-        <svg width="100%" height="100%">
-          <pattern id="grid-mobile" width="40" height="40" patternUnits="userSpaceOnUse">
-            <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="2" />
-          </pattern>
-          <rect width="100%" height="100%" fill="url(#grid-mobile)" />
-        </svg>
       </div>
     </>
   )
