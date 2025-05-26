@@ -205,23 +205,23 @@ export default function ReviewsDisplay({
         </div>
       )}
 
-      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 w-full max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2 w-full max-w-7xl mx-auto items-stretch">
         {displayedReviews.map((review, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: (index % limit) * 0.1 }}
-            className="flex justify-center"
+            className="flex justify-center w-full"
           >
-            <Card className="h-full bg-white border-0 shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group flex flex-col items-center">
+            <Card className="bg-white border-0 shadow-xl rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 group flex flex-col items-center w-full">
               <CardContent className="p-0 w-full">
-                <div className="p-6 flex flex-col h-full relative items-center">
+                <div className="p-6 flex flex-col relative items-center">
                   {/* Top accent bar */}
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary/60"></div>
                   <div className="flex items-center gap-4 mb-5 relative justify-center w-full">
                     <Image
-                      src={"/placeholder.svg"}
+                      src={"/apple-touch-icon.png"}
                       alt={`${review.author} avatar`}
                       width={56}
                       height={56}
