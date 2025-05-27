@@ -1,6 +1,7 @@
 import Link from "next/link"
 import fs from "fs"
 import path from "path"
+// @ts-expect-error: No type definitions for xml2js
 import { parseStringPromise } from "xml2js"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
