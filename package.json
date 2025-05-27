@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "postbuild": "tsx scripts/generate-sitemap.ts",
-    "start": "next start",
+    "start": "next start -p 3000 -H 0.0.0.0",
     "lint": "next lint",
     "analyze": "BUNDLE_ANALYZE=true next build"
   },

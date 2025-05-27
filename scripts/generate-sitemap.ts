@@ -101,14 +101,10 @@ ${staticEntries}${locationEntries}
 async function generateRobotsTxt() {
   console.log("➜  Generating robots.txt …");
 
+  // Always allow all bots in production
   const robots = isProd
-    ? `User-agent: *
-Disallow: /api/
-Disallow: /admin/
-Disallow: /private/
-Sitemap: ${WEBSITE_URL}/sitemap.xml`
-    : `User-agent: *
-Disallow: /`;
+    ? `User-agent: *\nDisallow:\n\nSitemap: ${WEBSITE_URL}/sitemap.xml`
+    : `User-agent: *\nDisallow: /`;
 
   fs.mkdirSync("public", { recursive: true });
   fs.writeFileSync("public/robots.txt", robots);
