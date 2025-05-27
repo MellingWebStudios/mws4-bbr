@@ -347,7 +347,7 @@ export default async function LocationServicePage({ params }: Props) {
                     : "all"
                 }
                 locationFilter={fallbackLocationFilter}
-                limit={3}
+                limit={4}
                 showFilters={false}
               />
             </div>

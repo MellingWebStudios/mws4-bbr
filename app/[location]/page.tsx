@@ -169,7 +169,7 @@ export default async function LocationPage({ params }: Props) {
               <div className="flex justify-center mb-8">
                 <span className="inline-block h-1 w-24 rounded bg-primary/70" />
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 {services.map((service: any) => (
                   <div
                     key={service.slug}
@@ -203,7 +203,7 @@ export default async function LocationPage({ params }: Props) {
             <div className="mt-2">
               <ReviewsDisplay
                 locationFilter={location.name.toLowerCase()}
-                limit={3}
+                limit={4}
                 showFilters={false}
               />
             </div>
