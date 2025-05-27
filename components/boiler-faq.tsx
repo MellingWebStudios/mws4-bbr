@@ -11,6 +11,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
+import businessInfo from "@/lib/business-info"
 
 /**
  * BoilerFAQ – design‑refreshed, markup‑identical.
@@ -39,12 +40,12 @@ const BoilerFAQ = () => {
           <p>If you've checked these and your boiler still won't fire up, you likely need a professional repair.</p>
           <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
             <a
-              href="tel:08003202345"
+              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
               className="flex items-center gap-2"
-              aria-label="Call for help: 0800 320 2345"
+              aria-label={`Call for help: ${businessInfo.phone.freephone}`}
             >
               <Phone size={16} />
-              Call for help: 0800 320 2345
+              {`Call for help: ${businessInfo.phone.freephone}`}
             </a>
           </Button>
         </>
@@ -65,12 +66,12 @@ const BoilerFAQ = () => {
           <p>This typically requires a professional diagnosis as it often involves internal boiler components.</p>
           <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
             <a
-              href="tel:08003202345"
+              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
               className="flex items-center gap-2"
-              aria-label="Book a repair: 0800 320 2345"
+              aria-label={`Book a repair: ${businessInfo.phone.freephone}`}
             >
               <Phone size={16} />
-              Book a repair: 0800 320 2345
+              {`Book a repair: ${businessInfo.phone.freephone}`}
             </a>
           </Button>
         </>
@@ -91,12 +92,12 @@ const BoilerFAQ = () => {
           <p>While bleeding radiators might help with some noises, persistent sounds usually require professional attention.</p>
           <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
             <a
-              href="tel:08003202345"
+              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
               className="flex items-center gap-2"
-              aria-label="Get it fixed: 0800 320 2345"
+              aria-label={`Get it fixed: ${businessInfo.phone.freephone}`}
             >
               <Phone size={16} />
-              Get it fixed: 0800 320 2345
+              {`Get it fixed: ${businessInfo.phone.freephone}`}
             </a>
           </Button>
         </>
@@ -119,12 +120,12 @@ const BoilerFAQ = () => {
           </p>
           <Button asChild className="mt-6 bg-red-600 text-white shadow-lg hover:bg-red-700">
             <a
-              href="tel:08003202345"
+              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
               className="flex items-center gap-2"
-              aria-label="Emergency call: 0800 320 2345"
+              aria-label={`Emergency call: ${businessInfo.phone.freephone}`}
             >
               <Phone size={16} />
-              Emergency call: 0800 320 2345
+              {`Emergency call: ${businessInfo.phone.freephone}`}
             </a>
           </Button>
         </>

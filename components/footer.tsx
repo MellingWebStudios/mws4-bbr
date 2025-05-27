@@ -1,30 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { Phone, Mail, MapPin, Clock, Shield, Facebook, Instagram, Youtube } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Shield, Facebook, Instagram } from "lucide-react"
 import GasSafeBadge from "@/components/gas-safe-badge"
 import { useCookieConsent } from "@/context/cookie-consent-context"
+import businessInfo from "@/lib/business-info"
 
 const Footer = () => {
   const { openPreferences } = useCookieConsent()
-
-  // NAP information - centralized for consistency
-  const businessInfo = {
-    name: "Birmingham Boiler Repairs",
-    address: {
-      street: "18 Camino Road",
-      locality: "Birmingham",
-      region: "West Midlands",
-      postalCode: "B32 3XE",
-      country: "United Kingdom",
-    },
-    phone: {
-      freephone: "0800 320 2345",
-      mobile: "07807 776 411",
-    },
-    email: "boilers.birmingham@yahoo.com",
-    gasSafeNumber: "520077",
-  }
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900">
@@ -32,7 +15,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
-              <span className="text-secondary">Birmingham</span> <span className="text-red-700">Boiler Repairs</span>
+              <span className="text-secondary">{businessInfo.name.split(" ")[0]}</span> <span className="text-red-700">{businessInfo.name.split(" ").slice(1).join(" ")}</span>
             </h3>
             <div className="mb-4">
               <GasSafeBadge variant="footer" />
@@ -96,25 +79,18 @@ const Footer = () => {
             </ul>
             <div className="flex space-x-4 mt-4">
               <Link
-                href="https://www.facebook.com/BirminghamBoilerRepairs/"
+                href={businessInfo.socialMedia.facebook}
                 aria-label="Facebook"
                 className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
               >
                 <Facebook className="h-6 w-6" />
               </Link>
               <Link
-                href="https://www.instagram.com/birmingham_boiler_repairs/?hl=en-gb"
+                href={businessInfo.socialMedia.instagram}
                 aria-label="Instagram"
                 className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
-              </Link>
-              <Link
-                href="https://www.youtube.com/@theferroliman2067"
-                aria-label="YouTube"
-                className="bg-secondary hover:bg-primary text-white rounded-full p-2 transition-colors"
-              >
-                <Youtube className="h-6 w-6" />
               </Link>
             </div>
           </div>
@@ -161,8 +137,7 @@ const Footer = () => {
               <li className="flex items-start">
                 <MapPin className="mr-2 h-5 w-5 text-secondary" />
                 <p className="text-sm text-gray-800 dark:text-gray-300">
-                  {businessInfo.address.street}, {businessInfo.address.locality}, {businessInfo.address.region}{" "}
-                  {businessInfo.address.postalCode}
+                  {businessInfo.address.street}, {businessInfo.address.locality}, {businessInfo.address.region} {businessInfo.address.postalCode}
                 </p>
               </li>
               <li className="flex items-start">

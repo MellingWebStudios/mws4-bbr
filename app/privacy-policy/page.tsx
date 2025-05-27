@@ -1,5 +1,6 @@
 import Link from "next/link"
 import type { Metadata } from "next"
+import businessInfo from "@/lib/business-info"
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Birmingham Boiler Repairs",
@@ -245,20 +246,20 @@ export default function PrivacyPolicyPage() {
               <h2>Contact Us</h2>
               <p>If you have questions or comments about this Privacy Policy, please contact us at:</p>
               <address>
-                Birmingham Boiler Repairs
+                {businessInfo.name}
                 <br />
-                18 Camino Rd
+                {businessInfo.address.street}
                 <br />
-                Birmingham B32 3XE
+                {businessInfo.address.locality} {businessInfo.address.postalCode}
                 <br />
                 Email:{" "}
-                <a href="mailto:boilers.birmingham@yahoo.com" className="text-secondary hover:underline">
-                  boilers.birmingham@yahoo.com
+                <a href={`mailto:${businessInfo.email}`} className="text-secondary hover:underline">
+                  {businessInfo.email}
                 </a>
                 <br />
                 Phone:{" "}
-                <a href="tel:08003202345" className="text-secondary hover:underline">
-                  0800 320 2345
+                <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="text-secondary hover:underline">
+                  {businessInfo.phone.freephone}
                 </a>
               </address>
             </div>

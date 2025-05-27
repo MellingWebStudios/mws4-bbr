@@ -1,25 +1,6 @@
-export default function SchemaMarkup() {
-  // NAP information - centralized for consistency
-  const businessInfo = {
-    name: "Birmingham Boiler Repairs",
-    address: {
-      street: "18 Camino Road",
-      locality: "Birmingham",
-      region: "West Midlands",
-      postalCode: "B32 3XE",
-      country: "GB",
-    },
-    phone: {
-      freephone: "0800 320 2345",
-      mobile: "07807 776 411",
-      // International format for schema
-      international: "+448003202345",
-    },
-    email: "boilers.birmingham@yahoo.com",
-    gasSafeNumber: "520077",
-    website: "https://www.birminghamboilerrepairs.com",
-  }
+import businessInfo from "@/lib/business-info"
 
+export default function SchemaMarkup() {
   return (
     <script
       type="application/ld+json"
@@ -37,7 +18,7 @@ export default function SchemaMarkup() {
               image: `${businessInfo.website}/images/engineers-team-enhanced.svg`,
               description:
                 "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham. No call-out fee, clear pricing, no VAT charged.",
-              telephone: businessInfo.phone.international,
+              telephone: businessInfo.phone.international[0],
               email: businessInfo.email,
               priceRange: "£45-£120",
               currenciesAccepted: "GBP",
@@ -63,40 +44,11 @@ export default function SchemaMarkup() {
                   closes: "17:00",
                 },
               ],
-              areaServed: [
-                {
-                  "@type": "City",
-                  name: "Birmingham",
-                },
-                {
-                  "@type": "City",
-                  name: "Bromsgrove",
-                },
-                {
-                  "@type": "City",
-                  name: "Redditch",
-                },
-                {
-                  "@type": "City",
-                  name: "Dudley",
-                },
-                {
-                  "@type": "City",
-                  name: "Stourbridge",
-                },
-                {
-                  "@type": "City",
-                  name: "Wolverhampton",
-                },
-                {
-                  "@type": "City",
-                  name: "Solihull",
-                },
-              ],
+              areaServed: businessInfo.areasCovered.map(area => ({ "@type": "City", name: area })),
               sameAs: [
-                "https://g.page/birmingham-boiler-repairs",
-                "https://facebook.com/birmboilers",
-                "https://instagram.com/birminghamboilerrepairs",
+                businessInfo.socialMedia.google,
+                businessInfo.socialMedia.facebook,
+                businessInfo.socialMedia.instagram,
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",

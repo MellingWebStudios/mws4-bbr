@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 import ContactForm from "@/components/contact-form"
 import type { Metadata } from "next"
 import LocalServiceAreas from "@/components/local-service-areas"
+import businessInfo from "@/lib/business-info"
 
 export const metadata: Metadata = {
   title: "Contact Birmingham Boiler Repairs | Book a Boiler Service or Repair",
@@ -41,21 +42,21 @@ export default function ContactPage() {
                       <p className="text-gray-600 dark:text-gray-400">
                         Freephone:{" "}
                         <a
-                          href="tel:08003202345"
+                          href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
                           className="text-secondary hover:underline"
                           aria-label="Call Freephone"
                         >
-                          0800 320 2345
+                          {businessInfo.phone.freephone}
                         </a>
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         Mobile:{" "}
                         <a
-                          href="tel:07807776411"
+                          href={`tel:${businessInfo.phone.mobile.replace(/\s/g, "")}`}
                           className="text-secondary hover:underline"
                           aria-label="Call Mobile"
                         >
-                          07807 776 411
+                          {businessInfo.phone.mobile}
                         </a>
                       </p>
                     </div>
@@ -69,11 +70,11 @@ export default function ContactPage() {
                       <h3 className="font-bold text-gray-900 dark:text-white">Email</h3>
                       <p className="text-gray-600 dark:text-gray-400">
                         <a
-                          href="mailto:boilers.birmingham@yahoo.com"
+                          href={`mailto:${businessInfo.email}`}
                           className="text-secondary hover:underline"
                           aria-label="Email"
                         >
-                          boilers.birmingham@yahoo.com
+                          {businessInfo.email}
                         </a>
                       </p>
                     </div>
@@ -86,7 +87,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-bold text-gray-900 dark:text-white">Address</h3>
                       <p className="text-gray-600 dark:text-gray-400">
-                        18 Camino Road, Birmingham, West Midlands B32 3XE
+                        {businessInfo.address.formatted.full}
                       </p>
                     </div>
                   </CardContent>
@@ -107,12 +108,12 @@ export default function ContactPage() {
                 <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Need Urgent Help?</h3>
                 <Button asChild size="lg" className="w-full bg-primary text-gray-900 hover:bg-primary/90">
                   <a
-                    href="tel:08003202345"
+                    href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
                     className="flex items-center justify-center gap-2"
-                    aria-label="Call Now: 0800 320 2345"
+                    aria-label={`Call Now: ${businessInfo.phone.freephone}`}
                   >
                     <Phone size={18} />
-                    Call Now: 0800 320 2345
+                    {`Call Now: ${businessInfo.phone.freephone}`}
                   </a>
                 </Button>
               </div>
@@ -162,12 +163,12 @@ export default function ContactPage() {
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
               <a
-                href="tel:08003202345"
+                href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
                 className="flex items-center gap-2"
-                aria-label="Call Now: 0800 320 2345"
+                aria-label={`Call Now: ${businessInfo.phone.freephone}`}
               >
                 <Phone size={18} />
-                Call Now: 0800 320 2345
+                {`Call Now: ${businessInfo.phone.freephone}`}
               </a>
             </Button>
           </div>

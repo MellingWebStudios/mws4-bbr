@@ -143,9 +143,9 @@ const Navbar = () => {
               </nav>
               <div className="flex flex-col items-end">
                 <Button asChild className="bg-red-600 text-white hover:bg-red-700">
-                  <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call 0800 320 2345">
-                    <Phone size={16} />
-                    <span className="hidden lg:inline">0800 320 2345</span>
+                  <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2" aria-label={`Call ${businessInfo.phone.freephone}`}>
+                    <Phone className="h-5 w-5" />
+                    <span className="hidden lg:inline">{businessInfo.phone.freephone}</span>
                     <span className="lg:hidden">Call Now</span>
                   </a>
                 </Button>
@@ -155,8 +155,8 @@ const Navbar = () => {
 
             <div className="flex md:hidden">
               <Button asChild variant="outline" size="icon" className="mr-2 border-red-600 fill-red-600 text-red-600">
-                <a href="tel:08003202345" aria-label="Call 0800 320 2345">
-                  <Phone size={20} />
+                <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} aria-label={`Call ${businessInfo.phone.freephone}`}>
+                  <Phone className="h-5 w-5" />
                 </a>
               </Button>
               <Button
@@ -228,9 +228,9 @@ const Navbar = () => {
 
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
                   <Button asChild className="w-full bg-red-600 text-white hover:bg-red-700">
-                    <a href="tel:08003202345" className="flex items-center justify-center gap-2" aria-label="Call 0800 320 2345">
-                      <Phone size={16} />
-                      <span>0800 320 2345</span>
+                    <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center justify-center gap-2" aria-label={`Call ${businessInfo.phone.freephone}`}>
+                      <Phone className="h-5 w-5" />
+                      <span>{businessInfo.phone.freephone}</span>
                     </a>
                   </Button>
                   <p className="mt-2 text-center text-xs text-gray-500">Same-day service when booked before 12pm</p>
