@@ -14,15 +14,16 @@ RUN pnpm install --frozen-lockfile
 # Copy rest of app
 COPY . .
 
+# Force environment
+ENV PORT=3000
+ENV HOST=0.0.0.0
+ENV NODE_ENV=production
+
 # Build Next.js app
 RUN pnpm build
 
 # Expose Next.js port
 EXPOSE 3000
-
-# Force environment
-ENV PORT=3000
-ENV HOST=0.0.0.0
 
 # Start Next.js app in production mode
 CMD ["pnpm", "start"]
