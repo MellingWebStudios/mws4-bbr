@@ -16,6 +16,7 @@ import businessInfo from "@/lib/business-info";
 import { notFound } from "next/navigation";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
 import React from "react";
+import { reviews } from "@/lib/reviews-data"; // <--- NEW: Import reviews
 
 type Props = {
   params: {
@@ -125,6 +126,14 @@ export default async function LocationServicePage({ params }: Props) {
   const service = getServiceBySlug(serviceSlug);
 
   if (!location || !service) notFound();
+
+  // Fallback reviews logic
+  const reviewsExist = reviews.some(
+    (review) => review.location?.toLowerCase() === location.name.toLowerCase()
+  );
+  const fallbackLocationFilter = reviewsExist
+    ? location.name.toLowerCase()
+    : "birmingham";
 
   const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(
     " and "
@@ -337,7 +346,7 @@ export default async function LocationServicePage({ params }: Props) {
                     ? "gas-safety"
                     : "all"
                 }
-                locationFilter={location.name.toLowerCase()}
+                locationFilter={fallbackLocationFilter}
                 limit={3}
                 showFilters={false}
               />
