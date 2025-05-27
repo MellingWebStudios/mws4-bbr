@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     title: "Boiler Service, Repairs & Inspections Birmingham | Gas Safe | No Call-Out Fee",
     description:
       "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham. No call-out fee, clear pricing.",
-    url: "https://www.birminghamboilerrepairs.com",
+    url: "https://www.birminghamboilerrepairs.uk",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
     type: "website",

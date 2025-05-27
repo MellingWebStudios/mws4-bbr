@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Expert boiler servicing in Birmingham from Gas Safe registered engineers. Standard and full service options available with no hidden fees.",
   keywords: "boiler service Birmingham, annual boiler service, boiler maintenance, Gas Safe boiler service",
   alternates: {
-    canonical: "https://www.birminghamboilerrepairs.com/services/boiler-servicing",
+    canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
   },
 }
 

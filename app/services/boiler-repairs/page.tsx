@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Expert boiler repair service in Birmingham with same-day availability. No call-out fee, transparent pricing, and Gas Safe registered engineers.",
   keywords: "boiler repairs Birmingham, emergency boiler repair, boiler breakdown service, same-day boiler repair",
   alternates: {
-    canonical: "https://www.birminghamboilerrepairs.com/services/boiler-repairs",
+    canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs",
   },
 }
 
@@ -103,12 +103,12 @@ export default function BoilerRepairsPage() {
     <>
       <BreadcrumbSchema
         items={[
-          { name: "Home", item: "https://www.birminghamboilerrepairs.com/" },
-          { name: "Services", item: "https://www.birminghamboilerrepairs.com/services" },
-          { name: "Boiler Repairs", item: "https://www.birminghamboilerrepairs.com/services/boiler-repairs" },
+          { name: "Home", item: "https://www.birminghamboilerrepairs.uk/" },
+          { name: "Services", item: "https://www.birminghamboilerrepairs.uk/services" },
+          { name: "Boiler Repairs", item: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs" },
         ]}
       />
-      <FAQSchema faqs={service.faqs} url="https://www.birminghamboilerrepairs.com/services/boiler-repairs" />
+      <FAQSchema faqs={service.faqs} url="https://www.birminghamboilerrepairs.uk/services/boiler-repairs" />
 
       {/* Hero Section */}
       <section className="bg-secondary py-16 text-white">

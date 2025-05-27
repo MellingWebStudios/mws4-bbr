@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
               <p>
                 Birmingham Boiler Repairs ("we," "our," or "us") is committed to protecting your privacy. This Privacy
                 Policy explains how we collect, use, disclose, and safeguard your information when you visit our website{" "}
-                <Link href="/">www.birminghamboilerrepairs.com</Link> (the "Website") or use our services.
+                <Link href="/">www.birminghamboilerrepairs.uk</Link> (the "Website") or use our services.
               </p>
               <p>
                 Please read this privacy policy carefully. If you do not agree with the terms of this privacy policy,

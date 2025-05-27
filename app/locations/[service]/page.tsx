@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: `${service.name} Locations | Birmingham Boiler Repairs`,
     description: `Find ${service.name.toLowerCase()} services near you. We cover Birmingham, Solihull, Dudley, Bromsgrove, Wolverhampton and surrounding areas. Call 0800 320 2345.`,
     alternates: {
-      canonical: `https://www.birminghamboilerrepairs.com/locations/${service.slug}`,
+      canonical: `https://www.birminghamboilerrepairs.uk/locations/${service.slug}`,
     },
   }
 }

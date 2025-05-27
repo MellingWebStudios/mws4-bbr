@@ -106,7 +106,7 @@ export default async function SitemapViewer() {
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:underline dark:text-blue-400"
                       >
-                        {url.loc[0].replace("https://www.birminghamboilerrepairs.com", "")}
+                        {url.loc[0].replace("https://www.birminghamboilerrepairs.uk", "")}
                       </a>
                     </td>
                     <td className="px-4 py-2">{url.lastmod?.[0] || "-"}</td>

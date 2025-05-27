@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Professional Gas Safety Inspections and Landlord Certificates in Birmingham. Digital certificates, competitive pricing, Gas Safe registered engineers.",
   keywords: "gas safety inspection Birmingham, landlord gas safety certificate, CP12 certificate, gas safety check",
   alternates: {
-    canonical: "https://www.birminghamboilerrepairs.com/services/gas-safety",
+    canonical: "https://www.birminghamboilerrepairs.uk/services/gas-safety",
   },
 }
 

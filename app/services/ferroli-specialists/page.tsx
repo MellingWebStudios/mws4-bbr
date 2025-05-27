@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     "Approved Ferroli boiler specialists in Birmingham. Expert knowledge of Ferroli systems and components with genuine parts and extended warranties.",
   keywords: "Ferroli boiler repair Birmingham, Ferroli specialist, Ferroli boiler service, Ferroli parts",
   alternates: {
-    canonical: "https://www.birminghamboilerrepairs.com/services/ferroli-specialists",
+    canonical: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
   },
 }
 
