@@ -7,7 +7,7 @@ import { locations, services } from "../lib/locations-data";
 /* ───────────────── CONFIG ───────────────── */
 const WEBSITE_URL =
   process.env.WEBSITE_URL?.replace(/\/$/, "") || // strip trailing slash
-  "https://bbr-staging.fly.dev";
+  "https://www.birminghamboilerrepairs.uk";
 
 const isProd = process.env.NODE_ENV === "production";
 

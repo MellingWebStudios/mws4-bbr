@@ -1,4 +1,4 @@
-app = "bbr-staging"
+app = "bbr-production"
 
 [env]
   PORT = "3000"
