@@ -1,8 +1,12 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { Phone, Clock } from "lucide-react"
+import ReviewsModal from "./reviews-modal"
+import { useState } from "react"
 
 export default function DesktopHero() {
+  const [showReviews, setShowReviews] = useState(false)
+
   return (
     <>
       {/* Service badge */}
@@ -43,8 +47,23 @@ export default function DesktopHero() {
               </div>
             </a>
           </Button>
+          <div className="mt-2 flex items-center justify-start">
+          <button
+            type="button"
+            className="group flex items-center gap-2 text-white font-medium transition hover:text-primary focus:outline-none focus-visible:ring-2 focus-visible:ring-primary/60 focus-visible:ring-offset-2 px-0 py-0 bg-transparent border-0"
+            onClick={() => setShowReviews(true)}
+            aria-label="View customer reviews"
+            tabIndex={0}
+          >
+            <span className="relative">
+              <span className="block w-full h-0.5 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform origin-left absolute bottom-0 left-0" aria-hidden="true" />
+              <span className="pb-0.5">View reviews</span>
+            </span>
+          </button>
         </div>
+        <ReviewsModal open={showReviews} onOpenChange={setShowReviews} />
       </div>
+    </div>
     </>
   )
 }
