@@ -2,21 +2,22 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
+const CANONICAL = "www.birminghamboilerrepairs.uk";
+
 export function middleware(req: NextRequest) {
-  console.log("Host:", req.headers.get("host"));
-  console.log("Proto:", req.headers.get("x-forwarded-proto"));
-  console.log("URL:", req.nextUrl.toString());
+  const host  = req.headers.get("host") ?? "";
+  const proto = req.headers.get("x-forwarded-proto") ?? "http";
 
-  const url = req.nextUrl.clone();
-  const host = req.headers.get("host") || "";
-  const isWWW = host.startsWith("www.");
-  const isHTTPS = req.headers.get("x-forwarded-proto") === "https";
+  // Skip redirects in local dev
+  if (host.includes("localhost") || host.includes("127.0.0.1")) {
+    return NextResponse.next();
+  }
 
-  // Redirect if not HTTPS or not WWW
-  if (!isHTTPS || !isWWW) {
-    url.hostname = "www.birminghamboilerrepairs.uk";
-    url.protocol = "https:";
-    return NextResponse.redirect(url, 301);
+  // Force HTTPS + WWW
+  if (host !== CANONICAL || proto !== "https") {
+    const redirect =
+      `https://${CANONICAL}${req.nextUrl.pathname}${req.nextUrl.search}`;
+    return NextResponse.redirect(redirect, 301);
   }
 
   return NextResponse.next();
