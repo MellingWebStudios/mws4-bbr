@@ -225,7 +225,7 @@ export default function BoilerRepairsPage() {
             {/* Reviews Section */}
             <div>
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
-              <ReviewsDisplay serviceFilter="repair" limit={3} showFilters={false} />
+              <ReviewsDisplay serviceFilter="repair" limit={4} showFilters={false} />
             </div>
           </div>
         </div>

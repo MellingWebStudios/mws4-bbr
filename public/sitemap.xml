@@ -1,3194 +1,3200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://bbr-staging.fly.dev/</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/</loc>
     <lastmod>2025-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/about</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/about</loc>
     <lastmod>2025-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/contact</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/contact</loc>
     <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/guides</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/guides</loc>
     <lastmod>2025-05-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/prices</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/locations</loc>
+    <lastmod>2025-06-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/prices</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/privacy-policy</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/privacy-policy</loc>
     <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/services</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/services</loc>
     <lastmod>2025-05-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sitemap-viewer</loc>
-    <lastmod>2025-05-17</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sitemap-viewer</loc>
+    <lastmod>2025-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/services/boiler-repairs</loc>
-    <lastmod>2025-05-24</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/services/boiler-servicing</loc>
-    <lastmod>2025-05-24</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/services/ferroli-specialists</loc>
-    <lastmod>2025-05-24</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/services/gas-safety</loc>
-    <lastmod>2025-05-24</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/acocks-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/acocks-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/acocks-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/acocks-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ashted/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ashted/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ashted/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ashted/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-cross/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-cross/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-cross/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-cross/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/austin-village/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/austin-village/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/austin-village/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/austin-village/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bartley-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bartley-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bartley-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bartley-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/beech-lanes/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/beech-lanes/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/beech-lanes/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/beech-lanes/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/billesley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/billesley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/billesley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/billesley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birches-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birches-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birches-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birches-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birchfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birchfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birchfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birchfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birmingham/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birmingham/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birmingham/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/birmingham/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/boldmere/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/boldmere/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/boldmere/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/boldmere/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bordesley-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournbrook/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournbrook/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournbrook/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournbrook/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournville/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournville/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournville/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bournville/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/brandwood-end/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/brandwood-end/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/brandwood-end/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/brandwood-end/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bromford/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bromford/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bromford/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/bromford/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/browns-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/browns-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/browns-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/browns-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/buckland-end/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/buckland-end/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/buckland-end/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/buckland-end/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/california/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/california/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/california/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/california/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/california/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/california/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/california/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/california/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/camp-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/camp-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/camp-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/camp-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/castle-vale/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/castle-vale/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/castle-vale/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/castle-vale/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/chad-valley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/chad-valley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/chad-valley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/chad-valley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/churchfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/churchfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/churchfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/churchfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cofton-common/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cofton-common/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cofton-common/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cofton-common/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cotteridge/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cotteridge/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cotteridge/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/cotteridge/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/deritend/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/deritend/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/deritend/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/deritend/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/eastside/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/eastside/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/eastside/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/eastside/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/edgbaston/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/edgbaston/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/edgbaston/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/edgbaston/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/erdington/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/erdington/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/erdington/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/erdington/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/falcon-lodge/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/falcon-lodge/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/falcon-lodge/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/falcon-lodge/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/four-oaks/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/four-oaks/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/four-oaks/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/four-oaks/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/fox-hollies/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/fox-hollies/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/fox-hollies/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/fox-hollies/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/frankley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/frankley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/frankley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/frankley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/garretts-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/garretts-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/garretts-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/garretts-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gib-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gib-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gib-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gib-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gilbertstone/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gilbertstone/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gilbertstone/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gilbertstone/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/glebe-farm/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/glebe-farm/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/glebe-farm/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/glebe-farm/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gospel-oak/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gospel-oak/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gospel-oak/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gospel-oak/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gosta-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gosta-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gosta-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gosta-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gravelly-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gravelly-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gravelly-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gravelly-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/great-barr/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/great-barr/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/great-barr/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/great-barr/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/greet/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/greet/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/greet/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/greet/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/grimstock-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/grimstock-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/grimstock-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/grimstock-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gun-quarter/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gun-quarter/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gun-quarter/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/gun-quarter/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hall-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hall-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hall-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hall-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hamstead/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hamstead/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hamstead/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hamstead/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth-wood/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth-wood/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth-wood/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/handsworth-wood/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harborne/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harborne/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harborne/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harborne/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harts-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harts-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harts-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/harts-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hawkesley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hawkesley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hawkesley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hawkesley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hay-mills/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hay-mills/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hay-mills/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hay-mills/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/high-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/high-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/high-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/high-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highgate/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highgate/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highgate/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highgate/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highters-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highters-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highters-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/highters-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-hook/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-hook/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-hook/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-hook/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-wood/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-wood/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-wood/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hill-wood/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hodge-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hodge-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hodge-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hodge-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/old-oscott/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/old-oscott/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/old-oscott/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/old-oscott/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/over-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/over-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/over-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/over-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/peddimore/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/peddimore/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/peddimore/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/peddimore/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/parkhall/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/parkhall/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/parkhall/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/parkhall/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pelham/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pelham/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pelham/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pelham/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-barr/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-barr/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-barr/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-barr/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-beeches/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-beeches/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-beeches/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-beeches/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-common/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-common/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-common/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/perry-common/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pheasey/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pheasey/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pheasey/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pheasey/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pype-hayes/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pype-hayes/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pype-hayes/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/pype-hayes/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/queslett/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/queslett/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/queslett/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/queslett/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/quinton/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/quinton/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/quinton/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/quinton/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/reddicap-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/reddicap-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/reddicap-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/reddicap-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rednal/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rednal/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rednal/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rednal/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ridgacre/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ridgacre/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ridgacre/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ridgacre/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rotton-park/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rotton-park/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rotton-park/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rotton-park/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/roughley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/roughley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/roughley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/roughley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rubery/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rubery/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rubery/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rubery/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/saltley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/saltley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/saltley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/saltley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sarehole/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sarehole/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sarehole/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sarehole/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-oak/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-oak/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-oak/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-oak/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-park/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-park/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-park/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/selly-park/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shard-end/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shard-end/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shard-end/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shard-end/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sheldon/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sheldon/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sheldon/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sheldon/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-fields/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-fields/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-fields/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-fields/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/shenley-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/short-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/short-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/short-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/short-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/showell-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/showell-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/showell-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/showell-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/small-heath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/small-heath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/small-heath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/small-heath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/smithfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/smithfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/smithfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/smithfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/soho/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/soho/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/soho/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/soho/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/southside/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/southside/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/southside/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/southside/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-yardley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-yardley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-yardley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-yardley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-woodgate/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-woodgate/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-woodgate/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/south-woodgate/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkbrook/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkbrook/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkbrook/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkbrook/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkhill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkhill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkhill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sparkhill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/springfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/springfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/springfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/springfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/spring-vale/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/spring-vale/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/spring-vale/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/spring-vale/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stechford/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stechford/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stechford/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stechford/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stirchley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stirchley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stirchley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stirchley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockland-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockland-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockland-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/stockland-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/streetly/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/streetly/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/streetly/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/streetly/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sutton-coldfield/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sutton-coldfield/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sutton-coldfield/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/sutton-coldfield/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ten-acres/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ten-acres/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ten-acres/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/ten-acres/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/the-parade/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/the-parade/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/the-parade/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/the-parade/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/theatreland/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/theatreland/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/theatreland/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/theatreland/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/thimble-end/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/thimble-end/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/thimble-end/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/thimble-end/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tile-cross/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tile-cross/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tile-cross/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tile-cross/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tower-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tower-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tower-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tower-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tudor-hill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tudor-hill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tudor-hill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tudor-hill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/turves-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/turves-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/turves-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/turves-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyburn/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyburn/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyburn/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyburn/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyseley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyseley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyseley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tyseley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley-wood/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley-wood/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley-wood/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/yardley-wood/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-fields/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-fields/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-fields/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/aston-fields/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/catshill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/catshill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/catshill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/catshill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/dodford/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/dodford/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/dodford/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/dodford/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/finstall/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/finstall/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/finstall/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/finstall/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hopwood/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hopwood/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hopwood/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/hopwood/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/lickey/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/lickey/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/lickey/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/lickey/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rowney-green/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rowney-green/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rowney-green/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/rowney-green/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tardebigge/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tardebigge/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tardebigge/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/tardebigge/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wythall/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wythall/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wythall/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wythall/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wirehill/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wirehill/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wirehill/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/wirehill/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/webheath/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/webheath/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/webheath/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/webheath/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/oakenshaw/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/oakenshaw/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/oakenshaw/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/oakenshaw/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/astwood-bank/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/astwood-bank/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/astwood-bank/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/astwood-bank/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/walkwood/boiler-repairs</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/boiler-repairs</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/walkwood/boiler-servicing</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/boiler-servicing</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/walkwood/gas-safety</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/gas-safety</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://bbr-staging.fly.dev/walkwood/ferroli-specialists</loc>
-    <lastmod>2025-05-27</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
