@@ -3,6 +3,10 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
+  console.log("Host:", req.headers.get("host"));
+  console.log("Proto:", req.headers.get("x-forwarded-proto"));
+  console.log("URL:", req.nextUrl.toString());
+
   const url = req.nextUrl.clone();
   const host = req.headers.get("host") || "";
   const isWWW = host.startsWith("www.");

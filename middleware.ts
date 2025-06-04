@@ -1,19 +1,28 @@
-import { NextResponse } from "next/server"
-import type { NextRequest } from "next/server"
+import { NextResponse } from "next/server";
+import type { NextRequest } from "next/server";
 
-export function middleware(request: NextRequest) {
-  const { pathname } = request.nextUrl
+export function middleware(req: NextRequest) {
+  const url = req.nextUrl.clone();
+  const host = req.headers.get("host") || "";
 
-  // Handle sitemap.xml and robots.txt dynamically if needed
-  if (pathname === "/sitemap.xml" || pathname === "/robots.txt") {
-    // The files are already in the public directory, so Next.js will serve them automatically
-    // This middleware is just a placeholder in case you need to add dynamic logic later
-    return NextResponse.next()
+  // Dev environment: skip redirects
+  if (host.includes("localhost") || host.includes("127.0.0.1")) {
+    return NextResponse.next();
   }
 
-  return NextResponse.next()
+  // Force www + https in production
+  if (host !== "www.birminghamboilerrepairs.uk") {
+    url.hostname = "www.birminghamboilerrepairs.uk";
+    url.protocol = "https:";
+    url.port = ""; // ✅ prevent :3000 from leaking into redirects
+    return NextResponse.redirect(url, 301);
+  }
+
+  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ["/sitemap.xml", "/robots.txt"],
-}
+  matcher: [
+    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml).*)",
+  ],
+};
