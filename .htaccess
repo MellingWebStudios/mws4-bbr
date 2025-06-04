@@ -1,0 +1,13 @@
+RewriteEngine On
+
+# Rule 1: Force HTTPS
+# If not already on HTTPS, redirect to HTTPS version of the same host and path
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rule 2: Force WWW (on HTTPS)
+# If on HTTPS but the host is the non-WWW version, redirect to WWW version
+RewriteCond %{HTTP_HOST} ^birminghamboilerrepairs\.uk$ [NC]
+RewriteRule ^(.*)$ https://www.birminghamboilerrepairs.uk/$1 [L,R=301]
+
+# ... any other existing htaccess rules can follow ...
