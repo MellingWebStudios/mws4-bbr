@@ -73,6 +73,7 @@ const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/services", label: "Services" },
+    { href: "/locations", label: "Areas We Cover" },
     { href: "/about", label: "About Us" },
     { href: "/guides", label: "Guides" }, // Added link to Guides page
     { href: "/contact", label: "Contact" },

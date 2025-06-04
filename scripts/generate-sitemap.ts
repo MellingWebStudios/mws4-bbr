@@ -51,6 +51,8 @@ async function generateSitemap() {
           ? "1.0"
           : path === "/services"
           ? "0.9"
+          : path === "/locations"
+          ? "0.9"
           : path.startsWith("/services/")
           ? "0.8"
           : ["/contact", "/prices"].includes(path)
