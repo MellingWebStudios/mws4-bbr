@@ -1,20 +1,22 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react"
-import { Sparkles } from "lucide-react"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { SheetTitle } from "@/components/ui/sheet"
 import { cn } from "@/lib/utils"
 import Chatbot from "@/components/chatbot"
-import { SheetTitle } from "@/components/ui/sheet"
+import Image from "next/image"
 
 const ChatbotButton = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [hasUnread, setHasUnread] = useState(true)
   const [isHovering, setIsHovering] = useState(false)
+  const [showTooltip, setShowTooltip] = useState(false)
   const containerRef = useRef<HTMLDivElement>(null)
   const buttonRef = useRef<HTMLButtonElement>(null)
-  const requestRef = useRef<number>()
-  const previousTimeRef = useRef<number>()
+  const requestRef = useRef<number | undefined>(undefined)
+  const previousTimeRef = useRef<number | undefined>(undefined)
+  const tooltipTimeoutRef = useRef<NodeJS.Timeout | undefined>(undefined)
 
   // Reset unread indicator when chat is opened
   useEffect(() => {
@@ -23,14 +25,40 @@ const ChatbotButton = () => {
     }
   }, [isOpen])
 
-  // Create a single multicolored sparkle
+  // Show tooltip after a short delay when user enters site
+  useEffect(() => {
+    if (!isOpen) {
+      tooltipTimeoutRef.current = setTimeout(() => {
+        setShowTooltip(true)
+        // Auto-hide tooltip after 10 seconds
+        setTimeout(() => {
+          setShowTooltip(false)
+        }, 10000)
+      }, 1500) // Show after 1.5s for smoother experience
+
+      return () => {
+        if (tooltipTimeoutRef.current) {
+          clearTimeout(tooltipTimeoutRef.current)
+        }
+      }
+    }
+  }, [isOpen])
+
+  // Hide tooltip on hover or interaction
+  const handleInteraction = () => {
+    setShowTooltip(false)
+    if (tooltipTimeoutRef.current) {
+      clearTimeout(tooltipTimeoutRef.current)
+    }
+  }
+
+  // Create a single sparkle with robot-themed colors
   const createSparkle = () => {
     if (!containerRef.current || !buttonRef.current || !isHovering) return
 
     const container = containerRef.current
     const button = buttonRef.current
     const buttonRect = button.getBoundingClientRect()
-    const containerRect = container.getBoundingClientRect()
 
     // Calculate button center relative to container
     const buttonCenterX = buttonRect.width / 2
@@ -45,15 +73,15 @@ const ChatbotButton = () => {
     // Random sparkle properties
     const size = 2 + Math.random() * 4
 
-    // Color palette inspired by ChatGPT's gradient but with better harmony
+    // Robot-themed color palette matching the orange robot
     const colorPalette = [
-      "#FF61D3", // Vibrant pink
-      "#FF5757", // Bright red
-      "#FFBD59", // Golden yellow
-      "#4CC9F0", // Sky blue
-      "#4895EF", // Periwinkle
-      "#7B61FF", // Purple
-      "#C77DFF", // Lavender
+      "#FF9800", // Primary orange
+      "#FFB74D", // Light orange
+      "#F57C00", // Dark orange
+      "#4FC3F7", // Light blue (for eyes)
+      "#03A9F4", // Blue
+      "#FFF176", // Light yellow
+      "#FFEB3B", // Yellow
     ]
     const color = colorPalette[Math.floor(Math.random() * colorPalette.length)]
 
@@ -76,27 +104,27 @@ const ChatbotButton = () => {
     // Create keyframe animation
     const style = document.createElement("style")
     style.textContent = `
-      @keyframes ${animationId} {
-        0% { 
-          transform: translate(0, 0) scale(0); 
-          opacity: 0; 
-        }
-        15% { 
-          opacity: 1; 
-          transform: translate(${Math.cos(angle) * distance * 0.15}px, ${Math.sin(angle) * distance * 0.15}px) scale(1); 
-        }
-        70% {
-          opacity: 0.7;
-        }
-        100% { 
-          transform: translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) scale(0); 
-          opacity: 0; 
-        }
+    @keyframes ${animationId} {
+      0% { 
+        transform: translate(0, 0) scale(0); 
+        opacity: 0; 
       }
-    `
+      15% { 
+        opacity: 1; 
+        transform: translate(${Math.cos(angle) * distance * 0.15}px, ${Math.sin(angle) * distance * 0.15}px) scale(1); 
+      }
+      70% {
+        opacity: 0.7;
+      }
+      100% { 
+        transform: translate(${Math.cos(angle) * distance}px, ${Math.sin(angle) * distance}px) scale(0); 
+        opacity: 0; 
+      }
+    }
+  `
 
     document.head.appendChild(style)
-    container.appendChild(sparkle) // Append to container instead of button
+    container.appendChild(sparkle)
 
     // Apply animation
     sparkle.style.animation = `${animationId} ${duration}s cubic-bezier(0.165, 0.84, 0.44, 1) forwards`
@@ -136,90 +164,53 @@ const ChatbotButton = () => {
   }, [isHovering])
 
   return (
-    <div
-      ref={containerRef}
-      className="fixed bottom-6 right-6 z-50 h-20 w-20 flex items-center justify-center"
-    >
-      {/* Refined rainbow glow effect */}
-      <div
-        className={cn(
-          "absolute inset-0 rounded-full transition-opacity duration-500",
-          isHovering ? "opacity-70" : "opacity-30"
-        )}
-        style={{
-          transform: "scale(1.35)",
-          background:
-            "conic-gradient(from 0deg, #FF61D3, #FF5757, #FFBD59, #4CC9F0, #4895EF, #7B61FF, #C77DFF, #FF61D3)",
-          animation:
-            "smooth-rotate 12s linear infinite, subtle-pulse 4s ease-in-out infinite",
-          filter: "blur(10px)",
-        }}
-      />
-
+    <div ref={containerRef} className="fixed bottom-6 right-6 z-50">
       {/* Main button */}
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <button
             ref={buttonRef}
             className={cn(
-              "relative flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-all duration-300",
+              "relative flex h-16 w-16 items-center justify-center rounded-full shadow-lg transition-all duration-300",
               "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2",
-              isHovering ? "scale-105" : "scale-100"
+              "hover:scale-105 active:scale-95",
+              isHovering ? "scale-105 shadow-2xl" : "scale-100",
             )}
-            aria-label="Open chatbot assistant"
-            onMouseEnter={() => setIsHovering(true)}
+            aria-label="Chat with our friendly AI assistant robot"
+            onMouseEnter={() => {
+              setIsHovering(true)
+              handleInteraction()
+            }}
             onMouseLeave={() => setIsHovering(false)}
-            onFocus={() => setIsHovering(true)}
+            onFocus={() => {
+              setIsHovering(true)
+              handleInteraction()
+            }}
             onBlur={() => setIsHovering(false)}
+            onClick={handleInteraction}
           >
-            {/* Refined rainbow background with smoother gradient */}
+            {/* Robot image */}
             <div
-              className="absolute inset-0 z-0 rounded-full"
-              style={{
-                background:
-                  "linear-gradient(135deg, #FF61D3, #FF5757, #FFBD59, #4CC9F0, #4895EF, #7B61FF, #C77DFF)",
-                backgroundSize: "400% 400%",
-                animation: "refined-gradient 12s ease infinite",
-                opacity: 0.95,
-              }}
-            />
-
-            {/* Subtle inner light effect */}
-            <div
-              className="absolute inset-0 z-1 opacity-25 rounded-full"
-              style={{
-                background:
-                  "radial-gradient(circle at center, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%)",
-              }}
-            />
-
-            {/* Fine sparkle pattern overlay */}
-            <div className="absolute inset-0 z-1 overflow-hidden rounded-full">
-              <div
-                className="absolute inset-0 opacity-20"
-                style={{
-                  backgroundImage:
-                    "radial-gradient(circle at 20% 30%, white 0.5px, transparent 0.5px), " +
-                    "radial-gradient(circle at 60% 70%, white 0.3px, transparent 0.3px), " +
-                    "radial-gradient(circle at 85% 15%, white 0.5px, transparent 0.5px), " +
-                    "radial-gradient(circle at 35% 80%, white 0.3px, transparent 0.3px)",
-                  backgroundSize: "100px 100px",
-                  animation: "refined-twinkle 8s linear infinite",
-                }}
+              className={cn(
+                "relative z-10 flex h-16 w-16 items-center justify-center transition-all duration-500",
+                isHovering && "robot-wiggle",
+              )}
+            >
+              <Image
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%283%29-tLUry2Q4qKqaOuw4StXm7oPwd6Bkbb.png"
+                alt="AI Robot Assistant"
+                width={64}
+                height={64}
+                className={cn("transition-all duration-500", isHovering ? "scale-110" : "scale-100")}
               />
             </div>
 
-            {/* Icon container with refined styling */}
-            <div className="relative z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/85 backdrop-blur-sm">
-              <Sparkles
-                className={cn(
-                  "h-5 w-5 transition-all duration-500",
-                  isHovering
-                    ? "text-[#7B61FF] scale-110"
-                    : "text-secondary scale-100"
-                )}
-              />
-            </div>
+            {/* Unread indicator */}
+            {hasUnread && (
+              <span className="absolute -top-1 -right-1 z-20 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 border-2 border-white pointer-events-none pulse-animation">
+                <span className="sr-only">New messages</span>
+              </span>
+            )}
           </button>
         </SheetTrigger>
 
@@ -229,62 +220,85 @@ const ChatbotButton = () => {
         </SheetContent>
       </Sheet>
 
-      {/* Unread indicator - now positioned absolutely relative to the container */}
-      {hasUnread && (
-        <span className="absolute top-1 right-1 z-20 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 border-2 border-white">
-          <span className="sr-only">New messages</span>
-        </span>
+      {/* Friendly tooltip popup */}
+      {showTooltip && !isOpen && (
+        <div
+          className={cn(
+            "absolute bottom-20 right-0 z-30 w-64 cursor-pointer",
+            "animate-in slide-in-from-bottom-2 fade-in-0 duration-300",
+          )}
+          onClick={handleInteraction}
+        >
+          <div className="relative">
+            <div className="bg-white rounded-xl shadow-xl border border-orange-200 p-4 hover:shadow-2xl transition-shadow duration-200">
+              <div className="flex items-center gap-3 mb-2">
+                <div className="w-3 h-3 bg-orange-500 rounded-full animate-pulse flex-shrink-0 mt-0.5"></div>
+                <span className="text-gray-800 font-semibold text-base leading-relaxed">
+                  Hello there! <span className="inline-block animate-wave">👋</span>
+                </span>
+              </div>
+              <p className="text-gray-600 text-sm leading-relaxed ml-6">
+                I'm your friendly robot assistant! Click to chat with me anytime.
+              </p>
+              <div className="mt-3 text-xs text-gray-400 ml-6">Click anywhere to close</div>
+            </div>
+            {/* Tooltip arrow */}
+            <div className="absolute -bottom-1 right-8 w-3 h-3 bg-white border-r border-b border-orange-200 transform rotate-45"></div>
+          </div>
+        </div>
       )}
 
-      {/* Refined animations */}
+      {/* Enhanced animations for robot theme */}
       <style jsx global>{`
-        @keyframes refined-gradient {
-          0%,
-          100% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
+      @keyframes wave {
+        0%, 100% {
+          transform: rotate(0deg);
         }
+        25% {
+          transform: rotate(20deg);
+        }
+        75% {
+          transform: rotate(-10deg);
+        }
+      }
 
-        @keyframes smooth-rotate {
-          from {
-            transform: scale(1.35) rotate(0deg);
-          }
-          to {
-            transform: scale(1.35) rotate(360deg);
-          }
-        }
+      .animate-wave {
+        animation: wave 1s ease-in-out infinite;
+      }
 
-        @keyframes subtle-pulse {
-          0%,
-          100% {
-            opacity: 0.3;
-            transform: scale(1.35) rotate(0deg);
-          }
-          50% {
-            opacity: 0.7;
-            transform: scale(1.4) rotate(180deg);
-          }
+      @keyframes robot-wiggle {
+        0%, 100% {
+          transform: rotate(0deg);
         }
+        25% {
+          transform: rotate(5deg);
+        }
+        75% {
+          transform: rotate(-5deg);
+        }
+      }
 
-        @keyframes refined-twinkle {
-          0% {
-            transform: translateY(0px);
-            opacity: 0.2;
-          }
-          50% {
-            opacity: 0.3;
-          }
-          100% {
-            transform: translateY(-100px);
-            opacity: 0.2;
-          }
+      .robot-wiggle {
+        animation: robot-wiggle 1s ease-in-out infinite;
+      }
+
+      @keyframes pulse-animation {
+        0%, 100% {
+          transform: scale(1);
+          opacity: 1;
         }
-      `}</style>
+        50% {
+          transform: scale(1.2);
+          opacity: 0.8;
+        }
+      }
+
+      .pulse-animation {
+        animation: pulse-animation 1.5s ease-in-out infinite;
+      }
+    `}</style>
     </div>
-  );
+  )
 }
 
 export default ChatbotButton
