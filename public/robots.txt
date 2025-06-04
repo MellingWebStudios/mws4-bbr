@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://birminghamboilerrepairs.uk/sitemap.xml
+Sitemap: https://www.birminghamboilerrepairs.uk/sitemap.xml
