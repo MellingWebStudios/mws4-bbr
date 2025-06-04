@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, Filter, ThumbsUp, MessageSquare, Award } from "lucide-react"
@@ -25,15 +25,74 @@ export default function ReviewsDisplay({
   const [displayCount, setDisplayCount] = useState(limit)
   const [mounted, setMounted] = useState(false)
 
-  // Filter reviews
-  const filteredReviews = reviews.filter((review) => {
-    const matchesService = filter === "all" || review.service === filter
-    const matchesLocation =
-      !locationFilter ||
-      review.text.toLowerCase().includes(locationFilter) ||
-      review.location?.toLowerCase().includes(locationFilter)
-    return matchesService && matchesLocation
-  })
+  // Filter reviews with fallback system
+  const filteredReviews = useMemo(() => {
+    // First, filter by service type
+    const serviceFilteredReviews = reviews.filter((review) => {
+      return filter === "all" || review.service === filter
+    })
+
+    if (!locationFilter) {
+      return serviceFilteredReviews
+    }
+
+    // Try to find location-specific reviews first
+    const locationSpecificReviews = serviceFilteredReviews.filter((review) => {
+      return (
+        review.text.toLowerCase().includes(locationFilter) ||
+        review.location?.toLowerCase().includes(locationFilter)
+      )
+    })
+
+    // If we have location-specific reviews, use them
+    if (locationSpecificReviews.length > 0) {
+      return locationSpecificReviews
+    }
+
+    // Fallback 1: Try to find reviews from broader Birmingham area
+    const birminghamReviews = serviceFilteredReviews.filter((review) => {
+      return review.location?.toLowerCase().includes("birmingham")
+    })
+
+    if (birminghamReviews.length > 0) {
+      // Use deterministic selection instead of random shuffling to avoid hydration issues
+      // Select reviews based on location filter hash for consistency
+      const locationHash = locationFilter ? locationFilter.split('').reduce((a, b) => {
+        a = ((a << 5) - a) + b.charCodeAt(0);
+        return a & a;
+      }, 0) : 0;
+      
+      const startIndex = Math.abs(locationHash) % birminghamReviews.length;
+      const reordered = [...birminghamReviews.slice(startIndex), ...birminghamReviews.slice(0, startIndex)];
+      return reordered;
+    }
+
+    // Fallback 2: Try nearby areas (Solihull, Dudley, etc.)
+    const nearbyAreaReviews = serviceFilteredReviews.filter((review) => {
+      const location = review.location?.toLowerCase() || ""
+      return (
+        location.includes("solihull") ||
+        location.includes("dudley") ||
+        location.includes("bromsgrove") ||
+        location.includes("wolverhampton")
+      )
+    })
+
+    if (nearbyAreaReviews.length > 0) {
+      // Use deterministic selection for nearby areas too
+      const locationHash = locationFilter ? locationFilter.split('').reduce((a, b) => {
+        a = ((a << 5) - a) + b.charCodeAt(0);
+        return a & a;
+      }, 0) : 0;
+      
+      const startIndex = Math.abs(locationHash) % nearbyAreaReviews.length;
+      const reordered = [...nearbyAreaReviews.slice(startIndex), ...nearbyAreaReviews.slice(0, startIndex)];
+      return reordered;
+    }
+
+    // Final fallback: Return reviews in consistent order
+    return serviceFilteredReviews
+  }, [filter, locationFilter])
 
   const displayedReviews = filteredReviews.slice(0, displayCount)
 
