@@ -11,6 +11,13 @@ const WEBSITE_URL =
 
 const isProd = process.env.NODE_ENV === "production";
 
+// Safety check: Prevent non-production domains in production sitemap
+if (isProd && !WEBSITE_URL.includes("birminghamboilerrepairs.uk")) {
+  throw new Error(
+    `Refusing to generate sitemap.xml in production with non-production domain: ${WEBSITE_URL}`
+  );
+}
+
 /* ───────────────── SITEMAP ───────────────── */
 async function generateSitemap() {
   console.log("➜  Generating sitemap.xml …");
