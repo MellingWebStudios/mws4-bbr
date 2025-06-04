@@ -145,7 +145,7 @@ export default async function LocationServicePage({ params }: Props) {
       <Head>
         <link
           rel="canonical"
-          href={`https://www.birminghamboilerrepairs.uk/${params.location}/${params.service}`}
+          href={`https://www.birminghamboilerrepairs.uk/${locationSlug}/${serviceSlug}`}
         />
       </Head>
       <div className="flex flex-col">
