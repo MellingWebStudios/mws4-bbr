@@ -63,7 +63,6 @@ export default function Layout({
           }
           .rounded-xl { border-radius: 1rem; }
         `}</style>
-        <link rel="canonical" href="https://www.birminghamboilerrepairs.uk/" />
       </head>
       <RootLayout className={inter.className}>
         <ClientLayoutShell>

@@ -11,6 +11,7 @@ import RelatedServices from "@/components/related-services"
 import Breadcrumb from "@/components/breadcrumb"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
 import TrackingButton from "@/components/tracking-button"
+import Head from "next/head"
 
 export const metadata: Metadata = {
   title: "Professional Boiler Repairs Birmingham | Same-Day Service",
@@ -101,6 +102,9 @@ export default function BoilerRepairsPage() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.birminghamboilerrepairs.uk/services/boiler-repairs" />
+      </Head>
       <BreadcrumbSchema
         items={[
           { name: "Home", item: "https://www.birminghamboilerrepairs.uk/" },

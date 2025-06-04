@@ -7,6 +7,7 @@ import type { Metadata } from "next"
 import ReviewsDisplay from "@/components/reviews-display"
 import ServiceCallout from "@/components/emergency-callout"
 import PromoCallout from "@/components/promo-callout"
+import Head from "next/head"
 
 export const metadata: Metadata = {
   title: "Gas Safety Inspections Birmingham | Landlord Certificates",
@@ -86,140 +87,145 @@ export default function GasSafetyPage() {
   }
 
   return (
-    <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="bg-secondary py-16 text-white">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-3xl text-center">
-            <div className="mb-4">
-              <Link href="/services" className="inline-flex items-center text-white hover:underline">
-                <ArrowLeft className="mr-2 h-4 w-4" />
-                Back to Services
-              </Link>
+    <>
+      <Head>
+        <link rel="canonical" href="https://www.birminghamboilerrepairs.uk/services/gas-safety" />
+      </Head>
+      <div className="flex flex-col">
+        {/* Hero Section */}
+        <section className="bg-secondary py-16 text-white">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto max-w-3xl text-center">
+              <div className="mb-4">
+                <Link href="/services" className="inline-flex items-center text-white hover:underline">
+                  <ArrowLeft className="mr-2 h-4 w-4" />
+                  Back to Services
+                </Link>
+              </div>
+              <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Gas Safety Inspections in Birmingham</h1>
+              <p className="mt-4 text-lg">{service.description}</p>
             </div>
-            <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Gas Safety Inspections in Birmingham</h1>
-            <p className="mt-4 text-lg">{service.description}</p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Service Callout */}
-      <ServiceCallout />
+        {/* Service Callout */}
+        <ServiceCallout />
 
-      {/* Main Content Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 gap-12">
-            <Card className="overflow-hidden border shadow-md mb-8">
-              <CardContent className="p-0">
-                <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                  <div className="relative h-64 w-full md:h-auto">
-                    <Image
-                      src={service.image || "/images/services_gas_safety_page.png"}
-                      alt={service.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h2>
-                    <div
-                      className="mb-6 prose max-w-none"
-                      dangerouslySetInnerHTML={{ __html: service.longDescription }}
-                    />
-                    <div className="mb-6">
-                      <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
-                      <ul className="space-y-2">
-                        {service.features.map((feature, i) => (
-                          <li key={i} className="flex items-center">
-                            <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
-                            <span className="text-gray-700 dark:text-gray-300">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
+        {/* Main Content Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 gap-12">
+              <Card className="overflow-hidden border shadow-md mb-8">
+                <CardContent className="p-0">
+                  <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div className="relative h-64 w-full md:h-auto">
+                      <Image
+                        src={service.image || "/images/services_gas_safety_page.png"}
+                        alt={service.title}
+                        fill
+                        className="object-cover"
+                      />
                     </div>
-                    <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-                      <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Book an Inspection Now">
-                        <Phone size={16} />
-                        Book an Inspection Now
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Pricing Section */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Inspection Pricing</h2>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                {service.pricing.map((option, index) => (
-                  <Card key={index} className="border shadow-md">
-                    <CardContent className="p-6">
-                      <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h3>
-                      <div className="mb-4 flex items-baseline">
-                        <span className="text-3xl font-bold text-secondary">{option.price}</span>
-                        <span className="ml-1 text-sm text-gray-500">No VAT</span>
+                    <div className="p-6">
+                      <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h2>
+                      <div
+                        className="mb-6 prose max-w-none"
+                        dangerouslySetInnerHTML={{ __html: service.longDescription }}
+                      />
+                      <div className="mb-6">
+                        <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
+                        <ul className="space-y-2">
+                          {service.features.map((feature, i) => (
+                            <li key={i} className="flex items-center">
+                              <CheckCircle className="mr-2 h-5 w-5 text-secondary" />
+                              <span className="text-gray-700 dark:text-gray-300">{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                      <p className="text-gray-600 dark:text-gray-400">{option.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+                      <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
+                        <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Book an Inspection Now">
+                          <Phone size={16} />
+                          Book an Inspection Now
+                        </a>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Pricing Section */}
+              <div>
+                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Inspection Pricing</h2>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
+                  {service.pricing.map((option, index) => (
+                    <Card key={index} className="border shadow-md">
+                      <CardContent className="p-6">
+                        <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h3>
+                        <div className="mb-4 flex items-baseline">
+                          <span className="text-3xl font-bold text-secondary">{option.price}</span>
+                          <span className="ml-1 text-sm text-gray-500">No VAT</span>
+                        </div>
+                        <p className="text-gray-600 dark:text-gray-400">{option.description}</p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+
+                {/* Special Offer Callout */}
+                <div className="mt-8">
+                  <PromoCallout
+                    title="SPECIAL OFFER: Combined Gas Safety & Boiler Service"
+                    description="Book a gas safety inspection and add a boiler service for just £45 extra - saving £10 off the regular price. Get both essential services completed in a single visit by our Gas Safe engineers."
+                    ctaText="Book Combined Service"
+                    ctaLink="tel:08003202345"
+                    variant="highlight"
+                  />
+                </div>
               </div>
 
-              {/* Special Offer Callout */}
-              <div className="mt-8">
-                <PromoCallout
-                  title="SPECIAL OFFER: Combined Gas Safety & Boiler Service"
-                  description="Book a gas safety inspection and add a boiler service for just £45 extra - saving £10 off the regular price. Get both essential services completed in a single visit by our Gas Safe engineers."
-                  ctaText="Book Combined Service"
-                  ctaLink="tel:08003202345"
-                  variant="highlight"
-                />
+              {/* FAQs Section */}
+              <div>
+                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  {service.faqs.map((faq, index) => (
+                    <Card key={index} className="border shadow-md">
+                      <CardContent className="p-6">
+                        <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h3>
+                        <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </div>
-            </div>
 
-            {/* FAQs Section */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {service.faqs.map((faq, index) => (
-                  <Card key={index} className="border shadow-md">
-                    <CardContent className="p-6">
-                      <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h3>
-                      <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
-                    </CardContent>
-                  </Card>
-                ))}
+              {/* Reviews Section */}
+              <div>
+                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
+                <ReviewsDisplay serviceFilter="gas-safety" limit={3} showFilters={false} />
               </div>
-            </div>
-
-            {/* Reviews Section */}
-            <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
-              <ReviewsDisplay serviceFilter="gas-safety" limit={3} showFilters={false} />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* CTA Section */}
-      <section className="bg-secondary py-16 text-white">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
-            <div>
-              <h2 className="text-3xl font-bold">Need a Gas Safety Inspection?</h2>
-              <p className="mt-2 text-lg">Ensure your gas appliances are safe and compliant</p>
+        {/* CTA Section */}
+        <section className="bg-secondary py-16 text-white">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
+              <div>
+                <h2 className="text-3xl font-bold">Need a Gas Safety Inspection?</h2>
+                <p className="mt-2 text-lg">Ensure your gas appliances are safe and compliant</p>
+              </div>
+              <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
+                <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
+                  <Phone size={18} />
+                  Call Now: 0800 320 2345
+                </a>
+              </Button>
             </div>
-            <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
-                <Phone size={18} />
-                Call Now: 0800 320 2345
-              </a>
-            </Button>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   )
 }
