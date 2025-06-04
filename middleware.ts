@@ -2,20 +2,18 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 
 export function middleware(req: NextRequest) {
-  const url = req.nextUrl.clone();
   const host = req.headers.get("host") || "";
+  const proto = req.headers.get("x-forwarded-proto") || "http";
 
-  // Dev environment: skip redirects
+  // Skip redirect in development
   if (host.includes("localhost") || host.includes("127.0.0.1")) {
     return NextResponse.next();
   }
 
-  // Force www + https in production
-  if (host !== "www.birminghamboilerrepairs.uk") {
-    url.hostname = "www.birminghamboilerrepairs.uk";
-    url.protocol = "https:";
-    url.port = ""; // ✅ prevent :3000 from leaking into redirects
-    return NextResponse.redirect(url, 301);
+  // Always force HTTPS + www (only if not already perfect)
+  if (host !== "www.birminghamboilerrepairs.uk" || proto !== "https") {
+    const redirectUrl = `https://www.birminghamboilerrepairs.uk${req.nextUrl.pathname}${req.nextUrl.search}`;
+    return NextResponse.redirect(redirectUrl, 301);
   }
 
   return NextResponse.next();
