@@ -18,6 +18,7 @@ import MobileHero from "@/components/mobile-hero"
 import DesktopHero from "@/components/desktop-hero"
 import MobileHeroImage from "@/components/server/mobile-hero-image"
 import DesktopHeroImage from "@/components/server/desktop-hero-image"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 // Utility: throttle function
 function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
@@ -393,14 +394,16 @@ export default function Home() {
               size="lg"
               className="bg-primary text-gray-900 hover:bg-primary/90 w-full md:w-auto"
             >
-              <a
-                href="tel:08003202345"
+              <TrackedPhoneLink
+                phone="08003202345"
+                trackingLocation="homepage_bottom"
+                trackingSource="final_cta"
                 className="flex items-center justify-center gap-2"
-                aria-label="Call Now: 0800 320 2345"
+                ariaLabel="Call Now: 0800 320 2345"
               >
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </a>
+              </TrackedPhoneLink>
             </Button>
           </div>
         </div>

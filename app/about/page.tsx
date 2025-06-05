@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, CheckCircle } from "lucide-react"
 import TrustBadges from "@/components/trust-badges"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -176,12 +177,16 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold">Ready to work with us?</h2>
               <p className="mt-2 text-lg">Contact our team for all your boiler needs</p>
             </div>
-            <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
-                <Phone size={18} />
-                Call Now: 0800 320 2345
-              </a>
-            </Button>
+            <TrackedPhoneLink
+              phone="08003202345"
+              trackingLocation="about_page"
+              trackingSource="bottom_cta"
+              className="bg-primary text-gray-900 hover:bg-primary/90 flex items-center gap-2"
+              ariaLabel="Call Now: 0800 320 2345"
+            >
+              <Phone size={18} />
+              Call Now: 0800 320 2345
+            </TrackedPhoneLink>
           </div>
         </div>
       </section>

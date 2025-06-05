@@ -2,6 +2,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Phone, ArrowRight, MapPin } from "lucide-react"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Location } from "@/lib/locations-data"
 
 interface LocationServiceCardProps {
@@ -36,10 +37,16 @@ export default function LocationServiceCard({ location, service }: LocationServi
           </Link>
         </Button>
         <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-          <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now">
+          <TrackedPhoneLink
+            phone="08003202345"
+            trackingLocation="location_service_card"
+            trackingSource="service_card_cta"
+            className="flex items-center gap-2"
+            ariaLabel="Call Now"
+          >
             <Phone size={16} />
             Call Now
-          </a>
+          </TrackedPhoneLink>
         </Button>
       </CardFooter>
     </Card>

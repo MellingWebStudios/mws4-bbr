@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
 import ReviewsDisplay from "@/components/reviews-display"
 import ServiceCallout from "@/components/emergency-callout"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import Head from "next/head"
 
 export const metadata: Metadata = {
@@ -130,12 +131,16 @@ export default function FerroliSpecialistsPage() {
                           ))}
                         </ul>
                       </div>
-                      <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
-                        <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Contact a Ferroli Specialist">
-                          <Phone size={16} />
-                          Contact a Ferroli Specialist
-                        </a>
-                      </Button>
+                      <TrackedPhoneLink
+                        phone="08003202345"
+                        trackingLocation="ferroli_specialists_page"
+                        trackingSource="service_info_cta"
+                        className="bg-secondary text-white hover:bg-secondary/90 flex items-center gap-2"
+                        ariaLabel="Contact a Ferroli Specialist"
+                      >
+                        <Phone size={16} />
+                        Contact a Ferroli Specialist
+                      </TrackedPhoneLink>
                     </div>
                   </div>
                 </CardContent>
@@ -192,12 +197,16 @@ export default function FerroliSpecialistsPage() {
                 <h2 className="text-3xl font-bold">Need help with your Ferroli boiler?</h2>
                 <p className="mt-2 text-lg">Contact our specialist team for expert assistance</p>
               </div>
-              <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-                <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
-                  <Phone size={18} />
-                  Call Now: 0800 320 2345
-                </a>
-              </Button>
+              <TrackedPhoneLink
+                phone="08003202345"
+                trackingLocation="ferroli_specialists_page"
+                trackingSource="bottom_cta"
+                className="bg-primary text-gray-900 hover:bg-primary/90 flex items-center gap-2"
+                ariaLabel="Call Now: 0800 320 2345"
+              >
+                <Phone size={18} />
+                Call Now: 0800 320 2345
+              </TrackedPhoneLink>
             </div>
           </div>
         </section>

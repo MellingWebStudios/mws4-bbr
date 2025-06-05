@@ -12,6 +12,7 @@ import ReviewsDisplay from "@/components/reviews-display";
 import ServiceCallout from "@/components/emergency-callout";
 import { RelatedLocations, ServiceLinksGrid } from "@/components/internal-links";
 import { EnhancedBreadcrumb, SmartContentLinks } from "@/components/contextual-links";
+import TrackedPhoneLink from "@/components/tracked-phone-link";
 import React from "react";
 import Head from "next/head";
 import type { Metadata } from "next";
@@ -185,14 +186,16 @@ export default async function LocationPage({ params }: Props) {
                           asChild
                           className="bg-primary text-primary-foreground hover:bg-yellow-400 py-4 px-8 rounded-xl text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
                         >
-                          <a
-                            href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                          <TrackedPhoneLink
+                            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                            trackingLocation="location_page"
+                            trackingSource={`${location.slug}_hero_cta`}
                             className="flex items-center justify-center gap-2"
-                            aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                            ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
                           >
                             <Phone size={20} className="animate-pulse" />
                             Book Now: {businessInfo.phone.freephone}
-                          </a>
+                          </TrackedPhoneLink>
                         </Button>
                       </div>
                     </div>
@@ -296,14 +299,16 @@ export default async function LocationPage({ params }: Props) {
                 size="lg"
                 className="relative overflow-hidden bg-primary text-primary-foreground px-8 text-lg font-semibold shadow-md transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg"
               >
-                <a
-                  href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                <TrackedPhoneLink
+                  phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                  trackingLocation="location_page"
+                  trackingSource={`${location.slug}_bottom_cta`}
                   className="flex items-center gap-3"
-                  aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                  ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
                 >
                   <Phone size={20} className="animate-pulse" />
                   <span>Call Now: {businessInfo.phone.freephone}</span>
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>

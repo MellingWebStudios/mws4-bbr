@@ -10,7 +10,7 @@ import FAQSchema from "@/components/faq-schema"
 import RelatedServices from "@/components/related-services"
 import Breadcrumb from "@/components/breadcrumb"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
-import TrackingButton from "@/components/tracking-button"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import { RelatedServices as NewRelatedServices, RelatedLocations } from "@/components/internal-links"
 import { ServiceCrossLinks, SmartContentLinks } from "@/components/contextual-links"
 import Head from "next/head"
@@ -175,16 +175,18 @@ export default function BoilerRepairsPage() {
                         ))}
                       </ul>
                     </div>
-                    <TrackingButton
-                      href="tel:08003202345"
-                      eventName="call_button_click"
-                      eventCategory="conversion"
-                      eventLabel="boiler_repairs_page"
-                      className="bg-secondary text-white hover:bg-secondary/90"
-                    >
-                      <Phone size={16} />
-                      Book a Repair Now
-                    </TrackingButton>
+                    <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
+                      <TrackedPhoneLink
+                        phone="08003202345"
+                        trackingLocation="boiler_repairs_page"
+                        trackingSource="service_pricing_cta"
+                        className="flex items-center gap-2"
+                        ariaLabel="Book a Repair Now"
+                      >
+                        <Phone size={16} />
+                        Book a Repair Now
+                      </TrackedPhoneLink>
+                    </Button>
                   </div>
                 </div>
               </CardContent>
@@ -284,10 +286,16 @@ export default function BoilerRepairsPage() {
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
+              <TrackedPhoneLink
+                phone="08003202345"
+                trackingLocation="boiler_repairs_page"
+                trackingSource="bottom_cta"
+                className="flex items-center gap-2"
+                ariaLabel="Call Now: 0800 320 2345"
+              >
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </Link>
+              </TrackedPhoneLink>
             </Button>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock, Shield, Facebook, Instagram } from "lucide-
 import GasSafeBadge from "@/components/gas-safe-badge"
 import { useCookieConsent } from "@/context/cookie-consent-context"
 import businessInfo from "@/lib/business-info"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 const Footer = () => {
   const { openPreferences } = useCookieConsent()
@@ -194,26 +195,30 @@ const Footer = () => {
                 <Phone className="mr-2 h-5 w-5 text-secondary" />
                 <div>
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Freephone</p>
-                  <a
-                    href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                  <TrackedPhoneLink
+                    phone={businessInfo.phone.freephone}
+                    trackingLocation="footer"
+                    trackingSource="contact_section_freephone"
                     className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
-                    aria-label="Call Freephone"
+                    ariaLabel="Call Freephone"
                   >
                     {businessInfo.phone.freephone}
-                  </a>
+                  </TrackedPhoneLink>
                 </div>
               </li>
               <li className="flex items-start">
                 <Phone className="mr-2 h-5 w-5 text-secondary" />
                 <div>
                   <p className="text-sm font-medium text-gray-900 dark:text-white">Mobile</p>
-                  <a
-                    href={`tel:${businessInfo.phone.mobile.replace(/\s/g, "")}`}
+                  <TrackedPhoneLink
+                    phone={businessInfo.phone.mobile}
+                    trackingLocation="footer"
+                    trackingSource="contact_section_mobile"
                     className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
-                    aria-label="Call Mobile"
+                    ariaLabel="Call Mobile"
                   >
                     {businessInfo.phone.mobile}
-                  </a>
+                  </TrackedPhoneLink>
                 </div>
               </li>
               <li className="flex items-start">

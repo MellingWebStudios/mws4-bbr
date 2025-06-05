@@ -1,6 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
 import businessInfo from "@/lib/business-info"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Birmingham Boiler Repairs",
@@ -261,9 +262,15 @@ export default function PrivacyPolicyPage() {
                 </a>
                 <br />
                 Phone:{" "}
-                <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="text-secondary hover:underline">
+                <TrackedPhoneLink
+                  phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                  trackingLocation="privacy_policy_page"
+                  trackingSource="contact_info"
+                  className="text-secondary hover:underline"
+                  ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                >
                   {businessInfo.phone.freephone}
-                </a>
+                </TrackedPhoneLink>
               </address>
             </div>
           </div>

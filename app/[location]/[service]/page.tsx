@@ -18,6 +18,7 @@ import {
 import businessInfo from "@/lib/business-info";
 import { notFound } from "next/navigation";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
+import TrackedPhoneLink from "@/components/tracked-phone-link";
 import React from "react";
 import { reviews } from "@/lib/reviews-data"; // <--- NEW: Import reviews
 import Head from "next/head";
@@ -276,14 +277,16 @@ export default async function LocationServicePage({ params }: Props) {
                           asChild
                           className="bg-primary text-primary-foreground hover:bg-yellow-400 py-4 px-8 rounded-xl text-base font-semibold shadow-lg transition-all duration-300 hover:scale-105"
                         >
-                          <a
-                            href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                          <TrackedPhoneLink
+                            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                            trackingLocation="location_service_page"
+                            trackingSource={`${location.slug}_${service.slug}_pricing_cta`}
                             className="flex items-center justify-center gap-2"
-                            aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                            ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
                           >
                             <Phone size={20} className="animate-pulse" />
                             Book Now: {businessInfo.phone.freephone}
-                          </a>
+                          </TrackedPhoneLink>
                         </Button>
                       </div>
                     </div>
@@ -328,14 +331,16 @@ export default async function LocationServicePage({ params }: Props) {
                         asChild
                         className="mt-auto w-full bg-primary text-primary-foreground hover:bg-primary/90 font-semibold py-3 rounded-lg shadow transition-all duration-200"
                       >
-                        <a
-                          href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-                          aria-label={`Book ${option.title} for ${option.price}`}
+                        <TrackedPhoneLink
+                          phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                          trackingLocation="location_service_page"
+                          trackingSource={`${location.slug}_${service.slug}_${option.title.toLowerCase().replace(/\s+/g, '_')}_cta`}
                           className="flex items-center justify-center gap-2"
+                          ariaLabel={`Book ${option.title} for ${option.price}`}
                         >
                           <Phone size={18} />
                           Book Now
-                        </a>
+                        </TrackedPhoneLink>
                       </Button>
                     </div>
                   ))}
@@ -488,14 +493,16 @@ export default async function LocationServicePage({ params }: Props) {
                 size="lg"
                 className="relative overflow-hidden bg-primary text-primary-foreground px-8 text-lg font-semibold shadow-md transition-all duration-300 hover:bg-primary/90 hover:scale-105 hover:shadow-lg"
               >
-                <a
-                  href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                <TrackedPhoneLink
+                  phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                  trackingLocation="location_service_page"
+                  trackingSource={`${location.slug}_${service.slug}_cta`}
                   className="flex items-center gap-3"
-                  aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                  ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
                 >
                   <Phone size={20} className="animate-pulse" />
                   <span>Call Now: {businessInfo.phone.freephone}</span>
-                </a>
+                </TrackedPhoneLink>
               </Button>
             </div>
           </div>

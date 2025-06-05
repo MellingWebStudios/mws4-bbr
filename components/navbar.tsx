@@ -9,6 +9,7 @@ import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
 import RatingBadge from "@/components/rating-badge"
 import ReviewsModal from "@/components/reviews-modal"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import businessInfo from "@/lib/business-info"
 
 // Utility: throttle function
@@ -253,11 +254,17 @@ const Navbar = () => {
               </nav>
               <div className="flex flex-col items-end">
                 <Button asChild className="bg-red-600 text-white hover:bg-red-700">
-                  <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center gap-2" aria-label={`Call ${businessInfo.phone.freephone}`}>
+                  <TrackedPhoneLink 
+                    phone={businessInfo.phone.freephone}
+                    trackingLocation="navbar_desktop"
+                    trackingSource="header_cta"
+                    className="flex items-center gap-2" 
+                    ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                  >
                     <Phone className="h-5 w-5" />
                     <span className="hidden lg:inline">{businessInfo.phone.freephone}</span>
                     <span className="lg:hidden">Call Now</span>
-                  </a>
+                  </TrackedPhoneLink>
                 </Button>
                 <span className="mt-1 text-xs text-gray-500">Same-day service when booked before 12pm</span>
               </div>
@@ -265,9 +272,14 @@ const Navbar = () => {
 
             <div className="flex md:hidden">
               <Button asChild variant="outline" size="icon" className="mr-2 border-red-600 fill-red-600 text-red-600">
-                <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} aria-label={`Call ${businessInfo.phone.freephone}`}>
+                <TrackedPhoneLink 
+                  phone={businessInfo.phone.freephone}
+                  trackingLocation="navbar_mobile"
+                  trackingSource="header_icon"
+                  ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                >
                   <Phone className="h-5 w-5" />
-                </a>
+                </TrackedPhoneLink>
               </Button>
               <Button
                 variant="outline"
@@ -356,10 +368,16 @@ const Navbar = () => {
 
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
                   <Button asChild className="w-full bg-red-600 text-white hover:bg-red-700">
-                    <a href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`} className="flex items-center justify-center gap-2" aria-label={`Call ${businessInfo.phone.freephone}`}>
+                    <TrackedPhoneLink
+                      phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                      trackingLocation="navbar_mobile_menu"
+                      trackingSource="mobile_menu_cta"
+                      className="flex items-center justify-center gap-2"
+                      ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                    >
                       <Phone className="h-5 w-5" />
                       <span>{businessInfo.phone.freephone}</span>
-                    </a>
+                    </TrackedPhoneLink>
                   </Button>
                   <p className="mt-2 text-center text-xs text-gray-500">Same-day service when booked before 12pm</p>
                 </div>

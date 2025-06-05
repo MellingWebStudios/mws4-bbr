@@ -6,6 +6,7 @@ import ContactForm from "@/components/contact-form"
 import type { Metadata } from "next"
 import LocalServiceAreas from "@/components/local-service-areas"
 import businessInfo from "@/lib/business-info"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
   title: "Contact Birmingham Boiler Repairs | Book a Boiler Service or Repair",
@@ -44,23 +45,27 @@ export default function ContactPage() {
                       <h3 className="font-bold text-gray-900 dark:text-white">Phone</h3>
                       <p className="text-gray-600 dark:text-gray-400">
                         Freephone:{" "}
-                        <a
-                          href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                        <TrackedPhoneLink
+                          phone={businessInfo.phone.freephone}
+                          trackingLocation="contact_page"
+                          trackingSource="phone_card_freephone"
                           className="text-secondary hover:underline"
-                          aria-label="Call Freephone"
+                          ariaLabel="Call Freephone"
                         >
                           {businessInfo.phone.freephone}
-                        </a>
+                        </TrackedPhoneLink>
                       </p>
                       <p className="text-gray-600 dark:text-gray-400">
                         Mobile:{" "}
-                        <a
-                          href={`tel:${businessInfo.phone.mobile.replace(/\s/g, "")}`}
+                        <TrackedPhoneLink
+                          phone={businessInfo.phone.mobile}
+                          trackingLocation="contact_page"
+                          trackingSource="phone_card_mobile"
                           className="text-secondary hover:underline"
-                          aria-label="Call Mobile"
+                          ariaLabel="Call Mobile"
                         >
                           {businessInfo.phone.mobile}
-                        </a>
+                        </TrackedPhoneLink>
                       </p>
                     </div>
                   </CardContent>
@@ -110,14 +115,16 @@ export default function ContactPage() {
               <div className="mt-8">
                 <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">Need Urgent Help?</h3>
                 <Button asChild size="lg" className="w-full bg-primary text-gray-900 hover:bg-primary/90">
-                  <a
-                    href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+                  <TrackedPhoneLink
+                    phone={businessInfo.phone.freephone}
+                    trackingLocation="contact_page"
+                    trackingSource="urgent_help_cta"
                     className="flex items-center justify-center gap-2"
-                    aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                    ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
                   >
                     <Phone size={18} />
                     {`Call Now: ${businessInfo.phone.freephone}`}
-                  </a>
+                  </TrackedPhoneLink>
                 </Button>
               </div>
             </div>
@@ -165,14 +172,16 @@ export default function ContactPage() {
               <p className="mt-2 text-lg">Contact us today for fast, reliable service</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <a
-                href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
+              <TrackedPhoneLink
+                phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                trackingLocation="contact_page"
+                trackingSource="bottom_cta"
                 className="flex items-center gap-2"
-                aria-label={`Call Now: ${businessInfo.phone.freephone}`}
+                ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
               >
                 <Phone size={18} />
                 {`Call Now: ${businessInfo.phone.freephone}`}
-              </a>
+              </TrackedPhoneLink>
             </Button>
           </div>
         </div>

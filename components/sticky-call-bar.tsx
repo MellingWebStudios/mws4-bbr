@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { Phone } from "lucide-react"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 // Utility: throttle function
 function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
@@ -43,13 +44,15 @@ export default function StickyCallBar() {
   if (!visible) return null
 
   return (
-    <a
-      href="tel:08003202345"
+    <TrackedPhoneLink
+      phone="08003202345"
+      trackingLocation="sticky_call_bar"
+      trackingSource="mobile_bottom_cta"
       className="fixed bottom-4 left-1/2 z-50 flex w-[90%] max-w-md -translate-x-1/2 items-center justify-center gap-2 rounded-full bg-red-600 py-3 text-white shadow-lg transition-all hover:bg-red-700 md:hidden"
-      aria-label="Tap to book your boiler service"
+      ariaLabel="Tap to book your boiler service"
     >
       <Phone className="h-5 w-5" />
       <span className="font-bold">Tap to book your boiler service</span>
-    </a>
+    </TrackedPhoneLink>
   )
 }

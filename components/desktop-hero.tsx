@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Phone, Clock } from "lucide-react"
 import ReviewsModal from "./reviews-modal"
 import { useState } from "react"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export default function DesktopHero() {
   const [showReviews, setShowReviews] = useState(false)
@@ -37,7 +38,13 @@ export default function DesktopHero() {
             size="lg"
             className="bg-primary text-gray-900 hover:bg-primary/90 shadow-xl px-6 py-6 text-lg font-bold relative overflow-hidden group"
           >
-            <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now – 0800 320 2345">
+            <TrackedPhoneLink 
+              phone="08003202345" 
+              trackingLocation="desktop_hero"
+              trackingSource="hero_cta_button"
+              className="flex items-center gap-2" 
+              ariaLabel="Call Now – 0800 320 2345"
+            >
               <div className="absolute inset-0 w-full h-full bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700" aria-hidden="true"></div>
               <div className="relative z-10 flex items-center gap-2">
                 <div className="bg-white/20 p-1.5 rounded-full">
@@ -45,7 +52,7 @@ export default function DesktopHero() {
                 </div>
                 Call 0800 320 2345
               </div>
-            </a>
+            </TrackedPhoneLink>
           </Button>
           <div className="mt-2 flex items-center justify-start">
           <button

@@ -12,6 +12,7 @@ import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
 import businessInfo from "@/lib/business-info"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 /**
  * BoilerFAQ – design‑refreshed, markup‑identical.
@@ -38,16 +39,16 @@ const BoilerFAQ = () => {
             <li>Frozen condensate pipe (common in winter)</li>
           </ul>
           <p>If you've checked these and your boiler still won't fire up, you likely need a professional repair.</p>
-          <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
-            <a
-              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2"
-              aria-label={`Call for help: ${businessInfo.phone.freephone}`}
-            >
-              <Phone size={16} />
-              {`Call for help: ${businessInfo.phone.freephone}`}
-            </a>
-          </Button>
+          <TrackedPhoneLink
+            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+            trackingLocation="boiler_faq"
+            trackingSource="wont_fire_up_help"
+            className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90 flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            ariaLabel={`Call for help: ${businessInfo.phone.freephone}`}
+          >
+            <Phone size={16} />
+            {`Call for help: ${businessInfo.phone.freephone}`}
+          </TrackedPhoneLink>
         </>
       ),
     },
@@ -64,16 +65,16 @@ const BoilerFAQ = () => {
             <li>Faulty hot water sensor</li>
           </ul>
           <p>This typically requires a professional diagnosis as it often involves internal boiler components.</p>
-          <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
-            <a
-              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2"
-              aria-label={`Book a repair: ${businessInfo.phone.freephone}`}
-            >
-              <Phone size={16} />
-              {`Book a repair: ${businessInfo.phone.freephone}`}
-            </a>
-          </Button>
+          <TrackedPhoneLink
+            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+            trackingLocation="boiler_faq"
+            trackingSource="no_hot_water_repair"
+            className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90 flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            ariaLabel={`Book a repair: ${businessInfo.phone.freephone}`}
+          >
+            <Phone size={16} />
+            {`Book a repair: ${businessInfo.phone.freephone}`}
+          </TrackedPhoneLink>
         </>
       ),
     },
@@ -90,16 +91,16 @@ const BoilerFAQ = () => {
             <li>Water pressure problems</li>
           </ul>
           <p>While bleeding radiators might help with some noises, persistent sounds usually require professional attention.</p>
-          <Button asChild className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90">
-            <a
-              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2"
-              aria-label={`Get it fixed: ${businessInfo.phone.freephone}`}
-            >
-              <Phone size={16} />
-              {`Get it fixed: ${businessInfo.phone.freephone}`}
-            </a>
-          </Button>
+          <TrackedPhoneLink
+            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+            trackingLocation="boiler_faq"
+            trackingSource="strange_noises_fix"
+            className="mt-6 bg-secondary text-secondary-foreground shadow-lg hover:bg-secondary/90 flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            ariaLabel={`Get it fixed: ${businessInfo.phone.freephone}`}
+          >
+            <Phone size={16} />
+            {`Get it fixed: ${businessInfo.phone.freephone}`}
+          </TrackedPhoneLink>
         </>
       ),
     },
@@ -118,16 +119,16 @@ const BoilerFAQ = () => {
           <p className="font-semibold text-red-600 dark:text-red-400">
             Important: If you notice a significant leak, turn off your boiler and water supply, and call us immediately.
           </p>
-          <Button asChild className="mt-6 bg-red-600 text-white shadow-lg hover:bg-red-700">
-            <a
-              href={`tel:${businessInfo.phone.freephone.replace(/\s/g, "")}`}
-              className="flex items-center gap-2"
-              aria-label={`Emergency call: ${businessInfo.phone.freephone}`}
-            >
-              <Phone size={16} />
-              {`Emergency call: ${businessInfo.phone.freephone}`}
-            </a>
-          </Button>
+          <TrackedPhoneLink
+            phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+            trackingLocation="boiler_faq"
+            trackingSource="emergency_leak_call"
+            className="mt-6 bg-red-600 text-white shadow-lg hover:bg-red-700 flex items-center gap-2 rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            ariaLabel={`Emergency call: ${businessInfo.phone.freephone}`}
+          >
+            <Phone size={16} />
+            {`Emergency call: ${businessInfo.phone.freephone}`}
+          </TrackedPhoneLink>
         </>
       ),
     },

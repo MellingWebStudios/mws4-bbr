@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Avatar } from "@/components/ui/avatar"
 import { SheetClose } from "@/components/ui/sheet"
+import { trackCallClick, formatPhoneHref } from "@/lib/call-tracking"
 
 const DAVE_PHONE_NUMBER = "08003202345"
 const DAVE_WA_NUMBER = DAVE_PHONE_NUMBER.replace(/^0/, "44")
@@ -32,6 +33,16 @@ function WhatsAppButton({ phone, message }: { phone: string, message?: string })
 
 // --- Call Now Button ---
 function CallNowButton({ phone }: { phone: string }) {
+  const handleClick = () => {
+    trackCallClick({
+      phone,
+      label: `Chatbot Call Button - ${phone}`,
+      category: "engagement",
+      location: "chatbot",
+      source: "chatbot_call_button"
+    });
+  };
+
   return (
     <Button
       asChild
@@ -39,7 +50,7 @@ function CallNowButton({ phone }: { phone: string }) {
       size="lg"
       className="w-full justify-center border-green-600 text-green-600 hover:bg-green-600/10 mt-2 rounded-xl font-semibold"
     >
-      <a href={`tel:${phone}`}>
+      <a href={formatPhoneHref(phone)} onClick={handleClick}>
         <Phone className="mr-2 mb-0.5" size={20} />
         Call Now: {phone}
       </a>
@@ -74,9 +85,19 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
         <span className="text-center">
           He'll call you back soon.<br />
           For urgent issues,{" "}
-          <a href={`tel:08003202345`} className="underline text-green-900 font-bold">
+          <button
+            onClick={() => {
+              trackCallClick({
+                phone: DAVE_PHONE_NUMBER,
+                location: "chatbot",
+                source: "urgent_call_now"
+              })
+              window.location.href = formatPhoneHref(DAVE_PHONE_NUMBER)
+            }}
+            className="underline text-green-900 font-bold bg-transparent border-none cursor-pointer"
+          >
             call now
-          </a>
+          </button>
           .
         </span>
       </div>
@@ -184,10 +205,10 @@ const Chatbot = () => {
     if (typingTimeoutRef.current) clearTimeout(typingTimeoutRef.current)
   }
 
-  const handleKeyDown = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault()
-      const form = e.currentTarget.form
+      const form = (e.currentTarget as HTMLInputElement).form
       if (form) form.requestSubmit()
     }
   }

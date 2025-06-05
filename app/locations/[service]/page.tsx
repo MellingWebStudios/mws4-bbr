@@ -6,6 +6,7 @@ import { locations, services, getServiceBySlug } from "@/lib/locations-data"
 import LocationServiceCard from "@/components/location-service-card"
 import { notFound } from "next/navigation"
 import Breadcrumb from "@/components/breadcrumb"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 type Props = {
   params: {
@@ -93,12 +94,16 @@ export default function ServiceLocationsPage({ params }: Props) {
               <h2 className="text-3xl font-bold">Need {service.name}?</h2>
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
-            <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href="tel:08003202345" className="flex items-center gap-2">
-                <Phone size={18} />
-                Call Now: 0800 320 2345
-              </Link>
-            </Button>
+            <TrackedPhoneLink
+              phone="08003202345"
+              trackingLocation="locations_service_page"
+              trackingSource="bottom_cta"
+              className="bg-primary text-gray-900 hover:bg-primary/90 flex items-center gap-2 rounded-md px-6 py-3 text-sm font-medium transition-colors"
+              ariaLabel="Call Now: 0800 320 2345"
+            >
+              <Phone size={18} />
+              Call Now: 0800 320 2345
+            </TrackedPhoneLink>
           </div>
         </div>
       </section>

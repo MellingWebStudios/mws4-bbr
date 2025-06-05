@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone } from "lucide-react";
+import TrackedPhoneLink from "@/components/tracked-phone-link";
 
 const ServiceCallout = () => {
   return (
@@ -18,27 +19,31 @@ const ServiceCallout = () => {
             <div className="relative">
               <div className="emergency-pulse-ring absolute -inset-1 rounded-full bg-white opacity-30 animate-ping"></div>
               <div className="emergency-pulse relative flex h-16 w-16 items-center justify-center rounded-full bg-white">
-                <a
-                  href="tel:08003202345"
-                  aria-label="Call our hotline at 0800 320 2345"
+                <TrackedPhoneLink
+                  phone="08003202345"
+                  trackingLocation="emergency_callout"
+                  trackingSource="emergency_phone_icon"
+                  ariaLabel="Call our hotline at 0800 320 2345"
                   className="emergency-pulse relative flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                 >
                   <Phone className="h-8 w-8 text-red-600" />
-                </a>
+                </TrackedPhoneLink>
               </div>
             </div>
             <div className="text-center md:text-left">
               <p className="text-sm font-medium uppercase tracking-wider text-red-100">
                 Call our hotline now
               </p>
-              <a
-                href="tel:08003202345"
+              <TrackedPhoneLink
+                phone="08003202345"
+                trackingLocation="emergency_callout"
+                trackingSource="emergency_phone_number"
                 className="group mt-1 block text-2xl font-bold transition-colors hover:text-red-100 md:text-3xl"
-                aria-label="Call our hotline at 0800 320 2345"
+                ariaLabel="Call our hotline at 0800 320 2345"
               >
                 0800 320 2345
                 <span className="block h-0.5 max-w-0 bg-white transition-all duration-500 group-hover:max-w-full"></span>
-              </a>
+              </TrackedPhoneLink>
             </div>
           </div>
         </div>

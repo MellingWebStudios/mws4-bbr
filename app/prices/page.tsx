@@ -4,6 +4,7 @@ import { Phone, CheckCircle } from "lucide-react"
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
   title: "Boiler Repair & Service Prices | Birmingham Boiler Repairs",
@@ -197,10 +198,16 @@ export default function PricesPage() {
               <p className="mt-2 text-lg">Contact us today for a fast, reliable service</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <a href="tel:08003202345" className="flex items-center gap-2" aria-label="Call Now: 0800 320 2345">
+              <TrackedPhoneLink 
+                phone="08003202345" 
+                trackingLocation="prices_page"
+                trackingSource="ready_to_book_cta"
+                className="flex items-center gap-2" 
+                ariaLabel="Call Now: 0800 320 2345"
+              >
                 <Phone size={18} />
                 Call Now: 0800 320 2345
-              </a>
+              </TrackedPhoneLink>
             </Button>
           </div>
         </div>

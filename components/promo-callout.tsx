@@ -2,6 +2,7 @@ import { Sparkles } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 interface PromoCalloutProps {
   title: string
@@ -34,7 +35,17 @@ export default function PromoCallout({ title, description, ctaText, ctaLink, var
               asChild
               className={variant === "highlight" ? "bg-primary text-gray-900" : "bg-secondary text-white"}
             >
-              {ctaLink.startsWith("tel:") || ctaLink.startsWith("mailto:") ? (
+              {ctaLink.startsWith("tel:") ? (
+                <TrackedPhoneLink 
+                  phone={ctaLink.replace("tel:", "")}
+                  trackingLocation="promo_callout"
+                  trackingSource={`promo_${variant}_cta`}
+                  className="flex items-center gap-2" 
+                  ariaLabel={ctaText}
+                >
+                  {ctaText}
+                </TrackedPhoneLink>
+              ) : ctaLink.startsWith("mailto:") ? (
                 <a href={ctaLink} className="flex items-center gap-2" aria-label={ctaText}>
                   {ctaText}
                 </a>

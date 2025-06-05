@@ -19,6 +19,7 @@ import { businessInfo } from "@/lib/business-info"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
 import Breadcrumb from "@/components/breadcrumb"
 import { SmartContentLinks } from "@/components/contextual-links"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 type Props = {
@@ -304,12 +305,16 @@ export default async function BlogPostPage({ params }: Props) {
                           {post.ctaDescription || "Our Gas Safe engineers are ready to help with any boiler issue."}
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                          <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                            <Link href={post.ctaButtonLink || `tel:${businessInfo.phone.freephone}`}>
-                              <Phone className="mr-2 h-5 w-5" />
-                              {post.ctaButtonText || "Call Now"}
-                            </Link>
-                          </Button>
+                          <TrackedPhoneLink
+                            phone={(post.ctaButtonLink || `tel:${businessInfo.phone.freephone}`).replace('tel:', '').replace(/\s/g, "")}
+                            trackingLocation="blog_post"
+                            trackingSource="inline_cta"
+                            className="bg-primary hover:bg-primary/90 flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-medium text-gray-900 transition-colors"
+                            ariaLabel={post.ctaButtonText || "Call Now"}
+                          >
+                            <Phone className="mr-2 h-5 w-5" />
+                            {post.ctaButtonText || "Call Now"}
+                          </TrackedPhoneLink>
                           <Button asChild variant="outline" size="lg">
                             <Link href="/contact">
                               Get Free Quote
@@ -331,12 +336,16 @@ export default async function BlogPostPage({ params }: Props) {
                         <p className="text-sm text-white/90 mb-4">
                           Same-day service available
                         </p>
-                        <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90">
-                          <Link href={`tel:${businessInfo.phone.freephone}`}>
-                            <Phone className="mr-2 h-4 w-4" />
-                            {businessInfo.phone.freephone}
-                          </Link>
-                        </Button>
+                        <TrackedPhoneLink
+                          phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                          trackingLocation="blog_post"
+                          trackingSource="sidebar_quick_contact"
+                          className="w-full bg-primary hover:bg-primary/90 flex items-center justify-center gap-2 rounded-md px-6 py-3 text-sm font-medium text-gray-900 transition-colors"
+                          ariaLabel={businessInfo.phone.freephone}
+                        >
+                          <Phone className="mr-2 h-4 w-4" />
+                          {businessInfo.phone.freephone}
+                        </TrackedPhoneLink>
                       </CardContent>
                     </Card>
 

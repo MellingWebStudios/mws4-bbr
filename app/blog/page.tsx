@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Clock, Calendar, User, ArrowRight, Tag } from "lucide-react"
 import { getAllPosts, getFeaturedPosts, getAllCategories, getAllTags } from "@/lib/blog-data"
 import { businessInfo } from "@/lib/business-info"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -57,11 +58,15 @@ export default function BlogPage() {
               and maintenance advice to keep your boiler running efficiently.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href={`tel:${businessInfo.phone.freephone}`}>
-                  Need Help Now? Call {businessInfo.phone.freephone}
-                </Link>
-              </Button>
+              <TrackedPhoneLink
+                phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                trackingLocation="blog_page"
+                trackingSource="hero_cta"
+                className="bg-primary hover:bg-primary/90 flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium text-gray-900 transition-colors"
+                ariaLabel={`Need Help Now? Call ${businessInfo.phone.freephone}`}
+              >
+                Need Help Now? Call {businessInfo.phone.freephone}
+              </TrackedPhoneLink>
               <div className="flex items-center text-sm text-white/80">
                 <Clock className="mr-2 h-4 w-4" />
                 Same-day service available
@@ -254,11 +259,15 @@ export default function BlogPage() {
               Same-day service available across Birmingham and the West Midlands.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href={`tel:${businessInfo.phone.freephone}`}>
-                  Call {businessInfo.phone.freephone}
-                </Link>
-              </Button>
+              <TrackedPhoneLink
+                phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                trackingLocation="blog_page"
+                trackingSource="bottom_cta"
+                className="bg-primary hover:bg-primary/90 flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium text-gray-900 transition-colors"
+                ariaLabel={`Call ${businessInfo.phone.freephone}`}
+              >
+                Call {businessInfo.phone.freephone}
+              </TrackedPhoneLink>
               <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-secondary">
                 <Link href="/contact">
                   Get Free Quote

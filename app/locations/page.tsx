@@ -6,6 +6,7 @@ import { locations } from "@/lib/locations-data"
 import { businessInfo } from "@/lib/business-info"
 import { ServiceLinksGrid } from "@/components/internal-links"
 import { SmartContentLinks } from "@/components/contextual-links"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -50,10 +51,16 @@ export default function AreasWeCoverPage() {
             </p>
             <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href={`tel:${businessInfo.phone.freephone}`}>
+                <TrackedPhoneLink
+                  phone={businessInfo.phone.freephone}
+                  trackingLocation="locations_page"
+                  trackingSource="hero_cta"
+                  className="flex items-center gap-2"
+                  ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                >
                   <Phone className="mr-2 h-5 w-5" />
                   Call {businessInfo.phone.freephone}
-                </Link>
+                </TrackedPhoneLink>
               </Button>
               <div className="flex items-center text-sm">
                 <Clock className="mr-2 h-4 w-4" />
@@ -192,9 +199,14 @@ export default function AreasWeCoverPage() {
                               </Link>
                             </Button>
                             <Button asChild variant="outline" size="sm">
-                              <Link href={`tel:${businessInfo.phone.freephone}`}>
+                              <TrackedPhoneLink
+                                phone={businessInfo.phone.freephone}
+                                trackingLocation="locations_page"
+                                trackingSource={`location_card_${location.slug}`}
+                                ariaLabel="Call Now"
+                              >
                                 Call Now
-                              </Link>
+                              </TrackedPhoneLink>
                             </Button>
                           </div>
                         </CardContent>
@@ -217,10 +229,16 @@ export default function AreasWeCoverPage() {
               <p className="mt-2 text-lg">We may still be able to help! Contact us to check if we can provide services in your location.</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
-              <Link href={`tel:${businessInfo.phone.freephone}`} className="flex items-center gap-2" aria-label={`Call Now: ${businessInfo.phone.freephone}`}>
+              <TrackedPhoneLink
+                phone={businessInfo.phone.freephone}
+                trackingLocation="locations_page"
+                trackingSource="bottom_cta"
+                className="flex items-center gap-2"
+                ariaLabel={`Call Now: ${businessInfo.phone.freephone}`}
+              >
                 <Phone size={18} />
                 Call Now: {businessInfo.phone.freephone}
-              </Link>
+              </TrackedPhoneLink>
             </Button>
           </div>
         </div>

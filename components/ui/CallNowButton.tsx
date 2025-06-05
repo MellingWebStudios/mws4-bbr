@@ -2,6 +2,7 @@
 
 import { Phone } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 type CallNowButtonProps = {
   tel?: string
@@ -17,20 +18,17 @@ export default function CallNowButton({
   pulse = false,
 }) {
   return (
-    <Button
-      asChild
-      size="lg"
-      className={`w-full bg-primary hover:bg-primary/90 shadow-md h-12 ${pulse ? "animate-pulse-subtle" : ""}`}
+    <TrackedPhoneLink
+      phone={tel}
+      trackingLocation="call_now_button"
+      trackingSource="generic_call_button"
+      className={`w-full bg-primary hover:bg-primary/90 shadow-md h-12 ${pulse ? "animate-pulse-subtle" : ""} flex items-center justify-center gap-2 font-semibold !text-black rounded-md px-4 py-2 text-sm transition-colors`}
+      style={{ color: '#000 !important' }}
+      ariaLabel={label}
     >
-      <a
-        href={`tel:${tel}`}
-        className="flex items-center justify-center gap-2 font-semibold !text-black"
-        style={{ color: '#000 !important' }}
-      >
-        <Phone className="h-4 w-4" />
-        {label}
-      </a>
-    </Button>
+      <Phone className="h-4 w-4" />
+      {label}
+    </TrackedPhoneLink>
   )
 }
 

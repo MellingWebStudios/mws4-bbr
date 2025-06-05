@@ -6,6 +6,7 @@ import { getBlogPosts, getBlogPostsByTag } from "@/lib/blog-data"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 interface TagPageProps {
   params: {
@@ -229,11 +230,15 @@ export default async function TagPage({ params }: TagPageProps) {
               and maintenance services across Birmingham and the West Midlands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" asChild className="bg-primary text-white hover:bg-primary/90">
-                <a href="tel:08003202345">
-                  Call Now: 0800 320 2345
-                </a>
-              </Button>
+              <TrackedPhoneLink
+                phone="08003202345"
+                trackingLocation="blog_tag_page"
+                trackingSource="bottom_cta"
+                className="bg-primary text-white hover:bg-primary/90 flex items-center justify-center rounded-md px-6 py-3 text-sm font-medium transition-colors"
+                ariaLabel="Call Now: 0800 320 2345"
+              >
+                Call Now: 0800 320 2345
+              </TrackedPhoneLink>
               <Button size="lg" variant="outline" asChild>
                 <Link href="/contact">
                   Get Free Quote
