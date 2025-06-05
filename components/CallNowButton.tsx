@@ -25,10 +25,10 @@ export default function CallNowButton({
   const handleClick = () => {
     const trackingEvent: CallTrackingEvent = {
       phone,
-      label: label || `Call ${phone}`,
-      category: "engagement",
-      location: trackingLocation || "call_button",
-      source: trackingSource || "website"
+      call_location: trackingLocation || "call_button",
+      call_source: trackingSource || "website",
+      engagement_type: "call_intent",
+      label: label || `Call ${phone}`
     };
     
     trackCallClick(trackingEvent);

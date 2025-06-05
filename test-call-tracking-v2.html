@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call Tracking V2 Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-button { 
+            background: #e11d48; 
+            color: white; 
+            border: none; 
+            padding: 12px 24px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            margin: 10px;
+            font-size: 16px;
+        }
+        .test-button:hover { background: #be185d; }
+        .console-output { 
+            background: #f3f4f6; 
+            border: 1px solid #d1d5db; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 8px;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔄 Call Tracking V2 Test Page</h1>
+    <p>This page tests the new consolidated phone_call_click event structure.</p>
+    
+    <h2>Test Buttons</h2>
+    <button class="test-button" onclick="testTracking('homepage_hero', 'primary_cta', 'call_intent')">
+        Test Homepage Hero Call
+    </button>
+    
+    <button class="test-button" onclick="testTracking('emergency_callout', 'urgent_button', 'emergency_call')">
+        Test Emergency Call
+    </button>
+    
+    <button class="test-button" onclick="testTracking('blog_post_sidebar', 'quick_contact', 'call_intent')">
+        Test Blog Sidebar Call
+    </button>
+    
+    <h2>Console Output</h2>
+    <div id="console-output" class="console-output">Click a test button to see tracking data...</div>
+    
+    <h2>Expected GA4 Event Structure</h2>
+    <div class="console-output">
+Event: phone_call_click
+Parameters:
+  phone_number: '08003202345'
+  call_location: 'homepage_hero' (required)
+  call_source: 'primary_cta' (optional)
+  engagement_type: 'call_intent' (optional)
+  event_category: 'engagement'
+  event_label: 'Call from homepage_hero'
+  value: 1
+    </div>
+
+    <script>
+        // Mock gtag function for testing
+        window.gtag = function(command, eventName, parameters) {
+            console.log('📞 Google Analytics Event:', {
+                command,
+                eventName,
+                parameters
+            });
+            
+            document.getElementById('console-output').textContent += 
+                `📞 Event Sent: ${eventName}\n` +
+                `Parameters: ${JSON.stringify(parameters, null, 2)}\n\n`;
+        };
+
+        // Simulate the new call tracking function
+        function trackCallClick(event) {
+            const { phone, call_location, call_source, engagement_type, label } = event;
+            
+            // Clean phone number
+            const cleanPhone = phone.replace(/\s+/g, '').replace(/[^\d+]/g, '');
+            
+            // Send single consolidated event
+            window.gtag('event', 'phone_call_click', {
+                phone_number: cleanPhone,
+                call_location: call_location,
+                call_source: call_source || 'website',
+                engagement_type: engagement_type || 'call_intent',
+                event_category: 'engagement',
+                event_label: label || `Call from ${call_location}`,
+                value: 1
+            });
+            
+            console.log('📞 Phone call click tracked:', {
+                event: 'phone_call_click',
+                phone: cleanPhone,
+                call_location,
+                call_source: call_source || 'website',
+                engagement_type: engagement_type || 'call_intent'
+            });
+        }
+
+        function testTracking(location, source, engagementType) {
+            const trackingEvent = {
+                phone: '0800 320 2345',
+                call_location: location,
+                call_source: source,
+                engagement_type: engagementType,
+                label: `Test call from ${location}`
+            };
+            
+            trackCallClick(trackingEvent);
+            
+            // Simulate phone call (would normally open tel: link)
+            console.log(`🔗 Would open: tel:08003202345`);
+        }
+    </script>
+</body>
+</html>

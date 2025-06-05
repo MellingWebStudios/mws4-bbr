@@ -258,6 +258,7 @@ const Navbar = () => {
                     phone={businessInfo.phone.freephone}
                     trackingLocation="navbar_desktop"
                     trackingSource="header_cta"
+                    engagementType="call_intent"
                     className="flex items-center gap-2" 
                     ariaLabel={`Call ${businessInfo.phone.freephone}`}
                   >
@@ -276,6 +277,7 @@ const Navbar = () => {
                   phone={businessInfo.phone.freephone}
                   trackingLocation="navbar_mobile"
                   trackingSource="header_icon"
+                  engagementType="call_intent"
                   ariaLabel={`Call ${businessInfo.phone.freephone}`}
                 >
                   <Phone className="h-5 w-5" />

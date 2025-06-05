@@ -48,6 +48,7 @@ export default function StickyCallBar() {
       phone="08003202345"
       trackingLocation="sticky_call_bar"
       trackingSource="mobile_bottom_cta"
+      engagementType="call_intent"
       className="fixed bottom-4 left-1/2 z-50 flex w-[90%] max-w-md -translate-x-1/2 items-center justify-center gap-2 rounded-full bg-red-600 py-3 text-white shadow-lg transition-all hover:bg-red-700 md:hidden"
       ariaLabel="Tap to book your boiler service"
     >

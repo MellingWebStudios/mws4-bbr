@@ -8,10 +8,12 @@ interface TrackedPhoneLinkProps {
   children: ReactNode
   className?: string
   ariaLabel?: string
-  // Tracking specific props
+  // New standardized tracking props
+  trackingLocation: string // Required for call_location
+  trackingSource?: string  // Optional for call_source
+  engagementType?: string  // Optional for engagement_type
+  // Legacy props for backwards compatibility
   trackingLabel?: string
-  trackingLocation?: string
-  trackingSource?: string
   trackingCategory?: string
   // Allow any additional props to be passed through
   [key: string]: any
@@ -26,10 +28,12 @@ export default function TrackedPhoneLink({
   children,
   className = "",
   ariaLabel,
-  trackingLabel,
   trackingLocation,
   trackingSource,
-  trackingCategory = "engagement",
+  engagementType,
+  // Legacy props for backwards compatibility
+  trackingLabel,
+  trackingCategory,
   ...otherProps
 }: TrackedPhoneLinkProps) {
   
@@ -37,10 +41,10 @@ export default function TrackedPhoneLink({
     // Track the call click
     const trackingEvent: CallTrackingEvent = {
       phone,
-      label: trackingLabel || ariaLabel || `Call ${phone}`,
-      category: trackingCategory,
-      location: trackingLocation,
-      source: trackingSource
+      call_location: trackingLocation,
+      call_source: trackingSource,
+      engagement_type: engagementType,
+      label: trackingLabel || ariaLabel || `Call ${phone}`
     }
     
     trackCallClick(trackingEvent)

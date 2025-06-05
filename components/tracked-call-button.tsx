@@ -13,9 +13,11 @@ interface TrackedCallButtonProps {
   variant?: "default" | "destructive" | "outline" | "secondary" | "ghost" | "link"
   fullWidth?: boolean
   showIcon?: boolean
-  // Tracking specific props
-  trackingLocation?: string
+  // New standardized tracking props
+  trackingLocation: string // Required for call_location
   trackingSource?: string
+  engagementType?: string
+  // Legacy props for backwards compatibility
   trackingCategory?: string
 }
 
@@ -30,16 +32,18 @@ export default function TrackedCallButton({
   showIcon = true,
   trackingLocation,
   trackingSource,
-  trackingCategory = "engagement"
+  engagementType,
+  // Legacy props
+  trackingCategory
 }: TrackedCallButtonProps) {
   
   const handleClick = () => {
     const trackingEvent: CallTrackingEvent = {
       phone,
-      label: label || `Call ${phone}`,
-      category: trackingCategory,
-      location: trackingLocation,
-      source: trackingSource
+      call_location: trackingLocation,
+      call_source: trackingSource,
+      engagement_type: engagementType,
+      label: label || `Call ${phone}`
     }
     
     trackCallClick(trackingEvent)

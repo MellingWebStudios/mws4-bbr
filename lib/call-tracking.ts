@@ -7,10 +7,10 @@
 
 export interface CallTrackingEvent {
   phone: string
-  label?: string
-  category?: string
-  location?: string
-  source?: string
+  call_location: string
+  call_source?: string
+  engagement_type?: string
+  label?: string // For backwards compatibility
 }
 
 /**
@@ -22,41 +22,29 @@ export function trackCallClick(event: CallTrackingEvent): void {
     return
   }
 
-  const { phone, label, category, location, source } = event
+  const { phone, call_location, call_source, engagement_type, label } = event
 
   // Clean phone number for tracking
   const cleanPhone = phone.replace(/\s+/g, '').replace(/[^\d+]/g, '')
   
-  // Send event to Google Analytics 4
-  window.gtag('event', 'phone_call', {
-    event_category: category || 'engagement',
-    event_label: label || `Call ${phone}`,
+  // Send single consolidated event to Google Analytics 4
+  window.gtag('event', 'phone_call_click', {
     phone_number: cleanPhone,
-    call_location: location || 'unknown',
-    call_source: source || 'website',
-    value: 1,
-    custom_parameters: {
-      contact_method: 'phone',
-      engagement_type: 'call_intent'
-    }
+    call_location: call_location,
+    call_source: call_source || 'website',
+    engagement_type: engagement_type || 'call_intent',
+    event_category: 'engagement',
+    event_label: label || `Call from ${call_location}`,
+    value: 1
   })
 
-  // Also send a more specific conversion event
-  window.gtag('event', 'call_initiated', {
-    event_category: 'conversion',
-    event_label: label || `Call Intent - ${phone}`,
-    phone_number: cleanPhone,
-    call_location: location || 'unknown',
-    call_source: source || 'website'
-  })
-
-  // Console log for debugging (remove in production if desired)
-  console.log('📞 Call tracking event sent:', {
+    // Console log for debugging (remove in production if desired)
+  console.log('📞 Phone call click tracked:', {
+    event: 'phone_call_click',
     phone: cleanPhone,
-    label,
-    category,
-    location,
-    source
+    call_location,
+    call_source: call_source || 'website',
+    engagement_type: engagement_type || 'call_intent'
   })
 }
 
@@ -78,16 +66,5 @@ export function formatPhoneHref(phone: string): string {
 export function createPhoneClickHandler(event: CallTrackingEvent) {
   return () => {
     trackCallClick(event)
-  }
-}
-
-// Declare gtag function for TypeScript
-declare global {
-  interface Window {
-    gtag: (
-      command: 'event',
-      eventName: string,
-      parameters?: Record<string, any>
-    ) => void
   }
 }

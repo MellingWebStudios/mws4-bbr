@@ -23,6 +23,7 @@ const ServiceCallout = () => {
                   phone="08003202345"
                   trackingLocation="emergency_callout"
                   trackingSource="emergency_phone_icon"
+                  engagementType="emergency_call"
                   ariaLabel="Call our hotline at 0800 320 2345"
                   className="emergency-pulse relative flex h-16 w-16 items-center justify-center rounded-full bg-white shadow-lg transition hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500"
                 >
@@ -38,6 +39,7 @@ const ServiceCallout = () => {
                 phone="08003202345"
                 trackingLocation="emergency_callout"
                 trackingSource="emergency_phone_number"
+                engagementType="emergency_call"
                 className="group mt-1 block text-2xl font-bold transition-colors hover:text-red-100 md:text-3xl"
                 ariaLabel="Call our hotline at 0800 320 2345"
               >

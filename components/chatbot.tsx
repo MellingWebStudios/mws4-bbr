@@ -36,10 +36,10 @@ function CallNowButton({ phone }: { phone: string }) {
   const handleClick = () => {
     trackCallClick({
       phone,
-      label: `Chatbot Call Button - ${phone}`,
-      category: "engagement",
-      location: "chatbot",
-      source: "chatbot_call_button"
+      call_location: "chatbot",
+      call_source: "chatbot_call_button",
+      engagement_type: "call_intent",
+      label: `Chatbot Call Button - ${phone}`
     });
   };
 
@@ -89,8 +89,9 @@ function LeadCaptureForm({ onSubmit }: { onSubmit: (data: any) => void }) {
             onClick={() => {
               trackCallClick({
                 phone: DAVE_PHONE_NUMBER,
-                location: "chatbot",
-                source: "urgent_call_now"
+                call_location: "chatbot",
+                call_source: "urgent_call_now",
+                engagement_type: "emergency_call"
               })
               window.location.href = formatPhoneHref(DAVE_PHONE_NUMBER)
             }}

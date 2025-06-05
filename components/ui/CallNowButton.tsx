@@ -22,6 +22,7 @@ export default function CallNowButton({
       phone={tel}
       trackingLocation="call_now_button"
       trackingSource="generic_call_button"
+      engagementType="call_intent"
       className={`w-full bg-primary hover:bg-primary/90 shadow-md h-12 ${pulse ? "animate-pulse-subtle" : ""} flex items-center justify-center gap-2 font-semibold !text-black rounded-md px-4 py-2 text-sm transition-colors`}
       style={{ color: '#000 !important' }}
       ariaLabel={label}
