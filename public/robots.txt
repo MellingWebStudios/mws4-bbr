@@ -1,0 +1,7 @@
+# Development/Staging Environment
+# Block all crawlers in non-production
+
+User-agent: *
+Disallow: /
+
+# No sitemap for staging

@@ -7,14 +7,13 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Phone, CheckCircle, Clock, ShieldCheck, PoundSterlingIcon as Pound } from "lucide-react"
 import PricingCard from "@/components/pricing-card"
-import TestimonialCarousel from "@/components/testimonial-carousel"
 import TrustBadges from "@/components/trust-badges"
 import YouTubeSection from "@/components/youtube-section"
 import ServiceCallout from "@/components/emergency-callout"
 import LocalServiceAreas from "@/components/local-service-areas"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import MaintenanceTips from "@/components/maintenance-tips"
-import BoilerFAQ from "@/components/boiler-faq"
+import LazyContentLoader from "@/components/lazy-content-loader"
 import MobileHero from "@/components/mobile-hero"
 import DesktopHero from "@/components/desktop-hero"
 import MobileHeroImage from "@/components/server/mobile-hero-image"
@@ -341,8 +340,8 @@ export default function Home() {
       {/* Local Service Areas */}
       <LocalServiceAreas />
 
-      {/* FAQ Section */}
-      <BoilerFAQ />
+      {/* FAQ Section - Lazy Loaded */}
+      <LazyContentLoader loadFAQ={true} />
 
       {/* Testimonials Section */}
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
@@ -356,7 +355,7 @@ export default function Home() {
             </p>
           </div>
 
-          <TestimonialCarousel />
+          <LazyContentLoader loadTestimonials={true} />
 
           <div className="mt-8 text-center">
             <Button

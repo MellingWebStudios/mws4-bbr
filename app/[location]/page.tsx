@@ -7,6 +7,7 @@ import { MapPin, CheckCircle, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumb from "@/components/breadcrumb";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
+import MinimalLocationSchemaMarkup from "@/components/schema-markup-location-minimal";
 import ReviewsDisplay from "@/components/reviews-display";
 import ServiceCallout from "@/components/emergency-callout";
 import { RelatedLocations, ServiceLinksGrid } from "@/components/internal-links";
@@ -70,6 +71,9 @@ export default async function LocationPage({ params }: Props) {
             { name: location.name, item: `${businessInfo.website}/${location.slug}` },
           ]}
         />
+
+        {/* Location-specific Schema Markup */}
+        <MinimalLocationSchemaMarkup location={location} />
 
         {/* Hero Section */}
         <section className="relative bg-secondary py-16 text-white md:py-20 lg:py-24">

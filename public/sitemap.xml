@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/</loc>
-    <lastmod>2025-05-25</lastmod>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -67,14 +67,14 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
-    <lastmod>2025-06-04</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/boiler-servicing</loc>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/boiler-servicing</loc>
-    <lastmod>2025-06-05</lastmod>
+    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
+    <lastmod>2025-06-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -3212,19 +3212,19 @@
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/boiler-making-noise-troubleshooting</loc>
-    <lastmod>2025-06-05T09:55:02.335Z</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.birminghamboilerrepairs.uk/blog/cold-radiators-troubleshooting</loc>
-    <lastmod>2025-06-05T09:53:51.606Z</lastmod>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/boiler-not-starting-troubleshooting</loc>
-    <lastmod>2025-06-05T09:52:45.184Z</lastmod>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/cold-radiators-troubleshooting</loc>
+    <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -3263,12 +3263,6 @@
     <lastmod>2024-12-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.birminghamboilerrepairs.uk/blog/category/how-to</loc>
-    <lastmod>2025-06-05</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/category/troubleshooting</loc>
@@ -3343,7 +3337,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/boiler noise</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/boiler pressure</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/boiler repair</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3355,7 +3361,25 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/boiler troubleshooting</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/boiler won't start</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/central heating</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/cold radiators</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3397,6 +3421,18 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/heating problems</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/heating sounds</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/heating system</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -3415,7 +3451,19 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/maintenance</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/new boiler</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/power flushing</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3428,6 +3476,12 @@
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/preventive maintenance</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/radiator bleeding</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -3446,6 +3500,12 @@
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog/tag/seasonal tips</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/blog/tag/sludge</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

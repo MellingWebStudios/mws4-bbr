@@ -1,7 +1,7 @@
 import type React from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { CookieConsentProvider } from "@/context/cookie-consent-context"
-import SchemaMarkup from "@/components/schema-markup"
+import UltraLightSchemaMarkup from "@/components/schema-markup-ultra-light"
 import ChatbotButton from "@/components/chatbot-button"
 
 export default function RootLayout({
@@ -15,7 +15,7 @@ export default function RootLayout({
     <body className={className}>
       <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
         <CookieConsentProvider>
-          <SchemaMarkup />
+          <UltraLightSchemaMarkup />
           <div className="flex min-h-screen flex-col">
             {children}
           </div>
