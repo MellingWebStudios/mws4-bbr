@@ -6,6 +6,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import ServiceCallout from "@/components/emergency-callout";
 import ReviewsDisplay from "@/components/reviews-display";
 import Breadcrumb from "@/components/breadcrumb";
+import { RelatedServices, RelatedLocations, ServiceLinksGrid } from "@/components/internal-links";
+import { ServiceCrossLinks, SmartContentLinks } from "@/components/contextual-links";
+import { getRelatedContentSuggestions } from "@/lib/internal-linking";
 import {
   getLocationBySlug,
   getServiceBySlug,
@@ -359,6 +362,40 @@ export default async function LocationServicePage({ params }: Props) {
                   showFilters={false}
                 />
               </div>
+
+              {/* Related Services Cross-Links */}
+              <ServiceCrossLinks 
+                currentService={service.slug}
+                currentLocation={location.slug}
+                variant="banner"
+                className="my-8"
+              />
+
+              {/* Related Services in Same Location */}
+              <RelatedServices 
+                currentService={service.slug}
+                currentLocation={location.name}
+                showDescription={true}
+                limit={3}
+                className="my-8"
+              />
+
+              {/* Same Service in Nearby Areas */}
+              <RelatedLocations 
+                currentLocation={location.slug}
+                currentService={service.slug}
+                showDescription={false}
+                limit={6}
+                className="my-8"
+              />
+
+              {/* Smart Content-Based Links */}
+              <SmartContentLinks 
+                content={introText}
+                currentLocation={location.slug}
+                currentService={service.slug}
+                className="my-6"
+              />
 
               {/* Local Areas Served */}
               <div>

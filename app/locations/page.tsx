@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button"
 import { MapPin, Phone, Clock } from "lucide-react"
 import { locations } from "@/lib/locations-data"
 import { businessInfo } from "@/lib/business-info"
+import { ServiceLinksGrid } from "@/components/internal-links"
+import { SmartContentLinks } from "@/components/contextual-links"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -98,6 +100,29 @@ export default function AreasWeCoverPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Available Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                Services Available in All Areas
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-400">
+                The same professional boiler services are available across all our coverage areas
+              </p>
+            </div>
+            
+            <ServiceLinksGrid variant="grid" className="mb-8" />
+            
+            <SmartContentLinks 
+              content="boiler repairs heating services birmingham west midlands gas safe engineers local boiler service"
+              className="mt-8"
+            />
           </div>
         </div>
       </section>

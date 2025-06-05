@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X, Phone, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 import { usePathname } from "next/navigation"
@@ -36,7 +36,26 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [reviewsModalOpen, setReviewsModalOpen] = useState(false)
+  const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
+  const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false)
   const pathname = usePathname()
+
+  // Services and popular locations for dropdowns
+  const services = [
+    { href: "/services/boiler-repairs", label: "Boiler Repairs" },
+    { href: "/services/boiler-servicing", label: "Boiler Servicing" },
+    { href: "/services/gas-safety", label: "Gas Safety Inspections" },
+    { href: "/services/ferroli-specialists", label: "Ferroli Specialists" },
+  ]
+
+  const popularLocations = [
+    { href: "/birmingham", label: "Birmingham" },
+    { href: "/bromsgrove", label: "Bromsgrove" },
+    { href: "/redditch", label: "Redditch" },
+    { href: "/edgbaston", label: "Edgbaston" },
+    { href: "/harborne", label: "Harborne" },
+    { href: "/selly-oak", label: "Selly Oak" },
+  ]
 
   useEffect(() => {
     const handleScroll = throttle(() => {
@@ -72,10 +91,20 @@ const Navbar = () => {
 
   const navLinks = [
     { href: "/", label: "Home" },
-    { href: "/services", label: "Services" },
-    { href: "/locations", label: "Areas We Cover" },
+    { 
+      href: "/services", 
+      label: "Services",
+      hasDropdown: true,
+      dropdownItems: services
+    },
+    { 
+      href: "/locations", 
+      label: "Areas We Cover",
+      hasDropdown: true,
+      dropdownItems: popularLocations
+    },
     { href: "/about", label: "About Us" },
-    { href: "/guides", label: "Guides" }, // Added link to Guides page
+    { href: "/guides", label: "Guides" },
     { href: "/contact", label: "Contact" },
     { href: "/prices", label: "Prices" },
   ]
@@ -130,16 +159,53 @@ const Navbar = () => {
             <div className="hidden md:flex md:items-center md:space-x-6">
               <nav className="flex items-center space-x-6">
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      "text-sm font-medium transition-colors hover:text-secondary",
-                      pathname === link.href ? "text-secondary" : "text-gray-700 dark:text-gray-200",
+                  <div key={link.href} className="relative group">
+                    {link.hasDropdown ? (
+                      <div>
+                        <Link
+                          href={link.href}
+                          className={cn(
+                            "flex items-center text-sm font-medium transition-colors hover:text-secondary",
+                            pathname === link.href || pathname.startsWith(link.href) ? "text-secondary" : "text-gray-700 dark:text-gray-200",
+                          )}
+                        >
+                          {link.label}
+                          <ChevronDown className="ml-1 h-3 w-3" />
+                        </Link>
+                        
+                        {/* Dropdown Menu */}
+                        <div className="absolute left-0 top-full mt-2 hidden w-48 rounded-md bg-white py-2 shadow-lg group-hover:block dark:bg-gray-800 z-50">
+                          {link.dropdownItems?.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
+                            >
+                              {item.label}
+                            </Link>
+                          ))}
+                          <div className="border-t border-gray-200 dark:border-gray-600 mt-2 pt-2">
+                            <Link
+                              href={link.href}
+                              className="block px-4 py-2 text-sm text-secondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              View All {link.label} →
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className={cn(
+                          "text-sm font-medium transition-colors hover:text-secondary",
+                          pathname === link.href ? "text-secondary" : "text-gray-700 dark:text-gray-200",
+                        )}
+                      >
+                        {link.label}
+                      </Link>
                     )}
-                  >
-                    {link.label}
-                  </Link>
+                  </div>
                 ))}
               </nav>
               <div className="flex flex-col items-end">
@@ -212,19 +278,37 @@ const Navbar = () => {
 
               <nav className="flex flex-col space-y-6">
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    className={cn(
-                      "flex items-center text-lg font-medium transition-colors",
-                      pathname === link.href
-                        ? "text-secondary border-l-4 border-secondary pl-3"
-                        : "text-gray-700 dark:text-gray-200 hover:text-secondary pl-4",
+                  <div key={link.href}>
+                    <Link
+                      href={link.href}
+                      className={cn(
+                        "flex items-center text-lg font-medium transition-colors",
+                        pathname === link.href
+                          ? "text-secondary border-l-4 border-secondary pl-3"
+                          : "text-gray-700 dark:text-gray-200 hover:text-secondary pl-4",
+                      )}
+                      onClick={closeMenu}
+                    >
+                      {link.label}
+                      {link.hasDropdown && <ChevronDown className="ml-1 h-4 w-4" />}
+                    </Link>
+                    
+                    {/* Mobile Dropdown Items */}
+                    {link.hasDropdown && (
+                      <div className="ml-8 mt-2 space-y-2">
+                        {link.dropdownItems?.map((item) => (
+                          <Link
+                            key={item.href}
+                            href={item.href}
+                            className="block text-sm text-gray-600 dark:text-gray-400 hover:text-secondary transition-colors"
+                            onClick={closeMenu}
+                          >
+                            {item.label}
+                          </Link>
+                        ))}
+                      </div>
                     )}
-                    onClick={closeMenu}
-                  >
-                    {link.label}
-                  </Link>
+                  </div>
                 ))}
 
                 <div className="pt-4 border-t border-gray-200 dark:border-gray-800">

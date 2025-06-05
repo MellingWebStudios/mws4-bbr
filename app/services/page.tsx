@@ -6,6 +6,8 @@ import type { Metadata } from "next"
 import ServiceCallout from "@/components/emergency-callout"
 import LocalServiceAreas from "@/components/local-service-areas"
 import ServiceCard from "@/components/service-card"
+import { ServiceLinksGrid, FooterInternalLinks } from "@/components/internal-links"
+import { SmartContentLinks } from "@/components/contextual-links"
 
 export const metadata: Metadata = {
   title: "Boiler Repair & Service Birmingham | Same-Day Repairs",
@@ -95,6 +97,26 @@ export default function ServicesPage() {
         </div>
       </section>
 
+      {/* Enhanced Internal Linking Section */}
+      <section className="py-16 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+              Find Your Local Service
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              Choose your area to see available services and local pricing
+            </p>
+          </div>
+          
+          {/* Smart Content Links */}
+          <SmartContentLinks 
+            content="boiler repairs boiler servicing gas safety inspections ferroli specialists birmingham heating services"
+            className="mb-8"
+          />
+        </div>
+      </section>
+
       {/* Service Area Section */}
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
@@ -113,26 +135,31 @@ export default function ServicesPage() {
               </h3>
               <ul className="grid grid-cols-2 gap-2">
                 {[
-                  "Birmingham",
-                  "Edgbaston",
-                  "Harborne",
-                  "Selly Oak",
-                  "Moseley",
-                  "Kings Heath",
-                  "Bromsgrove",
-                  "Redditch",
-                  "Dudley",
-                  "Stourbridge",
-                  "Kingswinford",
-                  "Wolverhampton",
-                  "Alvechurch",
-                  "Halesowen",
-                  "West Bromwich",
-                  "Solihull",
+                  { name: "Birmingham", slug: "birmingham" },
+                  { name: "Edgbaston", slug: "edgbaston" },
+                  { name: "Harborne", slug: "harborne" },
+                  { name: "Selly Oak", slug: "selly-oak" },
+                  { name: "Moseley", slug: "moseley" },
+                  { name: "Kings Heath", slug: "kings-heath" },
+                  { name: "Bromsgrove", slug: "bromsgrove" },
+                  { name: "Redditch", slug: "redditch" },
+                  { name: "Dudley", slug: "dudley" },
+                  { name: "Stourbridge", slug: "stourbridge" },
+                  { name: "Kingswinford", slug: "kingswinford" },
+                  { name: "Wolverhampton", slug: "wolverhampton" },
+                  { name: "Alvechurch", slug: "alvechurch" },
+                  { name: "Halesowen", slug: "halesowen" },
+                  { name: "West Bromwich", slug: "west-bromwich" },
+                  { name: "Solihull", slug: "solihull" },
                 ].map((area, index) => (
                   <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
                     <ArrowRight className="mr-2 h-4 w-4 text-secondary" />
-                    {area}
+                    <Link 
+                      href={`/${area.slug}`}
+                      className="hover:text-secondary transition-colors hover:underline"
+                    >
+                      {area.name}
+                    </Link>
                   </li>
                 ))}
               </ul>

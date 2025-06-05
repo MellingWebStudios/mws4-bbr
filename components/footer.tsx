@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-100 dark:bg-gray-900">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
           <div>
             <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">
               <span className="text-secondary">{businessInfo.name.split(" ")[0]}</span> <span className="text-red-700">{businessInfo.name.split(" ").slice(1).join(" ")}</span>
@@ -26,6 +26,98 @@ const Footer = () => {
           </div>
 
           <div>
+            <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">Our Services</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/services/boiler-repairs"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Boiler Repairs
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/boiler-servicing"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Boiler Servicing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/gas-safety"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Gas Safety Inspections
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services/ferroli-specialists"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Ferroli Specialists
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/services"
+                  className="text-sm text-secondary font-medium transition-colors hover:text-secondary/80"
+                >
+                  View All Services →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">Popular Areas</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link
+                  href="/birmingham"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Birmingham
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/bromsgrove"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Bromsgrove
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/redditch"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Redditch
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/edgbaston"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Edgbaston
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/locations"
+                  className="text-sm text-secondary font-medium transition-colors hover:text-secondary/80"
+                >
+                  View All Areas →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li>
@@ -34,14 +126,6 @@ const Footer = () => {
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/services"
-                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
-                >
-                  Services
                 </Link>
               </li>
               <li>

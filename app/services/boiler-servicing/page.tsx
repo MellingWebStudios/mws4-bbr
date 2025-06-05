@@ -6,6 +6,8 @@ import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
 import ReviewsDisplay from "@/components/reviews-display"
 import ServiceCallout from "@/components/emergency-callout"
+import { RelatedServices, RelatedLocations } from "@/components/internal-links"
+import { ServiceCrossLinks, SmartContentLinks } from "@/components/contextual-links"
 import Head from "next/head"
 
 export const metadata: Metadata = {
@@ -185,6 +187,48 @@ export default function BoilerServicingPage() {
               <div>
                 <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
                 <ReviewsDisplay serviceFilter="service" limit={4} showFilters={false} />
+              </div>
+
+              {/* Service Cross Links */}
+              <div>
+                <ServiceCrossLinks 
+                  currentService="boiler-servicing" 
+                  variant="banner"
+                  className="mb-8"
+                />
+              </div>
+
+              {/* Smart Content Links */}
+              <div>
+                <SmartContentLinks 
+                  content="boiler servicing annual maintenance gas safe engineer birmingham efficiency safety"
+                  currentService="boiler-servicing"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Enhanced Related Services and Locations */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+              {/* Related Services */}
+              <div>
+                <RelatedServices 
+                  currentService="boiler-servicing"
+                  showDescription={true}
+                  limit={3}
+                />
+              </div>
+
+              {/* Locations offering this service */}
+              <div>
+                <RelatedLocations 
+                  currentService="boiler-servicing"
+                  limit={6}
+                  showDescription={false}
+                />
               </div>
             </div>
           </div>

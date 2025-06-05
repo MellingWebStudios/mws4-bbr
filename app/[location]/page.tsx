@@ -9,6 +9,8 @@ import Breadcrumb from "@/components/breadcrumb";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
 import ReviewsDisplay from "@/components/reviews-display";
 import ServiceCallout from "@/components/emergency-callout";
+import { RelatedLocations, ServiceLinksGrid } from "@/components/internal-links";
+import { EnhancedBreadcrumb, SmartContentLinks } from "@/components/contextual-links";
 import React from "react";
 import Head from "next/head";
 import type { Metadata } from "next";
@@ -230,6 +232,34 @@ export default async function LocationPage({ params }: Props) {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Internal Linking: Complete Service Range */}
+              <div className="mt-12">
+                <h2 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
+                  Our Complete Service Range
+                </h2>
+                <div className="flex justify-center mb-8">
+                  <span className="inline-block h-1 w-24 rounded bg-primary/70" />
+                </div>
+                <ServiceLinksGrid location={location.slug} variant="grid" />
+              </div>
+
+              {/* Internal Linking: Nearby Locations */}
+              <div className="mt-12">
+                <RelatedLocations 
+                  currentLocation={location.slug}
+                  limit={8}
+                  className="bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 rounded-xl p-6"
+                />
+              </div>
+
+              {/* Smart Content Links */}
+              <div className="mt-12">
+                <SmartContentLinks 
+                  content={`boiler repairs heating services ${location.name} ${location.postcode} gas safe engineers`}
+                  currentLocation={location.slug}
+                />
               </div>
 
               {/* Reviews */}

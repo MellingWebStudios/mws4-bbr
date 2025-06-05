@@ -11,6 +11,8 @@ import RelatedServices from "@/components/related-services"
 import Breadcrumb from "@/components/breadcrumb"
 import BreadcrumbSchema from "@/components/breadcrumb-schema"
 import TrackingButton from "@/components/tracking-button"
+import { RelatedServices as NewRelatedServices, RelatedLocations } from "@/components/internal-links"
+import { ServiceCrossLinks, SmartContentLinks } from "@/components/contextual-links"
 import Head from "next/head"
 
 export const metadata: Metadata = {
@@ -227,14 +229,49 @@ export default function BoilerRepairsPage() {
               <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
               <ReviewsDisplay serviceFilter="repair" limit={4} showFilters={false} />
             </div>
+
+            {/* Service Cross Links */}
+            <div>
+              <ServiceCrossLinks 
+                currentService="boiler-repairs" 
+                variant="banner"
+                className="mb-8"
+              />
+            </div>
+
+            {/* Smart Content Links */}
+            <div>
+              <SmartContentLinks 
+                content="boiler repairs emergency heating breakdown same day service gas safe engineers birmingham"
+                currentService="boiler-repairs"
+              />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Add Related Services section before the CTA */}
+      {/* Enhanced Related Services and Locations */}
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <RelatedServices currentService="Boiler Repairs" services={allServices} />
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Related Services */}
+            <div>
+              <NewRelatedServices 
+                currentService="boiler-repairs"
+                showDescription={true}
+                limit={3}
+              />
+            </div>
+
+            {/* Locations offering this service */}
+            <div>
+              <RelatedLocations 
+                currentService="boiler-repairs"
+                limit={6}
+                showDescription={false}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
