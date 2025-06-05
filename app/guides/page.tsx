@@ -1,9 +1,18 @@
-"use client"
-
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Boiler Maintenance Guides | Birmingham Boiler Repairs",
+  description:
+    "Free step-by-step video guides to help you solve common boiler issues yourself. Learn how to re-pressurise your boiler, reset your system, and more.",
+  keywords: "boiler maintenance guides, boiler pressure guide, reset boiler, DIY boiler repair, boiler troubleshooting",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/guides",
+  },
+}
 
 const guides = [
   {

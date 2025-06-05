@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description: 
     "Birmingham Boiler Repairs covers over 130+ areas across Birmingham and the West Midlands. Find your local boiler repair service with Gas Safe registered engineers.",
   keywords: "Birmingham boiler repairs areas, West Midlands boiler service, local boiler repair, gas safe engineers Birmingham, boiler service locations",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/locations",
+  },
 }
 
 export default function AreasWeCoverPage() {

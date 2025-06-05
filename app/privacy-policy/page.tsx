@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Privacy Policy | Birmingham Boiler Repairs",
   description:
     "Our privacy policy explains how we collect, use, and protect your personal information when you use our website and services.",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/privacy-policy",
+  },
 }
 
 export default function PrivacyPolicyPage() {

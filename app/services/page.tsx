@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Boiler Repair & Service Birmingham | Same-Day Repairs",
   description:
     "Expert boiler repairs, servicing & gas safety inspections across Birmingham. Gas Safe registered engineers, no call-out fees, same-day service available.",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/services",
+  },
 }
 
 export default function ServicesPage() {

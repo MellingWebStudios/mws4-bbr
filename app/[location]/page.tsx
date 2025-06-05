@@ -11,10 +11,40 @@ import ReviewsDisplay from "@/components/reviews-display";
 import ServiceCallout from "@/components/emergency-callout";
 import React from "react";
 import Head from "next/head";
+import type { Metadata } from "next";
 
 type Props = {
   params: { location: string };
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { location: locationSlug } = await params;
+  const location = getLocationBySlug(locationSlug);
+
+  if (!location) {
+    return {
+      title: "Page Not Found",
+      description: "The requested page could not be found.",
+    };
+  }
+
+  const title = `Boiler Repairs in ${location.name} | Same-Day Service | Gas Safe`;
+  const description = `Expert boiler repairs, servicing & gas safety inspections in ${location.name} ${location.postcode}. No call-out fee, Gas Safe registered engineers. Call 0800 320 2345.`;
+  const url = `https://www.birminghamboilerrepairs.uk/${location.slug}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: businessInfo.name,
+      type: "website",
+    },
+  };
+}
 
 export async function generateStaticParams() {
   const { locations } = await import("@/lib/locations-data");
@@ -30,9 +60,6 @@ export default async function LocationPage({ params }: Props) {
 
   return (
     <>
-      <Head>
-        <link rel="canonical" href={`https://www.birminghamboilerrepairs.uk/${location.slug}`} />
-      </Head>
       <div className="flex flex-col">
         {/* Breadcrumb Schema */}
         <BreadcrumbSchema

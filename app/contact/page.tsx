@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   description:
     "Contact our Gas Safe registered engineers for boiler repairs, servicing, and gas safety inspections in Birmingham. Same-day service available.",
   keywords: "contact boiler repairs Birmingham, book boiler service, gas engineer contact, emergency boiler repair",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/contact",
+  },
 }
 
 export default function ContactPage() {

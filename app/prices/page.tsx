@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   description:
     "Transparent pricing for boiler repairs, servicing and gas safety inspections in Birmingham. No hidden fees, no VAT charged.",
   keywords: "boiler repair prices Birmingham, boiler service cost, gas safety inspection price, no VAT boiler repair",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/prices",
+  },
 }
 
 export default function PricesPage() {

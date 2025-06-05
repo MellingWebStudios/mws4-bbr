@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   description:
     "Family-run Gas Safe registered boiler repair company established in 2010. Meet our team of experienced engineers serving Birmingham and surrounding areas.",
   keywords: "Birmingham boiler repairs, gas safe engineers, family-run business, boiler repair team, about us",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/about",
+  },
 }
 
 export default function AboutPage() {

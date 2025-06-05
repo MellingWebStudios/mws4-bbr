@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham. No call-out fee, clear pricing, 12-month guarantee. Call 0800 320 2345.",
   keywords:
     "boiler service Birmingham, boiler repairs, gas safety inspections, Gas Safe engineers, boiler maintenance, annual boiler service",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk",
+  },
   openGraph: {
     title: "Boiler Service, Repairs & Inspections Birmingham | Gas Safe | No Call-Out Fee",
     description:

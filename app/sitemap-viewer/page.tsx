@@ -11,6 +11,9 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Sitemap Viewer | Birmingham Boiler Repairs",
   description: "View the sitemap of Birmingham Boiler Repairs website",
+  alternates: {
+    canonical: "https://www.birminghamboilerrepairs.uk/sitemap-viewer",
+  },
 }
 
 interface SitemapUrl {
