@@ -138,7 +138,11 @@ async function generateSitemap() {
 
     blogEntries = mainBlogEntry + blogPostEntries + categoryEntries + tagEntries;
   } catch (error) {
-    console.warn("⚠ Warning: Could not generate blog sitemap entries:", error.message);
+    if (error instanceof Error) {
+      console.warn("⚠ Warning: Could not generate blog sitemap entries:", error.message);
+    } else {
+      console.warn("⚠ Warning: Could not generate blog sitemap entries:", error);
+    }
     // Continue without blog entries if there's an error
   }
 
@@ -160,14 +164,62 @@ ${staticEntries}${locationEntries}${blogEntries}
 async function generateRobotsTxt() {
   console.log("➜  Generating robots.txt …");
 
-  // Always allow all bots in production
   const robots = isProd
-    ? `User-agent: *\nDisallow:\n\nSitemap: ${WEBSITE_URL}/sitemap.xml`
-    : `User-agent: *\nDisallow: /`;
+    ? `# Birmingham Boiler Repairs - Production Robots.txt
+# Generated on ${new Date().toISOString().split("T")[0]}
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /private/
+
+# Additional crawl-delay for aggressive bots (optional)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: ${WEBSITE_URL}/sitemap.xml
+
+# Additional sitemaps (if you have them)
+# Sitemap: ${WEBSITE_URL}/sitemap-blog.xml
+# Sitemap: ${WEBSITE_URL}/sitemap-services.xml
+
+# Host declaration for primary domain
+Host: ${WEBSITE_URL.replace(/^https?:\/\//, "")}
+
+# Common bot-specific rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Block aggressive scrapers
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /`
+    : `# Development/Staging Environment
+# Block all crawlers in non-production
+
+User-agent: *
+Disallow: /
+
+# No sitemap for staging
+`;
 
   fs.mkdirSync("public", { recursive: true });
   fs.writeFileSync("public/robots.txt", robots);
-  console.log("   ✔ robots.txt (" + (isProd ? "prod" : "staging") + ")");
+  console.log("   ✔ robots.txt (" + (isProd ? "prod - crawling allowed" : "staging - crawling blocked") + ")");
 }
 
 /* ───────────────── MAIN ───────────────── */
