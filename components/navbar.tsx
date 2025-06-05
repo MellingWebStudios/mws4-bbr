@@ -38,6 +38,7 @@ const Navbar = () => {
   const [reviewsModalOpen, setReviewsModalOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
   const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false)
+  const [hoverTimeouts, setHoverTimeouts] = useState<{ [key: string]: NodeJS.Timeout }>({})
   const pathname = usePathname()
 
   // Services and popular locations for dropdowns
@@ -89,6 +90,36 @@ const Navbar = () => {
     }
   }
 
+  // Dropdown hover handlers
+  const handleDropdownEnter = (dropdownType: 'services' | 'locations') => {
+    // Clear any existing timeout for this dropdown
+    if (hoverTimeouts[dropdownType]) {
+      clearTimeout(hoverTimeouts[dropdownType])
+    }
+    
+    // Set the dropdown open immediately
+    if (dropdownType === 'services') {
+      setServicesDropdownOpen(true)
+      setLocationsDropdownOpen(false)
+    } else {
+      setLocationsDropdownOpen(true)
+      setServicesDropdownOpen(false)
+    }
+  }
+
+  const handleDropdownLeave = (dropdownType: 'services' | 'locations') => {
+    // Add a small delay before closing to allow user to move to dropdown
+    const timeout = setTimeout(() => {
+      if (dropdownType === 'services') {
+        setServicesDropdownOpen(false)
+      } else {
+        setLocationsDropdownOpen(false)
+      }
+    }, 150) // 150ms delay
+
+    setHoverTimeouts(prev => ({ ...prev, [dropdownType]: timeout }))
+  }
+
   const navLinks = [
     { href: "/", label: "Home" },
     { 
@@ -115,8 +146,13 @@ const Navbar = () => {
       if (typeof document !== "undefined") {
         document.body.style.overflow = ""
       }
+      
+      // Clear all hover timeouts
+      Object.values(hoverTimeouts).forEach(timeout => {
+        if (timeout) clearTimeout(timeout)
+      })
     }
-  }, [])
+  }, [hoverTimeouts])
 
   return (
     <>
@@ -159,9 +195,12 @@ const Navbar = () => {
             <div className="hidden md:flex md:items-center md:space-x-6">
               <nav className="flex items-center space-x-6">
                 {navLinks.map((link) => (
-                  <div key={link.href} className="relative group">
+                  <div key={link.href} className="relative">
                     {link.hasDropdown ? (
-                      <div>
+                      <div
+                        onMouseEnter={() => handleDropdownEnter(link.href === '/services' ? 'services' : 'locations')}
+                        onMouseLeave={() => handleDropdownLeave(link.href === '/services' ? 'services' : 'locations')}
+                      >
                         <Link
                           href={link.href}
                           className={cn(
@@ -174,25 +213,28 @@ const Navbar = () => {
                         </Link>
                         
                         {/* Dropdown Menu */}
-                        <div className="absolute left-0 top-full mt-2 hidden w-48 rounded-md bg-white py-2 shadow-lg group-hover:block dark:bg-gray-800 z-50">
-                          {link.dropdownItems?.map((item) => (
-                            <Link
-                              key={item.href}
-                              href={item.href}
-                              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700"
-                            >
-                              {item.label}
-                            </Link>
-                          ))}
-                          <div className="border-t border-gray-200 dark:border-gray-600 mt-2 pt-2">
-                            <Link
-                              href={link.href}
-                              className="block px-4 py-2 text-sm text-secondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700"
-                            >
-                              View All {link.label} →
-                            </Link>
+                        {((link.href === '/services' && servicesDropdownOpen) || 
+                          (link.href === '/locations' && locationsDropdownOpen)) && (
+                          <div className="absolute left-0 top-full mt-1 w-48 rounded-md bg-white py-2 shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 z-50">
+                            {link.dropdownItems?.map((item) => (
+                              <Link
+                                key={item.href}
+                                href={item.href}
+                                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-700 transition-colors"
+                              >
+                                {item.label}
+                              </Link>
+                            ))}
+                            <div className="border-t border-gray-200 dark:border-gray-600 mt-2 pt-2">
+                              <Link
+                                href={link.href}
+                                className="block px-4 py-2 text-sm text-secondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"
+                              >
+                                View All {link.label} →
+                              </Link>
+                            </div>
                           </div>
-                        </div>
+                        )}
                       </div>
                     ) : (
                       <Link
