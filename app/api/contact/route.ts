@@ -13,6 +13,18 @@ const formSchema = z.object({
 // 2. Get the password from env
 const FORM_PASSWORD = process.env.FORM_PASSWORD;
 
+// Handle preflight OPTIONS requests
+export async function OPTIONS(request: NextRequest) {
+  return new NextResponse(null, {
+    status: 200,
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+    },
+  });
+}
+
 export async function POST(request: NextRequest) {
   try {
     // 3. Check password header (optional)
@@ -21,7 +33,14 @@ export async function POST(request: NextRequest) {
       // Uncomment next line if you want this to return 401 Unauthorized
       // return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 });
       // If you want to allow public (no password), comment this block out
-      return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 });
+      return NextResponse.json({ success: false, message: "Unauthorized" }, { 
+        status: 401,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+        },
+      });
     }
 
     // 4. Parse and validate input
@@ -31,20 +50,34 @@ export async function POST(request: NextRequest) {
     if (!parsed.success) {
       return NextResponse.json(
         { success: false, errors: parsed.error.flatten().fieldErrors },
-        { status: 400 }
+        { 
+          status: 400,
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+          },
+        }
       );
     }
 
     // 5. Honeypot check
     if (parsed.data.website && parsed.data.website.length > 0) {
       // Bot detected. Silently succeed (do nothing else)
-      return NextResponse.json({ success: true }, { status: 200 });
+      return NextResponse.json({ success: true }, { 
+        status: 200,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+        },
+      });
     }
 
     // 6. Forward to FastAPI backend
     const { name, email, phone, message } = parsed.data;
-    const response = await fetch("https://bbr-api.fly.dev/forms/contact", {
-      method: "OPTIONS",
+    const response = await fetch("https://mws4-bbr-api.fly.dev/forms/contact", {
+      method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
     });
@@ -58,12 +91,25 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       success: true,
       message: "Thank you for your message. We'll get back to you shortly.",
+    }, {
+      headers: {
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+      },
     });
   } catch (error) {
     console.error("Contact form API error:", error);
     return NextResponse.json(
       { success: false, message: "Server error. Please try again later." },
-      { status: 500 }
+      { 
+        status: 500,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'POST, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
+        },
+      }
     );
   }
 }

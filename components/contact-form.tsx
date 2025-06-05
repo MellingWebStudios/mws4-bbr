@@ -50,9 +50,12 @@ export default function ContactForm() {
     setFormState({ ...formState, isSubmitting: true })
 
     try {
-      const response = await fetch("https://mws4-bbr-api.fly.dev/forms/contact", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { 
+          "Content-Type": "application/json",
+          "x-form-password": process.env.NEXT_PUBLIC_FORM_PASSWORD || "",
+        },
         body: JSON.stringify(formData),
       })
       const data = await response.json()
