@@ -1,7 +1,10 @@
 import createBundleAnalyzer from '@next/bundle-analyzer';
+import createMDX from '@next/mdx';
+import remarkHtml from 'remark-html';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -38,4 +41,11 @@ const withBundleAnalyzer = createBundleAnalyzer({
   enabled: process.env.BUNDLE_ANALYZE === 'true',
 });
 
-export default withBundleAnalyzer(nextConfig);
+const withMDX = createMDX({
+  options: {
+    remarkPlugins: [remarkHtml],
+    rehypePlugins: [],
+  },
+});
+
+export default withBundleAnalyzer(withMDX(nextConfig));

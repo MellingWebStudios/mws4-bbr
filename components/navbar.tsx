@@ -134,8 +134,9 @@ const Navbar = () => {
       hasDropdown: true,
       dropdownItems: popularLocations
     },
-    { href: "/about", label: "About Us" },
+    { href: "/blog", label: "Blog" },
     { href: "/guides", label: "Guides" },
+    { href: "/about", label: "About Us" },
     { href: "/contact", label: "Contact" },
     { href: "/prices", label: "Prices" },
   ]

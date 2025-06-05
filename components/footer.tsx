@@ -72,46 +72,46 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">Popular Areas</h3>
+            <h3 className="mb-4 text-lg font-bold text-gray-900 dark:text-white">Blog Categories</h3>
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/birmingham"
+                  href="/blog/category/boiler-repair"
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
-                  Birmingham
+                  Boiler Repair
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/bromsgrove"
+                  href="/blog/category/heating-systems"
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
-                  Bromsgrove
+                  Heating Systems
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/redditch"
+                  href="/blog/category/maintenance"
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
-                  Redditch
+                  Maintenance
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/edgbaston"
+                  href="/blog/category/emergency-services"
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
-                  Edgbaston
+                  Emergency Services
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/locations"
+                  href="/blog"
                   className="text-sm text-secondary font-medium transition-colors hover:text-secondary/80"
                 >
-                  View All Areas →
+                  View All Posts →
                 </Link>
               </li>
             </ul>
@@ -134,6 +134,14 @@ const Footer = () => {
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   About Us
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Blog & Guides
                 </Link>
               </li>
               <li>

@@ -3,6 +3,7 @@ import fs from "fs";
 import { globby } from "globby";
 import prettier from "prettier";
 import { locations, services } from "../lib/locations-data";
+import { getAllPosts, getAllCategories, getAllTags } from "../lib/blog-data";
 
 /* ───────────────── CONFIG ───────────────── */
 const WEBSITE_URL =
@@ -92,9 +93,58 @@ async function generateSitemap() {
     )
     .join("");
 
+  /* Blog entries */
+  let blogEntries = "";
+  try {
+    const blogPosts = getAllPosts();
+    const categories = getAllCategories();
+    const tags = getAllTags();
+
+    // Individual blog posts
+    const blogPostEntries = blogPosts.map((post: any) => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/${post.slug}</loc>
+    <lastmod>${post.date}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`).join("");
+
+    // Category pages
+    const categoryEntries = categories.map(category => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/category/${category}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join("");
+
+    // Tag pages
+    const tagEntries = tags.map(tag => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/tag/${tag}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>`).join("");
+
+    // Main blog page
+    const mainBlogEntry = `
+  <url>
+    <loc>${WEBSITE_URL}/blog</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+
+    blogEntries = mainBlogEntry + blogPostEntries + categoryEntries + tagEntries;
+  } catch (error) {
+    console.warn("⚠ Warning: Could not generate blog sitemap entries:", error.message);
+    // Continue without blog entries if there's an error
+  }
+
   const rawXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${staticEntries}${locationEntries}
+${staticEntries}${locationEntries}${blogEntries}
 </urlset>`;
 
   const formatted = await prettier.format(rawXml, {
