@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
     // 6. Forward to FastAPI backend
     const { name, email, phone, message } = parsed.data;
     const response = await fetch("https://bbr-api.fly.dev/forms/contact", {
-      method: "POST",
+      method: "OPTIONS",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name, email, phone, message }),
     });
