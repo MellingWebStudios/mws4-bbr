@@ -22,6 +22,8 @@ export default function MinimalLocationSchemaMarkup({ location }: LocationSchema
           "@id": `${businessInfo.website}/#business-${location.name.toLowerCase().replace(/\s+/g, '-')}`,
           name: `${businessInfo.name} - ${location.name}`,
           description: `Professional boiler service in ${location.name} ${location.postcode}. Gas Safe engineers available.`,
+          image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,
+          priceRange: "££",
           telephone: businessInfo.phone.international[0],
           areaServed: {
             "@type": "City", 
@@ -29,6 +31,7 @@ export default function MinimalLocationSchemaMarkup({ location }: LocationSchema
           },
           address: {
             "@type": "PostalAddress",
+            streetAddress: businessInfo.address.street,
             addressLocality: location.name,
             postalCode: location.postcode,
             addressCountry: "GB",

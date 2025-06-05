@@ -27,12 +27,12 @@ export default function CoreSchemaMarkup() {
               name: businessInfo.name,
               url: businessInfo.website,
               logo: `${businessInfo.website}/images/boiler-mascot-logo-56.webp`,
-              image: `${businessInfo.website}/images/engineers-team-enhanced.svg`,
+              image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,
               description:
                 "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham. No call-out fee, clear pricing, no VAT charged.",
               telephone: businessInfo.phone.international[0],
               email: businessInfo.email,
-              priceRange: "£45-£120",
+              priceRange: "££",
               currenciesAccepted: "GBP",
               paymentAccepted: "Cash, Credit Card",
               address: {

@@ -30,6 +30,8 @@ export default function LocationSchemaMarkup({ location, nearbyAreas = [] }: Loc
               name: location ? `${businessInfo.name} - ${location.name}` : businessInfo.name,
               url: businessInfo.website,
               logo: `${businessInfo.website}/images/boiler-mascot-logo-56.webp`,
+              image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,
+              priceRange: "££",
               description: location 
                 ? `Professional boiler service, repairs & inspections in ${location.name} ${location.postcode}. Gas Safe engineers, no call-out fee.`
                 : "Professional boiler service, repairs & inspections from Gas Safe engineers in Birmingham.",

@@ -14,10 +14,13 @@ export default function UltraLightSchemaMarkup() {
             "@id": `${businessInfo.website}/#business`,
             name: businessInfo.name,
             url: businessInfo.website,
+            image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,
+            priceRange: "££",
             telephone: businessInfo.phone.international[0],
             email: businessInfo.email,
             address: {
               "@type": "PostalAddress",
+              streetAddress: businessInfo.address.street,
               addressLocality: businessInfo.address.locality,
               postalCode: businessInfo.address.postalCode,
               addressCountry: businessInfo.address.country,

@@ -35,7 +35,8 @@ function LocalBusinessSchema({ location }: { location: any }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: businessInfo.name,
-    image: `${businessInfo.website}/logo.png`, // Update if you have a logo
+    image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,
+    priceRange: "££",
     telephone: businessInfo.phone.international,
     email: businessInfo.email,
     address: {
@@ -47,7 +48,6 @@ function LocalBusinessSchema({ location }: { location: any }) {
       addressCountry: "GB",
     },
     url: businessInfo.website,
-    priceRange: "££",
     openingHours: "Mo-Fr 09:00-17:00",
     geo: location
       ? {
