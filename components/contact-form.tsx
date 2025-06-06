@@ -54,7 +54,6 @@ export default function ContactForm() {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
-          "x-form-password": process.env.NEXT_PUBLIC_FORM_PASSWORD || "",
         },
         body: JSON.stringify(formData),
       })

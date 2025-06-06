@@ -10,7 +10,7 @@ const formSchema = z.object({
   website: z.string().optional(), // honeypot
 });
 
-// 2. Get the password from env
+// 2. Get the password from env (server-side only)
 const FORM_PASSWORD = process.env.FORM_PASSWORD;
 
 // Handle preflight OPTIONS requests
@@ -27,23 +27,7 @@ export async function OPTIONS(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
-    // 3. Check password header (optional)
-    const password = request.headers.get("x-form-password");
-    if (FORM_PASSWORD && password !== FORM_PASSWORD) {
-      // Uncomment next line if you want this to return 401 Unauthorized
-      // return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 });
-      // If you want to allow public (no password), comment this block out
-      return NextResponse.json({ success: false, message: "Unauthorized" }, { 
-        status: 401,
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Access-Control-Allow-Methods': 'POST, OPTIONS',
-          'Access-Control-Allow-Headers': 'Content-Type, x-form-password',
-        },
-      });
-    }
-
-    // 4. Parse and validate input
+    // 3. Parse and validate input
     const body = await request.json();
     const parsed = formSchema.safeParse(body);
 
@@ -61,7 +45,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // 5. Honeypot check
+    // 4. Honeypot check
     if (parsed.data.website && parsed.data.website.length > 0) {
       // Bot detected. Silently succeed (do nothing else)
       return NextResponse.json({ success: true }, { 
@@ -74,12 +58,15 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    // 6. Forward to FastAPI backend
+    // 5. Forward to FastAPI backend
     const { name, email, phone, message } = parsed.data;
     const response = await fetch("https://mws4-bbr-api.fly.dev/forms/contact", {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, phone, message }),
+      headers: { 
+        "Content-Type": "application/json",
+        "x-form-password": FORM_PASSWORD || ""
+      },
+      body: JSON.stringify({ name, email, phone, message, website: "" }),
     });
 
     if (!response.ok) {
