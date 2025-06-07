@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, MapPin, Wrench, Settings, Shield, Cog } from 'lucide-react'
 import { locations, services } from '@/lib/locations-data'
+import { slugify } from '@/lib/slug'
 
 // Interface for internal link item
 interface InternalLinkItem {
@@ -77,7 +78,9 @@ export function RelatedServices({
   limit = 3,
   className = ''
 }: RelatedServicesProps) {
-  const relatedServices = getRelatedServices(currentService).slice(0, limit)
+  const relatedServices = getRelatedServices(currentService)
+    .filter(service => service.slug !== currentLocation) // Prevent /location/location
+    .slice(0, limit)
   
   if (relatedServices.length === 0) return null
 
@@ -152,7 +155,9 @@ export function RelatedLocations({
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
-        {nearbyLocations.map((location) => (
+        {nearbyLocations
+          .filter(location => location.slug !== currentService) // Prevent /location/location
+          .map((location) => (
           <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-3">
               <h4 className="font-semibold text-sm text-gray-900 dark:text-white mb-1">
@@ -183,6 +188,11 @@ export function RelatedLocations({
   )
 }
 
+// Utility to check for valid slugs (no spaces, all lowercase, no duplicate segments)
+function isValidSlug(slug: string) {
+  return slug === slug.toLowerCase() && !slug.includes(' ');
+}
+
 // Service Links Grid Component
 export function ServiceLinksGrid({ 
   location, 
@@ -190,8 +200,7 @@ export function ServiceLinksGrid({
   showPricing = false,
   className = ''
 }: ServiceLinksProps) {
-  const baseHref = location ? `/${location}` : '/services'
-  
+  const baseHref = location ? `/${location}` : '/services';
   const gridClass = variant === 'compact' 
     ? 'grid grid-cols-2 gap-3' 
     : variant === 'list' 
@@ -201,59 +210,57 @@ export function ServiceLinksGrid({
   return (
     <div className={`space-y-4 ${className}`}>
       <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-        Our Services{location ? ` in ${location}` : ''}
+        Our Services{location ? ` in ${locations.find(l => l.slug === location)?.name || location}` : ''}
       </h3>
-      
       <div className={gridClass}>
-        {services.map((service) => (
-          <Card key={service.slug} className="border shadow-sm hover:shadow-md transition-shadow">
-            <CardContent className={variant === 'compact' ? 'p-3' : 'p-4'}>
-              <div className="flex items-start gap-3">
-                <div className="text-secondary">
-                  {serviceIcons[service.slug as keyof typeof serviceIcons]}
-                </div>
-                <div className="flex-1">
-                  <h4 className={`font-semibold text-gray-900 dark:text-white mb-2 ${variant === 'compact' ? 'text-sm' : ''}`}>
+        {services
+          .filter(service => service.slug !== location)
+          .filter(service => isValidSlug(service.slug) && (!location || isValidSlug(location)))
+          .map((service) => (
+            <Card key={service.slug} className="border shadow-sm hover:shadow-md transition-shadow">
+              <CardContent className={variant === 'compact' ? 'p-3' : 'p-4'}>
+                <div className="flex items-start gap-3">
+                  <div className="text-secondary">
+                    {serviceIcons[service.slug as keyof typeof serviceIcons]}
+                  </div>
+                  <div className="flex-1">
+                    <h4 className={`font-semibold text-gray-900 dark:text-white mb-2 ${variant === 'compact' ? 'text-sm' : ''}`}> 
+                      <Link 
+                        href={`${baseHref}/${service.slug}`}
+                        className="hover:text-secondary transition-colors"
+                      >
+                        {service.name}
+                      </Link>
+                    </h4>
+                    {variant !== 'compact' && (
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
+                        {service.description}
+                      </p>
+                    )}
+                    {showPricing && service.pricing && service.pricing.length > 0 && (
+                      <p className="text-sm font-medium text-secondary mb-3">
+                        From {service.pricing[0].price}
+                      </p>
+                    )}
+                    <div className="space-y-2">
+                      {variant !== 'compact' && service.features.slice(0, 2).map((feature, index) => (
+                        <div key={index} className="flex items-center text-xs text-gray-600 dark:text-gray-400">
+                          <div className="w-1 h-1 bg-secondary rounded-full mr-2" />
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
                     <Link 
                       href={`${baseHref}/${service.slug}`}
-                      className="hover:text-secondary transition-colors"
+                      className={`inline-flex items-center text-secondary hover:text-secondary/80 font-medium mt-3 ${variant === 'compact' ? 'text-xs' : 'text-sm'}`}
                     >
-                      {service.name}
+                      {variant === 'compact' ? 'Book' : 'Book now'} <ArrowRight className="ml-1 h-3 w-3" />
                     </Link>
-                  </h4>
-                  
-                  {variant !== 'compact' && (
-                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                      {service.description}
-                    </p>
-                  )}
-                  
-                  {showPricing && service.pricing && service.pricing.length > 0 && (
-                    <p className="text-sm font-medium text-secondary mb-3">
-                      From {service.pricing[0].price}
-                    </p>
-                  )}
-                  
-                  <div className="space-y-2">
-                    {variant !== 'compact' && service.features.slice(0, 2).map((feature, index) => (
-                      <div key={index} className="flex items-center text-xs text-gray-600 dark:text-gray-400">
-                        <div className="w-1 h-1 bg-secondary rounded-full mr-2" />
-                        {feature}
-                      </div>
-                    ))}
                   </div>
-                  
-                  <Link 
-                    href={`${baseHref}/${service.slug}`}
-                    className={`inline-flex items-center text-secondary hover:text-secondary/80 font-medium mt-3 ${variant === 'compact' ? 'text-xs' : 'text-sm'}`}
-                  >
-                    {variant === 'compact' ? 'Book' : 'Book now'} <ArrowRight className="ml-1 h-3 w-3" />
-                  </Link>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        ))}
+              </CardContent>
+            </Card>
+          ))}
       </div>
     </div>
   )
@@ -293,13 +300,17 @@ export function ContextualLinks({
 
 // Footer Links Section Component
 export function FooterInternalLinks({ className = '' }: { className?: string }) {
+  // Filter valid services and locations
+  const validServices = services.filter(service => isValidSlug(service.slug));
+  const validLocations = locations.filter(location => isValidSlug(location.slug));
+
   return (
     <div className={`grid grid-cols-1 md:grid-cols-4 gap-8 ${className}`}>
       {/* Services Column */}
       <div>
         <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Our Services</h4>
         <ul className="space-y-2">
-          {services.map((service) => (
+          {validServices.map((service) => (
             <li key={service.slug}>
               <Link 
                 href={`/services/${service.slug}`}
@@ -316,7 +327,7 @@ export function FooterInternalLinks({ className = '' }: { className?: string }) 
       <div>
         <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Popular Areas</h4>
         <ul className="space-y-2">
-          {locations.slice(0, 8).map((location) => (
+          {validLocations.slice(0, 8).map((location) => (
             <li key={location.slug}>
               <Link 
                 href={`/${location.slug}`}
@@ -333,17 +344,21 @@ export function FooterInternalLinks({ className = '' }: { className?: string }) 
       <div>
         <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Service Combinations</h4>
         <ul className="space-y-2">
-          {services.slice(0, 2).map((service) => 
-            locations.slice(0, 4).map((location) => (
-              <li key={`${service.slug}-${location.slug}`}>
-                <Link 
-                  href={`/${location.slug}/${service.slug}`}
-                  className="text-sm text-gray-600 dark:text-gray-400 hover:text-secondary transition-colors"
-                >
-                  {service.name} in {location.name}
-                </Link>
-              </li>
-            ))
+          {validServices.slice(0, 2).map((service) => 
+            validLocations.slice(0, 4).map((location) => {
+              // Prevent /[location]/[location] and double-slug links
+              if (service.slug === location.slug) return null;
+              return (
+                <li key={`${service.slug}-${location.slug}`}>
+                  <Link 
+                    href={`/${location.slug}/${service.slug}`}
+                    className="text-sm text-gray-600 dark:text-gray-400 hover:text-secondary transition-colors"
+                  >
+                    {service.name} in {location.name}
+                  </Link>
+                </li>
+              );
+            })
           )}
         </ul>
       </div>

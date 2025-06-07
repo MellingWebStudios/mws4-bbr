@@ -1,6 +1,6 @@
 import { getLocationBySlug, services } from "@/lib/locations-data";
 import businessInfo from "@/lib/business-info";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, CheckCircle, Phone } from "lucide-react";
@@ -16,6 +16,8 @@ import TrackedPhoneLink from "@/components/tracked-phone-link";
 import React from "react";
 import Head from "next/head";
 import type { Metadata } from "next";
+import { NextResponse } from 'next/server';
+import { slugify } from "@/lib/slug";
 
 type Props = {
   params: { location: string };

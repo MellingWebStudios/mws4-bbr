@@ -3,33 +3,19 @@
 import { MapPin } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { useState } from "react"
+import { locations } from "@/lib/locations-data"
+import Link from "next/link"
 
 interface LocalServiceAreasProps {
   className?: string
 }
 
 const LocalServiceAreas = ({ className }: LocalServiceAreasProps) => {
-  const areas = [
-    "Birmingham",
-    "Edgbaston",
-    "Harborne",
-    "Selly Oak",
-    "Moseley",
-    "Kings Heath",
-    "Bromsgrove",
-    "Redditch",
-    "Dudley",
-    "Stourbridge",
-    "Kingswinford",
-    "Wolverhampton",
-    "Alvechurch",
-    "Halesowen",
-    "West Bromwich",
-    "Solihull",
-  ]
+  // Use first 24 locations from locations data to maintain reasonable display
+  const displayLocations = locations.slice(0, 24)
 
   const [showAll, setShowAll] = useState(false)
-  const visibleAreas = showAll ? areas : areas.slice(0, 8)
+  const visibleAreas = showAll ? displayLocations : displayLocations.slice(0, 8)
 
   return (
     <section
@@ -48,21 +34,22 @@ const LocalServiceAreas = ({ className }: LocalServiceAreasProps) => {
 
       <div className="mx-auto max-w-4xl">
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-          {visibleAreas.map((area, index) => (
-            <div
-              key={index}
+          {visibleAreas.map((location, index) => (
+            <Link
+              key={location.slug}
+              href={`/${location.slug}`}
               className="group flex items-center rounded-xl bg-white/70 p-3 shadow-sm backdrop-blur transition-all hover:shadow-md dark:bg-gray-800/60"
             >
               <MapPin
                 className="mr-2 h-4 w-4 text-secondary transition-transform group-hover:-rotate-12"
               />
               <p className="text-sm font-medium text-gray-700 dark:text-gray-300 group-hover:text-secondary">
-                {area}
+                {location.name}
               </p>
-            </div>
+            </Link>
           ))}
         </div>
-        {!showAll && areas.length > 8 && (
+        {!showAll && displayLocations.length > 8 && (
           <div className="mt-4 flex justify-center">
             <button
               className="rounded bg-secondary px-4 py-2 text-white hover:bg-secondary-dark transition"

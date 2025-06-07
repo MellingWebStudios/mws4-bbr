@@ -123,7 +123,19 @@ export function getPostsByCategory(category: string): BlogPost[] {
 }
 
 export function getPostsByTag(tag: string): BlogPost[] {
-  return getAllPosts().filter((post) => post.tags.includes(tag))
+  return getAllPosts().filter((post) => {
+    // Convert current tag to different formats for matching
+    const normalizedTag = tag.toLowerCase();
+    const spacedTag = normalizedTag.replace(/-/g, ' ');
+    const hyphenatedTag = normalizedTag.replace(/\s+/g, '-');
+    
+    return post.tags.some(postTag => {
+      const normalizedPostTag = postTag.toLowerCase();
+      return normalizedPostTag === normalizedTag || 
+             normalizedPostTag === spacedTag || 
+             normalizedPostTag === hyphenatedTag;
+    });
+  });
 }
 
 // Alias functions for consistency with the component imports
@@ -136,7 +148,19 @@ export function getBlogPostsByCategory(category: string): BlogPost[] {
 }
 
 export function getBlogPostsByTag(tag: string): BlogPost[] {
-  return getAllPosts().filter((post) => post.tags.includes(tag))
+  return getAllPosts().filter((post) => {
+    // Convert current tag to different formats for matching
+    const normalizedTag = tag.toLowerCase();
+    const spacedTag = normalizedTag.replace(/-/g, ' ');
+    const hyphenatedTag = normalizedTag.replace(/\s+/g, '-');
+    
+    return post.tags.some(postTag => {
+      const normalizedPostTag = postTag.toLowerCase();
+      return normalizedPostTag === normalizedTag || 
+             normalizedPostTag === spacedTag || 
+             normalizedPostTag === hyphenatedTag;
+    });
+  });
 }
 
 export function getBlogPost(slug: string): BlogPost | null {
@@ -183,7 +207,11 @@ export function getRelatedPosts(currentSlug: string, limit: number = 3): BlogPos
 export function getAllTags(): string[] {
   const allPosts = getAllPosts()
   const tags = allPosts.flatMap((post) => post.tags)
-  return [...new Set(tags)].sort()
+  // Convert tags to slug format for consistent URLs
+  const slugifiedTags = tags.map(tag => 
+    tag.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '')
+  )
+  return [...new Set(slugifiedTags)].sort()
 }
 
 export function getAllCategories(): string[] {

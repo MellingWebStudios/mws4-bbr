@@ -1816,7 +1816,8 @@ export const services = [
 ]
 
 export function getLocationBySlug(slug: string): Location | undefined {
-  return locations.find((location) => location.slug === slug)
+  // Make slug matching case-insensitive and robust
+  return locations.find((location) => location.slug.toLowerCase() === slug.toLowerCase())
 }
 
 export function getServiceBySlug(slug: string): any | undefined {

@@ -11,6 +11,24 @@ import RatingBadge from "@/components/rating-badge"
 import ReviewsModal from "@/components/reviews-modal"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 import businessInfo from "@/lib/business-info"
+import { slugify } from '@/lib/slug';
+
+// Apply slugify to dynamic parts of URLs in the services and popularLocations arrays
+const services = [
+  { href: `/services/boiler-repairs`, label: "Boiler Repairs" },
+  { href: `/services/boiler-servicing`, label: "Boiler Servicing" },
+  { href: `/services/gas-safety`, label: "Gas Safety Inspections" },
+  { href: `/services/ferroli-specialists`, label: "Ferroli Specialists" },
+];
+
+const popularLocations = [
+  { href: `/${slugify('birmingham')}`, label: "Birmingham" },
+  { href: `/${slugify('bromsgrove')}`, label: "Bromsgrove" },
+  { href: `/${slugify('redditch')}`, label: "Redditch" },
+  { href: `/${slugify('edgbaston')}`, label: "Edgbaston" },
+  { href: `/${slugify('harborne')}`, label: "Harborne" },
+  { href: `/${slugify('selly-oak')}`, label: "Selly Oak" },
+]
 
 // Utility: throttle function
 function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
@@ -41,23 +59,6 @@ const Navbar = () => {
   const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false)
   const [hoverTimeouts, setHoverTimeouts] = useState<{ [key: string]: NodeJS.Timeout }>({})
   const pathname = usePathname()
-
-  // Services and popular locations for dropdowns
-  const services = [
-    { href: "/services/boiler-repairs", label: "Boiler Repairs" },
-    { href: "/services/boiler-servicing", label: "Boiler Servicing" },
-    { href: "/services/gas-safety", label: "Gas Safety Inspections" },
-    { href: "/services/ferroli-specialists", label: "Ferroli Specialists" },
-  ]
-
-  const popularLocations = [
-    { href: "/birmingham", label: "Birmingham" },
-    { href: "/bromsgrove", label: "Bromsgrove" },
-    { href: "/redditch", label: "Redditch" },
-    { href: "/edgbaston", label: "Edgbaston" },
-    { href: "/harborne", label: "Harborne" },
-    { href: "/selly-oak", label: "Selly Oak" },
-  ]
 
   useEffect(() => {
     const handleScroll = throttle(() => {

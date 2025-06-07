@@ -6,6 +6,7 @@ import GasSafeBadge from "@/components/gas-safe-badge"
 import { useCookieConsent } from "@/context/cookie-consent-context"
 import businessInfo from "@/lib/business-info"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
+import { slugify } from '@/lib/slug';
 
 const Footer = () => {
   const { openPreferences } = useCookieConsent()
@@ -31,7 +32,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/services/boiler-repairs"
+                  href={`/services/boiler-repairs`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Boiler Repairs
@@ -39,7 +40,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/boiler-servicing"
+                  href={`/services/boiler-servicing`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Boiler Servicing
@@ -47,7 +48,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/gas-safety"
+                  href={`/services/gas-safety`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Gas Safety Inspections
@@ -55,7 +56,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/services/ferroli-specialists"
+                  href={`/services/ferroli-specialists`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Ferroli Specialists
@@ -77,7 +78,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/blog/category/boiler-repair"
+                  href={`/blog/category/boiler-repair`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Boiler Repair
@@ -85,7 +86,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blog/category/heating-systems"
+                  href={`/blog/category/heating-systems`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Heating Systems
@@ -93,7 +94,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blog/category/maintenance"
+                  href={`/blog/category/maintenance`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Maintenance
@@ -101,7 +102,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/blog/category/emergency-services"
+                  href={`/blog/category/emergency-services`}
                   className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
                 >
                   Emergency Services

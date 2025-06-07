@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import LiteYouTubeEmbed from "./LiteYouTubeEmbed"
+import { slugify } from '@/lib/slug';
 
 const MaintenanceTips = () => {
   const [activeTab, setActiveTab] = useState("pressure")
@@ -77,7 +78,7 @@ const MaintenanceTips = () => {
                       <p className="mb-4 text-gray-600">{tip.description}</p>
                       <div className="mt-auto">
                         <Button asChild variant="outline" className="border-secondary text-secondary">
-                          <Link href="/guides" className="flex items-center">
+                          <Link href={`/${slugify('guides')}`} className="flex items-center">
                             View all maintenance guides <ArrowRight className="ml-2 h-4 w-4" />
                           </Link>
                         </Button>

@@ -118,14 +118,17 @@ async function generateSitemap() {
     <priority>0.7</priority>
   </url>`).join("");
 
-    // Tag pages
-    const tagEntries = tags.map(tag => `
+    // Tag pages - using slugified tags to avoid URL encoding
+    const tagEntries = tags.map(tag => {
+      const slugifiedTag = tag.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
+      return `
   <url>
-    <loc>${WEBSITE_URL}/blog/tag/${encodeURIComponent(tag)}</loc>
+    <loc>${WEBSITE_URL}/blog/tag/${slugifiedTag}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
-  </url>`).join("");
+  </url>`;
+    }).join("");
 
     // Main blog page
     const mainBlogEntry = `

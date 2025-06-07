@@ -22,6 +22,7 @@ import TrackedPhoneLink from "@/components/tracked-phone-link";
 import React from "react";
 import { reviews } from "@/lib/reviews-data"; // <--- NEW: Import reviews
 import Head from "next/head";
+import { slugify } from '@/lib/slug';
 
 type Props = {
   params: {
