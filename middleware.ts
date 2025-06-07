@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { slugify } from '@/lib/slug';
+import { validateAndNormalizeUrl, hasDuplicateSegments, removeDuplicateSegments } from '@/lib/url-validator';
 
 // Location name to slug mappings for redirects
 const locationRedirects: Record<string, string> = {
@@ -75,6 +76,22 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  // Early check for duplicate segments (e.g., /selly-park/selly-park/)
+  if (hasDuplicateSegments(pathname)) {
+    const cleanedPath = removeDuplicateSegments(pathname);
+    const baseUrl = getBaseUrl(host);
+    const redirectUrl = `${baseUrl}${cleanedPath}${req.nextUrl.search}`;
+    return NextResponse.redirect(redirectUrl, 301);
+  }
+
+  // Check for URLs with spaces or invalid characters that need normalization
+  const urlValidation = validateAndNormalizeUrl(pathname);
+  if (!urlValidation.isValid && urlValidation.normalizedPath) {
+    const baseUrl = getBaseUrl(host);
+    const redirectUrl = `${baseUrl}${urlValidation.normalizedPath}${req.nextUrl.search}`;
+    return NextResponse.redirect(redirectUrl, 301);
+  }
+
   // Handle high-value legacy URL redirects with 308 (permanent)
   const legacyRedirects: Record<string, string> = {
     // Common legacy patterns that might be causing 404s
@@ -124,6 +141,36 @@ export function middleware(req: NextRequest) {
     '/contact/': '/contact',
     '/about/': '/about',
     '/prices/': '/prices',
+
+    // Common 404 patterns observed
+    '/Selly Park': '/selly-park',
+    '/Selly%20Park': '/selly-park',
+    '/selly park': '/selly-park',
+    '/SELLY-PARK': '/selly-park',
+    '/Selly-Park': '/selly-park',
+    '/selly_park': '/selly-park',
+    '/sellpark': '/selly-park',
+    
+    // Other common location misspellings
+    '/Acocks Green': '/acocks-green',
+    '/Acocks%20Green': '/acocks-green',
+    '/acocks green': '/acocks-green',
+    '/Hall Green': '/hall-green',
+    '/Hall%20Green': '/hall-green',
+    '/hall green': '/hall-green',
+    '/Small Heath': '/small-heath',
+    '/Small%20Heath': '/small-heath',
+    '/small heath': '/small-heath',
+    
+    // Service variations
+    '/boiler repair': '/services/boiler-repairs',
+    '/boiler%20repair': '/services/boiler-repairs',
+    '/boiler_repair': '/services/boiler-repairs',
+    '/boilerrepair': '/services/boiler-repairs',
+    '/boiler service': '/services/boiler-servicing',
+    '/boiler%20service': '/services/boiler-servicing',
+    '/boiler_service': '/services/boiler-servicing',
+    '/boilerservice': '/services/boiler-servicing',
   };
 
   // Check for exact legacy redirects

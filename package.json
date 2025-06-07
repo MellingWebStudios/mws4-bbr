@@ -12,7 +12,10 @@
     "test:links": "./scripts/check-links.sh",
     "test:links:ts": "tsx scripts/check-links.ts",
     "test:links:js": "node scripts/check-links.js",
-    "test:links:simple": "linkinator http://localhost:3000 --config linkinator.json --json > all-links.json"
+    "test:links:simple": "linkinator http://localhost:3000 --config linkinator.json --json > all-links.json",
+    "audit:links": "node scripts/simple-audit.js",
+    "test:redirects": "node scripts/test-redirects.js",
+    "fix:urls": "npm run audit:links && npm run test:redirects"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.22",
