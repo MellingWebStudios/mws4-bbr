@@ -121,7 +121,7 @@ async function generateSitemap() {
     // Tag pages
     const tagEntries = tags.map(tag => `
   <url>
-    <loc>${WEBSITE_URL}/blog/tag/${tag}</loc>
+    <loc>${WEBSITE_URL}/blog/tag/${encodeURIComponent(tag)}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>

@@ -34,7 +34,8 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params }: TagPageProps): Promise<Metadata> {
-  const { tag } = await params
+  const { tag: encodedTag } = await params
+  const tag = decodeURIComponent(encodedTag)
   const posts = await getBlogPostsByTag(tag)
   
   if (posts.length === 0) {
@@ -71,13 +72,14 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
       description: `Articles tagged with ${tagTitle} - expert heating advice for Birmingham homeowners`,
     },
     alternates: {
-      canonical: `https://birminghamboilerrepairs.co.uk/blog/tag/${tag}`,
+      canonical: `https://www.birminghamboilerrepairs.uk/blog/tag/${encodeURIComponent(tag)}`,
     },
   }
 }
 
 export default async function TagPage({ params }: TagPageProps) {
-  const { tag } = await params
+  const { tag: encodedTag } = await params
+  const tag = decodeURIComponent(encodedTag)
   const posts = await getBlogPostsByTag(tag)
   
   if (posts.length === 0) {
@@ -209,7 +211,7 @@ export default async function TagPage({ params }: TagPageProps) {
                   size="sm"
                   className="h-8"
                 >
-                  <Link href={`/blog/tag/${relatedTag}`}>
+                  <Link href={`/blog/tag/${encodeURIComponent(relatedTag)}`}>
                     {relatedTag.split('-').map(word => 
                       word.charAt(0).toUpperCase() + word.slice(1)
                     ).join(' ')}

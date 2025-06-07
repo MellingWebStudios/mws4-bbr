@@ -74,17 +74,26 @@ export function middleware(req: NextRequest) {
   if (serviceLocationMatch) {
     const [, service, location] = serviceLocationMatch;
     
-    // Common service patterns that should redirect
-    const serviceMap: Record<string, string> = {
-      'boiler-repair': 'boiler-repairs',
-      'boiler-service': 'boiler-servicing',
-      'gas-safety': 'gas-safety',
-      'ferroli': 'ferroli-specialists'
-    };
+    // Exclude legitimate page URLs that contain hyphens
+    const excludedPages = [
+      'privacy-policy',
+      'sitemap-viewer'
+    ];
     
-    const mappedService = serviceMap[service] || service;
-    const redirectUrl = `https://www.birminghamboilerrepairs.uk/${location}/${mappedService}${req.nextUrl.search}`;
-    return NextResponse.redirect(redirectUrl, 308);
+    // Don't redirect if this is actually a legitimate page URL
+    if (!excludedPages.some(page => pathname === `/${page}`)) {
+      // Common service patterns that should redirect
+      const serviceMap: Record<string, string> = {
+        'boiler-repair': 'boiler-repairs',
+        'boiler-service': 'boiler-servicing',
+        'gas-safety': 'gas-safety',
+        'ferroli': 'ferroli-specialists'
+      };
+      
+      const mappedService = serviceMap[service] || service;
+      const redirectUrl = `https://www.birminghamboilerrepairs.uk/${location}/${mappedService}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 308);
+    }
   }
 
   // Always force HTTPS + www (only if not already perfect)

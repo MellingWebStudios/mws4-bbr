@@ -21,7 +21,8 @@ const validCategories = [
   "maintenance",
   "emergency-services",
   "installation",
-  "troubleshooting"
+  "troubleshooting",
+  "seasonal"
 ]
 
 export async function generateStaticParams() {
@@ -45,7 +46,8 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     "maintenance": "Maintenance & Servicing",
     "emergency-services": "Emergency Services",
     "installation": "Installation Services",
-    "troubleshooting": "Troubleshooting Guides"
+    "troubleshooting": "Troubleshooting Guides",
+    "seasonal": "Seasonal Advice"
   }
 
   const categoryTitle = categoryTitles[category]
@@ -75,7 +77,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       description: `Expert ${categoryTitle.toLowerCase()} advice and guides for Birmingham homeowners`,
     },
     alternates: {
-      canonical: `https://birminghamboilerrepairs.co.uk/blog/category/${category}`,
+      canonical: `https://www.birminghamboilerrepairs.uk/blog/category/${category}`,
     },
   }
 }
