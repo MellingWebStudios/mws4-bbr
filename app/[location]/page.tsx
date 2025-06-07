@@ -1,4 +1,4 @@
-import { getLocationBySlug, services } from "@/lib/locations-data";
+import { getLocationBySlug, services, locations } from "@/lib/locations-data";
 import businessInfo from "@/lib/business-info";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
@@ -53,8 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const { locations } = await import("@/lib/locations-data");
-  return locations.map((location: any) => ({ location: location.slug }));
+  return locations.map((location) => ({ location: location.slug }));
 }
 
 export default async function LocationPage({ params }: Props) {

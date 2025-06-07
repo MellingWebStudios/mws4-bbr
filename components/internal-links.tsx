@@ -79,7 +79,7 @@ export function RelatedServices({
   className = ''
 }: RelatedServicesProps) {
   const relatedServices = getRelatedServices(currentService)
-    .filter(service => service.slug !== currentLocation) // Prevent /location/location
+    .filter(service => service.slug !== currentService) // Prevent /service/service
     .slice(0, limit)
   
   if (relatedServices.length === 0) return null
@@ -156,7 +156,7 @@ export function RelatedLocations({
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {nearbyLocations
-          .filter(location => location.slug !== currentService) // Prevent /location/location
+          .filter(location => location.slug !== currentLocation) // Prevent /location/location
           .map((location) => (
           <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-3">

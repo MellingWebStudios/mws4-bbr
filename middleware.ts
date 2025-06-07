@@ -49,6 +49,22 @@ const locationRedirects: Record<string, string> = {
   'Yardley Wood': 'yardley-wood'
 };
 
+// Get the base URL for redirects, supporting multiple environments
+function getBaseUrl(host: string): string {
+  // In development, use localhost
+  if (host.includes("localhost") || host.includes("127.0.0.1")) {
+    return `http://${host}`;
+  }
+  
+  // Check if we have a WEBSITE_URL environment variable
+  if (process.env.WEBSITE_URL) {
+    return process.env.WEBSITE_URL;
+  }
+  
+  // Fall back to the original hardcoded domain
+  return "https://www.birminghamboilerrepairs.uk";
+}
+
 export function middleware(req: NextRequest) {
   const host = req.headers.get("host") || "";
   const proto = req.headers.get("x-forwarded-proto") || "http";
@@ -112,9 +128,7 @@ export function middleware(req: NextRequest) {
 
   // Check for exact legacy redirects
   if (legacyRedirects[pathname]) {
-    const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-      ? `http://${host}` 
-      : `https://www.birminghamboilerrepairs.uk`;
+    const baseUrl = getBaseUrl(host);
     const redirectUrl = `${baseUrl}${legacyRedirects[pathname]}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301); // Changed from 308 to 301
   }
@@ -125,18 +139,14 @@ export function middleware(req: NextRequest) {
     
     // Handle URL-encoded location names: /Austin%20Village -> /austin-village
     if (pathname === `/${encodedLocationName}`) {
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
     
     // Handle regular location names: /Austin Village -> /austin-village
     if (pathname === `/${locationName}`) {
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
@@ -146,9 +156,7 @@ export function middleware(req: NextRequest) {
     const encodedServiceMatch = pathname.match(encodedServicePattern);
     if (encodedServiceMatch) {
       const [, service] = encodedServiceMatch;
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}/${service}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
@@ -158,9 +166,7 @@ export function middleware(req: NextRequest) {
     const serviceMatch = pathname.match(servicePattern);
     if (serviceMatch) {
       const [, service] = serviceMatch;
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}/${service}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
@@ -189,9 +195,7 @@ export function middleware(req: NextRequest) {
       };
       
       const mappedService = serviceMap[service] || service;
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${location}/${mappedService}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // Changed from 308 to 301
     }
@@ -211,9 +215,7 @@ export function middleware(req: NextRequest) {
       decodedLocationName !== locationRedirects[decodedLocationName]
     ) {
       const locationSlug = locationRedirects[decodedLocationName];
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${locationSlug}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // Changed from 308 to 301
     }
@@ -254,9 +256,7 @@ export function middleware(req: NextRequest) {
     
     // Check if this is a valid single-word location that needs case correction
     if (singleWordLocations.includes(lowercaseLocation) && locationInput !== lowercaseLocation) {
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${lowercaseLocation}${req.nextUrl.search}`;
       // Use 301 for canonicalization
       return NextResponse.redirect(redirectUrl, 301);
@@ -272,17 +272,20 @@ export function middleware(req: NextRequest) {
     
     // Check if this is a valid single-word location that needs case correction
     if (singleWordLocations.includes(lowercaseLocation) && locationInput !== lowercaseLocation) {
-      const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-        ? `http://${host}` 
-        : `https://www.birminghamboilerrepairs.uk`;
+      const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${lowercaseLocation}/${service}${req.nextUrl.search}`;
       // Use 301 for canonicalization
       return NextResponse.redirect(redirectUrl, 301);
     }
   }
 
-  // Always force HTTPS + www (only if not already perfect)
-  if (host !== "www.birminghamboilerrepairs.uk" || proto !== "https") {
+  // Only enforce HTTPS + www for the production domain (www.birminghamboilerrepairs.uk)
+  // For other domains (like Fly.io staging), allow them to work without redirects
+  if (process.env.NODE_ENV === "production" && 
+      !host.includes("localhost") && 
+      !host.includes("127.0.0.1") &&
+      !host.includes("fly.dev") && // Don't redirect staging domains
+      (host !== "www.birminghamboilerrepairs.uk" || proto !== "https")) {
     const redirectUrl = `https://www.birminghamboilerrepairs.uk${pathname}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301);
   }
@@ -300,9 +303,7 @@ export function middleware(req: NextRequest) {
     }
     
     // For other unmatched slugs, redirect to the main page instead of creating broken links
-    const baseUrl = host.includes("localhost") || host.includes("127.0.0.1") 
-      ? `http://${host}` 
-      : `https://www.birminghamboilerrepairs.uk`;
+    const baseUrl = getBaseUrl(host);
     return NextResponse.redirect(`${baseUrl}/`, 301);
   }
 
