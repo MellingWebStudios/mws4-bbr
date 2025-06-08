@@ -7,10 +7,21 @@ import { locations } from '@/lib/locations-data';
 // Location name to slug mappings for redirects
 const locationRedirects: Record<string, string> = {
   // Handle space-separated location names to proper slugs
+<<<<<<< HEAD
+=======
+  'Acocks Green': 'acocks-green',
+  'Aston Cross': 'aston-cross',
+  'Aston Fields': 'aston-fields',
+  'Astwood Bank': 'astwood-bank',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Austin Village': 'austin-village',
   'Bartley Green': 'bartley-green',
   'Beech Lanes': 'beech-lanes',
   'Birches Green': 'birches-green',
+<<<<<<< HEAD
+=======
+  'Bishop Hill': 'bishop-hill',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Bordesley Green': 'bordesley-green',
   'Brandwood End': 'brandwood-end',
   'Browns Green': 'browns-green',
@@ -18,10 +29,23 @@ const locationRedirects: Record<string, string> = {
   'Camp Hill': 'camp-hill',
   'Castle Vale': 'castle-vale',
   'Chad Valley': 'chad-valley',
+<<<<<<< HEAD
   'Cofton Common': 'cofton-common',
   'Falcon Lodge': 'falcon-lodge',
   'Four Oaks': 'four-oaks',
   'Fox Hollies': 'fox-hollies',
+=======
+  'Church Hill': 'church-hill',
+  'Cofton Common': 'cofton-common',
+  'Cofton Hackett': 'cofton-hackett',
+  'Elan Valley': 'elan-valley',
+  'Falcon Lodge': 'falcon-lodge',
+  'Fort Dunlop': 'fort-dunlop',
+  'Four Oaks': 'four-oaks',
+  'Fox Hollies': 'fox-hollies',
+  'Frankley Beeches': 'frankley-beeches',
+  'Garden City': 'garden-city',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Garretts Green': 'garretts-green',
   'Gib Heath': 'gib-heath',
   'Glebe Farm': 'glebe-farm',
@@ -34,20 +58,45 @@ const locationRedirects: Record<string, string> = {
   'Hall Green': 'hall-green',
   'Handsworth Wood': 'handsworth-wood',
   'Harts Green': 'harts-green',
+<<<<<<< HEAD
+=======
+  'Hawkes Green': 'hawkes-green',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Hay Mills': 'hay-mills',
   'High Heath': 'high-heath',
   'Highters Heath': 'highters-heath',
   'Hill Hook': 'hill-hook',
   'Hill Wood': 'hill-wood',
   'Hodge Hill': 'hodge-hill',
+<<<<<<< HEAD
   'Kings Heath': 'kings-heath',
+=======
+  'Holly Oak': 'holly-oak',
+  'Kings Heath': 'kings-heath',
+  'Little Aston': 'little-aston',
+  'Mere Green': 'mere-green',
+  'Mount Nod': 'mount-nod',
+  'New Oscott': 'new-oscott',
+  'Oak Ridge': 'oak-ridge',
+  'Old Oscott': 'old-oscott',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Over Green': 'over-green',
   'Perry Barr': 'perry-barr',
   'Perry Beeches': 'perry-beeches',
   'Perry Common': 'perry-common',
+<<<<<<< HEAD
   'Pype Hayes': 'pype-hayes',
   'Reddicap Heath': 'reddicap-heath',
   'Rotton Park': 'rotton-park',
+=======
+  'Pheasey Estate': 'pheasey-estate',
+  'Pype Hayes': 'pype-hayes',
+  'Reddicap Heath': 'reddicap-heath',
+  'Rednal Cross': 'rednal-cross',
+  'Rose Hill': 'rose-hill',
+  'Rotton Park': 'rotton-park',
+  'Rough Hay': 'rough-hay',
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Rowney Green': 'rowney-green',
   'Selly Oak': 'selly-oak',
   'Selly Park': 'selly-park',
@@ -59,6 +108,7 @@ const locationRedirects: Record<string, string> = {
   'Small Heath': 'small-heath',
   'South Woodgate': 'south-woodgate',
   'South Yardley': 'south-yardley',
+<<<<<<< HEAD
   'Spark Hill': 'sparkhill',
   'Spring Vale': 'spring-vale',
   'Tower Hill': 'tower-hill',
@@ -72,6 +122,28 @@ const locationRedirects: Record<string, string> = {
   'Turves Green': 'turves-green',
   'West Bromwich': 'west-bromwich',
   'West Midlands': 'west-midlands',
+=======
+  'Spark Hill': 'spark-hill',
+  'Spring Hill': 'spring-hill',
+  'Spring Vale': 'spring-vale',
+  'Stockland Green': 'stockland-green',
+  'Stony Lane': 'stony-lane',
+  'Sutton Coldfield': 'sutton-coldfield',
+  'Ten Acres': 'ten-acres',
+  'The Leys': 'the-leys',
+  'The Parade': 'the-parade',
+  'Thimble End': 'thimble-end',
+  'Tile Cross': 'tile-cross',
+  'Tower Hill': 'tower-hill',
+  'Tudor Hill': 'tudor-hill',
+  'Turves Green': 'turves-green',
+  'Ward End': 'ward-end',
+  'Water Orton': 'water-orton',
+  'West Bromwich': 'west-bromwich',
+  'West Heath': 'west-heath',
+  'Woodcock Hill': 'woodcock-hill',
+  'Yardley Wood': 'yardley-wood'
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
 };
 
 // Get the base URL for redirects, supporting multiple environments
@@ -521,11 +593,32 @@ export function middleware(req: NextRequest) {
   // Catch-all redirect for unmatched slugs - only redirect if it's a potential location slug
   const pathSegment = pathname.slice(1); // Remove leading slash
   const regex = /^[a-z0-9\-]+$/; // Only lowercase for consistency
+<<<<<<< HEAD
 
   // Only redirect if it looks like a location slug and isn't already a known page
   if (regex.test(pathSegment) && pathSegment.length > 2) {
     // Check if this might be a valid location by seeing if it's in our single word locations
     if (singleWordLocations.includes(pathSegment.toLowerCase())) {
+=======
+  
+  // Define legitimate pages that should not be redirected
+  const legitimatePages = [
+    'services', 'blog', 'contact', 'about', 'locations', 'prices', 
+    'privacy-policy', 'sitemap-viewer', 'guides', 'api'
+  ];
+  
+  // Only redirect if it looks like a location slug and isn't already a known page
+  if (regex.test(pathSegment) && pathSegment.length > 2) {
+    // Don't redirect legitimate pages
+    if (legitimatePages.includes(pathSegment)) {
+      return NextResponse.next();
+    }
+    
+    // Check if this is a valid location by checking against the actual locations data
+    const isValidLocation = locations.some(location => location.slug.toLowerCase() === pathSegment.toLowerCase());
+    
+    if (isValidLocation) {
+>>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
       // This is a valid location, let it pass through to Next.js routing
       return NextResponse.next();
     }

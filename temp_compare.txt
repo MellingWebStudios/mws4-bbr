@@ -1,0 +1,123 @@
+Locations with spaces from data:
+Acocks Green
+Aston Cross
+Aston Fields
+Astwood Bank
+Austin Village
+Bartley Green
+Beech Lanes
+Birches Green
+Bordesley Green
+Brandwood End
+Browns Green
+Buckland End
+Camp Hill
+Castle Vale
+Chad Valley
+Cofton Common
+Falcon Lodge
+Four Oaks
+Fox Hollies
+Garretts Green
+Gib Heath
+Glebe Farm
+Gospel Oak
+Gosta Green
+Gravelly Hill
+Great Barr
+Grimstock Hill
+Gun Quarter
+Hall Green
+Handsworth Wood
+Harts Green
+Hay Mills
+High Heath
+Highters Heath
+Hill Hook
+Hill Wood
+Hodge Hill
+Kings Heath
+Old Oscott
+Over Green
+Perry Barr
+Perry Beeches
+Perry Common
+Pype Hayes
+Reddicap Heath
+Rotton Park
+Rowney Green
+Selly Oak
+Selly Park
+Shard End
+Shenley Fields
+Shenley Green
+Short Heath
+Showell Green
+Small Heath
+South Woodgate
+South Yardley
+Spring Vale
+Stockland Green
+Sutton Coldfield
+Ten Acres
+The Parade
+Thimble End
+Tile Cross
+Tower Hill
+Tudor Hill
+Turves Green
+West Bromwich
+Yardley Wood
+
+
+Currently in locationRedirects:
+Aston Cross
+Austin Village
+Bartley Green
+Beech Lanes
+Bells Cross
+Birches Green
+Bishop Hill
+/boiler-repair
+Brandwood End
+Castle Vale
+Church Hill
+Cofton Hackett
+/default.html
+Elan Valley
+Fort Dunlop
+Four Oaks
+Frankley Beeches
+Garden City
+Great Barr
+Hall Green
+Hawkes Green
+Holly Oak
+/home
+/index
+/index.html
+/index.php
+Little Aston
+/main
+Mere Green
+Mount Nod
+New Oscott
+Oak Ridge
+Old Oscott
+Perry Barr
+Perry Common
+Pheasey Estate
+Rednal Cross
+Rose Hill
+Rough Hay
+Small Heath
+Spark Hill
+Spring Hill
+Stony Lane
+The Leys
+Tower Hill
+Ward End
+Water Orton
+West Heath
+Woodcock Hill
+Yardley Wood
