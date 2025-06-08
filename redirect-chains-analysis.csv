@@ -15,17 +15,17 @@ Original Source,Final Destination,Hop Count,Chain Length,Has Chain (2+ hops),Pro
 /selly-park/selly-park,/selly-park,1,2,NO,NO,YES,/selly-park/selly-park → /selly-park
 /hall-green/hall-green,/hall-green,1,2,NO,NO,YES,/hall-green/hall-green → /hall-green
 /acocks-green/acocks-green,/acocks-green,1,2,NO,NO,YES,/acocks-green/acocks-green → /acocks-green
-/birmingham/birmingham,/birmingham,1,2,NO,NO,YES,/birmingham/birmingham → /birmingham
 /small-heath/small-heath,/small-heath,1,2,NO,NO,YES,/small-heath/small-heath → /small-heath
 /erdington/erdington,/erdington,1,2,NO,NO,YES,/erdington/erdington → /erdington
 /handsworth/handsworth,/handsworth,1,2,NO,NO,YES,/handsworth/handsworth → /handsworth
+/birmingham/birmingham,/birmingham,1,2,NO,NO,YES,/birmingham/birmingham → /birmingham
+/birmingham/birmingham/:path*,/birmingham/:path*,1,2,NO,NO,YES,/birmingham/birmingham/:path* → /birmingham/:path*
 /services/boiler-repairs/boiler-repairs,/services/boiler-repairs,1,2,NO,NO,YES,/services/boiler-repairs/boiler-repairs → /services/boiler-repairs
 /services/boiler-servicing/boiler-servicing,/services/boiler-servicing,1,2,NO,NO,YES,/services/boiler-servicing/boiler-servicing → /services/boiler-servicing
 /services/gas-safety/gas-safety,/services/gas-safety,1,2,NO,NO,YES,/services/gas-safety/gas-safety → /services/gas-safety
 /selly-park/selly-park/:path*,/selly-park/:path*,1,2,NO,NO,YES,/selly-park/selly-park/:path* → /selly-park/:path*
 /hall-green/hall-green/:path*,/hall-green/:path*,1,2,NO,NO,YES,/hall-green/hall-green/:path* → /hall-green/:path*
 /acocks-green/acocks-green/:path*,/acocks-green/:path*,1,2,NO,NO,YES,/acocks-green/acocks-green/:path* → /acocks-green/:path*
-/birmingham/birmingham/:path*,/birmingham/:path*,1,2,NO,NO,YES,/birmingham/birmingham/:path* → /birmingham/:path*
 /Selly-Park,/selly-park,1,2,NO,NO,YES,/Selly-Park → /selly-park
 /SELLY-PARK,/selly-park,1,2,NO,NO,YES,/SELLY-PARK → /selly-park
 /Hall-Green,/hall-green,1,2,NO,NO,YES,/Hall-Green → /hall-green
@@ -39,3 +39,7 @@ Original Source,Final Destination,Hop Count,Chain Length,Has Chain (2+ hops),Pro
 /admin/:path*,/,1,2,NO,NO,YES,/admin/:path* → /
 /pages/:path*,/:path*,1,2,NO,NO,YES,/pages/:path* → /:path*
 /site/:path*,/:path*,1,2,NO,NO,YES,/site/:path* → /:path*
+/solihull/solihull,/solihull,1,2,NO,NO,YES,/solihull/solihull → /solihull
+/solihull/solihull/:path*,/solihull/:path*,1,2,NO,NO,YES,/solihull/solihull/:path* → /solihull/:path*
+/wolverhampton/wolverhampton,/wolverhampton,1,2,NO,NO,YES,/wolverhampton/wolverhampton → /wolverhampton
+/wolverhampton/wolverhampton/:path*,/wolverhampton/:path*,1,2,NO,NO,YES,/wolverhampton/wolverhampton/:path* → /wolverhampton/:path*

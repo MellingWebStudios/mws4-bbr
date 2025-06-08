@@ -1,8 +1,8 @@
 {
-  "timestamp": "2025-06-08T06:14:58.009Z",
+  "timestamp": "2025-06-09T11:19:58.014Z",
   "analysis": {
-    "totalRedirects": 40,
-    "directRedirects": 40,
+    "totalRedirects": 44,
+    "directRedirects": 44,
     "twoHopChains": 0,
     "threeHopChains": 0,
     "longerChains": 0,
@@ -233,19 +233,6 @@
       "isProblematic": false
     },
     {
-      "originalSource": "/birmingham/birmingham",
-      "finalDestination": "/birmingham",
-      "hopCount": 1,
-      "fullChain": [
-        "/birmingham/birmingham",
-        "/birmingham"
-      ],
-      "permanent": true,
-      "chainLength": 2,
-      "hasChain": false,
-      "isProblematic": false
-    },
-    {
       "originalSource": "/small-heath/small-heath",
       "finalDestination": "/small-heath",
       "hopCount": 1,
@@ -278,6 +265,32 @@
       "fullChain": [
         "/handsworth/handsworth",
         "/handsworth"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/birmingham/birmingham",
+      "finalDestination": "/birmingham",
+      "hopCount": 1,
+      "fullChain": [
+        "/birmingham/birmingham",
+        "/birmingham"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/birmingham/birmingham/:path*",
+      "finalDestination": "/birmingham/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/birmingham/birmingham/:path*",
+        "/birmingham/:path*"
       ],
       "permanent": true,
       "chainLength": 2,
@@ -356,19 +369,6 @@
       "fullChain": [
         "/acocks-green/acocks-green/:path*",
         "/acocks-green/:path*"
-      ],
-      "permanent": true,
-      "chainLength": 2,
-      "hasChain": false,
-      "isProblematic": false
-    },
-    {
-      "originalSource": "/birmingham/birmingham/:path*",
-      "finalDestination": "/birmingham/:path*",
-      "hopCount": 1,
-      "fullChain": [
-        "/birmingham/birmingham/:path*",
-        "/birmingham/:path*"
       ],
       "permanent": true,
       "chainLength": 2,
@@ -538,6 +538,58 @@
       "fullChain": [
         "/site/:path*",
         "/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/solihull/solihull",
+      "finalDestination": "/solihull",
+      "hopCount": 1,
+      "fullChain": [
+        "/solihull/solihull",
+        "/solihull"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/solihull/solihull/:path*",
+      "finalDestination": "/solihull/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/solihull/solihull/:path*",
+        "/solihull/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/wolverhampton/wolverhampton",
+      "finalDestination": "/wolverhampton",
+      "hopCount": 1,
+      "fullChain": [
+        "/wolverhampton/wolverhampton",
+        "/wolverhampton"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/wolverhampton/wolverhampton/:path*",
+      "finalDestination": "/wolverhampton/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/wolverhampton/wolverhampton/:path*",
+        "/wolverhampton/:path*"
       ],
       "permanent": true,
       "chainLength": 2,

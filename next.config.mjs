@@ -146,7 +146,16 @@ const nextConfig = {
         destination: '/handsworth',
         permanent: true,
       },
-      
+            {
+        source: '/birmingham/birmingham',
+        destination: '/birmingham',
+        permanent: true,
+      },
+      {
+        source: '/birmingham/birmingham/:path*',
+        destination: '/birmingham/:path*',
+        permanent: true,
+      },
       // Service duplicate patterns with direct resolution
       {
         source: '/services/boiler-repairs/boiler-repairs',
@@ -249,6 +258,26 @@ const nextConfig = {
       {
         source: '/site/:path*',
         destination: '/:path*',
+        permanent: true,
+      },
+      {
+        source: '/solihull/solihull',
+        destination: '/solihull',
+        permanent: true,
+      },
+      {
+        source: '/solihull/solihull/:path*',
+        destination: '/solihull/:path*',
+        permanent: true,
+      },
+      {
+        source: '/wolverhampton/wolverhampton',
+        destination: '/wolverhampton',
+        permanent: true,
+      },
+      {
+        source: '/wolverhampton/wolverhampton/:path*',
+        destination: '/wolverhampton/:path*',
         permanent: true,
       },
     ];

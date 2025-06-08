@@ -2,18 +2,11 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { slugify } from '@/lib/slug';
 import { validateAndNormalizeUrl, hasDuplicateSegments, removeDuplicateSegments } from '@/lib/url-validator';
+import { locations } from '@/lib/locations-data';
 
 // Location name to slug mappings for redirects
 const locationRedirects: Record<string, string> = {
   // Handle space-separated location names to proper slugs
-  // Only keeping entries that point to valid location slugs
-  'Old Oscott': 'old-oscott',
-  'Yardley Wood': 'yardley-wood',
-  // Adding missing redirects for multi-word locations from location data
-  'Acocks Green': 'acocks-green',
-  'Aston Cross': 'aston-cross',
-  'Aston Fields': 'aston-fields',
-  'Astwood Bank': 'astwood-bank',
   'Austin Village': 'austin-village',
   'Bartley Green': 'bartley-green',
   'Beech Lanes': 'beech-lanes',
@@ -338,43 +331,15 @@ export function middleware(req: NextRequest) {
   const serviceLocationMatch = pathname.match(serviceLocationPattern);
   if (serviceLocationMatch) {
     const [, service, location] = serviceLocationMatch;
-
+    
     // Exclude legitimate page URLs that contain hyphens
     const excludedPages = [
       'privacy-policy',
       'sitemap-viewer'
     ];
-
-    // Exclude valid location slugs - check if the full path matches a valid location
-    const validLocationSlugs = [
-      'acocks-green', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
-      'austin-village', 'bartley-green', 'beech-lanes', 'billesley', 'birches-green',
-      'birchfield', 'birmingham', 'boldmere', 'bordesley', 'bordesley-green', 'bournbrook',
-      'bournville', 'brandwood-end', 'bromford', 'browns-green', 'buckland-end',
-      'california', 'camp-hill', 'castle-vale', 'catshill', 'chad-valley', 'churchfield',
-      'cofton-common', 'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston',
-      'erdington', 'falcon-lodge', 'finstall', 'four-oaks', 'fox-hollies', 'frankley',
-      'garretts-green', 'gib-heath', 'gilbertstone', 'glebe-farm', 'gospel-oak',
-      'gosta-green', 'gravelly-hill', 'great-barr', 'greet', 'grimstock-hill', 'gun-quarter',
-      'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
-      'hawkesley', 'hay-mills', 'high-heath', 'highgate', 'highters-heath', 'hill-hook',
-      'hill-wood', 'hodge-hill', 'hopwood', 'kings-heath', 'lickey', 'oakenshaw', 'old-oscott',
-      'over-green', 'parkhall', 'peddimore', 'pelham', 'perry-barr', 'perry-beeches',
-      'perry-common', 'pheasey', 'pype-hayes', 'queslett', 'quinton', 'reddicap-heath',
-      'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
-      'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
-      'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
-      'solihull', 'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
-      'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
-      'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
-      'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
-      'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wolverhampton', 'wythall', 'yardley',
-      'yardley-wood'
-    ];
-
-    // Don't redirect if this is actually a legitimate page URL or valid location slug
-    const pathWithoutSlash = pathname.slice(1); // Remove leading slash
-    if (!excludedPages.some(page => pathname === `/${page}`) && !validLocationSlugs.includes(pathWithoutSlash)) {
+    
+    // Don't redirect if this is actually a legitimate page URL
+    if (!excludedPages.some(page => pathname === `/${page}`)) {
       // Common service patterns that should redirect
       const serviceMap: Record<string, string> = {
         'boiler-repair': 'boiler-repairs',
@@ -382,7 +347,7 @@ export function middleware(req: NextRequest) {
         'gas-safety': 'gas-safety',
         'ferroli': 'ferroli-specialists'
       };
-
+      
       const mappedService = serviceMap[service] || service;
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${location}/${mappedService}${req.nextUrl.search}`;
@@ -559,13 +524,8 @@ export function middleware(req: NextRequest) {
 
   // Only redirect if it looks like a location slug and isn't already a known page
   if (regex.test(pathSegment) && pathSegment.length > 2) {
-    // Don't redirect known page routes
-    if (knownPageRoutes.includes(pathSegment.toLowerCase())) {
-      return NextResponse.next();
-    }
-
-    // Check if this is a valid location slug
-    if (validLocationSlugs.includes(pathSegment.toLowerCase())) {
+    // Check if this might be a valid location by seeing if it's in our single word locations
+    if (singleWordLocations.includes(pathSegment.toLowerCase())) {
       // This is a valid location, let it pass through to Next.js routing
       return NextResponse.next();
     }
