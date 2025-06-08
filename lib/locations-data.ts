@@ -1193,6 +1193,19 @@ export const locations: Location[] = [
     "mapUrl": "https://goo.gl/maps/9NAGPtktBYp"
   },
   {
+    "slug": "solihull",
+    "name": "Solihull",
+    "postcode": "B90-B93",
+    "blurb": "Boiler repair & servicing in Solihull and surrounding areas.",
+    "landmarks": [
+      "Touchwood Shopping Centre",
+      "Solihull School",
+      "Tudor Grange Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2437.7722265324557!2d-1.7777806840695702!3d52.4114432798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870be6e4b8b2c89%3A0x64b9b2f6e8d8e8e8!2sSolihull!5e0!3m2!1sen!2suk!4v1652364112211!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/SolihullMap"
+  },
+  {
     "slug": "southside",
     "name": "Southside",
     "postcode": "B5",
@@ -1739,6 +1752,19 @@ export const locations: Location[] = [
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-1.8937806840695702!3d52.4851302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWest%20Midlands!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
     "mapUrl": "https://goo.gl/maps/WestMidlands"
+  },
+  {
+    "slug": "wolverhampton",
+    "name": "Wolverhampton",
+    "postcode": "WV1-WV11",
+    "blurb": "Boiler repair & servicing in Wolverhampton and surrounding areas.",
+    "landmarks": [
+      "Wolverhampton Grand Theatre",
+      "Wolverhampton Art Gallery",
+      "West Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-2.1289806840695702!3d52.5861302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094fe7e5b8d43%3A0x6571b0e0d4a9d4a9!2sWolverhampton!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/Wolverhampton"
   }
 ]
 

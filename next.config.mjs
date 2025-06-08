@@ -132,11 +132,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/birmingham/birmingham',
-        destination: '/birmingham',
-        permanent: true,
-      },
-      {
         source: '/small-heath/small-heath',
         destination: '/small-heath',
         permanent: true,
@@ -183,11 +178,6 @@ const nextConfig = {
       {
         source: '/acocks-green/acocks-green/:path*',
         destination: '/acocks-green/:path*',
-        permanent: true,
-      },
-      {
-        source: '/birmingham/birmingham/:path*',
-        destination: '/birmingham/:path*',
         permanent: true,
       },
       

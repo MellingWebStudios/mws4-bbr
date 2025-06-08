@@ -147,9 +147,7 @@ export function middleware(req: NextRequest) {
     // Location redirects - common misspellings/variations
     '/birmingham-boiler-repairs': '/birmingham',
     '/birmingham-boiler-repair': '/birmingham',
-    '/solihull': '/birmingham', // Redirect nearby area to main Birmingham page
     '/coventry': '/birmingham',
-    '/wolverhampton': '/birmingham',
 
     // Old page structure
     '/service': '/services',
@@ -366,11 +364,11 @@ export function middleware(req: NextRequest) {
       'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
       'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
       'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
-      'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
+      'solihull', 'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
       'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
       'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
       'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
-      'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wythall', 'yardley',
+      'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wolverhampton', 'wythall', 'yardley',
       'yardley-wood'
     ];
 
@@ -547,11 +545,11 @@ export function middleware(req: NextRequest) {
     'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
     'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
     'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
-    'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
+    'solihull', 'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
     'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
     'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
     'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
-    'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wythall', 'yardley',
+    'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wolverhampton', 'wythall', 'yardley',
     'yardley-wood'
   ];
 
