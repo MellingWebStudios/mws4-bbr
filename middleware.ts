@@ -141,6 +141,7 @@ const locationRedirects: Record<string, string> = {
   'Water Orton': 'water-orton',
   'West Bromwich': 'west-bromwich',
   'West Heath': 'west-heath',
+  'West Midlands': 'west-midlands',
   'Woodcock Hill': 'woodcock-hill',
   'Yardley Wood': 'yardley-wood'
 >>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
@@ -172,12 +173,26 @@ export function middleware(req: NextRequest) {
   //   return NextResponse.next();
   // }
 
-  // Early check for duplicate segments (e.g., /selly-park/selly-park/)
+  // Early check for duplicate segments (e.g., /selly-park/selly-park/ or /Redditch/redditch)
   if (hasDuplicateSegments(pathname)) {
     const cleanedPath = removeDuplicateSegments(pathname);
     const baseUrl = getBaseUrl(host);
     const redirectUrl = `${baseUrl}${cleanedPath}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301);
+  }
+
+  // Handle case-insensitive location duplicates specifically (e.g., /Redditch/redditch -> /redditch)
+  const caseInsensitiveDuplicatePattern = /^\/([^\/]+)\/(.+)$/;
+  const caseInsensitiveDuplicateMatch = pathname.match(caseInsensitiveDuplicatePattern);
+  if (caseInsensitiveDuplicateMatch) {
+    const [, firstSegment, secondSegment] = caseInsensitiveDuplicateMatch;
+    
+    // Check if first and second segments are the same when lowercased
+    if (firstSegment.toLowerCase() === secondSegment.toLowerCase()) {
+      const baseUrl = getBaseUrl(host);
+      const redirectUrl = `${baseUrl}/${secondSegment.toLowerCase()}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 301);
+    }
   }
 
   // Check for URLs with spaces or invalid characters that need normalization
@@ -473,15 +488,29 @@ export function middleware(req: NextRequest) {
   // Handle case-insensitive single-word location redirects (e.g., /Smithfield -> /smithfield)
   // Only for locations that are actually single words without hyphens
   const singleWordLocations = [
-    'ashted', 'aston', 'billesley', 'birchfield', 'birmingham', 'boldmere', 'bordesley', 
-    'bournbrook', 'bournville', 'bromford', 'california', 'catshill', 'churchfield',
-    'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston', 'erdington', 'finstall', 
-    'frankley', 'greet', 'hamstead', 'handsworth', 'harborne', 'hawkesley', 'highgate', 
-    'hopwood', 'lickey', 'oakenshaw', 'parkhall', 'peddimore', 'pelham', 'pheasey', 
-    'queslett', 'quinton', 'rednal', 'ridgacre', 'roughley', 'rubery', 'saltley',
-    'sarehole', 'sheldon', 'smithfield', 'soho', 'southside', 'sparkbrook', 'sparkhill',
-    'springfield', 'stechford', 'stirchley', 'stockfield', 'streetly', 'tardebigge', 
-    'theatreland', 'tyburn', 'tyseley', 'walkwood', 'webheath', 'wirehill', 'wythall', 'yardley'
+    'acocks-green', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
+    'austin-village', 'bartley-green', 'beech-lanes', 'billesley', 'birches-green',
+    'birchfield', 'birmingham', 'boldmere', 'bordesley', 'bordesley-green', 'bournbrook',
+    'bournville', 'brandwood-end', 'bromford', 'browns-green', 'buckland-end',
+    'california', 'camp-hill', 'castle-vale', 'catshill', 'chad-valley', 'churchfield',
+    'cofton-common', 'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston',
+    'erdington', 'falcon-lodge', 'finstall', 'four-oaks', 'fox-hollies', 'frankley',
+    'garretts-green', 'gib-heath', 'gilbertstone', 'glebe-farm', 'gospel-oak',
+    'gosta-green', 'gravelly-hill', 'great-barr', 'greet', 'grimstock-hill', 'gun-quarter',
+    'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
+    'hawkesley', 'hay-mills', 'high-heath', 'highgate', 'highters-heath', 'hill-hook',
+    'hill-wood', 'hodge-hill', 'hopwood', 'lickey', 'oakenshaw', 'old-oscott',
+    'over-green', 'parkhall', 'peddimore', 'pelham', 'perry-barr', 'perry-beeches',
+    'perry-common', 'pheasey', 'pype-hayes', 'queslett', 'quinton', 'reddicap-heath',
+    'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
+    'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
+    'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
+    'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
+    'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
+    'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
+    'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
+    'tyburn', 'tyseley', 'walkwood', 'webheath', 'wirehill', 'wythall', 'yardley',
+    'yardley-wood'
   ];
 
   const caseInsensitivePattern = /^\/([^\/]+)\/?$/;

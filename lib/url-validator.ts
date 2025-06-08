@@ -124,25 +124,36 @@ export function normalizeUrlPath(path: string): string | null {
 }
 
 /**
- * Detects if a path has duplicate segments
+ * Detects if a path has duplicate segments (case-insensitive)
  */
 export function hasDuplicateSegments(path: string): boolean {
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   if (!cleanPath) return false;
   
   const segments = cleanPath.split('/');
-  return segments.length !== new Set(segments).size;
+  const lowercaseSegments = segments.map(segment => segment.toLowerCase());
+  return lowercaseSegments.length !== new Set(lowercaseSegments).size;
 }
 
 /**
- * Removes duplicate segments from a path
+ * Removes duplicate segments from a path (case-insensitive, prefers lowercase)
  */
 export function removeDuplicateSegments(path: string): string {
   const cleanPath = path.startsWith('/') ? path.slice(1) : path;
   if (!cleanPath) return '/';
   
   const segments = cleanPath.split('/');
-  const uniqueSegments = [...new Set(segments)];
+  const seen = new Set<string>();
+  const uniqueSegments: string[] = [];
+  
+  for (const segment of segments) {
+    const lowercaseSegment = segment.toLowerCase();
+    if (!seen.has(lowercaseSegment)) {
+      seen.add(lowercaseSegment);
+      // Prefer lowercase version for consistency
+      uniqueSegments.push(lowercaseSegment);
+    }
+  }
   
   return '/' + uniqueSegments.join('/');
 }

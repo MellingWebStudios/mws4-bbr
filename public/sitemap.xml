@@ -7,12 +7,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/about</loc>
-    <lastmod>2025-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>weekly</changefreq>
@@ -23,6 +17,12 @@
     <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/about</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/guides</loc>
@@ -37,16 +37,16 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/prices</loc>
-    <lastmod>2025-06-05</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.birminghamboilerrepairs.uk/privacy-policy</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/prices</loc>
+    <lastmod>2025-06-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.birminghamboilerrepairs.uk/services</loc>
@@ -73,13 +73,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/gas-safety</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/services/gas-safety</loc>
     <lastmod>2025-06-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3327,6 +3327,102 @@
     <lastmod>2025-06-08</lastmod>
 =======
 >>>>>>> ad80c0e (fix(middleware): Improve location validation and redirect handling)
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/kings-heath/boiler-repairs</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/kings-heath/boiler-servicing</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/kings-heath/gas-safety</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/kings-heath/ferroli-specialists</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-bromwich/boiler-repairs</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-bromwich/boiler-servicing</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-bromwich/gas-safety</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-bromwich/ferroli-specialists</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/boiler-repairs</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/boiler-servicing</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/gas-safety</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/ferroli-specialists</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/boiler-repairs</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/boiler-servicing</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/gas-safety</loc>
+    <lastmod>2025-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/ferroli-specialists</loc>
+    <lastmod>2025-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

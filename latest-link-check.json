@@ -1,0 +1,482 @@
+{
+  "links": [
+    {
+      "url": "http://localhost:3000/",
+      "status": 200,
+      "state": "OK",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/css/app/layout.css?v=1749376993163",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/icon1.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/main-app.js?v=1749376993163",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/webpack.js?v=1749376993163",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/app-pages-internals.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/app/layout.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/app/page.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/_app-pages-browser_components_top-bar_tsx.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/_app-pages-browser_components_footer_tsx.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/_app-pages-browser_components_navbar_tsx.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/android-chrome-192x192.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/app/not-found.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/_app-pages-browser_components_sticky-call-bar_tsx.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/icon0.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/android-chrome-512x512.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/apple-touch-icon.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/apple-icon.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/favicon-16x16.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/favicon-32x32.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/favicon-48x48.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/mstile-150x150.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/web-app-manifest-192x192.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/web-app-manifest-512x512.png",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/engineers-team.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/static/chunks/polyfills.js",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.birminghamboilerrepairs.uk/",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.google.com/search?sca_esv=0f29376999671a5e&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E4XbkKOA0vKAM72LYjMYjm1ZOIu5C5ZRlfrejaBtyWMT9-kuBdhAvFtxQYr0I-XwS929IxNRMtHb8NK0n-IR-kAoq-x4W15oqj9-OJCgq_pRJ0sL1w%3D%3D&q=Birmingham+Boiler+Repairs+Reviews&sa=X&ved=2ahUKEwjmzL2H7LyNAxUCVUEAHUSiFtYQ0bkNegQIJRAE&biw=1920&bih=989&dpr=1",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=3840&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=640&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=750&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=828&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=1080&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=1200&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=1920&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=%2Fimages%2Fboiler-mascot-logo-56.webp&w=2048&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/gas-safe-1.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/worcester-bosch-group-seeklogo.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/Vaillant-logo-2021.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/BAXI_logo.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/images/Ferroli_logo.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://mellingwebstudios.com/",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/images/ideal-boilers-seeklogo.svg",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.youtube.com/@theferroliman2067",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "https://www.facebook.com/BirminghamBoilerRepairs/",
+      "status": 400,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "https://www.instagram.com/birmingham_boiler_repairs/?hl=en-gb",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2FUntitled%2520design%2520%25283%2529-tLUry2Q4qKqaOuw4StXm7oPwd6Bkbb.png&w=128&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/_next/image?url=https%3A%2F%2Fhebbkx1anhila5yf.public.blob.vercel-storage.com%2FUntitled%2520design%2520%25283%2529-tLUry2Q4qKqaOuw4StXm7oPwd6Bkbb.png&w=64&q=75",
+      "status": 200,
+      "state": "OK",
+      "parent": "http://localhost:3000/",
+      "failureDetails": []
+    },
+    {
+      "url": "http://localhost:3000/services",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/locations",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/blog",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/guides",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/about",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/contact",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/prices",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/acocks-green",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/ashted",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/aston",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/aston-cross",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/austin-village",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/bartley-green",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/beech-lanes",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/billesley",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/services/boiler-repairs",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/services/boiler-servicing",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/services/gas-safety",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/services/ferroli-specialists",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/blog/category/boiler-repair",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/blog/category/heating-systems",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/blog/category/maintenance",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/blog/category/emergency-services",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    },
+    {
+      "url": "http://localhost:3000/privacy-policy",
+      "status": 0,
+      "state": "BROKEN",
+      "parent": "http://localhost:3000/"
+    }
+  ],
+  "passed": false
+}

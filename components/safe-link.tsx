@@ -48,20 +48,19 @@ export function SafeLink({ href, children, className, ...props }: SafeLinkProps)
 // Helper function to build location URLs safely
 export function buildLocationUrl(locationSlug: string, serviceSlug?: string): string {
   const basePath = `/${locationSlug}`;
-  
-  if (serviceSlug) {
+  if (serviceSlug && serviceSlug !== locationSlug) {
     return `${basePath}/${serviceSlug}`;
   }
-  
+  // Prevent /location/location
   return basePath;
 }
 
 // Helper function to build service URLs safely
 export function buildServiceUrl(serviceSlug: string, locationSlug?: string): string {
-  if (locationSlug) {
+  if (locationSlug && serviceSlug !== locationSlug) {
     return `/${locationSlug}/${serviceSlug}`;
   }
-  
+  // Prevent /location/location
   return `/services/${serviceSlug}`;
 }
 
@@ -96,7 +95,12 @@ export function createInternalLink(
       if (!params.locationSlug || !params.serviceSlug) {
         throw new Error('Both locationSlug and serviceSlug are required for location-service links');
       }
-      href = buildLocationUrl(params.locationSlug, params.serviceSlug);
+      // Prevent /location/location
+      if (params.locationSlug === params.serviceSlug) {
+        href = buildLocationUrl(params.locationSlug);
+      } else {
+        href = buildLocationUrl(params.locationSlug, params.serviceSlug);
+      }
       break;
 
     default:

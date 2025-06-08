@@ -1785,6 +1785,21 @@ export const locations: Location[] = [
     "mapUrl": "https://goo.gl/maps/WestBromwichMap"
   },
   {
+    "slug": "west-midlands",
+    "name": "West Midlands",
+    "postcode": "B1-B99, CV1-CV99, DY1-DY99, WS1-WS99, WV1-WV99",
+    "blurb": "Boiler repair & servicing throughout the West Midlands region and surrounding areas.",
+    "landmarks": [
+      "Birmingham City Centre",
+      "Coventry Cathedral",
+      "Wolverhampton Grand Theatre",
+      "Dudley Castle",
+      "Walsall Arboretum"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2483.5435129726417!2d-2.0!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b1d2631beb95%3A0x8a1b7e6c7a8e9f10!2sWest%20Midlands%2C%20UK!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/WestMidlandsMap"
+  },
+  {
     "slug": "redditch",
     "name": "Redditch",
     "postcode": "B97-B98",
@@ -1897,7 +1912,7 @@ export const services = [
       },
       {
         title: "Ferroli Repair (same day)",
-        price: "£95",
+        price: "£99",
         description: "Same-day service for Ferroli boiler repairs",
       },
       {

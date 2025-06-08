@@ -78,8 +78,10 @@ export function RelatedServices({
   limit = 3,
   className = ''
 }: RelatedServicesProps) {
+  const currentLocationData = currentLocation ? locations.find(l => l.slug === currentLocation) : null
   const relatedServices = getRelatedServices(currentService)
-    .filter(service => service.slug !== currentService) // Prevent /service/service
+    .filter(service => service.slug !== currentService)
+    .filter(service => !currentLocation || service.slug !== currentLocation) // Prevent /location/location
     .slice(0, limit)
   
   if (relatedServices.length === 0) return null
@@ -89,7 +91,7 @@ export function RelatedServices({
       <div className="flex items-center gap-2">
         <Settings className="h-5 w-5 text-secondary" />
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-          Related Services{currentLocation ? ` in ${currentLocation}` : ''}
+          Related Services{currentLocationData ? ` in ${currentLocationData.name}` : ''}
         </h3>
       </div>
       
@@ -139,50 +141,56 @@ export function RelatedLocations({
   limit = 6,
   className = ''
 }: RelatedLocationsProps) {
+  const currentServiceData = currentService ? services.find(s => s.slug === currentService) : null
   const nearbyLocations = currentLocation 
     ? getNearbyLocations(currentLocation, limit) 
     : locations.slice(0, limit)
   
-  if (nearbyLocations.length === 0) return null
+  // Only allow valid service slugs
+  const validServiceSlugs = services.map(s => s.slug);
 
   return (
     <div className={`space-y-4 ${className}`}>
       <div className="flex items-center gap-2">
         <MapPin className="h-5 w-5 text-secondary" />
         <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
-          {currentService ? `${currentService} in Nearby Areas` : 'Areas We Cover'}
+          {currentServiceData ? `${currentServiceData.name} in Nearby Areas` : 'Areas We Cover'}
         </h3>
       </div>
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {nearbyLocations
-          .filter(location => location.slug !== currentLocation) // Prevent /location/location
-          .map((location) => (
-          <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
-            <CardContent className="p-3">
-              <h4 className="font-semibold text-sm text-gray-900 dark:text-white mb-1">
-                <Link 
-                  href={currentService ? `/${location.slug}/${currentService}` : `/${location.slug}`}
-                  className="hover:text-secondary transition-colors"
-                >
-                  {location.name}
-                </Link>
-              </h4>
-              <p className="text-xs text-gray-500 mb-2">{location.postcode}</p>
-              {showDescription && (
-                <p className="text-xs text-gray-600 dark:text-gray-400 mb-2">
-                  {location.blurb}
-                </p>
-              )}
-              <Link 
-                href={currentService ? `/${location.slug}/${currentService}` : `/${location.slug}`}
-                className="inline-flex items-center text-xs text-secondary hover:text-secondary/80 font-medium"
-              >
-                View details <ArrowRight className="ml-1 h-2 w-2" />
-              </Link>
-            </CardContent>
-          </Card>
-        ))}
+          .filter(location => location.slug !== currentLocation && location.slug !== currentService) // Prevent /location/location
+          .map((location) => {
+            // Prevent /location/[invalidService]
+            if (currentService && !validServiceSlugs.includes(currentService)) return null;
+            return (
+              <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="p-3">
+                  <h4 className="font-semibold text-sm text-gray-900 dark:text-white mb-1">
+                    <Link 
+                      href={currentService ? `/${location.slug}/${currentService}` : `/${location.slug}`}
+                      className="hover:text-secondary transition-colors"
+                    >
+                      {location.name}
+                    </Link>
+                  </h4>
+                  <p className="text-xs text-gray-500 mb-2">{location.postcode}</p>
+                  {showDescription && (
+                    <p className="text-xs text-gray-600 dark:text-gray-400 mb-2">
+                      {location.blurb}
+                    </p>
+                  )}
+                  <Link 
+                    href={currentService ? `/${location.slug}/${currentService}` : `/${location.slug}`}
+                    className="inline-flex items-center text-xs text-secondary hover:text-secondary/80 font-medium"
+                  >
+                    View details <ArrowRight className="ml-1 h-2 w-2" />
+                  </Link>
+                </CardContent>
+              </Card>
+            );
+          })}
       </div>
     </div>
   )
@@ -215,6 +223,7 @@ export function ServiceLinksGrid({
       <div className={gridClass}>
         {services
           .filter(service => service.slug !== location)
+          .filter(service => !location || service.slug !== location) // Prevent /location/location
           .filter(service => isValidSlug(service.slug) && (!location || isValidSlug(location)))
           .map((service) => (
             <Card key={service.slug} className="border shadow-sm hover:shadow-md transition-shadow">

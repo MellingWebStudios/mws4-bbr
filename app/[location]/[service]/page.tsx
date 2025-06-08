@@ -131,6 +131,38 @@ export default async function LocationServicePage({ params }: Props) {
   const location = getLocationBySlug(locationSlug);
   const service = getServiceBySlug(serviceSlug);
 
+  // DEBUG: Warn if service slug matches location slug (causes duplicate URL)
+  if (location && service && location.slug === service.slug) {
+    if (typeof window !== 'undefined') {
+      // Client-side warning
+      // eslint-disable-next-line no-console
+      console.warn(
+        `[BBR] WARNING: Service slug matches location slug: ${location.slug}. This will generate a duplicate URL like /${location.slug}/${service.slug}`
+      );
+    } else {
+      // Server-side warning
+      // eslint-disable-next-line no-console
+      console.warn(
+        `[BBR] WARNING: Service slug matches location slug: ${location.slug}. This will generate a duplicate URL like /${location.slug}/${service.slug}`
+      );
+    }
+  }
+
+  const validServiceSlugs = services.map(s => s.slug);
+  if (service && !validServiceSlugs.includes(service.slug)) {
+    if (typeof window !== 'undefined') {
+      // eslint-disable-next-line no-console
+      console.warn(
+        `[BBR] WARNING: Invalid service slug: ${service.slug}. This is not a valid service. URL: /${locationSlug}/${serviceSlug}`
+      );
+    } else {
+      // eslint-disable-next-line no-console
+      console.warn(
+        `[BBR] WARNING: Invalid service slug: ${service.slug}. This is not a valid service. URL: /${locationSlug}/${serviceSlug}`
+      );
+    }
+  }
+
   if (!location || !service) notFound();
 
   // Fallback reviews logic
@@ -380,7 +412,7 @@ export default async function LocationServicePage({ params }: Props) {
               {/* Related Services in Same Location */}
               <RelatedServices 
                 currentService={service.slug}
-                currentLocation={location.name}
+                currentLocation={location.slug}
                 showDescription={true}
                 limit={3}
                 className="my-8"

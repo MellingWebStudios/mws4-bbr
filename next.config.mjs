@@ -142,13 +142,33 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/selly-park/selly-park/',
+        destination: '/selly-park/',
+        permanent: true,
+      },
+      {
+        source: '/selly-park/selly-park',
+        destination: '/selly-park',
+        permanent: true,
+      },
+      {
         source: '/handsworth/handsworth',
         destination: '/handsworth',
         permanent: true,
       },
-            {
-        source: '/birmingham/birmingham',
-        destination: '/birmingham',
+      {
+        source: '/acocks-green/acocks-green/:path*',
+        destination: '/acocks-green/:path*',
+        permanent: true,
+      },
+      {
+        source: '/acocks-green/acocks-green/',
+        destination: '/acocks-green/',
+        permanent: true,
+      },
+      {
+        source: '/acocks-green/acocks-green',
+        destination: '/acocks-green',
         permanent: true,
       },
       {
@@ -156,7 +176,8 @@ const nextConfig = {
         destination: '/birmingham/:path*',
         permanent: true,
       },
-      // Service duplicate patterns with direct resolution
+      
+      // Service duplicates
       {
         source: '/services/boiler-repairs/boiler-repairs',
         destination: '/services/boiler-repairs',

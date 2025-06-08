@@ -102,6 +102,7 @@ export function ServiceCrossLinks({
 }: ServiceCrossLinksProps) {
   const service = services.find(s => s.slug === currentService)
   const otherServices = services.filter(s => s.slug !== currentService)
+    .filter(s => !currentLocation || s.slug !== currentLocation) // Prevent /location/location
   
   if (!service || otherServices.length === 0) return null
 
@@ -210,10 +211,12 @@ export function SmartContentLinks({
 
   // Add service-related links
   if (currentService) {
+    const currentLocationData = currentLocation ? locations.find(l => l.slug === currentLocation) : null
     const relatedServices = services.filter(s => s.slug !== currentService)
+      .filter(s => !currentLocation || s.slug !== currentLocation) // Prevent /location/location
     relatedServices.forEach(service => {
       suggestedLinks.push({
-        text: `${service.name}${currentLocation ? ` in ${currentLocation}` : ''}`,
+        text: `${service.name}${currentLocationData ? ` in ${currentLocationData.name}` : ''}`,
         href: currentLocation ? `/${currentLocation}/${service.slug}` : `/services/${service.slug}`,
         type: 'service',
         description: service.description

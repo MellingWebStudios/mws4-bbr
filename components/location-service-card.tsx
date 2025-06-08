@@ -31,11 +31,13 @@ export default function LocationServiceCard({ location, service }: LocationServi
         </p>
       </CardContent>
       <CardFooter className="flex justify-between p-6 pt-0">
-        <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
-          <Link href={`/${location.slug}/${service.slug}`} className="flex items-center gap-2">
-            View Details <ArrowRight size={16} />
-          </Link>
-        </Button>
+        {location.slug !== service.slug && (
+          <Button asChild variant="outline" className="border-secondary text-secondary hover:bg-secondary/10">
+            <Link href={`/${location.slug}/${service.slug}`} className="flex items-center gap-2">
+              View Details <ArrowRight size={16} />
+            </Link>
+          </Button>
+        )}
         <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
           <TrackedPhoneLink
             phone="08003202345"

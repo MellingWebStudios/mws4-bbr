@@ -3,6 +3,7 @@ import businessInfo from "@/lib/business-info"
 // Extended schema markup for location-specific pages
 interface LocationSchemaProps {
   location?: {
+    slug: string;
     name: string;
     slug: string;
     postcode: string;
