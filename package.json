@@ -15,7 +15,11 @@
     "test:links:simple": "linkinator http://localhost:3000 --config linkinator.json --json > all-links.json",
     "audit:links": "node scripts/simple-audit.js",
     "test:redirects": "node scripts/test-redirects.js",
-    "fix:urls": "npm run audit:links && npm run test:redirects"
+    "test:redirect-chains": "playwright test tests/e2e/redirect-chains.spec.ts",
+    "test:redirect-chains:ci": "playwright test tests/e2e/redirect-chains.spec.ts --reporter=line",
+    "export:redirect-chains": "node scripts/export-redirect-chains.js",
+    "fix:urls": "npm run audit:links && npm run test:redirects",
+    "validate:redirects": "npm run test:redirect-chains && echo '✅ All redirect chains validated'"
   },
   "dependencies": {
     "@ai-sdk/openai": "^1.3.22",
@@ -92,6 +96,7 @@
   },
   "devDependencies": {
     "@next/bundle-analyzer": "15.4.0-canary.51",
+    "@playwright/test": "^1.52.0",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",

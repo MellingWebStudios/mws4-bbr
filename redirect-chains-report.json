@@ -1,0 +1,548 @@
+{
+  "timestamp": "2025-06-08T06:14:58.009Z",
+  "analysis": {
+    "totalRedirects": 40,
+    "directRedirects": 40,
+    "twoHopChains": 0,
+    "threeHopChains": 0,
+    "longerChains": 0,
+    "problematicChains": [],
+    "longestChain": {
+      "originalSource": "/boiler-repairs-birmingham",
+      "finalDestination": "/birmingham/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/boiler-repairs-birmingham",
+        "/birmingham/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    "efficiency": "100.0",
+    "needsOptimization": 0
+  },
+  "chains": [
+    {
+      "originalSource": "/boiler-repairs-birmingham",
+      "finalDestination": "/birmingham/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/boiler-repairs-birmingham",
+        "/birmingham/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/boiler-servicing-birmingham",
+      "finalDestination": "/birmingham/boiler-servicing",
+      "hopCount": 1,
+      "fullChain": [
+        "/boiler-servicing-birmingham",
+        "/birmingham/boiler-servicing"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/gas-safety-birmingham",
+      "finalDestination": "/birmingham/gas-safety",
+      "hopCount": 1,
+      "fullChain": [
+        "/gas-safety-birmingham",
+        "/birmingham/gas-safety"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/selly-park-boiler-repairs",
+      "finalDestination": "/selly-park/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/selly-park-boiler-repairs",
+        "/selly-park/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/hall-green-boiler-repairs",
+      "finalDestination": "/hall-green/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/hall-green-boiler-repairs",
+        "/hall-green/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/acocks-green-boiler-repairs",
+      "finalDestination": "/acocks-green/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/acocks-green-boiler-repairs",
+        "/acocks-green/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/small-heath-boiler-repairs",
+      "finalDestination": "/small-heath/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/small-heath-boiler-repairs",
+        "/small-heath/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/erdington-boiler-repairs",
+      "finalDestination": "/erdington/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/erdington-boiler-repairs",
+        "/erdington/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/handsworth-boiler-repairs",
+      "finalDestination": "/handsworth/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/handsworth-boiler-repairs",
+        "/handsworth/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/emergency-boiler-repair",
+      "finalDestination": "/contact",
+      "hopCount": 1,
+      "fullChain": [
+        "/emergency-boiler-repair",
+        "/contact"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/24-hour-boiler-repair",
+      "finalDestination": "/contact",
+      "hopCount": 1,
+      "fullChain": [
+        "/24-hour-boiler-repair",
+        "/contact"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/gas-engineer",
+      "finalDestination": "/services/gas-safety",
+      "hopCount": 1,
+      "fullChain": [
+        "/gas-engineer",
+        "/services/gas-safety"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/heating-engineer",
+      "finalDestination": "/services/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/heating-engineer",
+        "/services/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/selly-park/selly-park",
+      "finalDestination": "/selly-park",
+      "hopCount": 1,
+      "fullChain": [
+        "/selly-park/selly-park",
+        "/selly-park"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/hall-green/hall-green",
+      "finalDestination": "/hall-green",
+      "hopCount": 1,
+      "fullChain": [
+        "/hall-green/hall-green",
+        "/hall-green"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/acocks-green/acocks-green",
+      "finalDestination": "/acocks-green",
+      "hopCount": 1,
+      "fullChain": [
+        "/acocks-green/acocks-green",
+        "/acocks-green"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/birmingham/birmingham",
+      "finalDestination": "/birmingham",
+      "hopCount": 1,
+      "fullChain": [
+        "/birmingham/birmingham",
+        "/birmingham"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/small-heath/small-heath",
+      "finalDestination": "/small-heath",
+      "hopCount": 1,
+      "fullChain": [
+        "/small-heath/small-heath",
+        "/small-heath"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/erdington/erdington",
+      "finalDestination": "/erdington",
+      "hopCount": 1,
+      "fullChain": [
+        "/erdington/erdington",
+        "/erdington"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/handsworth/handsworth",
+      "finalDestination": "/handsworth",
+      "hopCount": 1,
+      "fullChain": [
+        "/handsworth/handsworth",
+        "/handsworth"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/services/boiler-repairs/boiler-repairs",
+      "finalDestination": "/services/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/services/boiler-repairs/boiler-repairs",
+        "/services/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/services/boiler-servicing/boiler-servicing",
+      "finalDestination": "/services/boiler-servicing",
+      "hopCount": 1,
+      "fullChain": [
+        "/services/boiler-servicing/boiler-servicing",
+        "/services/boiler-servicing"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/services/gas-safety/gas-safety",
+      "finalDestination": "/services/gas-safety",
+      "hopCount": 1,
+      "fullChain": [
+        "/services/gas-safety/gas-safety",
+        "/services/gas-safety"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/selly-park/selly-park/:path*",
+      "finalDestination": "/selly-park/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/selly-park/selly-park/:path*",
+        "/selly-park/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/hall-green/hall-green/:path*",
+      "finalDestination": "/hall-green/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/hall-green/hall-green/:path*",
+        "/hall-green/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/acocks-green/acocks-green/:path*",
+      "finalDestination": "/acocks-green/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/acocks-green/acocks-green/:path*",
+        "/acocks-green/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/birmingham/birmingham/:path*",
+      "finalDestination": "/birmingham/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/birmingham/birmingham/:path*",
+        "/birmingham/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/Selly-Park",
+      "finalDestination": "/selly-park",
+      "hopCount": 1,
+      "fullChain": [
+        "/Selly-Park",
+        "/selly-park"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/SELLY-PARK",
+      "finalDestination": "/selly-park",
+      "hopCount": 1,
+      "fullChain": [
+        "/SELLY-PARK",
+        "/selly-park"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/Hall-Green",
+      "finalDestination": "/hall-green",
+      "hopCount": 1,
+      "fullChain": [
+        "/Hall-Green",
+        "/hall-green"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/HALL-GREEN",
+      "finalDestination": "/hall-green",
+      "hopCount": 1,
+      "fullChain": [
+        "/HALL-GREEN",
+        "/hall-green"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/Birmingham",
+      "finalDestination": "/birmingham",
+      "hopCount": 1,
+      "fullChain": [
+        "/Birmingham",
+        "/birmingham"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/BIRMINGHAM",
+      "finalDestination": "/birmingham",
+      "hopCount": 1,
+      "fullChain": [
+        "/BIRMINGHAM",
+        "/birmingham"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/Boiler-Repairs",
+      "finalDestination": "/services/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/Boiler-Repairs",
+        "/services/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/BOILER-REPAIRS",
+      "finalDestination": "/services/boiler-repairs",
+      "hopCount": 1,
+      "fullChain": [
+        "/BOILER-REPAIRS",
+        "/services/boiler-repairs"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/wp-content/:path*",
+      "finalDestination": "/",
+      "hopCount": 1,
+      "fullChain": [
+        "/wp-content/:path*",
+        "/"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/wp-admin/:path*",
+      "finalDestination": "/",
+      "hopCount": 1,
+      "fullChain": [
+        "/wp-admin/:path*",
+        "/"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/admin/:path*",
+      "finalDestination": "/",
+      "hopCount": 1,
+      "fullChain": [
+        "/admin/:path*",
+        "/"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/pages/:path*",
+      "finalDestination": "/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/pages/:path*",
+        "/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    },
+    {
+      "originalSource": "/site/:path*",
+      "finalDestination": "/:path*",
+      "hopCount": 1,
+      "fullChain": [
+        "/site/:path*",
+        "/:path*"
+      ],
+      "permanent": true,
+      "chainLength": 2,
+      "hasChain": false,
+      "isProblematic": false
+    }
+  ]
+}

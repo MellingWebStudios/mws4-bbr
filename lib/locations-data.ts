@@ -1698,6 +1698,47 @@ export const locations: Location[] = [
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2441.1377853167785!2d-2.0039956840702125!3d52.34416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWalkwood%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112267!5m2!1sen!2suk",
     "mapUrl": "https://goo.gl/maps/KwqVRQCgiTq6WHiBA"
+  },
+  {
+    "slug": "kings-heath",
+    "name": "Kings Heath",
+    "postcode": "B14",
+    "blurb": "Boiler repair & servicing in Kings Heath and surrounding areas.",
+    "landmarks": [
+      "Kings Heath High Street",
+      "Kings Heath Park",
+      "Moseley Cricket Club"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.457263759684!2d-1.8922111840696792!3d52.4189534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/KingsHeathBirmingham"
+  },
+  {
+    "slug": "west-bromwich",
+    "name": "West Bromwich",
+    "postcode": "B70",
+    "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
+    "landmarks": [
+      "The Hawthorns Stadium",
+      "West Bromwich Central",
+      "Sandwell Valley Country Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2432.893263759684!2d-1.9922111840696792!3d52.5189534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094c49c72e1e1%3A0x6e6b8a3c60b388a!2sWest%20Bromwich!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/WestBromwich"
+  },
+  {
+    "slug": "west-midlands",
+    "name": "West Midlands",
+    "postcode": "B1",
+    "blurb": "Boiler repair & servicing across the West Midlands region and surrounding areas.",
+    "landmarks": [
+      "Birmingham City Centre",
+      "Coventry",
+      "Wolverhampton",
+      "Dudley",
+      "Walsall"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-1.8937806840695702!3d52.4851302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWest%20Midlands!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/WestMidlands"
   }
 ]
 
