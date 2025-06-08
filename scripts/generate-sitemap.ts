@@ -81,15 +81,17 @@ async function generateSitemap() {
   /* Location-based service pages */
   const locationEntries = locations
     .flatMap((loc) =>
-      services.map(
-        (svc) => `
+      services
+        .filter((svc) => svc.slug !== loc.slug) // Prevent /location/location
+        .map(
+          (svc) => `
   <url>
     <loc>${WEBSITE_URL}/${loc.slug}/${svc.slug}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`
-      )
+        )
     )
     .join("");
 
@@ -101,34 +103,47 @@ async function generateSitemap() {
     const tags = getAllTags();
 
     // Individual blog posts
-    const blogPostEntries = blogPosts.map((post: any) => `
+    const blogPostEntries = blogPosts
+      .map(
+        (post: any) => `
   <url>
     <loc>${WEBSITE_URL}/blog/${post.slug}</loc>
     <lastmod>${post.date}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-  </url>`).join("");
+  </url>`
+      )
+      .join("");
 
     // Category pages
-    const categoryEntries = categories.map(category => `
+    const categoryEntries = categories
+      .map(
+        (category) => `
   <url>
     <loc>${WEBSITE_URL}/blog/category/${category}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>`).join("");
+  </url>`
+      )
+      .join("");
 
     // Tag pages - using slugified tags to avoid URL encoding
-    const tagEntries = tags.map(tag => {
-      const slugifiedTag = tag.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]/g, '');
-      return `
+    const tagEntries = tags
+      .map((tag) => {
+        const slugifiedTag = tag
+          .toLowerCase()
+          .replace(/\s+/g, "-")
+          .replace(/[^\w-]/g, "");
+        return `
   <url>
     <loc>${WEBSITE_URL}/blog/tag/${slugifiedTag}</loc>
     <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>`;
-    }).join("");
+      })
+      .join("");
 
     // Main blog page
     const mainBlogEntry = `
@@ -139,10 +154,14 @@ async function generateSitemap() {
     <priority>0.8</priority>
   </url>`;
 
-    blogEntries = mainBlogEntry + blogPostEntries + categoryEntries + tagEntries;
+    blogEntries =
+      mainBlogEntry + blogPostEntries + categoryEntries + tagEntries;
   } catch (error) {
     if (error instanceof Error) {
-      console.warn("⚠ Warning: Could not generate blog sitemap entries:", error.message);
+      console.warn(
+        "⚠ Warning: Could not generate blog sitemap entries:",
+        error.message
+      );
     } else {
       console.warn("⚠ Warning: Could not generate blog sitemap entries:", error);
     }
@@ -222,7 +241,13 @@ Disallow: /
 
   fs.mkdirSync("public", { recursive: true });
   fs.writeFileSync("public/robots.txt", robots);
-  console.log("   ✔ robots.txt (" + (isProd ? "prod - crawling allowed" : "staging - crawling blocked") + ")");
+  console.log(
+    "   ✔ robots.txt (" +
+      (isProd
+        ? "prod - crawling allowed"
+        : "staging - crawling blocked") +
+      ")"
+  );
 }
 
 /* ───────────────── MAIN ───────────────── */
