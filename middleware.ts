@@ -2,26 +2,22 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { slugify } from '@/lib/slug';
 import { validateAndNormalizeUrl, hasDuplicateSegments, removeDuplicateSegments } from '@/lib/url-validator';
-import { locations } from '@/lib/locations-data';
 
 // Location name to slug mappings for redirects
 const locationRedirects: Record<string, string> = {
   // Handle space-separated location names to proper slugs
-<<<<<<< HEAD
-=======
+  // Only keeping entries that point to valid location slugs
+  'Old Oscott': 'old-oscott',
+  'Yardley Wood': 'yardley-wood',
+  // Adding missing redirects for multi-word locations from location data
   'Acocks Green': 'acocks-green',
   'Aston Cross': 'aston-cross',
   'Aston Fields': 'aston-fields',
   'Astwood Bank': 'astwood-bank',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Austin Village': 'austin-village',
   'Bartley Green': 'bartley-green',
   'Beech Lanes': 'beech-lanes',
   'Birches Green': 'birches-green',
-<<<<<<< HEAD
-=======
-  'Bishop Hill': 'bishop-hill',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Bordesley Green': 'bordesley-green',
   'Brandwood End': 'brandwood-end',
   'Browns Green': 'browns-green',
@@ -29,23 +25,10 @@ const locationRedirects: Record<string, string> = {
   'Camp Hill': 'camp-hill',
   'Castle Vale': 'castle-vale',
   'Chad Valley': 'chad-valley',
-<<<<<<< HEAD
   'Cofton Common': 'cofton-common',
   'Falcon Lodge': 'falcon-lodge',
   'Four Oaks': 'four-oaks',
   'Fox Hollies': 'fox-hollies',
-=======
-  'Church Hill': 'church-hill',
-  'Cofton Common': 'cofton-common',
-  'Cofton Hackett': 'cofton-hackett',
-  'Elan Valley': 'elan-valley',
-  'Falcon Lodge': 'falcon-lodge',
-  'Fort Dunlop': 'fort-dunlop',
-  'Four Oaks': 'four-oaks',
-  'Fox Hollies': 'fox-hollies',
-  'Frankley Beeches': 'frankley-beeches',
-  'Garden City': 'garden-city',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Garretts Green': 'garretts-green',
   'Gib Heath': 'gib-heath',
   'Glebe Farm': 'glebe-farm',
@@ -58,45 +41,20 @@ const locationRedirects: Record<string, string> = {
   'Hall Green': 'hall-green',
   'Handsworth Wood': 'handsworth-wood',
   'Harts Green': 'harts-green',
-<<<<<<< HEAD
-=======
-  'Hawkes Green': 'hawkes-green',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Hay Mills': 'hay-mills',
   'High Heath': 'high-heath',
   'Highters Heath': 'highters-heath',
   'Hill Hook': 'hill-hook',
   'Hill Wood': 'hill-wood',
   'Hodge Hill': 'hodge-hill',
-<<<<<<< HEAD
   'Kings Heath': 'kings-heath',
-=======
-  'Holly Oak': 'holly-oak',
-  'Kings Heath': 'kings-heath',
-  'Little Aston': 'little-aston',
-  'Mere Green': 'mere-green',
-  'Mount Nod': 'mount-nod',
-  'New Oscott': 'new-oscott',
-  'Oak Ridge': 'oak-ridge',
-  'Old Oscott': 'old-oscott',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Over Green': 'over-green',
   'Perry Barr': 'perry-barr',
   'Perry Beeches': 'perry-beeches',
   'Perry Common': 'perry-common',
-<<<<<<< HEAD
   'Pype Hayes': 'pype-hayes',
   'Reddicap Heath': 'reddicap-heath',
   'Rotton Park': 'rotton-park',
-=======
-  'Pheasey Estate': 'pheasey-estate',
-  'Pype Hayes': 'pype-hayes',
-  'Reddicap Heath': 'reddicap-heath',
-  'Rednal Cross': 'rednal-cross',
-  'Rose Hill': 'rose-hill',
-  'Rotton Park': 'rotton-park',
-  'Rough Hay': 'rough-hay',
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   'Rowney Green': 'rowney-green',
   'Selly Oak': 'selly-oak',
   'Selly Park': 'selly-park',
@@ -108,7 +66,6 @@ const locationRedirects: Record<string, string> = {
   'Small Heath': 'small-heath',
   'South Woodgate': 'south-woodgate',
   'South Yardley': 'south-yardley',
-<<<<<<< HEAD
   'Spark Hill': 'sparkhill',
   'Spring Vale': 'spring-vale',
   'Tower Hill': 'tower-hill',
@@ -122,29 +79,6 @@ const locationRedirects: Record<string, string> = {
   'Turves Green': 'turves-green',
   'West Bromwich': 'west-bromwich',
   'West Midlands': 'west-midlands',
-=======
-  'Spark Hill': 'spark-hill',
-  'Spring Hill': 'spring-hill',
-  'Spring Vale': 'spring-vale',
-  'Stockland Green': 'stockland-green',
-  'Stony Lane': 'stony-lane',
-  'Sutton Coldfield': 'sutton-coldfield',
-  'Ten Acres': 'ten-acres',
-  'The Leys': 'the-leys',
-  'The Parade': 'the-parade',
-  'Thimble End': 'thimble-end',
-  'Tile Cross': 'tile-cross',
-  'Tower Hill': 'tower-hill',
-  'Tudor Hill': 'tudor-hill',
-  'Turves Green': 'turves-green',
-  'Ward End': 'ward-end',
-  'Water Orton': 'water-orton',
-  'West Bromwich': 'west-bromwich',
-  'West Heath': 'west-heath',
-  'West Midlands': 'west-midlands',
-  'Woodcock Hill': 'woodcock-hill',
-  'Yardley Wood': 'yardley-wood'
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
 };
 
 // Get the base URL for redirects, supporting multiple environments
@@ -173,26 +107,12 @@ export function middleware(req: NextRequest) {
   //   return NextResponse.next();
   // }
 
-  // Early check for duplicate segments (e.g., /selly-park/selly-park/ or /Redditch/redditch)
+  // Early check for duplicate segments (e.g., /selly-park/selly-park/)
   if (hasDuplicateSegments(pathname)) {
     const cleanedPath = removeDuplicateSegments(pathname);
     const baseUrl = getBaseUrl(host);
     const redirectUrl = `${baseUrl}${cleanedPath}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301);
-  }
-
-  // Handle case-insensitive location duplicates specifically (e.g., /Redditch/redditch -> /redditch)
-  const caseInsensitiveDuplicatePattern = /^\/([^\/]+)\/(.+)$/;
-  const caseInsensitiveDuplicateMatch = pathname.match(caseInsensitiveDuplicatePattern);
-  if (caseInsensitiveDuplicateMatch) {
-    const [, firstSegment, secondSegment] = caseInsensitiveDuplicateMatch;
-    
-    // Check if first and second segments are the same when lowercased
-    if (firstSegment.toLowerCase() === secondSegment.toLowerCase()) {
-      const baseUrl = getBaseUrl(host);
-      const redirectUrl = `${baseUrl}/${secondSegment.toLowerCase()}${req.nextUrl.search}`;
-      return NextResponse.redirect(redirectUrl, 301);
-    }
   }
 
   // Check for URLs with spaces or invalid characters that need normalization
@@ -418,15 +338,43 @@ export function middleware(req: NextRequest) {
   const serviceLocationMatch = pathname.match(serviceLocationPattern);
   if (serviceLocationMatch) {
     const [, service, location] = serviceLocationMatch;
-    
+
     // Exclude legitimate page URLs that contain hyphens
     const excludedPages = [
       'privacy-policy',
       'sitemap-viewer'
     ];
-    
-    // Don't redirect if this is actually a legitimate page URL
-    if (!excludedPages.some(page => pathname === `/${page}`)) {
+
+    // Exclude valid location slugs - check if the full path matches a valid location
+    const validLocationSlugs = [
+      'acocks-green', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
+      'austin-village', 'bartley-green', 'beech-lanes', 'billesley', 'birches-green',
+      'birchfield', 'birmingham', 'boldmere', 'bordesley', 'bordesley-green', 'bournbrook',
+      'bournville', 'brandwood-end', 'bromford', 'browns-green', 'buckland-end',
+      'california', 'camp-hill', 'castle-vale', 'catshill', 'chad-valley', 'churchfield',
+      'cofton-common', 'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston',
+      'erdington', 'falcon-lodge', 'finstall', 'four-oaks', 'fox-hollies', 'frankley',
+      'garretts-green', 'gib-heath', 'gilbertstone', 'glebe-farm', 'gospel-oak',
+      'gosta-green', 'gravelly-hill', 'great-barr', 'greet', 'grimstock-hill', 'gun-quarter',
+      'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
+      'hawkesley', 'hay-mills', 'high-heath', 'highgate', 'highters-heath', 'hill-hook',
+      'hill-wood', 'hodge-hill', 'hopwood', 'kings-heath', 'lickey', 'oakenshaw', 'old-oscott',
+      'over-green', 'parkhall', 'peddimore', 'pelham', 'perry-barr', 'perry-beeches',
+      'perry-common', 'pheasey', 'pype-hayes', 'queslett', 'quinton', 'reddicap-heath',
+      'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
+      'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
+      'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
+      'solihull', 'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
+      'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
+      'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
+      'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
+      'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-bromwich', 'west-midlands', 'wirehill', 'wolverhampton', 'wythall', 'yardley',
+      'yardley-wood'
+    ];
+
+    // Don't redirect if this is actually a legitimate page URL or valid location slug
+    const pathWithoutSlash = pathname.slice(1); // Remove leading slash
+    if (!excludedPages.some(page => pathname === `/${page}`) && !validLocationSlugs.includes(pathWithoutSlash)) {
       // Common service patterns that should redirect
       const serviceMap: Record<string, string> = {
         'boiler-repair': 'boiler-repairs',
@@ -434,7 +382,7 @@ export function middleware(req: NextRequest) {
         'gas-safety': 'gas-safety',
         'ferroli': 'ferroli-specialists'
       };
-      
+
       const mappedService = serviceMap[service] || service;
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${location}/${mappedService}${req.nextUrl.search}`;
@@ -488,29 +436,15 @@ export function middleware(req: NextRequest) {
   // Handle case-insensitive single-word location redirects (e.g., /Smithfield -> /smithfield)
   // Only for locations that are actually single words without hyphens
   const singleWordLocations = [
-    'acocks-green', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
-    'austin-village', 'bartley-green', 'beech-lanes', 'billesley', 'birches-green',
-    'birchfield', 'birmingham', 'boldmere', 'bordesley', 'bordesley-green', 'bournbrook',
-    'bournville', 'brandwood-end', 'bromford', 'browns-green', 'buckland-end',
-    'california', 'camp-hill', 'castle-vale', 'catshill', 'chad-valley', 'churchfield',
-    'cofton-common', 'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston',
-    'erdington', 'falcon-lodge', 'finstall', 'four-oaks', 'fox-hollies', 'frankley',
-    'garretts-green', 'gib-heath', 'gilbertstone', 'glebe-farm', 'gospel-oak',
-    'gosta-green', 'gravelly-hill', 'great-barr', 'greet', 'grimstock-hill', 'gun-quarter',
-    'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
-    'hawkesley', 'hay-mills', 'high-heath', 'highgate', 'highters-heath', 'hill-hook',
-    'hill-wood', 'hodge-hill', 'hopwood', 'lickey', 'oakenshaw', 'old-oscott',
-    'over-green', 'parkhall', 'peddimore', 'pelham', 'perry-barr', 'perry-beeches',
-    'perry-common', 'pheasey', 'pype-hayes', 'queslett', 'quinton', 'reddicap-heath',
-    'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
-    'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
-    'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
-    'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
-    'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
-    'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
-    'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
-    'tyburn', 'tyseley', 'walkwood', 'webheath', 'wirehill', 'wythall', 'yardley',
-    'yardley-wood'
+    'ashted', 'aston', 'billesley', 'birchfield', 'birmingham', 'boldmere', 'bordesley', 
+    'bournbrook', 'bournville', 'bromford', 'california', 'catshill', 'churchfield',
+    'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston', 'erdington', 'finstall', 
+    'frankley', 'greet', 'hamstead', 'handsworth', 'harborne', 'hawkesley', 'highgate', 
+    'hopwood', 'lickey', 'oakenshaw', 'parkhall', 'peddimore', 'pelham', 'pheasey', 
+    'queslett', 'quinton', 'rednal', 'ridgacre', 'roughley', 'rubery', 'saltley',
+    'sarehole', 'sheldon', 'smithfield', 'soho', 'southside', 'sparkbrook', 'sparkhill',
+    'springfield', 'stechford', 'stirchley', 'stockfield', 'streetly', 'tardebigge', 
+    'theatreland', 'tyburn', 'tyseley', 'walkwood', 'webheath', 'wirehill', 'wythall', 'yardley'
   ];
 
   const caseInsensitivePattern = /^\/([^\/]+)\/?$/;
@@ -622,32 +556,16 @@ export function middleware(req: NextRequest) {
   // Catch-all redirect for unmatched slugs - only redirect if it's a potential location slug
   const pathSegment = pathname.slice(1); // Remove leading slash
   const regex = /^[a-z0-9\-]+$/; // Only lowercase for consistency
-<<<<<<< HEAD
 
   // Only redirect if it looks like a location slug and isn't already a known page
   if (regex.test(pathSegment) && pathSegment.length > 2) {
-    // Check if this might be a valid location by seeing if it's in our single word locations
-    if (singleWordLocations.includes(pathSegment.toLowerCase())) {
-=======
-  
-  // Define legitimate pages that should not be redirected
-  const legitimatePages = [
-    'services', 'blog', 'contact', 'about', 'locations', 'prices', 
-    'privacy-policy', 'sitemap-viewer', 'guides', 'api'
-  ];
-  
-  // Only redirect if it looks like a location slug and isn't already a known page
-  if (regex.test(pathSegment) && pathSegment.length > 2) {
-    // Don't redirect legitimate pages
-    if (legitimatePages.includes(pathSegment)) {
+    // Don't redirect known page routes
+    if (knownPageRoutes.includes(pathSegment.toLowerCase())) {
       return NextResponse.next();
     }
-    
-    // Check if this is a valid location by checking against the actual locations data
-    const isValidLocation = locations.some(location => location.slug.toLowerCase() === pathSegment.toLowerCase());
-    
-    if (isValidLocation) {
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
+
+    // Check if this is a valid location slug
+    if (validLocationSlugs.includes(pathSegment.toLowerCase())) {
       // This is a valid location, let it pass through to Next.js routing
       return NextResponse.next();
     }
