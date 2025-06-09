@@ -1720,22 +1720,14 @@ export const locations: Location[] = [
     "landmarks": [
       "Kings Heath High Street",
       "Kings Heath Park",
-<<<<<<< HEAD
       "Moseley Cricket Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.457263759684!2d-1.8922111840696792!3d52.4189534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
     "mapUrl": "https://goo.gl/maps/KingsHeathBirmingham"
-=======
-      "The Triangle"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2433.8541424123!2d-1.8845532840696942!3d52.43972877980231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b9e9e9e9e9e9%3A0x4e9e9e9e9e9e9e9e!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/KingsHeathMap"
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   },
   {
     "slug": "west-bromwich",
     "name": "West Bromwich",
-<<<<<<< HEAD
     "postcode": "B70",
     "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
     "landmarks": [
@@ -1773,45 +1765,6 @@ export const locations: Location[] = [
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-2.1289806840695702!3d52.5861302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094fe7e5b8d43%3A0x6571b0e0d4a9d4a9!2sWolverhampton!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
     "mapUrl": "https://goo.gl/maps/Wolverhampton"
-=======
-    "postcode": "B70-B71",
-    "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
-    "landmarks": [
-      "West Bromwich Town Centre",
-      "The Hawthorns Stadium",
-      "Sandwell Valley Country Park"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2434.7532164698055!2d-1.9924567684070752!3d52.51843987979827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd5f7ddeae7%3A0x8e0d2e4df9b84d13!2sWest%20Bromwich!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestBromwichMap"
-  },
-  {
-    "slug": "west-midlands",
-    "name": "West Midlands",
-    "postcode": "B1-B99, CV1-CV99, DY1-DY99, WS1-WS99, WV1-WV99",
-    "blurb": "Boiler repair & servicing throughout the West Midlands region and surrounding areas.",
-    "landmarks": [
-      "Birmingham City Centre",
-      "Coventry Cathedral",
-      "Wolverhampton Grand Theatre",
-      "Dudley Castle",
-      "Walsall Arboretum"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2483.5435129726417!2d-2.0!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b1d2631beb95%3A0x8a1b7e6c7a8e9f10!2sWest%20Midlands%2C%20UK!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestMidlandsMap"
-  },
-  {
-    "slug": "redditch",
-    "name": "Redditch",
-    "postcode": "B97-B98",
-    "blurb": "Boiler repair & servicing in Redditch and surrounding areas.",
-    "landmarks": [
-      "Redditch Town Centre",
-      "Arrow Valley Country Park",
-      "Kingfisher Shopping Centre"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2441.2377853167785!2d-1.9439956840702125!3d52.30616597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99424%3A0x7eaf7b3eb5b60c0f!2sRedditch!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/RedditchMap"
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
   }
 ]
 
@@ -1912,7 +1865,7 @@ export const services = [
       },
       {
         title: "Ferroli Repair (same day)",
-        price: "£99",
+        price: "£95",
         description: "Same-day service for Ferroli boiler repairs",
       },
       {
