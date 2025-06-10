@@ -38,10 +38,7 @@ const nextConfig = {
   
   async redirects() {
     return [
-      // OPTIMIZED REDIRECTS - Single hop to final destination
-      // Each redirect goes directly to the final canonical URL to prevent chains
-      
-      // High-traffic legacy URL patterns with direct 301 redirects
+      // High-traffic legacy URL patterns with 301 redirects
       {
         source: '/boiler-repairs-birmingham',
         destination: '/birmingham/boiler-repairs',
@@ -58,7 +55,7 @@ const nextConfig = {
         permanent: true,
       },
       
-      // Location-service combinations - Direct to final pages
+      // Location-service combinations that may have been indexed
       {
         source: '/selly-park-boiler-repairs',
         destination: '/selly-park/boiler-repairs',
@@ -90,7 +87,7 @@ const nextConfig = {
         permanent: true,
       },
       
-      // Emergency service patterns - Direct to contact
+      // Common service patterns
       {
         source: '/emergency-boiler-repair',
         destination: '/contact',
@@ -112,127 +109,19 @@ const nextConfig = {
         permanent: true,
       },
       
-      // ANTI-CHAIN REDIRECTS - Prevent middleware from creating chains
-      // These handle duplicate segments directly to avoid middleware processing
-      
-      // Exact duplicate patterns - single hop resolution
+      // Legacy page structures
       {
-        source: '/selly-park/selly-park',
-        destination: '/selly-park',
+        source: '/pages/:path*',
+        destination: '/:path*',
         permanent: true,
       },
       {
-        source: '/hall-green/hall-green',
-        destination: '/hall-green',
-        permanent: true,
-      },
-      {
-        source: '/acocks-green/acocks-green',
-        destination: '/acocks-green',
-        permanent: true,
-      },
-      {
-        source: '/small-heath/small-heath',
-        destination: '/small-heath',
-        permanent: true,
-      },
-      {
-        source: '/erdington/erdington',
-        destination: '/erdington',
-        permanent: true,
-      },
-      {
-        source: '/handsworth/handsworth',
-        destination: '/handsworth',
-        permanent: true,
-      },
-            {
-        source: '/birmingham/birmingham',
-        destination: '/birmingham',
-        permanent: true,
-      },
-      {
-        source: '/birmingham/birmingham/:path*',
-        destination: '/birmingham/:path*',
-        permanent: true,
-      },
-      // Service duplicate patterns with direct resolution
-      {
-        source: '/services/boiler-repairs/boiler-repairs',
-        destination: '/services/boiler-repairs',
-        permanent: true,
-      },
-      {
-        source: '/services/boiler-servicing/boiler-servicing',
-        destination: '/services/boiler-servicing',
-        permanent: true,
-      },
-      {
-        source: '/services/gas-safety/gas-safety',
-        destination: '/services/gas-safety',
+        source: '/site/:path*',
+        destination: '/:path*',
         permanent: true,
       },
       
-      // Complex duplicate patterns (wildcards handled carefully)
-      {
-        source: '/selly-park/selly-park/:path*',
-        destination: '/selly-park/:path*',
-        permanent: true,
-      },
-      {
-        source: '/hall-green/hall-green/:path*',
-        destination: '/hall-green/:path*',
-        permanent: true,
-      },
-      {
-        source: '/acocks-green/acocks-green/:path*',
-        destination: '/acocks-green/:path*',
-        permanent: true,
-      },
-      
-      // Case variation redirects - Direct to lowercase canonical
-      {
-        source: '/Selly-Park',
-        destination: '/selly-park',
-        permanent: true,
-      },
-      {
-        source: '/SELLY-PARK',
-        destination: '/selly-park',
-        permanent: true,
-      },
-      {
-        source: '/Hall-Green',
-        destination: '/hall-green',
-        permanent: true,
-      },
-      {
-        source: '/HALL-GREEN',
-        destination: '/hall-green',
-        permanent: true,
-      },
-      {
-        source: '/Birmingham',
-        destination: '/birmingham',
-        permanent: true,
-      },
-      {
-        source: '/BIRMINGHAM',
-        destination: '/birmingham',
-        permanent: true,
-      },
-      {
-        source: '/Boiler-Repairs',
-        destination: '/services/boiler-repairs',
-        permanent: true,
-      },
-      {
-        source: '/BOILER-REPAIRS',
-        destination: '/services/boiler-repairs',
-        permanent: true,
-      },
-      
-      // Legacy CMS and admin patterns - Direct to homepage
+      // Common CMS patterns that might exist
       {
         source: '/wp-content/:path*',
         destination: '/',
@@ -249,35 +138,42 @@ const nextConfig = {
         permanent: true,
       },
       
-      // Legacy page structure redirects - Single hop
+      // Duplicate slug patterns - catch variations like /location/location
       {
-        source: '/pages/:path*',
-        destination: '/:path*',
+        source: '/selly-park/selly-park/:path*',
+        destination: '/selly-park/:path*',
         permanent: true,
       },
       {
-        source: '/site/:path*',
-        destination: '/:path*',
+        source: '/hall-green/hall-green/:path*',
+        destination: '/hall-green/:path*',
         permanent: true,
       },
       {
-        source: '/solihull/solihull',
-        destination: '/solihull',
+        source: '/acocks-green/acocks-green/:path*',
+        destination: '/acocks-green/:path*',
         permanent: true,
       },
       {
-        source: '/solihull/solihull/:path*',
-        destination: '/solihull/:path*',
+        source: '/birmingham/birmingham/:path*',
+        destination: '/birmingham/:path*',
+        permanent: true,
+      },
+      
+      // Service duplicates
+      {
+        source: '/services/boiler-repairs/boiler-repairs',
+        destination: '/services/boiler-repairs',
         permanent: true,
       },
       {
-        source: '/wolverhampton/wolverhampton',
-        destination: '/wolverhampton',
+        source: '/services/boiler-servicing/boiler-servicing',
+        destination: '/services/boiler-servicing',
         permanent: true,
       },
       {
-        source: '/wolverhampton/wolverhampton/:path*',
-        destination: '/wolverhampton/:path*',
+        source: '/services/gas-safety/gas-safety',
+        destination: '/services/gas-safety',
         permanent: true,
       },
     ];

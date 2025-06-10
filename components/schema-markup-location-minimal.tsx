@@ -4,7 +4,6 @@ import businessInfo from "@/lib/business-info"
 interface LocationSchemaProps {
   location?: {
     name: string;
-    slug: string;
     postcode: string;
     landmarks: string[];
   };
@@ -20,7 +19,7 @@ export default function MinimalLocationSchemaMarkup({ location }: LocationSchema
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "@id": `${businessInfo.website}/#business-${location.slug}`,
+          "@id": `${businessInfo.website}/#business-${location.name.toLowerCase().replace(/\s+/g, '-')}`,
           name: `${businessInfo.name} - ${location.name}`,
           description: `Professional boiler service in ${location.name} ${location.postcode}. Gas Safe engineers available.`,
           image: `${businessInfo.website}/images/boiler-mascot-logo-512.png`,

@@ -1193,19 +1193,6 @@ export const locations: Location[] = [
     "mapUrl": "https://goo.gl/maps/9NAGPtktBYp"
   },
   {
-    "slug": "solihull",
-    "name": "Solihull",
-    "postcode": "B90-B93",
-    "blurb": "Boiler repair & servicing in Solihull and surrounding areas.",
-    "landmarks": [
-      "Touchwood Shopping Centre",
-      "Solihull School",
-      "Tudor Grange Park"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2437.7722265324557!2d-1.7777806840695702!3d52.4114432798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870be6e4b8b2c89%3A0x64b9b2f6e8d8e8e8!2sSolihull!5e0!3m2!1sen!2suk!4v1652364112211!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SolihullMap"
-  },
-  {
     "slug": "southside",
     "name": "Southside",
     "postcode": "B5",
@@ -1713,76 +1700,17 @@ export const locations: Location[] = [
     "mapUrl": "https://goo.gl/maps/KwqVRQCgiTq6WHiBA"
   },
   {
-    "slug": "kings-heath",
-    "name": "Kings Heath",
-    "postcode": "B14",
-    "blurb": "Boiler repair & servicing in Kings Heath and surrounding areas.",
+    "slug": "bromsgrove",
+    "name": "Bromsgrove",
+    "postcode": "B60-B61",
+    "blurb": "Boiler repair & servicing in Bromsgrove and surrounding areas.",
     "landmarks": [
-      "Kings Heath High Street",
-      "Kings Heath Park",
-<<<<<<< HEAD
-      "Moseley Cricket Club"
+      "Bromsgrove High Street",
+      "Bromsgrove Railway Station",
+      "Bromsgrove School"
     ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2434.457263759684!2d-1.8922111840696792!3d52.4189534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/KingsHeathBirmingham"
-=======
-      "The Triangle"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2433.8541424123!2d-1.8845532840696942!3d52.43972877980231!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b9e9e9e9e9e9%3A0x4e9e9e9e9e9e9e9e!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/KingsHeathMap"
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
-  },
-  {
-    "slug": "west-bromwich",
-    "name": "West Bromwich",
-<<<<<<< HEAD
-    "postcode": "B70",
-    "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
-    "landmarks": [
-      "The Hawthorns Stadium",
-      "West Bromwich Central",
-      "Sandwell Valley Country Park"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2432.893263759684!2d-1.9922111840696792!3d52.5189534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094c49c72e1e1%3A0x6e6b8a3c60b388a!2sWest%20Bromwich!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestBromwich"
-  },
-  {
-    "slug": "west-midlands",
-    "name": "West Midlands",
-    "postcode": "B1",
-    "blurb": "Boiler repair & servicing across the West Midlands region and surrounding areas.",
-    "landmarks": [
-      "Birmingham City Centre",
-      "Coventry",
-      "Wolverhampton",
-      "Dudley",
-      "Walsall"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-1.8937806840695702!3d52.4851302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWest%20Midlands!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestMidlands"
-  },
-  {
-    "slug": "wolverhampton",
-    "name": "Wolverhampton",
-    "postcode": "WV1-WV11",
-    "blurb": "Boiler repair & servicing in Wolverhampton and surrounding areas.",
-    "landmarks": [
-      "Wolverhampton Grand Theatre",
-      "Wolverhampton Art Gallery",
-      "West Park"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-2.1289806840695702!3d52.5861302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094fe7e5b8d43%3A0x6571b0e0d4a9d4a9!2sWolverhampton!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Wolverhampton"
-=======
-    "postcode": "B70-B71",
-    "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
-    "landmarks": [
-      "West Bromwich Town Centre",
-      "The Hawthorns Stadium",
-      "Sandwell Valley Country Park"
-    ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2434.7532164698055!2d-1.9924567684070752!3d52.51843987979827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd5f7ddeae7%3A0x8e0d2e4df9b84d13!2sWest%20Bromwich!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestBromwichMap"
+    "mapEmbedId": "!1m18!1m12!1m3!1d2437.8234556789!2d-2.0545678840707!3d52.33456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8866cf7e83f%3A0x509e16039ebd4ea2!2sBromsgrove!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/BromsgroveLink"
   },
   {
     "slug": "redditch",
@@ -1791,12 +1719,27 @@ export const locations: Location[] = [
     "blurb": "Boiler repair & servicing in Redditch and surrounding areas.",
     "landmarks": [
       "Redditch Town Centre",
-      "Arrow Valley Country Park",
-      "Kingfisher Shopping Centre"
+      "Kingfisher Shopping Centre",
+      "Arrow Valley Country Park"
     ],
-    "mapEmbedId": "!1m18!1m12!1m3!1d2441.2377853167785!2d-1.9439956840702125!3d52.30616597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99424%3A0x7eaf7b3eb5b60c0f!2sRedditch!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/RedditchMap"
->>>>>>> e3f3bca (feat(middleware): Add new location slugs and enhance redirect handling)
+    "mapEmbedId": "!1m18!1m12!1m3!1d2440.1234567890!2d-1.9456789840702125!3d52.30654321980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094265497f7a1%3A0x9db003d02648609!2sRedditch!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/RedditchLink"
+  },
+  {
+    "slug": "west-midlands",
+    "name": "West Midlands",
+    "postcode": "B1-B99, WV, DY, WS",
+    "blurb": "Professional boiler repair & servicing across the West Midlands region including Birmingham, Wolverhampton, Dudley, and surrounding areas.",
+    "landmarks": [
+      "Birmingham City Centre",
+      "Wolverhampton City Centre",
+      "Dudley Castle",
+      "West Bromwich",
+      "Walsall",
+      "Solihull"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d155123.45678901234!2d-2.0123456789012345!3d52.48976543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8e7c8b8f8b8%3A0x12345678901234567!2sWest%20Midlands%2C%20UK!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
+    "mapUrl": "https://goo.gl/maps/WestMidlandsRegion"
   }
 ]
 

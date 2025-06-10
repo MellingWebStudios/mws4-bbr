@@ -72,7 +72,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
       description: `Articles tagged with ${tagTitle} - expert heating advice for Birmingham homeowners`,
     },
     alternates: {
-      canonical: `https://www.birminghamboilerrepairs.uk/blog/tag/${tag}`,
+      canonical: `https://www.birminghamboilerrepairs.uk/blog/tag/${encodeURIComponent(tag)}`,
     },
   }
 }
@@ -211,7 +211,7 @@ export default async function TagPage({ params }: TagPageProps) {
                   size="sm"
                   className="h-8"
                 >
-                  <Link href={`/blog/tag/${relatedTag}`}>
+                  <Link href={`/blog/tag/${encodeURIComponent(relatedTag)}`}>
                     {relatedTag.split('-').map(word => 
                       word.charAt(0).toUpperCase() + word.slice(1)
                     ).join(' ')}

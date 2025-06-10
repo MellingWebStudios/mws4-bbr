@@ -4,7 +4,6 @@ import businessInfo from "@/lib/business-info"
 interface LocationSchemaProps {
   location?: {
     name: string;
-    slug: string;
     postcode: string;
     landmarks: string[];
   };
@@ -27,7 +26,7 @@ export default function LocationSchemaMarkup({ location, nearbyAreas = [] }: Loc
             // Location-specific LocalBusiness Schema
             {
               "@type": "HVACBusiness",
-              "@id": `${businessInfo.website}/#business-${location?.slug || 'main'}`,
+              "@id": `${businessInfo.website}/#business-${location?.name?.toLowerCase().replace(/\s+/g, '-') || 'main'}`,
               name: location ? `${businessInfo.name} - ${location.name}` : businessInfo.name,
               url: businessInfo.website,
               logo: `${businessInfo.website}/images/boiler-mascot-logo-56.webp`,
@@ -71,10 +70,10 @@ export default function LocationSchemaMarkup({ location, nearbyAreas = [] }: Loc
             // Location-specific Service
             location && {
               "@type": "Service",
-              "@id": `${businessInfo.website}/${location.slug}/#service`,
+              "@id": `${businessInfo.website}/${location.name.toLowerCase().replace(/\s+/g, '-')}/#service`,
               name: `Boiler Repairs ${location.name}`,
               provider: {
-                "@id": `${businessInfo.website}/#business-${location.slug}`,
+                "@id": `${businessInfo.website}/#business-${location.name.toLowerCase().replace(/\s+/g, '-')}`,
               },
               description: `Expert boiler repairs and servicing in ${location.name} ${location.postcode}. Same-day service available.`,
               areaServed: {
@@ -93,7 +92,7 @@ export default function LocationSchemaMarkup({ location, nearbyAreas = [] }: Loc
             // Local landmarks schema if location provided
             location && location.landmarks.length > 0 && {
               "@type": "Place",
-              "@id": `${businessInfo.website}/${location.slug}/#place`,
+              "@id": `${businessInfo.website}/${location.name.toLowerCase().replace(/\s+/g, '-')}/#place`,
               name: location.name,
               containedInPlace: {
                 "@type": "City",
