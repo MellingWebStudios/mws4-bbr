@@ -92,7 +92,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   const title = `${service.name} in ${location.name} | Same-Day Service | Gas Safe`;
-  const description = `Expert ${service.name.toLowerCase()} in ${location.name} ${location.postcode}. No call-out fee, fixed pricing, all major brands. Gas Safe registered engineers. Call 0800 320 2345.`;
+  const description = `${service.name} in ${location.name} ${location.postcode}. Gas Safe engineers, no call-out fee, same day service. Call 0800 320 2345.`;
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug}/${service.slug}`;
 
   return {

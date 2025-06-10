@@ -11,8 +11,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Areas We Cover | Birmingham Boiler Repairs - Service Locations",
-  description: 
-    "Birmingham Boiler Repairs covers over 130+ areas across Birmingham and the West Midlands. Find your local boiler repair service with Gas Safe registered engineers.",
+  description: "Gas Safe boiler repairs across 130+ Birmingham & West Midlands areas. Same day service available. Find your local engineer today.",
   keywords: "Birmingham boiler repairs areas, West Midlands boiler service, local boiler repair, gas safe engineers Birmingham, boiler service locations",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/locations",
