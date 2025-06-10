@@ -15,6 +15,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/about",
   },
+  openGraph: {
+    title: "About Birmingham Boiler Repairs | Gas Safe Engineers",
+    description: "Family-run Gas Safe registered boiler repair company established in 2010. Meet our team of experienced engineers serving Birmingham and surrounding areas.",
+    url: "https://www.birminghamboilerrepairs.uk/about",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "About Birmingham Boiler Repairs - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function AboutPage() {

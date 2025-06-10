@@ -19,6 +19,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
   },
+  openGraph: {
+    title: "Professional Boiler Servicing Birmingham | Gas Safe Engineers",
+    description: "Expert boiler servicing in Birmingham from Gas Safe registered engineers. Standard and full service options available with no hidden fees.",
+    url: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Professional Boiler Servicing Birmingham - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function BoilerServicingPage() {

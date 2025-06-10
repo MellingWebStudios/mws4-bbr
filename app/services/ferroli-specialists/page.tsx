@@ -17,6 +17,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
   },
+  openGraph: {
+    title: "Ferroli Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    description: "Approved Ferroli boiler specialists in Birmingham. Expert knowledge of Ferroli systems and components with genuine parts and extended warranties.",
+    url: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ferroli Boiler Specialists Birmingham - Expert Repairs & Servicing",
+      }
+    ],
+  },
 }
 
 export default function FerroliSpecialistsPage() {

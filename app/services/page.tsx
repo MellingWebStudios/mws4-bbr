@@ -18,6 +18,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services",
   },
+  openGraph: {
+    title: "Boiler Repair & Service Birmingham | Same-Day Repairs",
+    description: "Expert boiler repairs, servicing & gas safety inspections across Birmingham. Gas Safe registered engineers, no call-out fees, same-day service available.",
+    url: "https://www.birminghamboilerrepairs.uk/services",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Services - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function ServicesPage() {

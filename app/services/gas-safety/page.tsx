@@ -18,6 +18,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/gas-safety",
   },
+  openGraph: {
+    title: "Gas Safety Inspections Birmingham | Landlord Certificates",
+    description: "Professional Gas Safety Inspections and Landlord Certificates in Birmingham. Digital certificates, competitive pricing, Gas Safe registered engineers.",
+    url: "https://www.birminghamboilerrepairs.uk/services/gas-safety",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Gas Safety Inspections Birmingham - Landlord Certificates",
+      }
+    ],
+  },
 }
 
 export default function GasSafetyPage() {

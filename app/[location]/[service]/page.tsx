@@ -105,13 +105,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       siteName: businessInfo.name,
       type: "website",
-      images: [`${businessInfo.website}/og-image.png`], // Set if you have OG images
+      images: [
+        {
+          url: `${businessInfo.website}/og-image.png`,
+          width: 1200,
+          height: 630,
+          alt: `${service.name} in ${location.name} - Birmingham Boiler Repairs`,
+        }
+      ],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [`${businessInfo.website}/og-image.png`], // Set if you have OG images
+      images: [`${businessInfo.website}/og-image.png`],
     },
   };
 }

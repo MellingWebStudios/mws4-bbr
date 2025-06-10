@@ -22,6 +22,14 @@ export const metadata: Metadata = {
     url: "https://www.birminghamboilerrepairs.uk/blog",
     siteName: businessInfo.name,
     type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Blog - Expert Tips & Advice",
+      }
+    ],
   },
 }
 

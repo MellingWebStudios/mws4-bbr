@@ -10,6 +10,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/privacy-policy",
   },
+  openGraph: {
+    title: "Privacy Policy | Birmingham Boiler Repairs",
+    description: "Our privacy policy explains how we collect, use, and protect your personal information when you use our website and services.",
+    url: "https://www.birminghamboilerrepairs.uk/privacy-policy",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Privacy Policy",
+      }
+    ],
+  },
 }
 
 export default function PrivacyPolicyPage() {

@@ -14,6 +14,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/prices",
   },
+  openGraph: {
+    title: "Boiler Repair & Service Prices | Birmingham Boiler Repairs",
+    description: "Transparent pricing for boiler repairs, servicing and gas safety inspections in Birmingham. No hidden fees, no VAT charged.",
+    url: "https://www.birminghamboilerrepairs.uk/prices",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Prices - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function PricesPage() {

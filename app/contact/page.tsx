@@ -16,6 +16,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/contact",
   },
+  openGraph: {
+    title: "Contact Birmingham Boiler Repairs | Book a Boiler Service or Repair",
+    description: "Contact our Gas Safe registered engineers for boiler repairs, servicing, and gas safety inspections in Birmingham. Same-day service available.",
+    url: "https://www.birminghamboilerrepairs.uk/contact",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Contact Birmingham Boiler Repairs - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function ContactPage() {

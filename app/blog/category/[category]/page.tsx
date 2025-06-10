@@ -68,8 +68,18 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
     openGraph: {
       title: `${categoryTitle} Articles | Birmingham Boiler Repairs`,
       description: `Expert ${categoryTitle.toLowerCase()} advice and guides for Birmingham homeowners`,
+      url: `https://www.birminghamboilerrepairs.uk/blog/category/${category}`,
+      siteName: "Birmingham Boiler Repairs",
       type: "website",
       locale: "en_GB",
+      images: [
+        {
+          url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `${categoryTitle} Articles | Birmingham Boiler Repairs`,
+        }
+      ],
     },
     twitter: {
       card: "summary_large_image",

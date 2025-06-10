@@ -12,6 +12,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/guides",
   },
+  openGraph: {
+    title: "Boiler Maintenance Guides | Birmingham Boiler Repairs",
+    description: "Free step-by-step video guides to help you solve common boiler issues yourself. Learn how to re-pressurise your boiler, reset your system, and more.",
+    url: "https://www.birminghamboilerrepairs.uk/guides",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Maintenance Guides",
+      }
+    ],
+  },
 }
 
 const guides = [

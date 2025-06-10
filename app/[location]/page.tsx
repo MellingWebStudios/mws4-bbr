@@ -48,6 +48,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url,
       siteName: businessInfo.name,
       type: "website",
+      images: [
+        {
+          url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+          width: 1200,
+          height: 630,
+          alt: `Boiler Repairs in ${location.name} - Birmingham Boiler Repairs`,
+        }
+      ],
     },
   };
 }

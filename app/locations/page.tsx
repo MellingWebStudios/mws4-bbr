@@ -16,6 +16,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/locations",
   },
+  openGraph: {
+    title: "Areas We Cover | Birmingham Boiler Repairs - Service Locations",
+    description: "Gas Safe boiler repairs across 130+ Birmingham & West Midlands areas. Same day service available. Find your local engineer today.",
+    url: "https://www.birminghamboilerrepairs.uk/locations",
+    siteName: "Birmingham Boiler Repairs",
+    locale: "en_GB",
+    type: "website",
+    images: [
+      {
+        url: "https://www.birminghamboilerrepairs.uk/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Birmingham Boiler Repairs Service Areas - Gas Safe Engineers",
+      }
+    ],
+  },
 }
 
 export default function AreasWeCoverPage() {
