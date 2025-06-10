@@ -20,7 +20,7 @@ export const locations: Location[] = [
       "Acocks Green Village"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.5435129726417!2d-1.8237806840695702!3d52.4451302798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb0be8f6521f%3A0x2783f5c6bbd340d2!2sAcocks%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112081!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/1jQvW3ZW7VR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Acocks%20Green%2C%20B27%2C%20UK"
   },
   {
     "slug": "ashted",
@@ -33,7 +33,7 @@ export const locations: Location[] = [
       "Eastside City Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.6935129759734!2d-1.8872283840696035!3d52.48688017980595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7c29a4a39d%3A0x6d0a9ec913a197e1!2sAston%20University!5e0!3m2!1sen!2suk!4v1652364112083!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7tY4KvPhVkk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ashted%2C%20B7%2C%20UK"
   },
   {
     "slug": "aston",
@@ -46,7 +46,7 @@ export const locations: Location[] = [
       "Aston Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.6935129759734!2d-1.8888782840696025!3d52.49222797980591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc9d36b55611%3A0xf0e4a47b7fa09b62!2sAston%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112084!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/oeMaK8A8b6A2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aston%2C%20B6%2C%20UK"
   },
   {
     "slug": "aston-cross",
@@ -59,7 +59,7 @@ export const locations: Location[] = [
       "Aston Station"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.7903550441375!2d-1.8723283840695536!3d52.48993027980594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc9d48c9ac7d%3A0x6e70f3ad08e4be1f!2sAston%20Cross%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112085!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/6WWFv5cZAWK2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aston%20Cross%2C%20B6%2C%20UK"
   },
   {
     "slug": "austin-village",
@@ -72,7 +72,7 @@ export const locations: Location[] = [
       "Austin Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.1664230356736!2d-1.9825026840702763!3d52.39854707979988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487096af630b6b09%3A0x70f7e2e3d84ebc33!2sAustin%20Village%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112086!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/8iFnD8pA1vR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Austin%20Village%2C%20B31%2C%20UK"
   },
   {
     "slug": "bartley-green",
@@ -85,7 +85,7 @@ export const locations: Location[] = [
       "Kitwell Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.475893684009!2d-1.995083484069623!3d52.43891447980243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b87e32be1bf5%3A0xf08a2c5b92205d1!2sBartley%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112083!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/bzRa95SFWu82"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bartley%20Green%2C%20B32%2C%20UK"
   },
   {
     "slug": "beech-lanes",
@@ -98,7 +98,7 @@ export const locations: Location[] = [
       "Harborne Golf Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.142263343246!2d-1.9640054840698028!3d52.461537979804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc640be78e87%3A0x15a82e3bfc2c8f81!2sBeech%20Lanes%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112089!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/qJr8JkV7iHn"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Beech%20Lanes%2C%20B17%2C%20UK"
   },
   {
     "slug": "billesley",
@@ -111,7 +111,7 @@ export const locations: Location[] = [
       "Swanshurst School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.221313759684!2d-1.8622111840696792!3d52.4289534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sBillesley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112090!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/MhP7RSbztGG2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Billesley%2C%20B13%2C%20UK"
   },
   {
     "slug": "birches-green",
@@ -124,7 +124,7 @@ export const locations: Location[] = [
       "Gravelly Hill Station"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.421433888351!2d-1.8378783840700047!3d52.51522757980161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bde5a3d215b9%3A0xf6d3745efb9fef62!2sBirches%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112091!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7fY3RKrSMcp"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Birches%20Green%2C%20B24%2C%20UK"
   },
   {
     "slug": "birchfield",
@@ -137,7 +137,7 @@ export const locations: Location[] = [
       "Birchfield Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.6935129759734!2d-1.9007282840696025!3d52.50724797980591!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc9d5eb6e1df%3A0x392a2e2b56ce5b5c!2sBirchfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112092!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/A3dWwVtAKT52"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Birchfield%2C%20B6%2C%20UK"
   },
   {
     "slug": "birmingham",
@@ -150,7 +150,7 @@ export const locations: Location[] = [
       "Cadbury World"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.6845129726417!2d-1.8998306840695702!3d52.4862432798027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7c29a4a39d%3A0x6d0a9ec913a197e1!2sBirmingham!5e0!3m2!1sen!2suk!4v1652364112081!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7tY4KvPhVkk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Birmingham%2C%20B1-B99%2C%20UK"
   },
   {
     "slug": "boldmere",
@@ -163,7 +163,7 @@ export const locations: Location[] = [
       "Boldmere High Street"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.102263343246!2d-1.8320054840698028!3d52.561537979804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870beee02a2a33b%3A0x8a6e53c96c27c48b!2sBoldmere%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112095!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/qVm5s3j9oRx"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Boldmere%2C%20B73%2C%20UK"
   },
   {
     "slug": "bordesley",
@@ -176,7 +176,7 @@ export const locations: Location[] = [
       "Bordesley Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.692206145868!2d-1.8717792840695517!3d52.47797897980598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdc163d6da37%3A0x12ff6a8c7d7eaf2c!2sBordesley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112096!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/wSkXud1oA1y"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bordesley%2C%20B9%2C%20UK"
   },
   {
     "slug": "bordesley-green",
@@ -189,7 +189,7 @@ export const locations: Location[] = [
       "Adderley Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.692206145868!2d-1.8557792840695517!3d52.48497897980598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdc163d6da37%3A0x12ff6a8c7d7eaf2c!2sBordesley%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112097!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/LZaZ4mKHqyx"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bordesley%20Green%2C%20B9%2C%20UK"
   },
   {
     "slug": "bournbrook",
@@ -202,7 +202,7 @@ export const locations: Location[] = [
       "Bournbrook Hall"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.942263343246!2d-1.9440054840698028!3d52.451537979804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc64e7eeb687%3A0x7c24c3cdaffef8c2!2sBournbrook%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112098!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/5qQGLjEEsqC2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bournbrook%2C%20B29%2C%20UK"
   },
   {
     "slug": "bournville",
@@ -215,7 +215,7 @@ export const locations: Location[] = [
       "Rowheath Pavilion"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.898263343246!2d-1.9350054840698028!3d52.439537979804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc64e7eeb687%3A0x7c24c3cdaffef8c2!2sBournville%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112099!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/dWcpjaPMk2L2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bournville%2C%20B30%2C%20UK"
   },
   {
     "slug": "brandwood-end",
@@ -228,7 +228,7 @@ export const locations: Location[] = [
       "Highters Heath"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.121263759684!2d-1.8822111840696792!3d52.4289534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sBrandwood%20End%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112100!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/2QMSLb1wSJC2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Brandwood%20End%2C%20B14%2C%20UK"
   },
   {
     "slug": "bromford",
@@ -241,7 +241,7 @@ export const locations: Location[] = [
       "Hodge Hill College"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.114532934039!2d-1.7849486840702917!3d52.516277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc6ef364fe27%3A0xbb1862cb2a01e04b!2sBromford%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112102!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SvSrB5EzHvB2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bromford%2C%20B36%2C%20UK"
   },
   {
     "slug": "browns-green",
@@ -254,7 +254,7 @@ export const locations: Location[] = [
       "Island Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.114532934039!2d-1.9749486840702917!3d52.519277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sBrowns%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112103!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/gRYnWcnusv32"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Browns%20Green%2C%20B20%2C%20UK"
   },
   {
     "slug": "buckland-end",
@@ -267,7 +267,7 @@ export const locations: Location[] = [
       "Tile Cross Academy"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.238886682547!2d-1.7895948840702996!3d52.508426479801716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdafb4086ab7%3A0x50f6ff5f9c1a9ca6!2sBuckland%20End%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112104!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/yAumJJ8KbP32"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Buckland%20End%2C%20B34%2C%20UK"
   },
   {
     "slug": "california",
@@ -280,7 +280,7 @@ export const locations: Location[] = [
       "Shenley Fields Recreation Ground"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.2843381798026!2d-1.981231284069792!3d52.44171097980466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd12b2e2ff85%3A0xabe85e07b1d798de!2sCalifornia%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112105!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kdT5PYGB3uzdGByu8"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=California%2C%20B29%2C%20UK"
   },
   {
     "slug": "camp-hill",
@@ -293,7 +293,7 @@ export const locations: Location[] = [
       "Holy Trinity Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.6853366411067!2d-1.8773129840695688!3d52.467646079802936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc88ea8b4549%3A0x236f429d8f1eeb24!2sCamp%20Hill%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112106!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/8k3kVuT2Y3R2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Camp%20Hill%2C%20B12%2C%20UK"
   },
   {
     "slug": "castle-vale",
@@ -306,7 +306,7 @@ export const locations: Location[] = [
       "Castle Vale Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.1139026781226!2d-1.7907757840706903!3d52.52624647980134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdfde2f7df07%3A0xc3e73ec302980ba4!2sCastle%20Vale%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112107!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/baz3ymUorJ62"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Castle%20Vale%2C%20B35%2C%20UK"
   },
   {
     "slug": "chad-valley",
@@ -319,7 +319,7 @@ export const locations: Location[] = [
       "Harrow Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.4813654728525!2d-1.939922684069664!3d52.468045779804516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcaf6507cc45%3A0xd58f2c63e47a692d!2sChad%20Valley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112108!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/LuU4U3hhGrz7iqCq5"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Chad%20Valley%2C%20B15%2C%20UK"
   },
   {
     "slug": "churchfield",
@@ -332,7 +332,7 @@ export const locations: Location[] = [
       "Churchfield Recreation Ground"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.1847753621957!2d-1.9633077840701198!3d52.516728779801675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc37d8a618a1%3A0x87d833b0bb9d7b4b!2sChurchfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112109!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/XQ5UKr5r7w82"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Churchfield%2C%20B21%2C%20UK"
   },
   {
     "slug": "cofton-common",
@@ -345,7 +345,7 @@ export const locations: Location[] = [
       "St Columba's Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.987685612086!2d-1.9776266840704345!3d52.39419897980025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b9a79d72ec99%3A0x26051b42e7c51fbb!2sCofton%20Common%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112110!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/gJzPWnSu1Nv"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cofton%20Common%2C%20B45%2C%20UK"
   },
   {
     "slug": "cotteridge",
@@ -358,7 +358,7 @@ export const locations: Location[] = [
       "Cotteridge Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.123456789!2d-1.9293832!3d52.426734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8aa233e7c5b%3A0x401a63218c1e4a0!2sCotteridge%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112111!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/3q7EuL3LPWv"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cotteridge%2C%20B30%2C%20UK"
   },
   {
     "slug": "deritend",
@@ -371,7 +371,7 @@ export const locations: Location[] = [
       "St Basil's Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.692206145868!2d-1.8821792840695517!3d52.47397897980598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe6ff44a6a7%3A0x68d92a2e52b638b3!2sDeritend%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112112!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SvPMbfvTwDrYnaoK9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Deritend%2C%20B12%2C%20UK"
   },
   {
     "slug": "eastside",
@@ -384,7 +384,7 @@ export const locations: Location[] = [
       "Aston University"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.990099009901!2d-1.8882939!3d52.484483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd6dc27db93b%3A0x9d213a3e7ec1198d!2sEastside%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112118!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/jdJwMYg7JDx96oHfA"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Eastside%2C%20B4%2C%20UK"
   },
   {
     "slug": "edgbaston",
@@ -397,7 +397,7 @@ export const locations: Location[] = [
       "University of Birmingham"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.2850405832397!2d-1.9362354840697596!3d52.47033807980468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc832422b741%3A0xe85a380f561b3174!2sEdgbaston%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112084!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/PuEBg4HTy3B2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Edgbaston%2C%20B15%2C%20B16%2C%20UK"
   },
   {
     "slug": "erdington",
@@ -410,7 +410,7 @@ export const locations: Location[] = [
       "Gravelly Hill Station"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.4412416711275!2d-1.834479884070029!3d52.52789327980122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc25d7cf34d7%3A0x8f6d6d85e60f02a3!2sErdington%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112119!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/42n5VntHRdxX5tH18"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Erdington%2C%20B23%2C%20B24%2C%20UK"
   },
   {
     "slug": "falcon-lodge",
@@ -423,7 +423,7 @@ export const locations: Location[] = [
       "Newhall School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.4514464826376!2d-1.8126686840707683!3d52.56447247979957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870baadf75cc70d%3A0xdba48b4d5f24c857!2sFalcon%20Lodge%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112120!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/qtNHR1EYvW12"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Falcon%20Lodge%2C%20B75%2C%20UK"
   },
   {
     "slug": "four-oaks",
@@ -436,7 +436,7 @@ export const locations: Location[] = [
       "Four Oaks Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.3532164698055!2d-1.841467684070752!3d52.58543987979827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba4f5fddeae7%3A0x8e0d2e4df9b84d12!2sFour%20Oaks%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112122!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/rc9f1vPxKxG2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Four%20Oaks%2C%20B74%2C%20UK"
   },
   {
     "slug": "fox-hollies",
@@ -449,7 +449,7 @@ export const locations: Location[] = [
       "Acocks Green Station"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.4698998888886!2d-1.826278684069697!3d52.43994697980219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb0bf92f0d75%3A0x3d6e9972d70a34c2!2sFox%20Hollies%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112123!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/UP4BPxYZc3n"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Fox%20Hollies%2C%20B27%2C%20UK"
   },
   {
     "slug": "frankley",
@@ -462,7 +462,7 @@ export const locations: Location[] = [
       "Balaam Wood Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.532784795707!2d-2.015053684070804!3d52.397441879798386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709a5fa640603b%3A0x4e5ab3dcdf81fa57!2sFrankley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112124!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/FeWzP8BGLVn"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Frankley%2C%20B45%2C%20UK"
   },
   {
     "slug": "garretts-green",
@@ -475,7 +475,7 @@ export const locations: Location[] = [
       "East Birmingham Network"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.632984183814!2d-1.7768234840704975!3d52.47416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sGarretts%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112125!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/2GATt7hqx6H2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Garretts%20Green%2C%20B26%2C%20UK"
   },
   {
     "slug": "gib-heath",
@@ -488,7 +488,7 @@ export const locations: Location[] = [
       "City Hospital Birmingham"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.9567845337634!2d-1.9298321840696912!3d52.48970817980597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd09ab1f7555%3A0x73619d3d9f2fc13e!2sGib%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112126!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/FNwQquVbHnH2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gib%20Heath%2C%20B18%2C%20UK"
   },
   {
     "slug": "gilbertstone",
@@ -501,7 +501,7 @@ export const locations: Location[] = [
       "Coventry Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.221313759684!2d-1.8142111840696792!3d52.4389534798022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb4d8f7ba2a7%3A0x78a89ae426eb64c1!2sGilbertstone%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112127!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Gw95gQpt3GC2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gilbertstone%2C%20B26%2C%20UK"
   },
   {
     "slug": "glebe-farm",
@@ -514,7 +514,7 @@ export const locations: Location[] = [
       "Stechford Recreation Ground"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.631684183814!2d-1.7898234840704975!3d52.49416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sGlebe%20Farm%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112128!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/GBn9uApbKNs8XxAF9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Glebe%20Farm%2C%20B33%2C%20UK"
   },
   {
     "slug": "gospel-oak",
@@ -527,7 +527,7 @@ export const locations: Location[] = [
       "Fox Hollies Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.4698998888886!2d-1.829278684069697!3d52.43994697980219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb0bf92f0d75%3A0x3d6e9972d70a34c2!2sGospel%20Oak%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112129!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ErGbukT3r7wU7dQy9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gospel%20Oak%2C%20B27%2C%20UK"
   },
   {
     "slug": "gosta-green",
@@ -540,7 +540,7 @@ export const locations: Location[] = [
       "Eastside City Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.990099009901!2d-1.8892939!3d52.484483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd6dc27db93b%3A0x9d213a3e7ec1198d!2sGosta%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112130!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/fcfuhzRnoaH2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gosta%20Green%2C%20B4%2C%20UK"
   },
   {
     "slug": "gravelly-hill",
@@ -553,7 +553,7 @@ export const locations: Location[] = [
       "Gravelly Hill Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.4412416711275!2d-1.837479884070029!3d52.52789327980122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc25d7cf34d7%3A0x8f6d6d85e60f02a3!2sGravelly%20Hill%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112131!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/42n5VntHRdxX5tH18"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gravelly%20Hill%2C%20B23%2C%20UK"
   },
   {
     "slug": "great-barr",
@@ -566,7 +566,7 @@ export const locations: Location[] = [
       "Scott Arms"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.3243250034775!2d-1.9351686840702943!3d52.54662507980117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bca4b122dc23%3A0x83865b67b8c38153!2sGreat%20Barr%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112132!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7KDzt4xD7sC2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Great%20Barr%2C%20B43%2C%20UK"
   },
   {
     "slug": "greet",
@@ -579,7 +579,7 @@ export const locations: Location[] = [
       "Sparkhill Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.4332617425486!2d-1.863607684069688!3d52.44039197980219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe42c37344d%3A0xe09cc62a60bf4fb8!2sGreet%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112133!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/UrMYQ4m3vzw"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Greet%2C%20B11%2C%20UK"
   },
   {
     "slug": "grimstock-hill",
@@ -592,7 +592,7 @@ export const locations: Location[] = [
       "Coleshill Parkway"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2438.109775768703!2d-1.7177616840712985!3d52.51941527980067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a54477c4179d%3A0xd0a0edfaea83afab!2sGrimstock%20Hill!5e0!3m2!1sen!2suk!4v1652364112134!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/oXFFWBvLB6q"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Grimstock%20Hill%2C%20B46%2C%20UK"
   },
   {
     "slug": "gun-quarter",
@@ -605,7 +605,7 @@ export const locations: Location[] = [
       "Price Street"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.591491479226!2d-1.8968926840696427!3d52.48928307980568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd10f7a1c48d%3A0xb57bca7a8573214e!2sGun%20Quarter%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112135!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/VXkA4v5WTKD2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Gun%20Quarter%2C%20B19%2C%20UK"
   },
   {
     "slug": "hall-green",
@@ -618,7 +618,7 @@ export const locations: Location[] = [
       "South & City College Hall Green Campus"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.7220006737396!2d-1.8462266840695583!3d52.43374087980229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe72c38da6d%3A0x2b15ba3db6c95f4!2sHall%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112136!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/CyWKYMoHUBw"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hall%20Green%2C%20B28%2C%20UK"
   },
   {
     "slug": "hamstead",
@@ -631,7 +631,7 @@ export const locations: Location[] = [
       "Hamstead Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.714932934039!2d-1.9351686840702943!3d52.558277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbd6a8399533%3A0xe1d2ab865a6a7ec0!2sHamstead%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112137!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/B4E4zEsD5b82"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hamstead%2C%20B42%2C%20UK"
   },
   {
     "slug": "handsworth",
@@ -644,7 +644,7 @@ export const locations: Location[] = [
       "Handsworth Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.6714414217093!2d-1.9364976840700953!3d52.51144187980179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdb80dfc44ff%3A0x4a246e61735c1b2c!2sHandsworth%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112138!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/GrkKjZb3gKv"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Handsworth%2C%20B21%2C%20UK"
   },
   {
     "slug": "handsworth-wood",
@@ -657,7 +657,7 @@ export const locations: Location[] = [
       "Hamstead Hall"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.6714414217093!2d-1.9414976840700953!3d52.52144187980179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bdb80dfc44ff%3A0x4a246e61735c1b2c!2sHandsworth%20Wood%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112139!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/VvQ5EdPLtJn"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Handsworth%20Wood%2C%20B20%2C%20UK"
   },
   {
     "slug": "harborne",
@@ -670,7 +670,7 @@ export const locations: Location[] = [
       "Queen Elizabeth Hospital"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.142263343246!2d-1.9640054840698028!3d52.461537979804086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc640be78e87%3A0x15a82e3bfc2c8f81!2sHarborne%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112085!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/E7RgEVJcG8A2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harborne%2C%20B17%2C%20UK"
   },
   {
     "slug": "harts-green",
@@ -683,7 +683,7 @@ export const locations: Location[] = [
       "Albert Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.702271547767!2d-1.940568684070094!3d52.52013717980171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bde5a3d215b9%3A0xf6d3745efb9fef62!2sHarts%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112140!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/2nWB67okAEaZmxMJ9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Harts%20Green%2C%20B20%2C%20UK"
   },
   {
     "slug": "hawkesley",
@@ -696,7 +696,7 @@ export const locations: Location[] = [
       "Bells Lane"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.811759222813!2d-1.9665256840703493!3d52.40364057979933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b9764c5f93b7%3A0x749788ae2fd8fa6d!2sHawkesley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112141!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kXvgKZG9mQxHbWMA7"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hawkesley%2C%20B38%2C%20UK"
   },
   {
     "slug": "hay-mills",
@@ -709,7 +709,7 @@ export const locations: Location[] = [
       "St Cyprian's Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.3924082265955!2d-1.8281486840700458!3d52.46700307980342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb2b2a5b81e9%3A0x17bb2d23a5c52bc7!2sHay%20Mills%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112142!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7VzEkvKco4i"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hay%20Mills%2C%20B25%2C%20UK"
   },
   {
     "slug": "high-heath",
@@ -722,7 +722,7 @@ export const locations: Location[] = [
       "Castle Bromwich Hall Gardens"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.271450053288!2d-1.796386484070244!3d52.52504457980109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bde5a3d215b9%3A0xf6d3745efb9fef62!2sHigh%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112143!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/GmtfPkyJ58uJfTtQ6"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=High%20Heath%2C%20B34%2C%20UK"
   },
   {
     "slug": "highgate",
@@ -735,7 +735,7 @@ export const locations: Location[] = [
       "Stratford Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.872421580189!2d-1.891602684069605!3d52.46245957980402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe7b5e37b65%3A0x8e8c08b168ed2b1!2sHighgate%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112144!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/DuN3zsd2HDG2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Highgate%2C%20B12%2C%20UK"
   },
   {
     "slug": "highters-heath",
@@ -748,7 +748,7 @@ export const locations: Location[] = [
       "Maypole Lane"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.114532934039!2d-1.8909486840702917!3d52.417277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sHighters%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112145!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/qGwN6uH7Tm82"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Highters%20Heath%2C%20B14%2C%20UK"
   },
   {
     "slug": "hill-hook",
@@ -761,7 +761,7 @@ export const locations: Location[] = [
       "Four Oaks Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.1538095467953!2d-1.8408391840707242!3d52.59222427979736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba3a697fce5d%3A0x3523bce4639c1e4e!2sHill%20Hook%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112146!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/4Q5XcmKpVwR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hill%20Hook%2C%20B74%2C%20UK"
   },
   {
     "slug": "hill-wood",
@@ -774,7 +774,7 @@ export const locations: Location[] = [
       "Hill Wood Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.411698395701!2d-1.8275366840707435!3d52.57084687979802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bad6d7e5e0f7%3A0x302eb69dce2a35ad!2sHill%20Wood%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112147!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/MFVEn6SQCPK2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hill%20Wood%2C%20B75%2C%20UK"
   },
   {
     "slug": "hodge-hill",
@@ -787,7 +787,7 @@ export const locations: Location[] = [
       "Hodge Hill Common"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.3128725739654!2d-1.7969576840702132!3d52.50943427980162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bde5a3d215b9%3A0xf6d3745efb9fef62!2sHodge%20Hill%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112149!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/4qkFsEZgD7s"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hodge%20Hill%2C%20B34%2C%20UK"
   },
   {
     "slug": "old-oscott",
@@ -800,7 +800,7 @@ export const locations: Location[] = [
       "St Margaret Mary Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.6212751480065!2d-1.913668684070813!3d52.55727497979825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe9db21c017%3A0xf7ea69a5c7b2096e!2sOld%20Oscott%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112179!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/UzJKcEMNNbF2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Old%20Oscott%2C%20B44%2C%20UK"
   },
   {
     "slug": "over-green",
@@ -813,7 +813,7 @@ export const locations: Location[] = [
       "Smith's Wood Academy"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.112885857019!2d-1.747885784070727!3d52.49640847980129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870a48f70b8132d%3A0x5b638b72b1adbf9e!2sOver%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112180!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SUjpCFuUdbnNBN7w9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Over%20Green%2C%20B37%2C%20UK"
   },
   {
     "slug": "peddimore",
@@ -826,7 +826,7 @@ export const locations: Location[] = [
       "Kingsbury Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.798542934039!2d-1.7799486840702917!3d52.553277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870baadf75cc70d%3A0xdba48b4d5f24c857!2sPeddimore%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112181!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/DJxWW8EZ2LR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Peddimore%2C%20B76%2C%20UK"
   },
   {
     "slug": "parkhall",
@@ -839,7 +839,7 @@ export const locations: Location[] = [
       "Hamstead Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.781795573662!2d-1.9388659840704958!3d52.54916347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcfb4c2fa12b%3A0x8c43284552c21137!2sPark%20Hall%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112182!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/US3Fyb67Szs"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Parkhall%2C%20B42%2C%20UK"
   },
   {
     "slug": "pelham",
@@ -852,7 +852,7 @@ export const locations: Location[] = [
       "Swan Shopping Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.231246531553!2d-1.8313236840702298!3d52.44523407980117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbaf233e7c5b%3A0x401a63218c1e4a0!2sPelham%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112183!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Zh2qJ7o8oQx"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pelham%2C%20B27%2C%20UK"
   },
   {
     "slug": "perry-barr",
@@ -865,7 +865,7 @@ export const locations: Location[] = [
       "One Stop Shopping Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.804139222813!2d-1.9005256840703493!3d52.52964057979933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcaea0bdf211%3A0xc75d6de48cba3244!2sPerry%20Barr%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112184!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/VrY3DgnfdtB2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Perry%20Barr%2C%20B42%2C%20UK"
   },
   {
     "slug": "perry-beeches",
@@ -878,7 +878,7 @@ export const locations: Location[] = [
       "Perry Beeches School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.814932934039!2d-1.9379486840702917!3d52.551277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbd6a8399533%3A0xe1d2ab865a6a7ec0!2sPerry%20Beeches%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112185!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/TqpGhx4cJ8n"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Perry%20Beeches%2C%20B42%2C%20UK"
   },
   {
     "slug": "perry-common",
@@ -891,7 +891,7 @@ export const locations: Location[] = [
       "Perry Common Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.632934039!2d-1.8479486840702917!3d52.539277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sPerry%20Common%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112186!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/H6FK6q6AkvR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Perry%20Common%2C%20B23%2C%20UK"
   },
   {
     "slug": "pheasey",
@@ -904,7 +904,7 @@ export const locations: Location[] = [
       "Collingwood Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.933932934039!2d-1.9379486840702917!3d52.547277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbd6a8399533%3A0xe1d2ab865a6a7ec0!2sPheasey%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112187!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Gku1QEDvAFB2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pheasey%2C%20B43%2C%20UK"
   },
   {
     "slug": "pype-hayes",
@@ -917,7 +917,7 @@ export const locations: Location[] = [
       "Erdington Hall Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.852934039!2d-1.8079486840702917!3d52.520277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc25d7cf34d7%3A0x8f6d6d85e60f02a3!2sPype%20Hayes%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112188!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/gkC5sFt9JSh9hxEo6"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Pype%20Hayes%2C%20B24%2C%20UK"
   },
   {
     "slug": "queslett",
@@ -930,7 +930,7 @@ export const locations: Location[] = [
       "Old Horns Crescent"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.532984183814!2d-1.9008234840704975!3d52.54416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcfb4c2fa12b%3A0x8c43284552c21137!2sQueslett%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112189!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kWGVWAK4Rxm"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Queslett%2C%20B43%2C%20UK"
   },
   {
     "slug": "quinton",
@@ -943,7 +943,7 @@ export const locations: Location[] = [
       "Ridgacre Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.9567845337634!2d-1.9948321840696912!3d52.46970817980597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd09ab1f7555%3A0x73619d3d9f2fc13e!2sQuinton%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112190!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ZZ9W8cKhbq92"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Quinton%2C%20B32%2C%20UK"
   },
   {
     "slug": "reddicap-heath",
@@ -956,7 +956,7 @@ export const locations: Location[] = [
       "Sutton Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.642984183814!2d-1.8128234840704975!3d52.56416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba24aa4a4b29%3A0x5477c679f5fa4c1b!2sReddicap%20Heath%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112191!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Xa76TzSxM4rWJ9G48"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Reddicap%20Heath%2C%20B75%2C%20UK"
   },
   {
     "slug": "rednal",
@@ -969,7 +969,7 @@ export const locations: Location[] = [
       "Rednal Social Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.8876729956926!2d-1.9982256840708568!3d52.38492477979989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b98f8ec75a1f%3A0x4e8e8d7a2e22f7b7!2sRednal%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112192!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/gyeL6ejRhRG2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rednal%2C%20B45%2C%20UK"
   },
   {
     "slug": "ridgacre",
@@ -982,7 +982,7 @@ export const locations: Location[] = [
       "Welsh House Farm Estate"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.9567845337634!2d-1.9898321840696912!3d52.46970817980597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd09ab1f7555%3A0x73619d3d9f2fc13e!2sRidgacre%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112193!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/5AkCPLFfd8v"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ridgacre%2C%20B32%2C%20UK"
   },
   {
     "slug": "rotton-park",
@@ -995,7 +995,7 @@ export const locations: Location[] = [
       "City Hospital"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.459845232905!2d-1.934959484069692!3d52.48932817980568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd10f7a1c48d%3A0xb57bca7a8573214e!2sRotton%20Park%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112194!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ABAY2Vp1vA92"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rotton%20Park%2C%20B16%2C%20UK"
   },
   {
     "slug": "roughley",
@@ -1008,7 +1008,7 @@ export const locations: Location[] = [
       "Sutton Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.7418452266746!2d-1.841372684070823!3d52.59562787979824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba504c2fa12b%3A0x8c43284552c21137!2sRoughley%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112195!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/rc7k8om5ZQP2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Roughley%2C%20B75%2C%20UK"
   },
   {
     "slug": "rubery",
@@ -1021,7 +1021,7 @@ export const locations: Location[] = [
       "Rubery Social Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2437.2389580514584!2d-2.026406684070972!3d52.39736187979853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b98d7c6337b1%3A0x1d1e3d287b710f37!2sRubery%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112196!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SkzX5uGHwZ32"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rubery%2C%20B45%2C%20UK"
   },
   {
     "slug": "saltley",
@@ -1034,7 +1034,7 @@ export const locations: Location[] = [
       "Saltley Gate"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.915401258997!2d-1.8571436840702503!3d52.49518047980109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sSaltley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112197!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kLwTS1qUMoR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Saltley%2C%20B8%2C%20UK"
   },
   {
     "slug": "sarehole",
@@ -1047,7 +1047,7 @@ export const locations: Location[] = [
       "Green Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.865934039!2d-1.8839486840702917!3d52.455277879801646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7e6a4a1cd9%3A0x6e6b8a3c60b388a!2sSarehole%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112198!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/3c4egCWCRXE2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sarehole%2C%20B13%2C%20UK"
   },
   {
     "slug": "selly-oak",
@@ -1060,7 +1060,7 @@ export const locations: Location[] = [
       "Selly Oak Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.711476883093!2d-1.936864684069712!3d52.43877857980271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bd11b7e3227b%3A0xd34f8b15d2c41eea!2sSelly%20Oak%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112199!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kTYSCQ8MKo22"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Selly%20Oak%2C%20B29%2C%20UK"
   },
   {
     "slug": "selly-park",
@@ -1073,7 +1073,7 @@ export const locations: Location[] = [
       "Selly Park Girls' School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.693689248541!2d-1.8961686840697032!3d52.44587697980586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8d3c67e0b1%3A0x8a7c99ff8d9b60e7!2sSelly%20Park%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112200!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Xus4rCLHEdP2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Selly%20Park%2C%20B29%2C%20UK"
   },
   {
     "slug": "shard-end",
@@ -1086,7 +1086,7 @@ export const locations: Location[] = [
       "Kingfisher Country Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.132484183814!2d-1.7918234840704975!3d52.50416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sShard%20End%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112201!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/FvCz8V4E2Dk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shard%20End%2C%20B34%2C%20UK"
   },
   {
     "slug": "sheldon",
@@ -1099,7 +1099,7 @@ export const locations: Location[] = [
       "Old Rectory Farm"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.632984183814!2d-1.8048234840704975!3d52.48416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sSheldon%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112202!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/fGjeySGwoyp"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sheldon%2C%20B26%2C%20UK"
   },
   {
     "slug": "shenley-fields",
@@ -1112,7 +1112,7 @@ export const locations: Location[] = [
       "Shenley Fields Children's Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.9114643473556!2d-1.965137484069702!3d52.43421277980504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7b61c37acb%3A0x25a0d62d2d47b2ee!2sShenley%20Fields%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112203!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Ykvx5ixZGuQ2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shenley%20Fields%2C%20B29%2C%20UK"
   },
   {
     "slug": "shenley-green",
@@ -1125,7 +1125,7 @@ export const locations: Location[] = [
       "Shenley Green Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.9258434841846!2d-1.9632111840697033!3d52.43380777980506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc7b61c37acb%3A0x25a0d62d2d47b2ee!2sShenley%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112204!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/7s9zrD1mmkQ2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shenley%20Green%2C%20B29%2C%20UK"
   },
   {
     "slug": "short-heath",
@@ -1138,7 +1138,7 @@ export const locations: Location[] = [
       "Stockland Green School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.2309310932414!2d-1.823831184070694!3d52.53731697980176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc2d1b63174b%3A0x1a64b6a0b879c663!2sShort%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112205!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/w9AvTxBcX5C2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Short%20Heath%2C%20B23%2C%20UK"
   },
   {
     "slug": "showell-green",
@@ -1151,7 +1151,7 @@ export const locations: Location[] = [
       "Sparkhill Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.4332617425486!2d-1.870607684069688!3d52.44139197980219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe42c37344d%3A0xe09cc62a60bf4fb8!2sShowell%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112206!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/hHzA7AtuA9F2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Showell%20Green%2C%20B11%2C%20UK"
   },
   {
     "slug": "small-heath",
@@ -1164,7 +1164,7 @@ export const locations: Location[] = [
       "Small Heath Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.747489916642!2d-1.859932684069584!3d52.46566877980367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbebbfbc631b%3A0x37c43e195e5a0b3d!2sSmall%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112207!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/F6uMKrbD9cQ2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Small%20Heath%2C%20B10%2C%20UK"
   },
   {
     "slug": "smithfield",
@@ -1177,7 +1177,7 @@ export const locations: Location[] = [
       "Pershore Street"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.7218990340865!2d-1.890293684069554!3d52.47609477980513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe76ad97e3b%3A0x3ad8cce8b6fc77b!2sSmithfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112208!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/TpqXxoybqzR2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Smithfield%2C%20B5%2C%20UK"
   },
   {
     "slug": "soho",
@@ -1190,7 +1190,7 @@ export const locations: Location[] = [
       "Handsworth Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2434.7722265324557!2d-1.963908684070215!3d52.4508255798021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcf73e2a8155%3A0x69a0a9b23b9898af!2sSoho%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112209!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/9NAGPtktBYp"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Soho%2C%20B21%2C%20UK"
   },
   {
     "slug": "southside",
@@ -1203,7 +1203,7 @@ export const locations: Location[] = [
       "Chinese Quarter"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.7514877269153!2d-1.895657384069563!3d52.474870879803884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe676a514ed%3A0x4be8f70c6ab4ec24!2sSouthside%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112210!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/2RZz6AU5TkS2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Southside%2C%20B5%2C%20UK"
   },
   {
     "slug": "south-yardley",
@@ -1216,7 +1216,7 @@ export const locations: Location[] = [
       "Yardley Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.237246531553!2d-1.8193236840702298!3d52.44523407980117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbaf233e7c5b%3A0x401a63218c1e4a0!2sSouth%20Yardley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112211!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Yuy7icUBQeT2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=South%20Yardley%2C%20B25%2C%20UK"
   },
   {
     "slug": "south-woodgate",
@@ -1229,7 +1229,7 @@ export const locations: Location[] = [
       "Hillcrest School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.932984183814!2d-1.9948234840704975!3d52.49416347980202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870baf233e7c5b%3A0x401a63218c1e4a0!2sSouth%20Woodgate%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112212!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/A4eTicUBQeT2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=South%20Woodgate%2C%20B32%2C%20UK"
   },
   {
     "slug": "sparkbrook",
@@ -1242,7 +1242,7 @@ export const locations: Location[] = [
       "Sparkbrook Health Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.768391987337!2d-1.8798576840696018!3d52.454293879805915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbeec4b2fd29%3A0xfb29a52b0979f3e2!2sSparkbrook%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112213!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/EJ1sHjGJBCQ2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sparkbrook%2C%20B11%2C%20UK"
   },
   {
     "slug": "sparkhill",
@@ -1255,7 +1255,7 @@ export const locations: Location[] = [
       "St John’s Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.493113839349!2d-1.8699856840696676!3d52.443005479802264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8174747f5f%3A0xcdf40ca362979ad8!2sSparkhill%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112214!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/j3mnZh4DsMA2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sparkhill%2C%20B11%2C%20UK"
   },
   {
     "slug": "springfield",
@@ -1268,7 +1268,7 @@ export const locations: Location[] = [
       "Springfield Primary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.423996470165!2d-1.871207684069678!3d52.43681547980114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8085d1fdf3%3A0xa4ba72dbf6e8474d!2sSpringfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112215!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/RqPKXJCu3u22"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Springfield%2C%20B13%2C%20UK"
   },
   {
     "slug": "spring-vale",
@@ -1281,7 +1281,7 @@ export const locations: Location[] = [
       "St Paul’s Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.823113839349!2d-2.0299856840696676!3d52.443005479802264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc8174747f5f%3A0xcdf40ca362979ad8!2sSpring%20Vale%2C%20Oldbury!5e0!3m2!1sen!2suk!4v1652364112216!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/f9hKeGzt3Jp"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Spring%20Vale%2C%20B68%2C%20UK"
   },
   {
     "slug": "stechford",
@@ -1294,7 +1294,7 @@ export const locations: Location[] = [
       "Stechford Leisure Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.7309355713973!2d-1.8067126840704674!3d52.48165127980109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbbe376e2fd1%3A0xd8fa8c1c05f7fbed!2sStechford%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112217!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/hRA8JfA7C1x"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Stechford%2C%20B33%2C%20UK"
   },
   {
     "slug": "stirchley",
@@ -1307,7 +1307,7 @@ export const locations: Location[] = [
       "Stirchley Library"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.6362074411184!2d-1.9220966840696427!3d52.42929527980123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc3f69354dfb%3A0xa98fc5086e17ea02!2sStirchley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112218!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/YMYogRypBM32"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Stirchley%2C%20B30%2C%20UK"
   },
   {
     "slug": "stockfield",
@@ -1320,7 +1320,7 @@ export const locations: Location[] = [
       "Acocks Green Bowl"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.2114903342347!2d-1.825247684069781!3d52.44589197980587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbaebb9e29b5%3A0xa95c68e3721ba13b!2sStockfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112219!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/rzKiaQAkbSM2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Stockfield%2C%20B27%2C%20UK"
   },
   {
     "slug": "stockland-green",
@@ -1333,7 +1333,7 @@ export const locations: Location[] = [
       "Slade Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.7314556736854!2d-1.8567126840704674!3d52.48765127980109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbbe376e2fd1%3A0xd8fa8c1c05f7fbed!2sStockland%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112220!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/GjMkkALUgsz"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Stockland%20Green%2C%20B23%2C%20UK"
   },
   {
     "slug": "streetly",
@@ -1346,7 +1346,7 @@ export const locations: Location[] = [
       "Streetly Methodist Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.1423540526973!2d-1.8839191840707116!3d52.59221357979736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8d67c6d44f5%3A0x85c94b335dedf730!2sStreetly%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112221!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kNWHwAD66kM2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Streetly%2C%20B74%2C%20UK"
   },
   {
     "slug": "sutton-coldfield",
@@ -1359,7 +1359,7 @@ export const locations: Location[] = [
       "New Hall Valley Country Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.125982384367!2d-1.825422184070699!3d52.56372457979771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba41b16996eb%3A0x4b32f8a56389e055!2sSutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112222!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/z7DKmt21d1Q2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Sutton%20Coldfield%2C%20B72-B76%2C%20UK"
   },
   {
     "slug": "ten-acres",
@@ -1372,7 +1372,7 @@ export const locations: Location[] = [
       "Hazelwell Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.921890039331!2d-1.9254486840697058!3d52.43111397980508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc3f69354dfb%3A0xa98fc5086e17ea02!2sTen%20Acres%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112223!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/xoHDJkB95A52"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Ten%20Acres%2C%20B30%2C%20UK"
   },
   {
     "slug": "the-parade",
@@ -1385,7 +1385,7 @@ export const locations: Location[] = [
       "Sutton Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.095944534878!2d-1.8223336840701167!3d52.56467957980167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870ba41b16996eb%3A0x4b32f8a56389e055!2sThe%20Parade%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112224!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/6zYB1rN4pRM2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=The%20Parade%2C%20B72%2C%20UK"
   },
   {
     "slug": "theatreland",
@@ -1398,7 +1398,7 @@ export const locations: Location[] = [
       "Chinese Quarter"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2433.431427202809!2d-1.8953476840697017!3d52.47611497980508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcbdafbf5cb7%3A0x9a47ad2b409f89b2!2sTheatreland%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112225!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Upy2kN7ET3E2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Theatreland%2C%20B5%2C%20UK"
   },
   {
     "slug": "thimble-end",
@@ -1411,7 +1411,7 @@ export const locations: Location[] = [
       "Walmley Golf Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.144398395701!2d-1.8025366840707435!3d52.57084687979802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bad6d7e5e0f7%3A0x302eb69dce2a35ad!2sThimble%20End%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112226!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/jcfgyRZY7EsTjiYk8"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Thimble%20End%2C%20B76%2C%20UK"
   },
   {
     "slug": "tile-cross",
@@ -1424,7 +1424,7 @@ export const locations: Location[] = [
       "East Birmingham Network"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.989843664295!2d-1.7792566840704845!3d52.49194327980101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bba16ec5ec2d%3A0x6b7e876ea9e801ae!2sTile%20Cross%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112227!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/LhnciMCUwM32"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tile%20Cross%2C%20B33%2C%20UK"
   },
   {
     "slug": "tower-hill",
@@ -1437,7 +1437,7 @@ export const locations: Location[] = [
       "Great Barr School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.974399306126!2d-1.9281296840704123!3d52.55244187980175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbe9db21c017%3A0xf7ea69a5c7b2096e!2sTower%20Hill%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112228!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/8dfSksJPHoN2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tower%20Hill%2C%20B42%2C%20UK"
   },
   {
     "slug": "tudor-hill",
@@ -1450,7 +1450,7 @@ export const locations: Location[] = [
       "Sutton Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2436.085199684464!2d-1.8406666840701732!3d52.578079579799184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbfdbac0cf11%3A0xc4d09b9429da6b38!2sTudor%20Hill%2C%20Sutton%20Coldfield!5e0!3m2!1sen!2suk!4v1652364112229!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/q2tX1GJt45G2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tudor%20Hill%2C%20B73%2C%20UK"
   },
   {
     "slug": "turves-green",
@@ -1463,7 +1463,7 @@ export const locations: Location[] = [
       "Longbridge Lane"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.9246895536655!2d-1.9856676840704345!3d52.39794057979999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b99a0e4d4a3f%3A0x11671e1585b5d33d!2sTurves%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112230!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/kRjAr2a3tkv"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Turves%20Green%2C%20B31%2C%20UK"
   },
   {
     "slug": "tyburn",
@@ -1476,7 +1476,7 @@ export const locations: Location[] = [
       "Castle Vale Retail Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.812148395701!2d-1.8187366840707435!3d52.52084687979802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcfd8c297b51%3A0x5c71c30245b1ef30!2sTyburn%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112231!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ihMUKh6Hk7y"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tyburn%2C%20B24%2C%20UK"
   },
   {
     "slug": "tyseley",
@@ -1489,7 +1489,7 @@ export const locations: Location[] = [
       "Warwick Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.5348361704335!2d-1.831658684070259!3d52.44941007980116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bb4d8f7ba2a7%3A0x78a89ae426eb64c1!2sTyseley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112232!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/9wQw1vQw1vQw1vQw9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tyseley%2C%20B11%2C%20UK"
   },
   {
     "slug": "yardley",
@@ -1502,7 +1502,7 @@ export const locations: Location[] = [
       "Yardley Road"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.4729355713973!2d-1.8177126840704674!3d52.47565127980109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bbbe376e2fd1%3A0xd8fa8c1c05f7fbed!2sYardley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112252!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/jfb7TiDYHVB2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Yardley%2C%20B25%2C%20UK"
   },
   {
     "slug": "yardley-wood",
@@ -1515,7 +1515,7 @@ export const locations: Location[] = [
       "Yardley Wood Station"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2435.4377853167785!2d-1.8839956840702125!3d52.41416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b9f7d1b5aa5f%3A0xd4b3f5e24a75e3cb!2sYardley%20Wood%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112253!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/wtvSz3sf7d52"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Yardley%20Wood%2C%20B14%2C%20UK"
   },
   {
     "slug": "aston-fields",
@@ -1528,7 +1528,7 @@ export const locations: Location[] = [
       "St Godwald’s Church"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2437.877202984758!2d-2.052421684070972!3d52.32979287979853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8866cf7e83f%3A0x509e16039ebd4ea2!2sAston%20Fields%2C%20Bromsgrove!5e0!3m2!1sen!2suk!4v1652364112254!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ak4hxK7Vx7G2"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Aston%20Fields%2C%20B60%2C%20UK"
   },
   {
     "slug": "catshill",
@@ -1541,7 +1541,7 @@ export const locations: Location[] = [
       "Catshill Meadow"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2438.1377853167785!2d-2.0739956840702125!3d52.39416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8a9aa55e00f%3A0xc8bb7d27270a9720!2sCatshill%2C%20Bromsgrove!5e0!3m2!1sen!2suk!4v1652364112255!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/QSbG5RjJYXt"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Catshill%2C%20B61%2C%20UK"
   },
   {
     "slug": "dodford",
@@ -1554,7 +1554,7 @@ export const locations: Location[] = [
       "Dodford Inn"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2438.3877853167785!2d-2.0939956840702125!3d52.38416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8e384be8c49%3A0x1d5c35e39dc7de85!2sDodford%2C%20Bromsgrove!5e0!3m2!1sen!2suk!4v1652364112256!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/ua8kK91TVHk"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dodford%2C%20B61%2C%20UK"
   },
   {
     "slug": "finstall",
@@ -1567,7 +1567,7 @@ export const locations: Location[] = [
       "Finstall First School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2437.877202984758!2d-2.072421684070972!3d52.33979287979853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8866cf7e83f%3A0x509e16039ebd4ea2!2sFinstall%2C%20Bromsgrove!5e0!3m2!1sen!2suk!4v1652364112257!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/3NbpD29jhDq"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Finstall%2C%20B60%2C%20UK"
   },
   {
     "slug": "hopwood",
@@ -1580,7 +1580,7 @@ export const locations: Location[] = [
       "Alvechurch Canal Marina"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2439.5377853167785!2d-2.0139956840702125!3d52.37416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8ebf71ac509%3A0xb404b252c9e021c2!2sHopwood%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112258!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/B9AmmBGZoBw5P8gN9"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hopwood%2C%20B48%2C%20UK"
   },
   {
     "slug": "lickey",
@@ -1593,7 +1593,7 @@ export const locations: Location[] = [
       "Lickey Grange"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2438.9377853167785!2d-2.0639956840702125!3d52.37416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b908b82de7b7%3A0x64c9b82be7e72cbb!2sLickey%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112259!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/6rHzbWtQ4Xw"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Lickey%2C%20B45%2C%20UK"
   },
   {
     "slug": "rowney-green",
@@ -1606,7 +1606,7 @@ export const locations: Location[] = [
       "Alvechurch Sports & Social Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2439.2377853167785!2d-2.0839956840702125!3d52.38416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8e7e2a223d7%3A0xe2d3932a24843b71!2sRowney%20Green%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112260!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SuWzwtB7gsr"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rowney%20Green%2C%20B48%2C%20UK"
   },
   {
     "slug": "tardebigge",
@@ -1619,7 +1619,7 @@ export const locations: Location[] = [
       "Tardebigge Court"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2437.877202984758!2d-2.082421684070972!3d52.35979287979853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8889b3e31c1%3A0x509e16039ebd4ea2!2sTardebigge%2C%20Bromsgrove!5e0!3m2!1sen!2suk!4v1652364112261!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/SwR2P6ViNpsLLEQbA"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Tardebigge%2C%20B60%2C%20UK"
   },
   {
     "slug": "wythall",
@@ -1632,7 +1632,7 @@ export const locations: Location[] = [
       "Becketts Farm"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2439.9971443638383!2d-1.8912536840702992!3d52.38209917980046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWythall%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112262!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/tNMDkFzrk6t"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wythall%2C%20B47%2C%20UK"
   },
   {
     "slug": "wirehill",
@@ -1645,7 +1645,7 @@ export const locations: Location[] = [
       "Greenlands Business Centre"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2440.2377853167785!2d-1.9639956840702125!3d52.29416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWirehill%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112263!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/Cp7ENpZUvGoL2QdA7"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Wirehill%2C%20B98%2C%20UK"
   },
   {
     "slug": "webheath",
@@ -1658,7 +1658,7 @@ export const locations: Location[] = [
       "Batchley Brook"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2440.3377853167785!2d-1.9939956840702125!3d52.30416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942471cae609%3A0x245fb18b3c1a9203!2sWebheath%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112264!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/qkgjgdg6DsQnJLhG7"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Webheath%2C%20B97%2C%20UK"
   },
   {
     "slug": "oakenshaw",
@@ -1671,7 +1671,7 @@ export const locations: Location[] = [
       "Redditch Golf Club"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2440.4377853167785!2d-1.9439956840702125!3d52.31416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094265497f7a1%3A0x9db003d02648609!2sOakenshaw%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112265!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/6ae4AGvXjoz"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Oakenshaw%2C%20B98%2C%20UK"
   },
   {
     "slug": "astwood-bank",
@@ -1684,7 +1684,7 @@ export const locations: Location[] = [
       "Ridgeway Secondary School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2441.0377853167785!2d-1.9339956840702125!3d52.33416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48709432841c6ae5%3A0xa4de1e031e47c1c7!2sAstwood%20Bank%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112266!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/yUf3XfUVyYhZtkqE6"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Astwood%20Bank%2C%20B96%2C%20UK"
   },
   {
     "slug": "walkwood",
@@ -1697,7 +1697,7 @@ export const locations: Location[] = [
       "Walkwood Middle School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2441.1377853167785!2d-2.0039956840702125!3d52.34416597980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870942b79a99423%3A0x7eaf7b3eb5b60c0e!2sWalkwood%2C%20Redditch!5e0!3m2!1sen!2suk!4v1652364112267!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/KwqVRQCgiTq6WHiBA"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Walkwood%2C%20B97%2C%20UK"
   },
   {
     "slug": "bromsgrove",
@@ -1710,7 +1710,7 @@ export const locations: Location[] = [
       "Bromsgrove School"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2437.8234556789!2d-2.0545678840707!3d52.33456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8866cf7e83f%3A0x509e16039ebd4ea2!2sBromsgrove!5e0!3m2!1sen!2suk!4v1652364112268!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/BromsgroveLink"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Bromsgrove%2C%20B60-B61%2C%20UK"
   },
   {
     "slug": "redditch",
@@ -1723,7 +1723,7 @@ export const locations: Location[] = [
       "Arrow Valley Country Park"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d2440.1234567890!2d-1.9456789840702125!3d52.30654321980115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487094265497f7a1%3A0x9db003d02648609!2sRedditch!5e0!3m2!1sen!2suk!4v1652364112269!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/RedditchLink"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Redditch%2C%20B97-B98%2C%20UK"
   },
   {
     "slug": "west-midlands",
@@ -1739,7 +1739,7 @@ export const locations: Location[] = [
       "Solihull"
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d155123.45678901234!2d-2.0123456789012345!3d52.48976543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8e7c8b8f8b8%3A0x12345678901234567!2sWest%20Midlands%2C%20UK!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
-    "mapUrl": "https://goo.gl/maps/WestMidlandsRegion"
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=West%20Midlands%2C%20B1-B99%2C%20WV%2C%20DY%2C%20WS%2C%20UK"
   }
 ]
 
