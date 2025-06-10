@@ -61,7 +61,7 @@ function getNearbyLocations(currentLocationSlug: string, limit: number = 6) {
   // Filter out current location and return nearby ones
   // For now, we'll just return random locations - in production you might want to implement geographical proximity
   return locations
-    .filter(loc => loc.slug !== currentLocationSlug)
+    .filter(loc => loc.slug !== currentLocationSlug && loc.slug.toLowerCase() !== currentLocationSlug.toLowerCase())
     .slice(0, limit)
 }
 
@@ -156,7 +156,7 @@ export function RelatedLocations({
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {nearbyLocations
-          .filter(location => location.slug !== currentLocation) // Prevent /location/location
+          .filter(location => location.slug.toLowerCase() !== (currentLocation?.toLowerCase() ?? '')) // Prevent /location/location (case-insensitive)
           .map((location) => (
           <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-3">
