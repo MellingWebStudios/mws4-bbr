@@ -1840,7 +1840,7 @@ export const services = [
       },
       {
         title: "Ferroli Repair (same day)",
-        price: "£95",
+        price: "£99",
         description: "Same-day service for Ferroli boiler repairs",
       },
       {

@@ -257,8 +257,29 @@ export function middleware(req: NextRequest) {
       'sitemap-viewer'
     ];
     
-    // Don't redirect if this is actually a legitimate page URL
-    if (!excludedPages.some(page => pathname === `/${page}`)) {
+    // Exclude known location slugs that contain hyphens
+    const excludedLocationSlugs = [
+      'acocks-green', 'aston-cross', 'aston-fields', 'astwood-bank', 'austin-village',
+      'bartley-green', 'beech-lanes', 'birches-green', 'bordesley-green', 'brandwood-end',
+      'browns-green', 'buckland-end', 'camp-hill', 'castle-vale', 'chad-valley',
+      'cofton-common', 'falcon-lodge', 'four-oaks', 'fox-hollies', 'garretts-green',
+      'gib-heath', 'glebe-farm', 'gospel-oak', 'gosta-green', 'gravelly-hill',
+      'great-barr', 'grimstock-hill', 'gun-quarter', 'hall-green', 'handsworth-wood',
+      'harts-green', 'hay-mills', 'high-heath', 'highters-heath', 'hill-hook',
+      'hill-wood', 'hodge-hill', 'old-oscott', 'over-green', 'perry-barr',
+      'perry-beeches', 'perry-common', 'pype-hayes', 'reddicap-heath', 'rotton-park',
+      'rowney-green', 'selly-oak', 'selly-park', 'shard-end', 'shenley-fields',
+      'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'south-woodgate',
+      'south-yardley', 'spring-vale', 'stockland-green', 'sutton-coldfield', 'ten-acres',
+      'the-parade', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill',
+      'turves-green', 'west-midlands', 'yardley-wood'
+    ];
+    
+    const pathWithoutSlash = pathname.slice(1); // Remove leading slash
+    
+    // Don't redirect if this is actually a legitimate page URL or location slug
+    if (!excludedPages.some(page => pathname === `/${page}`) && 
+        !excludedLocationSlugs.includes(pathWithoutSlash)) {
       // Common service patterns that should redirect
       const serviceMap: Record<string, string> = {
         'boiler-repair': 'boiler-repairs',
@@ -386,9 +407,10 @@ export function middleware(req: NextRequest) {
       return NextResponse.next();
     }
     
-    // For other unmatched slugs, redirect to the main page instead of creating broken links
-    const baseUrl = getBaseUrl(host);
-    return NextResponse.redirect(`${baseUrl}/`, 301);
+    // IMPORTANT: If we reach here, instead of redirecting to home, let Next.js handle it
+    // This allows the app to properly return 404 for invalid routes while still
+    // letting valid location routes that might be missing from our array pass through
+    return NextResponse.next();
   }
 
   return NextResponse.next();

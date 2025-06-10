@@ -9,6 +9,7 @@ import ServiceCard from "@/components/service-card"
 import { ServiceLinksGrid, FooterInternalLinks } from "@/components/internal-links"
 import { SmartContentLinks } from "@/components/contextual-links"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
+import { locations } from "@/lib/locations-data"
 
 export const metadata: Metadata = {
   title: "Boiler Repair & Service Birmingham | Same-Day Repairs",
@@ -126,7 +127,7 @@ export default function ServicesPage() {
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">Serving Birmingham and surrounding areas</p>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-1">
             <div className="relative h-80 overflow-hidden rounded-lg shadow-lg md:h-96">
               <Image src="/images/services_map_image.png" alt="Service Area Map" fill className="object-cover" />
             </div>
@@ -135,25 +136,8 @@ export default function ServicesPage() {
                 We provide boiler services across:
               </h3>
               <ul className="grid grid-cols-2 gap-2">
-                {[
-                  { name: "Birmingham", slug: "birmingham" },
-                  { name: "Edgbaston", slug: "edgbaston" },
-                  { name: "Harborne", slug: "harborne" },
-                  { name: "Selly Oak", slug: "selly-oak" },
-                  { name: "Moseley", slug: "moseley" },
-                  { name: "Kings Heath", slug: "kings-heath" },
-                  { name: "Bromsgrove", slug: "bromsgrove" },
-                  { name: "Redditch", slug: "redditch" },
-                  { name: "Dudley", slug: "dudley" },
-                  { name: "Stourbridge", slug: "stourbridge" },
-                  { name: "Kingswinford", slug: "kingswinford" },
-                  { name: "Wolverhampton", slug: "wolverhampton" },
-                  { name: "Alvechurch", slug: "alvechurch" },
-                  { name: "Halesowen", slug: "halesowen" },
-                  { name: "West Bromwich", slug: "west-bromwich" },
-                  { name: "Solihull", slug: "solihull" },
-                ].map((area, index) => (
-                  <li key={index} className="flex items-center text-gray-700 dark:text-gray-300">
+                {locations.map((area) => (
+                  <li key={area.slug} className="flex items-center text-gray-700 dark:text-gray-300">
                     <ArrowRight className="mr-2 h-4 w-4 text-secondary" />
                     <Link 
                       href={`/${area.slug}`}

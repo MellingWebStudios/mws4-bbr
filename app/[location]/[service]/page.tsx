@@ -447,28 +447,30 @@ export default async function LocationServicePage({ params }: Props) {
                       </ul>
                     </CardContent>
                   </Card>
-                  <Card className="border shadow-md">
-                    <CardContent className="p-6">
-                      <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
-                        Find Us in {location.name}
-                      </h3>
-                      <p className="mb-4 text-gray-600 dark:text-gray-400">
-                        We're conveniently located to serve all of {location.name}{" "}
-                        and surrounding areas.
-                      </p>
-                      <Button asChild variant="outline" className="w-full">
-                        <Link
-                          href={location.mapUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2"
-                        >
-                          <MapPin size={16} />
-                          View on Google Maps
-                        </Link>
-                      </Button>
-                    </CardContent>
-                  </Card>
+                  {/* Only show other locations, never self-link */}
+                  {locations.filter(l => l.slug !== location.slug).slice(0, 1).map((l) => (
+                    <Card className="border shadow-md" key={l.slug}>
+                      <CardContent className="p-6">
+                        <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">
+                          Find Us in {l.name}
+                        </h3>
+                        <p className="mb-4 text-gray-600 dark:text-gray-400">
+                          We're conveniently located to serve all of {l.name} and surrounding areas.
+                        </p>
+                        <Button asChild variant="outline" className="w-full">
+                          <Link
+                            href={l.mapUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2"
+                          >
+                            <MapPin size={16} />
+                            View on Google Maps
+                          </Link>
+                        </Button>
+                      </CardContent>
+                    </Card>
+                  ))}
                 </div>
               </div>
             </div>
