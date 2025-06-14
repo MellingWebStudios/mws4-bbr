@@ -1846,12 +1846,153 @@ export const services = [
       {
         title: "Ferroli Service",
         price: "£55",
-        description: "Genuine Ferroli parts with professional installation",
+        description: "Professional service for Ferroli boiler systems",
       },
       {
-        title: "Full Ferroli Service",
-        price: "£120",
-        description: "Comprehensive service for Ferroli boiler systems",
+        title: "Ferroli Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Ferroli boilers",
+      },
+      {
+        title: "Weekend Ferroli Service",
+        price: "£110",
+        description: "Weekend emergency service for Ferroli boilers",
+      },
+    ],
+  },
+  {
+    slug: "worcester-bosch-specialists",
+    name: "Worcester Bosch Specialists",
+    description:
+      "Approved specialist for Worcester Bosch boiler repair and maintenance. Expert knowledge of Worcester Bosch systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Worcester Bosch Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Worcester Bosch boilers",
+      },
+      {
+        title: "Worcester Bosch Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Worcester Bosch boiler repairs",
+      },
+      {
+        title: "Worcester Bosch Service",
+        price: "£55",
+        description: "Professional service for Worcester Bosch boiler systems",
+      },
+      {
+        title: "Worcester Bosch Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Worcester Bosch boilers",
+      },
+      {
+        title: "Weekend Worcester Bosch Service",
+        price: "£110",
+        description: "Weekend emergency service for Worcester Bosch boilers",
+      },
+    ],
+  },
+  {
+    slug: "vaillant-specialists",
+    name: "Vaillant Specialists",
+    description:
+      "Approved specialist for Vaillant boiler repair and maintenance. Expert knowledge of Vaillant systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Vaillant Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Vaillant boilers",
+      },
+      {
+        title: "Vaillant Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Vaillant boiler repairs",
+      },
+      {
+        title: "Vaillant Service",
+        price: "£55",
+        description: "Professional service for Vaillant boiler systems",
+      },
+      {
+        title: "Vaillant Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Vaillant boilers",
+      },
+      {
+        title: "Weekend Vaillant Service",
+        price: "£110",
+        description: "Weekend emergency service for Vaillant boilers",
+      },
+    ],
+  },
+  {
+    slug: "ideal-boilers-specialists",
+    name: "Ideal Boilers Specialists",
+    description:
+      "Approved specialist for Ideal boiler repair and maintenance. Expert knowledge of Ideal boiler systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Ideal Boiler Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Ideal boilers",
+      },
+      {
+        title: "Ideal Boiler Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Ideal boiler repairs",
+      },
+      {
+        title: "Ideal Boiler Service",
+        price: "£55",
+        description: "Professional service for Ideal boiler systems",
+      },
+      {
+        title: "Ideal Boiler Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Ideal boilers",
+      },
+      {
+        title: "Weekend Ideal Boiler Service",
+        price: "£110",
+        description: "Weekend emergency service for Ideal boilers",
+      },
+    ],
+  },
+  {
+    slug: "baxi-specialists",
+    name: "Baxi Specialists",
+    description:
+      "Approved specialist for Baxi boiler repair and maintenance. Expert knowledge of Baxi systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Baxi Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Baxi boilers",
+      },
+      {
+        title: "Baxi Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Baxi boiler repairs",
+      },
+      {
+        title: "Baxi Service",
+        price: "£55",
+        description: "Professional service for Baxi boiler systems",
+      },
+      {
+        title: "Baxi Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Baxi boilers",
+      },
+      {
+        title: "Weekend Baxi Service",
+        price: "£110",
+        description: "Weekend emergency service for Baxi boilers",
       },
     ],
   },

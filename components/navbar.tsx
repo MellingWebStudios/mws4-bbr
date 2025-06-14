@@ -19,6 +19,10 @@ const services = [
   { href: `/services/boiler-servicing`, label: "Boiler Servicing" },
   { href: `/services/gas-safety`, label: "Gas Safety Inspections" },
   { href: `/services/ferroli-specialists`, label: "Ferroli Specialists" },
+  { href: `/services/worcester-bosch-specialists`, label: "Worcester Bosch Specialists" },
+  { href: `/services/vaillant-specialists`, label: "Vaillant Specialists" },
+  { href: `/services/ideal-boilers-specialists`, label: "Ideal Boilers Specialists" },
+  { href: `/services/baxi-specialists`, label: "Baxi Specialists" },
 ];
 
 const popularLocations = [
@@ -308,8 +312,8 @@ const Navbar = () => {
             ></div>
 
             {/* Menu panel */}
-            <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white p-4 shadow-xl dark:bg-gray-900 transform transition-transform duration-200 ease-in-out">
-              <div className="flex items-center justify-between mb-8 pt-2">
+            <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white shadow-xl dark:bg-gray-900 transform transition-transform duration-200 ease-in-out flex flex-col">
+              <div className="flex items-center justify-between p-4 pt-6 flex-shrink-0">
                 <div className="flex items-center gap-2">
                   <div className="relative h-8 w-8">
                     <Image
@@ -334,7 +338,7 @@ const Navbar = () => {
                 </Button>
               </div>
 
-              <nav className="flex flex-col space-y-6">
+              <nav className="flex flex-col space-y-6 overflow-y-auto flex-1 px-4 pb-4">
                 {navLinks.map((link) => (
                   <div key={link.href}>
                     <Link
@@ -369,7 +373,7 @@ const Navbar = () => {
                   </div>
                 ))}
 
-                <div className="pt-4 border-t border-gray-200 dark:border-gray-800">
+                <div className="pt-4 border-t border-gray-200 dark:border-gray-800 flex-shrink-0">
                   <Button asChild className="w-full bg-red-600 text-white hover:bg-red-700">
                     <TrackedPhoneLink
                       phone={businessInfo.phone.freephone.replace(/\s/g, "")}

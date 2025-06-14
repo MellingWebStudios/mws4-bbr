@@ -79,6 +79,42 @@ export default function ServicesPage() {
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/ferroli-specialists",
     },
+    {
+      id: "worcester-bosch",
+      title: "Worcester Bosch Specialists",
+      description:
+        "Approved specialist for Worcester Bosch repair & maintenance. Expert knowledge of Worcester Bosch systems and components.",
+      image: "/images/worcester-bosch.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/worcester-bosch-specialists",
+    },
+    {
+      id: "vaillant",
+      title: "Vaillant Specialists",
+      description:
+        "Approved specialist for Vaillant repair & maintenance. Expert knowledge of Vaillant systems and components.",
+      image: "/images/vaillant.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/vaillant-specialists",
+    },
+    {
+      id: "ideal",
+      title: "Ideal Boilers Specialists",
+      description:
+        "Approved specialist for Ideal boiler repair & maintenance. Expert knowledge of Ideal boiler systems and components.",
+      image: "/images/ideal.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/ideal-boilers-specialists",
+    },
+    {
+      id: "baxi",
+      title: "Baxi Specialists",
+      description:
+        "Approved specialist for Baxi repair & maintenance. Expert knowledge of Baxi systems and components.",
+      image: "/images/baxi_specialist_services.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/baxi-specialists",
+    },
   ]
 
   return (
