@@ -82,12 +82,12 @@ function getBaseUrl(host: string): string {
   if (host.includes("localhost") || host.includes("127.0.0.1")) {
     return `http://${host}`;
   }
-  
+
   // Check if we have a WEBSITE_URL environment variable
   if (process.env.WEBSITE_URL) {
     return process.env.WEBSITE_URL;
   }
-  
+
   // Fall back to the original hardcoded domain
   return "https://www.birminghamboilerrepairs.uk";
 }
@@ -127,10 +127,10 @@ export function middleware(req: NextRequest) {
     '/index.php': '/',
     '/default.html': '/',
     '/main': '/',
-    
+
     // Service redirects - old to new patterns
     '/boiler-repair': '/services/boiler-repairs',
-    '/boiler-service': '/services/boiler-servicing', 
+    '/boiler-service': '/services/boiler-servicing',
     '/boiler-repairs': '/services/boiler-repairs',
     '/boiler-servicing': '/services/boiler-servicing',
     '/gas-safety-certificates': '/services/gas-safety',
@@ -138,14 +138,14 @@ export function middleware(req: NextRequest) {
     '/landlord-certificates': '/services/gas-safety',
     '/ferroli': '/services/ferroli-specialists',
     '/ferroli-repairs': '/services/ferroli-specialists',
-    
+
     // Location redirects - common misspellings/variations
     '/birmingham-boiler-repairs': '/birmingham',
     '/birmingham-boiler-repair': '/birmingham',
     '/solihull': '/birmingham', // Redirect nearby area to main Birmingham page
     '/coventry': '/birmingham',
     '/wolverhampton': '/birmingham',
-    
+
     // Old page structure
     '/service': '/services',
     '/repair': '/services/boiler-repairs',
@@ -156,12 +156,12 @@ export function middleware(req: NextRequest) {
     '/emergency': '/contact',
     '/about-us': '/about',
     '/contact-us': '/contact',
-    
+
     // Blog redirects
     '/news': '/blog',
     '/articles': '/blog',
     '/tips': '/blog',
-    
+
     // Remove trailing variations
     '/services/': '/services',
     '/contact/': '/contact',
@@ -176,7 +176,7 @@ export function middleware(req: NextRequest) {
     '/Selly-Park': '/selly-park',
     '/selly_park': '/selly-park',
     '/sellpark': '/selly-park',
-    
+
     // Other common location misspellings
     '/Acocks Green': '/acocks-green',
     '/Acocks%20Green': '/acocks-green',
@@ -187,7 +187,7 @@ export function middleware(req: NextRequest) {
     '/Small Heath': '/small-heath',
     '/Small%20Heath': '/small-heath',
     '/small heath': '/small-heath',
-    
+
     // Service variations
     '/boiler repair': '/services/boiler-repairs',
     '/boiler%20repair': '/services/boiler-repairs',
@@ -209,21 +209,21 @@ export function middleware(req: NextRequest) {
   // Handle location redirects - both URL-encoded and regular location names
   for (const [locationName, slug] of Object.entries(locationRedirects)) {
     const encodedLocationName = encodeURIComponent(locationName);
-    
+
     // Handle URL-encoded location names: /Austin%20Village -> /austin-village
     if (pathname === `/${encodedLocationName}`) {
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
-    
+
     // Handle regular location names: /Austin Village -> /austin-village
     if (pathname === `/${locationName}`) {
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
-    
+
     // Handle URL-encoded location+service patterns: /Austin%20Village/boiler-repairs -> /austin-village/boiler-repairs
     const encodedServicePattern = new RegExp(`^/${encodedLocationName}/(.+)$`);
     const encodedServiceMatch = pathname.match(encodedServicePattern);
@@ -233,7 +233,7 @@ export function middleware(req: NextRequest) {
       const redirectUrl = `${baseUrl}/${slug}/${service}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
     }
-    
+
     // Handle regular location+service patterns: /Austin Village/boiler-repairs -> /austin-village/boiler-repairs
     const servicePattern = new RegExp(`^/${locationName}/(.+)$`);
     const serviceMatch = pathname.match(servicePattern);
@@ -250,13 +250,15 @@ export function middleware(req: NextRequest) {
   const serviceLocationMatch = pathname.match(serviceLocationPattern);
   if (serviceLocationMatch) {
     const [, service, location] = serviceLocationMatch;
-    
+
     // Exclude legitimate page URLs that contain hyphens
     const excludedPages = [
       'privacy-policy',
-      'sitemap-viewer'
+      'sitemap-viewer',
+      'review-us',
+      'review-tools'
     ];
-    
+
     // Exclude known location slugs that contain hyphens
     const excludedLocationSlugs = [
       'acocks-green', 'aston-cross', 'aston-fields', 'astwood-bank', 'austin-village',
@@ -274,12 +276,12 @@ export function middleware(req: NextRequest) {
       'the-parade', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill',
       'turves-green', 'west-midlands', 'yardley-wood'
     ];
-    
+
     const pathWithoutSlash = pathname.slice(1); // Remove leading slash
-    
+
     // Don't redirect if this is actually a legitimate page URL or location slug
-    if (!excludedPages.some(page => pathname === `/${page}`) && 
-        !excludedLocationSlugs.includes(pathWithoutSlash)) {
+    if (!excludedPages.some(page => pathname === `/${page}`) &&
+      !excludedLocationSlugs.includes(pathWithoutSlash)) {
       // Common service patterns that should redirect
       const serviceMap: Record<string, string> = {
         'boiler-repair': 'boiler-repairs',
@@ -287,7 +289,7 @@ export function middleware(req: NextRequest) {
         'gas-safety': 'gas-safety',
         'ferroli': 'ferroli-specialists'
       };
-      
+
       const mappedService = serviceMap[service] || service;
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${location}/${mappedService}${req.nextUrl.search}`;
@@ -347,7 +349,7 @@ export function middleware(req: NextRequest) {
   if (caseInsensitiveMatch) {
     const [, locationInput] = caseInsensitiveMatch;
     const lowercaseLocation = locationInput.toLowerCase();
-    
+
     // Check if this is a valid single-word location that needs case correction
     if (singleWordLocations.includes(lowercaseLocation) && locationInput !== lowercaseLocation) {
       const baseUrl = getBaseUrl(host);
@@ -363,7 +365,7 @@ export function middleware(req: NextRequest) {
   if (caseInsensitiveServiceMatch) {
     const [, locationInput, service] = caseInsensitiveServiceMatch;
     const lowercaseLocation = locationInput.toLowerCase();
-    
+
     // Check if this is a valid single-word location that needs case correction
     if (singleWordLocations.includes(lowercaseLocation) && locationInput !== lowercaseLocation) {
       const baseUrl = getBaseUrl(host);
@@ -375,38 +377,38 @@ export function middleware(req: NextRequest) {
 
   // Only enforce HTTPS + www for the production domain (www.birminghamboilerrepairs.uk)
   // For other domains (like Fly.io staging), allow them to work without redirects
-  if (process.env.NODE_ENV === "production" && 
-      !host.includes("localhost") && 
-      !host.includes("127.0.0.1") &&
-      !host.includes("fly.dev") && // Don't redirect staging domains
-      (host !== "www.birminghamboilerrepairs.uk" || proto !== "https")) {
+  if (process.env.NODE_ENV === "production" &&
+    !host.includes("localhost") &&
+    !host.includes("127.0.0.1") &&
+    !host.includes("fly.dev") && // Don't redirect staging domains
+    (host !== "www.birminghamboilerrepairs.uk" || proto !== "https")) {
     const redirectUrl = `https://www.birminghamboilerrepairs.uk${pathname}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301);
   }
 
   // List of legitimate page routes that should not be redirected
   const legitimatePageRoutes = [
-    'services', 'blog', 'about', 'contact', 'prices', 'guides', 
-    'locations', 'privacy-policy', 'sitemap-viewer'
+    'services', 'blog', 'about', 'contact', 'prices', 'guides',
+    'locations', 'privacy-policy', 'sitemap-viewer', 'review-us', 'review-tools'
   ];
 
   // Catch-all redirect for unmatched slugs - only redirect if it's a potential location slug
   const pathSegment = pathname.slice(1); // Remove leading slash
   const regex = /^[a-z0-9\-]+$/; // Only lowercase for consistency
-  
+
   // Only redirect if it looks like a location slug and isn't already a known page
   if (regex.test(pathSegment) && pathSegment.length > 2) {
     // Don't redirect legitimate page routes
     if (legitimatePageRoutes.includes(pathSegment)) {
       return NextResponse.next();
     }
-    
+
     // Check if this might be a valid location by seeing if it's in our single word locations
     if (singleWordLocations.includes(pathSegment.toLowerCase())) {
       // This is a valid location, let it pass through to Next.js routing
       return NextResponse.next();
     }
-    
+
     // IMPORTANT: If we reach here, instead of redirecting to home, let Next.js handle it
     // This allows the app to properly return 404 for invalid routes while still
     // letting valid location routes that might be missing from our array pass through
