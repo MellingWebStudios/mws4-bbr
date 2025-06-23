@@ -111,9 +111,108 @@ export default function ServicesPage() {
       title: "Baxi Specialists",
       description:
         "Approved specialist for Baxi repair & maintenance. Expert knowledge of Baxi systems and components.",
-      image: "/images/baxi_specialist_services.png",
+      image: "/images/baxi_page.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/baxi-specialists",
+    },
+    {
+      id: "alpha",
+      title: "Alpha Boiler Specialists",
+      description:
+        "Approved specialist for Alpha boiler repair & maintenance. Expert knowledge of Alpha boiler systems and components.",
+      image: "/images/alpha.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/alpha-boiler-specialists",
+    },
+    {
+      id: "main",
+      title: "Main Boiler Specialists",
+      description:
+        "Approved specialist for Main boiler repair & maintenance. Expert knowledge of Main boiler systems and components.",
+      image: "/images/main.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/main-boiler-specialists",
+    },
+    {
+      id: "vokera",
+      title: "Vokera Specialists",
+      description:
+        "Approved specialist for Vokera repair & maintenance. Expert knowledge of Vokera systems and components.",
+      image: "/images/vokera.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/vokera-specialists",
+    },
+    {
+      id: "viessmann",
+      title: "Viessmann Specialists",
+      description:
+        "Approved specialist for Viessmann repair & maintenance. Expert knowledge of Viessmann systems and components.",
+      image: "/images/viessmann.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/viessmann-specialists",
+    },
+    {
+      id: "intergas",
+      title: "Intergas Specialists",
+      description:
+        "Approved specialist for Intergas repair & maintenance. Expert knowledge of Intergas systems and components.",
+      image: "/images/intergas.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/intergas-specialists",
+    },
+    {
+      id: "glowworm",
+      title: "Glow-worm Specialists",
+      description:
+        "Approved specialist for Glow-worm repair & maintenance. Expert knowledge of Glow-worm systems and components.",
+      image: "/images/glowworm.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/glowworm-specialists",
+    },
+    {
+      id: "atag",
+      title: "Atag Specialists",
+      description:
+        "Approved specialist for Atag repair & maintenance. Expert knowledge of Atag systems and components.",
+      image: "/images/atag.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/atag-specialists",
+    },
+    {
+      id: "biasi",
+      title: "Biasi Specialists",
+      description:
+        "Approved specialist for Biasi repair & maintenance. Expert knowledge of Biasi systems and components.",
+      image: "/images/biasi.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/biasi-specialists",
+    },
+    {
+      id: "potterton",
+      title: "Potterton Specialists",
+      description:
+        "Approved specialist for Potterton repair & maintenance. Expert knowledge of Potterton systems and components.",
+      image: "/images/potterton.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/potterton-specialists",
+    },
+    {
+      id: "ariston",
+      title: "Ariston Specialists",
+      description:
+        "Approved specialist for Ariston repair & maintenance. Expert knowledge of Ariston systems and components.",
+      image: "/images/ariston.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/ariston-specialists",
+    },
+    {
+      id: "heatline",
+      title: "Heatline Specialists",
+      description:
+        "Approved specialist for Heatline repair & maintenance. Expert knowledge of Heatline systems and components.",
+      image: "/images/heatline.png",
+      features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      link: "/services/heatline-specialists",
     },
   ]
 

@@ -1996,8 +1996,381 @@ export const services = [
       },
     ],
   },
+  {
+    slug: "alpha-specialists",
+    name: "Alpha Specialists",
+    description:
+      "Approved specialist for Alpha boiler repair and maintenance. Expert knowledge of Alpha systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Alpha Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Alpha boilers",
+      },
+      {
+        title: "Alpha Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Alpha boiler repairs",
+      },
+      {
+        title: "Alpha Service",
+        price: "£55",
+        description: "Professional service for Alpha boiler systems",
+      },
+      {
+        title: "Alpha Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Alpha boilers",
+      },
+      {
+        title: "Weekend Alpha Service",
+        price: "£110",
+        description: "Weekend emergency service for Alpha boilers",
+      },
+    ],
+  },
+  {
+    slug: "main-specialists",
+    name: "Main Specialists",
+    description:
+      "Approved specialist for Main boiler repair and maintenance. Expert knowledge of Main systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Main Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Main boilers",
+      },
+      {
+        title: "Main Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Main boiler repairs",
+      },
+      {
+        title: "Main Service",
+        price: "£55",
+        description: "Professional service for Main boiler systems",
+      },
+      {
+        title: "Main Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Main boilers",
+      },
+      {
+        title: "Weekend Main Service",
+        price: "£110",
+        description: "Weekend emergency service for Main boilers",
+      },
+    ],
+  },
+  {
+    slug: "vokera-specialists",
+    name: "Vokera Specialists",
+    description:
+      "Approved specialist for Vokera boiler repair and maintenance. Expert knowledge of Vokera systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Vokera Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Vokera boilers",
+      },
+      {
+        title: "Vokera Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Vokera boiler repairs",
+      },
+      {
+        title: "Vokera Service",
+        price: "£55",
+        description: "Professional service for Vokera boiler systems",
+      },
+      {
+        title: "Vokera Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Vokera boilers",
+      },
+      {
+        title: "Weekend Vokera Service",
+        price: "£110",
+        description: "Weekend emergency service for Vokera boilers",
+      },
+    ],
+  },
+  {
+    slug: "viessmann-specialists",
+    name: "Viessmann Specialists",
+    description:
+      "Approved specialist for Viessmann boiler repair and maintenance. Expert knowledge of Viessmann systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Viessmann Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Viessmann boilers",
+      },
+      {
+        title: "Viessmann Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Viessmann boiler repairs",
+      },
+      {
+        title: "Viessmann Service",
+        price: "£55",
+        description: "Professional service for Viessmann boiler systems",
+      },
+      {
+        title: "Viessmann Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Viessmann boilers",
+      },
+      {
+        title: "Weekend Viessmann Service",
+        price: "£110",
+        description: "Weekend emergency service for Viessmann boilers",
+      },
+    ],
+  },
+  {
+    slug: "intergas-specialists",
+    name: "Intergas Specialists",
+    description:
+      "Approved specialist for Intergas boiler repair and maintenance. Expert knowledge of Intergas systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Intergas Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Intergas boilers",
+      },
+      {
+        title: "Intergas Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Intergas boiler repairs",
+      },
+      {
+        title: "Intergas Service",
+        price: "£55",
+        description: "Professional service for Intergas boiler systems",
+      },
+      {
+        title: "Intergas Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Intergas boilers",
+      },
+      {
+        title: "Weekend Intergas Service",
+        price: "£110",
+        description: "Weekend emergency service for Intergas boilers",
+      },
+    ],
+  },
+  {
+    slug: "glow-worm-specialists",
+    name: "Glow-worm Specialists",
+    description:
+      "Approved specialist for Glow-worm boiler repair and maintenance. Expert knowledge of Glow-worm systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Glow-worm Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Glow-worm boilers",
+      },
+      {
+        title: "Glow-worm Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Glow-worm boiler repairs",
+      },
+      {
+        title: "Glow-worm Service",
+        price: "£55",
+        description: "Professional service for Glow-worm boiler systems",
+      },
+      {
+        title: "Glow-worm Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Glow-worm boilers",
+      },
+      {
+        title: "Weekend Glow-worm Service",
+        price: "£110",
+        description: "Weekend emergency service for Glow-worm boilers",
+      },
+    ],
+  },
+  {
+    slug: "atag-specialists",
+    name: "Atag Specialists",
+    description:
+      "Approved specialist for Atag boiler repair and maintenance. Expert knowledge of Atag systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Atag Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Atag boilers",
+      },
+      {
+        title: "Atag Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Atag boiler repairs",
+      },
+      {
+        title: "Atag Service",
+        price: "£55",
+        description: "Professional service for Atag boiler systems",
+      },
+      {
+        title: "Atag Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Atag boilers",
+      },
+      {
+        title: "Weekend Atag Service",
+        price: "£110",
+        description: "Weekend emergency service for Atag boilers",
+      },
+    ],
+  },
+  {
+    slug: "biasi-specialists",
+    name: "Biasi Specialists",
+    description:
+      "Approved specialist for Biasi boiler repair and maintenance. Expert knowledge of Biasi systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Biasi Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Biasi boilers",
+      },
+      {
+        title: "Biasi Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Biasi boiler repairs",
+      },
+      {
+        title: "Biasi Service",
+        price: "£55",
+        description: "Professional service for Biasi boiler systems",
+      },
+      {
+        title: "Biasi Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Biasi boilers",
+      },
+      {
+        title: "Weekend Biasi Service",
+        price: "£110",
+        description: "Weekend emergency service for Biasi boilers",
+      },
+    ],
+  },
+  {
+    slug: "potterton-specialists",
+    name: "Potterton Specialists",
+    description:
+      "Approved specialist for Potterton boiler repair and maintenance. Expert knowledge of Potterton systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Potterton Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Potterton boilers",
+      },
+      {
+        title: "Potterton Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Potterton boiler repairs",
+      },
+      {
+        title: "Potterton Service",
+        price: "£55",
+        description: "Professional service for Potterton boiler systems",
+      },
+      {
+        title: "Potterton Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Potterton boilers",
+      },
+      {
+        title: "Weekend Potterton Service",
+        price: "£110",
+        description: "Weekend emergency service for Potterton boilers",
+      },
+    ],
+  },
+  {
+    slug: "ariston-specialists",
+    name: "Ariston Specialists",
+    description:
+      "Approved specialist for Ariston boiler repair and maintenance. Expert knowledge of Ariston systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Ariston Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Ariston boilers",
+      },
+      {
+        title: "Ariston Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Ariston boiler repairs",
+      },
+      {
+        title: "Ariston Service",
+        price: "£55",
+        description: "Professional service for Ariston boiler systems",
+      },
+      {
+        title: "Ariston Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Ariston boilers",
+      },
+      {
+        title: "Weekend Ariston Service",
+        price: "£110",
+        description: "Weekend emergency service for Ariston boilers",
+      },
+    ],
+  },
+  {
+    slug: "heatline-specialists",
+    name: "Heatline Specialists",
+    description:
+      "Approved specialist for Heatline boiler repair and maintenance. Expert knowledge of Heatline systems and components.",
+    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+    pricing: [
+      {
+        title: "Heatline Repair",
+        price: "£75",
+        description: "Specialist diagnosis and repair for Heatline boilers",
+      },
+      {
+        title: "Heatline Repair (same day)",
+        price: "£99",
+        description: "Same-day service for Heatline boiler repairs",
+      },
+      {
+        title: "Heatline Service",
+        price: "£55",
+        description: "Professional service for Heatline boiler systems",
+      },
+      {
+        title: "Heatline Service & Repair",
+        price: "£99",
+        description: "Combined service and repair for Heatline boilers",
+      },
+      {
+        title: "Weekend Heatline Service",
+        price: "£110",
+        description: "Weekend emergency service for Heatline boilers",
+      },
+    ],
+  },
 ]
-
 export function getLocationBySlug(slug: string): Location | undefined {
   // Make slug matching case-insensitive and robust
   return locations.find((location) => location.slug.toLowerCase() === slug.toLowerCase())
