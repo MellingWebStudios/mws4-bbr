@@ -13,20 +13,20 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/contact</loc>
-    <lastmod>2025-06-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://www.birminghamboilerrepairs.uk/blog</loc>
     <lastmod>2025-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/guides</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/contact</loc>
     <lastmod>2025-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.birminghamboilerrepairs.uk/guides</loc>
+    <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -121,13 +121,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/gas-safety</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
     <lastmod>2025-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/services/ferroli-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/services/gas-safety</loc>
     <lastmod>2025-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -253,13 +253,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -283,7 +283,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/acocks-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -379,13 +379,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ashted/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ashted/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -409,7 +409,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ashted/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ashted/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -505,13 +505,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -535,7 +535,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -631,13 +631,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -661,7 +661,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-cross/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -757,13 +757,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/austin-village/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/austin-village/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -787,7 +787,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/austin-village/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/austin-village/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -883,13 +883,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -913,7 +913,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bartley-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1009,13 +1009,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1039,7 +1039,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/beech-lanes/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1135,13 +1135,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/billesley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/billesley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1165,7 +1165,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/billesley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/billesley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1261,13 +1261,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birches-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birches-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1291,7 +1291,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birches-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birches-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1387,13 +1387,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birchfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birchfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1417,7 +1417,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birchfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birchfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1513,13 +1513,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birmingham/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birmingham/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1543,7 +1543,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/birmingham/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/birmingham/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1639,13 +1639,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/boldmere/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/boldmere/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1669,7 +1669,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/boldmere/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/boldmere/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1765,13 +1765,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1795,7 +1795,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1891,13 +1891,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -1921,7 +1921,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bordesley-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2017,13 +2017,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2047,7 +2047,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournbrook/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2143,13 +2143,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournville/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournville/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2173,7 +2173,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bournville/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bournville/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2269,13 +2269,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2299,7 +2299,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/brandwood-end/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2395,13 +2395,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromford/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromford/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2425,7 +2425,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromford/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromford/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2521,13 +2521,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/browns-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/browns-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2551,7 +2551,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/browns-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/browns-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2647,13 +2647,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2677,7 +2677,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/buckland-end/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2773,13 +2773,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/california/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/california/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/california/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/california/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2803,7 +2803,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/california/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/california/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2899,13 +2899,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2929,7 +2929,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/camp-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3025,13 +3025,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3055,7 +3055,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/castle-vale/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3151,13 +3151,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3181,7 +3181,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/chad-valley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3277,13 +3277,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/churchfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/churchfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3307,7 +3307,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/churchfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/churchfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3403,13 +3403,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3433,7 +3433,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cofton-common/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3529,13 +3529,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3559,7 +3559,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/cotteridge/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3655,13 +3655,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/deritend/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/deritend/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3685,7 +3685,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/deritend/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/deritend/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3781,13 +3781,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/eastside/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/eastside/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3811,7 +3811,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/eastside/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/eastside/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3907,13 +3907,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -3937,7 +3937,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/edgbaston/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4033,13 +4033,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/erdington/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/erdington/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4063,7 +4063,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/erdington/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/erdington/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4159,13 +4159,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4189,7 +4189,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/falcon-lodge/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4285,13 +4285,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4315,7 +4315,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/four-oaks/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4411,13 +4411,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4441,7 +4441,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/fox-hollies/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4537,13 +4537,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/frankley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/frankley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4567,7 +4567,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/frankley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/frankley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4663,13 +4663,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4693,7 +4693,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/garretts-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4789,13 +4789,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4819,7 +4819,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gib-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4915,13 +4915,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -4945,7 +4945,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gilbertstone/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5041,13 +5041,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5071,7 +5071,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/glebe-farm/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5167,13 +5167,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5197,7 +5197,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gospel-oak/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5293,13 +5293,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5323,7 +5323,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gosta-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5419,13 +5419,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5449,7 +5449,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gravelly-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5545,13 +5545,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/great-barr/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/great-barr/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5575,7 +5575,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/great-barr/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/great-barr/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5671,13 +5671,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/greet/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/greet/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5701,7 +5701,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/greet/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/greet/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5797,13 +5797,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5827,7 +5827,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/grimstock-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5923,13 +5923,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -5953,7 +5953,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/gun-quarter/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6049,13 +6049,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hall-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hall-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6079,7 +6079,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hall-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hall-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6175,13 +6175,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hamstead/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hamstead/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6205,7 +6205,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hamstead/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hamstead/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6301,13 +6301,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6331,7 +6331,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6427,13 +6427,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6457,7 +6457,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/handsworth-wood/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6553,13 +6553,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harborne/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harborne/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6583,7 +6583,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harborne/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harborne/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6679,13 +6679,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harts-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harts-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6709,7 +6709,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/harts-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/harts-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6805,13 +6805,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6835,7 +6835,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hawkesley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6931,13 +6931,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -6961,7 +6961,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hay-mills/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7057,13 +7057,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/high-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/high-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7087,7 +7087,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/high-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/high-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7183,13 +7183,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highgate/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highgate/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7213,7 +7213,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highgate/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highgate/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7309,13 +7309,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7339,7 +7339,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/highters-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7435,13 +7435,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7465,7 +7465,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-hook/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7561,13 +7561,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7591,7 +7591,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hill-wood/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7687,13 +7687,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7717,7 +7717,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hodge-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7813,13 +7813,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7843,7 +7843,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/old-oscott/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7939,13 +7939,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/over-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/over-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -7969,7 +7969,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/over-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/over-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8065,13 +8065,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/peddimore/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/peddimore/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8095,7 +8095,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/peddimore/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/peddimore/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8191,13 +8191,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/parkhall/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/parkhall/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8221,7 +8221,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/parkhall/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/parkhall/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8317,13 +8317,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pelham/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pelham/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8347,7 +8347,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pelham/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pelham/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8443,13 +8443,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8473,7 +8473,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-barr/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8569,13 +8569,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8599,7 +8599,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-beeches/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8695,13 +8695,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-common/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-common/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8725,7 +8725,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/perry-common/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/perry-common/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8821,13 +8821,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pheasey/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pheasey/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8851,7 +8851,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pheasey/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pheasey/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8947,13 +8947,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -8977,7 +8977,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/pype-hayes/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9073,13 +9073,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/queslett/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/queslett/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9103,7 +9103,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/queslett/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/queslett/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9199,13 +9199,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/quinton/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/quinton/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9229,7 +9229,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/quinton/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/quinton/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9325,13 +9325,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9355,7 +9355,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/reddicap-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9451,13 +9451,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rednal/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rednal/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9481,7 +9481,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rednal/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rednal/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9577,13 +9577,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9607,7 +9607,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ridgacre/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9703,13 +9703,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9733,7 +9733,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rotton-park/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9829,13 +9829,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/roughley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/roughley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9859,7 +9859,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/roughley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/roughley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9955,13 +9955,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rubery/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rubery/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -9985,7 +9985,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rubery/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rubery/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10081,13 +10081,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/saltley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/saltley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10111,7 +10111,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/saltley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/saltley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10207,13 +10207,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sarehole/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sarehole/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10237,7 +10237,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sarehole/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sarehole/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10333,13 +10333,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10363,7 +10363,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-oak/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10459,13 +10459,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-park/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-park/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10489,7 +10489,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/selly-park/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/selly-park/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10585,13 +10585,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shard-end/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shard-end/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10615,7 +10615,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shard-end/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shard-end/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10711,13 +10711,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sheldon/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sheldon/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10741,7 +10741,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sheldon/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sheldon/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10837,13 +10837,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10867,7 +10867,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-fields/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10963,13 +10963,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -10993,7 +10993,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/shenley-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11089,13 +11089,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/short-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/short-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11119,7 +11119,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/short-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/short-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11215,13 +11215,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/showell-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/showell-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11245,7 +11245,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/showell-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/showell-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11341,13 +11341,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/small-heath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/small-heath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11371,7 +11371,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/small-heath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/small-heath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11467,13 +11467,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/smithfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/smithfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11497,7 +11497,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/smithfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/smithfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11593,13 +11593,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/soho/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/soho/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11623,7 +11623,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/soho/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/soho/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11719,13 +11719,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/southside/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/southside/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11749,7 +11749,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/southside/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/southside/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11845,13 +11845,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11875,7 +11875,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-yardley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -11971,13 +11971,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12001,7 +12001,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/south-woodgate/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12097,13 +12097,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12127,7 +12127,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkbrook/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12223,13 +12223,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12253,7 +12253,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sparkhill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12349,13 +12349,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/springfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/springfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12379,7 +12379,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/springfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/springfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12475,13 +12475,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12505,7 +12505,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/spring-vale/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12601,13 +12601,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stechford/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stechford/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12631,7 +12631,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stechford/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stechford/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12727,13 +12727,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stirchley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stirchley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12757,7 +12757,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stirchley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stirchley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12853,13 +12853,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12883,7 +12883,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -12979,13 +12979,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13009,7 +13009,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/stockland-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13105,13 +13105,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/streetly/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/streetly/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13135,7 +13135,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/streetly/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/streetly/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13231,13 +13231,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13261,7 +13261,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/sutton-coldfield/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13357,13 +13357,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13387,7 +13387,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/ten-acres/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13483,13 +13483,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/the-parade/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/the-parade/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13513,7 +13513,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/the-parade/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/the-parade/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13609,13 +13609,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/theatreland/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/theatreland/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13639,7 +13639,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/theatreland/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/theatreland/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13735,13 +13735,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13765,7 +13765,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/thimble-end/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13861,13 +13861,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13891,7 +13891,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tile-cross/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -13987,13 +13987,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14017,7 +14017,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tower-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14113,13 +14113,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14143,7 +14143,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tudor-hill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14239,13 +14239,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/turves-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/turves-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14269,7 +14269,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/turves-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/turves-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14365,13 +14365,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyburn/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyburn/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14395,7 +14395,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyburn/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyburn/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14491,13 +14491,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyseley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyseley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14521,7 +14521,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tyseley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tyseley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14617,13 +14617,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14647,7 +14647,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14743,13 +14743,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14773,7 +14773,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/yardley-wood/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14869,13 +14869,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14899,7 +14899,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/aston-fields/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14995,13 +14995,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/catshill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/catshill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15025,7 +15025,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/catshill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/catshill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15121,13 +15121,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/dodford/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/dodford/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15151,7 +15151,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/dodford/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/dodford/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15247,13 +15247,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/finstall/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/finstall/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15277,7 +15277,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/finstall/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/finstall/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15373,13 +15373,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hopwood/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hopwood/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15403,7 +15403,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/hopwood/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/hopwood/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15499,13 +15499,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/lickey/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/lickey/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15529,7 +15529,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/lickey/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/lickey/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15625,13 +15625,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15655,7 +15655,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/rowney-green/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15751,13 +15751,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15781,7 +15781,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/tardebigge/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15877,13 +15877,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wythall/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wythall/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -15907,7 +15907,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wythall/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wythall/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16003,13 +16003,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wirehill/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wirehill/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16033,7 +16033,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/wirehill/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/wirehill/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16129,13 +16129,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/webheath/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/webheath/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16159,7 +16159,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/webheath/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/webheath/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16255,13 +16255,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16285,7 +16285,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/oakenshaw/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16381,13 +16381,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16411,7 +16411,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/astwood-bank/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16507,13 +16507,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/walkwood/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/walkwood/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16537,7 +16537,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/walkwood/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/walkwood/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16633,13 +16633,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16663,7 +16663,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/bromsgrove/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16759,13 +16759,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/redditch/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/redditch/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16789,7 +16789,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/redditch/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/redditch/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16885,13 +16885,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/alpha-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/alpha-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/main-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/main-boiler-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -16915,7 +16915,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/glow-worm-specialists</loc>
+    <loc>https://www.birminghamboilerrepairs.uk/west-midlands/glowworm-specialists</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
