@@ -1740,6 +1740,253 @@ export const locations: Location[] = [
     ],
     "mapEmbedId": "!1m18!1m12!1m3!1d155123.45678901234!2d-2.0123456789012345!3d52.48976543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870b8e7c8b8f8b8%3A0x12345678901234567!2sWest%20Midlands%2C%20UK!5e0!3m2!1sen!2suk!4v1652364112270!5m2!1sen!2suk",
     "mapUrl": "https://www.google.com/maps/search/?api=1&query=West%20Midlands%2C%20B1-B99%2C%20WV%2C%20DY%2C%20WS%2C%20UK"
+  },
+  {
+    "slug": "weoley-castle",
+    "name": "Weoley Castle",
+    "postcode": "B29",
+    "blurb": "Boiler repair & servicing in Weoley Castle and surrounding areas.",
+    "landmarks": [
+      "Weoley Castle Ruins",
+      "Weoley Castle Community School",
+      "Weoley Castle Swimming Pool"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.1234567890123!2d-1.9876543210987654!3d52.43210987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc64e7eeb687%3A0x7c24c3cdaffef8c2!2sWeoley%20Castle%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112271!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Weoley%20Castle%2C%20B29%2C%20UK"
+  },
+  {
+    "slug": "oldbury",
+    "name": "Oldbury",
+    "postcode": "B68-B69",
+    "blurb": "Boiler repair & servicing in Oldbury and surrounding areas.",
+    "landmarks": [
+      "Oldbury Town Centre",
+      "Sandwell Valley Country Park",
+      "Oldbury Library"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.2345678901234!2d-2.0123456789012345!3d52.50876543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bcd123456789%3A0x1234567890abcdef!2sOldbury%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112272!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Oldbury%2C%20B68-B69%2C%20UK"
+  },
+  {
+    "slug": "northfield",
+    "name": "Northfield",
+    "postcode": "B31",
+    "blurb": "Boiler repair & servicing in Northfield and surrounding areas.",
+    "landmarks": [
+      "Northfield Shopping Centre",
+      "Northfield Railway Station",
+      "Lickey Hills Country Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.3456789012345!2d-1.9654321098765432!3d52.41234567890123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc87654321ab%3A0xabcdef1234567890!2sNorthfield%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112273!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Northfield%2C%20B31%2C%20UK"
+  },
+  {
+    "slug": "west-heath",
+    "name": "West Heath",
+    "postcode": "B31",
+    "blurb": "Boiler repair & servicing in West Heath and surrounding areas.",
+    "landmarks": [
+      "West Heath Hospital",
+      "West Heath Park",
+      "West Heath Primary School"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.4567890123456!2d-1.9543210987654321!3d52.40123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc76543210cd%3A0xcdef123456789012!2sWest%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112274!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=West%20Heath%2C%20B31%2C%20UK"
+  },
+  {
+    "slug": "longbridge",
+    "name": "Longbridge",
+    "postcode": "B31",
+    "blurb": "Boiler repair & servicing in Longbridge and surrounding areas.",
+    "landmarks": [
+      "Longbridge Railway Station",
+      "Longbridge Technology Park",
+      "Austin Retail Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.5678901234567!2d-1.9432109876543210!3d52.39012345678901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc65432109ef%3A0xef123456789012ab!2sLongbridge%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112275!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Longbridge%2C%20B31%2C%20UK"
+  },
+  {
+    "slug": "kings-norton",
+    "name": "Kings Norton",
+    "postcode": "B30",
+    "blurb": "Boiler repair & servicing in Kings Norton and surrounding areas.",
+    "landmarks": [
+      "Kings Norton Railway Station",
+      "Kings Norton Green",
+      "Merecroft Pool"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.6789012345678!2d-1.9321098765432109!3d52.38901234567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc54321098ab%3A0xab123456789012cd!2sKings%20Norton%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112276!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kings%20Norton%2C%20B30%2C%20UK"
+  },
+  {
+    "slug": "alvechurch",
+    "name": "Alvechurch",
+    "postcode": "B48",
+    "blurb": "Boiler repair & servicing in Alvechurch and surrounding areas.",
+    "landmarks": [
+      "Alvechurch Marina",
+      "St Laurence Church",
+      "Alvechurch Railway Station"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.7890123456789!2d-2.0210987654321098!3d52.37890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc43210987cd%3A0xcd123456789012ef!2sAlvechurch%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112277!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Alvechurch%2C%20B48%2C%20UK"
+  },
+  {
+    "slug": "smethwick",
+    "name": "Smethwick",
+    "postcode": "B66-B67",
+    "blurb": "Boiler repair & servicing in Smethwick and surrounding areas.",
+    "landmarks": [
+      "Smethwick Galton Bridge",
+      "Smethwick Library",
+      "Lightwoods Park"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.8901234567890!2d-1.9876543210987654!3d52.48765432109876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc32109876ef%3A0xef123456789012ab!2sSmethwick%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112278!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Smethwick%2C%20B66-B67%2C%20UK"
+  },
+  {
+    "slug": "kings-heath",
+    "name": "Kings Heath",
+    "postcode": "B14",
+    "blurb": "Boiler repair & servicing in Kings Heath and surrounding areas.",
+    "landmarks": [
+      "Kings Heath High Street",
+      "Kings Heath Park",
+      "The Old Moseley Arms"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.9012345678901!2d-1.8765432109876543!3d52.44654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc21098765ab%3A0xab123456789012cd!2sKings%20Heath%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112279!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Kings%20Heath%2C%20B14%2C%20UK"
+  },
+  {
+    "slug": "moseley",
+    "name": "Moseley",
+    "postcode": "B13",
+    "blurb": "Boiler repair & servicing in Moseley and surrounding areas.",
+    "landmarks": [
+      "Moseley Village",
+      "Cannon Hill Park",
+      "Moseley Road Baths"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2434.0123456789012!2d-1.8654321098765432!3d52.45543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc10987654cd%3A0xcd123456789012ef!2sMoseley%2C%20Birmingham!5e0!3m2!1sen!2suk!4v1652364112280!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Moseley%2C%20B13%2C%20UK"
+  },
+  {
+    "slug": "shirley",
+    "name": "Shirley",
+    "postcode": "B90",
+    "blurb": "Boiler repair & servicing in Shirley and surrounding areas.",
+    "landmarks": [
+      "Shirley High Street",
+      "Bill Horne Community Park",
+      "Shirley Library"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.1234567890123!2d-1.8543210987654321!3d52.41432109876543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc09876543ef%3A0xef123456789012ab!2sShirley%2C%20Solihull!5e0!3m2!1sen!2suk!4v1652364112281!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Shirley%2C%20B90%2C%20UK"
+  },
+  {
+    "slug": "solihull",
+    "name": "Solihull",
+    "postcode": "B90-B94",
+    "blurb": "Boiler repair & servicing in Solihull and surrounding areas.",
+    "landmarks": [
+      "Touchwood Shopping Centre",
+      "Tudor Grange Park",
+      "Solihull Railway Station"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.2345678901234!2d-1.7876543210987654!3d52.41321098765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc98765432ab%3A0xab123456789012cd!2sSolihull%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112282!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Solihull%2C%20B90-B94%2C%20UK"
+  },
+  {
+    "slug": "halesowen",
+    "name": "Halesowen",
+    "postcode": "B62-B63",
+    "blurb": "Boiler repair & servicing in Halesowen and surrounding areas.",
+    "landmarks": [
+      "Halesowen Town Centre",
+      "Leasowes Park",
+      "Halesowen Railway Station"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.3456789012345!2d-2.0543210987654321!3d52.45210987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc87654321cd%3A0xcd123456789012ef!2sHalesowen%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112283!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Halesowen%2C%20B62-B63%2C%20UK"
+  },
+  {
+    "slug": "rowley-regis",
+    "name": "Rowley Regis",
+    "postcode": "B65",
+    "blurb": "Boiler repair & servicing in Rowley Regis and surrounding areas.",
+    "landmarks": [
+      "Rowley Regis Railway Station",
+      "Portway Hill",
+      "Blackheath Rugby Club"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.4567890123456!2d-2.0432109876543210!3d52.48098765432109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc76543210ef%3A0xef123456789012ab!2sRowley%20Regis%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112284!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Rowley%20Regis%2C%20B65%2C%20UK"
+  },
+  {
+    "slug": "cradley-heath",
+    "name": "Cradley Heath",
+    "postcode": "B64",
+    "blurb": "Boiler repair & servicing in Cradley Heath and surrounding areas.",
+    "landmarks": [
+      "Cradley Heath Railway Station",
+      "Cradley Heath High Street",
+      "Lyde Green"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.5678901234567!2d-2.0321098765432109!3d52.46987654321098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc65432109ab%3A0xab123456789012cd!2sCradley%20Heath%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112285!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Cradley%20Heath%2C%20B64%2C%20UK"
+  },
+  {
+    "slug": "west-bromwich",
+    "name": "West Bromwich",
+    "postcode": "B70-B71",
+    "blurb": "Boiler repair & servicing in West Bromwich and surrounding areas.",
+    "landmarks": [
+      "West Bromwich Albion FC",
+      "Sandwell Valley Country Park",
+      "West Bromwich Central"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.6789012345678!2d-1.9876543210987654!3d52.51876543210987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc54321098cd%3A0xcd123456789012ef!2sWest%20Bromwich%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112286!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=West%20Bromwich%2C%20B70-B71%2C%20UK"
+  },
+  {
+    "slug": "stourbridge",
+    "name": "Stourbridge",
+    "postcode": "DY8-DY9",
+    "blurb": "Boiler repair & servicing in Stourbridge and surrounding areas.",
+    "landmarks": [
+      "Stourbridge Town Centre",
+      "Red House Glass Cone",
+      "Stourbridge Railway Station"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.7890123456789!2d-2.1432109876543210!3d52.45654321098765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc43210987ef%3A0xef123456789012ab!2sStourbridge%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112287!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Stourbridge%2C%20DY8-DY9%2C%20UK"
+  },
+  {
+    "slug": "dudley",
+    "name": "Dudley",
+    "postcode": "DY1-DY3",
+    "blurb": "Boiler repair & servicing in Dudley and surrounding areas.",
+    "landmarks": [
+      "Dudley Castle",
+      "Dudley Zoo",
+      "Black Country Living Museum"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.8901234567890!2d-2.0876543210987654!3d52.51321098765432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc32109876ab%3A0xab123456789012cd!2sDudley%2C%20West%20Midlands!5e0!3m2!1sen!2suk!4v1652364112288!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Dudley%2C%20DY1-DY3%2C%20UK"
+  },
+  {
+    "slug": "hagley",
+    "name": "Hagley",
+    "postcode": "DY9",
+    "blurb": "Boiler repair & servicing in Hagley and surrounding areas.",
+    "landmarks": [
+      "Hagley Hall",
+      "Hagley Railway Station",
+      "Clent Hills"
+    ],
+    "mapEmbedId": "!1m18!1m12!1m3!1d2435.9012345678901!2d-2.1987654321098765!3d52.42109876543210!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4870bc21098765cd%3A0xcd123456789012ef!2sHagley%2C%20Stourbridge!5e0!3m2!1sen!2suk!4v1652364112289!5m2!1sen!2suk",
+    "mapUrl": "https://www.google.com/maps/search/?api=1&query=Hagley%2C%20DY9%2C%20UK"
   }
 ]
 
