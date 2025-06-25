@@ -44,7 +44,7 @@ export default function AtagSpecialistsPage() {
     title: "Atag Specialists",
     description:
       "Approved specialists and experts in fixing Atag boilers. Expert knowledge of Atag systems and components.",
-    image: "/images/atag.png",
+    image: "/images/atag_page.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Atag specialists, we are experts in fixing Atag boilers and offer professional repair and maintenance services for all Atag boiler models. Our engineers have received specialized training directly from Atag, ensuring they have in-depth knowledge of these systems and their unique components.</p>

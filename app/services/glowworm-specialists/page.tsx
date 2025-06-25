@@ -44,7 +44,7 @@ export default function GlowwormSpecialistsPage() {
     title: "Glow-worm Specialists",
     description:
       "Approved specialists and experts in fixing Glow-worm boilers. Expert knowledge of Glow-worm systems and components.",
-    image: "/images/glowworm.png",
+    image: "/images/glowworm_page.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Glow-worm specialists, we are experts in fixing Glow-worm boilers and offer professional repair and maintenance services for all Glow-worm boiler models. Our engineers have received specialized training directly from Glow-worm, ensuring they have in-depth knowledge of these systems and their unique components.</p>

@@ -44,7 +44,7 @@ export default function IntergasSpecialistsPage() {
     title: "Intergas Specialists",
     description:
       "Approved specialists and experts in fixing Intergas boilers. Expert knowledge of Intergas systems and components.",
-    image: "/images/intergas.png",
+    image: "/images/intergas_service.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Intergas specialists, we are experts in fixing Intergas boilers and offer professional repair and maintenance services for all Intergas boiler models. Our engineers have received specialized training directly from Intergas, ensuring they have in-depth knowledge of these systems and their unique components.</p>

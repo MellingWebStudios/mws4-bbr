@@ -13,17 +13,17 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Viessmann Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Combination Boiler Services Birmingham | Professional Combi Boiler Servicing",
   description:
-    "Approved Viessmann specialists in Birmingham. Expert knowledge of Viessmann systems and components with genuine parts and extended warranties.",
-  keywords: "Viessmann boiler repair Birmingham, Viessmann specialist, Viessmann boiler service, Viessmann parts",
+    "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £55.",
+  keywords: "combination boiler service Birmingham, combi boiler servicing, combination boiler maintenance, combi boiler service",
   alternates: {
-    canonical: "https://www.birminghamboilerrepairs.uk/services/viessmann-specialists",
+    canonical: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
   },
   openGraph: {
-    title: "Viessmann Boiler Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Viessmann specialists in Birmingham. Expert knowledge of Viessmann systems and components with genuine parts and extended warranties.",
-    url: "https://www.birminghamboilerrepairs.uk/services/viessmann-specialists",
+    title: "Combination Boiler Services Birmingham | Professional Combi Boiler Servicing",
+    description: "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £55.",
+    url: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
     type: "website",
@@ -32,63 +32,63 @@ export const metadata: Metadata = {
         url: "https://www.birminghamboilerrepairs.uk/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Viessmann Specialists Birmingham - Expert Repairs & Servicing",
+        alt: "Combination Boiler Services Birmingham - Professional Combi Boiler Servicing",
       }
     ],
   },
 }
 
-export default function ViessmannSpecialistsPage() {
+export default function CombinationBoilerServicesPage() {
   const service = {
-    id: "viessmann",
-    title: "Viessmann Specialists",
+    id: "combination-boiler-services",
+    title: "Combination Boiler Services",
     description:
-      "Approved specialists and experts in fixing Viessmann boilers. Expert knowledge of Viessmann systems and components.",
-    image: "/images/viessmann_page.png",
-    features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
+      "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
+    image: "/images/combi_service_page.png",
+    features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
     longDescription: `
-  <p>As approved Viessmann specialists, we are experts in fixing Viessmann boilers and offer professional repair and maintenance services for all Viessmann boiler models. Our engineers have received specialized training directly from Viessmann, ensuring they have in-depth knowledge of these systems and their unique components.</p>
+  <p>Regular servicing is essential for keeping your combination boiler running safely and efficiently. Our professional combination boiler service includes comprehensive checks of both the heating and hot water functions, ensuring your combi boiler operates at peak performance.</p>
   
-  <p>Viessmann boilers can present specific challenges that general heating engineers may not be familiar with. Our specialist knowledge allows us to diagnose and repair Viessmann-specific issues quickly and effectively, saving you time and money.</p>
+  <p>We offer two service levels: our standard service (£55) covers essential safety checks, gas pressure testing, and basic maintenance, while our full service (£120) includes additional deep cleaning of the heat exchanger, detailed efficiency testing, and hot water flow rate analysis.</p>
   
-  <p>We stock genuine Viessmann parts and can offer extended warranties on our repair work. Whether you need a simple service, a complex repair, or advice on your Viessmann boiler, our specialist team is here to help.</p>
+  <p>All our combination boiler services are carried out by Gas Safe registered engineers who understand the specific requirements of combi boiler systems. Regular servicing not only ensures safety but can also help identify potential issues before they become costly repairs, ultimately saving you money and ensuring reliable heating and hot water all year round.</p>
 `,
     pricing: [
       {
-        title: "Viessmann Boiler Service",
+        title: "Standard Combi Service",
         price: "£55",
-        description: "Professional service for Viessmann boiler systems.",
+        description: "Essential safety checks and basic maintenance for your combination boiler.",
       },
       {
-        title: "Viessmann Boiler Repair",
-        price: "£75",
-        description: "Specialist diagnosis and repair for Viessmann boilers.",
+        title: "Full Combi Service",
+        price: "£120",
+        description: "Comprehensive service including deep cleaning and efficiency testing.",
       },
       {
-        title: "Viessmann Boiler Service & Repair",
-        price: "£99",
-        description: "Combined service and repair for Viessmann boilers.",
+        title: "Annual Service Plan",
+        price: "£45",
+        description: "Save money with our annual service plan - only £45 per service.",
       },
     ],
     faqs: [
       {
-        question: "Why do I need a Viessmann specialist for my boiler?",
+        question: "How often should I service my combination boiler?",
         answer:
-          "Viessmann boilers have unique designs and components that require specialist knowledge. Our approved technicians understand Viessmann-specific issues and have access to genuine parts, ensuring more effective and lasting repairs.",
+          "We recommend servicing your combination boiler annually to ensure it operates safely and efficiently. Regular servicing can also help maintain your boiler's warranty.",
       },
       {
-        question: "Do you offer warranties on Viessmann boiler repairs?",
+        question: "What's the difference between standard and full combination boiler service?",
         answer:
-          "Yes, we offer extended warranties on our Viessmann boiler repair work, giving you peace of mind that your boiler is protected.",
+          "Our standard service covers essential safety checks and basic maintenance, while the full service includes additional deep cleaning, detailed efficiency testing, and hot water performance analysis.",
       },
       {
-        question: "Can you service all Viessmann boiler models?",
+        question: "Will servicing my combination boiler save me money?",
         answer:
-          "Yes, our technicians are trained to service and repair all Viessmann boiler models, from older units to the latest designs.",
+          "Yes, regular servicing can improve efficiency by up to 15%, reducing your energy bills. It also helps prevent costly breakdowns by identifying issues early.",
       },
       {
-        question: "Are your Viessmann boiler parts genuine?",
-        answer: "Yes, we only use genuine Viessmann parts to ensure the best performance and longevity of your boiler.",
+        question: "How long does a combination boiler service take?",
+        answer: "A standard service typically takes 30-45 minutes, while a full service can take 60-90 minutes depending on the condition and complexity of your combination boiler.",
       },
     ],
   }
@@ -96,16 +96,16 @@ export default function ViessmannSpecialistsPage() {
   return (
     <>
       <Head>
-        <link rel="canonical" href="https://www.birminghamboilerrepairs.uk/services/viessmann-specialists" />
+        <link rel="canonical" href="https://www.birminghamboilerrepairs.uk/services/combination-boiler-services" />
       </Head>
       <BreadcrumbSchema
         items={[
           { name: "Home", item: "https://www.birminghamboilerrepairs.uk/" },
           { name: "Services", item: "https://www.birminghamboilerrepairs.uk/services" },
-          { name: "Viessmann Specialists", item: "https://www.birminghamboilerrepairs.uk/services/viessmann-specialists" },
+          { name: "Combination Boiler Services", item: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services" },
         ]}
       />
-      <FAQSchema faqs={service.faqs} url="https://www.birminghamboilerrepairs.uk/services/viessmann-specialists" />
+      <FAQSchema faqs={service.faqs} url="https://www.birminghamboilerrepairs.uk/services/combination-boiler-services" />
 
       <div className="flex flex-col">
         {/* Hero Section */}
@@ -116,7 +116,7 @@ export default function ViessmannSpecialistsPage() {
                 <Breadcrumb
                   items={[
                     { label: "Services", href: "/services" },
-                    { label: "Viessmann Specialists", href: "/services/viessmann-specialists", isCurrent: true },
+                    { label: "Combination Boiler Services", href: "/services/combination-boiler-services", isCurrent: true },
                   ]}
                 />
                 <Link href="/services" className="inline-flex items-center text-white hover:underline">
@@ -124,7 +124,7 @@ export default function ViessmannSpecialistsPage() {
                   Back to Services
                 </Link>
               </div>
-              <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Viessmann Specialists in Birmingham</h1>
+              <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Combination Boiler Services in Birmingham</h1>
               <p className="mt-4 text-lg">{service.description}</p>
             </div>
           </div>
@@ -142,7 +142,7 @@ export default function ViessmannSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/viessmann.png"}
+                        src={service.image || "/images/combination_boiler_services.png"}
                         alt={service.title}
                         fill
                         className="object-cover"
@@ -167,13 +167,13 @@ export default function ViessmannSpecialistsPage() {
                       </div>
                       <TrackedPhoneLink
                         phone="08003202345"
-                        trackingLocation="viessmann_specialists_page"
+                        trackingLocation="combination_boiler_services_page"
                         trackingSource="service_info_cta"
                         className="bg-secondary text-white hover:bg-secondary/90 flex items-center gap-2"
-                        ariaLabel="Contact a Viessmann Specialist"
+                        ariaLabel="Book Combination Boiler Service"
                       >
                         <Phone size={16} />
-                        Contact a Viessmann Specialist
+                        Book Combination Boiler Service
                       </TrackedPhoneLink>
                     </div>
                   </div>
@@ -182,7 +182,7 @@ export default function ViessmannSpecialistsPage() {
 
               {/* Pricing Section */}
               <div>
-                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Viessmann Specialist Pricing</h2>
+                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Combination Boiler Service Pricing</h2>
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                   {service.pricing.map((option, index) => (
                     <Card key={index} className="border shadow-md">
@@ -228,12 +228,12 @@ export default function ViessmannSpecialistsPage() {
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
               <div>
-                <h2 className="text-3xl font-bold">Need help with your Viessmann boiler?</h2>
-                <p className="mt-2 text-lg">Contact our specialist team for expert assistance</p>
+                <h2 className="text-3xl font-bold">Ready to service your combination boiler?</h2>
+                <p className="mt-2 text-lg">Book your annual service to keep your combi boiler running efficiently</p>
               </div>
               <TrackedPhoneLink
                 phone="08003202345"
-                trackingLocation="viessmann_specialists_page"
+                trackingLocation="combination_boiler_services_page"
                 trackingSource="bottom_cta"
                 className="bg-primary text-gray-900 hover:bg-primary/90 flex items-center gap-2"
                 ariaLabel="Call Now: 0800 320 2345"

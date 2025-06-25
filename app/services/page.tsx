@@ -71,6 +71,24 @@ export default function ServicesPage() {
       link: "/services/gas-safety",
     },
     {
+      id: "combination-boiler-repairs",
+      title: "Combination Boiler Repairs",
+      description:
+        "Specialist repairs for combination boilers. Expert diagnosis and repair of combi boiler issues including heating and hot water problems.",
+      image: "/images/combi_repair_service.png",
+      features: ["No call-out fee", "Same-day service available", "All major combi brands", "Hot water & heating repairs"],
+      link: "/services/combination-boiler-repairs",
+    },
+    {
+      id: "combination-boiler-services",
+      title: "Combination Boiler Services",
+      description:
+        "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
+      image: "/images/combi_service_page.png",
+      features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+      link: "/services/combination-boiler-services",
+    },
+    {
       id: "ferroli",
       title: "Ferroli Boiler Specialists",
       description:
@@ -120,7 +138,7 @@ export default function ServicesPage() {
       title: "Alpha Boiler Specialists",
       description:
         "Approved specialist for Alpha boiler repair & maintenance. Expert knowledge of Alpha boiler systems and components.",
-      image: "/images/alpha.png",
+      image: "/images/alpha_service.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/alpha-boiler-specialists",
     },
@@ -129,7 +147,7 @@ export default function ServicesPage() {
       title: "Main Boiler Specialists",
       description:
         "Approved specialist for Main boiler repair & maintenance. Expert knowledge of Main boiler systems and components.",
-      image: "/images/main.png",
+      image: "/images/main_service.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/main-boiler-specialists",
     },
@@ -138,7 +156,7 @@ export default function ServicesPage() {
       title: "Vokera Specialists",
       description:
         "Approved specialist for Vokera repair & maintenance. Expert knowledge of Vokera systems and components.",
-      image: "/images/vokera.png",
+      image: "/images/vokera_page.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/vokera-specialists",
     },
@@ -147,7 +165,7 @@ export default function ServicesPage() {
       title: "Viessmann Specialists",
       description:
         "Approved specialist for Viessmann repair & maintenance. Expert knowledge of Viessmann systems and components.",
-      image: "/images/viessmann.png",
+      image: "/images/viessmann_service.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/viessmann-specialists",
     },
@@ -156,7 +174,7 @@ export default function ServicesPage() {
       title: "Intergas Specialists",
       description:
         "Approved specialist for Intergas repair & maintenance. Expert knowledge of Intergas systems and components.",
-      image: "/images/intergas.png",
+      image: "/images/intergas_service.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/intergas-specialists",
     },
@@ -165,7 +183,7 @@ export default function ServicesPage() {
       title: "Glow-worm Specialists",
       description:
         "Approved specialist for Glow-worm repair & maintenance. Expert knowledge of Glow-worm systems and components.",
-      image: "/images/glowworm.png",
+      image: "/images/glowworm_page.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/glowworm-specialists",
     },
@@ -174,7 +192,7 @@ export default function ServicesPage() {
       title: "Atag Specialists",
       description:
         "Approved specialist for Atag repair & maintenance. Expert knowledge of Atag systems and components.",
-      image: "/images/atag.png",
+      image: "/images/atag_page.png",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/atag-specialists",
     },

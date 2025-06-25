@@ -1827,6 +1827,54 @@ export const services = [
     ],
   },
   {
+    slug: "combination-boiler-repairs",
+    name: "Combination Boiler Repairs",
+    description:
+      "Specialist repairs for combination boilers. Expert diagnosis and repair of combi boiler issues including heating and hot water problems.",
+    features: ["No call-out fee", "Same-day service available", "All major combi brands", "Hot water & heating repairs"],
+    pricing: [
+      {
+        title: "Combination Boiler Diagnosis",
+        price: "£0",
+        description: "Free diagnosis with any repair work carried out.",
+      },
+      {
+        title: "Standard Combi Repair",
+        price: "£75",
+        description: "Professional repair for most combination boiler issues.",
+      },
+      {
+        title: "Emergency Combi Repair",
+        price: "£125",
+        description: "Same-day emergency repairs for urgent combination boiler problems.",
+      },
+    ],
+  },
+  {
+    slug: "combination-boiler-services",
+    name: "Combination Boiler Services",
+    description:
+      "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
+    features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+    pricing: [
+      {
+        title: "Standard Combi Service",
+        price: "£55",
+        description: "Essential safety checks and basic maintenance for your combination boiler.",
+      },
+      {
+        title: "Full Combi Service",
+        price: "£120",
+        description: "Comprehensive service including deep cleaning and efficiency testing.",
+      },
+      {
+        title: "Annual Service Plan",
+        price: "£45",
+        description: "Save money with our annual service plan - only £45 per service.",
+      },
+    ],
+  },
+  {
     slug: "ferroli-specialists",
     name: "Ferroli Specialists",
     description:

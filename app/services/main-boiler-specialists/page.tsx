@@ -44,7 +44,7 @@ export default function MainBoilerSpecialistsPage() {
     title: "Main Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Main boilers. Expert knowledge of Main boiler systems and components.",
-    image: "/images/main.png",
+    image: "/images/main_page.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Main boiler specialists, we are experts in fixing Main boilers and offer professional repair and maintenance services for all Main boiler models. Our engineers have received specialized training directly from Main, ensuring they have in-depth knowledge of these systems and their unique components.</p>

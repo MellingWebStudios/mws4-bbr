@@ -44,7 +44,7 @@ export default function VokeraSpecialistsPage() {
     title: "Vokera Specialists",
     description:
       "Approved specialists and experts in fixing Vokera boilers. Expert knowledge of Vokera systems and components.",
-    image: "/images/vokera.png",
+    image: "/images/vokera_service.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Vokera specialists, we are experts in fixing Vokera boilers and offer professional repair and maintenance services for all Vokera boiler models. Our engineers have received specialized training directly from Vokera, ensuring they have in-depth knowledge of these systems and their unique components.</p>

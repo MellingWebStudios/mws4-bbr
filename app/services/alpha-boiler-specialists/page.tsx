@@ -44,7 +44,7 @@ export default function AlphaBoilerSpecialistsPage() {
     title: "Alpha Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Alpha boilers. Expert knowledge of Alpha boiler systems and components.",
-    image: "/images/alpha.png",
+    image: "/images/alpha_page.png",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Alpha boiler specialists, we are experts in fixing Alpha boilers and offer professional repair and maintenance services for all Alpha boiler models. Our engineers have received specialized training directly from Alpha, ensuring they have in-depth knowledge of these systems and their unique components.</p>
