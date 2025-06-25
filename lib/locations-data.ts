@@ -2045,7 +2045,7 @@ export const services = [
     ],
   },
   {
-    slug: "alpha-specialists",
+    slug: "alpha-boiler-specialists",
     name: "Alpha Specialists",
     description:
       "Approved specialist for Alpha boiler repair and maintenance. Expert knowledge of Alpha systems and components.",
@@ -2079,7 +2079,7 @@ export const services = [
     ],
   },
   {
-    slug: "main-specialists",
+    slug: "main-boiler-specialists",
     name: "Main Specialists",
     description:
       "Approved specialist for Main boiler repair and maintenance. Expert knowledge of Main systems and components.",
@@ -2215,7 +2215,7 @@ export const services = [
     ],
   },
   {
-    slug: "glow-worm-specialists",
+    slug: "glowworm-specialists",
     name: "Glow-worm Specialists",
     description:
       "Approved specialist for Glow-worm boiler repair and maintenance. Expert knowledge of Glow-worm systems and components.",
