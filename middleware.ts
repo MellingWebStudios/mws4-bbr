@@ -22,6 +22,7 @@ const locationRedirects: Record<string, string> = {
   'Castle Vale': 'castle-vale',
   'Chad Valley': 'chad-valley',
   'Cofton Common': 'cofton-common',
+  'Cradley Heath': 'cradley-heath',
   'Falcon Lodge': 'falcon-lodge',
   'Four Oaks': 'four-oaks',
   'Fox Hollies': 'fox-hollies',
@@ -43,6 +44,8 @@ const locationRedirects: Record<string, string> = {
   'Hill Hook': 'hill-hook',
   'Hill Wood': 'hill-wood',
   'Hodge Hill': 'hodge-hill',
+  'Kings Heath': 'kings-heath',
+  'Kings Norton': 'kings-norton',
   'Old Oscott': 'old-oscott',
   'Over Green': 'over-green',
   'Perry Barr': 'perry-barr',
@@ -51,6 +54,7 @@ const locationRedirects: Record<string, string> = {
   'Pype Hayes': 'pype-hayes',
   'Reddicap Heath': 'reddicap-heath',
   'Rotton Park': 'rotton-park',
+  'Rowley Regis': 'rowley-regis',
   'Rowney Green': 'rowney-green',
   'Selly Oak': 'selly-oak',
   'Selly Park': 'selly-park',
@@ -72,6 +76,9 @@ const locationRedirects: Record<string, string> = {
   'Tower Hill': 'tower-hill',
   'Tudor Hill': 'tudor-hill',
   'Turves Green': 'turves-green',
+  'Weoley Castle': 'weoley-castle',
+  'West Bromwich': 'west-bromwich',
+  'West Heath': 'west-heath',
   'West Midlands': 'west-midlands',
   'Yardley Wood': 'yardley-wood'
 };
@@ -261,20 +268,20 @@ export function middleware(req: NextRequest) {
 
     // Exclude known location slugs that contain hyphens
     const excludedLocationSlugs = [
-      'acocks-green', 'aston-cross', 'aston-fields', 'astwood-bank', 'austin-village',
+      'acocks-green', 'alvechurch', 'aston-cross', 'aston-fields', 'astwood-bank', 'austin-village',
       'bartley-green', 'beech-lanes', 'birches-green', 'bordesley-green', 'brandwood-end',
       'browns-green', 'buckland-end', 'camp-hill', 'castle-vale', 'chad-valley',
-      'cofton-common', 'falcon-lodge', 'four-oaks', 'fox-hollies', 'garretts-green',
+      'cofton-common', 'cradley-heath', 'falcon-lodge', 'four-oaks', 'fox-hollies', 'garretts-green',
       'gib-heath', 'glebe-farm', 'gospel-oak', 'gosta-green', 'gravelly-hill',
-      'great-barr', 'grimstock-hill', 'gun-quarter', 'hall-green', 'handsworth-wood',
+      'great-barr', 'grimstock-hill', 'gun-quarter', 'halesowen', 'hall-green', 'handsworth-wood',
       'harts-green', 'hay-mills', 'high-heath', 'highters-heath', 'hill-hook',
-      'hill-wood', 'hodge-hill', 'old-oscott', 'over-green', 'perry-barr',
+      'hill-wood', 'hodge-hill', 'kings-heath', 'kings-norton', 'longbridge', 'moseley', 'northfield', 'old-oscott', 'oldbury', 'over-green', 'perry-barr',
       'perry-beeches', 'perry-common', 'pype-hayes', 'reddicap-heath', 'rotton-park',
-      'rowney-green', 'selly-oak', 'selly-park', 'shard-end', 'shenley-fields',
-      'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'south-woodgate',
-      'south-yardley', 'spring-vale', 'stockland-green', 'sutton-coldfield', 'ten-acres',
+      'rowley-regis', 'rowney-green', 'selly-oak', 'selly-park', 'shard-end', 'shenley-fields',
+      'shenley-green', 'shirley', 'short-heath', 'showell-green', 'small-heath', 'smethwick', 'solihull', 'south-woodgate',
+      'south-yardley', 'spring-vale', 'stockland-green', 'stourbridge', 'sutton-coldfield', 'ten-acres',
       'the-parade', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill',
-      'turves-green', 'west-midlands', 'yardley-wood'
+      'turves-green', 'weoley-castle', 'west-bromwich', 'west-heath', 'west-midlands', 'yardley-wood'
     ];
 
     const pathWithoutSlash = pathname.slice(1); // Remove leading slash
@@ -319,28 +326,28 @@ export function middleware(req: NextRequest) {
 
   // Handle case-insensitive single-word location redirects (e.g., /Smithfield -> /smithfield)
   const singleWordLocations = [
-    'acocks-green', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
+    'acocks-green', 'alvechurch', 'ashted', 'aston', 'aston-cross', 'aston-fields', 'astwood-bank',
     'austin-village', 'bartley-green', 'beech-lanes', 'billesley', 'birches-green',
     'birchfield', 'birmingham', 'boldmere', 'bordesley', 'bordesley-green', 'bournbrook',
     'bournville', 'brandwood-end', 'bromford', 'bromsgrove', 'browns-green', 'buckland-end',
     'california', 'camp-hill', 'castle-vale', 'catshill', 'chad-valley', 'churchfield',
-    'cofton-common', 'cotteridge', 'deritend', 'dodford', 'eastside', 'edgbaston',
+    'cofton-common', 'cotteridge', 'cradley-heath', 'deritend', 'dodford', 'dudley', 'eastside', 'edgbaston',
     'erdington', 'falcon-lodge', 'finstall', 'four-oaks', 'fox-hollies', 'frankley',
     'garretts-green', 'gib-heath', 'gilbertstone', 'glebe-farm', 'gospel-oak',
     'gosta-green', 'gravelly-hill', 'great-barr', 'greet', 'grimstock-hill', 'gun-quarter',
-    'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
+    'hagley', 'halesowen', 'hall-green', 'hamstead', 'handsworth', 'handsworth-wood', 'harborne', 'harts-green',
     'hawkesley', 'hay-mills', 'high-heath', 'highgate', 'highters-heath', 'hill-hook',
-    'hill-wood', 'hodge-hill', 'hopwood', 'lickey', 'oakenshaw', 'old-oscott',
+    'hill-wood', 'hodge-hill', 'hopwood', 'kings-heath', 'kings-norton', 'lickey', 'longbridge', 'moseley', 'northfield', 'oakenshaw', 'old-oscott', 'oldbury',
     'over-green', 'parkhall', 'peddimore', 'pelham', 'perry-barr', 'perry-beeches',
     'perry-common', 'pheasey', 'pype-hayes', 'queslett', 'quinton', 'reddicap-heath',
-    'redditch', 'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowney-green', 'rubery', 'saltley',
+    'redditch', 'rednal', 'ridgacre', 'rotton-park', 'roughley', 'rowley-regis', 'rowney-green', 'rubery', 'saltley',
     'sarehole', 'selly-oak', 'selly-park', 'shard-end', 'sheldon', 'shenley-fields',
-    'shenley-green', 'short-heath', 'showell-green', 'small-heath', 'smithfield', 'soho',
+    'shenley-green', 'shirley', 'short-heath', 'showell-green', 'small-heath', 'smethwick', 'smithfield', 'soho', 'solihull',
     'south-yardley', 'south-woodgate', 'southside', 'sparkbrook', 'sparkhill',
     'spring-vale', 'springfield', 'stechford', 'stirchley', 'stockfield', 'stockland-green',
-    'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
+    'stourbridge', 'streetly', 'sutton-coldfield', 'tardebigge', 'ten-acres', 'the-parade',
     'theatreland', 'thimble-end', 'tile-cross', 'tower-hill', 'tudor-hill', 'turves-green',
-    'tyburn', 'tyseley', 'walkwood', 'webheath', 'west-midlands', 'wirehill', 'wythall', 'yardley',
+    'tyburn', 'tyseley', 'walkwood', 'webheath', 'weoley-castle', 'west-bromwich', 'west-heath', 'west-midlands', 'wirehill', 'wythall', 'yardley',
     'yardley-wood'
   ];
 
