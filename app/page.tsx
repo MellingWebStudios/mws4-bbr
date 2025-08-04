@@ -229,7 +229,7 @@ export default function Home() {
                   price="£75"
                   features={[
                     "First hour",
-                    "£30 per ½ hr after",
+                    "£35 per ½ hr after",
                     "Capped rates",
                     "No hidden charges",
                   ]}

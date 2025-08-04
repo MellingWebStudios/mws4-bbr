@@ -69,7 +69,7 @@ export default function BoilerRepairsPage() {
       },
       {
         title: "Hourly Rate",
-        price: "£75 first hr / £30 per ½ hr",
+        price: "£75 first hr / £35 per ½ hr",
         description: "For complex repairs. Capped rates, no hidden charges.",
       },
     ],

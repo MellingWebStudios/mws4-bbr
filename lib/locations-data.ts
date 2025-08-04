@@ -2039,7 +2039,7 @@ export const services = [
       },
       {
         title: "Service & Repair",
-        price: "£75 first hr / £30 per ½ hr",
+        price: "£75 first hr / £35 per ½ hr",
         description: "Combined service and minor repair (saves £30)",
       },
     ],

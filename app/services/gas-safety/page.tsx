@@ -220,6 +220,62 @@ export default function GasSafetyPage() {
                 </div>
               </div>
 
+              {/* Comprehensive Gas Safety Guide */}
+              <div>
+                <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Complete Gas Safety Guide</h2>
+                <p className="mb-8 text-gray-600 dark:text-gray-400">
+                  Everything landlords and homeowners need to know about gas safety inspections, legal requirements, and compliance.
+                </p>
+                
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  {[
+                    {
+                      question: "When should a gas inspection be done?",
+                      answer: "Every 12 months. It can be done up to 2 months before its due date and still keep the original due date."
+                    },
+                    {
+                      question: "Do I need to do another gas inspection if I have a new tenant moving in?",
+                      answer: "Yes, you will need a new gas safety check before a new tenant moves in, even if the previous check is still valid, according to the Health and Safety Executive. The law requires a gas safety check to be carried out annually, and a copy of the Landlord Gas Safety Record (LGSR) must be provided to new tenants at the start of their tenancy. (This is due to the likely event of previous tenants tampering with gas appliances and making them unsafe if they have been given a section 21)"
+                    },
+                    {
+                      question: "Do I need to give the tenant a copy of the certificate?",
+                      answer: "Yes, you will need to send a copy of the certificate to the tenants within 28 days. If the tenant is new then this needs to be given before they move in. Advise this is done by email as you can prove that you have sent it, where you cannot prove you have left a paper copy, if it's thrown away."
+                    },
+                    {
+                      question: "Do I need to put the name of the landlord on the gas certificate?",
+                      answer: "Yes, this is very important in case you need to issue a section 21 to remove a tenant. The certificate may not be valid if the correct details are not on the landlord details ie property owner or the estate agent details."
+                    },
+                    {
+                      question: "I'm a homeowner. Do I need to do an annual gas inspection?",
+                      answer: "Homeowners do not legally need an annual gas safety check. However, if you are buying or selling a property it's advisable to get one done to prove the property is safe. A lot of estate agents and solicitors already ask for this and ask for proof if the boiler has been regularly serviced."
+                    },
+                    {
+                      question: "What happens if a gas inspection is overdue?",
+                      answer: "If a gas safety inspection is overdue, a landlord could face significant legal and financial repercussions, including substantial fines, potential imprisonment, and even criminal charges in the event of an accident. Additionally, landlords may be unable to legally evict a tenant using a Section 21 notice."
+                    },
+                    {
+                      question: "What happens if I can't get in to do a gas inspection?",
+                      answer: "If a tenant refuses or prevents a landlord from accessing a property for a mandatory gas safety inspection, the landlord must take reasonable steps to arrange the inspection and document all attempts. If these attempts fail, the landlord can pursue legal action, potentially including a court order for access or, in extreme cases, eviction. Give the tenant ample time to arrange a gas inspection. And document all attempts to arrange."
+                    },
+                    {
+                      question: "Is a gas inspection the same as having a boiler service?",
+                      answer: "No, a boiler service is different to an annual gas safety check – a yearly inspection of all gas appliances in a property. Gas safety checks are a legal requirement for landlords. A boiler service focuses solely on the boiler, and involves an engineer testing and cleaning certain components."
+                    },
+                    {
+                      question: "Do I need to get the boiler serviced yearly as a landlord?",
+                      answer: "There is no lawful time frame for how often a boiler should be serviced. The law states that a landlord must ensure a boiler is safe and operates correctly in line with manufacturer standards. However if the boiler is new then it would need servicing to keep the warranty of the boiler which could be cost effective in the long run. If it isn't new then it's normally at the discretion of the engineer if he feels the boiler needs servicing if it's been poorly maintained in the past. Advise regular servicing but maybe not yearly to show proof as a landlord you are looking after your property."
+                    }
+                  ].map((faq, index) => (
+                    <Card key={index} className="border shadow-md">
+                      <CardContent className="p-6">
+                        <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
+                        <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
+              </div>
+
               {/* Reviews Section */}
               <div>
                 <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>

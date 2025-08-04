@@ -74,7 +74,7 @@ Boiler Servicing:
 Boiler Repairs:
 - Same-Day: £99 (no call-out/diagnosis fee; parts extra)
 - Weekend: £110
-- Hourly: £75 first hr / £30 per half hr (capped if job overruns)
+- Hourly: £75 first hr / £35 per half hr (capped if job overruns)
 
 Gas Safety Inspections:
 - 1 Appliance: £45

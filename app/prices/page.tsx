@@ -61,7 +61,7 @@ export default function PricesPage() {
         { service: "Weekend Repair", price: "£110", description: "Same benefits as above" },
         {
           service: "Boiler Repair (hourly)",
-          price: "£75 first hr / £30 per ½ hr",
+          price: "£75 first hr / £35 per ½ hr",
           description: "Capped if job runs over an 2½ hour",
         },
       ],
@@ -97,6 +97,139 @@ export default function PricesPage() {
     "All work carried out by Gas Safe registered engineers",
     "Parts stocked for all major boiler brands",
     "Both card and cash payments accepted",
+  ]
+
+  const gasInspectionFaqs = [
+    {
+      question: "When should a gas inspection be done?",
+      answer: "Every 12 months. It can be done up to 2 months before its due date and still keep the original due date."
+    },
+    {
+      question: "Do I need to do another gas inspection if I have a new tenant moving in?",
+      answer: "Yes, you will need a new gas safety check before a new tenant moves in, even if the previous check is still valid, according to the Health and Safety Executive. The law requires a gas safety check to be carried out annually, and a copy of the Landlord Gas Safety Record (LGSR) must be provided to new tenants at the start of their tenancy. (This is due to the likely event of previous tenants tampering with gas appliances and making them unsafe if they have been given a section 21)"
+    },
+    {
+      question: "Do I need to give the tenant a copy of the certificate?",
+      answer: "Yes, you will need to send a copy of the certificate to the tenants within 28 days. If the tenant is new then this needs to be given before they move in. Advise this is done by email as you can prove that you have sent it, where you cannot prove you have left a paper copy, if it's thrown away."
+    },
+    {
+      question: "Do I need to put the name of the landlord on the gas certificate?",
+      answer: "Yes, this is very important in case you need to issue a section 21 to remove a tenant. The certificate may not be valid if the correct details are not on the landlord details ie property owner or the estate agent details."
+    },
+    {
+      question: "I'm a homeowner. Do I need to do an annual gas inspection?",
+      answer: "Homeowners do not legally need an annual gas safety check. However, if you are buying or selling a property it's advisable to get one done to prove the property is safe. A lot of estate agents and solicitors already ask for this and ask for proof if the boiler has been regularly serviced."
+    },
+    {
+      question: "What happens if a gas inspection is overdue?",
+      answer: "If a gas safety inspection is overdue, a landlord could face significant legal and financial repercussions, including substantial fines, potential imprisonment, and even criminal charges in the event of an accident. Additionally, landlords may be unable to legally evict a tenant using a Section 21 notice."
+    },
+    {
+      question: "What happens if I can't get in to do a gas inspection?",
+      answer: "If a tenant refuses or prevents a landlord from accessing a property for a mandatory gas safety inspection, the landlord must take reasonable steps to arrange the inspection and document all attempts. If these attempts fail, the landlord can pursue legal action, potentially including a court order for access or, in extreme cases, eviction. Give the tenant ample time to arrange a gas inspection. And document all attempts to arrange."
+    },
+    {
+      question: "Is a gas inspection the same as having a boiler service?",
+      answer: "No, a boiler service is different to an annual gas safety check – a yearly inspection of all gas appliances in a property. Gas safety checks are a legal requirement for landlords. A boiler service focuses solely on the boiler, and involves an engineer testing and cleaning certain components."
+    },
+    {
+      question: "Do I need to get the boiler serviced yearly as a landlord?",
+      answer: "There is no lawful time frame for how often a boiler should be serviced. The law states that a landlord must ensure a boiler is safe and operates correctly in line with manufacturer standards. However if the boiler is new then it would need servicing to keep the warranty of the boiler which could be cost effective in the long run. If it isn't new then it's normally at the discretion of the engineer if he feels the boiler needs servicing if it's been poorly maintained in the past. Advise regular servicing but maybe not yearly to show proof as a landlord you are looking after your property."
+    }
+  ]
+
+  const smokeAlarmFaqs = [
+    {
+      question: "When was it compulsory to need a smoke alarm for rented properties?",
+      answer: "October 1st, 2015"
+    },
+    {
+      question: "Where should smoke alarms be fitted?",
+      answer: "They should be fitted on each floor like a hallway or the landing in a well-ventilated space, at least 30 cm away from a wall or a light fitting."
+    },
+    {
+      question: "Whose responsibility is it for a smoke alarm?",
+      answer: "It is the landlords responsibility to ensure a smoke alarm is fitted correctly and is in date."
+    },
+    {
+      question: "Whose responsibility is it for the maintenance of my smoke alarm?",
+      answer: "It is a landlord's responsibility to replace and maintain the smoke alarm via yearly checks and a gas engineer will test them on the annual gas inspection. Note it is the tenants responsibility to ensure the smoke alarm works also by testing it at regular intervals (weekly) and if it's not working to report it to the landlord. If a battery needs replacing then the tenant can also replace the battery."
+    },
+    {
+      question: "What if the smoke alarm doesn't appear to have an expiry day or date of installation?",
+      answer: "You have to be vigilant and assume that the smoke alarm is out of date and replace it."
+    },
+    {
+      question: "Can a gas inspection (CP12) fail if I haven't got a smoke alarm?",
+      answer: "Yes it will fail. It is part of the test on a gas inspection. If it's not working or is missing. Then it is a failed inspection. However if you are doing a gas inspection to sell your property then you don't legally need one as you aren't renting to tenants."
+    },
+    {
+      question: "Can I as a landlord be fined for failure to supply a smoke alarm?",
+      answer: "Yes, up to £5,000"
+    }
+  ]
+
+  const carbonMonoxideFaqs = [
+    {
+      question: "When was it compulsory to need a carbon monoxide alarm for a rented property?",
+      answer: "1st October 2022"
+    },
+    {
+      question: "Where shall I install the CO alarm?",
+      answer: "1-3 meters of a gas appliance (except cookers and hobs) at head height level where possible."
+    },
+    {
+      question: "Can I be fined if I don't have a CO alarm?",
+      answer: "Yes up to £5000"
+    },
+    {
+      question: "Can a gas inspection (Cp12) fail if there isn't a CO alarm?",
+      answer: "Yes. However if you're having a gas inspection to sell your house you won't legally need one. As you aren't renting to tenants."
+    },
+    {
+      question: "What if I can't see the expiry date?",
+      answer: "Best practice is to assume it's expired and replace it."
+    },
+    {
+      question: "Can I put a CO alarm on top of my boiler?",
+      answer: "No. it must be fitted at head height if possible. 1-3m away from the boiler on a shelf or fixed to a wall."
+    },
+    {
+      question: "Do I need a CO alarm if I'm a homeowner?",
+      answer: "No law mandates co alarms for homeowners. However it is recommended."
+    },
+    {
+      question: "Do I need to fit a CO alarm if fitting or replacing a new boiler?",
+      answer: "Yes for private homeowners and landlords. This would be fitted by the gas safe Installer at the time of installation."
+    },
+    {
+      question: "Who is responsible for the CO alarm and testing?",
+      answer: "The landlord is responsible to ensure it's fitted and working correctly. The gas engineer will test this once a year along the gas inspection. The tenant should test the alarm at regular intervals, usually once a week and report any faults to the landlord."
+    },
+    {
+      question: "Can I fit a CO alarm in the bathroom if the boiler is there?",
+      answer: "This is a bit of a grey area. But technically no due to steam. But can be fitted close to the bathroom."
+    },
+    {
+      question: "Do I need a CO alarm for a gas cooker or a gas hob?",
+      answer: "No. it's not a legal requirement, a co alarm isn't required for them solely. If a boiler is in the same room then a co alarm will be fitted more closely to the boiler."
+    },
+    {
+      question: "What do I do if my carbon monoxide alarm goes off?",
+      answer: "Stay calm. Ventilate the property by opening doors or Windows. If it's safe to do so turn the gas appliances off. Shut off the gas. Vacate the property. Contact a local gas safe engineer to find out the cause of why the alarm is going off. Get medical help if you are suffering from side effects of carbon monoxide poisoning."
+    },
+    {
+      question: "What is carbon monoxide?",
+      answer: "Carbon monoxide is a colourless, tasteless, odourless, non-irritating gas produced as a by-product during incomplete combustion of fuels due to there being insufficient oxygen present. Complete combustion occurs when sufficient oxygen is present and leads to the production of carbon dioxide. Most combustion processes (natural or man-made) produce some carbon monoxide."
+    },
+    {
+      question: "What are the side effects of carbon monoxide poisoning?",
+      answer: "When breathed in, carbon monoxide enters the blood through the lungs and attaches to the body's oxygen carrier, haemoglobin. This reduces the amount of oxygen that can be carried round the body. A brief exposure to small amounts of carbon monoxide may cause headache, flushing, nausea, dizziness, vertigo, muscle pain or personality changes. Exposure to higher amounts may cause movement problems, weakness, confusion, lung and heart problems, loss of consciousness and death. Exposure to small amounts of carbon monoxide for a long time may lead to flu like symptoms with tiredness, headaches, nausea, dizziness, personality changes, memory problems, loss of vision and dementia. It can be hard to tell the difference between the effects of being exposed to carbon monoxide at low levels for a long time and other common illnesses."
+    },
+    {
+      question: "How can I prevent the possibility of carbon monoxide?",
+      answer: "Fit a carbon monoxide alarm in any room with a gas appliance that burns fossil fuels. Regularly service your gas appliances. Check to see if the CO alarm works periodically (weekly) by pressing the button until the alarm sounds."
+    }
   ]
 
   return (
@@ -167,7 +300,7 @@ export default function PricesPage() {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Basic FAQ Section */}
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-8 text-center">
@@ -201,6 +334,63 @@ export default function PricesPage() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Comprehensive FAQ Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="mb-12 text-center">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Comprehensive Service Guide</h2>
+            <p className="mt-4 text-gray-600 dark:text-gray-400">
+              Everything you need to know about gas safety, boiler maintenance, and safety requirements
+            </p>
+          </div>
+
+          {/* Gas Inspections FAQ */}
+          <div className="mb-12">
+            <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Gas Inspections</h3>
+            <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+              {gasInspectionFaqs.map((faq, index) => (
+                <Card key={index} className="border-none shadow-md">
+                  <CardContent className="p-6">
+                    <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
+                    <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Smoke Alarms FAQ */}
+          <div className="mb-12">
+            <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Smoke Alarms</h3>
+            <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+              {smokeAlarmFaqs.map((faq, index) => (
+                <Card key={index} className="border-none shadow-md">
+                  <CardContent className="p-6">
+                    <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
+                    <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Carbon Monoxide Alarms FAQ */}
+          <div className="mb-12">
+            <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Carbon Monoxide Alarms</h3>
+            <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-2">
+              {carbonMonoxideFaqs.map((faq, index) => (
+                <Card key={index} className="border-none shadow-md">
+                  <CardContent className="p-6">
+                    <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
+                    <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </section>
