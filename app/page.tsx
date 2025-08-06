@@ -5,7 +5,7 @@ import { Star } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, CheckCircle, Clock, ShieldCheck, PoundSterlingIcon as Pound } from "lucide-react"
+import { Phone, CheckCircle, Clock, ShieldCheck, PoundSterlingIcon as Pound, HelpCircle, FileText, AlertTriangle, Home } from "lucide-react"
 import PricingCard from "@/components/pricing-card"
 import TrustBadges from "@/components/trust-badges"
 import ServiceCallout from "@/components/emergency-callout"
@@ -18,6 +18,7 @@ import DesktopHero from "@/components/desktop-hero"
 import MobileHeroImage from "@/components/server/mobile-hero-image"
 import DesktopHeroImage from "@/components/server/desktop-hero-image"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
+import QuestionsSnippet from "@/components/questions-snippet"
 
 // Utility: throttle function
 function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
@@ -336,6 +337,9 @@ export default function Home() {
 
       {/* Maintenance Tips Section */}
       <MaintenanceTips />
+
+      {/* Questions Snippet Section */}
+      <QuestionsSnippet />
 
       {/* Local Service Areas */}
       <LocalServiceAreas />

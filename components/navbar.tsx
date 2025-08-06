@@ -33,6 +33,12 @@ const popularLocations = [
   { href: `/selly-oak`, label: "Selly Oak" },
 ]
 
+const questions = [
+  { href: `/questions/gas-safety`, label: "Gas Safety Inspections" },
+  { href: `/questions/smoke-alarms`, label: "Smoke Alarms" },
+  { href: `/questions/carbon-monoxide`, label: "Carbon Monoxide Alarms" },
+]
+
 // Utility: throttle function
 function throttle<T extends (...args: any[]) => void>(fn: T, wait: number): T {
   let last = 0
@@ -60,6 +66,7 @@ const Navbar = () => {
   const [reviewsModalOpen, setReviewsModalOpen] = useState(false)
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false)
   const [locationsDropdownOpen, setLocationsDropdownOpen] = useState(false)
+  const [questionsDropdownOpen, setQuestionsDropdownOpen] = useState(false)
   const [hoverTimeouts, setHoverTimeouts] = useState<{ [key: string]: NodeJS.Timeout }>({})
   const pathname = usePathname()
 
@@ -96,7 +103,7 @@ const Navbar = () => {
   }
 
   // Dropdown hover handlers
-  const handleDropdownEnter = (dropdownType: 'services' | 'locations') => {
+  const handleDropdownEnter = (dropdownType: 'services' | 'locations' | 'questions') => {
     // Clear any existing timeout for this dropdown
     if (hoverTimeouts[dropdownType]) {
       clearTimeout(hoverTimeouts[dropdownType])
@@ -106,19 +113,27 @@ const Navbar = () => {
     if (dropdownType === 'services') {
       setServicesDropdownOpen(true)
       setLocationsDropdownOpen(false)
-    } else {
+      setQuestionsDropdownOpen(false)
+    } else if (dropdownType === 'locations') {
       setLocationsDropdownOpen(true)
       setServicesDropdownOpen(false)
+      setQuestionsDropdownOpen(false)
+    } else {
+      setQuestionsDropdownOpen(true)
+      setServicesDropdownOpen(false)
+      setLocationsDropdownOpen(false)
     }
   }
 
-  const handleDropdownLeave = (dropdownType: 'services' | 'locations') => {
+  const handleDropdownLeave = (dropdownType: 'services' | 'locations' | 'questions') => {
     // Add a small delay before closing to allow user to move to dropdown
     const timeout = setTimeout(() => {
       if (dropdownType === 'services') {
         setServicesDropdownOpen(false)
-      } else {
+      } else if (dropdownType === 'locations') {
         setLocationsDropdownOpen(false)
+      } else {
+        setQuestionsDropdownOpen(false)
       }
     }, 150) // 150ms delay
 
@@ -138,6 +153,12 @@ const Navbar = () => {
       label: "Areas We Cover",
       hasDropdown: true,
       dropdownItems: popularLocations
+    },
+    { 
+      href: "/questions", 
+      label: "Questions",
+      hasDropdown: true,
+      dropdownItems: questions
     },
     { href: "/blog", label: "Blog" },
     { href: "/guides", label: "Guides" },
@@ -204,8 +225,14 @@ const Navbar = () => {
                   <div key={link.href} className="relative">
                     {link.hasDropdown ? (
                       <div
-                        onMouseEnter={() => handleDropdownEnter(link.href === '/services' ? 'services' : 'locations')}
-                        onMouseLeave={() => handleDropdownLeave(link.href === '/services' ? 'services' : 'locations')}
+                        onMouseEnter={() => handleDropdownEnter(
+                          link.href === '/services' ? 'services' : 
+                          link.href === '/locations' ? 'locations' : 'questions'
+                        )}
+                        onMouseLeave={() => handleDropdownLeave(
+                          link.href === '/services' ? 'services' : 
+                          link.href === '/locations' ? 'locations' : 'questions'
+                        )}
                       >
                         <Link
                           href={link.href}
@@ -220,7 +247,8 @@ const Navbar = () => {
                         
                         {/* Dropdown Menu */}
                         {((link.href === '/services' && servicesDropdownOpen) || 
-                          (link.href === '/locations' && locationsDropdownOpen)) && (
+                          (link.href === '/locations' && locationsDropdownOpen) ||
+                          (link.href === '/questions' && questionsDropdownOpen)) && (
                           <div className="absolute left-0 top-full mt-1 w-48 rounded-md bg-white py-2 shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 z-50">
                             {link.dropdownItems?.map((item) => (
                               <Link
