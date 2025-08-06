@@ -307,8 +307,11 @@ const Chatbot = () => {
       {/* Messages */}
       <ScrollArea className="flex-1 px-4 py-6 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900">
         <div className="space-y-6">
-          {/* Manual form (forceShowForm) always renders above messages */}
-          {forceShowForm && <LeadCaptureForm onSubmit={handleLeadSubmit} />}
+          {/* Persistent Lead Capture Form - Always at the top */}
+          <div className="sticky top-0 z-10 bg-gradient-to-b from-white to-gray-50 dark:from-gray-950 dark:to-gray-900 pb-4">
+            <LeadCaptureForm onSubmit={handleLeadSubmit} />
+          </div>
+          
           {messages.map((message) => (
             <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"} gap-3`}>
               {message.role === "assistant" && (
@@ -329,9 +332,7 @@ const Chatbot = () => {
                 }}
               >
                 <p className="text-sm leading-relaxed whitespace-pre-wrap">{message.content}</p>
-                {message.role === "assistant" && formShownForMessageId === message.id && (
-                  <LeadCaptureForm onSubmit={handleLeadSubmit} />
-                )}
+                {/* Remove form from message bubbles since it's now persistent at top */}
                 {message.role === "assistant" && buttonShownForMessageId === message.id && (
                   <>
                     <CallNowButton phone={DAVE_PHONE_NUMBER} />
@@ -362,13 +363,6 @@ const Chatbot = () => {
                   Hello! I'm your Birmingham Boiler Repairs assistant. How can I help today?
                 </p>
                 <div className="mt-4 space-y-3">
-                  <Button
-                    onClick={() => setForceShowForm(true)}
-                    size="lg"
-                    className="w-full bg-gradient-to-r from-[#7B61FF] to-[#4895EF] hover:opacity-90 rounded-xl font-semibold"
-                  >
-                    Request a Callback
-                  </Button>
                   <CallNowButton phone={DAVE_PHONE_NUMBER} />
                   <WhatsAppButton phone={DAVE_WA_NUMBER} message="Hi Dave, I need help with my boiler." />
                 </div>
