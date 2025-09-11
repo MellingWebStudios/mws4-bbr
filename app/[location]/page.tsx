@@ -3,7 +3,7 @@ import businessInfo from "@/lib/business-info";
 import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, CheckCircle, Phone } from "lucide-react";
+import { MapPin, CheckCircle, Phone, Clock, Star, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Breadcrumb from "@/components/breadcrumb";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
@@ -18,6 +18,7 @@ import Head from "next/head";
 import type { Metadata } from "next";
 import { NextResponse } from 'next/server';
 import { slugify } from "@/lib/slug";
+import { localInsights } from "@/lib/content-enrichment";
 
 type Props = {
   params: { location: string };
@@ -70,6 +71,22 @@ export default async function LocationPage({ params }: Props) {
   if (!location) notFound();
 
   const introText = `Our Gas Safe engineers are just minutes away, serving the ${location.postcode} area and surroundings including ${location.landmarks.join(", ")}. We provide fast, reliable boiler and heating services for all makes and models. No call-out charges and transparent pricing.`;
+
+  // Generate location-specific content
+  const locationInsights = localInsights[location.slug as keyof typeof localInsights] || [];
+  const uniqueLocationContent = {
+    primaryInsight: locationInsights[0] || `${location.name} residents rely on our local heating expertise for reliable, efficient solutions.`,
+    secondaryInsight: locationInsights[1] || `Our engineers understand the unique heating challenges in ${location.name}'s diverse property types.`,
+    communityInsight: locationInsights[2] || `We're proud to serve the ${location.name} community with professional, friendly service.`,
+    localAdvantages: [
+      `Local ${location.name} engineers with area expertise`,
+      `Fast response times throughout ${location.postcode}`,
+      `No call-out charges for ${location.name} residents`,
+      `Familiar with ${location.name} property types and heating systems`,
+      `Same-day service available in ${location.name}`,
+      `Gas Safe registered engineers serving ${location.name}`
+    ]
+  };
 
   return (
     <>
@@ -285,6 +302,96 @@ export default async function LocationPage({ params }: Props) {
                   limit={4}
                   showFilters={false}
                 />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Unique Location Content */}
+        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                Why {location.name} Residents Choose Our Services
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <Card className="border-0 shadow-lg">
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <MapPin className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                        Local {location.name} Expertise
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      {uniqueLocationContent.primaryInsight}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {uniqueLocationContent.secondaryInsight}
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-lg">
+                  <CardContent className="p-8">
+                    <div className="flex items-center gap-3 mb-4">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                        <Clock className="h-6 w-6 text-primary" />
+                      </div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+                        Fast Response in {location.postcode}
+                      </h3>
+                    </div>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      Same-day service when you book before 12pm. Our local engineers are strategically positioned to serve {location.name} quickly and efficiently.
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      Emergency callouts: Available 24/7 throughout {location.name}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              <Card className="mb-12 bg-gradient-to-br from-primary/5 to-secondary/5 border-primary/20">
+                <CardContent className="p-8">
+                  <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">
+                    Community Focus in {location.name}
+                  </h3>
+                  <p className="text-gray-700 dark:text-gray-300 mb-6 text-center max-w-3xl mx-auto">
+                    {uniqueLocationContent.communityInsight}
+                  </p>
+                  
+                  <div className="grid md:grid-cols-3 gap-6">
+                    {uniqueLocationContent.localAdvantages.slice(0, 6).map((advantage, index) => (
+                      <div key={index} className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                        <span className="text-sm text-gray-600 dark:text-gray-400">
+                          {advantage}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
+              <div className="text-center">
+                <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
+                  Service Areas in {location.name}
+                </h3>
+                <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
+                  <p className="text-gray-600 dark:text-gray-400 mb-4">
+                    We proudly serve {location.name} and all surrounding areas including:
+                  </p>
+                  <p className="text-primary font-medium">
+                    {location.landmarks.join(" • ")}
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-4">
+                    All {location.postcode} postcodes covered with no call-out charges
+                  </p>
+                </div>
               </div>
             </div>
           </div>

@@ -204,6 +204,18 @@ export function middleware(req: NextRequest) {
     '/boiler%20service': '/services/boiler-servicing',
     '/boiler_service': '/services/boiler-servicing',
     '/boilerservice': '/services/boiler-servicing',
+
+    // Brand specialist redirects - old slug format to new
+    '/services/alpha-specialists': '/services/alpha-boiler-specialists',
+    '/services/main-specialists': '/services/main-boiler-specialists',
+    '/services/glow-worm-specialists': '/services/glowworm-specialists',
+
+    // Missing pages
+    '/sitemap-viewer': '/sitemap-viewer',
+
+    // Blog tag redirects for common patterns
+    '/blog/tag/boiler won\'t start': '/blog/tag/boiler-wont-start',
+    '/blog/tag/24/7 service': '/blog/tag/24-7-service',
   };
 
   // Check for exact legacy redirects
@@ -211,6 +223,63 @@ export function middleware(req: NextRequest) {
     const baseUrl = getBaseUrl(host);
     const redirectUrl = `${baseUrl}${legacyRedirects[pathname]}${req.nextUrl.search}`;
     return NextResponse.redirect(redirectUrl, 301); // Changed from 308 to 301
+  }
+
+  // Handle location-based brand specialist redirects
+  // Pattern: /location/brand-specialists -> /location/brand-boiler-specialists
+  const brandSpecialistPattern = /^\/([^\/]+)\/(alpha-specialists|main-specialists|glow-worm-specialists)$/;
+  const brandMatch = pathname.match(brandSpecialistPattern);
+  if (brandMatch) {
+    const [, location, oldBrandSlug] = brandMatch;
+    let newBrandSlug = oldBrandSlug;
+    
+    // Map old brand slugs to new ones
+    switch (oldBrandSlug) {
+      case 'alpha-specialists':
+        newBrandSlug = 'alpha-boiler-specialists';
+        break;
+      case 'main-specialists':
+        newBrandSlug = 'main-boiler-specialists';
+        break;
+      case 'glow-worm-specialists':
+        newBrandSlug = 'glowworm-specialists';
+        break;
+    }
+    
+    const baseUrl = getBaseUrl(host);
+    const redirectUrl = `${baseUrl}/${location}/${newBrandSlug}${req.nextUrl.search}`;
+    return NextResponse.redirect(redirectUrl, 301);
+  }
+
+  // Handle service name normalization (title case to slug)
+  // Pattern: /location/Service Name -> /location/service-slug
+  const serviceNamePattern = /^\/([^\/]+)\/(.+)$/;
+  const serviceMatch = pathname.match(serviceNamePattern);
+  if (serviceMatch) {
+    const [, location, serviceName] = serviceMatch;
+    
+    // Skip if this is already a proper slug format (lowercase with hyphens)
+    if (!/[A-Z\s]/.test(serviceName)) {
+      return NextResponse.next();
+    }
+    
+    // Service name mappings for common patterns from 404 list
+    const serviceNameMappings: Record<string, string> = {
+      'Boiler Installation': 'boiler-repairs',
+      'Boiler Troubleshooting': 'boiler-repairs', 
+      'Boiler Servicing': 'boiler-servicing',
+      'Heating System Troubleshooting': 'boiler-repairs',
+      'Heating Systems': 'boiler-repairs',
+      'Emergency Boiler Repair': 'boiler-repairs',
+      'Boiler Noise Diagnosis': 'boiler-repairs',
+    };
+    
+    const normalizedService = serviceNameMappings[serviceName];
+    if (normalizedService) {
+      const baseUrl = getBaseUrl(host);
+      const redirectUrl = `${baseUrl}/${location}/${normalizedService}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 301);
+    }
   }
 
   // Handle location redirects - both URL-encoded and regular location names

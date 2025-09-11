@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Phone, CheckCircle, MapPin } from "lucide-react";
-import { Card, CardContent } from "@/components/ui/card";
+import { Phone, CheckCircle, MapPin, Clock, Shield, Star } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ServiceCallout from "@/components/emergency-callout";
 import ReviewsDisplay from "@/components/reviews-display";
 import Breadcrumb from "@/components/breadcrumb";
@@ -20,9 +20,10 @@ import { notFound } from "next/navigation";
 import BreadcrumbSchema from "@/components/breadcrumb-schema";
 import TrackedPhoneLink from "@/components/tracked-phone-link";
 import React from "react";
-import { reviews } from "@/lib/reviews-data"; // <--- NEW: Import reviews
+import { reviews } from "@/lib/reviews-data";
 import Head from "next/head";
 import { slugify } from '@/lib/slug';
+import { generateUniqueContent, generateLocationServiceFAQs } from '@/lib/content-enrichment';
 
 type Props = {
   params: {
@@ -151,6 +152,13 @@ export default async function LocationServicePage({ params }: Props) {
   const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(
     " and "
   )}, we provide fast, reliable ${service.name.toLowerCase()} for all boiler makes and models. With no call-out charges and transparent pricing, we've helped hundreds of ${location.name} homeowners restore heating and hot water quickly, often on the same day.`;
+
+  // Extract brand slug if this is a brand specialist service
+  const brandSlug = serviceSlug.includes('-specialists') ? serviceSlug : undefined;
+  
+  // Generate unique content for this specific location-service combination
+  const uniqueContent = generateUniqueContent(location, service, brandSlug);
+  const faqs = generateLocationServiceFAQs(location, service, brandSlug);
 
   return (
     <>
@@ -480,6 +488,232 @@ export default async function LocationServicePage({ params }: Props) {
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Unique Location-Specific Content */}
+        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                Why Choose Our {service.name} in {location.name}?
+              </h2>
+              
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                <Card className="border-0 shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <MapPin className="h-5 w-5 text-primary" />
+                      Local {location.name} Expertise
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      {uniqueContent.locationSpecificIntro}
+                    </p>
+                    <p className="text-gray-600 dark:text-gray-400">
+                      {uniqueContent.secondaryInsight}
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="border-0 shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="flex items-center gap-2">
+                      <Clock className="h-5 w-5 text-primary" />
+                      {uniqueContent.serviceUrgency}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-600 dark:text-gray-400 mb-4">
+                      {uniqueContent.processDescription}
+                    </p>
+                    <p className="text-sm text-primary font-medium">
+                      Emergency repairs: {uniqueContent.emergencyAvailability}
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {brandSlug && uniqueContent.brandExpertise && (
+                <Card className="mb-12 border-primary/20 bg-primary/5">
+                  <CardHeader>
+                    <CardTitle className="text-2xl">
+                      {brandSlug.replace('-specialists', '').replace('-', ' ').replace(/\b\w/g, l => l.toUpperCase())} Specialists in {location.name}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <p className="text-gray-700 dark:text-gray-300 mb-6">
+                      {uniqueContent.brandExpertise}
+                    </p>
+                    
+                    {uniqueContent.commonIssues.length > 0 && (
+                      <div className="mb-6">
+                        <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
+                          Common {brandSlug.replace('-specialists', '').replace('-', ' ')} Issues We Fix in {location.name}:
+                        </h4>
+                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          {uniqueContent.commonIssues.map((issue, index) => (
+                            <li key={index} className="flex items-start gap-2 text-sm text-gray-600 dark:text-gray-400">
+                              <CheckCircle className="h-4 w-4 text-primary mt-0.5 shrink-0" />
+                              {issue}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
+                    <div className="bg-white dark:bg-gray-800 rounded-lg p-4">
+                      <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
+                        <strong>Local Stock:</strong> {uniqueContent.localStockInfo}
+                      </p>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">
+                        <strong>Warranty:</strong> {uniqueContent.warrantyDetails}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              )}
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {uniqueContent.uniqueSellingPoints.map((point, index) => (
+                  <Card key={index} className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        {index === 0 && <Star className="h-6 w-6 text-primary" />}
+                        {index === 1 && <Clock className="h-6 w-6 text-primary" />}
+                        {index === 2 && <Shield className="h-6 w-6 text-primary" />}
+                        {index >= 3 && <CheckCircle className="h-6 w-6 text-primary" />}
+                      </div>
+                      <p className="text-sm font-medium text-gray-900 dark:text-white">
+                        {point}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-16 bg-white dark:bg-gray-800">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-12 text-gray-900 dark:text-white">
+                Frequently Asked Questions About {service.name} in {location.name}
+              </h2>
+              
+              <div className="space-y-6">
+                {faqs.map((faq, index) => (
+                  <Card key={index} className="border shadow-sm hover:shadow-md transition-shadow">
+                    <CardHeader>
+                      <CardTitle className="text-lg text-gray-900 dark:text-white">
+                        {faq.question}
+                      </CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        {faq.answer}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+
+              <div className="mt-12 text-center">
+                <Card className="bg-gradient-to-r from-primary/5 to-secondary/5 border-primary/20">
+                  <CardContent className="p-8">
+                    <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
+                      Still Have Questions About {service.name} in {location.name}?
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-400 mb-6">
+                      Our friendly team is here to help with any questions about {service.name.toLowerCase()} in the {location.postcode} area. 
+                      Call us for expert advice and transparent pricing.
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                        <TrackedPhoneLink
+                          phone={businessInfo.phone.freephone.replace(/\s/g, "")}
+                          trackingLocation="location_service_page"
+                          trackingSource={`${location.slug}_${service.slug}_faq_cta`}
+                          className="flex items-center gap-2"
+                          ariaLabel="Call for expert advice"
+                        >
+                          <Phone size={18} />
+                          Call for Expert Advice
+                        </TrackedPhoneLink>
+                      </Button>
+                      <Button asChild variant="outline" size="lg">
+                        <Link href="/contact" className="flex items-center gap-2">
+                          <MapPin size={18} />
+                          Get Free Quote
+                        </Link>
+                      </Button>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Seasonal Tips Section */}
+        <section className="py-16 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+                Seasonal Maintenance Tips for {location.name} Residents
+              </h2>
+              
+              <Card className="border-0 shadow-xl">
+                <CardContent className="p-8">
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div>
+                      <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white">
+                        Current Season Priority
+                      </h3>
+                      <p className="text-gray-600 dark:text-gray-400 mb-6">
+                        Right now in {location.name}, focus on {uniqueContent.seasonalRelevance} to ensure optimal performance.
+                      </p>
+                      
+                      <h4 className="font-semibold mb-3 text-gray-900 dark:text-white">
+                        Maintenance Recommendations:
+                      </h4>
+                      <p className="text-gray-600 dark:text-gray-400">
+                        {uniqueContent.maintenanceTips} for properties in the {location.postcode} area.
+                      </p>
+                    </div>
+                    
+                    <div className="bg-primary/5 rounded-lg p-6">
+                      <h4 className="font-semibold mb-4 text-gray-900 dark:text-white">
+                        Local {location.name} Considerations:
+                      </h4>
+                      <ul className="space-y-3">
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            Service area includes {uniqueContent.locationLandmarks}
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            {uniqueContent.guaranteeInfo}
+                          </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                          <CheckCircle className="h-5 w-5 text-primary mt-0.5 shrink-0" />
+                          <span className="text-sm text-gray-600 dark:text-gray-400">
+                            Emergency callouts available throughout {location.postcode}
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>

@@ -163,6 +163,70 @@ ${staticEntries}${locationEntries}${blogEntries}
   console.log("   ✔ sitemap.xml");
 }
 
+/* ───────────────── BLOG SITEMAP ───────────────── */
+async function generateBlogSitemap() {
+  console.log("➜  Generating sitemap-blog.xml …");
+
+  let blogXml = "";
+  try {
+    const blogPosts = getAllPosts();
+    const categories = getAllCategories();
+    const tags = getAllTags();
+
+    // Blog posts
+    const blogPostEntries = blogPosts.map(post => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/${post.slug}</loc>
+    <lastmod>${post.lastModified ? new Date(post.lastModified).toISOString().split("T")[0] : new Date(post.date).toISOString().split("T")[0]}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>`).join("");
+
+    // Category pages
+    const categoryEntries = categories.map(category => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/category/${category}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>`).join("");
+
+    // Tag pages - using proper URL encoding for tags
+    const tagEntries = tags.map(tag => `
+  <url>
+    <loc>${WEBSITE_URL}/blog/tag/${encodeURIComponent(tag)}</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>`).join("");
+
+    // Main blog page
+    const mainBlogEntry = `
+  <url>
+    <loc>${WEBSITE_URL}/blog</loc>
+    <lastmod>${new Date().toISOString().split("T")[0]}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>`;
+
+    blogXml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${mainBlogEntry}${blogPostEntries}${categoryEntries}${tagEntries}
+</urlset>`;
+
+    const formatted = await prettier.format(blogXml, {
+      parser: "html",
+      printWidth: 120,
+    });
+
+    fs.mkdirSync("public", { recursive: true });
+    fs.writeFileSync("public/sitemap-blog.xml", formatted);
+    console.log("   ✔ sitemap-blog.xml");
+  } catch (error) {
+    console.warn("⚠ Warning: Could not generate blog sitemap:", error instanceof Error ? error.message : error);
+  }
+}
+
 /* ───────────────── ROBOTS ───────────────── */
 async function generateRobotsTxt() {
   console.log("➜  Generating robots.txt …");
@@ -185,9 +249,8 @@ Crawl-delay: 1
 # Sitemap location
 Sitemap: ${WEBSITE_URL}/sitemap.xml
 
-# Additional sitemaps (if you have them)
-# Sitemap: ${WEBSITE_URL}/sitemap-blog.xml
-# Sitemap: ${WEBSITE_URL}/sitemap-services.xml
+# Additional sitemaps
+Sitemap: ${WEBSITE_URL}/sitemap-blog.xml
 
 # Host declaration for primary domain
 Host: ${WEBSITE_URL.replace(/^https?:\/\//, "")}
@@ -229,6 +292,7 @@ Disallow: /
 (async () => {
   try {
     await generateSitemap();
+    await generateBlogSitemap();
     await generateRobotsTxt();
   } catch (err) {
     console.error("SEO build failed:", err);

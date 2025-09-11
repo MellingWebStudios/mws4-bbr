@@ -1,7 +1,17 @@
-# Development/Staging Environment
-# Block all crawlers in non-production
-
+# Production Robots.txt
 User-agent: *
-Disallow: /
+Allow: /
 
-# No sitemap for staging
+# Disallow technical Next.js URLs that shouldn't be indexed
+Disallow: /_next/image
+Disallow: /_next/static
+Disallow: /api/
+Disallow: /*.json
+Disallow: /admin/
+Disallow: /private/
+
+# Main sitemap
+Sitemap: https://www.birminghamboilerrepairs.uk/sitemap.xml
+
+# Blog sitemap  
+Sitemap: https://www.birminghamboilerrepairs.uk/sitemap-blog.xml
