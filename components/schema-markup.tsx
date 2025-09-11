@@ -150,7 +150,7 @@ export default function SchemaMarkup() {
                 "@id": `${businessInfo.website}/#business`,
               },
               description:
-                "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£55) and full (£120) servicing options.",
+                "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
               areaServed: {
                 "@type": "City",
                 name: "Birmingham",

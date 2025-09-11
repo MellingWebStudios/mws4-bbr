@@ -71,7 +71,7 @@ export default function GasSafetyPage() {
       {
         title: "Add Boiler Service",
         price: "£45",
-        description: "Save £10 when you combine with any gas safety inspection. Regular price £55.",
+        description: "Save £15 when you combine with any gas safety inspection. Regular price £60.",
       },
     ],
     faqs: [

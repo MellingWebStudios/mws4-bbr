@@ -39,7 +39,7 @@ export default function PricesPage() {
       items: [
         {
           service: "Standard Boiler Service",
-          price: "£55",
+          price: "£60",
           description: "30-min service, flue readings, gas-pressure checks",
         },
         {
@@ -84,7 +84,7 @@ export default function PricesPage() {
       items: [
         { service: "Ferroli Repair", price: "£75", description: "Specialist diagnosis and repair for Ferroli boilers"},
         { service: "Ferroli Repair (same day)", price: "£95", description: "Same-day service for Ferroli boiler repairs" },
-        { service: "Ferroli Service", price: "£55", description: "Specialized service for Ferroli boiler systems" },
+        { service: "Ferroli Service", price: "£60", description: "Specialized service for Ferroli boiler systems" },
         { service: "Full Ferroli Service", price: "£120", description: "Comprehensive service for Ferroli boiler systems" },
       ],
     },

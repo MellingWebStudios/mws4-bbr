@@ -2102,11 +2102,11 @@ export const services = [
     name: "Combination Boiler Services",
     description:
       "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
-    features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+    features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
     pricing: [
       {
         title: "Standard Combi Service",
-        price: "£55",
+        price: "£60",
         description: "Essential safety checks and basic maintenance for your combination boiler.",
       },
       {
@@ -2140,7 +2140,7 @@ export const services = [
       },
       {
         title: "Ferroli Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Ferroli boiler systems",
       },
       {
@@ -2174,7 +2174,7 @@ export const services = [
       },
       {
         title: "Worcester Bosch Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Worcester Bosch boiler systems",
       },
       {
@@ -2208,7 +2208,7 @@ export const services = [
       },
       {
         title: "Vaillant Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Vaillant boiler systems",
       },
       {
@@ -2242,7 +2242,7 @@ export const services = [
       },
       {
         title: "Ideal Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Ideal boiler systems",
       },
       {
@@ -2276,7 +2276,7 @@ export const services = [
       },
       {
         title: "Baxi Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Baxi boiler systems",
       },
       {
@@ -2310,7 +2310,7 @@ export const services = [
       },
       {
         title: "Alpha Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Alpha boiler systems",
       },
       {
@@ -2344,7 +2344,7 @@ export const services = [
       },
       {
         title: "Main Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Main boiler systems",
       },
       {
@@ -2378,7 +2378,7 @@ export const services = [
       },
       {
         title: "Vokera Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Vokera boiler systems",
       },
       {
@@ -2412,7 +2412,7 @@ export const services = [
       },
       {
         title: "Viessmann Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Viessmann boiler systems",
       },
       {
@@ -2446,7 +2446,7 @@ export const services = [
       },
       {
         title: "Intergas Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Intergas boiler systems",
       },
       {
@@ -2480,7 +2480,7 @@ export const services = [
       },
       {
         title: "Glow-worm Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Glow-worm boiler systems",
       },
       {
@@ -2514,7 +2514,7 @@ export const services = [
       },
       {
         title: "Atag Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Atag boiler systems",
       },
       {
@@ -2548,7 +2548,7 @@ export const services = [
       },
       {
         title: "Biasi Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Biasi boiler systems",
       },
       {
@@ -2582,7 +2582,7 @@ export const services = [
       },
       {
         title: "Potterton Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Potterton boiler systems",
       },
       {
@@ -2616,7 +2616,7 @@ export const services = [
       },
       {
         title: "Ariston Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Ariston boiler systems",
       },
       {
@@ -2650,7 +2650,7 @@ export const services = [
       },
       {
         title: "Heatline Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Heatline boiler systems",
       },
       {

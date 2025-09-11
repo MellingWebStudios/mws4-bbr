@@ -56,7 +56,7 @@ export default function BaxiSpecialistsPage() {
     pricing: [
       {
         title: "Baxi Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Baxi boiler systems.",
       },
       {

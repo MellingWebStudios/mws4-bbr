@@ -56,7 +56,7 @@ export default function WorcesterBoschSpecialistsPage() {
     pricing: [
       {
         title: "Worcester Bosch Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Worcester Bosch boiler systems.",
       },
       {

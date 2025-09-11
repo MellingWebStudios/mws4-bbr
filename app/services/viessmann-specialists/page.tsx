@@ -56,7 +56,7 @@ export default function ViessmannSpecialistsPage() {
     pricing: [
       {
         title: "Viessmann Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Viessmann boiler systems.",
       },
       {

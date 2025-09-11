@@ -56,7 +56,7 @@ export default function AristonSpecialistsPage() {
     pricing: [
       {
         title: "Ariston Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Ariston boiler systems.",
       },
       {

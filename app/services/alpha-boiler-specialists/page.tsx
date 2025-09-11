@@ -56,7 +56,7 @@ export default function AlphaBoilerSpecialistsPage() {
     pricing: [
       {
         title: "Alpha Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Alpha boiler systems.",
       },
       {

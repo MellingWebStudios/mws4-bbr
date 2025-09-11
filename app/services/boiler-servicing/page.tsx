@@ -42,7 +42,7 @@ export default function BoilerServicingPage() {
     id: "servicing",
     title: "Boiler Servicing",
     description:
-      "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£55) and full (£120) servicing options.",
+      "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
     image: "/images/service_page_image.png",
     features: [
       "30-minute standard service",
@@ -60,7 +60,7 @@ export default function BoilerServicingPage() {
     pricing: [
       {
         title: "Standard Service",
-        price: "£55",
+        price: "£60",
         description: "30-minute service, flue gas readings, gas pressure checks. No VAT charged.",
       },
       {

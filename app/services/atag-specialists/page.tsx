@@ -56,7 +56,7 @@ export default function AtagSpecialistsPage() {
     pricing: [
       {
         title: "Atag Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Atag boiler systems.",
       },
       {

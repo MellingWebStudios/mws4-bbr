@@ -15,14 +15,14 @@ import Breadcrumb from "@/components/breadcrumb"
 export const metadata: Metadata = {
   title: "Combination Boiler Services Birmingham | Professional Combi Boiler Servicing",
   description:
-    "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £55.",
+    "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £60.",
   keywords: "combination boiler service Birmingham, combi boiler servicing, combination boiler maintenance, combi boiler service",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
   },
   openGraph: {
     title: "Combination Boiler Services Birmingham | Professional Combi Boiler Servicing",
-    description: "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £55.",
+    description: "Professional combination boiler servicing in Birmingham. Keep your combi boiler running efficiently with our comprehensive service options from £60.",
     url: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
@@ -45,18 +45,18 @@ export default function CombinationBoilerServicesPage() {
     description:
       "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
     image: "/images/combi_service_page.png",
-    features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+    features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
     longDescription: `
   <p>Regular servicing is essential for keeping your combination boiler running safely and efficiently. Our professional combination boiler service includes comprehensive checks of both the heating and hot water functions, ensuring your combi boiler operates at peak performance.</p>
   
-  <p>We offer two service levels: our standard service (£55) covers essential safety checks, gas pressure testing, and basic maintenance, while our full service (£120) includes additional deep cleaning of the heat exchanger, detailed efficiency testing, and hot water flow rate analysis.</p>
+  <p>We offer two service levels: our standard service (£60) covers essential safety checks, gas pressure testing, and basic maintenance, while our full service (£120) includes additional deep cleaning of the heat exchanger, detailed efficiency testing, and hot water flow rate analysis.</p>
   
   <p>All our combination boiler services are carried out by Gas Safe registered engineers who understand the specific requirements of combi boiler systems. Regular servicing not only ensures safety but can also help identify potential issues before they become costly repairs, ultimately saving you money and ensuring reliable heating and hot water all year round.</p>
 `,
     pricing: [
       {
         title: "Standard Combi Service",
-        price: "£55",
+        price: "£60",
         description: "Essential safety checks and basic maintenance for your combination boiler.",
       },
       {

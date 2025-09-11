@@ -56,7 +56,7 @@ export default function BiasiSpecialistsPage() {
     pricing: [
       {
         title: "Biasi Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Biasi boiler systems.",
       },
       {

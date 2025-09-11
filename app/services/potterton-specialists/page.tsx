@@ -56,7 +56,7 @@ export default function PottertonSpecialistsPage() {
     pricing: [
       {
         title: "Potterton Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Potterton boiler systems.",
       },
       {

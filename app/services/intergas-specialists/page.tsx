@@ -56,7 +56,7 @@ export default function IntergasSpecialistsPage() {
     pricing: [
       {
         title: "Intergas Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Intergas boiler systems.",
       },
       {

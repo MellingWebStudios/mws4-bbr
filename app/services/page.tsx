@@ -51,7 +51,7 @@ export default function ServicesPage() {
       id: "servicing",
       title: "Boiler Servicing",
       description:
-        "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£55) and full (£120) servicing options.",
+        "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
       image: "/images/service_boiler_servicing_services_page.png",
       features: [
         "30-minute standard service",
@@ -85,7 +85,7 @@ export default function ServicesPage() {
       description:
         "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
       image: "/images/combi_service_page.png",
-      features: ["Standard service £55", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+      features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
       link: "/services/combination-boiler-services",
     },
     {
