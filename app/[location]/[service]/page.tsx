@@ -92,8 +92,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const title = `${service.name} in ${location.name} | Same-Day Service | Gas Safe`;
-  const description = `${service.name} in ${location.name} ${location.postcode}. Gas Safe engineers, no call-out fee, same day service. Call 0800 320 2345.`;
+  const title = `${location.name} ${service.name} | Same Day Service | Fixed Price Quote`;
+  const description = `Expert ${service.name.toLowerCase()} in ${location.name} ${location.postcode}. Same-day appointments, no call-out charges, Gas Safe registered. Emergency repairs available 24/7. Call 0800 320 2345!`;
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug}/${service.slug}`;
 
   return {

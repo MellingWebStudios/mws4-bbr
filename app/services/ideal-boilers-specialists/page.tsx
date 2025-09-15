@@ -12,16 +12,16 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Ideal Boilers Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Ideal Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Ideal Boilers specialists in Birmingham. Expert knowledge of Ideal boiler systems and components with genuine parts and extended warranties.",
+    "Birmingham Ideal boiler specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ideal repairs 24/7. Call 0800 320 2345!",
   keywords: "Ideal boiler repair Birmingham, Ideal Boilers specialist, Ideal boiler service, Ideal boiler parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/ideal-boilers-specialists",
   },
   openGraph: {
-    title: "Ideal Boilers Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Ideal Boilers specialists in Birmingham. Expert knowledge of Ideal boiler systems and components with genuine parts and extended warranties.",
+    title: "Birmingham Ideal Specialists | Expert Repairs & Same Day Service",
+    description: "Birmingham Ideal boiler specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ideal repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/ideal-boilers-specialists",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

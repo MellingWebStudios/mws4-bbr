@@ -9,16 +9,16 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import Head from "next/head"
 
 export const metadata: Metadata = {
-  title: "Ferroli Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Ferroli Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Ferroli boiler specialists in Birmingham. Expert knowledge of Ferroli systems and components with genuine parts and extended warranties.",
+    "Birmingham Ferroli specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ferroli repairs 24/7. Call 0800 320 2345!",
   keywords: "Ferroli boiler repair Birmingham, Ferroli specialist, Ferroli boiler service, Ferroli parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
   },
   openGraph: {
-    title: "Ferroli Boiler Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Ferroli boiler specialists in Birmingham. Expert knowledge of Ferroli systems and components with genuine parts and extended warranties.",
+    title: "Birmingham Ferroli Specialists | Expert Repairs & Same Day Service",
+    description: "Birmingham Ferroli specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ferroli repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

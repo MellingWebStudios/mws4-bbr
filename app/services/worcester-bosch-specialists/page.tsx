@@ -12,16 +12,16 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Worcester Bosch Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Worcester Bosch Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Worcester Bosch boiler specialists in Birmingham. Expert knowledge of Worcester Bosch systems and components with genuine parts and extended warranties.",
+    "Birmingham Worcester Bosch specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "Worcester Bosch boiler repair Birmingham, Worcester Bosch specialist, Worcester Bosch boiler service, Worcester Bosch parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/worcester-bosch-specialists",
   },
   openGraph: {
-    title: "Worcester Bosch Boiler Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Worcester Bosch boiler specialists in Birmingham. Expert knowledge of Worcester Bosch systems and components with genuine parts and extended warranties.",
+    title: "Birmingham Worcester Bosch Specialists | Expert Repairs & Same Day Service",
+    description: "Birmingham Worcester Bosch specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/worcester-bosch-specialists",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

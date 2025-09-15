@@ -35,8 +35,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const title = `Boiler Repairs in ${location.name} | Same-Day Service | Gas Safe`;
-  const description = `Expert boiler repairs, servicing & gas safety inspections in ${location.name} ${location.postcode}. No call-out fee, Gas Safe registered engineers. Call 0800 320 2345.`;
+  const title = `${location.name} Boiler Repairs | 24/7 Emergency Service | No Call-Out Fee`;
+  const description = `24/7 ${location.name} boiler repairs ${location.postcode}. Fixed price quotes, same-day service, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!`;
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug}`;
 
   return {

@@ -12,16 +12,16 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Baxi Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Baxi Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Baxi boiler specialists in Birmingham. Expert knowledge of Baxi systems and components with genuine parts and extended warranties.",
+    "Birmingham Baxi specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "Baxi boiler repair Birmingham, Baxi specialist, Baxi boiler service, Baxi parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/baxi-specialists",
   },
   openGraph: {
-    title: "Baxi Boiler Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Baxi boiler specialists in Birmingham. Expert knowledge of Baxi systems and components with genuine parts and extended warranties.",
+    title: "Birmingham Baxi Specialists | Expert Repairs & Same Day Service",
+    description: "Birmingham Baxi specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/baxi-specialists",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

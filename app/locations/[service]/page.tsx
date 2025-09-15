@@ -23,14 +23,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   }
 
   return {
-    title: `${service.name} Locations | Birmingham Boiler Repairs`,
-    description: `Find ${service.name.toLowerCase()} services near you. We cover Birmingham, Solihull, Dudley, Bromsgrove, Wolverhampton and surrounding areas. Call 0800 320 2345.`,
+    title: `Birmingham ${service.name} Locations | Same Day Service | 130+ Areas`,
+    description: `Find Birmingham ${service.name.toLowerCase()} near you. Same-day service across 130+ West Midlands areas. Fixed price quotes, Gas Safe engineers. Call 0800 320 2345!`,
     alternates: {
       canonical: `https://www.birminghamboilerrepairs.uk/locations/${service.slug}`,
     },
     openGraph: {
-      title: `${service.name} Locations | Birmingham Boiler Repairs`,
-      description: `Find ${service.name.toLowerCase()} services near you. We cover Birmingham, Solihull, Dudley, Bromsgrove, Wolverhampton and surrounding areas. Call 0800 320 2345.`,
+      title: `Birmingham ${service.name} Locations | Same Day Service`,
+      description: `Find Birmingham ${service.name.toLowerCase()} near you. Same-day service across 130+ West Midlands areas. Fixed price quotes, Gas Safe engineers. Call 0800 320 2345!`,
       url: `https://www.birminghamboilerrepairs.uk/locations/${service.slug}`,
       siteName: "Birmingham Boiler Repairs",
       locale: "en_GB",

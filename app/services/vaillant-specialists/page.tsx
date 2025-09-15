@@ -12,9 +12,9 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Vaillant Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Vaillant Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Vaillant boiler specialists in Birmingham. Expert knowledge of Vaillant systems and components with genuine parts and extended warranties.",
+    "Birmingham Vaillant specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Vaillant repairs 24/7. Call 0800 320 2345!",
   keywords: "Vaillant boiler repair Birmingham, Vaillant specialist, Vaillant boiler service, Vaillant parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/vaillant-specialists",

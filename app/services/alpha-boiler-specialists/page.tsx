@@ -12,16 +12,16 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Alpha Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Birmingham Alpha Specialists | Expert Repairs & Same Day Service",
   description:
-    "Approved Alpha boiler specialists in Birmingham. Expert knowledge of Alpha boiler systems and components with genuine parts and extended warranties.",
+    "Birmingham Alpha specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "Alpha boiler repair Birmingham, Alpha specialist, Alpha boiler service, Alpha parts",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/alpha-boiler-specialists",
   },
   openGraph: {
-    title: "Alpha Boiler Specialists Birmingham | Expert Repairs & Servicing",
-    description: "Approved Alpha boiler specialists in Birmingham. Expert knowledge of Alpha boiler systems and components with genuine parts and extended warranties.",
+    title: "Birmingham Alpha Specialists | Expert Repairs & Same Day Service",
+    description: "Birmingham Alpha specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/alpha-boiler-specialists",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
