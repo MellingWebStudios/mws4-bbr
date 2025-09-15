@@ -1,10 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { ArrowRight, MapPin, Wrench, Settings, Shield, Cog } from 'lucide-react'
 import { locations, services } from '@/lib/locations-data'
-import { slugify } from '@/lib/slug'
 
 // Interface for internal link item
 interface InternalLinkItem {

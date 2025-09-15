@@ -6,7 +6,6 @@ import GasSafeBadge from "@/components/gas-safe-badge"
 import { useCookieConsent } from "@/context/cookie-consent-context"
 import businessInfo from "@/lib/business-info"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
-import { slugify } from '@/lib/slug';
 
 const Footer = () => {
   const { openPreferences } = useCookieConsent()
