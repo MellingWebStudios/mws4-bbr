@@ -2000,7 +2000,7 @@ export const services = [
     pricing: [
       {
         title: "Standard Repair",
-        price: "£55",
+        price: "£99",
         description: "Diagnosis and repair of common faults (excludes parts)",
       },
       {

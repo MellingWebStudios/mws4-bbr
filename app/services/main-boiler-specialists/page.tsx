@@ -56,7 +56,7 @@ export default function MainBoilerSpecialistsPage() {
     pricing: [
       {
         title: "Main Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Main boiler systems.",
       },
       {

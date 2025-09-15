@@ -1,4 +1,4 @@
-import { getLocationBySlug, getServiceBySlug, type Location, services } from './locations-data';
+import { type Location, services } from './locations-data';
 
 // Service type based on the services array structure
 type Service = typeof services[0];

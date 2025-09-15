@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Phone, AlertTriangle, CheckCircle, Calendar, Clock, Shield, Home, Battery } from "lucide-react"
+import { Phone, AlertTriangle, CheckCircle, Calendar, Shield, Home, Battery } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import type { Metadata } from "next"

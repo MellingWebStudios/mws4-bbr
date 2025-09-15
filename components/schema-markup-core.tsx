@@ -87,7 +87,7 @@ export default function CoreSchemaMarkup() {
                           "@type": "Service",
                           name: "Standard Boiler Service",
                         },
-                        price: "55",
+                        price: "60",
                         priceCurrency: "GBP",
                         description: "30-minute boiler service with flue readings and gas pressure checks",
                       },
@@ -144,7 +144,7 @@ export default function CoreSchemaMarkup() {
               serviceType: "Boiler Servicing",
               offers: {
                 "@type": "Offer",
-                price: "55",
+                price: "60",
                 priceCurrency: "GBP",
               },
             },

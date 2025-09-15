@@ -1,6 +1,5 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Button } from "@/components/ui/button"
 import { Phone, CheckCircle, ArrowLeft } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import type { Metadata } from "next"
@@ -56,7 +55,7 @@ export default function VokeraSpecialistsPage() {
     pricing: [
       {
         title: "Vokera Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Vokera boiler systems.",
       },
       {

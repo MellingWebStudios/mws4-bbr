@@ -56,7 +56,7 @@ export default function HeatlineSpecialistsPage() {
     pricing: [
       {
         title: "Heatline Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Heatline boiler systems.",
       },
       {

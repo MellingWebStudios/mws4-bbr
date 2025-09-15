@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Phone } from "lucide-react";
 import TrackedPhoneLink from "@/components/tracked-phone-link";
 

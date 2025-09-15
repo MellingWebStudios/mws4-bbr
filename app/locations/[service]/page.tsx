@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
 import { Phone } from "lucide-react"
 import { locations, services, getServiceBySlug } from "@/lib/locations-data"
 import LocationServiceCard from "@/components/location-service-card"

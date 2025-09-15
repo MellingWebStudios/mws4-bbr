@@ -56,7 +56,7 @@ export default function GlowwormSpecialistsPage() {
     pricing: [
       {
         title: "Glow-worm Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Glow-worm boiler systems.",
       },
       {

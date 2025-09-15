@@ -4,8 +4,7 @@ import { useEffect } from "react"
 import { Star } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Phone, CheckCircle, Clock, ShieldCheck, PoundSterlingIcon as Pound, HelpCircle, FileText, AlertTriangle, Home } from "lucide-react"
+import { Phone, CheckCircle } from "lucide-react"
 import PricingCard from "@/components/pricing-card"
 import TrustBadges from "@/components/trust-badges"
 import ServiceCallout from "@/components/emergency-callout"
@@ -243,7 +242,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 <PricingCard
                   title="Standard Service"
-                  price="£55"
+                  price="£60"
                   features={[
                     "30-minute service",
                     "Flue gas readings",

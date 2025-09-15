@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ChevronRight, Home } from "lucide-react"
+import { ChevronRight } from "lucide-react"
 import { slugify } from "@/lib/slug"
 
 interface BreadcrumbItem {

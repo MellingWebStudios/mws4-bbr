@@ -56,7 +56,7 @@ export default function VaillantSpecialistsPage() {
     pricing: [
       {
         title: "Vaillant Boiler Service",
-        price: "£55",
+        price: "£60",
         description: "Professional service for Vaillant boiler systems.",
       },
       {
