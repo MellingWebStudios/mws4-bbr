@@ -52,12 +52,12 @@ export default function FerroliSpecialistsPage() {
     pricing: [
       {
         title: "Ferroli Service",
-        price: "£65",
+        price: "£60",
         description: "Specialized service for Ferroli boilers with manufacturer-recommended checks.",
       },
       {
         title: "Ferroli Repair",
-        price: "£99",
+        price: "£75",
         description: "Expert diagnosis and repair of Ferroli-specific issues. No call-out fee.",
       },
       {
