@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { slugify } from '@/lib/slug';
 import { validateAndNormalizeUrl, hasDuplicateSegments, removeDuplicateSegments } from '@/lib/url-validator';
+import { locations } from '@/lib/locations-data';
 
 // Location name to slug mappings for redirects
 const locationRedirects: Record<string, string> = {
@@ -318,6 +319,64 @@ export function middleware(req: NextRequest) {
       const baseUrl = getBaseUrl(host);
       const redirectUrl = `${baseUrl}/${slug}/${service}${req.nextUrl.search}`;
       return NextResponse.redirect(redirectUrl, 301); // changed from 308 to 301
+    }
+  }
+
+  // Additional comprehensive redirects for common service patterns that appear in crawl data
+  const commonServiceRedirects: Record<string, string> = {
+    'boiler-repairs': 'boiler-repairs',
+    'boiler-servicing': 'boiler-servicing', 
+    'gas-safety': 'gas-safety',
+    'combination-boiler-repairs': 'boiler-repairs',
+    'combination-boiler-services': 'boiler-servicing',
+    
+    // Brand specialist patterns
+    'main-boiler-specialists': 'main-boiler-specialists',
+    'biasi-specialists': 'biasi-specialists',
+    'ideal-boilers-specialists': 'ideal-boilers-specialists',
+    'vaillant-specialists': 'vaillant-specialists',
+    'worcester-bosch-specialists': 'worcester-bosch-specialists',
+    'alpha-boiler-specialists': 'alpha-boiler-specialists',
+    'heatline-specialists': 'heatline-specialists',
+    'atag-specialists': 'atag-specialists',
+    'baxi-specialists': 'baxi-specialists',
+    'potterton-specialists': 'potterton-specialists',
+    'viessmann-specialists': 'viessmann-specialists',
+    'ferroli-specialists': 'ferroli-specialists',
+    'glowworm-specialists': 'glowworm-specialists',
+    'ariston-specialists': 'ariston-specialists',
+    'intergas-specialists': 'intergas-specialists',
+    'vokera-specialists': 'vokera-specialists'
+  };
+
+  // Handle comprehensive URL-encoded location patterns from crawl data
+  // This covers patterns like /Acocks%20Green/boiler-repairs, /Austin%20Village/boiler-servicing, etc.
+  const urlEncodedPattern = /^\/([^\/]+)%20([^\/]+)(?:%20([^\/]+))?\/(.+)$/;
+  const urlEncodedMatch = pathname.match(urlEncodedPattern);
+  if (urlEncodedMatch) {
+    const [, firstWord, secondWord, thirdWord, service] = urlEncodedMatch;
+    
+    // Build location slug based on number of words
+    let locationSlug: string;
+    if (thirdWord) {
+      // Three words like "Acocks Green Village" -> "acocks-green-village"
+      locationSlug = `${firstWord.toLowerCase()}-${secondWord.toLowerCase()}-${thirdWord.toLowerCase()}`;
+    } else {
+      // Two words like "Acocks Green" -> "acocks-green"
+      locationSlug = `${firstWord.toLowerCase()}-${secondWord.toLowerCase()}`;
+    }
+    
+    // Check if this location exists in our mapping or data
+    const validLocationSlug = locationRedirects[`${firstWord} ${secondWord}${thirdWord ? ` ${thirdWord}` : ''}`] || 
+                              (locations.some(loc => loc.slug === locationSlug) ? locationSlug : null);
+    
+    // Check if service exists in our common service redirects
+    const validServiceSlug = commonServiceRedirects[service] || service;
+    
+    if (validLocationSlug) {
+      const baseUrl = getBaseUrl(host);
+      const redirectUrl = `${baseUrl}/${validLocationSlug}/${validServiceSlug}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 301);
     }
   }
 
