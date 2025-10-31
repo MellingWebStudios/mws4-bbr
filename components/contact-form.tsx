@@ -52,6 +52,17 @@ export default function ContactForm() {
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setFormData((prev) => ({ ...prev, [name]: value }))
+    
+    // Track form start on first interaction
+    if (typeof window !== 'undefined' && (window as any).gtag && !formState.isSubmitted) {
+      const hasAnyData = Object.values(formData).some(val => val !== "")
+      if (!hasAnyData && value.length > 0) {
+        (window as any).gtag('event', 'form_start', {
+          event_category: 'Contact Form',
+          event_label: 'User started filling contact form'
+        })
+      }
+    }
   }
 
   const handleSelectChange = (name: string, value: string) => {
@@ -77,6 +88,15 @@ export default function ContactForm() {
           isSubmitting: false,
           errors: data.errors || { _form: ["Failed to submit the form. Please try again."] },
         })
+        
+        // Track form submission error
+        if (typeof window !== 'undefined' && (window as any).gtag) {
+          (window as any).gtag('event', 'form_error', {
+            event_category: 'Contact Form',
+            event_label: 'Contact form submission failed',
+            error_type: data.errors ? 'validation_error' : 'submission_error'
+          })
+        }
         return
       }
       setFormState({
@@ -85,6 +105,22 @@ export default function ContactForm() {
         errors: {},
         message: data.message,
       })
+      
+      // Track successful form submission in Google Analytics
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'form_submit', {
+          event_category: 'Contact Form',
+          event_label: 'Contact Form Submission',
+          urgency: formData.urgency,
+          boiler_brand: formData.boilerBrand || 'not_specified',
+          problem_type: formData.problemType || 'not_specified',
+          custom_parameters: {
+            form_type: 'enhanced_contact_form',
+            has_boiler_info: !!(formData.boilerBrand || formData.boilerModel || formData.problemType)
+          }
+        })
+      }
+      
       setFormData(initialFormData)
     } catch (error) {
       setFormState({

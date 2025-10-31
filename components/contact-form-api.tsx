@@ -92,6 +92,21 @@ const ContactFormAPI = () => {
         message: data.message,
       })
 
+      // Track successful form submission in Google Analytics
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        (window as any).gtag('event', 'form_submit', {
+          event_category: 'Contact Form API',
+          event_label: 'Contact Form API Submission',
+          urgency: formData.urgency,
+          boiler_brand: formData.boilerBrand || 'not_specified',
+          problem_type: formData.problemType || 'not_specified',
+          custom_parameters: {
+            form_type: 'enhanced_contact_form_api',
+            has_boiler_info: !!(formData.boilerBrand || formData.boilerModel || formData.problemType)
+          }
+        })
+      }
+
       // Reset form data
       setFormData({
         name: "",
