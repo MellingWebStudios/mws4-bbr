@@ -169,6 +169,16 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
               </li>
+              <li>
+                <a
+                  href="https://ferroliboilerrepair.co.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Ferroli Specialist Site
+                </a>
+              </li>
             </ul>
             <div className="flex space-x-4 mt-4">
               <Link

@@ -95,6 +95,18 @@ export default function AboutPage() {
                   diagnosing and repairing these complex systems.
                 </p>
                 <p>
+                  Due to our expertise with Ferroli boilers, we also operate a dedicated specialist service at{" "}
+                  <a
+                    href="https://ferroliboilerrepair.co.uk/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-secondary hover:text-secondary/80 font-medium underline"
+                  >
+                    Ferroli Boiler Repair
+                  </a>
+                  , providing focused support for Ferroli boiler owners across the region.
+                </p>
+                <p>
                   What sets us apart is our commitment to customer satisfaction and our no-nonsense approach to pricing
                   - we don't charge VAT, there are no hidden fees, and we're always upfront about costs.
                 </p>
