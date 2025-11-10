@@ -22,7 +22,16 @@ const Footer = () => {
               <GasSafeBadge variant="footer" />
             </div>
             <p className="text-sm text-gray-800 dark:text-gray-300">
-              Family-run boiler repair and servicing company established in 2010.
+              Family-run boiler repair and servicing company established in 2010. Part of the{" "}
+              <a
+                href="https://www.birminghamboilerrepairs.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-secondary hover:underline"
+              >
+                Birmingham Boiler Repairs
+              </a>{" "}
+              network.
             </p>
           </div>
 
@@ -168,6 +177,16 @@ const Footer = () => {
                 >
                   Privacy Policy
                 </Link>
+              </li>
+              <li>
+                <a
+                  href="https://www.birminghamboilerrepairs.uk/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
+                >
+                  Main Birmingham Site
+                </a>
               </li>
               <li>
                 <a
