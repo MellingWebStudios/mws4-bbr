@@ -16,17 +16,169 @@ function getResend() {
   return resend;
 }
 
-// Enhanced form schema with new fields
+// Rate limiting storage (in production, use Redis or database)
+const rateLimitMap = new Map<string, { count: number; windowStart: number }>();
+
+// Spam detection utilities
+function getClientIP(request: NextRequest): string {
+  const forwarded = request.headers.get('x-forwarded-for');
+  const realIP = request.headers.get('x-real-ip');
+  return forwarded?.split(',')[0] || realIP || 'unknown';
+}
+
+function isRateLimited(ip: string): boolean {
+  const windowSize = 15 * 60 * 1000; // 15 minutes
+  const maxAttempts = 3; // Max 3 submissions per 15 minutes
+  const now = Date.now();
+  
+  const record = rateLimitMap.get(ip);
+  
+  if (!record) {
+    rateLimitMap.set(ip, { count: 1, windowStart: now });
+    return false;
+  }
+  
+  if (now - record.windowStart > windowSize) {
+    // Reset window
+    rateLimitMap.set(ip, { count: 1, windowStart: now });
+    return false;
+  }
+  
+  if (record.count >= maxAttempts) {
+    return true;
+  }
+  
+  record.count++;
+  return false;
+}
+
+function detectRandomString(text: string): boolean {
+  // Check for patterns that indicate random character strings
+  if (text.length < 3) return false;
+  
+  // Count vowels - random strings typically have very few vowels
+  const vowels = (text.match(/[aeiouAEIOU]/g) || []).length;
+  const vowelRatio = vowels / text.length;
+  
+  // Random strings typically have low vowel ratio (< 0.2)
+  if (vowelRatio < 0.2 && text.length > 8) return true;
+  
+  // Check for excessive consonant clusters
+  const consonantClusters = (text.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{4,}/g) || []).length;
+  if (consonantClusters > 0) return true;
+  
+  // Check for mixed case patterns that suggest random generation
+  const hasRandomCase = /[a-z][A-Z][a-z][A-Z]/.test(text) || /[A-Z][a-z][A-Z][a-z]/.test(text);
+  if (hasRandomCase && text.length > 10) return true;
+  
+  return false;
+}
+
+function containsSpamKeywords(text: string): boolean {
+  const spamKeywords = [
+    'crypto', 'bitcoin', 'investment', 'roi', 'profit', 'earn money',
+    'work from home', 'mlm', 'pyramid', 'get rich', 'viagra', 'cialis',
+    'casino', 'gambling', 'loan', 'mortgage', 'insurance', 'seo services',
+    'click here', 'limited time', 'act now', 'free money', 'no obligation'
+  ];
+  
+  const lowerText = text.toLowerCase();
+  return spamKeywords.some(keyword => lowerText.includes(keyword));
+}
+
+function validateMessageQuality(message: string): boolean {
+  // Must contain at least one common English word
+  const commonWords = [
+    'boiler', 'heating', 'hot', 'water', 'repair', 'service', 'help', 'problem',
+    'issue', 'broken', 'not', 'working', 'need', 'please', 'hello', 'hi',
+    'the', 'and', 'is', 'are', 'have', 'can', 'could', 'would', 'my', 'our'
+  ];
+  
+  const lowerMessage = message.toLowerCase();
+  const hasCommonWord = commonWords.some(word => lowerMessage.includes(word));
+  
+  if (!hasCommonWord) return false;
+  
+  // Check for reasonable sentence structure
+  const hasPunctuation = /[.!?]/.test(message);
+  const hasSpaces = message.includes(' ');
+  const wordCount = message.split(/\s+/).length;
+  
+  // Should have spaces and reasonable word count for a support message
+  return hasSpaces && wordCount >= 3;
+}
+
+function isValidPhoneNumber(phone: string): boolean {
+  // Remove all non-digits
+  const digits = phone.replace(/\D/g, '');
+  
+  // Check for UK phone number patterns
+  const ukPatterns = [
+    /^(07\d{9})$/, // Mobile
+    /^(01\d{8,9})$/, // Landline
+    /^(02\d{8})$/, // London/Cities
+    /^(03\d{8})$/, // Non-geographic
+    /^(08\d{8})$/, // Freephone/Premium
+    /^(09\d{8})$/ // Premium rate
+  ];
+  
+  // Also allow international format starting with country codes
+  const internationalPatterns = [
+    /^(44\d{10})$/, // UK international
+    /^(1\d{10})$/, // US/Canada
+    /^(49\d{10,11})$/, // Germany
+    /^(33\d{9})$/, // France
+  ];
+  
+  return ukPatterns.some(pattern => pattern.test(digits)) || 
+         internationalPatterns.some(pattern => pattern.test(digits)) ||
+         (digits.length >= 10 && digits.length <= 15); // General international
+}
+
+// Enhanced form schema with spam protection
 const formSchema = z.object({
-  name: z.string().min(2, { message: "Name must be at least 2 characters" }),
-  email: z.string().email({ message: "Please enter a valid email address" }),
-  phone: z.string().min(6, { message: "Please enter a valid phone number" }),
-  message: z.string().min(10, { message: "Message must be at least 10 characters" }),
+  name: z.string()
+    .min(2, { message: "Name must be at least 2 characters" })
+    .max(100, { message: "Name is too long" })
+    .refine((val) => !detectRandomString(val), { 
+      message: "Please enter a valid name" 
+    })
+    .refine((val) => !/^\s*$/.test(val), { 
+      message: "Name cannot be empty or just spaces" 
+    }),
+  email: z.string()
+    .email({ message: "Please enter a valid email address" })
+    .refine((val) => !val.includes('..'), { 
+      message: "Invalid email format" 
+    }),
+  phone: z.string()
+    .min(6, { message: "Please enter a valid phone number" })
+    .refine((val) => isValidPhoneNumber(val), { 
+      message: "Please enter a valid UK phone number" 
+    }),
+  message: z.string()
+    .min(10, { message: "Message must be at least 10 characters" })
+    .max(2000, { message: "Message is too long" })
+    .refine((val) => !detectRandomString(val), { 
+      message: "Please write a meaningful message" 
+    })
+    .refine((val) => validateMessageQuality(val), { 
+      message: "Please provide more details about your heating issue" 
+    })
+    .refine((val) => !containsSpamKeywords(val), { 
+      message: "Message contains inappropriate content" 
+    }),
   boilerBrand: z.string().optional(),
-  boilerModel: z.string().optional(),
+  boilerModel: z.string()
+    .optional()
+    .refine((val) => !val || !detectRandomString(val), { 
+      message: "Please enter a valid boiler model" 
+    }),
   problemType: z.string().optional(),
   urgency: z.enum(["emergency", "urgent", "normal", "routine"]).default("normal"),
   website: z.string().optional(), // honeypot
+  formStartTime: z.number().optional(), // Time when form was loaded
+  submitTime: z.number().optional(), // Time when form was submitted
 });
 
 // Handle preflight OPTIONS requests
@@ -43,6 +195,27 @@ export async function OPTIONS(request: NextRequest) {
 
 export async function POST(request: NextRequest) {
   try {
+    // Get client IP for rate limiting
+    const clientIP = getClientIP(request);
+    
+    // Check rate limiting first
+    if (isRateLimited(clientIP)) {
+      return NextResponse.json(
+        { 
+          success: false, 
+          errors: { _form: ["Too many submissions. Please wait before trying again."] }
+        },
+        { 
+          status: 429,
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+          },
+        }
+      );
+    }
+
     // Parse and validate input
     const body = await request.json();
     const parsed = formSchema.safeParse(body);
@@ -61,8 +234,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    const data = parsed.data;
+
     // Honeypot check
-    if (parsed.data.website && parsed.data.website.length > 0) {
+    if (data.website && data.website.length > 0) {
+      console.log(`Honeypot triggered from IP: ${clientIP}`);
       // Bot detected. Silently succeed (do nothing else)
       return NextResponse.json(
         { 
@@ -71,6 +247,50 @@ export async function POST(request: NextRequest) {
         }, 
         { 
           status: 200,
+          headers: {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+          },
+        }
+      );
+    }
+
+    // Time-based validation (form should take at least 10 seconds to fill)
+    if (data.formStartTime && data.submitTime) {
+      const fillTime = data.submitTime - data.formStartTime;
+      if (fillTime < 10000) { // Less than 10 seconds
+        console.log(`Form submitted too quickly (${fillTime}ms) from IP: ${clientIP}`);
+        return NextResponse.json(
+          { 
+            success: false, 
+            errors: { _form: ["Please take more time to fill out the form properly."] }
+          },
+          { 
+            status: 400,
+            headers: {
+              'Access-Control-Allow-Origin': '*',
+              'Access-Control-Allow-Methods': 'POST, OPTIONS',
+              'Access-Control-Allow-Headers': 'Content-Type',
+            },
+          }
+        );
+      }
+    }
+
+    // Additional spam checks
+    const combinedText = `${data.name} ${data.message} ${data.boilerModel || ''}`;
+    
+    // Check for suspicious patterns
+    if (detectRandomString(combinedText) || containsSpamKeywords(combinedText)) {
+      console.log(`Spam detected from IP: ${clientIP}, content: ${combinedText.substring(0, 100)}`);
+      return NextResponse.json(
+        { 
+          success: false, 
+          errors: { _form: ["Your submission appears to be spam. Please provide genuine information."] }
+        },
+        { 
+          status: 400,
           headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'POST, OPTIONS',

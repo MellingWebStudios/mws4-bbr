@@ -38,6 +38,8 @@ const initialFormData = {
   problemType: "",
   urgency: "normal",
   website: "", // Honeypot (hidden) field
+  formStartTime: Date.now(), // Track when form was loaded
+  submitTime: 0, // Will be set on submission
 }
 
 export default function ContactForm() {
@@ -74,12 +76,18 @@ export default function ContactForm() {
     setFormState({ ...formState, isSubmitting: true })
 
     try {
+      // Add timing information
+      const submissionData = {
+        ...formData,
+        submitTime: Date.now(),
+      }
+
       const response = await fetch("/api/contact-resend", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(submissionData),
       })
       const data = await response.json()
       if (!response.ok || !data.message) {
@@ -133,7 +141,10 @@ export default function ContactForm() {
 
   const handleNewMessage = () => {
     setFormState({ isSubmitting: false, isSubmitted: false, errors: {}, message: "" })
-    setFormData(initialFormData)
+    setFormData({
+      ...initialFormData,
+      formStartTime: Date.now(), // Reset the timing
+    })
   }
 
   return (
@@ -175,16 +186,25 @@ export default function ContactForm() {
           <div className="space-y-2">
             <Label htmlFor="name">Name</Label>
             <Input id="name" name="name" value={formData.name} onChange={handleChange} required />
+            {formState.errors.name && (
+              <p className="text-sm text-red-600 dark:text-red-400">{formState.errors.name[0]}</p>
+            )}
           </div>
           {/* Email Field */}
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
             <Input id="email" name="email" type="email" value={formData.email} onChange={handleChange} required />
+            {formState.errors.email && (
+              <p className="text-sm text-red-600 dark:text-red-400">{formState.errors.email[0]}</p>
+            )}
           </div>
           {/* Phone Field */}
           <div className="space-y-2">
             <Label htmlFor="phone">Phone</Label>
             <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleChange} required />
+            {formState.errors.phone && (
+              <p className="text-sm text-red-600 dark:text-red-400">{formState.errors.phone[0]}</p>
+            )}
           </div>
 
           {/* Boiler Information Section */}
@@ -229,6 +249,9 @@ export default function ContactForm() {
                 onChange={handleChange} 
                 placeholder="e.g. Greenstar 30CDi, EcoTec Pro 28"
               />
+              {formState.errors.boilerModel && (
+                <p className="text-sm text-red-600 dark:text-red-400">{formState.errors.boilerModel[0]}</p>
+              )}
             </div>
 
             {/* Problem Type */}
@@ -284,6 +307,9 @@ export default function ContactForm() {
               placeholder="Please describe the problem in more detail, when it started, any error codes you've seen, etc."
               required 
             />
+            {formState.errors.message && (
+              <p className="text-sm text-red-600 dark:text-red-400">{formState.errors.message[0]}</p>
+            )}
           </div>
           <Button
             type="submit"
