@@ -37,7 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const title = `${location.name} Boiler Repairs | 24/7 Emergency Service | No Call-Out Fee`;
   const description = `24/7 ${location.name} boiler repairs ${location.postcode}. Fixed price quotes, same-day service, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!`;
-  const url = `https://www.birminghamboilerrepairs.uk/${location.slug}`;
+  // Ensure canonical URL is always lowercase and properly formatted
+  const url = `https://www.birminghamboilerrepairs.uk/${location.slug.toLowerCase()}`;
 
   return {
     title,

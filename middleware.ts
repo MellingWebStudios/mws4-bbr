@@ -510,15 +510,90 @@ export function middleware(req: NextRequest) {
     }
   }
 
-  // Only enforce HTTPS + www for the production domain (www.birminghamboilerrepairs.uk)
-  // For other domains (like Fly.io staging), allow them to work without redirects
+  // Comprehensive canonical URL enforcement for production
   if (process.env.NODE_ENV === "production" &&
     !host.includes("localhost") &&
     !host.includes("127.0.0.1") &&
-    !host.includes("fly.dev") && // Don't redirect staging domains
-    (host !== "www.birminghamboilerrepairs.uk" || proto !== "https")) {
-    const redirectUrl = `https://www.birminghamboilerrepairs.uk${pathname}${req.nextUrl.search}`;
-    return NextResponse.redirect(redirectUrl, 301);
+    !host.includes("fly.dev")) { // Don't redirect staging domains
+    
+    let needsRedirect = false;
+    let canonicalHost = "www.birminghamboilerrepairs.uk";
+    let canonicalProtocol = "https";
+    let canonicalPath = pathname;
+    
+    // 1. Force HTTPS + www
+    if (host !== canonicalHost || proto !== canonicalProtocol) {
+      needsRedirect = true;
+    }
+    
+    // 2. Handle space-separated location names (URL decode and convert spaces to hyphens)
+    const decodedPath = decodeURIComponent(pathname);
+    if (decodedPath !== pathname) {
+      canonicalPath = decodedPath.replace(/\s+/g, '-').toLowerCase();
+      needsRedirect = true;
+    } else if (pathname.includes(' ')) {
+      canonicalPath = pathname.replace(/\s+/g, '-').toLowerCase();
+      needsRedirect = true;
+    }
+    
+    // 3. Force lowercase paths for location/service URLs
+    const locationServiceMatch = canonicalPath.match(/^\/([^\/]+)(?:\/([^\/]+))?/);
+    if (locationServiceMatch) {
+      const [, locationPart, servicePart] = locationServiceMatch;
+      let correctedPath = canonicalPath;
+      
+      // Check if location part needs lowercase conversion
+      if (locationPart !== locationPart.toLowerCase()) {
+        correctedPath = correctedPath.replace(`/${locationPart}`, `/${locationPart.toLowerCase()}`);
+      }
+      
+      // Check if service part needs lowercase conversion and handle invalid services
+      if (servicePart) {
+        const lowerServicePart = servicePart.toLowerCase();
+        
+        // Handle invalid specialist services
+        const invalidServices = ['alpha-specialists', 'main-specialists', 'glow-worm-specialists'];
+        if (invalidServices.includes(lowerServicePart)) {
+          // Redirect to ferroli-specialists (closest valid service)
+          correctedPath = correctedPath.replace(`/${servicePart}`, '/ferroli-specialists');
+        }
+        // Handle duplicate location patterns (e.g., /birchfield/birchfield)
+        else if (lowerServicePart === locationPart.toLowerCase()) {
+          // Redirect to main location page
+          correctedPath = `/${locationPart.toLowerCase()}`;
+        }
+        // Handle invalid service names with spaces/capitals
+        else if (servicePart.includes(' ') || servicePart !== lowerServicePart) {
+          // Try to map to valid service or redirect to boiler-repairs as default
+          const serviceMap: Record<string, string> = {
+            'boiler installation': 'boiler-repairs',
+            'boiler servicing': 'boiler-servicing', 
+            'boiler troubleshooting': 'boiler-repairs',
+            'heating systems': 'boiler-repairs',
+            'heating system troubleshooting': 'boiler-repairs',
+            'emergency boiler repair': 'boiler-repairs',
+            'boiler noise diagnosis': 'boiler-repairs'
+          };
+          
+          const mappedService = serviceMap[lowerServicePart.replace(/-/g, ' ')];
+          correctedPath = correctedPath.replace(`/${servicePart}`, `/${mappedService || 'boiler-repairs'}`);
+        }
+        else if (servicePart !== lowerServicePart) {
+          correctedPath = correctedPath.replace(`/${servicePart}`, `/${lowerServicePart}`);
+        }
+      }
+      
+      if (correctedPath !== canonicalPath) {
+        canonicalPath = correctedPath;
+        needsRedirect = true;
+      }
+    }
+    
+    // Perform redirect if any canonicalization is needed
+    if (needsRedirect) {
+      const redirectUrl = `${canonicalProtocol}://${canonicalHost}${canonicalPath}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 301);
+    }
   }
 
   // List of legitimate page routes that should not be redirected
