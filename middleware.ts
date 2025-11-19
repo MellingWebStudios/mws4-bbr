@@ -110,6 +110,25 @@ export function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
+  // SAFETY: Skip all static assets and API routes
+  if (
+    pathname.startsWith('/api') ||
+    pathname.startsWith('/_next') ||
+    pathname.startsWith('/images') ||
+    pathname.startsWith('/fonts') ||
+    pathname.startsWith('/icons') ||
+    pathname.includes('.') // Any file with extension
+  ) {
+    return NextResponse.next();
+  }
+
+  // SAFETY: Prevent infinite redirects by checking for loop indicators
+  const referer = req.headers.get('referer');
+  if (referer && new URL(referer).pathname === pathname) {
+    console.warn(`Potential redirect loop detected for ${pathname}, allowing through`);
+    return NextResponse.next();
+  }
+
   // Early check for duplicate segments (e.g., /selly-park/selly-park/)
   if (hasDuplicateSegments(pathname)) {
     const cleanedPath = removeDuplicateSegments(pathname);
@@ -639,7 +658,8 @@ export const config = {
      * - robots.txt, sitemap.xml (SEO files)
      * - .well-known (security files)
      * - Static assets (images, fonts, etc.)
+     * - public assets served from /public
      */
-    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|\\.well-known|.*\\.(?:ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js)$).*)',
+    '/((?!api|_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|\\.well-known|images|fonts|icons|.*\\.(?:ico|png|jpg|jpeg|gif|svg|webp|woff|woff2|ttf|eot|css|js|map|txt|xml|json|pdf|zip)$).*)',
   ],
 };

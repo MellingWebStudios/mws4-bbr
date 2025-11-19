@@ -12,8 +12,9 @@ export const metadata: Metadata = {
   robots: "noindex, nofollow",
 }
 
-export default function CatchAllPage({ params }: { params: { catchAll: string[] } }) {
-  const path = params.catchAll?.join('/') || ''
+export default async function CatchAllPage({ params }: { params: Promise<{ catchAll: string[] }> }) {
+  const { catchAll } = await params
+  const path = catchAll?.join('/') || ''
   
   // Check if this looks like a brand specialist URL pattern
   const isBrandSpecialistUrl = /\/(alpha|main|glow-worm)-specialists$/.test(path)
