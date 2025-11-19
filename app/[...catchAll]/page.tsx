@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Home, MapPin, Wrench, ArrowRight } from "lucide-react"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
   title: "Page Not Found - Birmingham Boiler Repairs",
@@ -124,11 +125,17 @@ export default function CatchAllPage({ params }: { params: { catchAll: string[] 
           <p className="text-sm text-gray-500 mb-4">
             Need immediate help? Call us now:
           </p>
-          <Link href="tel:08003202345">
-            <Button size="lg" className="font-semibold">
+          <Button asChild size="lg" className="font-semibold">
+            <TrackedPhoneLink
+              phone="0800 320 2345"
+              trackingLocation="catch_all_page"
+              trackingSource="emergency_contact"
+              className="flex items-center justify-center"
+              ariaLabel="Call us now for immediate help: 0800 320 2345"
+            >
               0800 320 2345
-            </Button>
-          </Link>
+            </TrackedPhoneLink>
+          </Button>
         </div>
       </div>
     </div>

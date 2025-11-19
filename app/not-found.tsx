@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Metadata } from "next"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
   title: "Page Not Found (404) - Birmingham Boiler Repairs",
@@ -48,9 +49,15 @@ export default function NotFound() {
         
         <p className="mt-6 text-sm text-gray-500 dark:text-gray-400">
           Need immediate help? Call us on{" "}
-          <a href="tel:08003202345" className="text-primary font-semibold hover:underline">
+          <TrackedPhoneLink 
+            phone="0800 320 2345"
+            trackingLocation="404_page"
+            trackingSource="emergency_contact"
+            className="text-primary font-semibold hover:underline"
+            ariaLabel="Call us for emergency help: 0800 320 2345"
+          >
             0800 320 2345
-          </a>
+          </TrackedPhoneLink>
         </p>
       </div>
     </div>

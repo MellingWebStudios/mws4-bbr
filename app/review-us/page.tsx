@@ -4,6 +4,7 @@ import { Star, ExternalLink, Heart, ThumbsUp } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import businessInfo from "@/config/businessInfo"
+import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata = {
   title: "Leave Us a Review - Birmingham Boiler Repairs",
@@ -161,9 +162,15 @@ export default function ReviewUsPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild variant="outline">
-                <Link href={`tel:${businessInfo.phone.freephone}`}>
+                <TrackedPhoneLink
+                  phone={businessInfo.phone.freephone}
+                  trackingLocation="review_us_page"
+                  trackingSource="need_help_section"
+                  className="flex items-center justify-center"
+                  ariaLabel={`Call ${businessInfo.phone.freephone}`}
+                >
                   Call {businessInfo.phone.freephone}
-                </Link>
+                </TrackedPhoneLink>
               </Button>
               <Button asChild variant="outline">
                 <Link href={`mailto:${businessInfo.email}`}>
