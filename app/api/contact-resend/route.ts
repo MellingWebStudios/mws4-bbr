@@ -53,86 +53,117 @@ function isRateLimited(ip: string): boolean {
 }
 
 function detectRandomString(text: string): boolean {
-  // Check for patterns that indicate random character strings
-  if (text.length < 3) return false;
+  // Much more lenient random string detection - only catch obvious spam
+  if (text.length < 5) return false;
   
-  // Count vowels - random strings typically have very few vowels
+  // Only flag strings that are extremely random (very low vowel ratio AND long)
   const vowels = (text.match(/[aeiouAEIOU]/g) || []).length;
   const vowelRatio = vowels / text.length;
   
-  // Random strings typically have low vowel ratio (< 0.2)
-  if (vowelRatio < 0.2 && text.length > 8) return true;
+  // Only flag if extremely low vowel ratio AND very long
+  if (vowelRatio < 0.1 && text.length > 15) return true;
   
-  // Check for excessive consonant clusters
-  const consonantClusters = (text.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{4,}/g) || []).length;
+  // Only check for very excessive consonant clusters (6+ in a row)
+  const consonantClusters = (text.match(/[bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ]{6,}/g) || []).length;
   if (consonantClusters > 0) return true;
   
-  // Check for mixed case patterns that suggest random generation
-  const hasRandomCase = /[a-z][A-Z][a-z][A-Z]/.test(text) || /[A-Z][a-z][A-Z][a-z]/.test(text);
-  if (hasRandomCase && text.length > 10) return true;
+  // Remove the mixed case check - many legitimate names have mixed case
   
   return false;
 }
 
 function containsSpamKeywords(text: string): boolean {
   const spamKeywords = [
+    // Keep the obvious spam terms
     'crypto', 'bitcoin', 'investment', 'roi', 'profit', 'earn money',
     'work from home', 'mlm', 'pyramid', 'get rich', 'viagra', 'cialis',
-    'casino', 'gambling', 'loan', 'mortgage', 'insurance', 'seo services',
-    'click here', 'limited time', 'act now', 'free money', 'no obligation'
+    'casino', 'gambling', 'seo services', 'backlinks', 'ranking',
+    'click here', 'limited time', 'act now', 'free money', 'no obligation',
+    // Add more obvious spam indicators
+    'make money online', 'business opportunity', 'financial freedom',
+    'passive income', 'get paid', 'work online', 'affiliate marketing',
+    'dropshipping', 'forex', 'trading signals', 'binary options'
   ];
   
   const lowerText = text.toLowerCase();
-  return spamKeywords.some(keyword => lowerText.includes(keyword));
+  
+  // More sophisticated checking - need multiple spam indicators or very obvious ones
+  const spamMatches = spamKeywords.filter(keyword => lowerText.includes(keyword));
+  
+  // If multiple spam keywords found, definitely spam
+  if (spamMatches.length >= 2) return true;
+  
+  // Single match of very obvious spam terms
+  const definiteSpam = ['viagra', 'cialis', 'casino', 'gambling', 'crypto', 'bitcoin', 'seo services', 'backlinks'];
+  return definiteSpam.some(keyword => lowerText.includes(keyword));
 }
 
 function validateMessageQuality(message: string): boolean {
-  // Must contain at least one common English word
+  // Much more lenient message validation - expanded word list and more flexible
   const commonWords = [
     'boiler', 'heating', 'hot', 'water', 'repair', 'service', 'help', 'problem',
     'issue', 'broken', 'not', 'working', 'need', 'please', 'hello', 'hi',
-    'the', 'and', 'is', 'are', 'have', 'can', 'could', 'would', 'my', 'our'
+    'the', 'and', 'is', 'are', 'have', 'can', 'could', 'would', 'my', 'our',
+    // More inclusive words
+    'quote', 'price', 'cost', 'urgent', 'emergency', 'cold', 'warm', 'temperature',
+    'radiator', 'thermostat', 'pressure', 'leak', 'noise', 'gas', 'central',
+    'install', 'replace', 'fix', 'check', 'call', 'visit', 'appointment',
+    'booking', 'book', 'schedule', 'today', 'tomorrow', 'week', 'time',
+    // Basic words that people might use
+    'i', 'me', 'we', 'you', 'it', 'this', 'that', 'what', 'when', 'where', 'how'
   ];
   
   const lowerMessage = message.toLowerCase();
   const hasCommonWord = commonWords.some(word => lowerMessage.includes(word));
   
-  if (!hasCommonWord) return false;
+  // If no common words found, still allow if message has reasonable structure
+  if (!hasCommonWord) {
+    // Allow if it has basic sentence structure (spaces and multiple words)
+    const hasSpaces = message.includes(' ');
+    const wordCount = message.split(/\s+/).length;
+    // More lenient - just need 2+ words with spaces
+    return hasSpaces && wordCount >= 2;
+  }
   
-  // Check for reasonable sentence structure
-  const hasPunctuation = /[.!?]/.test(message);
+  // If common words found, just need basic structure
   const hasSpaces = message.includes(' ');
   const wordCount = message.split(/\s+/).length;
   
-  // Should have spaces and reasonable word count for a support message
-  return hasSpaces && wordCount >= 3;
+  // Just need spaces and at least 2 words (reduced from 3)
+  return hasSpaces && wordCount >= 2;
 }
 
 function isValidPhoneNumber(phone: string): boolean {
   // Remove all non-digits
   const digits = phone.replace(/\D/g, '');
   
-  // Check for UK phone number patterns
+  // Much more lenient - just check for reasonable length
+  // Allow any phone number between 7 and 15 digits
+  if (digits.length >= 7 && digits.length <= 15) {
+    return true;
+  }
+  
+  // Original patterns for reference, but now more lenient
   const ukPatterns = [
-    /^(07\d{9})$/, // Mobile
-    /^(01\d{8,9})$/, // Landline
-    /^(02\d{8})$/, // London/Cities
-    /^(03\d{8})$/, // Non-geographic
-    /^(08\d{8})$/, // Freephone/Premium
-    /^(09\d{8})$/ // Premium rate
+    /^(07\d{8,9})$/, // Mobile (allow 8 or 9 digits after 07)
+    /^(01\d{7,9})$/, // Landline (more flexible)
+    /^(02\d{7,9})$/, // London/Cities (more flexible)
+    /^(03\d{7,9})$/, // Non-geographic (more flexible)
+    /^(08\d{7,9})$/, // Freephone/Premium (more flexible)
+    /^(09\d{7,9})$/ // Premium rate (more flexible)
   ];
   
   // Also allow international format starting with country codes
   const internationalPatterns = [
-    /^(44\d{10})$/, // UK international
-    /^(1\d{10})$/, // US/Canada
-    /^(49\d{10,11})$/, // Germany
-    /^(33\d{9})$/, // France
+    /^(44\d{9,11})$/, // UK international (more flexible)
+    /^(1\d{9,11})$/, // US/Canada (more flexible)
+    /^(49\d{9,12})$/, // Germany (more flexible)
+    /^(33\d{8,10})$/, // France (more flexible)
   ];
   
   return ukPatterns.some(pattern => pattern.test(digits)) || 
          internationalPatterns.some(pattern => pattern.test(digits)) ||
-         (digits.length >= 10 && digits.length <= 15); // General international
+         (digits.length >= 7 && digits.length <= 15); // Very lenient fallback
 }
 
 // Enhanced form schema with spam protection
@@ -157,13 +188,13 @@ const formSchema = z.object({
       message: "Please enter a valid UK phone number" 
     }),
   message: z.string()
-    .min(10, { message: "Message must be at least 10 characters" })
+    .min(5, { message: "Please write a brief message" }) // Reduced from 10 to 5
     .max(2000, { message: "Message is too long" })
     .refine((val) => !detectRandomString(val), { 
       message: "Please write a meaningful message" 
     })
     .refine((val) => validateMessageQuality(val), { 
-      message: "Please provide more details about your heating issue" 
+      message: "Please tell us how we can help you" // Less specific error message
     })
     .refine((val) => !containsSpamKeywords(val), { 
       message: "Message contains inappropriate content" 
@@ -256,18 +287,19 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Time-based validation (form should take at least 10 seconds to fill)
+    // Time-based validation - only block extremely fast submissions (likely bots)
     if (data.formStartTime && data.submitTime) {
       const fillTime = data.submitTime - data.formStartTime;
-      if (fillTime < 10000) { // Less than 10 seconds
-        console.log(`Form submitted too quickly (${fillTime}ms) from IP: ${clientIP}`);
+      if (fillTime < 2000) { // Less than 2 seconds - only catch obvious bots
+        console.log(`Form submitted too quickly (${fillTime}ms) from IP: ${clientIP} - likely bot`);
+        // For very fast submissions, silently fail (pretend success to fool bots)
         return NextResponse.json(
           { 
-            success: false, 
-            errors: { _form: ["Please take more time to fill out the form properly."] }
+            success: true, 
+            message: "Thank you for your message. We'll get back to you shortly." 
           },
           { 
-            status: 400,
+            status: 200,
             headers: {
               'Access-Control-Allow-Origin': '*',
               'Access-Control-Allow-Methods': 'POST, OPTIONS',
@@ -278,19 +310,24 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // Additional spam checks
+    // Additional spam checks - more balanced approach
     const combinedText = `${data.name} ${data.message} ${data.boilerModel || ''}`;
     
     // Check for suspicious patterns
-    if (detectRandomString(combinedText) || containsSpamKeywords(combinedText)) {
-      console.log(`Spam detected from IP: ${clientIP}, content: ${combinedText.substring(0, 100)}`);
+    const isRandomString = detectRandomString(combinedText);
+    const hasSpamKeywords = containsSpamKeywords(combinedText);
+    
+    // Only block if BOTH conditions are met, or very obvious spam
+    if ((isRandomString && hasSpamKeywords) || (hasSpamKeywords && combinedText.length > 200)) {
+      console.log(`Obvious spam detected from IP: ${clientIP}, content: ${combinedText.substring(0, 100)}`);
+      // For spam, silently succeed (don't give feedback to spammers)
       return NextResponse.json(
         { 
-          success: false, 
-          errors: { _form: ["Your submission appears to be spam. Please provide genuine information."] }
+          success: true, 
+          message: "Thank you for your message. We'll get back to you shortly." 
         },
         { 
-          status: 400,
+          status: 200,
           headers: {
             'Access-Control-Allow-Origin': '*',
             'Access-Control-Allow-Methods': 'POST, OPTIONS',
