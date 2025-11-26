@@ -226,7 +226,7 @@ export default function Home() {
                 />
                 <PricingCard
                   title="Hourly Rate"
-                  price="£75"
+                  price="£80"
                   features={[
                     "First hour",
                     "£35 per ½ hr after",
@@ -254,7 +254,7 @@ export default function Home() {
                 />
                 <PricingCard
                   title="Full Service"
-                  price="£120"
+                  price="£110 + seal kit"
                   features={[
                     "Deep clean heat cell",
                     "Recharge expansion vessel",
@@ -267,7 +267,7 @@ export default function Home() {
                 />
                 <PricingCard
                   title="Service & Repair"
-                  price="£99"
+                  price="£110"
                   features={[
                     "Service + repair (≤1 hr)",
                     "Saves £30",
@@ -283,7 +283,7 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
                 <PricingCard
                   title="1 Appliance"
-                  price="£45"
+                  price="£50"
                   features={[
                     "Digital certificate",
                     "Reminder service",
@@ -295,7 +295,7 @@ export default function Home() {
                 />
                 <PricingCard
                   title="2 Appliances"
-                  price="£50"
+                  price="£55"
                   features={[
                     "Digital certificate",
                     "Reminder service",

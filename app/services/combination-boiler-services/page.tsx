@@ -44,11 +44,11 @@ export default function CombinationBoilerServicesPage() {
     description:
       "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
     image: "/images/combi_service_page.png",
-    features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+    features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
     longDescription: `
   <p>Regular servicing is essential for keeping your combination boiler running safely and efficiently. Our professional combination boiler service includes comprehensive checks of both the heating and hot water functions, ensuring your combi boiler operates at peak performance.</p>
   
-  <p>We offer two service levels: our standard service (£60) covers essential safety checks, gas pressure testing, and basic maintenance, while our full service (£120) includes additional deep cleaning of the heat exchanger, detailed efficiency testing, and hot water flow rate analysis.</p>
+  <p>We offer two service levels: our standard service (£60) covers essential safety checks, gas pressure testing, and basic maintenance, while our full service (£110 + cost of seal kit) includes additional deep cleaning of the heat exchanger, detailed efficiency testing, and hot water flow rate analysis.</p>
   
   <p>All our combination boiler services are carried out by Gas Safe registered engineers who understand the specific requirements of combi boiler systems. Regular servicing not only ensures safety but can also help identify potential issues before they become costly repairs, ultimately saving you money and ensuring reliable heating and hot water all year round.</p>
 `,
@@ -60,7 +60,7 @@ export default function CombinationBoilerServicesPage() {
       },
       {
         title: "Full Combi Service",
-        price: "£120",
+        price: "£110 + cost of seal kit",
         description: "Comprehensive service including deep cleaning and efficiency testing.",
       },
       {

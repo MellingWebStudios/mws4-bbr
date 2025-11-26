@@ -60,12 +60,12 @@ export default function PottertonSpecialistsPage() {
       },
       {
         title: "Potterton Boiler Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Potterton boilers.",
       },
       {
         title: "Potterton Boiler Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Potterton boilers.",
       },
     ],

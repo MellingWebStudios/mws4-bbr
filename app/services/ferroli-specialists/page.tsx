@@ -57,7 +57,7 @@ export default function FerroliSpecialistsPage() {
       },
       {
         title: "Ferroli Repair",
-        price: "£75",
+        price: "£80",
         description: "Expert diagnosis and repair of Ferroli-specific issues. No call-out fee.",
       },
       {

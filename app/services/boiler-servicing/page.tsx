@@ -12,16 +12,16 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import Head from "next/head"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Servicing | Annual Service from £75 | Gas Safe",
+  title: "Birmingham Boiler Servicing | Annual Service from £60 | Gas Safe",
   description:
-    "Birmingham boiler servicing from £75. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
+    "Birmingham boiler servicing from £60. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
   keywords: "boiler service Birmingham, annual boiler service, boiler maintenance, Gas Safe boiler service",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
   },
   openGraph: {
-    title: "Birmingham Boiler Servicing | Annual Service from £75 | Gas Safe",
-    description: "Birmingham boiler servicing from £75. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
+    title: "Birmingham Boiler Servicing | Annual Service from £60 | Gas Safe",
+    description: "Birmingham boiler servicing from £60. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
@@ -42,7 +42,7 @@ export default function BoilerServicingPage() {
     id: "servicing",
     title: "Boiler Servicing",
     description:
-      "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
+      "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£110 + seal kit) servicing options.",
     image: "/images/service_page_image.png",
     features: [
       "30-minute standard service",
@@ -65,12 +65,12 @@ export default function BoilerServicingPage() {
       },
       {
         title: "Full Service",
-        price: "£120",
+        price: "£110 + cost of seal kit",
         description: "Deep clean heat cell, recharge expansion vessel, replace gaskets. Recommended every 5 years.",
       },
       {
         title: "Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Service + repair (≤1 hr). Saves £30. Parts extra if needed. No VAT charged.",
       },
     ],

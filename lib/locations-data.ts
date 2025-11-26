@@ -2034,13 +2034,13 @@ export const services = [
       },
       {
         title: "Full Service",
-        price: "£110",
+        price: "£110 + cost of seal kit",
         description: "Deep clean of heat exchanger and components",
       },
       {
         title: "Service & Repair",
-        price: "£75 first hr / £35 per ½ hr",
-        description: "Combined service and minor repair (saves £30)",
+        price: "£110",
+        description: "Combined service and repair (saves £30)",
       },
     ],
   },
@@ -2053,12 +2053,12 @@ export const services = [
     pricing: [
       {
         title: "1 Appliance",
-        price: "£45",
+        price: "£50",
         description: "Safety check for a single gas appliance",
       },
       {
         title: "2 Appliances",
-        price: "£50",
+        price: "£55",
         description: "Safety check for two gas appliances",
       },
       {
@@ -2068,7 +2068,7 @@ export const services = [
       },
       {
         title: "Add boiler service",
-        price: "£45",
+        price: "£50",
         description: "When combined with gas safety inspection (Save £10)",
       },
     ],
@@ -2087,7 +2087,7 @@ export const services = [
       },
       {
         title: "Standard Combi Repair",
-        price: "£75",
+        price: "£80",
         description: "Professional repair for most combination boiler issues.",
       },
       {
@@ -2102,7 +2102,7 @@ export const services = [
     name: "Combination Boiler Services",
     description:
       "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
-    features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+    features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
     pricing: [
       {
         title: "Standard Combi Service",
@@ -2111,7 +2111,7 @@ export const services = [
       },
       {
         title: "Full Combi Service",
-        price: "£120",
+        price: "£110 + cost of seal kit",
         description: "Comprehensive service including deep cleaning and efficiency testing.",
       },
       {
@@ -2130,7 +2130,7 @@ export const services = [
     pricing: [
       {
         title: "Ferroli Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Ferroli boilers",
       },
       {
@@ -2145,7 +2145,7 @@ export const services = [
       },
       {
         title: "Ferroli Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Ferroli boilers",
       },
       {
@@ -2164,7 +2164,7 @@ export const services = [
     pricing: [
       {
         title: "Worcester Bosch Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Worcester Bosch boilers",
       },
       {
@@ -2179,7 +2179,7 @@ export const services = [
       },
       {
         title: "Worcester Bosch Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Worcester Bosch boilers",
       },
       {
@@ -2198,7 +2198,7 @@ export const services = [
     pricing: [
       {
         title: "Vaillant Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Vaillant boilers",
       },
       {
@@ -2213,7 +2213,7 @@ export const services = [
       },
       {
         title: "Vaillant Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Vaillant boilers",
       },
       {
@@ -2232,7 +2232,7 @@ export const services = [
     pricing: [
       {
         title: "Ideal Boiler Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Ideal boilers",
       },
       {
@@ -2247,7 +2247,7 @@ export const services = [
       },
       {
         title: "Ideal Boiler Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Ideal boilers",
       },
       {
@@ -2266,7 +2266,7 @@ export const services = [
     pricing: [
       {
         title: "Baxi Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Baxi boilers",
       },
       {
@@ -2281,7 +2281,7 @@ export const services = [
       },
       {
         title: "Baxi Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Baxi boilers",
       },
       {
@@ -2300,7 +2300,7 @@ export const services = [
     pricing: [
       {
         title: "Alpha Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Alpha boilers",
       },
       {
@@ -2315,7 +2315,7 @@ export const services = [
       },
       {
         title: "Alpha Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Alpha boilers",
       },
       {
@@ -2334,7 +2334,7 @@ export const services = [
     pricing: [
       {
         title: "Main Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Main boilers",
       },
       {
@@ -2349,7 +2349,7 @@ export const services = [
       },
       {
         title: "Main Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Main boilers",
       },
       {
@@ -2368,7 +2368,7 @@ export const services = [
     pricing: [
       {
         title: "Vokera Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Vokera boilers",
       },
       {
@@ -2383,7 +2383,7 @@ export const services = [
       },
       {
         title: "Vokera Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Vokera boilers",
       },
       {
@@ -2402,7 +2402,7 @@ export const services = [
     pricing: [
       {
         title: "Viessmann Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Viessmann boilers",
       },
       {
@@ -2417,7 +2417,7 @@ export const services = [
       },
       {
         title: "Viessmann Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Viessmann boilers",
       },
       {
@@ -2436,7 +2436,7 @@ export const services = [
     pricing: [
       {
         title: "Intergas Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Intergas boilers",
       },
       {
@@ -2451,7 +2451,7 @@ export const services = [
       },
       {
         title: "Intergas Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Intergas boilers",
       },
       {
@@ -2470,7 +2470,7 @@ export const services = [
     pricing: [
       {
         title: "Glow-worm Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Glow-worm boilers",
       },
       {
@@ -2485,7 +2485,7 @@ export const services = [
       },
       {
         title: "Glow-worm Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Glow-worm boilers",
       },
       {
@@ -2504,7 +2504,7 @@ export const services = [
     pricing: [
       {
         title: "Atag Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Atag boilers",
       },
       {
@@ -2519,7 +2519,7 @@ export const services = [
       },
       {
         title: "Atag Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Atag boilers",
       },
       {
@@ -2538,7 +2538,7 @@ export const services = [
     pricing: [
       {
         title: "Biasi Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Biasi boilers",
       },
       {
@@ -2553,7 +2553,7 @@ export const services = [
       },
       {
         title: "Biasi Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Biasi boilers",
       },
       {
@@ -2572,7 +2572,7 @@ export const services = [
     pricing: [
       {
         title: "Potterton Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Potterton boilers",
       },
       {
@@ -2587,7 +2587,7 @@ export const services = [
       },
       {
         title: "Potterton Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Potterton boilers",
       },
       {
@@ -2606,7 +2606,7 @@ export const services = [
     pricing: [
       {
         title: "Ariston Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Ariston boilers",
       },
       {
@@ -2621,7 +2621,7 @@ export const services = [
       },
       {
         title: "Ariston Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Ariston boilers",
       },
       {
@@ -2640,7 +2640,7 @@ export const services = [
     pricing: [
       {
         title: "Heatline Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Heatline boilers",
       },
       {
@@ -2655,7 +2655,7 @@ export const services = [
       },
       {
         title: "Heatline Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Heatline boilers",
       },
       {

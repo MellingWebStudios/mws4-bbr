@@ -60,12 +60,12 @@ export default function IntergasSpecialistsPage() {
       },
       {
         title: "Intergas Boiler Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Intergas boilers.",
       },
       {
         title: "Intergas Boiler Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Intergas boilers.",
       },
     ],

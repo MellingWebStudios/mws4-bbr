@@ -60,7 +60,7 @@ export default function CombinationBoilerRepairsPage() {
       },
       {
         title: "Standard Combi Repair",
-        price: "£75",
+        price: "£80",
         description: "Professional repair for most combination boiler issues.",
       },
       {

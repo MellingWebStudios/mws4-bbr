@@ -51,7 +51,7 @@ export default function ServicesPage() {
       id: "servicing",
       title: "Boiler Servicing",
       description:
-        "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
+        "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£110 + seal kit) servicing options.",
       image: "/images/service_boiler_servicing_services_page.png",
       features: [
         "30-minute standard service",
@@ -67,7 +67,7 @@ export default function ServicesPage() {
       description:
         "Certified checks to keep your home compliant and safe. Digital certificates provided with a reminder service.",
       image: "/images/services_gas_safety.png",
-      features: ["£45 for 1 appliance", "£50 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
+      features: ["£50 for 1 appliance", "£55 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
       link: "/services/gas-safety",
     },
     {
@@ -85,7 +85,7 @@ export default function ServicesPage() {
       description:
         "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
       image: "/images/combi_service_page.png",
-      features: ["Standard service £60", "Full service £120", "Efficiency checks", "Hot water flow testing"],
+      features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
       link: "/services/combination-boiler-services",
     },
     {

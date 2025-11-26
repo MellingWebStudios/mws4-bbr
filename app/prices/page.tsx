@@ -43,12 +43,12 @@ export default function PricesPage() {
         },
         {
           service: "Full Boiler Service",
-          price: "£120",
+          price: "£110 + cost of seal kit",
           description: "Deep clean heat cell, recharge expansion vessel, replace gaskets (recommended every 5 yrs)",
         },
         {
           service: "Service & Repair (≤1 hr)",
-          price: "£99",
+          price: "£110",
           description: "Saves £30 if repair done during service; parts extra",
         },
       ],
@@ -60,7 +60,7 @@ export default function PricesPage() {
         { service: "Weekend Repair", price: "£110", description: "Same benefits as above" },
         {
           service: "Boiler Repair (hourly)",
-          price: "£75 first hr / £35 per ½ hr",
+          price: "£80 first hr / £35 per ½ hr",
           description: "Capped if job runs over an 2½ hour",
         },
       ],
@@ -68,12 +68,12 @@ export default function PricesPage() {
     {
       title: "Gas Safety Inspections",
       items: [
-        { service: "1 Appliance", price: "£45", description: "Paperless certificate" },
-        { service: "2 Appliances", price: "£50", description: "Paperless certificate" },
+        { service: "1 Appliance", price: "£50", description: "Paperless certificate" },
+        { service: "2 Appliances", price: "£55", description: "Paperless certificate" },
         { service: "3 Appliances", price: "£60", description: "Paperless certificate" },
         {
           service: "Add boiler service",
-          price: "£45",
+          price: "£50",
           description: "When combined with gas safety inspection (Save £10)",
         },
       ],
@@ -81,10 +81,10 @@ export default function PricesPage() {
     {
       title: "Ferroli Specialists",
       items: [
-        { service: "Ferroli Repair", price: "£75", description: "Specialist diagnosis and repair for Ferroli boilers"},
+        { service: "Ferroli Repair", price: "£80", description: "Specialist diagnosis and repair for Ferroli boilers"},
         { service: "Ferroli Repair (same day)", price: "£95", description: "Same-day service for Ferroli boiler repairs" },
         { service: "Ferroli Service", price: "£60", description: "Specialized service for Ferroli boiler systems" },
-        { service: "Full Ferroli Service", price: "£120", description: "Comprehensive service for Ferroli boiler systems" },
+        { service: "Full Ferroli Service", price: "£110 + seal kit", description: "Comprehensive service for Ferroli boiler systems" },
       ],
     },
   ]

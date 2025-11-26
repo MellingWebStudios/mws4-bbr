@@ -60,12 +60,12 @@ export default function BiasiSpecialistsPage() {
       },
       {
         title: "Biasi Boiler Repair",
-        price: "£75",
+        price: "£80",
         description: "Specialist diagnosis and repair for Biasi boilers.",
       },
       {
         title: "Biasi Boiler Service & Repair",
-        price: "£99",
+        price: "£110",
         description: "Combined service and repair for Biasi boilers.",
       },
     ],

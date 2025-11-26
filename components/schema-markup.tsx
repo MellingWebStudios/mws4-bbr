@@ -100,9 +100,9 @@ export default function SchemaMarkup() {
                           "@type": "Service",
                           name: "Full Boiler Service",
                         },
-                        price: "120",
+                        price: "110",
                         priceCurrency: "GBP",
-                        description: "Deep clean heat cell, recharge expansion vessel, replace gaskets",
+                        description: "Deep clean heat cell, recharge expansion vessel, replace gaskets, plus cost of seal kit",
                       },
                     ],
                   },
@@ -150,7 +150,7 @@ export default function SchemaMarkup() {
                 "@id": `${businessInfo.website}/#business`,
               },
               description:
-                "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£120) servicing options.",
+                "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£110 + seal kit) servicing options.",
               areaServed: {
                 "@type": "City",
                 name: "Birmingham",

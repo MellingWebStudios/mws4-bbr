@@ -42,24 +42,24 @@ export default function GasSafetyPage() {
     description:
       "Certified checks to keep your home compliant and safe. Digital certificates provided with a reminder service.",
     image: "/images/services_gas_safety_page.png",
-    features: ["£45 for 1 appliance", "£50 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
+    features: ["£50 for 1 appliance", "£55 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
     longDescription: `
       <p>Gas Safety Inspections (also known as CP12 or Landlord Gas Safety Certificates) are a legal requirement for landlords and provide peace of mind for homeowners. Our Gas Safe registered engineers conduct thorough inspections of all gas appliances to ensure they're operating safely and efficiently.</p>
       
       <p>We check for gas leaks, ensure proper ventilation, test gas pressures, and verify that all safety devices are functioning correctly. After the inspection, we provide a digital certificate that can be easily shared with tenants, letting agents, or local authorities.</p>
       
       <p>For landlords, we offer a reminder service to ensure you never miss your annual inspection, helping you stay compliant with regulations. Homeowners can also benefit from regular gas safety checks to ensure the safety of their family and property.</p>
-      <p>For maximum convenience and value, add a boiler service to your gas safety inspection for just £45 - saving you £10 off the regular price. This combined service ensures both your boiler's efficiency and the safety of all your gas appliances in a single visit.</p>
+      <p>For maximum convenience and value, add a boiler service to your gas safety inspection for just £50 - saving you £10 off the regular price. This combined service ensures both your boiler's efficiency and the safety of all your gas appliances in a single visit.</p>
     `,
     pricing: [
       {
         title: "1 Appliance",
-        price: "£45",
+        price: "£50",
         description: "Digital certificate, reminder service, no VAT charged, landlord certificates.",
       },
       {
         title: "2 Appliances",
-        price: "£50",
+        price: "£55",
         description: "Digital certificate, reminder service, no VAT charged, landlord certificates.",
       },
       {
@@ -69,8 +69,8 @@ export default function GasSafetyPage() {
       },
       {
         title: "Add Boiler Service",
-        price: "£45",
-        description: "Save £15 when you combine with any gas safety inspection. Regular price £60.",
+        price: "£50",
+        description: "Save £10 when you combine with any gas safety inspection. Regular price £60.",
       },
     ],
     faqs: [
@@ -196,7 +196,7 @@ export default function GasSafetyPage() {
                 <div className="mt-8">
                   <PromoCallout
                     title="SPECIAL OFFER: Combined Gas Safety & Boiler Service"
-                    description="Book a gas safety inspection and add a boiler service for just £45 extra - saving £10 off the regular price. Get both essential services completed in a single visit by our Gas Safe engineers."
+                    description="Book a gas safety inspection and add a boiler service for just £50 extra - saving £10 off the regular price. Get both essential services completed in a single visit by our Gas Safe engineers."
                     ctaText="Book Combined Service"
                     ctaLink="tel:08003202345"
                     variant="highlight"
