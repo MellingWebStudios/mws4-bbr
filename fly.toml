@@ -4,6 +4,13 @@ app = "bbr-production"
   PORT = "3000"
   NODE_ENV = "production"
 
+# Security hardening
+[experimental]
+  auto_rollback = true
+
+[deploy]
+  strategy = "immediate"
+
 [[services]]
   internal_port = 3000
   protocol = "tcp"
@@ -11,7 +18,21 @@ app = "bbr-production"
   [[services.ports]]
     handlers = ["http"]
     port = 80
+    force_https = true
 
   [[services.ports]]
     handlers = ["tls", "http"]
     port = 443
+
+  [services.concurrency]
+    type = "connections"
+    hard_limit = 25
+    soft_limit = 20
+
+  [[services.tcp_checks]]
+    interval = "15s"
+    timeout = "2s"
+    grace_period = "5s"
+    restart_limit = 0
+
+

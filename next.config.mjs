@@ -5,9 +5,6 @@ import remarkHtml from 'remark-html';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -22,6 +19,32 @@ const nextConfig = {
   },
   experimental: {
     serverActions: {},
+  },
+  // Security headers
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'X-Frame-Options',
+            value: 'DENY',
+          },
+          {
+            key: 'X-Content-Type-Options',
+            value: 'nosniff',
+          },
+          {
+            key: 'Referrer-Policy',
+            value: 'strict-origin-when-cross-origin',
+          },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=()',
+          },
+        ],
+      },
+    ];
   },
   async rewrites() {
     return [
@@ -82,9 +105,11 @@ const withBundleAnalyzer = createBundleAnalyzer({
 });
 
 const withMDX = createMDX({
+  extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkHtml],
+    remarkPlugins: [],
     rehypePlugins: [],
+    // Ensure serializable options for Next.js 16
   },
 });
 

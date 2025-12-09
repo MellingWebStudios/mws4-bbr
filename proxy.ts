@@ -100,7 +100,7 @@ function getBaseUrl(host: string): string {
   return "https://www.birminghamboilerrepairs.uk";
 }
 
-export function middleware(req: NextRequest) {
+export default function proxy(req: NextRequest) {
   const host = req.headers.get("host") || "";
   const proto = req.headers.get("x-forwarded-proto") || "http";
   const pathname = req.nextUrl.pathname;

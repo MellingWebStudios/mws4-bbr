@@ -1,5 +1,8 @@
-# Dockerfile
-FROM node:20-alpine
+# Secure Multi-stage Dockerfile
+FROM node:22-alpine AS builder
+
+# Install security updates
+RUN apk update && apk upgrade && apk add --no-cache dumb-init
 
 # Set working directory
 WORKDIR /app
@@ -11,19 +14,48 @@ RUN corepack enable && corepack prepare pnpm@latest --activate
 COPY package.json pnpm-lock.yaml ./
 RUN pnpm install --frozen-lockfile
 
-# Copy rest of app
+# Copy source code
 COPY . .
 
-# Force environment
-ENV PORT=3000
-ENV HOST=0.0.0.0
-ENV NODE_ENV=production
-
-# Build Next.js app
+# Build the application
 RUN pnpm build
 
-# Expose Next.js port
+# Production stage - clean minimal image
+FROM node:22-alpine AS runner
+
+# Install security updates and dumb-init
+RUN apk update && apk upgrade && apk add --no-cache dumb-init
+
+# Create non-root user
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
+
+# Set working directory
+WORKDIR /app
+
+# Copy package.json for runtime dependencies  
+COPY --from=builder --chown=nextjs:nodejs /app/package.json ./
+COPY --from=builder --chown=nextjs:nodejs /app/pnpm-lock.yaml ./
+
+# Install only production dependencies
+RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN pnpm install --frozen-lockfile --prod
+
+# Copy built application from builder stage
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+
+# Switch to non-root user
+USER nextjs
+
+# Security environment
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+ENV NODE_ENV=production
+
+# Expose port
 EXPOSE 3000
 
-# Start Next.js app in production mode
+# Use dumb-init to handle signals properly
+ENTRYPOINT ["dumb-init", "--"]
 CMD ["pnpm", "start"]
