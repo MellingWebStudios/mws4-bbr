@@ -109,6 +109,11 @@ export default function proxy(req: NextRequest) {
   if (host.includes("localhost") || host.includes("127.0.0.1")) {
     return NextResponse.next();
   }
+  
+  // Skip Fly.dev internal domains to prevent loops
+  if (host.includes("fly.dev")) {
+    return NextResponse.next();
+  }
 
   // SAFETY: Skip all static assets and API routes
   if (
@@ -122,12 +127,15 @@ export default function proxy(req: NextRequest) {
     return NextResponse.next();
   }
 
-  // SAFETY: Prevent infinite redirects by checking for loop indicators
+  // SAFETY: Enhanced redirect loop prevention
   const referer = req.headers.get('referer');
-  if (referer && new URL(referer).pathname === pathname) {
-    console.warn(`Potential redirect loop detected for ${pathname}, allowing through`);
+  const userAgent = req.headers.get('user-agent') || '';
+  
+  // Simple safety check: Don't redirect if this looks like an internal Next.js request
+  if (req.headers.get('next-router-prefetch') || req.headers.get('purpose') === 'prefetch') {
     return NextResponse.next();
   }
+
 
   // Early check for duplicate segments (e.g., /selly-park/selly-park/)
   if (hasDuplicateSegments(pathname)) {
@@ -530,10 +538,15 @@ export default function proxy(req: NextRequest) {
   }
 
   // Comprehensive canonical URL enforcement for production
-  if (process.env.NODE_ENV === "production" &&
+  // Only do domain canonicalization for the actual domain, not Fly.dev
+  const shouldDoCanonicalRedirect = process.env.NODE_ENV === "production" &&
     !host.includes("localhost") &&
     !host.includes("127.0.0.1") &&
-    !host.includes("fly.dev")) { // Don't redirect staging domains
+    !host.includes("fly.dev") &&
+    !host.includes("vercel.app") &&
+    host.includes("birminghamboilerrepairs.uk");
+    
+  if (shouldDoCanonicalRedirect) {
     
     let needsRedirect = false;
     let canonicalHost = "www.birminghamboilerrepairs.uk";
@@ -611,7 +624,9 @@ export default function proxy(req: NextRequest) {
     // Perform redirect if any canonicalization is needed
     if (needsRedirect) {
       const redirectUrl = `${canonicalProtocol}://${canonicalHost}${canonicalPath}${req.nextUrl.search}`;
-      return NextResponse.redirect(redirectUrl, 301);
+      const response = NextResponse.redirect(redirectUrl, 301);
+      response.headers.set('x-middleware-redirect-reason', 'canonicalization');
+      return response;
     }
   }
 
@@ -644,7 +659,10 @@ export default function proxy(req: NextRequest) {
     return NextResponse.next();
   }
 
-  return NextResponse.next();
+  // Add header to indicate this request has been processed by proxy
+  const response = NextResponse.next();
+  response.headers.set('x-proxy-processed', 'true');
+  return response;
 }
 
 export const config = {
