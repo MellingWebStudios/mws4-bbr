@@ -85,13 +85,21 @@ const locationRedirects: Record<string, string> = {
 };
 
 // Get the base URL for redirects, supporting multiple environments
+// IMPORTANT: For production, always use the canonical domain for redirects
+// to avoid issues with internal Fly.io hostnames
 function getBaseUrl(host: string): string {
   // In development, use localhost
   if (host.includes("localhost") || host.includes("127.0.0.1")) {
     return `http://${host}`;
   }
 
-  // Check if we have a WEBSITE_URL environment variable
+  // For production, ALWAYS use the canonical domain
+  // This ensures redirects go to the correct URL regardless of internal routing
+  if (process.env.NODE_ENV === "production") {
+    return process.env.WEBSITE_URL || "https://www.birminghamboilerrepairs.uk";
+  }
+
+  // Check if we have a WEBSITE_URL environment variable (for staging, etc)
   if (process.env.WEBSITE_URL) {
     return process.env.WEBSITE_URL;
   }
