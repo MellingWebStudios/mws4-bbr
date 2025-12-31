@@ -197,7 +197,7 @@ const ChatbotButton = () => {
               )}
             >
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled%20design%20%283%29-tLUry2Q4qKqaOuw4StXm7oPwd6Bkbb.png"
+                src="/images/ai_icon.png"
                 alt="AI Robot Assistant"
                 width={64}
                 height={64}
