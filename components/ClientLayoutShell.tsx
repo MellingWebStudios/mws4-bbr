@@ -5,6 +5,7 @@ import { useState, useEffect } from "react"
 const TopBar = dynamic(() => import("@/components/top-bar"), { ssr: true })
 const Navbar = dynamic(() => import("@/components/navbar"), { ssr: true })
 const Footer = dynamic(() => import("@/components/footer"), { ssr: true })
+const GMTOWatermark = dynamic(() => import("@/components/gmto-watermark"), { ssr: true })
 const StickyCallBar = dynamic(() => import("@/components/sticky-call-bar"), { ssr: true })
 
 const LazyGoogleAnalytics = dynamic(() => import("@/components/google-analytics"), { ssr: false })
@@ -41,6 +42,7 @@ export default function ClientLayoutShell({ children }: { children: React.ReactN
       <Navbar />
       {children}
       <Footer />
+      <GMTOWatermark />
       <StickyCallBar />
       {showExtras && <LazyGoogleAnalytics />}
       {showExtras && <LazyChatbotButton />}

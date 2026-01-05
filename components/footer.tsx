@@ -319,12 +319,12 @@ const Footer = () => {
               <p className="text-sm text-gray-800 dark:text-gray-300">
                 Website by{" "}
                 <a
-                  href="https://mellingwebstudios.com"
+                  href="https://getmytradeonline.co.uk/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-secondary hover:underline"
                 >
-                  Melling Web Studios
+                  GetMyTradeOnline.co.uk
                 </a>
               </p>
             </div>
