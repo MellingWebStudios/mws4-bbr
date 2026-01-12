@@ -13,6 +13,7 @@ import ServiceCallout from "@/components/emergency-callout";
 import { RelatedLocations, ServiceLinksGrid } from "@/components/internal-links";
 import { EnhancedBreadcrumb, SmartContentLinks } from "@/components/contextual-links";
 import TrackedPhoneLink from "@/components/tracked-phone-link";
+import BrandSpecialistsLinks from "@/components/brand-specialists-links";
 import React from "react";
 import Head from "next/head";
 import type { Metadata } from "next";
@@ -277,6 +278,15 @@ export default async function LocationPage({ params }: Props) {
                   <span className="inline-block h-1 w-24 rounded bg-primary/70" />
                 </div>
                 <ServiceLinksGrid location={location.slug} variant="grid" />
+              </div>
+
+              {/* Brand Specialists Links - Fixes Orphan Pages */}
+              <div className="mt-12 bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-8">
+                <BrandSpecialistsLinks 
+                  locationSlug={location.slug}
+                  locationName={location.name}
+                  showAll={true}
+                />
               </div>
 
               {/* Internal Linking: Nearby Locations */}
