@@ -88,8 +88,9 @@ export async function generateStaticParams() {
 }
 
 // MDX Components for styling
+// Note: h1 in MDX content renders as h2 since the page already has an h1 for the title
 const mdxComponents = {
-  h1: (props: any) => <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-6" {...props} />,
+  h1: (props: any) => <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6" {...props} />,
   h2: (props: any) => <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 mt-8" {...props} />,
   h3: (props: any) => <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 mt-6" {...props} />,
   h4: (props: any) => <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2 mt-4" {...props} />,
