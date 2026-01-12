@@ -294,9 +294,17 @@ export default function middleware(req: NextRequest) {
   if (serviceMatch) {
     const [, location, serviceName] = serviceMatch;
     
-    // Skip if this is already a proper slug format (lowercase with hyphens)
-    if (!/[A-Z\s]/.test(serviceName)) {
+    // Skip if BOTH location AND service are already in proper slug format (lowercase with hyphens)
+    // We need to check the location part too for case-sensitivity
+    if (!/[A-Z\s]/.test(serviceName) && !/[A-Z\s]/.test(location)) {
       return NextResponse.next();
+    }
+    
+    // If location has uppercase but service doesn't, redirect to lowercase location
+    if (/[A-Z]/.test(location) && !/[A-Z\s]/.test(serviceName)) {
+      const baseUrl = getBaseUrl(host);
+      const redirectUrl = `${baseUrl}/${location.toLowerCase()}/${serviceName}${req.nextUrl.search}`;
+      return NextResponse.redirect(redirectUrl, 301);
     }
     
     // Service name mappings for common patterns from 404 list
