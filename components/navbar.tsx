@@ -202,10 +202,10 @@ const Navbar = () => {
                 />
               </div>
               <div className="hidden md:block">
-                <h1 className="text-lg font-bold text-gray-900 dark:text-white md:text-xl">
+                <p className="text-lg font-bold text-gray-900 dark:text-white md:text-xl">
                   <span className="text-secondary">Birmingham</span> <br className="md:hidden" />
                   <span className="text-red-600">Boiler Repairs</span>
-                </h1>
+                </p>
                 <div className="flex items-center text-xs text-gray-600 dark:text-gray-400">
                   <span className="mr-2">Gas Safe: {businessInfo.gasSafeNumber}</span>
                   <RatingBadge variant="compact" onClick={() => setReviewsModalOpen(true)} />
@@ -213,9 +213,9 @@ const Navbar = () => {
               </div>
               {/* Mobile compact title */}
               <div className="md:hidden">
-                <h1 className="text-sm font-bold text-gray-900 dark:text-white">
+                <p className="text-sm font-bold text-gray-900 dark:text-white">
                   <span className="text-secondary">Birmingham</span> <span className="text-red-600">Boiler Repairs</span>
-                </h1>
+                </p>
               </div>
             </Link>
 

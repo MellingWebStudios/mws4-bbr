@@ -434,7 +434,8 @@ export default function middleware(req: NextRequest) {
       'privacy-policy',
       'sitemap-viewer',
       'review-us',
-      'review-tools'
+      'review-tools',
+      'gas-safety-guide'
     ];
 
     // Exclude known location slugs that contain hyphens

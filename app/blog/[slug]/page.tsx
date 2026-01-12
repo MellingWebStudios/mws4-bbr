@@ -40,13 +40,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = post.metaTitle || `${post.title} | Birmingham Boiler Repairs`
   const description = post.metaDescription || post.description
   const url = `https://www.birminghamboilerrepairs.uk/blog/${post.slug}`
+  
+  // Ensure canonical URL is always absolute
+  const canonicalUrl = post.canonicalUrl 
+    ? (post.canonicalUrl.startsWith('http') ? post.canonicalUrl : `https://www.birminghamboilerrepairs.uk${post.canonicalUrl}`)
+    : url
 
   return {
     title,
     description,
     keywords: post.tags.join(", "),
     alternates: { 
-      canonical: post.canonicalUrl || url 
+      canonical: canonicalUrl 
     },
     openGraph: {
       title,
