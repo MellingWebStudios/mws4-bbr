@@ -1,39 +1,7 @@
-# Birmingham Boiler Repairs - Production robots.txt
-# This file is a fallback. Primary robots.txt is served via /api/robots
+# Development/Staging Environment
+# Block all crawlers in non-production
 
 User-agent: *
-Allow: /
+Disallow: /
 
-# Block API routes and private areas
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-Disallow: /private/
-
-# Block problematic paths that were causing 404s
-Disallow: /*%20*
-Disallow: /*/alpha-specialists
-Disallow: /*/main-specialists
-Disallow: /*/glow-worm-specialists
-Disallow: /*/Boiler*
-Disallow: /*/Heating*
-Disallow: /*/Emergency*
-
-# Block invalid blog tag URLs
-Disallow: /blog/tag/*won't*
-Disallow: /blog/tag/*24/7*
-
-# Block duplicate location patterns
-Disallow: /*/birchfield
-Disallow: /*/hamstead
-Disallow: /*/catshill
-Disallow: /*/redditch
-Disallow: /*/stirchley
-Disallow: /*/smethwick
-Disallow: /*/edgbaston
-Disallow: /*/dudley
-Disallow: /*/longbridge
-Disallow: /*/gilbertstone
-
-# Sitemap location
-Sitemap: https://www.birminghamboilerrepairs.uk/sitemap.xml
+# No sitemap for staging

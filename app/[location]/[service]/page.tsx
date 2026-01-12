@@ -396,7 +396,7 @@ export default async function LocationServicePage({ params }: Props) {
               {/* Related Services in Same Location */}
               <RelatedServices 
                 currentService={service.slug}
-                currentLocation={location.name}
+                currentLocation={location.slug}
                 showDescription={true}
                 limit={3}
                 className="my-8"
