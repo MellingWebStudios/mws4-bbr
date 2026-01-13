@@ -293,7 +293,7 @@ const Chatbot = () => {
               </div>
             </Avatar>
             <div>
-              <h2 className="text-base font-medium">Birmingham Boiler Repairs</h2>
+              <span className="text-base font-medium block">Birmingham Boiler Repairs</span>
               <p className="text-xs text-white/80">AI Assistant</p>
             </div>
           </div>

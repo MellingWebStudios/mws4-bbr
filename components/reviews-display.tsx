@@ -7,12 +7,14 @@ import { Star, Filter, Award } from "lucide-react"
 import { reviews } from "@/lib/reviews-data"
 import Image from "next/image"
 import { motion } from "framer-motion"
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
 
 interface ReviewsDisplayProps {
   limit?: number
   showFilters?: boolean
   serviceFilter?: string
   locationFilter?: string
+  headingLevel?: 2 | 3 | 4 | 5 | 6
 }
 
 export default function ReviewsDisplay({
@@ -20,6 +22,7 @@ export default function ReviewsDisplay({
   showFilters = true,
   serviceFilter = "all",
   locationFilter = "",
+  headingLevel = 2,
 }: ReviewsDisplayProps) {
   const [filter, setFilter] = useState(serviceFilter)
   const [displayCount, setDisplayCount] = useState(limit)
@@ -129,9 +132,9 @@ export default function ReviewsDisplay({
           <Star className="h-6 w-6 text-primary drop-shadow-md" />
           <span className="block h-1 w-8 rounded-full bg-primary/70 animate-pulse"></span>
         </div>
-        <h2 className="text-4xl font-extrabold mb-3 text-black drop-shadow-sm tracking-tight">
+        <DynamicHeading level={headingLevel} className="text-4xl font-extrabold mb-3 text-black drop-shadow-sm tracking-tight">
           Customer Reviews
-        </h2>
+        </DynamicHeading>
         <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg leading-relaxed">
           See what our customers have to say about our services.<br className="hidden md:inline" />
           We pride ourselves on delivering exceptional quality and service.

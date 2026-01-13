@@ -130,9 +130,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
     "seasonal": "The West Midlands climate presents unique challenges for heating systems. Our seasonal guides ensure your boiler is ready for whatever the weather brings, from freezing winters to mild summers."
   }
 
+  const categoryWhyReadInfo: Record<string, string> = {
+    "boiler-repair": "Our boiler repair articles are written by experienced Gas Safe registered engineers who work on boilers across Birmingham every day. We cover topics including common boiler faults like F1, F22 and F28 error codes on Worcester, Vaillant and Baxi boilers. You'll find detailed explanations of issues such as loss of pressure, no hot water, radiators not heating up, and strange banging or kettling noises. We explain when a simple reset might fix the problem and when you need to call a qualified professional.",
+    "heating-systems": "Our heating systems guides help Birmingham homeowners understand modern heating technology. We compare combi boilers with system and regular boilers, explain how heat pumps work, and discuss whether hydrogen-ready boilers are worth considering. Our engineers break down the technical specifications into plain English, helping you make informed decisions about heating your home efficiently. We also cover underfloor heating, smart thermostats, and heating controls that can reduce your energy bills.",
+    "maintenance": "Regular boiler servicing is essential for safety, efficiency, and maintaining your manufacturer's warranty. Our maintenance guides explain what engineers check during an annual service, how to perform basic checks yourself, and warning signs that your boiler needs attention. We cover topics like bleeding radiators, checking boiler pressure, and understanding condensate drain issues. Proper maintenance can extend your boiler's lifespan by several years and help you avoid expensive emergency repairs during cold winter months.",
+    "emergency-services": "When your heating fails unexpectedly, especially during winter, you need to know what to do. Our emergency services articles explain common causes of sudden boiler failures, safety precautions you should take if you smell gas, and how to safely manage without heating until help arrives. We provide guidance on identifying genuine emergencies versus issues that can wait for a standard appointment, helping you make the right call when your household comfort is at stake.",
+    "installation": "Choosing and installing a new boiler is one of the biggest home improvement investments you'll make. Our installation guides cover everything from calculating the right boiler size for your property to understanding different installation types and costs. We explain the difference between like-for-like replacements and system upgrades, discuss the best boiler brands for Birmingham homes, and outline what to expect during the installation process. Our articles also cover grants and schemes that might help with installation costs.",
+    "troubleshooting": "Before calling an engineer, our troubleshooting guides help you understand what might be wrong with your boiler. We provide step-by-step diagnostic instructions for common problems like low pressure, cold radiators, and pilot light issues. Our guides explain error codes from major manufacturers and help you determine whether a problem is minor or requires professional attention. Understanding these basics can save you money and help you communicate more effectively when you do need to call for help.",
+    "seasonal": "Birmingham's weather patterns affect your heating system in different ways throughout the year. Our seasonal guides help you prepare your boiler for winter cold spells, explain why frozen condensate pipes cause problems, and offer advice for summer maintenance when your heating isn't in regular use. We cover topics like power flushing before winter, protecting outdoor pipes, and timing your annual service for maximum benefit. Following seasonal advice helps ensure reliable heating when you need it most."
+  }
+
   const categoryTitle = categoryTitles[category]
   const categoryDescription = categoryDescriptions[category]
   const categoryExtended = categoryExtendedInfo[category]
+  const categoryWhyRead = categoryWhyReadInfo[category]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
@@ -167,6 +178,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
               {categoryExtended}
             </p>
+            
+            <div className="mt-6 pt-6 border-t border-slate-200 dark:border-slate-700">
+              <h2 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-3">Why Read Our {categoryTitle} Articles?</h2>
+              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                {categoryWhyRead}
+              </p>
+            </div>
           </div>
         </div>
 

@@ -2,8 +2,13 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { HelpCircle, ShieldCheck, AlertTriangle, Flame } from "lucide-react"
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
 
-export default function QuestionsSnippet() {
+interface QuestionsSnippetProps {
+  headingLevel?: 2 | 3 | 4 | 5 | 6
+}
+
+export default function QuestionsSnippet({ headingLevel = 2 }: QuestionsSnippetProps) {
   const questionCategories = [
     {
       title: "Gas Safety",
@@ -34,9 +39,9 @@ export default function QuestionsSnippet() {
         <div className="mb-12 text-center">
           <div className="flex items-center justify-center mb-4">
             <HelpCircle className="h-10 w-10 text-secondary mr-3" />
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <DynamicHeading level={headingLevel} className="text-3xl font-bold text-gray-900 dark:text-white">
               Safety Questions & Answers
-            </h2>
+            </DynamicHeading>
           </div>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Get expert answers to your most important safety questions. Our comprehensive guides 

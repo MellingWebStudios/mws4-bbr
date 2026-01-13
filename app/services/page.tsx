@@ -344,7 +344,7 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
             <div>
-              <h2 className="text-3xl font-bold">Need urgent boiler repair?</h2>
+              <h3 className="text-3xl font-bold">Need urgent boiler repair?</h3>
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">

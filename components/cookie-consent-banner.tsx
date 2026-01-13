@@ -39,7 +39,7 @@ export default function CookieConsentBanner() {
       <div className="container mx-auto p-4">
         <div className="flex items-start justify-between">
           <div className="flex-1 pr-4">
-            <h2 className="mb-2 text-lg font-bold">Cookie Consent</h2>
+            <span className="mb-2 block text-lg font-bold" role="heading" aria-level={2}>Cookie Consent</span>
             <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
               We use cookies to enhance your browsing experience, serve personalized ads or content, and analyze our
               traffic. By clicking "Accept All", you consent to our use of cookies.

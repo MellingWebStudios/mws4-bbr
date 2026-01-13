@@ -42,6 +42,7 @@ export default function ContactPage() {
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Contact Us</h1>
             <p className="mt-4 text-lg">Get in touch for boiler repairs, servicing, and gas safety inspections</p>
+            <p className="mt-4 text-base opacity-90">Birmingham Boiler Repairs provides professional heating services across Birmingham and the West Midlands. Our team of Gas Safe registered engineers is available for emergency callouts, routine servicing, and all types of boiler repairs. Whether you need an urgent fix for a broken boiler or want to schedule your annual service, we're here to help with fast, reliable, and affordable solutions.</p>
           </div>
         </div>
       </section>
@@ -51,7 +52,8 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Get In Touch</h2>
+              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Get In Touch</h2>
+              <p className="mb-6 text-gray-600 dark:text-gray-400">We offer multiple ways to contact us depending on your needs. For emergency boiler repairs, calling our freephone number is the fastest way to get help, with same-day service available throughout Birmingham, Solihull, Sutton Coldfield, and surrounding areas. For non-urgent enquiries or to request a free quote, you can email us or fill out the contact form on this page. Our friendly team typically responds within a few hours during business days.</p>
               <div className="space-y-6">
                 <Card className="border-none shadow-md">
                   <CardContent className="flex items-start space-x-4 p-6">
@@ -145,7 +147,8 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Send Us a Message</h2>
+              <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Send Us a Message</h2>
+              <p className="mb-6 text-gray-600 dark:text-gray-400">Use the form below to request a callback, ask a question, or get a free no-obligation quote for boiler repairs, servicing, or installation. Please provide as much detail as possible about your boiler issue or requirements so we can prepare the right advice and pricing. All enquiries are treated confidentially and we never share your details with third parties.</p>
               <ContactForm />
             </div>
           </div>

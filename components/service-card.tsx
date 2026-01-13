@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button"
 import { Phone, ArrowRight, CheckCircle } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
 
 interface ServiceCardProps {
   id: string
@@ -12,9 +13,10 @@ interface ServiceCardProps {
   image: string
   features: string[]
   link: string
+  headingLevel?: 2 | 3 | 4 | 5 | 6
 }
 
-export default function ServiceCard({ id, title, description, image, features, link }: ServiceCardProps) {
+export default function ServiceCard({ id, title, description, image, features, link, headingLevel = 3 }: ServiceCardProps) {
   return (
     <Card id={id} className="overflow-hidden border shadow-md mb-8 transition-all duration-300 hover:shadow-lg">
       <CardContent className="p-0">
@@ -23,10 +25,10 @@ export default function ServiceCard({ id, title, description, image, features, l
             <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
           </div>
           <div className="p-6">
-            <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</h2>
+            <DynamicHeading level={headingLevel} className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</DynamicHeading>
             <p className="mb-6 text-gray-600 dark:text-gray-400">{description}</p>
             <div className="mb-6">
-              <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
+              <p className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</p>
               <ul className="space-y-2">
                 {features.map((feature, i) => (
                   <li key={i} className="flex items-center">

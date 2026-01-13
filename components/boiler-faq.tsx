@@ -12,6 +12,11 @@ import { Phone } from "lucide-react"
 import { cn } from "@/lib/utils"
 import businessInfo from "@/lib/business-info"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
+
+interface BoilerFAQProps {
+  headingLevel?: 2 | 3 | 4 | 5 | 6
+}
 
 /**
  * BoilerFAQ – design‑refreshed, markup‑identical.
@@ -20,7 +25,7 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
  * ▸ Layers in modern visuals: gradient section, glassy card, subtle hover & open states.
  * ▸ No breaking changes – just swap‑in and go.
  */
-const BoilerFAQ = () => {
+const BoilerFAQ = ({ headingLevel = 2 }: BoilerFAQProps) => {
   const [openItem, setOpenItem] = useState<string | null>(null)
 
   // original FAQ data unchanged
@@ -145,9 +150,9 @@ const BoilerFAQ = () => {
       <div className="container relative z-10 mx-auto max-w-4xl px-4">
         {/* header */}
         <div className="mb-12 text-center">
-          <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+          <DynamicHeading level={headingLevel} className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
             Common Boiler Problems
-          </h2>
+          </DynamicHeading>
           <p className="mx-auto mt-4 max-w-xl text-lg text-gray-600 dark:text-gray-400">
             Troubleshooting advice from our Gas Safe engineers
           </p>

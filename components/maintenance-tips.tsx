@@ -8,8 +8,13 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import LiteYouTubeEmbed from "./LiteYouTubeEmbed"
 import { slugify } from '@/lib/slug';
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
 
-const MaintenanceTips = () => {
+interface MaintenanceTipsProps {
+  headingLevel?: 2 | 3 | 4 | 5 | 6
+}
+
+const MaintenanceTips = ({ headingLevel = 2 }: MaintenanceTipsProps) => {
   const [activeTab, setActiveTab] = useState("pressure")
 
   const tips = [
@@ -40,7 +45,7 @@ const MaintenanceTips = () => {
     <section className="py-16">
       <div className="container mx-auto px-4">
         <div className="mb-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Maintenance Tips</h2>
+          <DynamicHeading level={headingLevel} className="text-3xl font-bold text-gray-900 dark:text-white">Maintenance Tips</DynamicHeading>
           <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
             Quick fixes you can try before calling an engineer
           </p>

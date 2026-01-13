@@ -1,15 +1,20 @@
 import { Phone } from "lucide-react";
 import TrackedPhoneLink from "@/components/tracked-phone-link";
+import { DynamicHeading } from "@/components/ui/dynamic-heading";
 
-const ServiceCallout = () => {
+interface ServiceCalloutProps {
+  headingLevel?: 2 | 3 | 4 | 5 | 6;
+}
+
+const ServiceCallout = ({ headingLevel = 2 }: ServiceCalloutProps) => {
   return (
     <section className="bg-gradient-to-r from-red-600 to-red-700 py-10 text-white shadow-lg">
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center justify-between space-y-6 text-center md:flex-row md:space-y-0 md:text-left">
           <div className="max-w-xl">
-            <h2 className="text-2xl font-bold tracking-tight md:text-3xl">
+            <DynamicHeading level={headingLevel} className="text-2xl font-bold tracking-tight md:text-3xl">
               Expert Boiler Repairs, Servicing & Gas Inspections
-            </h2>
+            </DynamicHeading>
             <p className="mt-2 text-lg font-medium text-red-100">
               Same-day appointments available when booked before 12pm
             </p>

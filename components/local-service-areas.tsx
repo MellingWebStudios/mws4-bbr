@@ -5,12 +5,14 @@ import { cn } from "@/lib/utils"
 import { useState } from "react"
 import { locations } from "@/lib/locations-data"
 import Link from "next/link"
+import { DynamicHeading } from "@/components/ui/dynamic-heading"
 
 interface LocalServiceAreasProps {
   className?: string
+  headingLevel?: 2 | 3 | 4 | 5 | 6
 }
 
-const LocalServiceAreas = ({ className }: LocalServiceAreasProps) => {
+const LocalServiceAreas = ({ className, headingLevel = 2 }: LocalServiceAreasProps) => {
   // Use first 24 locations from locations data to maintain reasonable display
   const displayLocations = locations.slice(0, 24)
 
@@ -28,7 +30,7 @@ const LocalServiceAreas = ({ className }: LocalServiceAreasProps) => {
   >
     <div className="container mx-auto px-4">
       <div className="mb-10 text-center">
-        <h2 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Areas We Cover</h2>
+        <DynamicHeading level={headingLevel} className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">Areas We Cover</DynamicHeading>
         <p className="mt-3 text-lg text-gray-600 dark:text-gray-400">Serving Birmingham and surrounding areas</p>
       </div>
 

@@ -175,13 +175,13 @@ export default function BoilerRepairsPage() {
                     />
                   </div>
                   <div className="p-6">
-                    <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h2>
+                    <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h3>
                     <div
                       className="mb-6 prose max-w-none"
                       dangerouslySetInnerHTML={{ __html: service.longDescription }}
                     />
                     <div className="mb-6">
-                      <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
+                      <h4 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h4>
                       <ul className="space-y-2">
                         {service.features.map((feature, i) => (
                           <li key={i} className="flex items-center">
@@ -210,12 +210,12 @@ export default function BoilerRepairsPage() {
 
             {/* Pricing Section */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Repair Pricing</h2>
+              <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Repair Pricing</h3>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
                 {service.pricing.map((option, index) => (
                   <Card key={index} className="border shadow-md">
                     <CardContent className="p-6">
-                      <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h3>
+                      <h4 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h4>
                       <div className="mb-4 flex items-baseline">
                         <span className="text-3xl font-bold text-secondary">{option.price}</span>
                         <span className="ml-1 text-sm text-gray-500">No VAT</span>
@@ -229,12 +229,12 @@ export default function BoilerRepairsPage() {
 
             {/* FAQs Section */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+              <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h3>
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {service.faqs.map((faq, index) => (
                   <Card key={index} className="border shadow-md">
                     <CardContent className="p-6">
-                      <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h3>
+                      <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
                       <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
                     </CardContent>
                   </Card>
@@ -244,7 +244,7 @@ export default function BoilerRepairsPage() {
 
             {/* Reviews Section */}
             <div>
-              <h2 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h2>
+              <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h3>
               <ReviewsDisplay serviceFilter="repair" limit={4} showFilters={false} />
             </div>
 
@@ -298,7 +298,7 @@ export default function BoilerRepairsPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
             <div>
-              <h2 className="text-3xl font-bold">Need a boiler repair?</h2>
+              <h3 className="text-3xl font-bold">Need a boiler repair?</h3>
               <p className="mt-2 text-lg">We offer same-day service when booked before 12pm</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">
