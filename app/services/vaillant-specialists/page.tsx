@@ -43,7 +43,7 @@ export default function VaillantSpecialistsPage() {
     title: "Vaillant Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Vaillant boilers. Expert knowledge of Vaillant systems and components.",
-    image: "/images/vaillant.png",
+    image: "/images/vaillant.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Vaillant specialists, we are experts in fixing Vaillant boilers and offer professional repair and maintenance services for all Vaillant boiler models. Our engineers have received specialized training directly from Vaillant, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function VaillantSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/vaillant_page.png"}
+                        src={service.image || "/images/vaillant.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

@@ -43,7 +43,7 @@ export default function PottertonSpecialistsPage() {
     title: "Potterton Specialists",
     description:
       "Approved specialists and experts in fixing Potterton boilers. Expert knowledge of Potterton systems and components.",
-    image: "/images/potterton.png",
+    image: "/images/potterton.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Potterton specialists, we are experts in fixing Potterton boilers and offer professional repair and maintenance services for all Potterton boiler models. Our engineers have received specialized training directly from Potterton, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function PottertonSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/potterton.png"}
+                        src={service.image || "/images/potterton.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

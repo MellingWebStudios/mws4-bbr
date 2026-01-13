@@ -43,7 +43,7 @@ export default function AristonSpecialistsPage() {
     title: "Ariston Specialists",
     description:
       "Approved specialists and experts in fixing Ariston boilers. Expert knowledge of Ariston systems and components.",
-    image: "/images/ariston.png",
+    image: "/images/ariston.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Ariston specialists, we are experts in fixing Ariston boilers and offer professional repair and maintenance services for all Ariston boiler models. Our engineers have received specialized training directly from Ariston, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function AristonSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/ariston.png"}
+                        src={service.image || "/images/ariston.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

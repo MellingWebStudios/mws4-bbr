@@ -43,7 +43,7 @@ export default function IntergasSpecialistsPage() {
     title: "Intergas Specialists",
     description:
       "Approved specialists and experts in fixing Intergas boilers. Expert knowledge of Intergas systems and components.",
-    image: "/images/intergas_service.png",
+    image: "/images/intergas_service.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Intergas specialists, we are experts in fixing Intergas boilers and offer professional repair and maintenance services for all Intergas boiler models. Our engineers have received specialized training directly from Intergas, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function IntergasSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/intergas.png"}
+                        src={service.image || "/images/intergas_service.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

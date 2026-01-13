@@ -41,7 +41,7 @@ export default function GasSafetyPage() {
     title: "Gas Safety Inspections",
     description:
       "Certified checks to keep your home compliant and safe. Digital certificates provided with a reminder service.",
-    image: "/images/services_gas_safety_page.png",
+    image: "/images/services_gas_safety_page.webp",
     features: ["£50 for 1 appliance", "£55 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
     longDescription: `
       <p>Gas Safety Inspections (also known as CP12 or Landlord Gas Safety Certificates) are a legal requirement for landlords and provide peace of mind for homeowners. Our Gas Safe registered engineers conduct thorough inspections of all gas appliances to ensure they're operating safely and efficiently.</p>
@@ -136,7 +136,7 @@ export default function GasSafetyPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/services_gas_safety_page.png"}
+                        src={service.image || "/images/services_gas_safety_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

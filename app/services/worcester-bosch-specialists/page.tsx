@@ -43,7 +43,7 @@ export default function WorcesterBoschSpecialistsPage() {
     title: "Worcester Bosch Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Worcester Bosch boilers. Expert knowledge of Worcester Bosch systems and components.",
-    image: "/images/worcester-bosch.png",
+    image: "/images/worcester-bosch.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Worcester Bosch specialists, we are experts in fixing Worcester Bosch boilers and offer professional repair and maintenance services for all Worcester Bosch boiler models. Our engineers have received specialized training directly from Worcester Bosch, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function WorcesterBoschSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/worcester-bosch.png"}
+                        src={service.image || "/images/worcester-bosch.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

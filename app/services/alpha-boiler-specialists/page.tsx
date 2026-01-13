@@ -43,7 +43,7 @@ export default function AlphaBoilerSpecialistsPage() {
     title: "Alpha Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Alpha boilers. Expert knowledge of Alpha boiler systems and components.",
-    image: "/images/alpha_page.png",
+    image: "/images/alpha_page.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Alpha boiler specialists, we are experts in fixing Alpha boilers and offer professional repair and maintenance services for all Alpha boiler models. Our engineers have received specialized training directly from Alpha, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function AlphaBoilerSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/alpha.png"}
+                        src={service.image || "/images/alpha_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

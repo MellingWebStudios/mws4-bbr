@@ -43,7 +43,7 @@ export default function ServicesPage() {
       title: "Boiler Repairs",
       description:
         "Prompt, reliable fixes for leaks, breakdowns and ongoing issues. Same-day service available when booked before 12pm.",
-      image: "/images/service_repairs.png",
+      image: "/images/service_repairs.webp",
       features: ["No call-out fee", "No diagnosis fee", "Same-day & weekend options", "Parts for major brands stocked"],
       link: "/services/boiler-repairs",
     },
@@ -52,7 +52,7 @@ export default function ServicesPage() {
       title: "Boiler Servicing",
       description:
         "Keep your boiler safe and efficient with expert servicing for all major brands. We offer both standard (£60) and full (£110 + seal kit) servicing options.",
-      image: "/images/service_boiler_servicing_services_page.png",
+      image: "/images/service_boiler_servicing_services_page.webp",
       features: [
         "30-minute standard service",
         "Deep clean heat cell (full service)",
@@ -66,7 +66,7 @@ export default function ServicesPage() {
       title: "Gas Safety Inspections",
       description:
         "Certified checks to keep your home compliant and safe. Digital certificates provided with a reminder service.",
-      image: "/images/services_gas_safety.png",
+      image: "/images/services_gas_safety.webp",
       features: ["£50 for 1 appliance", "£55 for 2 appliances", "£60 for 3 appliances", "Digital certificates"],
       link: "/services/gas-safety",
     },
@@ -75,7 +75,7 @@ export default function ServicesPage() {
       title: "Combination Boiler Repairs",
       description:
         "Specialist repairs for combination boilers. Expert diagnosis and repair of combi boiler issues including heating and hot water problems.",
-      image: "/images/combi_repair_service.png",
+      image: "/images/combi_repair_service.webp",
       features: ["No call-out fee", "Same-day service available", "All major combi brands", "Hot water & heating repairs"],
       link: "/services/combination-boiler-repairs",
     },
@@ -84,7 +84,7 @@ export default function ServicesPage() {
       title: "Combination Boiler Services",
       description:
         "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
-      image: "/images/combi_service_page.png",
+      image: "/images/combi_service_page.webp",
       features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
       link: "/services/combination-boiler-services",
     },
@@ -93,7 +93,7 @@ export default function ServicesPage() {
       title: "Ferroli Boiler Specialists",
       description:
         "Approved specialist for Ferroli repair & maintenance. Expert knowledge of Ferroli systems and components.",
-      image: "/images/ferroli_specialist_services.png",
+      image: "/images/ferroli_specialist_services.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/ferroli-specialists",
     },
@@ -102,7 +102,7 @@ export default function ServicesPage() {
       title: "Worcester Bosch Specialists",
       description:
         "Approved specialist for Worcester Bosch repair & maintenance. Expert knowledge of Worcester Bosch systems and components.",
-      image: "/images/worcester-bosch.png",
+      image: "/images/worcester-bosch.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/worcester-bosch-specialists",
     },
@@ -111,7 +111,7 @@ export default function ServicesPage() {
       title: "Vaillant Specialists",
       description:
         "Approved specialist for Vaillant repair & maintenance. Expert knowledge of Vaillant systems and components.",
-      image: "/images/vaillant.png",
+      image: "/images/vaillant.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/vaillant-specialists",
     },
@@ -120,7 +120,7 @@ export default function ServicesPage() {
       title: "Ideal Boilers Specialists",
       description:
         "Approved specialist for Ideal boiler repair & maintenance. Expert knowledge of Ideal boiler systems and components.",
-      image: "/images/ideal.png",
+      image: "/images/ideal.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/ideal-boilers-specialists",
     },
@@ -129,7 +129,7 @@ export default function ServicesPage() {
       title: "Baxi Specialists",
       description:
         "Approved specialist for Baxi repair & maintenance. Expert knowledge of Baxi systems and components.",
-      image: "/images/baxi_page.png",
+      image: "/images/baxi_page.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/baxi-specialists",
     },
@@ -138,7 +138,7 @@ export default function ServicesPage() {
       title: "Alpha Boiler Specialists",
       description:
         "Approved specialist for Alpha boiler repair & maintenance. Expert knowledge of Alpha boiler systems and components.",
-      image: "/images/alpha_service.png",
+      image: "/images/alpha_service.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/alpha-boiler-specialists",
     },
@@ -147,7 +147,7 @@ export default function ServicesPage() {
       title: "Main Boiler Specialists",
       description:
         "Approved specialist for Main boiler repair & maintenance. Expert knowledge of Main boiler systems and components.",
-      image: "/images/main_service.png",
+      image: "/images/main_service.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/main-boiler-specialists",
     },
@@ -156,7 +156,7 @@ export default function ServicesPage() {
       title: "Vokera Specialists",
       description:
         "Approved specialist for Vokera repair & maintenance. Expert knowledge of Vokera systems and components.",
-      image: "/images/vokera_page.png",
+      image: "/images/vokera_page.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/vokera-specialists",
     },
@@ -165,7 +165,7 @@ export default function ServicesPage() {
       title: "Viessmann Specialists",
       description:
         "Approved specialist for Viessmann repair & maintenance. Expert knowledge of Viessmann systems and components.",
-      image: "/images/viessmann_service.png",
+      image: "/images/viessmann_service.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/viessmann-specialists",
     },
@@ -174,7 +174,7 @@ export default function ServicesPage() {
       title: "Intergas Specialists",
       description:
         "Approved specialist for Intergas repair & maintenance. Expert knowledge of Intergas systems and components.",
-      image: "/images/intergas_service.png",
+      image: "/images/intergas_service.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/intergas-specialists",
     },
@@ -183,7 +183,7 @@ export default function ServicesPage() {
       title: "Glow-worm Specialists",
       description:
         "Approved specialist for Glow-worm repair & maintenance. Expert knowledge of Glow-worm systems and components.",
-      image: "/images/glowworm_page.png",
+      image: "/images/glowworm_page.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/glowworm-specialists",
     },
@@ -192,7 +192,7 @@ export default function ServicesPage() {
       title: "Atag Specialists",
       description:
         "Approved specialist for Atag repair & maintenance. Expert knowledge of Atag systems and components.",
-      image: "/images/atag_page.png",
+      image: "/images/atag_page.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/atag-specialists",
     },
@@ -201,7 +201,7 @@ export default function ServicesPage() {
       title: "Biasi Specialists",
       description:
         "Approved specialist for Biasi repair & maintenance. Expert knowledge of Biasi systems and components.",
-      image: "/images/biasi.png",
+      image: "/images/biasi.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/biasi-specialists",
     },
@@ -210,7 +210,7 @@ export default function ServicesPage() {
       title: "Potterton Specialists",
       description:
         "Approved specialist for Potterton repair & maintenance. Expert knowledge of Potterton systems and components.",
-      image: "/images/potterton.png",
+      image: "/images/potterton.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/potterton-specialists",
     },
@@ -219,7 +219,7 @@ export default function ServicesPage() {
       title: "Ariston Specialists",
       description:
         "Approved specialist for Ariston repair & maintenance. Expert knowledge of Ariston systems and components.",
-      image: "/images/ariston.png",
+      image: "/images/ariston.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/ariston-specialists",
     },
@@ -228,7 +228,7 @@ export default function ServicesPage() {
       title: "Heatline Specialists",
       description:
         "Approved specialist for Heatline repair & maintenance. Expert knowledge of Heatline systems and components.",
-      image: "/images/heatline.png",
+      image: "/images/heatline.webp",
       features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
       link: "/services/heatline-specialists",
     },
@@ -298,7 +298,7 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1">
             <div className="relative h-80 overflow-hidden rounded-lg shadow-lg md:h-96">
-              <Image src="/images/services_map_image.png" alt="Service Area Map" fill className="object-cover" />
+              <Image src="/images/services_map_image.webp" alt="Service Area Map" fill className="object-cover" />
             </div>
             <div>
               <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">

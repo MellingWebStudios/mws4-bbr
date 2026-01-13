@@ -43,7 +43,7 @@ export default function IdealBoilersSpecialistsPage() {
     title: "Ideal Boilers Specialists",
     description:
       "Approved specialists and experts in fixing Ideal boilers. Expert knowledge of Ideal boiler systems and components.",
-    image: "/images/ideal.png",
+    image: "/images/ideal.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Ideal Boilers specialists, we are experts in fixing Ideal boilers and offer professional repair and maintenance services for all Ideal boiler models. Our engineers have received specialized training directly from Ideal, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function IdealBoilersSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/ideal_boilers_page.png"}
+                        src={service.image || "/images/ideal.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

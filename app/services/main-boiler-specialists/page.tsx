@@ -43,7 +43,7 @@ export default function MainBoilerSpecialistsPage() {
     title: "Main Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Main boilers. Expert knowledge of Main boiler systems and components.",
-    image: "/images/main_page.png",
+    image: "/images/main_page.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Main boiler specialists, we are experts in fixing Main boilers and offer professional repair and maintenance services for all Main boiler models. Our engineers have received specialized training directly from Main, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function MainBoilerSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/main.png"}
+                        src={service.image || "/images/main_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

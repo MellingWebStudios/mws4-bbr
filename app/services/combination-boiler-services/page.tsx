@@ -43,7 +43,7 @@ export default function CombinationBoilerServicesPage() {
     title: "Combination Boiler Services",
     description:
       "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
-    image: "/images/combi_service_page.png",
+    image: "/images/combi_service_page.webp",
     features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
     longDescription: `
   <p>Regular servicing is essential for keeping your combination boiler running safely and efficiently. Our professional combination boiler service includes comprehensive checks of both the heating and hot water functions, ensuring your combi boiler operates at peak performance.</p>
@@ -141,7 +141,7 @@ export default function CombinationBoilerServicesPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/combination_boiler_services.png"}
+                        src={service.image || "/images/combi_service_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

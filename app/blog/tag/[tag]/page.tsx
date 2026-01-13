@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
   ).join(' ')
 
   return {
-    title: `${tagTitle} | Birmingham Boiler Repairs Blog`,
+    title: `Posts Tagged "${tagTitle}" | Birmingham Boiler Repairs Blog`,
     description: `Articles tagged with ${tagTitle}. Expert boiler and heating advice for Birmingham and West Midlands homeowners.`,
     keywords: [
       tagTitle.toLowerCase(),
@@ -100,6 +100,50 @@ export default async function TagPage({ params }: TagPageProps) {
     word.charAt(0).toUpperCase() + word.slice(1)
   ).join(' ')
 
+  // Generate helpful context for the tag
+  const getTagContext = (tag: string): { intro: string; detail: string } => {
+    const tagContexts: Record<string, { intro: string; detail: string }> = {
+      "boiler-repair": {
+        intro: "Professional boiler repair advice from Gas Safe registered engineers.",
+        detail: "These articles cover common boiler faults, when to call an engineer, and tips for preventing breakdowns in your Birmingham home."
+      },
+      "boiler-troubleshooting": {
+        intro: "Step-by-step guidance for diagnosing boiler problems.",
+        detail: "Learn how to identify issues with your heating system, understand error codes, and know when professional help is needed."
+      },
+      "maintenance": {
+        intro: "Keep your boiler running efficiently with proper maintenance.",
+        detail: "Regular maintenance extends boiler lifespan and ensures safe, efficient operation throughout the year."
+      },
+      "heating-systems": {
+        intro: "Understanding different types of heating systems for your home.",
+        detail: "Compare combi boilers, system boilers, and heat pumps to find the best heating solution for your property."
+      },
+      "emergency-repair": {
+        intro: "What to do when your boiler breaks down unexpectedly.",
+        detail: "Emergency guidance and safety advice while waiting for our 24/7 engineers to arrive at your Birmingham property."
+      },
+      "boiler-pressure": {
+        intro: "Understanding and managing boiler pressure issues.",
+        detail: "Learn about optimal pressure levels, how to repressurise your boiler, and when pressure problems indicate a serious fault."
+      },
+      "winter-preparation": {
+        intro: "Prepare your heating system for the colder months.",
+        detail: "Essential tips to ensure your boiler is ready for winter in the West Midlands, including servicing and preventive maintenance."
+      },
+      "cold-radiators": {
+        intro: "Diagnosing and fixing cold radiator problems.",
+        detail: "From bleeding radiators to power flushing, learn how to restore proper heat distribution throughout your home."
+      }
+    }
+    return tagContexts[tag] || {
+      intro: `Expert articles about ${tagTitle.toLowerCase()} for Birmingham homeowners.`,
+      detail: `Our Gas Safe engineers share professional insights and practical advice to help you understand and maintain your heating system.`
+    }
+  }
+
+  const tagContext = getTagContext(tag)
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
       <div className="container mx-auto px-4 py-8">
@@ -127,9 +171,12 @@ export default async function TagPage({ params }: TagPageProps) {
               Articles tagged "{tagTitle}"
             </h1>
             
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              Discover all our articles related to {tagTitle.toLowerCase()}. Expert advice and practical guides 
-              for Birmingham and West Midlands homeowners.
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
+              {tagContext.intro}
+            </p>
+            
+            <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
+              {tagContext.detail}
             </p>
           </div>
         </div>

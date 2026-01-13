@@ -43,7 +43,7 @@ export default function BaxiSpecialistsPage() {
     title: "Baxi Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Baxi boilers. Expert knowledge of Baxi systems and components.",
-    image: "/images/baxi_page.png",
+    image: "/images/baxi_page.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Baxi specialists, we are experts in fixing Baxi boilers and offer professional repair and maintenance services for all Baxi boiler models. Our engineers have received specialized training directly from Baxi, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function BaxiSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/baxi_page.png"}
+                        src={service.image || "/images/baxi_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

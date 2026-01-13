@@ -40,7 +40,7 @@ export default function FerroliSpecialistsPage() {
     title: "Ferroli Boiler Specialists",
     description:
       "Approved specialists and experts in fixing Ferroli boilers. Expert knowledge of Ferroli systems and components.",
-    image: "/images/ferroli_page.png",
+    image: "/images/ferroli_page.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Ferroli specialists, we are experts in fixing Ferroli boilers and offer professional repair and maintenance services for all Ferroli boiler models. Our engineers have received specialized training directly from Ferroli, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -123,7 +123,7 @@ export default function FerroliSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/ferroli_page.png"}
+                        src={service.image || "/images/ferroli_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

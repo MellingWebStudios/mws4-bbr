@@ -43,7 +43,7 @@ export default function HeatlineSpecialistsPage() {
     title: "Heatline Specialists",
     description:
       "Approved specialists and experts in fixing Heatline boilers. Expert knowledge of Heatline systems and components.",
-    image: "/images/heatline.png",
+    image: "/images/heatline.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Heatline specialists, we are experts in fixing Heatline boilers and offer professional repair and maintenance services for all Heatline boiler models. Our engineers have received specialized training directly from Heatline, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function HeatlineSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/heatline.png"}
+                        src={service.image || "/images/heatline.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

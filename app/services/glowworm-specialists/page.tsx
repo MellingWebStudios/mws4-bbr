@@ -43,7 +43,7 @@ export default function GlowwormSpecialistsPage() {
     title: "Glow-worm Specialists",
     description:
       "Approved specialists and experts in fixing Glow-worm boilers. Expert knowledge of Glow-worm systems and components.",
-    image: "/images/glowworm_page.png",
+    image: "/images/glowworm_page.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Glow-worm specialists, we are experts in fixing Glow-worm boilers and offer professional repair and maintenance services for all Glow-worm boiler models. Our engineers have received specialized training directly from Glow-worm, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function GlowwormSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/glowworm.png"}
+                        src={service.image || "/images/glowworm_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

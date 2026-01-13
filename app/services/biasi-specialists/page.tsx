@@ -43,7 +43,7 @@ export default function BiasiSpecialistsPage() {
     title: "Biasi Specialists",
     description:
       "Approved specialists and experts in fixing Biasi boilers. Expert knowledge of Biasi systems and components.",
-    image: "/images/biasi.png",
+    image: "/images/biasi.webp",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     longDescription: `
   <p>As approved Biasi specialists, we are experts in fixing Biasi boilers and offer professional repair and maintenance services for all Biasi boiler models. Our engineers have received specialized training directly from Biasi, ensuring they have in-depth knowledge of these systems and their unique components.</p>
@@ -141,7 +141,7 @@ export default function BiasiSpecialistsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/biasi.png"}
+                        src={service.image || "/images/biasi.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"

@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const posts = await getBlogPostsByCategory(category)
 
   return {
-    title: `${categoryTitle} | Birmingham Boiler Repairs Blog`,
+    title: `${categoryTitle} Articles | Birmingham Boiler Repairs Blog`,
     description: `Expert advice and guides on ${categoryTitle.toLowerCase()}. Read our latest articles covering ${categoryTitle.toLowerCase()} in Birmingham and the West Midlands.`,
     keywords: [
       categoryTitle.toLowerCase(),
@@ -111,16 +111,28 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   }
 
   const categoryDescriptions: Record<string, string> = {
-    "boiler-repair": "Expert guides and advice on diagnosing and fixing boiler problems in Birmingham and the West Midlands.",
-    "heating-systems": "Comprehensive information about different heating systems, efficiency tips, and system comparisons.",
-    "maintenance": "Essential maintenance tips and servicing guides to keep your boiler running efficiently year-round.",
-    "emergency-services": "Emergency heating guidance and what to do when your boiler breaks down unexpectedly.",
-    "installation": "Everything you need to know about boiler installation, replacement, and upgrade services.",
-    "troubleshooting": "Step-by-step troubleshooting guides to help you identify and resolve common boiler issues."
+    "boiler-repair": "Expert guides and advice on diagnosing and fixing boiler problems in Birmingham and the West Midlands. Our Gas Safe registered engineers share their knowledge to help you understand common boiler faults, when to call a professional, and how to prevent costly breakdowns.",
+    "heating-systems": "Comprehensive information about different heating systems, efficiency tips, and system comparisons. Learn about combi boilers, system boilers, heat pumps, and how to choose the right heating solution for your Birmingham home.",
+    "maintenance": "Essential maintenance tips and servicing guides to keep your boiler running efficiently year-round. Regular servicing can extend your boiler's lifespan, maintain manufacturer warranties, and reduce energy bills.",
+    "emergency-services": "Emergency heating guidance and what to do when your boiler breaks down unexpectedly. Our 24/7 emergency team is always ready, but these guides help you stay safe and take initial steps before help arrives.",
+    "installation": "Everything you need to know about boiler installation, replacement, and upgrade services. From choosing the right boiler size to understanding installation costs and timelines in the Birmingham area.",
+    "troubleshooting": "Step-by-step troubleshooting guides to help you identify and resolve common boiler issues. While some problems require a Gas Safe engineer, many minor issues can be safely diagnosed at home.",
+    "seasonal": "Seasonal advice to prepare your heating system for changing weather conditions. Learn how to winterise your boiler, prepare for cold snaps, and maintain efficiency throughout the year in the West Midlands."
+  }
+
+  const categoryExtendedInfo: Record<string, string> = {
+    "boiler-repair": "From error codes to strange noises, our repair guides cover the most common issues Birmingham homeowners face. We explain what causes problems and whether you can fix them yourself or need professional help.",
+    "heating-systems": "Whether you're upgrading from an old G-rated boiler or installing a completely new system, understanding your options is crucial. Our guides break down the pros and cons of each heating system type.",
+    "maintenance": "Annual boiler servicing is recommended by all manufacturers and required for warranty validity. Our maintenance articles explain what's involved and why it matters for your home's safety and efficiency.",
+    "emergency-services": "A boiler breakdown in winter can be stressful. Our emergency guides help you identify the issue, stay safe, and know when to call 0800 320 2345 for immediate assistance from our Birmingham engineers.",
+    "installation": "Boiler installation is a significant investment. These guides help you make informed decisions about timing, costs, and choosing the right system for your property's heating demands.",
+    "troubleshooting": "Many boiler problems have simple explanations. Our troubleshooting guides walk you through diagnostic steps, helping you understand your heating system and communicate effectively with engineers.",
+    "seasonal": "The West Midlands climate presents unique challenges for heating systems. Our seasonal guides ensure your boiler is ready for whatever the weather brings, from freezing winters to mild summers."
   }
 
   const categoryTitle = categoryTitles[category]
   const categoryDescription = categoryDescriptions[category]
+  const categoryExtended = categoryExtendedInfo[category]
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
@@ -148,8 +160,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               {categoryTitle} Articles
             </h1>
             
-            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
               {categoryDescription}
+            </p>
+            
+            <p className="text-base text-gray-500 dark:text-gray-400 leading-relaxed">
+              {categoryExtended}
             </p>
           </div>
         </div>

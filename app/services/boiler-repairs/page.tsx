@@ -47,7 +47,7 @@ export default function BoilerRepairsPage() {
     title: "Boiler Repairs",
     description:
       "Prompt, reliable fixes for leaks, breakdowns and ongoing issues. Same-day service available when booked before 12pm.",
-    image: "images/service_boiler_repair.png",
+    image: "/images/service_boiler_repair.webp",
     features: ["No call-out fee", "No diagnosis fee", "Same-day & weekend options", "Parts for major brands stocked"],
     longDescription: `
       <p>Our professional boiler repair service is designed to get your heating and hot water back up and running as quickly as possible. We understand that a broken boiler can be a major inconvenience, which is why we offer same-day service when booked before 12pm.</p>
@@ -166,7 +166,7 @@ export default function BoilerRepairsPage() {
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                   <div className="relative h-64 w-full md:h-auto">
                     <Image
-                      src="/images/service_boiler_repair.png"
+                      src="/images/service_boiler_repair.webp"
                       alt={service.title}
                       fill
                       className="object-cover"

@@ -43,7 +43,7 @@ export default function CombinationBoilerRepairsPage() {
     title: "Combination Boiler Repairs",
     description:
       "Specialist repairs for combination boilers. Expert diagnosis and repair of combi boiler issues including heating and hot water problems.",
-    image: "/images/combi_repair_page.png",
+    image: "/images/combi_repair_page.webp",
     features: ["No call-out fee", "Same-day service available", "All major combi brands", "Hot water & heating repairs"],
     longDescription: `
   <p>Our combination boiler repair specialists provide expert diagnosis and repair services for all types of combi boiler problems. Whether you're experiencing issues with heating, hot water, or both, our Gas Safe registered engineers have the expertise to get your combination boiler working efficiently again.</p>
@@ -141,7 +141,7 @@ export default function CombinationBoilerRepairsPage() {
                   <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     <div className="relative h-64 w-full md:h-auto">
                       <Image
-                        src={service.image || "/images/combination_boiler_repairs.png"}
+                        src={service.image || "/images/combi_repair_page.webp"}
                         alt={service.title}
                         fill
                         className="object-cover"
