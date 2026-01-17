@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Combination Boiler Repairs Birmingham | Expert Combi Boiler Fixes",
+  title: "Combi Boiler Repairs Birmingham | Expert Same Day Fix",
   description:
     "Professional combination boiler repairs in Birmingham. Expert diagnosis and repair of combi boiler heating and hot water problems. Same-day service available.",
   keywords: "combination boiler repair Birmingham, combi boiler repair, combination boiler fix, combi boiler heating problems",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-repairs",
   },
   openGraph: {
-    title: "Combination Boiler Repairs Birmingham | Expert Combi Boiler Fixes",
+    title: "Combi Boiler Repairs Birmingham | Expert Same Day Fix",
     description: "Professional combination boiler repairs in Birmingham. Expert diagnosis and repair of combi boiler heating and hot water problems. Same-day service available.",
     url: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-repairs",
     siteName: "Birmingham Boiler Repairs",

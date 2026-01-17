@@ -10,14 +10,14 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Repairs Coverage Areas | 24/7 Service | 130+ Locations",
+  title: "Service Areas | Birmingham Boiler Repairs | 130+ Locations",
   description: "24/7 Birmingham boiler repairs across 130+ West Midlands areas. Same-day service, fixed price quotes, Gas Safe engineers. Find your local engineer - Call 0800 320 2345!",
   keywords: "Birmingham boiler repairs areas, West Midlands boiler service, local boiler repair, gas safe engineers Birmingham, boiler service locations",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/locations",
   },
   openGraph: {
-    title: "Birmingham Boiler Repairs Coverage Areas | 24/7 Service | 130+ Locations",
+    title: "Service Areas | Birmingham Boiler Repairs | 130+ Locations",
     description: "24/7 Birmingham boiler repairs across 130+ West Midlands areas. Same-day service, fixed price quotes, Gas Safe engineers. Find your local engineer - Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/locations",
     siteName: "Birmingham Boiler Repairs",

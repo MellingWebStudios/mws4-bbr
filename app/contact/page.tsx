@@ -8,7 +8,7 @@ import businessInfo from "@/lib/business-info"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
-  title: "Contact Birmingham Boiler Repairs | Book a Boiler Service or Repair",
+  title: "Contact Us | Birmingham Boiler Repairs | Book Now",
   description:
     "Contact our Gas Safe registered engineers for boiler repairs, servicing, and gas safety inspections in Birmingham. Same-day service available.",
   keywords: "contact boiler repairs Birmingham, book boiler service, gas engineer contact, emergency boiler repair",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/contact",
   },
   openGraph: {
-    title: "Contact Birmingham Boiler Repairs | Book a Boiler Service or Repair",
+    title: "Contact Us | Birmingham Boiler Repairs | Book Now",
     description: "Contact our Gas Safe registered engineers for boiler repairs, servicing, and gas safety inspections in Birmingham. Same-day service available.",
     url: "https://www.birminghamboilerrepairs.uk/contact",
     siteName: "Birmingham Boiler Repairs",

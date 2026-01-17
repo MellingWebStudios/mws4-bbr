@@ -27,6 +27,28 @@ const nextConfig = {
         source: '/(.*)',
         headers: [
           {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=31536000; includeSubDomains; preload',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value: [
+              "default-src 'self'",
+              "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://www.youtube.com https://s.ytimg.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
+              "img-src 'self' data: blob: https://www.googletagmanager.com https://www.google-analytics.com https://*.ytimg.com https://i.ytimg.com https://hebbkx1anhila5yf.public.blob.vercel-storage.com https://www.birminghamboilerrepairs.uk",
+              "font-src 'self' https://fonts.gstatic.com",
+              "frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com",
+              "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://analytics.google.com https://region1.google-analytics.com",
+              "media-src 'self' https://www.youtube.com",
+              "object-src 'none'",
+              "base-uri 'self'",
+              "form-action 'self'",
+              "frame-ancestors 'none'",
+              "upgrade-insecure-requests",
+            ].join('; '),
+          },
+          {
             key: 'X-Frame-Options',
             value: 'DENY',
           },

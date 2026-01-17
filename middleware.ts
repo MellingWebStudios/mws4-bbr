@@ -185,7 +185,6 @@ export default function middleware(req: NextRequest) {
     // Location redirects - common misspellings/variations
     '/birmingham-boiler-repairs': '/birmingham',
     '/birmingham-boiler-repair': '/birmingham',
-    '/solihull': '/birmingham', // Redirect nearby area to main Birmingham page
     '/coventry': '/birmingham',
     '/wolverhampton': '/birmingham',
 

@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Glow-worm Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Glow-worm Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Glow-worm specialists in Birmingham. Expert knowledge of Glow-worm systems and components with genuine parts and extended warranties.",
   keywords: "Glow-worm boiler repair Birmingham, Glow-worm specialist, Glow-worm boiler service, Glow-worm parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/glowworm-specialists",
   },
   openGraph: {
-    title: "Glow-worm Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Glow-worm Boiler Specialists Birmingham | Same Day",
     description: "Approved Glow-worm specialists in Birmingham. Expert knowledge of Glow-worm systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/glowworm-specialists",
     siteName: "Birmingham Boiler Repairs",

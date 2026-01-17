@@ -12,14 +12,14 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import { locations } from "@/lib/locations-data"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Services | 24/7 Emergency Repairs | Same-Day Service",
+  title: "Boiler Services Birmingham | 24/7 Emergency & Same-Day",
   description:
     "Birmingham boiler repairs & servicing. 24/7 emergency callouts, Gas Safe engineers, no call-out fees, same-day appointments. Fixed price quotes. Call 0800 320 2345!",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services",
   },
   openGraph: {
-    title: "Birmingham Boiler Services | 24/7 Emergency Repairs | Same-Day Service",
+    title: "Boiler Services Birmingham | 24/7 Emergency & Same-Day",
     description: "Birmingham boiler repairs & servicing. 24/7 emergency callouts, Gas Safe engineers, no call-out fees, same-day appointments. Fixed price quotes. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services",
     siteName: "Birmingham Boiler Repairs",

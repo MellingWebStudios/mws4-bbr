@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Biasi Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Biasi Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Biasi specialists in Birmingham. Expert knowledge of Biasi systems and components with genuine parts and extended warranties.",
   keywords: "Biasi boiler repair Birmingham, Biasi specialist, Biasi boiler service, Biasi parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/biasi-specialists",
   },
   openGraph: {
-    title: "Biasi Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Biasi Boiler Specialists Birmingham | Same Day",
     description: "Approved Biasi specialists in Birmingham. Expert knowledge of Biasi systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/biasi-specialists",
     siteName: "Birmingham Boiler Repairs",

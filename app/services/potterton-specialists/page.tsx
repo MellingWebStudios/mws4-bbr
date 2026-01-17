@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Potterton Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Potterton Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Potterton specialists in Birmingham. Expert knowledge of Potterton systems and components with genuine parts and extended warranties.",
   keywords: "Potterton boiler repair Birmingham, Potterton specialist, Potterton boiler service, Potterton parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/potterton-specialists",
   },
   openGraph: {
-    title: "Potterton Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Potterton Boiler Specialists Birmingham | Same Day",
     description: "Approved Potterton specialists in Birmingham. Expert knowledge of Potterton systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/potterton-specialists",
     siteName: "Birmingham Boiler Repairs",

@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Vokera Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Vokera Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Vokera specialists in Birmingham. Expert knowledge of Vokera systems and components with genuine parts and extended warranties.",
   keywords: "Vokera boiler repair Birmingham, Vokera specialist, Vokera boiler service, Vokera parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/vokera-specialists",
   },
   openGraph: {
-    title: "Vokera Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Vokera Boiler Specialists Birmingham | Same Day",
     description: "Approved Vokera specialists in Birmingham. Expert knowledge of Vokera systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/vokera-specialists",
     siteName: "Birmingham Boiler Repairs",

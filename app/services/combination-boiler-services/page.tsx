@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Birmingham Combi Boiler Services | From £60 | Same Day Appointments",
+  title: "Combi Boiler Services Birmingham | From £60 | Same Day",
   description:
     "Birmingham combination boiler servicing from £60. Same-day appointments, Gas Safe engineers, comprehensive combi boiler maintenance. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "combination boiler service Birmingham, combi boiler servicing, combination boiler maintenance, combi boiler service",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
   },
   openGraph: {
-    title: "Birmingham Combi Boiler Services | From £60 | Same Day Appointments",
+    title: "Combi Boiler Services Birmingham | From £60 | Same Day",
     description: "Birmingham combination boiler servicing from £60. Same-day appointments, Gas Safe engineers, comprehensive combi boiler maintenance. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/combination-boiler-services",
     siteName: "Birmingham Boiler Repairs",

@@ -7,14 +7,14 @@ import type { Metadata } from "next"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
-  title: "Gas Safety & Home Safety Questions | Birmingham Boiler Repairs",
+  title: "Gas & Home Safety FAQs | Birmingham Boiler Repairs",
   description: "Comprehensive guide to gas safety, smoke alarms, and carbon monoxide requirements. Expert answers from Gas Safe engineers.",
   keywords: "gas safety questions, smoke alarm requirements, carbon monoxide alarms, landlord responsibilities, CP12 certificate",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/questions",
   },
   openGraph: {
-    title: "Gas Safety & Home Safety Questions | Birmingham Boiler Repairs",
+    title: "Gas & Home Safety FAQs | Birmingham Boiler Repairs",
     description: "Comprehensive guide to gas safety, smoke alarms, and carbon monoxide requirements.",
     url: "https://www.birminghamboilerrepairs.uk/questions",
     siteName: "Birmingham Boiler Repairs",

@@ -9,14 +9,14 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
-  title: "Birmingham Gas Safety Guide | Landlords & Homeowners | Free Advice",
+  title: "Gas Safety Guide Birmingham | Free Expert Advice",
   description: "Birmingham gas safety guide: inspections, carbon monoxide alarms, landlord requirements. Expert Gas Safe advice from local engineers. Emergency gas safety checks available.",
   keywords: "gas safety guide, smoke alarm requirements, carbon monoxide alarm, gas inspection, landlord responsibilities, Birmingham gas safety",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/gas-safety-guide",
   },
   openGraph: {
-    title: "Birmingham Gas Safety Guide | Landlords & Homeowners | Free Advice",
+    title: "Gas Safety Guide Birmingham | Free Expert Advice",
     description: "Birmingham gas safety guide: inspections, carbon monoxide alarms, landlord requirements. Expert Gas Safe advice from local engineers. Emergency gas safety checks available.",
     url: "https://www.birminghamboilerrepairs.uk/gas-safety-guide",
     siteName: "Birmingham Boiler Repairs",

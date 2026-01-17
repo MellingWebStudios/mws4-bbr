@@ -7,14 +7,14 @@ import type { Metadata } from "next"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
-  title: "Carbon Monoxide Questions & Answers | Birmingham Boiler Repairs",
+  title: "Carbon Monoxide FAQs | CO Alarm Guide Birmingham",
   description: "Essential guide to carbon monoxide alarms, safety requirements, and poisoning prevention. Expert advice from Gas Safe engineers.",
   keywords: "carbon monoxide alarm, CO detector, carbon monoxide poisoning, gas safety, CO alarm requirements",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/questions/carbon-monoxide",
   },
   openGraph: {
-    title: "Carbon Monoxide Questions & Answers | Birmingham Boiler Repairs",
+    title: "Carbon Monoxide FAQs | CO Alarm Guide Birmingham",
     description: "Essential guide to carbon monoxide alarms, safety requirements, and poisoning prevention.",
     url: "https://www.birminghamboilerrepairs.uk/questions/carbon-monoxide",
     siteName: "Birmingham Boiler Repairs",

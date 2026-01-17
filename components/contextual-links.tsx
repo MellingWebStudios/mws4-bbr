@@ -52,7 +52,7 @@ export function InlineServiceLink({
   const service = services.find(s => s.slug === serviceSlug)
   if (!service) return null
 
-  const href = location ? `/${location}/${serviceSlug}` : `/services/${serviceSlug}`
+  const href = location ? `/${location.toLowerCase()}/${serviceSlug}` : `/services/${serviceSlug}`
   const linkText = text || service.name
   const price = showPrice && service.pricing?.[0]?.price ? ` (from ${service.pricing[0].price})` : ''
 
@@ -75,10 +75,10 @@ export function InlineLocationLink({
   text,
   className = '' 
 }: InlineLocationLinkProps) {
-  const location = locations.find(l => l.slug === locationSlug)
+  const location = locations.find(l => l.slug === locationSlug.toLowerCase())
   if (!location) return null
 
-  const href = service ? `/${locationSlug}/${service}` : `/${locationSlug}`
+  const href = service ? `/${locationSlug.toLowerCase()}/${service}` : `/${locationSlug.toLowerCase()}`
   const linkText = text || location.name
 
   return (
@@ -117,7 +117,7 @@ export function ServiceCrossLinks({
             {otherServices.slice(0, 3).map((otherService) => (
               <Link
                 key={otherService.slug}
-                href={currentLocation ? `/${currentLocation}/${otherService.slug}` : `/services/${otherService.slug}`}
+                href={currentLocation ? `/${currentLocation.toLowerCase()}/${otherService.slug}` : `/services/${otherService.slug}`}
                 className="block p-2 rounded hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
               >
                 <div className="text-sm font-medium text-gray-900 dark:text-white">
@@ -180,7 +180,7 @@ export function ServiceCrossLinks({
               asChild
               className="text-xs"
             >
-              <Link href={currentLocation ? `/${currentLocation}/${otherService.slug}` : `/services/${otherService.slug}`}>
+              <Link href={currentLocation ? `/${currentLocation.toLowerCase()}/${otherService.slug}` : `/services/${otherService.slug}`}>
                 {otherService.name}
                 {otherService.pricing?.[0]?.price && (
                   <span className="ml-1 text-secondary">
@@ -214,7 +214,7 @@ export function SmartContentLinks({
     relatedServices.forEach(service => {
       suggestedLinks.push({
         text: `${service.name}${currentLocation ? ` in ${currentLocation}` : ''}`,
-        href: currentLocation ? `/${currentLocation}/${service.slug}` : `/services/${service.slug}`,
+        href: currentLocation ? `/${currentLocation.toLowerCase()}/${service.slug}` : `/services/${service.slug}`,
         type: 'service',
         description: service.description
       })
@@ -223,8 +223,10 @@ export function SmartContentLinks({
 
   // Add location-related links
   if (currentLocation) {
+    const locationSlug = currentLocation.toLowerCase()
     const nearbyLocations = locations
-      .filter(l => l.slug !== currentLocation)
+      .filter(l => l.slug !== locationSlug)
+      .filter(l => !currentService || l.slug !== currentService) // Prevent /location/location when currentService matches location slug
       .slice(0, 3)
     
     nearbyLocations.forEach(location => {

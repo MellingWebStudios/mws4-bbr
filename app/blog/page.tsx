@@ -9,7 +9,7 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Repairs Blog | Expert Tips & Advice | Gas Safe Engineers",
+  title: "Boiler Tips & Advice Blog | Birmingham Boiler Repairs",
   description:
     "Expert Birmingham boiler repair tips, heating advice & troubleshooting guides. Gas Safe engineers share professional insights. Emergency repairs available 24/7.",
   keywords: "boiler repair tips, heating advice, boiler maintenance, Birmingham heating blog, gas safe tips, boiler troubleshooting",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/blog",
   },
   openGraph: {
-    title: "Birmingham Boiler Repairs Blog | Expert Tips & Advice",
+    title: "Boiler Tips & Advice Blog | Birmingham Boiler Repairs",
     description: "Expert Birmingham boiler repair tips, heating advice & troubleshooting guides from Gas Safe engineers. Emergency repairs available 24/7.",
     url: "https://www.birminghamboilerrepairs.uk/blog",
     siteName: businessInfo.name,

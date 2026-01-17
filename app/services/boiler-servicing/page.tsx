@@ -12,7 +12,7 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import Head from "next/head"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Servicing | Annual Service from £60 | Gas Safe",
+  title: "Boiler Servicing Birmingham | From £60 | Gas Safe",
   description:
     "Birmingham boiler servicing from £60. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
   keywords: "boiler service Birmingham, annual boiler service, boiler maintenance, Gas Safe boiler service",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
   },
   openGraph: {
-    title: "Birmingham Boiler Servicing | Annual Service from £60 | Gas Safe",
+    title: "Boiler Servicing Birmingham | From £60 | Gas Safe",
     description: "Birmingham boiler servicing from £60. Same-day appointments, comprehensive safety checks, Gas Safe engineers. Keep your warranty valid. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/boiler-servicing",
     siteName: "Birmingham Boiler Repairs",

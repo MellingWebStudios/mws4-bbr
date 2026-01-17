@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Heatline Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Heatline Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Heatline specialists in Birmingham. Expert knowledge of Heatline systems and components with genuine parts and extended warranties.",
   keywords: "Heatline boiler repair Birmingham, Heatline specialist, Heatline boiler service, Heatline parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/heatline-specialists",
   },
   openGraph: {
-    title: "Heatline Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Heatline Boiler Specialists Birmingham | Same Day",
     description: "Approved Heatline specialists in Birmingham. Expert knowledge of Heatline systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/heatline-specialists",
     siteName: "Birmingham Boiler Repairs",

@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Birmingham Worcester Bosch Specialists | Expert Repairs & Same Day Service",
+  title: "Worcester Bosch Specialists Birmingham | Same Day Repairs",
   description:
     "Birmingham Worcester Bosch specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "Worcester Bosch boiler repair Birmingham, Worcester Bosch specialist, Worcester Bosch boiler service, Worcester Bosch parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/worcester-bosch-specialists",
   },
   openGraph: {
-    title: "Birmingham Worcester Bosch Specialists | Expert Repairs & Same Day Service",
+    title: "Worcester Bosch Specialists Birmingham | Same Day Repairs",
     description: "Birmingham Worcester Bosch specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/worcester-bosch-specialists",
     siteName: "Birmingham Boiler Repairs",

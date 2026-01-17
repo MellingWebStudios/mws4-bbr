@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Intergas Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Intergas Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Intergas specialists in Birmingham. Expert knowledge of Intergas systems and components with genuine parts and extended warranties.",
   keywords: "Intergas boiler repair Birmingham, Intergas specialist, Intergas boiler service, Intergas parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/intergas-specialists",
   },
   openGraph: {
-    title: "Intergas Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Intergas Boiler Specialists Birmingham | Same Day",
     description: "Approved Intergas specialists in Birmingham. Expert knowledge of Intergas systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/intergas-specialists",
     siteName: "Birmingham Boiler Repairs",

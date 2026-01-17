@@ -102,7 +102,7 @@ export function RelatedServices({
                 <div className="flex-1">
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-1">
                     <Link 
-                      href={currentLocation ? `/${currentLocation}/${service.slug}` : `/services/${service.slug}`}
+                      href={currentLocation ? `/${currentLocation.toLowerCase()}/${service.slug}` : `/services/${service.slug}`}
                       className="hover:text-secondary transition-colors"
                     >
                       {service.name}
@@ -114,7 +114,7 @@ export function RelatedServices({
                     </p>
                   )}
                   <Link 
-                    href={currentLocation ? `/${currentLocation}/${service.slug}` : `/services/${service.slug}`}
+                    href={currentLocation ? `/${currentLocation.toLowerCase()}/${service.slug}` : `/services/${service.slug}`}
                     className="inline-flex items-center text-sm text-secondary hover:text-secondary/80 font-medium"
                   >
                     Learn more <ArrowRight className="ml-1 h-3 w-3" />
@@ -155,6 +155,7 @@ export function RelatedLocations({
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {nearbyLocations
           .filter(location => location.slug.toLowerCase() !== (currentLocation?.toLowerCase() ?? '')) // Prevent /location/location (case-insensitive)
+          .filter(location => !currentService || location.slug.toLowerCase() !== currentService.toLowerCase()) // Prevent /location/location when currentService is a location slug
           .map((location) => (
           <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-3">

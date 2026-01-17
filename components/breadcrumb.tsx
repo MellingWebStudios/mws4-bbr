@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
-import { slugify } from "@/lib/slug"
 
 interface BreadcrumbItem {
   label: string
@@ -16,7 +15,8 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
   return (
     <nav aria-label="Breadcrumb" className="inline-flex items-center space-x-1 text-sm">
       {items.map((item, index) => {
-        const href = item.href === "/" ? "/" : slugify(item.href)
+        // Ensure href starts with / for absolute paths and is lowercase
+        const href = item.href === "/" ? "/" : item.href.toLowerCase()
         return (
           <span key={href} className="flex items-center">
             {index > 0 && <ChevronRight className="mx-1 h-4 w-4 text-white/70" />}

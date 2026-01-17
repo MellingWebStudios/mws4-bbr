@@ -18,7 +18,6 @@ import React from "react";
 import Head from "next/head";
 import type { Metadata } from "next";
 import { NextResponse } from 'next/server';
-import { slugify } from "@/lib/slug";
 import { localInsights } from "@/lib/content-enrichment";
 
 type Props = {
@@ -38,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   // Use different title format for Birmingham to avoid duplicate with homepage
   const title = location.slug === 'birmingham' 
-    ? `Boiler Repairs in Birmingham City Centre | Same-Day Service | Gas Safe`
-    : `${location.name} Boiler Repairs | 24/7 Emergency Service | No Call-Out Fee`;
+    ? `Boiler Repairs Birmingham City Centre | Same-Day`
+    : `${location.name} Boiler Repairs | 24/7 | No Call-Out Fee`;
   const description = `24/7 ${location.name} boiler repairs ${location.postcode}. Fixed price quotes, same-day service, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!`;
   // Ensure canonical URL is always lowercase and properly formatted
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug.toLowerCase()}`;

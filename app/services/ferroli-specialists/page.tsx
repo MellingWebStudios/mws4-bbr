@@ -9,7 +9,7 @@ import TrackedPhoneLink from "@/components/tracked-phone-link"
 import Head from "next/head"
 
 export const metadata: Metadata = {
-  title: "Birmingham Ferroli Specialists | Expert Repairs & Same Day Service",
+  title: "Ferroli Boiler Specialists Birmingham | Same Day",
   description:
     "Birmingham Ferroli specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ferroli repairs 24/7. Call 0800 320 2345!",
   keywords: "Ferroli boiler repair Birmingham, Ferroli specialist, Ferroli boiler service, Ferroli parts",
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
   },
   openGraph: {
-    title: "Birmingham Ferroli Specialists | Expert Repairs & Same Day Service",
+    title: "Ferroli Boiler Specialists Birmingham | Same Day",
     description: "Birmingham Ferroli specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Ferroli repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/ferroli-specialists",
     siteName: "Birmingham Boiler Repairs",

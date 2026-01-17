@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Atag Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Atag Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Atag specialists in Birmingham. Expert knowledge of Atag systems and components with genuine parts and extended warranties.",
   keywords: "Atag boiler repair Birmingham, Atag specialist, Atag boiler service, Atag parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/atag-specialists",
   },
   openGraph: {
-    title: "Atag Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Atag Boiler Specialists Birmingham | Same Day",
     description: "Approved Atag specialists in Birmingham. Expert knowledge of Atag systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/atag-specialists",
     siteName: "Birmingham Boiler Repairs",

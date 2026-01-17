@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Ariston Boiler Specialists Birmingham | Expert Repairs & Servicing",
+  title: "Ariston Boiler Specialists Birmingham | Same Day",
   description:
     "Approved Ariston specialists in Birmingham. Expert knowledge of Ariston systems and components with genuine parts and extended warranties.",
   keywords: "Ariston boiler repair Birmingham, Ariston specialist, Ariston boiler service, Ariston parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/ariston-specialists",
   },
   openGraph: {
-    title: "Ariston Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Ariston Boiler Specialists Birmingham | Same Day",
     description: "Approved Ariston specialists in Birmingham. Expert knowledge of Ariston systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/ariston-specialists",
     siteName: "Birmingham Boiler Repairs",

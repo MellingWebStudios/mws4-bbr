@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Birmingham Main Specialists | Expert Repairs & Same Day Service",
+  title: "Main Boiler Specialists Birmingham | Same Day Repairs",
   description:
     "Birmingham Main specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
   keywords: "Main boiler repair Birmingham, Main specialist, Main boiler service, Main parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/main-boiler-specialists",
   },
   openGraph: {
-    title: "Birmingham Main Specialists | Expert Repairs & Same Day Service",
+    title: "Main Boiler Specialists Birmingham | Same Day Repairs",
     description: "Birmingham Main specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency repairs 24/7. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/main-boiler-specialists",
     siteName: "Birmingham Boiler Repairs",

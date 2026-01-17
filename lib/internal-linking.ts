@@ -77,6 +77,7 @@ export function generateInternalLinks(context: LinkingContext): InternalLinkSugg
   if (context.currentService && context.currentLocation) {
     const nearbyLocations = locations
       .filter(l => l.slug !== context.currentLocation)
+      .filter(l => l.slug !== context.currentService) // Prevent /location/location when currentService matches location slug
       .map(location => ({
         location,
         proximityScore: getProximityScore(context.currentLocation!, location.slug)
@@ -215,7 +216,7 @@ function generateContentBasedLinks(content: string, context: LinkingContext): In
       contentLower.includes(variation)
     )
 
-    if (mentioned && location.slug !== context.currentLocation) {
+    if (mentioned && location.slug !== context.currentLocation && location.slug !== context.currentService) {
       const href = context.currentService 
         ? `/${location.slug}/${context.currentService}`
         : `/${location.slug}`

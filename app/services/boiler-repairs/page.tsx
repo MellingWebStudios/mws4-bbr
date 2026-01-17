@@ -16,7 +16,7 @@ import { ServiceCrossLinks, SmartContentLinks } from "@/components/contextual-li
 import Head from "next/head"
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Repairs | 24/7 Emergency Service | Same Day Fix",
+  title: "Boiler Repairs Birmingham | 24/7 Emergency | Same Day",
   description:
     "24/7 Birmingham boiler repairs. Same-day service, fixed price quotes, no call-out charges. Gas Safe engineers ready now. Emergency callouts available. Call 0800 320 2345!",
   keywords: "boiler repairs Birmingham, emergency boiler repair, boiler breakdown service, same-day boiler repair",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs",
   },
   openGraph: {
-    title: "Birmingham Boiler Repairs | 24/7 Emergency Service | Same Day Fix",
+    title: "Boiler Repairs Birmingham | 24/7 Emergency | Same Day",
     description: "24/7 Birmingham boiler repairs. Same-day service, fixed price quotes, no call-out charges. Gas Safe engineers ready now. Emergency callouts available. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs",
     siteName: "Birmingham Boiler Repairs",

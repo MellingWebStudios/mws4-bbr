@@ -12,7 +12,7 @@ import FAQSchema from "@/components/faq-schema"
 import Breadcrumb from "@/components/breadcrumb"
 
 export const metadata: Metadata = {
-  title: "Birmingham Vaillant Specialists | Expert Repairs & Same Day Service",
+  title: "Vaillant Boiler Specialists Birmingham | Same Day",
   description:
     "Birmingham Vaillant specialists. Expert repairs, servicing & genuine parts. Same-day appointments, no call-out charges. Emergency Vaillant repairs 24/7. Call 0800 320 2345!",
   keywords: "Vaillant boiler repair Birmingham, Vaillant specialist, Vaillant boiler service, Vaillant parts",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/services/vaillant-specialists",
   },
   openGraph: {
-    title: "Vaillant Boiler Specialists Birmingham | Expert Repairs & Servicing",
+    title: "Vaillant Boiler Specialists Birmingham | Same Day",
     description: "Approved Vaillant boiler specialists in Birmingham. Expert knowledge of Vaillant systems and components with genuine parts and extended warranties.",
     url: "https://www.birminghamboilerrepairs.uk/services/vaillant-specialists",
     siteName: "Birmingham Boiler Repairs",

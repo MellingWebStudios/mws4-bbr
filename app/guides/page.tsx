@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk/guides",
   },
   openGraph: {
-    title: "Free Boiler Maintenance Video Guides | Birmingham Boiler Repairs", 
+    title: "Free Boiler Maintenance Guides | Birmingham Boiler Repairs", 
     description: "Watch our free step-by-step video guides to solve common boiler problems yourself. Professional tips from Gas Safe engineers.",
     url: "https://www.birminghamboilerrepairs.uk/guides",
     siteName: "Birmingham Boiler Repairs",

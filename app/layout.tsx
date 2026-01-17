@@ -8,7 +8,7 @@ import ClientLayoutShell from "@/components/ClientLayoutShell"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Birmingham Boiler Repairs | 24/7 Emergency Service | No Call-Out Fee",
+  title: "Birmingham Boiler Repairs | 24/7 Service | No Call-Out Fee",
   description: "24/7 Birmingham boiler repairs & service. Fixed price quotes, same-day appointments, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!",
   keywords:
     "boiler service Birmingham, boiler repairs, gas safety inspections, Gas Safe engineers, boiler maintenance, annual boiler service",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     canonical: "https://www.birminghamboilerrepairs.uk",
   },
   openGraph: {
-    title: "Birmingham Boiler Repairs | 24/7 Emergency Service | No Call-Out Fee",
+    title: "Birmingham Boiler Repairs | 24/7 Service | No Call-Out Fee",
     description: "24/7 Birmingham boiler repairs & service. Fixed price quotes, same-day appointments, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!",
     url: "https://www.birminghamboilerrepairs.uk",
     siteName: "Birmingham Boiler Repairs",
