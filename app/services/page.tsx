@@ -14,13 +14,13 @@ import { locations } from "@/lib/locations-data"
 export const metadata: Metadata = {
   title: "Boiler Services Birmingham | 24/7 Emergency & Same-Day",
   description:
-    "Birmingham boiler repairs & servicing. 24/7 emergency callouts, Gas Safe engineers, no call-out fees, same-day appointments. Fixed price quotes. Call 0800 320 2345!",
+    "Birmingham boiler repairs & servicing. 24/7 emergency, Gas Safe engineers, no call-out fee. Fixed prices. Call 0800 320 2345!",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services",
   },
   openGraph: {
     title: "Boiler Services Birmingham | 24/7 Emergency & Same-Day",
-    description: "Birmingham boiler repairs & servicing. 24/7 emergency callouts, Gas Safe engineers, no call-out fees, same-day appointments. Fixed price quotes. Call 0800 320 2345!",
+    description: "Birmingham boiler repairs & servicing. 24/7 emergency, Gas Safe engineers, no call-out fee. Fixed prices. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
@@ -292,13 +292,19 @@ export default function ServicesPage() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Areas We Cover</h2>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Areas We Cover</h3>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">Serving Birmingham and surrounding areas</p>
           </div>
 
           <div className="grid grid-cols-1 gap-8 md:grid-cols-1">
-            <div className="relative h-80 overflow-hidden rounded-lg shadow-lg md:h-96">
-              <Image src="/images/services_map_image.webp" alt="Service Area Map" fill className="object-cover" />
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <Image 
+                src="/images/services_map_image.webp" 
+                alt="Service Area Map" 
+                width={1024} 
+                height={1024} 
+                className="object-cover w-full h-auto max-h-96" 
+              />
             </div>
             <div>
               <h3 className="mb-4 text-xl font-bold text-gray-900 dark:text-white">

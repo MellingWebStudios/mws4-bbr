@@ -192,11 +192,12 @@ const Navbar = () => {
         <div className="container mx-auto px-4 md:py-4">
           <div className="flex items-center justify-between h-14 md:h-auto">
             <Link href="/" className="flex items-center space-x-2">
-              <div className="relative h-10 w-10 md:h-14 md:w-14">
+              <div className="relative h-10 w-10 md:h-14 md:w-14 flex items-center justify-center">
                 <Image
                   src="/images/boiler-mascot-logo-56.webp"
                   alt={`${businessInfo.name} Logo`}
-                  fill
+                  width={56}
+                  height={56}
                   className="object-contain"
                   priority
                 />
@@ -342,11 +343,12 @@ const Navbar = () => {
             <div className="absolute right-0 top-0 h-full w-4/5 max-w-sm bg-white shadow-xl dark:bg-gray-900 transform transition-transform duration-200 ease-in-out flex flex-col">
               <div className="flex items-center justify-between p-4 pt-6 flex-shrink-0">
                 <div className="flex items-center gap-2">
-                  <div className="relative h-8 w-8">
+                  <div className="relative h-8 w-8 flex items-center justify-center">
                     <Image
                       src="/images/boiler-mascot-logo-56.webp"
                       alt="Birmingham Boiler Repairs Logo"
-                      fill
+                      width={32}
+                      height={32}
                       className="object-contain"
                     />
                   </div>

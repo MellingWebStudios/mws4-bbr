@@ -21,8 +21,8 @@ export default function GasSafeBadge({ variant = "default", className }: GasSafe
   if (variant === "footer") {
     return (
       <div className={cn("flex items-center", className)}>
-        <div className="relative h-16 w-16 mr-2">
-          <Image src="/images/gas-safe-1.svg" alt="Gas Safe Registered" fill className="object-contain" />
+        <div className="relative h-16 w-16 mr-2 flex items-center justify-center">
+          <Image src="/images/gas-safe-1.svg" alt="Gas Safe Registered" width={64} height={64} className="object-contain" />
         </div>
         <div>
           <p className="text-sm font-medium">Gas Safe Registered</p>

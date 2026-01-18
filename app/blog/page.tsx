@@ -11,14 +11,14 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Boiler Tips & Advice Blog | Birmingham Boiler Repairs",
   description:
-    "Expert Birmingham boiler repair tips, heating advice & troubleshooting guides. Gas Safe engineers share professional insights. Emergency repairs available 24/7.",
+    "Expert boiler tips, heating advice & troubleshooting guides from Gas Safe engineers in Birmingham.",
   keywords: "boiler repair tips, heating advice, boiler maintenance, Birmingham heating blog, gas safe tips, boiler troubleshooting",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/blog",
   },
   openGraph: {
     title: "Boiler Tips & Advice Blog | Birmingham Boiler Repairs",
-    description: "Expert Birmingham boiler repair tips, heating advice & troubleshooting guides from Gas Safe engineers. Emergency repairs available 24/7.",
+    description: "Expert boiler tips, heating advice & troubleshooting guides from Gas Safe engineers in Birmingham.",
     url: "https://www.birminghamboilerrepairs.uk/blog",
     siteName: businessInfo.name,
     type: "website",
@@ -232,7 +232,7 @@ export default function BlogPage() {
                         
                         <Button asChild className="mt-3 w-full" variant="outline" size="sm">
                           <Link href={`/blog/${post.slug}`}>
-                            Read More
+                            Read: {post.title}
                           </Link>
                         </Button>
                       </CardContent>

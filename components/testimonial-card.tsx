@@ -34,8 +34,9 @@ const TestimonialCard = ({ quote, author, location, rating, image, className }: 
               <Image
                 src={image || "/placeholder.svg?height=64&width=64&query=person"}
                 alt={`${author} profile`}
-                fill
-                className="object-cover"
+                width={64}
+                height={64}
+                className="object-cover rounded-full"
               />
             </div>
           )}

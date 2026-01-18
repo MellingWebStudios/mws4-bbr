@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
   title: "Birmingham Boiler Repairs | 24/7 Service | No Call-Out Fee",
-  description: "24/7 Birmingham boiler repairs & service. Fixed price quotes, same-day appointments, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!",
+  description: "24/7 Birmingham boiler repairs. Fixed prices, same-day service, Gas Safe engineers. No call-out fee. Call 0800 320 2345!",
   keywords:
     "boiler service Birmingham, boiler repairs, gas safety inspections, Gas Safe engineers, boiler maintenance, annual boiler service",
   alternates: {
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Birmingham Boiler Repairs | 24/7 Service | No Call-Out Fee",
-    description: "24/7 Birmingham boiler repairs & service. Fixed price quotes, same-day appointments, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!",
+    description: "24/7 Birmingham boiler repairs. Fixed prices, same-day service, Gas Safe engineers. No call-out fee. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

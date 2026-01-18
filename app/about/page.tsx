@@ -71,12 +71,14 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="relative h-64 overflow-hidden rounded-lg md:h-auto">
+            <div className="overflow-hidden rounded-lg">
               <Image
                 src="/images/about_us_page.png"
                 alt="Birmingham Boiler Repairs Team"
-                fill
-                className="object-cover"
+                width={1600}
+                height={1200}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover w-full h-auto"
               />
             </div>
             <div>
@@ -140,12 +142,14 @@ export default function AboutPage() {
                 key={index}
                 className="overflow-hidden border-none shadow-lg transition-transform duration-300 hover:scale-105"
               >
-                <div className="relative aspect-square w-full">
+                <div className="w-full">
                   <Image
                     src={member.image || "/placeholder.svg"}
                     alt={`${member.name} - ${member.role}`}
-                    fill
-                    className="object-cover"
+                    width={288}
+                    height={288}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover w-full h-auto"
                   />
                 </div>
                 <CardContent className="p-6">

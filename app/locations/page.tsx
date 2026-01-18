@@ -11,14 +11,14 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Service Areas | Birmingham Boiler Repairs | 130+ Locations",
-  description: "24/7 Birmingham boiler repairs across 130+ West Midlands areas. Same-day service, fixed price quotes, Gas Safe engineers. Find your local engineer - Call 0800 320 2345!",
+  description: "Boiler repairs across 130+ Birmingham areas. Same-day service, fixed prices, Gas Safe engineers. Find your local engineer!",
   keywords: "Birmingham boiler repairs areas, West Midlands boiler service, local boiler repair, gas safe engineers Birmingham, boiler service locations",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/locations",
   },
   openGraph: {
     title: "Service Areas | Birmingham Boiler Repairs | 130+ Locations",
-    description: "24/7 Birmingham boiler repairs across 130+ West Midlands areas. Same-day service, fixed price quotes, Gas Safe engineers. Find your local engineer - Call 0800 320 2345!",
+    description: "Boiler repairs across 130+ Birmingham areas. Same-day service, fixed prices, Gas Safe engineers. Find your local engineer!",
     url: "https://www.birminghamboilerrepairs.uk/locations",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",

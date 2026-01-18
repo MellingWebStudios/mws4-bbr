@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const title = location.slug === 'birmingham' 
     ? `Boiler Repairs Birmingham City Centre | Same-Day`
     : `${location.name} Boiler Repairs | 24/7 | No Call-Out Fee`;
-  const description = `24/7 ${location.name} boiler repairs ${location.postcode}. Fixed price quotes, same-day service, Gas Safe engineers. Emergency callouts available. Call 0800 320 2345 now!`;
+  const description = `${location.name} boiler repairs ${location.postcode}. Same-day service, fixed prices, Gas Safe engineers. Call 0800 320 2345!`;
   // Ensure canonical URL is always lowercase and properly formatted
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug.toLowerCase()}`;
 
@@ -74,7 +74,7 @@ export default async function LocationPage({ params }: Props) {
   const location = getLocationBySlug(locationSlug);
   if (!location) notFound();
 
-  const introText = `Our Gas Safe engineers are just minutes away, serving the ${location.postcode} area and surroundings including ${location.landmarks.join(", ")}. We provide fast, reliable boiler and heating services for all makes and models. No call-out charges and transparent pricing.`;
+  const introText = `Our Gas Safe engineers are nearby, covering ${location.postcode} and areas near ${location.landmarks.join(", ")}. We fix all boiler makes and models. No call-out fee and clear prices.`;
 
   // Generate location-specific content
   const locationInsights = localInsights[location.slug as keyof typeof localInsights] || [];
@@ -235,9 +235,9 @@ export default async function LocationPage({ params }: Props) {
 
               {/* Services List */}
               <div>
-                <h2 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
+                <h3 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
                   Services Available in {location.name}
-                </h2>
+                </h3>
                 <div className="flex justify-center mb-8">
                   <span className="inline-block h-1 w-24 rounded bg-primary/70" />
                 </div>
@@ -273,9 +273,9 @@ export default async function LocationPage({ params }: Props) {
 
               {/* Internal Linking: Complete Service Range */}
               <div className="mt-12">
-                <h2 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
+                <h3 className="mb-6 text-3xl font-extrabold text-gray-900 dark:text-white text-center">
                   Our Complete Service Range
-                </h2>
+                </h3>
                 <div className="flex justify-center mb-8">
                   <span className="inline-block h-1 w-24 rounded bg-primary/70" />
                 </div>
@@ -314,6 +314,7 @@ export default async function LocationPage({ params }: Props) {
                   locationFilter={location.name.toLowerCase()}
                   limit={4}
                   showFilters={false}
+                  headingLevel={3}
                 />
               </div>
             </div>
@@ -324,9 +325,9 @@ export default async function LocationPage({ params }: Props) {
         <section className="py-16 bg-gray-50 dark:bg-gray-900">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
+              <h3 className="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-white">
                 Why {location.name} Residents Choose Our Services
-              </h2>
+              </h3>
               
               <div className="grid md:grid-cols-2 gap-8 mb-12">
                 <Card className="border-0 shadow-lg">
@@ -359,7 +360,7 @@ export default async function LocationPage({ params }: Props) {
                       </h3>
                     </div>
                     <p className="text-gray-600 dark:text-gray-400 mb-4">
-                      Same-day service when you book before 12pm. Our local engineers are strategically positioned to serve {location.name} quickly and efficiently.
+                      Same-day service when you book before 12pm. Our local engineers are nearby and ready to help in {location.name}.
                     </p>
                     <p className="text-sm text-primary font-medium">
                       Emergency callouts: Available 24/7 throughout {location.name}
@@ -396,7 +397,7 @@ export default async function LocationPage({ params }: Props) {
                 </h3>
                 <div className="bg-white dark:bg-gray-800 rounded-lg p-6 shadow-md">
                   <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    We proudly serve {location.name} and all surrounding areas including:
+                    We cover {location.name} and nearby areas such as:
                   </p>
                   <p className="text-primary font-medium">
                     {location.landmarks.join(" • ")}
@@ -415,10 +416,10 @@ export default async function LocationPage({ params }: Props) {
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center justify-between space-y-8 rounded-xl border border-white/10 bg-white/5 p-8 backdrop-blur-sm md:flex-row md:space-y-0 md:p-10">
               <div className="text-center md:text-left">
-                <h2 className="text-3xl font-bold tracking-tight">
+                <h3 className="text-3xl font-bold tracking-tight">
                   Need a boiler or heating service in{" "}
                   <span className="text-primary">{location.name}</span>?
-                </h2>
+                </h3>
                 <p className="mt-3 text-lg text-white/90">
                   We offer same-day service when booked before 12pm
                 </p>

@@ -54,8 +54,8 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const posts = await getBlogPostsByCategory(category)
 
   return {
-    title: `${categoryTitle} Articles | Birmingham Boiler Repairs Blog`,
-    description: `Expert advice and guides on ${categoryTitle.toLowerCase()}. Read our latest articles covering ${categoryTitle.toLowerCase()} in Birmingham and the West Midlands.`,
+    title: `${categoryTitle} | Birmingham Boiler Blog`,
+    description: `Expert advice on ${categoryTitle.toLowerCase()}. Read our latest articles for Birmingham and the West Midlands.`,
     keywords: [
       categoryTitle.toLowerCase(),
       "Birmingham",

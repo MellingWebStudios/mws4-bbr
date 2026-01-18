@@ -255,15 +255,15 @@ export default function CarbonMonoxideFAQPage() {
         <div className="container mx-auto px-4">
           <Card className="border-orange-200">
             <CardHeader>
-              <CardTitle className="flex items-center gap-2 text-orange-800">
+              <h2 className="flex items-center gap-2 text-orange-800 text-2xl font-semibold leading-none tracking-tight">
                 <Heart className="h-5 w-5" />
                 Recognize the Symptoms of Carbon Monoxide Poisoning
-              </CardTitle>
+              </h2>
             </CardHeader>
             <CardContent>
               <div className="grid gap-4 md:grid-cols-2">
                 <div>
-                  <h4 className="font-semibold text-orange-800 mb-2">Early Symptoms:</h4>
+                  <h3 className="font-semibold text-orange-800 mb-2">Early Symptoms:</h3>
                   <ul className="space-y-1 text-sm text-orange-700">
                     <li>• Headache and dizziness</li>
                     <li>• Nausea and vomiting</li>
@@ -273,7 +273,7 @@ export default function CarbonMonoxideFAQPage() {
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-orange-800 mb-2">Severe Symptoms:</h4>
+                  <h3 className="font-semibold text-orange-800 mb-2">Severe Symptoms:</h3>
                   <ul className="space-y-1 text-sm text-orange-700">
                     <li>• Difficulty breathing</li>
                     <li>• Chest pain</li>

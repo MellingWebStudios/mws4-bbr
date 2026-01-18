@@ -350,9 +350,9 @@ export default function Home() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">
               What Our Customers Say
-            </h2>
+            </h3>
             <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
               Don't just take our word for it
             </p>
@@ -383,9 +383,9 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
             <div>
-              <h2 className="text-3xl font-bold">
+              <h3 className="text-3xl font-bold">
                 Book your boiler service today
-              </h2>
+              </h3>
               <p className="mt-2 text-lg">
                 Professional service, repairs, and inspections from Gas Safe
                 engineers

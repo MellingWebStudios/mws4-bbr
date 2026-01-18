@@ -1995,23 +1995,23 @@ export const services = [
     slug: "boiler-repairs",
     name: "Boiler Repairs",
     description:
-      "Fast, reliable boiler repair service with no call-out fee. Same-day service available when booked before 12pm.",
+      "Fast boiler repair with no call-out fee. Book before noon for same-day service.",
     features: ["No call-out fee", "No diagnosis fee", "Same-day & weekend options", "Parts for major brands stocked"],
     pricing: [
       {
         title: "Standard Repair",
         price: "£99",
-        description: "Diagnosis and repair of common faults (excludes parts)",
+        description: "We find and fix the fault (parts extra)",
       },
       {
         title: "Weekend/Evening",
         price: "£120",
-        description: "Out-of-hours emergency service",
+        description: "Out-of-hours repairs",
       },
       {
         title: "Full System Check",
         price: "£99",
-        description: "Comprehensive diagnostic if multiple issues suspected",
+        description: "Full check if your boiler has more than one problem",
       },
     ],
   },
@@ -2019,7 +2019,7 @@ export const services = [
     slug: "boiler-servicing",
     name: "Boiler Servicing",
     description:
-      "Keep your boiler safe and efficient with our professional servicing. Standard and full service options available.",
+      "Keep your boiler safe and running well. Standard and full service options.",
     features: [
       "30-minute standard service",
       "Deep clean heat cell (full service)",
@@ -2030,17 +2030,17 @@ export const services = [
       {
         title: "Standard Service",
         price: "£99",
-        description: "Essential safety checks and efficiency optimization",
+        description: "Safety checks and tune-up",
       },
       {
         title: "Full Service",
         price: "£110 + cost of seal kit",
-        description: "Deep clean of heat exchanger and components",
+        description: "Deep clean of all parts",
       },
       {
         title: "Service & Repair",
         price: "£110",
-        description: "Combined service and repair (saves £30)",
+        description: "Service plus repair (saves £30)",
       },
     ],
   },
@@ -2048,28 +2048,28 @@ export const services = [
     slug: "gas-safety",
     name: "Gas Safety Inspections",
     description:
-      "Certified gas safety checks for homeowners and landlords. Digital certificates provided with reminder service.",
+      "Gas safety checks for homes and landlords. You get a digital certificate with reminders.",
     features: ["Digital certificates", "Reminder service", "No VAT charged", "Landlord certificates"],
     pricing: [
       {
         title: "1 Appliance",
         price: "£50",
-        description: "Safety check for a single gas appliance",
+        description: "Check for one gas item",
       },
       {
         title: "2 Appliances",
         price: "£55",
-        description: "Safety check for two gas appliances",
+        description: "Check for two gas items",
       },
       {
         title: "3 Appliances",
         price: "£60",
-        description: "Safety check for three gas appliances",
+        description: "Check for three gas items",
       },
       {
         title: "Add boiler service",
         price: "£50",
-        description: "When combined with gas safety inspection (Save £10)",
+        description: "Add a service with your gas check (Save £10)",
       },
     ],
   },
@@ -2077,23 +2077,23 @@ export const services = [
     slug: "combination-boiler-repairs",
     name: "Combination Boiler Repairs",
     description:
-      "Specialist repairs for combination boilers. Expert diagnosis and repair of combi boiler issues including heating and hot water problems.",
+      "Combi boiler repairs for heating and hot water problems. We fix all major brands.",
     features: ["No call-out fee", "Same-day service available", "All major combi brands", "Hot water & heating repairs"],
     pricing: [
       {
         title: "Combination Boiler Diagnosis",
         price: "£0",
-        description: "Free diagnosis with any repair work carried out.",
+        description: "Free check when we do the repair.",
       },
       {
         title: "Standard Combi Repair",
         price: "£80",
-        description: "Professional repair for most combination boiler issues.",
+        description: "Fix for most combi boiler problems.",
       },
       {
         title: "Emergency Combi Repair",
         price: "£125",
-        description: "Same-day emergency repairs for urgent combination boiler problems.",
+        description: "Same-day fix for urgent problems.",
       },
     ],
   },
@@ -2101,23 +2101,23 @@ export const services = [
     slug: "combination-boiler-services",
     name: "Combination Boiler Services",
     description:
-      "Professional servicing for combination boilers. Keep your combi boiler running efficiently with our comprehensive service options.",
+      "Combi boiler servicing to keep it running well. Standard and full service options.",
     features: ["Standard service £60", "Full service £110 + seal kit", "Efficiency checks", "Hot water flow testing"],
     pricing: [
       {
         title: "Standard Combi Service",
         price: "£60",
-        description: "Essential safety checks and basic maintenance for your combination boiler.",
+        description: "Safety checks and basic care for your combi.",
       },
       {
         title: "Full Combi Service",
         price: "£110 + cost of seal kit",
-        description: "Comprehensive service including deep cleaning and efficiency testing.",
+        description: "Full clean and check of your combi.",
       },
       {
         title: "Annual Service Plan",
         price: "£45",
-        description: "Save money with our annual service plan - only £45 per service.",
+        description: "Save with our yearly plan - just £45 per service.",
       },
     ],
   },
@@ -2125,7 +2125,7 @@ export const services = [
     slug: "ferroli-specialists",
     name: "Ferroli Specialists",
     description:
-      "Approved specialist for Ferroli boiler repair and maintenance. Expert knowledge of Ferroli systems and components.",
+      "We fix and service Ferroli boilers. Trained engineers who know Ferroli inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2159,7 +2159,7 @@ export const services = [
     slug: "worcester-bosch-specialists",
     name: "Worcester Bosch Specialists",
     description:
-      "Approved specialist for Worcester Bosch boiler repair and maintenance. Expert knowledge of Worcester Bosch systems and components.",
+      "We fix and service Worcester Bosch boilers. Trained engineers who know Worcester Bosch inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2193,7 +2193,7 @@ export const services = [
     slug: "vaillant-specialists",
     name: "Vaillant Specialists",
     description:
-      "Approved specialist for Vaillant boiler repair and maintenance. Expert knowledge of Vaillant systems and components.",
+      "We fix and service Vaillant boilers. Trained engineers who know Vaillant inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2227,7 +2227,7 @@ export const services = [
     slug: "ideal-boilers-specialists",
     name: "Ideal Boilers Specialists",
     description:
-      "Approved specialist for Ideal boiler repair and maintenance. Expert knowledge of Ideal boiler systems and components.",
+      "We fix and service Ideal boilers. Trained engineers who know Ideal inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2261,7 +2261,7 @@ export const services = [
     slug: "baxi-specialists",
     name: "Baxi Specialists",
     description:
-      "Approved specialist for Baxi boiler repair and maintenance. Expert knowledge of Baxi systems and components.",
+      "We fix and service Baxi boilers. Trained engineers who know Baxi inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2295,7 +2295,7 @@ export const services = [
     slug: "alpha-boiler-specialists",
     name: "Alpha Specialists",
     description:
-      "Approved specialist for Alpha boiler repair and maintenance. Expert knowledge of Alpha systems and components.",
+      "We fix and service Alpha boilers. Trained engineers who know Alpha inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2329,7 +2329,7 @@ export const services = [
     slug: "main-boiler-specialists",
     name: "Main Specialists",
     description:
-      "Approved specialist for Main boiler repair and maintenance. Expert knowledge of Main systems and components.",
+      "We fix and service Main boilers. Trained engineers who know Main inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2363,7 +2363,7 @@ export const services = [
     slug: "vokera-specialists",
     name: "Vokera Specialists",
     description:
-      "Approved specialist for Vokera boiler repair and maintenance. Expert knowledge of Vokera systems and components.",
+      "We fix and service Vokera boilers. Trained engineers who know Vokera inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2397,7 +2397,7 @@ export const services = [
     slug: "viessmann-specialists",
     name: "Viessmann Specialists",
     description:
-      "Approved specialist for Viessmann boiler repair and maintenance. Expert knowledge of Viessmann systems and components.",
+      "We fix and service Viessmann boilers. Trained engineers who know Viessmann inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2431,7 +2431,7 @@ export const services = [
     slug: "intergas-specialists",
     name: "Intergas Specialists",
     description:
-      "Approved specialist for Intergas boiler repair and maintenance. Expert knowledge of Intergas systems and components.",
+      "We fix and service Intergas boilers. Trained engineers who know Intergas inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2465,7 +2465,7 @@ export const services = [
     slug: "glowworm-specialists",
     name: "Glow-worm Specialists",
     description:
-      "Approved specialist for Glow-worm boiler repair and maintenance. Expert knowledge of Glow-worm systems and components.",
+      "We fix and service Glow-worm boilers. Trained engineers who know Glow-worm inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2499,7 +2499,7 @@ export const services = [
     slug: "atag-specialists",
     name: "Atag Specialists",
     description:
-      "Approved specialist for Atag boiler repair and maintenance. Expert knowledge of Atag systems and components.",
+      "We fix and service Atag boilers. Trained engineers who know Atag inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2533,7 +2533,7 @@ export const services = [
     slug: "biasi-specialists",
     name: "Biasi Specialists",
     description:
-      "Approved specialist for Biasi boiler repair and maintenance. Expert knowledge of Biasi systems and components.",
+      "We fix and service Biasi boilers. Trained engineers who know Biasi inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2567,7 +2567,7 @@ export const services = [
     slug: "potterton-specialists",
     name: "Potterton Specialists",
     description:
-      "Approved specialist for Potterton boiler repair and maintenance. Expert knowledge of Potterton systems and components.",
+      "We fix and service Potterton boilers. Trained engineers who know Potterton inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2601,7 +2601,7 @@ export const services = [
     slug: "ariston-specialists",
     name: "Ariston Specialists",
     description:
-      "Approved specialist for Ariston boiler repair and maintenance. Expert knowledge of Ariston systems and components.",
+      "We fix and service Ariston boilers. Trained engineers who know Ariston inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {
@@ -2635,7 +2635,7 @@ export const services = [
     slug: "heatline-specialists",
     name: "Heatline Specialists",
     description:
-      "Approved specialist for Heatline boiler repair and maintenance. Expert knowledge of Heatline systems and components.",
+      "We fix and service Heatline boilers. Trained engineers who know Heatline inside out.",
     features: ["Specialist knowledge", "Approved technicians", "Genuine parts", "Extended warranties"],
     pricing: [
       {

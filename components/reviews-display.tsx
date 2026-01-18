@@ -15,6 +15,7 @@ interface ReviewsDisplayProps {
   serviceFilter?: string
   locationFilter?: string
   headingLevel?: 2 | 3 | 4 | 5 | 6
+  showHeading?: boolean
 }
 
 export default function ReviewsDisplay({
@@ -23,6 +24,7 @@ export default function ReviewsDisplay({
   serviceFilter = "all",
   locationFilter = "",
   headingLevel = 2,
+  showHeading = true,
 }: ReviewsDisplayProps) {
   const [filter, setFilter] = useState(serviceFilter)
   const [displayCount, setDisplayCount] = useState(limit)
@@ -125,6 +127,7 @@ export default function ReviewsDisplay({
   return (
     <div className="w-full flex flex-col items-center justify-center bg-white py-12 px-2">
       {/* Header Section */}
+      {showHeading && (
       <div className="mb-14 text-center w-full flex flex-col items-center relative">
         {/* Decorative Accent */}
         <div className="absolute -top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
@@ -140,6 +143,7 @@ export default function ReviewsDisplay({
           We pride ourselves on delivering exceptional quality and service.
         </p>
       </div>
+      )}
 
       {/* Google Badge - Enhanced */}
       <div className="mb-10 rounded-2xl overflow-hidden bg-gradient-to-br from-white to-gray-50 border border-gray-100 shadow-xl w-full max-w-3xl mx-auto">

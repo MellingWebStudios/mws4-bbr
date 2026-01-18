@@ -112,9 +112,9 @@ export default function ReviewUsPage() {
 
           {/* Additional Information */}
           <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
-            <h3 className="text-2xl font-bold text-center text-gray-900 mb-6">
+            <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
               Your Review Matters
-            </h3>
+            </h2>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <div className="flex justify-center mb-4">
@@ -122,7 +122,7 @@ export default function ReviewUsPage() {
                     <Star className="h-8 w-8 text-primary" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Help Others</h4>
+                <h3 className="font-semibold text-gray-900 mb-2">Help Others</h3>
                 <p className="text-gray-600 text-sm">
                   Your review helps other Birmingham residents find reliable boiler services
                 </p>
@@ -133,7 +133,7 @@ export default function ReviewUsPage() {
                     <ThumbsUp className="h-8 w-8 text-secondary" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Improve Our Service</h4>
+                <h3 className="font-semibold text-gray-900 mb-2">Improve Our Service</h3>
                 <p className="text-gray-600 text-sm">
                   Your feedback helps us continue to provide excellent service
                 </p>
@@ -144,7 +144,7 @@ export default function ReviewUsPage() {
                     <Heart className="h-8 w-8 text-green-600" />
                   </div>
                 </div>
-                <h4 className="font-semibold text-gray-900 mb-2">Show Appreciation</h4>
+                <h3 className="font-semibold text-gray-900 mb-2">Show Appreciation</h3>
                 <p className="text-gray-600 text-sm">
                   Let our engineers know their hard work is appreciated
                 </p>

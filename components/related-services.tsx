@@ -29,7 +29,7 @@ export default function RelatedServices({ currentService, services, headingLevel
               <h4 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{service.title}</h4>
               <p className="mb-4 text-gray-600 dark:text-gray-400">{service.description}</p>
               <Link href={service.link} className="inline-flex items-center text-secondary hover:underline">
-                Learn more <ArrowRight className="ml-1 h-4 w-4" />
+                Learn about {service.title} <ArrowRight className="ml-1 h-4 w-4" />
               </Link>
             </CardContent>
           </Card>

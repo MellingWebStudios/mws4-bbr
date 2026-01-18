@@ -6,249 +6,249 @@ type Service = typeof services[0];
 // Unique content variations for different combinations
 export const localInsights = {
   "bournbrook": [
-    "Bournbrook's Victorian and Edwardian housing stock often features original cast iron radiators and older heating systems that require specialist knowledge.",
-    "Many Bournbrook residents are students at nearby University of Birmingham, requiring quick turnaround times for heating repairs.",
-    "The mix of period properties and modern conversions in Bournbrook means we encounter diverse heating system configurations.",
-    "Bournbrook's proximity to the university means many properties are rental accommodations requiring annual gas safety certificates.",
+    "Bournbrook has many older homes with cast iron radiators. These need engineers who know how to work with them.",
+    "Many Bournbrook residents are students. They need fast repairs so they're not left without heating.",
+    "Bournbrook has a mix of old houses and newer flats. We've worked on all types of heating systems here.",
+    "With so many rental homes near the university, we do lots of gas safety checks in Bournbrook.",
   ],
   "california": [
-    "California's residential streets feature a mix of 1930s semi-detached homes and modern developments, each with unique heating requirements.",
-    "The established community in California values reliable long-term heating solutions and preventative maintenance.",
-    "California residents often choose energy-efficient boiler upgrades to reduce heating costs in these family homes.",
-    "The tree-lined streets of California provide a peaceful setting where efficient, quiet boiler operation is particularly valued.",
+    "California has 1930s homes and newer builds. Each type needs different heating work.",
+    "Families in California want boilers that last. They like to get them serviced each year to avoid problems.",
+    "Many California homes have switched to new boilers to cut energy bills.",
+    "California is a quiet area. Residents here like boilers that run smoothly without noise.",
   ],
   "sparkbrook": [
-    "Sparkbrook's diverse community includes many multi-generational families requiring reliable heating systems year-round.",
-    "The area's mix of traditional terraced houses and modern apartments presents varied heating challenges and opportunities.",
-    "Sparkbrook residents value cost-effective heating solutions that provide excellent performance without breaking the budget.",
-    "Cultural cooking requirements in Sparkbrook often mean kitchens need robust hot water systems for family meal preparation.",
+    "Many families in Sparkbrook have grandparents living with them. They need heating that works all year.",
+    "Sparkbrook has terraced houses and flats. We work on all types.",
+    "Sparkbrook families want good value. We offer fair prices and quality work.",
+    "Many homes in Sparkbrook do lots of cooking. They need plenty of hot water.",
   ],
   "streetly": [
-    "Streetly's affluent residential area features larger family homes with complex heating systems requiring expert maintenance.",
-    "The mature gardens and established properties in Streetly often have outbuildings requiring heating system extensions.",
-    "Streetly homeowners typically invest in premium heating solutions for long-term reliability and energy efficiency.",
-    "The rural feel of Streetly means some properties rely on oil or LPG systems alongside traditional gas boilers.",
+    "Streetly has large family homes with bigger heating systems. These need regular expert care.",
+    "Some Streetly homes have garages or annexes that need heating too.",
+    "Streetly homeowners often choose top-quality boilers that last longer and save on energy.",
+    "Some Streetly homes use oil or LPG heating. We work on these as well as gas boilers.",
   ],
   "dodford": [
-    "Dodford's rural setting means some properties are off the main gas network, requiring LPG or oil heating expertise.",
-    "The village's older properties often feature original fireplaces that homeowners want to complement with modern heating.",
-    "Dodford's community values local tradespeople who understand the specific challenges of rural heating systems.",
-    "The scenic location means heating installations must be sympathetic to the rural character of properties.",
+    "Dodford is rural so some homes aren't on mains gas. We work on LPG and oil systems too.",
+    "Many Dodford homes have old fireplaces. We fit modern heating that works well with these.",
+    "Dodford folks like local trades who know about rural heating.",
+    "We fit heating that suits the look of Dodford's country homes.",
   ],
   "over-green": [
-    "Over Green's residential development features modern homes with contemporary heating systems requiring specialist knowledge.",
-    "The family-oriented community in Over Green prioritizes safe, efficient heating for children and elderly residents.",
-    "Over Green's newer properties often feature underfloor heating systems that require different maintenance approaches.",
-    "The suburban setting of Over Green allows for easy access for emergency heating repairs and routine maintenance.",
+    "Over Green has modern homes with newer heating systems. We know how to work on these.",
+    "Families in Over Green want safe, reliable heating for their kids and parents.",
+    "Some newer Over Green homes have underfloor heating. We service these too.",
+    "We can reach Over Green quickly for repairs or boiler services.",
   ]
 };
 
 export const brandSpecificInfo = {
   "atag": {
-    expertise: "ATAG boilers are known for their Dutch engineering excellence and high-efficiency performance. Our engineers are trained in ATAG's unique modulation technology.",
+    expertise: "ATAG boilers are Dutch-made and very efficient. Our engineers know how to fix them.",
     common_issues: [
-      "ATAG flame sensing issues requiring specialist diagnostic equipment",
-      "Modulation valve problems specific to ATAG's advanced control systems",
-      "Heat exchanger scaling in ATAG units due to hard water areas",
-      "PCB faults requiring ATAG-specific replacement components"
+      "ATAG flame sensor problems",
+      "Control valve issues",
+      "Limescale build-up in hard water areas",
+      "Circuit board faults"
     ],
-    local_stock: "We maintain genuine ATAG parts locally for faster repairs",
-    warranty: "All ATAG repairs covered by our comprehensive warranty"
+    local_stock: "We keep ATAG parts in stock for quick repairs",
+    warranty: "All ATAG repairs come with our full warranty"
   },
   "alpha-boiler": {
-    expertise: "Alpha Boilers combine innovation with reliability. Our team specializes in Alpha's E-Tec and CD range servicing and repairs.",
+    expertise: "Alpha boilers are well-made and reliable. We fix the E-Tec and CD ranges.",
     common_issues: [
-      "Alpha E-Tec condensate trap blockages requiring specialist cleaning",
-      "CD series diverter valve failures and replacement procedures",
-      "Alpha-specific error codes requiring manufacturer diagnostic protocols",
-      "Heat exchanger maintenance for Alpha's compact design systems"
+      "Blocked condensate pipes",
+      "Diverter valve faults",
+      "Error codes on the display",
+      "Heat exchanger cleaning"
     ],
-    local_stock: "Comprehensive Alpha parts inventory for immediate repairs",
-    warranty: "Extended warranty available on all Alpha boiler services"
+    local_stock: "We stock Alpha parts for quick repairs",
+    warranty: "Full warranty on all Alpha work"
   },
   "biasi": {
-    expertise: "Biasi's Italian engineering requires specific knowledge of their unique design features and component specifications.",
+    expertise: "Biasi boilers are Italian-made. We know how they work and how to fix them.",
     common_issues: [
-      "Biasi pressure relief valve replacements with correct specifications",
-      "Fan assembly issues specific to Biasi's ventilation design",
-      "Control board diagnostics for Biasi's electronic management systems",
-      "Pump overrun problems requiring Biasi-approved solutions"
+      "Pressure valve problems",
+      "Fan faults",
+      "Control board issues",
+      "Pump running on too long"
     ],
-    local_stock: "Genuine Biasi components sourced directly from approved suppliers",
-    warranty: "Manufacturer-backed warranty on all Biasi repairs"
+    local_stock: "We use genuine Biasi parts",
+    warranty: "Full warranty on all Biasi repairs"
   },
   "ferroli": {
-    expertise: "Ferroli specialists with over 15 years experience in their condensing and conventional range maintenance.",
+    expertise: "We've fixed Ferroli boilers for over 15 years.",
     common_issues: [
-      "Ferroli diverter valve sticking requiring specific lubricants",
-      "Condensate pump failures in Ferroli's high-efficiency models",
-      "PCB moisture damage prevention and repair in Ferroli units",
-      "Fan pressure switch adjustments for Ferroli's ventilation systems"
+      "Stuck diverter valves",
+      "Condensate pump problems",
+      "Water damage to circuit boards",
+      "Fan switch issues"
     ],
-    local_stock: "Extensive Ferroli parts warehouse for same-day repairs",
-    warranty: "Extended parts and labor warranty on Ferroli services"
+    local_stock: "We stock Ferroli parts for same-day repairs",
+    warranty: "Full parts and labour warranty"
   },
   "glowworm": {
-    expertise: "Glowworm heritage combined with modern Vaillant technology requires specialist knowledge of both systems.",
+    expertise: "Glowworm boilers are now made by Vaillant. We fix old and new models.",
     common_issues: [
-      "Glowworm Flexicom series DHW sensor replacements",
-      "Compact series heat exchanger descaling procedures",
-      "Control knob and display issues in older Glowworm models",
-      "Pump and valve maintenance in Glowworm combination units"
+      "Hot water sensor faults",
+      "Limescale in the heat exchanger",
+      "Display and control problems",
+      "Pump and valve issues"
     ],
-    local_stock: "Both legacy Glowworm and current Vaillant-Glowworm parts available",
-    warranty: "Comprehensive warranty covering Glowworm's full range"
+    local_stock: "We stock parts for old and new Glowworm boilers",
+    warranty: "Full warranty on all Glowworm work"
   },
   "heatline": {
-    expertise: "Heatline's value-focused engineering requires cost-effective repair solutions while maintaining reliability.",
+    expertise: "Heatline boilers are good value. We fix them at fair prices.",
     common_issues: [
-      "Heatline Capriz series DHW plate heat exchanger blockages",
-      "Gas valve calibration issues in Heatline units",
-      "PCB replacement procedures for Heatline's control systems",
-      "Expansion vessel recharging in Heatline combination boilers"
+      "Blocked heat exchanger",
+      "Gas valve problems",
+      "Circuit board faults",
+      "Low pressure in expansion vessel"
     ],
-    local_stock: "Cost-effective Heatline parts for budget-conscious repairs",
-    warranty: "Competitive warranty terms for Heatline services"
+    local_stock: "We stock Heatline parts at good prices",
+    warranty: "Full warranty on all Heatline work"
   },
   "ideal-boilers": {
-    expertise: "Ideal Boilers' Logic and Vogue ranges require specialist knowledge of their advanced control systems and efficiency features.",
+    expertise: "Ideal boilers like the Logic and Vogue are popular. We fix them all.",
     common_issues: [
-      "Ideal Logic series ignition sequence problems",
-      "Vogue range DHW temperature stability issues",
-      "Control panel fault diagnosis in Ideal's digital systems",
-      "Pump overrun timer settings in Ideal combination units"
+      "Won't light or start up",
+      "Hot water temperature goes up and down",
+      "Display showing error codes",
+      "Pump timer settings wrong"
     ],
-    local_stock: "Complete Ideal Boilers parts inventory for immediate service",
-    warranty: "Extended warranty available matching Ideal's manufacturer terms"
+    local_stock: "We stock all Ideal parts for quick repairs",
+    warranty: "Full warranty to match the maker's terms"
   },
   "intergas": {
-    expertise: "Intergas HRE and Rapid series feature unique single heat exchanger design requiring specialist maintenance knowledge.",
+    expertise: "Intergas boilers have a unique design. We know how to service and fix them.",
     common_issues: [
-      "Intergas HRE series heat exchanger inspection and cleaning",
-      "Rapid series modulation control valve adjustments",
-      "PCB diagnostics for Intergas electronic controls",
-      "Condensate neutralizer maintenance in Intergas systems"
+      "Heat exchanger cleaning needed",
+      "Control valve issues",
+      "Circuit board problems",
+      "Condensate system maintenance"
     ],
-    local_stock: "Specialized Intergas components including unique single heat exchangers",
-    warranty: "Manufacturer-aligned warranty for all Intergas services"
+    local_stock: "We stock Intergas parts including their special heat exchangers",
+    warranty: "Full warranty in line with Intergas standards"
   },
   "main-boiler": {
-    expertise: "Main boilers require knowledge of their specific engineering approach and component interactions.",
+    expertise: "Main boilers are well-built. We know how to fix them properly.",
     common_issues: [
-      "Main boiler control system diagnostics and repairs",
-      "Heat exchanger maintenance for Main's efficiency designs",
-      "Pump and valve coordination in Main heating systems",
-      "Electronic control board replacement and programming"
+      "Control system faults",
+      "Heat exchanger needs cleaning",
+      "Pump and valve problems",
+      "Circuit board replacement"
     ],
-    local_stock: "Main boiler parts sourced from approved distribution network",
-    warranty: "Comprehensive coverage for Main boiler repairs and maintenance"
+    local_stock: "We stock Main boiler parts",
+    warranty: "Full warranty on all Main boiler work"
   },
   "potterton": {
-    expertise: "Potterton's heritage brand requires knowledge spanning from classic models to modern Titanium series systems.",
+    expertise: "Potterton is a trusted name. We fix old models and new Titanium boilers.",
     common_issues: [
-      "Potterton Titanium series ignition electrode cleaning",
-      "Classic Potterton pilot light assembly maintenance",
-      "PCB replacement in modern Potterton combination units",
-      "DHW sensor calibration in Potterton heating systems"
+      "Ignition electrode needs cleaning",
+      "Pilot light problems on older models",
+      "Circuit board faults",
+      "Hot water sensor issues"
     ],
-    local_stock: "Both heritage and modern Potterton parts maintained in stock",
-    warranty: "Long-term warranty reflecting Potterton's reliability heritage"
+    local_stock: "We stock parts for old and new Potterton boilers",
+    warranty: "Full warranty on all Potterton repairs"
   },
   "vaillant": {
-    expertise: "Vaillant ecoTEC and Turbo series represent German engineering excellence requiring specialist training and genuine parts.",
+    expertise: "Vaillant ecoTEC boilers are German-made and very reliable. We're trained to fix them.",
     common_issues: [
-      "Vaillant ecoTEC condensate drain maintenance",
-      "Turbo series fan pressure switch adjustments",
-      "Weather compensation control programming",
-      "Heat exchanger descaling in hard water areas"
+      "Blocked condensate drain",
+      "Fan switch needs adjusting",
+      "Weather controls not set right",
+      "Limescale in the heat exchanger"
     ],
-    local_stock: "Genuine Vaillant parts warehouse ensuring authentic components",
-    warranty: "Extended warranty matching Vaillant's premium standards"
+    local_stock: "We use genuine Vaillant parts only",
+    warranty: "Full warranty to match Vaillant's high standards"
   },
   "viessmann": {
-    expertise: "Viessmann Vitodens series represents cutting-edge condensing technology requiring advanced diagnostic capabilities.",
+    expertise: "Viessmann boilers are top quality. We have the tools to fix them right.",
     common_issues: [
-      "Viessmann Vitodens modulation valve calibration",
-      "MatriX burner cleaning and maintenance procedures",
-      "Control unit programming for Viessmann systems",
-      "Heat exchanger inspection in Viessmann high-efficiency units"
+      "Control valve needs adjusting",
+      "Burner needs cleaning",
+      "Settings need changing",
+      "Heat exchanger check needed"
     ],
-    local_stock: "Premium Viessmann components for professional installations",
-    warranty: "Extended warranty reflecting Viessmann's premium positioning"
+    local_stock: "We stock quality Viessmann parts",
+    warranty: "Full warranty for this premium brand"
   },
   "vokera": {
-    expertise: "Vokera's compact design philosophy requires specific knowledge of space-saving component arrangements.",
+    expertise: "Vokera boilers are compact and well-designed. We fix them all.",
     common_issues: [
-      "Vokera Compact series DHW plate heat exchanger maintenance",
-      "Gas valve adjustment procedures for Vokera units",
-      "PCB moisture protection in Vokera's compact designs",
-      "Pump head pressure optimization in Vokera systems"
+      "Hot water heat exchanger blocked",
+      "Gas valve needs adjusting",
+      "Circuit board damp damage",
+      "Pump pressure too low"
     ],
-    local_stock: "Compact Vokera parts designed for space-efficient repairs",
-    warranty: "Warranty terms optimized for Vokera's reliability record"
+    local_stock: "We stock compact Vokera parts",
+    warranty: "Full warranty on all Vokera work"
   },
   "worcester-bosch": {
-    expertise: "Worcester Bosch Greenstar series represents market-leading reliability, requiring certified training for optimal service.",
+    expertise: "Worcester Bosch Greenstar boilers are the UK's best seller. We're trained to fix them.",
     common_issues: [
-      "Worcester Greenstar condensate trap cleaning procedures",
-      "CDi series diverter valve maintenance",
-      "PCB fault diagnosis in Worcester's electronic systems",
-      "Heat exchanger descaling in Worcester high-efficiency units"
+      "Condensate trap blocked",
+      "Diverter valve stuck",
+      "Circuit board fault",
+      "Limescale build-up"
     ],
-    local_stock: "Extensive Worcester Bosch parts inventory for immediate service",
-    warranty: "Market-leading warranty terms matching Worcester's reputation"
+    local_stock: "We stock Worcester parts for same-day repairs",
+    warranty: "Full warranty to match Worcester's reputation"
   }
 };
 
 export const serviceSpecificContent = {
   "boiler-repairs": {
-    urgency: "Emergency boiler repairs available 24/7",
-    process: "Our diagnostic process identifies root causes, not just symptoms",
-    guarantee: "All repairs covered by comprehensive warranty"
+    urgency: "Emergency repairs 24/7",
+    process: "We find the real cause, not just a quick fix",
+    guarantee: "All repairs are covered by our warranty"
   },
   "boiler-servicing": {
-    urgency: "Annual servicing to prevent costly breakdowns",
-    process: "Comprehensive 50-point inspection and maintenance",
-    guarantee: "Service includes efficiency optimization and safety checks"
+    urgency: "Yearly service stops costly breakdowns",
+    process: "Full 50-point check and clean",
+    guarantee: "We check safety and help save on energy bills"
   },
   "gas-safety": {
-    urgency: "Legally required annual gas safety inspections",
-    process: "Thorough testing of all gas appliances and installations",
-    guarantee: "Full compliance certification and safety documentation"
+    urgency: "You need a gas check every year by law",
+    process: "We test all gas appliances and pipes",
+    guarantee: "You get the right paperwork for landlords and tenants"
   },
   "combination-boiler-repairs": {
-    urgency: "Specialist combination boiler fault diagnosis",
-    process: "Expert repair of DHW and heating system integration",
-    guarantee: "Warranty covers both heating and hot water functionality"
+    urgency: "Combi boiler fault finding",
+    process: "We fix both heating and hot water problems",
+    guarantee: "Warranty covers all the work we do"
   },
   "combination-boiler-services": {
-    urgency: "Annual servicing for combination boiler efficiency",
-    process: "Dual-function testing and maintenance procedures",
-    guarantee: "Optimized performance for heating and hot water"
+    urgency: "Yearly service keeps your combi working well",
+    process: "We check both heating and hot water",
+    guarantee: "Better heating and hot water after we're done"
   }
 };
 
 // Seasonal content variations
 export const seasonalContent = {
   winter: {
-    priority: "critical heating system reliability during cold weather",
-    tips: "winter heating system preparation and energy efficiency",
-    emergency: "24/7 emergency heating repairs during winter months"
+    priority: "keeping your heating working when it's cold",
+    tips: "getting your heating ready for winter",
+    emergency: "24/7 emergency repairs all winter"
   },
   summer: {
-    priority: "planned maintenance and system optimization",
-    tips: "summer maintenance for reliable winter performance",
-    emergency: "hot water system repairs for year-round comfort"
+    priority: "getting your boiler serviced while the weather is warm",
+    tips: "summer service means no problems in winter",
+    emergency: "hot water repairs all year round"
   },
   spring: {
-    priority: "post-winter system health checks and efficiency tuning",
-    tips: "spring preparation for efficient heating operation",
-    emergency: "system upgrades and efficiency improvements"
+    priority: "checking your heating after winter use",
+    tips: "spring checks keep things running well",
+    emergency: "upgrades and fixes before next winter"
   },
   autumn: {
-    priority: "pre-winter system preparation and safety checks",
-    tips: "autumn heating system preparation for winter",
-    emergency: "preventative maintenance to avoid winter breakdowns"
+    priority: "getting ready for winter cold",
+    tips: "autumn is the best time to get your boiler checked",
+    emergency: "fix problems now before winter hits"
   }
 };
 
@@ -261,26 +261,26 @@ export function generateUniqueContent(location: Location, service: Service, bran
   const seasonal = seasonalContent[currentSeason];
 
   return {
-    locationSpecificIntro: locationInsights[0] || `${location.name} residents trust our local expertise for reliable heating solutions.`,
-    secondaryInsight: locationInsights[1] || `Our engineers understand the unique heating challenges in ${location.name}.`,
+    locationSpecificIntro: locationInsights[0] || `${location.name} locals trust us for reliable heating work.`,
+    secondaryInsight: locationInsights[1] || `Our engineers know heating systems in ${location.name} well.`,
     brandExpertise: brandInfo?.expertise || null,
     commonIssues: brandInfo?.common_issues || [],
-    serviceUrgency: serviceInfo?.urgency || "Professional heating services when you need them",
-    processDescription: serviceInfo?.process || "Expert diagnosis and professional repair service",
-    guaranteeInfo: serviceInfo?.guarantee || "All work covered by comprehensive warranty",
+    serviceUrgency: serviceInfo?.urgency || "Expert heating help when you need it",
+    processDescription: serviceInfo?.process || "We find the fault and fix it right",
+    guaranteeInfo: serviceInfo?.guarantee || "All work has our warranty",
     seasonalRelevance: seasonal.priority,
-    localStockInfo: brandInfo?.local_stock || "Comprehensive parts inventory for immediate repairs",
-    warrantyDetails: brandInfo?.warranty || "Professional warranty on all work completed",
+    localStockInfo: brandInfo?.local_stock || "We stock parts for quick repairs",
+    warrantyDetails: brandInfo?.warranty || "Full warranty on all work",
     emergencyAvailability: seasonal.emergency,
     maintenanceTips: seasonal.tips,
     locationLandmarks: location.landmarks.join(", "),
     postcode: location.postcode,
     uniqueSellingPoints: [
-      `Local ${location.name} expertise with ${service.name.toLowerCase()}`,
-      `Same-day service available in ${location.postcode} area`,
-      `No call-out charges for ${location.name} residents`,
-      `Gas Safe registered engineers serving ${location.name}`,
-      ...(brandInfo ? [`Specialist ${brandSlug?.replace('-', ' ')} knowledge and genuine parts`] : [])
+      `Local ${location.name} engineers for ${service.name.toLowerCase()}`,
+      `Same-day service in ${location.postcode}`,
+      `No call-out fee in ${location.name}`,
+      `Gas Safe engineers in ${location.name}`,
+      ...(brandInfo ? [`We know ${brandSlug?.replace('-', ' ')} boilers and use real parts`] : [])
     ]
   };
 }
@@ -298,44 +298,44 @@ export function generateLocationServiceFAQs(location: Location, service: Service
   const baseServiceFAQs = {
     "boiler-repairs": [
       {
-        question: `How quickly can you repair my boiler in ${location.name}?`,
-        answer: `We typically arrive in ${location.name} within 60 minutes for emergency repairs. Our local engineers stock common parts for immediate repairs, and we offer same-day service when you book before 12pm.`
+        question: `How fast can you fix my boiler in ${location.name}?`,
+        answer: `We can get to ${location.name} in about an hour for urgent jobs. Our local engineers carry common parts so we can often fix it the same day. Book before midday for same-day service.`
       },
       {
-        question: `What does a boiler repair cost in ${location.name}?`,
-        answer: `Repair costs vary by issue complexity, but we provide transparent pricing with no hidden charges. ${location.name} residents benefit from no call-out fees and competitive rates with all work guaranteed.`
+        question: `How much does a boiler repair cost in ${location.name}?`,
+        answer: `It depends what's wrong, but we always tell you the price upfront. No hidden fees. ${location.name} locals get our best rates and all work is guaranteed.`
       },
       {
-        question: `Do you repair all boiler brands in ${location.name}?`,
-        answer: `Yes, our Gas Safe engineers repair all major brands. We're particularly experienced with the heating systems commonly found in ${location.name}'s ${location.postcode} area.`
+        question: `Do you fix all boiler makes in ${location.name}?`,
+        answer: `Yes, we fix all major brands. We know the types of boilers in ${location.name}'s ${location.postcode} homes very well.`
       }
     ],
     "boiler-servicing": [
       {
-        question: `How often should I service my boiler in ${location.name}?`,
-        answer: `Annual servicing is recommended for all boilers in ${location.name}. This maintains efficiency, prevents breakdowns, and keeps your warranty valid. We offer convenient scheduling for ${location.name} residents.`
+        question: `How often should I get my boiler serviced in ${location.name}?`,
+        answer: `Once a year is best. This keeps it running well, stops breakdowns, and keeps your warranty valid. We make booking easy for ${location.name} customers.`
       },
       {
-        question: `What's included in a boiler service in ${location.name}?`,
-        answer: `Our comprehensive service includes safety checks, efficiency testing, cleaning, and component inspection. ${location.name} customers receive a detailed report and advice on any issues found.`
+        question: `What do you check during a boiler service in ${location.name}?`,
+        answer: `We do safety checks, test how well it runs, clean it, and look at all the parts. You get a report telling you if anything needs attention.`
       },
       {
-        question: `Can you service my boiler during winter in ${location.name}?`,
-        answer: `Absolutely. We provide year-round servicing in ${location.name}, though autumn servicing is ideal to prepare for winter heating demands in the ${location.postcode} area.`
+        question: `Can you service my boiler in winter in ${location.name}?`,
+        answer: `Yes, we work all year round. But autumn is the best time to book, so your boiler is ready for the cold months in ${location.postcode}.`
       }
     ],
     "gas-safety": [
       {
-        question: `Is gas safety certification mandatory in ${location.name}?`,
-        answer: `Yes, landlords in ${location.name} must have annual gas safety inspections. We provide certified CP12 certificates for all rental properties in the ${location.postcode} area.`
+        question: `Do I need a gas safety check in ${location.name}?`,
+        answer: `Yes, if you're a landlord in ${location.name} you must get one every year. We give you the CP12 certificate you need for all rentals in ${location.postcode}.`
       },
       {
-        question: `What happens during a gas safety inspection in ${location.name}?`,
-        answer: `We test all gas appliances, check ventilation, inspect pipework and issue safety certificates. ${location.name} property owners receive comprehensive documentation for their records.`
+        question: `What happens during a gas safety check in ${location.name}?`,
+        answer: `We test all gas appliances, check air vents, look at pipes, and give you the safety certificate. ${location.name} property owners get full paperwork for their records.`
       },
       {
-        question: `How much does gas safety certification cost in ${location.name}?`,
-        answer: `We offer competitive rates for ${location.name} landlords, with discounts for multiple properties. Contact us for transparent pricing with no hidden charges.`
+        question: `How much is a gas safety certificate in ${location.name}?`,
+        answer: `We offer good rates for ${location.name} landlords. Got more than one property? Ask about our discounts. Clear pricing with no hidden costs.`
       }
     ]
   };
@@ -345,8 +345,8 @@ export function generateLocationServiceFAQs(location: Location, service: Service
   if (brandSlug && brandSpecificInfo[brandSlug as keyof typeof brandSpecificInfo]) {
     const brandInfo = brandSpecificInfo[brandSlug as keyof typeof brandSpecificInfo];
     baseFAQs.push({
-      question: `Do you specialize in ${brandSlug.replace('-specialists', '').replace('-', ' ')} repairs in ${location.name}?`,
-      answer: `Yes, we're ${brandSlug.replace('-specialists', '').replace('-', ' ')} specialists serving ${location.name}. ${brandInfo.expertise} We maintain ${brandInfo.local_stock.toLowerCase()} for faster repairs in the ${location.postcode} area.`
+      question: `Are you ${brandSlug.replace('-specialists', '').replace('-', ' ')} experts in ${location.name}?`,
+      answer: `Yes, we know ${brandSlug.replace('-specialists', '').replace('-', ' ')} boilers well. ${brandInfo.expertise} ${brandInfo.local_stock.charAt(0).toLowerCase() + brandInfo.local_stock.slice(1)} so repairs in ${location.postcode} are fast.`
     });
   }
 

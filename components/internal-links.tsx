@@ -117,7 +117,7 @@ export function RelatedServices({
                     href={currentLocation ? `/${currentLocation.toLowerCase()}/${service.slug}` : `/services/${service.slug}`}
                     className="inline-flex items-center text-sm text-secondary hover:text-secondary/80 font-medium"
                   >
-                    Learn more <ArrowRight className="ml-1 h-3 w-3" />
+                    Learn about {service.name} <ArrowRight className="ml-1 h-3 w-3" />
                   </Link>
                 </div>
               </div>
@@ -154,8 +154,8 @@ export function RelatedLocations({
       
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
         {nearbyLocations
-          .filter(location => location.slug.toLowerCase() !== (currentLocation?.toLowerCase() ?? '')) // Prevent /location/location (case-insensitive)
-          .filter(location => !currentService || location.slug.toLowerCase() !== currentService.toLowerCase()) // Prevent /location/location when currentService is a location slug
+          .filter(location => location.slug.toLowerCase() !== (currentLocation?.toLowerCase() ?? ''))
+          .filter(location => !currentService || location.slug.toLowerCase() !== currentService.toLowerCase())
           .map((location) => (
           <Card key={location.slug} className="border shadow-sm hover:shadow-md transition-shadow">
             <CardContent className="p-3">
@@ -177,7 +177,7 @@ export function RelatedLocations({
                 href={currentService ? `/${location.slug}/${currentService}` : `/${location.slug}`}
                 className="inline-flex items-center text-xs text-secondary hover:text-secondary/80 font-medium"
               >
-                View details <ArrowRight className="ml-1 h-2 w-2" />
+                Visit {location.name} <ArrowRight className="ml-1 h-2 w-2" />
               </Link>
             </CardContent>
           </Card>

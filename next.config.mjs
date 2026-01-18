@@ -10,6 +10,15 @@ const nextConfig = {
   },
   images: {
     unoptimized: false,
+    // Limit device sizes to prevent serving unnecessarily large images
+    // Most displays don't need images larger than 1920px
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    // Image sizes for the sizes prop (responsive images)
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    // Use WebP format for better compression
+    formats: ['image/webp'],
+    // Minimize memory usage during optimization
+    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days cache
     remotePatterns: [
       {
         protocol: 'https',

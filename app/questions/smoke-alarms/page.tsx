@@ -7,14 +7,14 @@ import type { Metadata } from "next"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 export const metadata: Metadata = {
-  title: "Smoke Alarm Questions & Answers | Birmingham Boiler Repairs",
+  title: "Smoke Alarm FAQs | Birmingham Boiler Repairs",
   description: "Complete guide to smoke alarm requirements for rental properties, installation guidelines, and landlord responsibilities.",
   keywords: "smoke alarm requirements, rental property smoke detectors, landlord responsibilities, smoke alarm installation",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/questions/smoke-alarms",
   },
   openGraph: {
-    title: "Smoke Alarm Questions & Answers | Birmingham Boiler Repairs",
+    title: "Smoke Alarm FAQs | Birmingham Boiler Repairs",
     description: "Complete guide to smoke alarm requirements for rental properties and landlord responsibilities.",
     url: "https://www.birminghamboilerrepairs.uk/questions/smoke-alarms",
     siteName: "Birmingham Boiler Repairs",

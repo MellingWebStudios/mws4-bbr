@@ -91,8 +91,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     };
   }
 
-  const title = `${location.name} ${service.name} | Same Day | Fixed Price`;
-  const description = `Expert ${service.name.toLowerCase()} in ${location.name} ${location.postcode}. Same-day appointments, no call-out charges, Gas Safe registered. Emergency repairs available 24/7. Call 0800 320 2345!`;
+  const baseTitle = `${location.name} ${service.name}`;
+  // Keep title under 60 chars and ~520 pixels - shorter locations get suffix
+  const title = baseTitle.length <= 35 
+    ? `${baseTitle} | No Call-Out Fee`
+    : baseTitle.length <= 44 
+      ? `${baseTitle} | No Fee`
+      : baseTitle;
+  const description = `${service.name} in ${location.name} ${location.postcode}. Same-day service, no call-out fee, Gas Safe registered. Call 0800 320 2345!`;
   // Ensure canonical URL is always lowercase and properly formatted
   const url = `https://www.birminghamboilerrepairs.uk/${location.slug.toLowerCase()}/${service.slug.toLowerCase()}`;
 
@@ -149,9 +155,9 @@ export default async function LocationServicePage({ params }: Props) {
     ? location.name.toLowerCase()
     : "birmingham";
 
-  const introText = `When you need ${service.name.toLowerCase()} in ${location.name}, our Gas Safe engineers are just minutes away. Serving the ${location.postcode} area and surroundings including ${location.landmarks.join(
+  const introText = `Need ${service.name.toLowerCase()} in ${location.name}? Our Gas Safe engineers are nearby. We cover ${location.postcode} and areas near ${location.landmarks.join(
     " and "
-  )}, we provide fast, reliable ${service.name.toLowerCase()} for all boiler makes and models. With no call-out charges and transparent pricing, we've helped hundreds of ${location.name} homeowners restore heating and hot water quickly, often on the same day.`;
+  )}. We fix all boiler makes and models. No call-out fee, clear prices, and we often come the same day.`;
 
   // Extract brand slug if this is a brand specialist service
   const brandSlug = serviceSlug.includes('-specialists') ? serviceSlug : undefined;
@@ -381,6 +387,7 @@ export default async function LocationServicePage({ params }: Props) {
                   locationFilter={fallbackLocationFilter}
                   limit={4}
                   showFilters={false}
+                  headingLevel={3}
                 />
               </div>
 
@@ -424,9 +431,9 @@ export default async function LocationServicePage({ params }: Props) {
                   Areas We Serve in {location.name}
                 </h2>
                 <p className="mb-4 text-gray-600 dark:text-gray-400">
-                  Our {service.name.toLowerCase()} services are available
-                  throughout {location.name} and surrounding areas. We cover all{" "}
-                  {location.postcode} postcodes and nearby locations.
+                  Our {service.name.toLowerCase()} services cover
+                  {location.name} and nearby areas. We work in all{" "}
+                  {location.postcode} postcodes.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Card className="border shadow-md">
@@ -470,7 +477,7 @@ export default async function LocationServicePage({ params }: Props) {
                           Find Us in {l.name}
                         </h3>
                         <p className="mb-4 text-gray-600 dark:text-gray-400">
-                          We're conveniently located to serve all of {l.name} and surrounding areas.
+                          We're nearby and ready to serve {l.name} and nearby areas.
                         </p>
                         <Button asChild variant="outline" className="w-full">
                           <Link

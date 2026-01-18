@@ -110,10 +110,10 @@ export default function QuestionsPage() {
                 <FileText className="h-12 w-12" />
               </div>
             </div>
-            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">Gas Safety Questions</h1>
+            <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl">Home Safety FAQs</h1>
             <p className="mt-6 text-xl leading-relaxed">
               Get expert answers to all your gas safety, smoke alarm, and carbon monoxide questions. 
-              Comprehensive guidance from Gas Safe registered engineers.
+              Guidance from Gas Safe registered engineers.
             </p>
             <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
               <Button asChild size="lg" className="bg-white text-secondary hover:bg-gray-100">
@@ -213,7 +213,7 @@ export default function QuestionsPage() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Most Asked Questions</h2>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Most Asked Questions</h3>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
               Quick answers to the questions we hear most often
             </p>
@@ -236,7 +236,7 @@ export default function QuestionsPage() {
                         </div>
                         <Button asChild variant="ghost" size="sm">
                           <Link href={q.href} className="flex items-center gap-1 text-secondary hover:text-secondary/80">
-                            Read More
+                            Read: {q.question}
                             <ArrowRight className="h-3 w-3" />
                           </Link>
                         </Button>
@@ -253,7 +253,7 @@ export default function QuestionsPage() {
       {/* Key Information Cards */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-white">Key Safety Information</h2>
+          <h3 className="mb-8 text-center text-3xl font-bold text-gray-900 dark:text-white">Key Safety Information</h3>
           
           <div className="grid gap-6 md:grid-cols-3">
             <Card className="border-blue-200 bg-blue-50">
@@ -293,7 +293,7 @@ export default function QuestionsPage() {
       <section className="bg-secondary py-16 text-white">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-3xl font-bold">Still Have Questions?</h2>
+            <h3 className="text-3xl font-bold">Still Have Questions?</h3>
             <p className="mt-4 text-xl">
               Our Gas Safe registered engineers are here to help with expert advice and professional service
             </p>

@@ -303,7 +303,7 @@ export default function PricesPage() {
       <section className="bg-gray-50 py-16 dark:bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="mb-8 text-center">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h2>
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h3>
           </div>
           <div className="mx-auto grid max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
             {[
@@ -341,7 +341,7 @@ export default function PricesPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Comprehensive Service Guide</h2>
+            <h3 className="text-3xl font-bold text-gray-900 dark:text-white">Comprehensive Service Guide</h3>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
               Everything you need to know about gas safety, boiler maintenance, and safety requirements
             </p>
@@ -399,7 +399,7 @@ export default function PricesPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center justify-between space-y-8 md:flex-row md:space-y-0">
             <div>
-              <h2 className="text-3xl font-bold">Ready to book a service?</h2>
+              <h3 className="text-3xl font-bold">Ready to book a service?</h3>
               <p className="mt-2 text-lg">Contact us today for a fast, reliable service</p>
             </div>
             <Button asChild size="lg" className="bg-primary text-gray-900 hover:bg-primary/90">

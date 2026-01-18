@@ -18,14 +18,14 @@ import Head from "next/head"
 export const metadata: Metadata = {
   title: "Boiler Repairs Birmingham | 24/7 Emergency | Same Day",
   description:
-    "24/7 Birmingham boiler repairs. Same-day service, fixed price quotes, no call-out charges. Gas Safe engineers ready now. Emergency callouts available. Call 0800 320 2345!",
+    "24/7 boiler repairs in Birmingham. Same-day service, fixed prices, no call-out fee. Gas Safe engineers. Call 0800 320 2345!",
   keywords: "boiler repairs Birmingham, emergency boiler repair, boiler breakdown service, same-day boiler repair",
   alternates: {
     canonical: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs",
   },
   openGraph: {
     title: "Boiler Repairs Birmingham | 24/7 Emergency | Same Day",
-    description: "24/7 Birmingham boiler repairs. Same-day service, fixed price quotes, no call-out charges. Gas Safe engineers ready now. Emergency callouts available. Call 0800 320 2345!",
+    description: "24/7 boiler repairs in Birmingham. Same-day service, fixed prices, no call-out fee. Gas Safe engineers. Call 0800 320 2345!",
     url: "https://www.birminghamboilerrepairs.uk/services/boiler-repairs",
     siteName: "Birmingham Boiler Repairs",
     locale: "en_GB",
@@ -148,7 +148,7 @@ export default function BoilerRepairsPage() {
                 Back to Services
               </Link>
             </div>
-            <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Boiler Repairs in Birmingham</h1>
+            <h1 className="text-3xl font-bold md:text-4xl lg:text-5xl">Professional Boiler Repair Service</h1>
             <p className="mt-4 text-lg">{service.description}</p>
           </div>
         </div>
@@ -164,24 +164,26 @@ export default function BoilerRepairsPage() {
             <Card className="overflow-hidden border shadow-md mb-8">
               <CardContent className="p-0">
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                  <div className="relative h-64 w-full md:h-auto">
+                  <div className="w-full">
                     <Image
                       src="/images/service_boiler_repair.webp"
                       alt={service.title}
-                      fill
-                      className="object-cover"
+                      width={800}
+                        height={534}
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover w-full h-auto"
                       priority={true}
                       sizes="(max-width: 768px) 100vw, 50vw"
                     />
                   </div>
                   <div className="p-6">
-                    <h3 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h3>
+                    <h2 className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{service.title}</h2>
                     <div
                       className="mb-6 prose max-w-none"
                       dangerouslySetInnerHTML={{ __html: service.longDescription }}
                     />
                     <div className="mb-6">
-                      <h4 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h4>
+                      <h3 className="mb-3 text-lg font-semibold text-gray-900 dark:text-white">What's included:</h3>
                       <ul className="space-y-2">
                         {service.features.map((feature, i) => (
                           <li key={i} className="flex items-center">
@@ -215,7 +217,7 @@ export default function BoilerRepairsPage() {
                 {service.pricing.map((option, index) => (
                   <Card key={index} className="border shadow-md">
                     <CardContent className="p-6">
-                      <h4 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h4>
+                      <h3 className="mb-2 text-xl font-bold text-gray-900 dark:text-white">{option.title}</h3>
                       <div className="mb-4 flex items-baseline">
                         <span className="text-3xl font-bold text-secondary">{option.price}</span>
                         <span className="ml-1 text-sm text-gray-500">No VAT</span>
@@ -234,7 +236,7 @@ export default function BoilerRepairsPage() {
                 {service.faqs.map((faq, index) => (
                   <Card key={index} className="border shadow-md">
                     <CardContent className="p-6">
-                      <h4 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h4>
+                      <h3 className="mb-2 text-lg font-bold text-gray-900 dark:text-white">{faq.question}</h3>
                       <p className="text-gray-600 dark:text-gray-400">{faq.answer}</p>
                     </CardContent>
                   </Card>
@@ -245,7 +247,7 @@ export default function BoilerRepairsPage() {
             {/* Reviews Section */}
             <div>
               <h3 className="mb-6 text-2xl font-bold text-gray-900 dark:text-white">Customer Reviews</h3>
-              <ReviewsDisplay serviceFilter="repair" limit={4} showFilters={false} />
+              <ReviewsDisplay serviceFilter="repair" limit={4} showFilters={false} showHeading={false} />
             </div>
 
             {/* Service Cross Links */}

@@ -21,8 +21,15 @@ export default function ServiceCard({ id, title, description, image, features, l
     <Card id={id} className="overflow-hidden border shadow-md mb-8 transition-all duration-300 hover:shadow-lg">
       <CardContent className="p-0">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-          <div className="relative h-64 w-full md:h-auto">
-            <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
+          <div className="relative w-full">
+            <Image 
+              src={image || "/placeholder.svg"} 
+              alt={title} 
+              width={800} 
+              height={534} 
+              className="object-cover w-full h-auto" 
+              sizes="(max-width: 768px) 100vw, 50vw" 
+            />
           </div>
           <div className="p-6">
             <DynamicHeading level={headingLevel} className="mb-4 text-2xl font-bold text-gray-900 dark:text-white">{title}</DynamicHeading>
@@ -41,7 +48,7 @@ export default function ServiceCard({ id, title, description, image, features, l
             <div className="flex flex-col space-y-3 sm:flex-row sm:space-x-3 sm:space-y-0">
               <Button asChild className="bg-secondary text-white hover:bg-secondary/90">
                 <Link href={link} className="flex items-center gap-2">
-                  Learn More <ArrowRight size={16} />
+                  Get Started with {title} <ArrowRight size={16} />
                 </Link>
               </Button>
               <TrackedPhoneLink
