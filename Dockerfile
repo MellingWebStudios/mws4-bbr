@@ -8,7 +8,7 @@ RUN apk update && apk upgrade && apk add --no-cache dumb-init
 WORKDIR /app
 
 # Install pnpm
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable && corepack prepare pnpm@9.12.3 --activate
 
 # Copy package files and install dependencies
 COPY package.json pnpm-lock.yaml ./
@@ -39,7 +39,7 @@ COPY --from=builder --chown=nextjs:nodejs /app/package.json ./
 COPY --from=builder --chown=nextjs:nodejs /app/pnpm-lock.yaml ./
 
 # Install only production dependencies
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN corepack enable && corepack prepare pnpm@9.12.3 --activate
 RUN pnpm install --frozen-lockfile --prod
 
 # Copy built application from builder stage
@@ -59,4 +59,6 @@ EXPOSE 3000
 
 # Use dumb-init to handle signals properly
 ENTRYPOINT ["dumb-init", "--"]
-CMD ["pnpm", "start"]
+# Run Next.js directly — avoids invoking pnpm at runtime (corepack would pull
+# pnpm@latest as the non-root user and fail). Binds via PORT/HOSTNAME env above.
+CMD ["node", "node_modules/next/dist/bin/next", "start"]

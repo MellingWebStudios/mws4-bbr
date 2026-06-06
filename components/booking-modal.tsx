@@ -44,12 +44,30 @@ export default function BookingModal() {
     setFormData((prev) => ({ ...prev, service: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: [
+            date ? `Preferred date: ${format(date, "PPP")}` : null,
+            formData.message || null,
+          ]
+            .filter(Boolean)
+            .join("\n"),
+        }),
+      })
+
+      if (!response.ok) throw new Error("Failed to submit booking")
+
       setIsSubmitting(false)
       setIsSubmitted(true)
 
@@ -74,7 +92,10 @@ export default function BookingModal() {
         })
         setDate(undefined)
       }, 3000)
-    }, 1500)
+    } catch (error) {
+      console.error("Booking submission error:", error)
+      setIsSubmitting(false)
+    }
   }
 
   // Get tomorrow's date for minimum selectable date
@@ -158,6 +179,7 @@ export default function BookingModal() {
                   value={formData.email}
                   onChange={handleChange}
                   className="col-span-3"
+                  required
                 />
               </div>
               <div className="grid grid-cols-4 items-center gap-4">
