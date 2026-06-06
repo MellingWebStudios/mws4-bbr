@@ -82,7 +82,7 @@ export default function ContactForm() {
         submitTime: Date.now(),
       }
 
-      const response = await fetch("/api/contact-resend", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { 
           "Content-Type": "application/json",

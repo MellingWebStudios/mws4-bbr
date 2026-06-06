@@ -4,18 +4,23 @@ import { z } from "zod";
 // BBR leads are handled by the GMTO platform: persistence, dashboard inbox,
 // owner SMS/email alerts, visitor confirmation and analytics — all keyed on
 // siteId. This route is a thin same-origin proxy so the browser never has to
-// make a cross-origin request.
+// make a cross-origin request. Boiler-specific fields ride along as `metadata`
+// so they render in the owner email + dashboard.
 const GMTO_CONTACT_URL =
   process.env.GMTO_CONTACT_URL || "https://getmytradeonline.co.uk/api/contact";
 const GMTO_SITE_ID = "birmingham-boiler-repairs";
 
-// Accepts submissions from both contact forms and the booking modal.
+// Accepts submissions from the main contact form (boiler fields) + booking modal.
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters" }),
   email: z.string().email({ message: "Please enter a valid email address" }),
   phone: z.string().min(6, { message: "Please enter a valid phone number" }),
   message: z.string().optional().default(""),
   service: z.string().optional(), // booking modal
+  boilerBrand: z.string().optional(),
+  boilerModel: z.string().optional(),
+  problemType: z.string().optional(),
+  urgency: z.string().optional(),
   website: z.string().optional(), // honeypot
 });
 
@@ -24,6 +29,14 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, x-form-password",
 };
+
+/** "worcester-bosch" / "no_hot_water" → "Worcester Bosch" / "No Hot Water" */
+function prettify(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  const cleaned = value.replace(/[-_]/g, " ").trim();
+  if (!cleaned) return undefined;
+  return cleaned.replace(/\b\w/g, (c) => c.toUpperCase());
+}
 
 export async function OPTIONS() {
   return new NextResponse(null, { status: 200, headers: corsHeaders });
@@ -46,10 +59,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: true }, { status: 200, headers: corsHeaders });
     }
 
-    const { name, email, phone, message, service } = parsed.data;
+    const { name, email, phone, message, service, boilerBrand, boilerModel, problemType, urgency } = parsed.data;
     const fullMessage = service
       ? `Service requested: ${service}${message ? `\n\n${message}` : ""}`
       : message;
+
+    // Boiler details → metadata so they render in the owner email + dashboard.
+    const metadata: Record<string, string> = {};
+    const brand = prettify(boilerBrand);
+    const model = boilerModel?.trim();
+    const problem = prettify(problemType);
+    const urgencyLabel = prettify(urgency);
+    if (brand) metadata["Boiler brand"] = brand;
+    if (model) metadata["Boiler model"] = model;
+    if (problem) metadata["Problem"] = problem;
+    if (urgencyLabel) metadata["Urgency"] = urgencyLabel;
 
     const response = await fetch(GMTO_CONTACT_URL, {
       method: "POST",
@@ -61,6 +85,7 @@ export async function POST(request: NextRequest) {
         message: fullMessage,
         siteId: GMTO_SITE_ID,
         source: service ? "booking_modal" : "contact_form",
+        ...(Object.keys(metadata).length ? { metadata } : {}),
       }),
     });
 
