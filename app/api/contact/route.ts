@@ -1,5 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+import { Ratelimit } from "@upstash/ratelimit";
+import { Redis } from "@upstash/redis";
 
 // BBR leads are handled by the GMTO platform: persistence, dashboard inbox,
 // owner SMS/email alerts, visitor confirmation and analytics — all keyed on
@@ -9,6 +11,14 @@ import { z } from "zod";
 const GMTO_CONTACT_URL =
   process.env.GMTO_CONTACT_URL || "https://getmytradeonline.co.uk/api/contact";
 const GMTO_SITE_ID = "birmingham-boiler-repairs";
+
+const ratelimit = process.env.UPSTASH_REDIS_REST_URL
+  ? new Ratelimit({
+      redis: Redis.fromEnv(),
+      limiter: Ratelimit.fixedWindow(5, "1 m"),
+      analytics: true,
+    })
+  : null;
 
 // Accepts submissions from the main contact form (boiler fields) + booking modal.
 const formSchema = z.object({
@@ -24,8 +34,10 @@ const formSchema = z.object({
   website: z.string().optional(), // honeypot
 });
 
+const ALLOWED_ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || "https://birminghamboilerrepairs.co.uk";
+
 const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": ALLOWED_ORIGIN,
   "Access-Control-Allow-Methods": "POST, OPTIONS",
   "Access-Control-Allow-Headers": "Content-Type, x-form-password",
 };
@@ -43,6 +55,17 @@ export async function OPTIONS() {
 }
 
 export async function POST(request: NextRequest) {
+  if (ratelimit) {
+    const ip = request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "anonymous";
+    const { success } = await ratelimit.limit(ip);
+    if (!success) {
+      return NextResponse.json(
+        { success: false, message: "Too many requests. Please try again later." },
+        { status: 429, headers: corsHeaders }
+      );
+    }
+  }
+
   try {
     const body = await request.json();
     const parsed = formSchema.safeParse(body);
