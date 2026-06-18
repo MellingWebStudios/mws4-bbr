@@ -3,14 +3,17 @@ import { z } from "zod";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
 
-// BBR leads are handled by the GMTO platform: persistence, dashboard inbox,
-// owner SMS/email alerts, visitor confirmation and analytics — all keyed on
-// siteId. This route is a thin same-origin proxy so the browser never has to
-// make a cross-origin request. Boiler-specific fields ride along as `metadata`
-// so they render in the owner email + dashboard.
-const GMTO_CONTACT_URL =
-  process.env.GMTO_CONTACT_URL || "https://getmytradeonline.co.uk/api/contact";
-const GMTO_SITE_ID = "birmingham-boiler-repairs";
+// BBR leads are handled by the GMTO platform via the authenticated lead-ingestion
+// endpoint. This route is a same-origin proxy so the browser never makes a
+// cross-origin request. It forwards:
+//   - the visitor's real IP (x-client-ip) so rate-limiting works on the real caller
+//   - the honeypot field value (x-hp-value) so bot detection works
+//   - the form load timestamp (x-form-ts) so submit-speed detection works
+//   - a Bearer API key (GMTO_API_KEY) that authenticates this server as BBR
+// Boiler-specific fields ride along as `metadata` and render in the owner email.
+const GMTO_INGEST_URL =
+  process.env.GMTO_INGEST_URL || "https://getmytradeonline.co.uk/api/ingest/lead";
+const GMTO_API_KEY = process.env.GMTO_API_KEY || "";
 
 const ratelimit = process.env.UPSTASH_REDIS_REST_URL
   ? new Ratelimit({
@@ -31,7 +34,9 @@ const formSchema = z.object({
   boilerModel: z.string().optional(),
   problemType: z.string().optional(),
   urgency: z.string().optional(),
-  website: z.string().optional(), // honeypot
+  website: z.string().optional(),     // honeypot
+  formStartTime: z.number().optional(), // form load timestamp (for submit-speed check)
+  submitTime: z.number().optional(),    // submission timestamp
 });
 
 const ALLOWED_ORIGIN = process.env.NEXT_PUBLIC_SITE_URL || "https://birminghamboilerrepairs.co.uk";
@@ -66,6 +71,12 @@ export async function POST(request: NextRequest) {
     }
   }
 
+  // Visitor's real IP — forwarded to the platform so per-visitor rate-limiting works.
+  const visitorIp =
+    request.headers.get("fly-client-ip") ??
+    request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ??
+    "";
+
   try {
     const body = await request.json();
     const parsed = formSchema.safeParse(body);
@@ -77,12 +88,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Honeypot — silently succeed for bots without doing anything.
-    if (parsed.data.website && parsed.data.website.length > 0) {
-      return NextResponse.json({ success: true }, { status: 200, headers: corsHeaders });
-    }
-
-    const { name, email, phone, message, service, boilerBrand, boilerModel, problemType, urgency } = parsed.data;
+    const { name, email, phone, message, service, boilerBrand, boilerModel, problemType, urgency, website, formStartTime } = parsed.data;
     const fullMessage = service
       ? `Service requested: ${service}${message ? `\n\n${message}` : ""}`
       : message;
@@ -98,15 +104,22 @@ export async function POST(request: NextRequest) {
     if (problem) metadata["Problem"] = problem;
     if (urgencyLabel) metadata["Urgency"] = urgencyLabel;
 
-    const response = await fetch(GMTO_CONTACT_URL, {
+    const response = await fetch(GMTO_INGEST_URL, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        // Auth: identifies this server as the BBR tenant.
+        "Authorization": `Bearer ${GMTO_API_KEY}`,
+        // Forwarded visitor signals for spam filter structural layers.
+        ...(visitorIp ? { "x-client-ip": visitorIp } : {}),
+        "x-hp-value": website ?? "",
+        ...(formStartTime ? { "x-form-ts": String(formStartTime) } : {}),
+      },
       body: JSON.stringify({
         name,
         email,
         phone,
         message: fullMessage,
-        siteId: GMTO_SITE_ID,
         source: service ? "booking_modal" : "contact_form",
         ...(Object.keys(metadata).length ? { metadata } : {}),
       }),
