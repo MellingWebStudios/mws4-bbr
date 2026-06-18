@@ -59,9 +59,11 @@ pnpm test:redirects         # Verify redirect rules
 ## Contact Form Flow
 
 1. Client form: [components/contact-form.tsx](components/contact-form.tsx) with honeypot spam protection
-2. API route: [app/api/contact/route.ts](app/api/contact/route.ts) validates & forwards to FastAPI backend
-3. Backend: External `mws4-bbr-api.fly.dev` handles email sending via SendGrid
-4. Password protected via `FORM_PASSWORD` env var
+2. API route: [app/api/contact/route.ts](app/api/contact/route.ts) — a same-origin proxy that forwards to the GMTO platform
+3. Platform: `https://app.getmytradeonline.co.uk/api/ingest/lead` handles spam filtering, DB persistence, email + SMS notifications
+4. Auth: Bearer `GMTO_API_KEY` env var; visitor IP/honeypot/timestamp forwarded via custom headers
+
+The old `mws4-bbr-api.fly.dev` FastAPI/SendGrid backend is no longer used and can be decommissioned.
 
 ## Component Conventions
 
@@ -81,5 +83,6 @@ pnpm test:redirects         # Verify redirect rules
 
 Required for production:
 - `WEBSITE_URL` - Canonical domain (https://www.birminghamboilerrepairs.uk)
-- `FORM_PASSWORD` - Contact form backend auth
-- `SENDGRID_API_KEY` - Email sending (legacy, now via backend)
+- `GMTO_API_KEY` - Bearer token for the GMTO lead ingest endpoint
+- `GMTO_INGEST_URL` - Override for ingest URL (defaults to `https://app.getmytradeonline.co.uk/api/ingest/lead`)
+- `UPSTASH_REDIS_REST_URL` / `UPSTASH_REDIS_REST_TOKEN` - Rate limiting (optional)

@@ -27,3 +27,7 @@ yarn-error.log*
 next-env.d.ts
 
 locations.json
+
+# SEO audit exports / scratch files
+*.csv
+prompt.txt
