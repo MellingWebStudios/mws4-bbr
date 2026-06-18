@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { AlertCircle, CheckCircle, RefreshCw } from "lucide-react"
+import { triggerSitemapRegeneration } from "@/app/actions/regenerate-sitemap"
 
 export default function SitemapStatus() {
   const [isLoading, setIsLoading] = useState(false)
@@ -16,26 +17,10 @@ export default function SitemapStatus() {
     setMessage("")
 
     try {
-      const response = await fetch("/api/regenerate-sitemap", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          secret: process.env.NEXT_PUBLIC_SITEMAP_REGENERATION_SECRET || "your-secret-key",
-        }),
-      })
-
-      const data = await response.json()
-
-      if (response.ok) {
-        setStatus("success")
-        setMessage(data.message)
-      } else {
-        setStatus("error")
-        setMessage(data.message || "Failed to regenerate sitemap")
-      }
-    } catch (error) {
+      const result = await triggerSitemapRegeneration()
+      setStatus(result.success ? "success" : "error")
+      setMessage(result.message)
+    } catch {
       setStatus("error")
       setMessage("An error occurred while regenerating the sitemap")
     } finally {

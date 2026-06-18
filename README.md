@@ -153,7 +153,7 @@ A: Swap files in `/public/images` and update content in `locations-data.ts` or t
 For support, tweaks, or upgrades, contact:
 
 **Melling Web Studios**
-🌐 [mellingwebstudios.com](https://mellingwebstudios.com) ### underdevelopment
+🌐 [mws.getmytradeonline.co.uk](https://mws.getmytradeonline.co.uk) ### underdevelopment
 ✉️ [ashley@mellingwebstudios.com](mailto:ashley@mellingwebstudios.com)
 
 ---

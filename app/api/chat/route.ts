@@ -2,6 +2,14 @@ import { openai } from "@ai-sdk/openai";
 import { streamText } from "ai";
 import { Ratelimit } from "@upstash/ratelimit";
 import { Redis } from "@upstash/redis";
+import { z } from "zod";
+
+const messagesSchema = z.array(
+  z.object({
+    role: z.enum(["user", "assistant"]),
+    content: z.string().max(4000),
+  })
+).min(1).max(50);
 
 export const runtime = "nodejs";
 export const maxDuration = 30;
@@ -54,13 +62,20 @@ export async function POST(req: Request) {
       );
     }
 
-    // 4. Parse chat message
-    const { messages } = await req.json();
+    // 4. Parse and validate chat messages
+    const body = await req.json();
+    const parsed = messagesSchema.safeParse(body?.messages);
+    if (!parsed.success) {
+      return new Response(
+        JSON.stringify({ error: "Invalid messages format" }),
+        { status: 400, headers: { "Content-Type": "application/json" } }
+      );
+    }
 
     // 5. Stream OpenAI GPT-4o response
     const result = streamText({
       model: openai("gpt-4o"),
-      messages,
+      messages: parsed.data,
       system: systemPrompt,
     });
 

@@ -30,8 +30,8 @@
 3. ✅ Got new URL and token
 4. ✅ Added to secrets:
    ```bash
-   fly secrets set UPSTASH_REDIS_REST_URL='https://free-firefly-13723.upstash.io' --app bbr-production
-   fly secrets set UPSTASH_REDIS_REST_TOKEN='ATW***' --app bbr-production
+   fly secrets set UPSTASH_REDIS_REST_URL='<redacted>' --app bbr-production
+   fly secrets set UPSTASH_REDIS_REST_TOKEN='<redacted>' --app bbr-production
    ```
 
 ### 4. Update Form Password ✅ **COMPLETED**

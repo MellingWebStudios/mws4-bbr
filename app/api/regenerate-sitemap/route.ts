@@ -4,14 +4,15 @@ import { promisify } from "util"
 
 const execAsync = promisify(exec)
 
-// This should be secured in production with proper authentication
-const API_SECRET = process.env.SITEMAP_REGENERATION_SECRET || "your-secret-key"
-
 export async function POST(request: Request) {
+  const API_SECRET = process.env.SITEMAP_REGENERATION_SECRET
+  if (!API_SECRET) {
+    return NextResponse.json({ success: false, message: "Not configured" }, { status: 503 })
+  }
+
   try {
     const { secret } = await request.json()
 
-    // Validate the secret
     if (secret !== API_SECRET) {
       return NextResponse.json({ success: false, message: "Unauthorized" }, { status: 401 })
     }
