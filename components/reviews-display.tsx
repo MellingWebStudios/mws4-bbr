@@ -4,7 +4,7 @@ import { useState, useEffect, useMemo } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Star, Filter, Award } from "lucide-react"
-import { reviews } from "@/lib/reviews-data"
+import { reviews, reviewAge } from "@/lib/reviews-data"
 import Image from "next/image"
 import { motion } from "framer-motion"
 import { DynamicHeading } from "@/components/ui/dynamic-heading"
@@ -304,7 +304,7 @@ export default function ReviewsDisplay({
                             />
                           ))}
                         </div>
-                        <span className="text-xs text-gray-500 whitespace-nowrap">{review.date}</span>
+                        <span className="text-xs text-gray-500 whitespace-nowrap">{reviewAge(review)}</span>
                       </div>
                     </div>
                   </div>
