@@ -51,10 +51,9 @@ export default function Layout({
         <link rel="icon" type="image/png" sizes="150x150" href="/mstile-150x150.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/web-app-manifest-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/web-app-manifest-512x512.png" />
-        {/* Preload LCP hero image for desktop */}
-        <link rel="preload" as="image" href="/images/engineers-team.svg" />
-        {/* Preload LCP hero image for mobile */}
-        <link rel="preload" as="image" href="/images/engineers-team.svg" media="(max-width: 767px)" />
+        {/* No hand-written preload for the hero: next/image `priority` emits one
+            pointing at the OPTIMISED /_next/image URL the page actually renders.
+            A manual preload of the raw file would fetch a second copy nobody uses. */}
         {/* Removed Inter font manual preload as Next.js font loader handles it */}
         {/* Removed CSS preload and stylesheet links for /app/globals.css, as global CSS is imported via import statement above. */}
         {/* Inline critical CSS for above-the-fold content */}

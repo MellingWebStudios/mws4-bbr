@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 // Move image to local public folder for better control and optimization
-const heroImagePath = "/images/engineers-team.svg"
+const heroImagePath = "/images/engineers-team.png"
 
 export default function MobileHeroImage() {
   return (

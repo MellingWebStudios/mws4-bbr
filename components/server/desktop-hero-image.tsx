@@ -26,7 +26,7 @@ export default function DesktopHeroImage() {
             Gas Safe Registered: 520077
           </div>
           <Image
-            src="/images/engineers-team.svg"
+            src="/images/engineers-team.png"
             alt="Our team of Gas Safe registered engineers"
             width={500}
             height={500}
