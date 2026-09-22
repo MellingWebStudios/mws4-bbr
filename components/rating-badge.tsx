@@ -12,8 +12,8 @@ interface RatingBadgeProps {
 }
 
 export default function RatingBadge({ variant = "header", className, onClick }: RatingBadgeProps) {
-  const [rating, setRating] = useState(4.9)
-  const [totalReviews, setTotalReviews] = useState(120)
+  const [rating, setRating] = useState(getAverageRating())
+  const [totalReviews, setTotalReviews] = useState(getTotalReviews())
 
   useEffect(() => {
     // Get the actual values from our data

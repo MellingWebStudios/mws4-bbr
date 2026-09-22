@@ -1,5 +1,6 @@
 "use client"
 
+import { getAverageRating, getTotalReviews } from "@/lib/reviews-data"
 import { useEffect } from "react"
 import { Star } from "lucide-react"
 import Link from "next/link"
@@ -69,7 +70,7 @@ export default function Home() {
                     <Star key={i} className="h-4 w-4 fill-primary text-primary" />
                   ))}
                 </div>
-                <span className="text-xs font-medium">4.9/5 • 120+ reviews</span>
+                <span className="text-xs font-medium">{getAverageRating()}/5 • {getTotalReviews()} reviews</span>
               </div>
             </div>
             <MobileHero />
@@ -154,7 +155,7 @@ export default function Home() {
               {
                 icon: <Star className="h-8 w-8 text-secondary" />,
                 title: "Highly Rated",
-                description: "4.9/5 stars from 120+ reviews",
+                description: `${getAverageRating()}/5 stars from ${getTotalReviews()} reviews`,
               },
               {
                 icon: <ShieldCheck className="h-8 w-8 text-secondary" />,

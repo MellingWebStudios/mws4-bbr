@@ -1,5 +1,6 @@
 "use client"
 
+import { getAverageRating, getTotalReviews } from "@/lib/reviews-data"
 import { useState } from "react"
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -49,13 +50,13 @@ export default function GoogleReviewWidget() {
             <div className="text-sm font-medium text-gray-800">Google Reviews</div>
           </div>
           <div className="flex items-center bg-gray-50 px-3 py-1.5 rounded-full">
-            <div className="text-lg font-bold text-gray-800">4.9</div>
+            <div className="text-lg font-bold text-gray-800">{getAverageRating()}</div>
             <div className="flex ml-1.5 text-yellow-400">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-current" />
               ))}
             </div>
-            <div className="ml-1.5 text-xs text-gray-500">(120+)</div>
+            <div className="ml-1.5 text-xs text-gray-500">({getTotalReviews()})</div>
           </div>
         </div>
       </CardHeader>

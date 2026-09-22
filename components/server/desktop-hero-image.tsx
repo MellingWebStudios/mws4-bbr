@@ -1,3 +1,4 @@
+import { getAverageRating, getTotalReviews } from "@/lib/reviews-data"
 import Image from "next/image"
 import { Star, ShieldCheck } from "lucide-react"
 
@@ -27,6 +28,11 @@ export default function DesktopHeroImage() {
           </div>
           <Image
             src="/images/engineers-team.png"
+            // unoptimized: measured, WebP is WORSE for this image. Next re-encodes
+            // to WebP (17,818 bytes at w=384) where the raw PNG is 11,729 — flat
+            // illustration with alpha is exactly what PNG wins at. Serving the file
+            // as-is beats the optimiser round-trip.
+            unoptimized
             alt="Our team of Gas Safe registered engineers"
             width={500}
             height={500}
@@ -44,7 +50,7 @@ export default function DesktopHeroImage() {
               <Star key={i} className="h-7 w-7 fill-primary text-primary" />
             ))}
           </div>
-          <p className="text-sm font-semibold mt-2">4.9/5 (120+ reviews)</p>
+          <p className="text-sm font-semibold mt-2">{getAverageRating()}/5 ({getTotalReviews()} reviews)</p>
         </div>
       </div>
     </div>

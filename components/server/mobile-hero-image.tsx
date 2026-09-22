@@ -37,6 +37,11 @@ export default function MobileHeroImage() {
       <div className="relative w-[180px] h-[180px] flex items-center justify-center z-20 -mb-3 mt-3 mx-auto">
         <Image
           src={heroImagePath}
+          // unoptimized: measured, WebP is WORSE for this image. Next re-encodes
+          // to WebP (17,818 bytes at w=384) where the raw PNG is 11,729 — flat
+          // illustration with alpha is exactly what PNG wins at. Serving the file
+          // as-is beats the optimiser round-trip.
+          unoptimized
           alt="Our team of Gas Safe registered engineers"
           width={180}
           height={180}
