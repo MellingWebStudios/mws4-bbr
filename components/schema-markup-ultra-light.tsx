@@ -31,11 +31,6 @@ export default function UltraLightSchemaMarkup() {
               { "@type": "City", name: "Solihull" },
               { "@type": "City", name: "West Midlands" }
             ],
-            aggregateRating: {
-              "@type": "AggregateRating",
-              ratingValue: "4.9",
-              ratingCount: "120",
-            },
           }),
         }}
       />

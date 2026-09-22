@@ -36,11 +36,6 @@ export default function MinimalLocationSchemaMarkup({ location }: LocationSchema
             postalCode: location.postcode,
             addressCountry: "GB",
           },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.9",
-            ratingCount: "120",
-          },
         }),
       }}
     />

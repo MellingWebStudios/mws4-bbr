@@ -58,11 +58,6 @@ function LocalBusinessSchema({ location }: { location: any }) {
           longitude: location.longitude || undefined,
         }
       : undefined,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "4.8",
-      reviewCount: "12",
-    },
     sameAs: [
       businessInfo.socialMedia.google,
       businessInfo.socialMedia.facebook,
