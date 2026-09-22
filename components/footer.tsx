@@ -1,14 +1,11 @@
-"use client"
-
 import Link from "next/link"
 import { Phone, Mail, MapPin, Clock, Shield, Facebook, Instagram } from "lucide-react"
 import GasSafeBadge from "@/components/gas-safe-badge"
-import { useCookieConsent } from "@/context/cookie-consent-context"
+import CookieSettingsButton from "@/components/cookie-settings-button"
 import businessInfo from "@/lib/business-info"
 import TrackedPhoneLink from "@/components/tracked-phone-link"
 
 const Footer = () => {
-  const { openPreferences } = useCookieConsent()
 
   return (
     <footer className="bg-gray-100 dark:bg-gray-900">
@@ -306,12 +303,7 @@ const Footer = () => {
                 >
                   Privacy Policy
                 </Link>
-                <button
-                  onClick={openPreferences}
-                  className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300"
-                >
-                  Cookie Settings
-                </button>
+                <CookieSettingsButton className="text-sm text-gray-800 transition-colors hover:text-secondary dark:text-gray-300" />
               </div>
             </div>
             <div className="flex items-center">

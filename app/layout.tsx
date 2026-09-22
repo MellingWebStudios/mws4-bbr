@@ -3,7 +3,12 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import RootLayout from "@/components/server/RootLayout"
-import ClientLayoutShell from "@/components/ClientLayoutShell"
+import TopBar from "@/components/top-bar"
+import Navbar from "@/components/navbar"
+import Footer from "@/components/footer"
+import GMTOWatermark from "@/components/gmto-watermark"
+import StickyCallBar from "@/components/sticky-call-bar"
+import DeferredExtras from "@/components/deferred-extras"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
@@ -73,9 +78,15 @@ export default function Layout({
         `}</style>
       </head>
       <RootLayout className={inter.className}>
-        <ClientLayoutShell>
-          {children}
-        </ClientLayoutShell>
+        {/* The chrome renders on the server; only the genuinely interactive
+            pieces (navbar, watermark, sticky bar) ship as client leaves. */}
+        <TopBar />
+        <Navbar />
+        {children}
+        <Footer />
+        <GMTOWatermark />
+        <StickyCallBar />
+        <DeferredExtras />
       </RootLayout>
     </html>
   )

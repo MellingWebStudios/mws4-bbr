@@ -2,7 +2,6 @@ import type React from "react"
 import { ThemeProvider } from "@/components/theme-provider"
 import { CookieConsentProvider } from "@/context/cookie-consent-context"
 import UltraLightSchemaMarkup from "@/components/schema-markup-ultra-light"
-import ChatbotButton from "@/components/chatbot-button"
 
 export default function RootLayout({
   children,
@@ -21,7 +20,9 @@ export default function RootLayout({
           </div>
         </CookieConsentProvider>
       </ThemeProvider>
-      <ChatbotButton />
+      {/* The chatbot used to mount here eagerly AND lazily from the client
+          shell — two copies, and the eager one defeated the deferral it was
+          supposed to have. It now loads once, from DeferredExtras. */}
     </body>
   )
 }
